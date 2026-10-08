@@ -13,6 +13,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { generateEquipment, type GeneratedEquipment } from '../generate';
 import type { EquipmentSpec, EquipmentSpecInput } from '../spec/schema';
 import { applyPhase, captureRestPose, phaseAt, DEFAULT_CYCLE_SECONDS } from '../animation';
+import { Figure } from './figure';
 
 export type ViewerToggle = 'motion' | 'area' | 'human' | 'dims';
 
@@ -102,6 +103,8 @@ export class EquipmentViewer {
   private overlays: { area: THREE.Group; human: THREE.Group; dims: THREE.Group } | null = null;
   private readonly overlayDisposables: Array<{ dispose(): void }> = [];
   private readonly colorRows: HTMLElement[] = [];
+  /** Pessoa posada no equipamento (quando a família marca onde ela fica). */
+  private figure: Figure | null = null;
   private readonly colors: Partial<Record<ColorRole, string>> = {};
 
   constructor(container: HTMLElement, opts: EquipmentViewerOptions = {}) {
@@ -300,6 +303,7 @@ export class EquipmentViewer {
 
   /** Renderiza um quadro agora (para prints/miniaturas). */
   renderNow(): void {
+    if (this.state.human) this.figure?.update();
     this.controls?.update();
     this.renderer?.render(this.scene, this.camera);
   }
@@ -437,25 +441,35 @@ export class EquipmentViewer {
     // Pessoa de 1,75 m para escala
     const human = new THREE.Group();
     human.name = 'overlay_human';
-    human.position.set(b.max.x + 0.75, 0, 0);
-    const skin = new THREE.MeshStandardMaterial({ color: 0xb7b1a6, roughness: 0.9 });
-    const add = (g: THREE.BufferGeometry, x: number, y: number, z = 0) => {
-      const m = new THREE.Mesh(g, skin);
-      m.castShadow = true;
-      m.position.set(x, y, z);
-      human.add(m);
-      return m;
-    };
-    [-0.09, 0.09].forEach((x) => add(new THREE.CylinderGeometry(0.065, 0.055, 0.86, 16), x, 0.43));
-    add(new THREE.CylinderGeometry(0.17, 0.14, 0.6, 20), 0, 1.15).scale.z = 0.6;
-    add(new THREE.CylinderGeometry(0.045, 0.05, 0.1, 12), 0, 1.5);
-    add(new THREE.SphereGeometry(0.105, 24, 16), 0, 1.645);
-    [-1, 1].forEach((s) => {
-      add(new THREE.CylinderGeometry(0.045, 0.04, 0.66, 12), 0.215 * s, 1.11).rotation.z = 0.06 * s;
-    });
-    const hl = this.label('1,75 m', 0.34);
-    hl.position.set(0, 1.92, 0);
-    human.add(hl);
+    this.figure?.dispose();
+    this.figure = null;
+    const anchor = Figure.find(eq.object);
+    if (anchor) {
+      // A família disse onde a pessoa fica: ela aparece usando o equipamento e acompanha o movimento.
+      this.figure = new Figure(eq.object, anchor, eq.articulations.map((a) => a.node));
+      human.add(this.figure.group);
+    } else {
+      // Sem marca de pose: a pessoa fica em pé ao lado, só para dar escala.
+      human.position.set(b.max.x + 0.75, 0, 0);
+      const skin = new THREE.MeshStandardMaterial({ color: 0xb7b1a6, roughness: 0.9 });
+      const add = (g: THREE.BufferGeometry, x: number, y: number, z = 0) => {
+        const m = new THREE.Mesh(g, skin);
+        m.castShadow = true;
+        m.position.set(x, y, z);
+        human.add(m);
+        return m;
+      };
+      [-0.09, 0.09].forEach((x) => add(new THREE.CylinderGeometry(0.065, 0.055, 0.86, 16), x, 0.43));
+      add(new THREE.CylinderGeometry(0.17, 0.14, 0.6, 20), 0, 1.15).scale.z = 0.6;
+      add(new THREE.CylinderGeometry(0.045, 0.05, 0.1, 12), 0, 1.5);
+      add(new THREE.SphereGeometry(0.105, 24, 16), 0, 1.645);
+      [-1, 1].forEach((s) => {
+        add(new THREE.CylinderGeometry(0.045, 0.04, 0.66, 12), 0.215 * s, 1.11).rotation.z = 0.06 * s;
+      });
+      const hl = this.label('1,75 m', 0.34);
+      hl.position.set(0, 1.92, 0);
+      human.add(hl);
+    }
 
     // Medidas (cotas do catálogo, desenhadas sobre a envolvente real)
     const dims = new THREE.Group();
@@ -564,6 +578,7 @@ export class EquipmentViewer {
         phaseAt(this.time / DEFAULT_CYCLE_SECONDS)
       );
     }
+    if (this.state.human) this.figure?.update();
     this.controls?.update();
     this.renderer?.render(this.scene, this.camera);
   };

@@ -68,7 +68,7 @@
       },
       "animated": true,
       "triangles": 8844,
-      "glbBytes": 426572,
+      "glbBytes": 426704,
       "usdzBytes": 1318928
     },
     {
@@ -102,7 +102,7 @@
       },
       "animated": true,
       "triangles": 6020,
-      "glbBytes": 243128,
+      "glbBytes": 243244,
       "usdzBytes": 736927
     },
     {
@@ -136,7 +136,7 @@
       },
       "animated": true,
       "triangles": 6040,
-      "glbBytes": 238864,
+      "glbBytes": 238996,
       "usdzBytes": 732810
     },
     {
@@ -170,7 +170,7 @@
       },
       "animated": true,
       "triangles": 5352,
-      "glbBytes": 181088,
+      "glbBytes": 181212,
       "usdzBytes": 535403
     },
     {
@@ -204,7 +204,7 @@
       },
       "animated": true,
       "triangles": 5352,
-      "glbBytes": 181284,
+      "glbBytes": 181412,
       "usdzBytes": 536434
     },
     {
@@ -272,7 +272,7 @@
       },
       "animated": true,
       "triangles": 2336,
-      "glbBytes": 49752,
+      "glbBytes": 49864,
       "usdzBytes": 137799
     },
     {
@@ -306,7 +306,7 @@
       },
       "animated": true,
       "triangles": 6040,
-      "glbBytes": 238888,
+      "glbBytes": 239016,
       "usdzBytes": 732044
     },
     {
@@ -341,7 +341,7 @@
       "animated": true,
       "triangles": 5376,
       "glbBytes": 190020,
-      "usdzBytes": 600065
+      "usdzBytes": 600057
     },
     {
       "id": "LD-A011",
@@ -374,7 +374,7 @@
       },
       "animated": true,
       "triangles": 6404,
-      "glbBytes": 217908,
+      "glbBytes": 218040,
       "usdzBytes": 672841
     },
     {
@@ -408,7 +408,7 @@
       },
       "animated": true,
       "triangles": 6480,
-      "glbBytes": 224460,
+      "glbBytes": 224588,
       "usdzBytes": 683534
     },
     {
@@ -442,7 +442,7 @@
       },
       "animated": true,
       "triangles": 6116,
-      "glbBytes": 245172,
+      "glbBytes": 245288,
       "usdzBytes": 742666
     },
     {
@@ -476,7 +476,7 @@
       },
       "animated": true,
       "triangles": 6116,
-      "glbBytes": 245076,
+      "glbBytes": 245192,
       "usdzBytes": 742419
     },
     {
@@ -510,7 +510,7 @@
       },
       "animated": true,
       "triangles": 5352,
-      "glbBytes": 181028,
+      "glbBytes": 181156,
       "usdzBytes": 535630
     },
     {
@@ -544,7 +544,7 @@
       },
       "animated": true,
       "triangles": 6676,
-      "glbBytes": 282900,
+      "glbBytes": 283028,
       "usdzBytes": 899447
     },
     {
@@ -578,7 +578,7 @@
       },
       "animated": true,
       "triangles": 5972,
-      "glbBytes": 288020,
+      "glbBytes": 288148,
       "usdzBytes": 901488
     },
     {
@@ -612,7 +612,7 @@
       },
       "animated": true,
       "triangles": 5688,
-      "glbBytes": 230652,
+      "glbBytes": 230780,
       "usdzBytes": 713027
     },
     {
@@ -680,7 +680,7 @@
       },
       "animated": true,
       "triangles": 2944,
-      "glbBytes": 51072,
+      "glbBytes": 51180,
       "usdzBytes": 140575
     },
     {
@@ -748,7 +748,7 @@
       },
       "animated": true,
       "triangles": 6662,
-      "glbBytes": 226096,
+      "glbBytes": 226212,
       "usdzBytes": 691350
     },
     {
@@ -816,7 +816,7 @@
       },
       "animated": true,
       "triangles": 7158,
-      "glbBytes": 244360,
+      "glbBytes": 244476,
       "usdzBytes": 750019
     },
     {
@@ -850,7 +850,7 @@
       },
       "animated": true,
       "triangles": 4016,
-      "glbBytes": 132076,
+      "glbBytes": 132204,
       "usdzBytes": 405104
     },
     {
@@ -884,7 +884,7 @@
       },
       "animated": true,
       "triangles": 5364,
-      "glbBytes": 196788,
+      "glbBytes": 196900,
       "usdzBytes": 615115
     },
     {
@@ -952,7 +952,7 @@
       },
       "animated": true,
       "triangles": 4488,
-      "glbBytes": 78860,
+      "glbBytes": 78972,
       "usdzBytes": 209417
     },
     {
@@ -986,7 +986,7 @@
       },
       "animated": true,
       "triangles": 2944,
-      "glbBytes": 51172,
+      "glbBytes": 51280,
       "usdzBytes": 140491
     },
     {
@@ -1088,7 +1088,7 @@
       },
       "animated": true,
       "triangles": 6116,
-      "glbBytes": 244956,
+      "glbBytes": 245072,
       "usdzBytes": 742308
     },
     {
@@ -1122,7 +1122,7 @@
       },
       "animated": true,
       "triangles": 5692,
-      "glbBytes": 226180,
+      "glbBytes": 226308,
       "usdzBytes": 699102
     },
     {
@@ -1190,7 +1190,7 @@
       },
       "animated": true,
       "triangles": 6836,
-      "glbBytes": 273688,
+      "glbBytes": 273800,
       "usdzBytes": 866667
     },
     {
@@ -1326,7 +1326,7 @@
       },
       "animated": true,
       "triangles": 5688,
-      "glbBytes": 231276,
+      "glbBytes": 231404,
       "usdzBytes": 712615
     },
     {
@@ -1360,7 +1360,7 @@
       },
       "animated": true,
       "triangles": 6116,
-      "glbBytes": 245240,
+      "glbBytes": 245356,
       "usdzBytes": 742617
     },
     {
@@ -1972,7 +1972,7 @@
       },
       "animated": true,
       "triangles": 5318,
-      "glbBytes": 203516,
+      "glbBytes": 203632,
       "usdzBytes": 627176
     },
     {
@@ -2040,7 +2040,7 @@
       },
       "animated": true,
       "triangles": 8730,
-      "glbBytes": 284072,
+      "glbBytes": 284184,
       "usdzBytes": 896741
     },
     {
@@ -2074,7 +2074,7 @@
       },
       "animated": true,
       "triangles": 5140,
-      "glbBytes": 214116,
+      "glbBytes": 214248,
       "usdzBytes": 702280
     },
     {
@@ -2108,7 +2108,7 @@
       },
       "animated": true,
       "triangles": 5200,
-      "glbBytes": 201148,
+      "glbBytes": 201276,
       "usdzBytes": 617281
     },
     {
@@ -2142,7 +2142,7 @@
       },
       "animated": true,
       "triangles": 8730,
-      "glbBytes": 284076,
+      "glbBytes": 284192,
       "usdzBytes": 896798
     },
     {
@@ -2176,7 +2176,7 @@
       },
       "animated": true,
       "triangles": 5248,
-      "glbBytes": 201680,
+      "glbBytes": 201792,
       "usdzBytes": 618313
     },
     {
@@ -2244,7 +2244,7 @@
       },
       "animated": true,
       "triangles": 3684,
-      "glbBytes": 99440,
+      "glbBytes": 99552,
       "usdzBytes": 311945
     },
     {
@@ -2278,7 +2278,7 @@
       },
       "animated": true,
       "triangles": 3780,
-      "glbBytes": 99560,
+      "glbBytes": 99672,
       "usdzBytes": 311574
     },
     {
@@ -2312,7 +2312,7 @@
       },
       "animated": true,
       "triangles": 3600,
-      "glbBytes": 111672,
+      "glbBytes": 111800,
       "usdzBytes": 335949
     },
     {
@@ -2346,7 +2346,7 @@
       },
       "animated": true,
       "triangles": 5220,
-      "glbBytes": 238508,
+      "glbBytes": 238620,
       "usdzBytes": 764232
     },
     {
@@ -2380,7 +2380,7 @@
       },
       "animated": true,
       "triangles": 6302,
-      "glbBytes": 260480,
+      "glbBytes": 260596,
       "usdzBytes": 820146
     },
     {
@@ -2414,7 +2414,7 @@
       },
       "animated": true,
       "triangles": 6302,
-      "glbBytes": 260416,
+      "glbBytes": 260532,
       "usdzBytes": 820273
     },
     {
@@ -2448,7 +2448,7 @@
       },
       "animated": true,
       "triangles": 5414,
-      "glbBytes": 203680,
+      "glbBytes": 203796,
       "usdzBytes": 627764
     },
     {
@@ -2482,7 +2482,7 @@
       },
       "animated": true,
       "triangles": 4156,
-      "glbBytes": 157176,
+      "glbBytes": 157308,
       "usdzBytes": 502843
     },
     {
@@ -2516,7 +2516,7 @@
       },
       "animated": true,
       "triangles": 4156,
-      "glbBytes": 157124,
+      "glbBytes": 157252,
       "usdzBytes": 502767
     },
     {
@@ -2550,7 +2550,7 @@
       },
       "animated": true,
       "triangles": 4000,
-      "glbBytes": 118552,
+      "glbBytes": 118664,
       "usdzBytes": 367335
     },
     {
@@ -2584,7 +2584,7 @@
       },
       "animated": true,
       "triangles": 5172,
-      "glbBytes": 195172,
+      "glbBytes": 195304,
       "usdzBytes": 608088
     },
     {
@@ -2618,7 +2618,7 @@
       },
       "animated": true,
       "triangles": 4260,
-      "glbBytes": 126036,
+      "glbBytes": 126160,
       "usdzBytes": 375440
     },
     {
@@ -2654,7 +2654,7 @@
       },
       "animated": true,
       "triangles": 5004,
-      "glbBytes": 160700,
+      "glbBytes": 160832,
       "usdzBytes": 513373
     },
     {
@@ -2688,7 +2688,7 @@
       },
       "animated": true,
       "triangles": 7124,
-      "glbBytes": 252168,
+      "glbBytes": 252284,
       "usdzBytes": 761021
     },
     {
@@ -2722,7 +2722,7 @@
       },
       "animated": true,
       "triangles": 7048,
-      "glbBytes": 245760,
+      "glbBytes": 245892,
       "usdzBytes": 751028
     },
     {
@@ -2756,7 +2756,7 @@
       },
       "animated": true,
       "triangles": 7124,
-      "glbBytes": 252196,
+      "glbBytes": 252312,
       "usdzBytes": 760813
     },
     {
@@ -2790,7 +2790,7 @@
       },
       "animated": true,
       "triangles": 5984,
-      "glbBytes": 204828,
+      "glbBytes": 204960,
       "usdzBytes": 627396
     },
     {
@@ -2824,8 +2824,8 @@
       },
       "animated": true,
       "triangles": 7028,
-      "glbBytes": 250464,
-      "usdzBytes": 755388
+      "glbBytes": 250580,
+      "usdzBytes": 755374
     },
     {
       "id": "LD-B028",
@@ -2858,7 +2858,7 @@
       },
       "animated": true,
       "triangles": 5004,
-      "glbBytes": 160684,
+      "glbBytes": 160812,
       "usdzBytes": 511621
     },
     {
@@ -2892,7 +2892,7 @@
       },
       "animated": true,
       "triangles": 5944,
-      "glbBytes": 172392,
+      "glbBytes": 172520,
       "usdzBytes": 507091
     },
     {
@@ -2926,7 +2926,7 @@
       },
       "animated": true,
       "triangles": 5944,
-      "glbBytes": 172420,
+      "glbBytes": 172548,
       "usdzBytes": 507288
     },
     {
@@ -2960,7 +2960,7 @@
       },
       "animated": true,
       "triangles": 5196,
-      "glbBytes": 238496,
+      "glbBytes": 238608,
       "usdzBytes": 764758
     },
     {
@@ -2996,7 +2996,7 @@
       },
       "animated": true,
       "triangles": 6758,
-      "glbBytes": 225312,
+      "glbBytes": 225432,
       "usdzBytes": 697697
     },
     {
@@ -3030,7 +3030,7 @@
       },
       "animated": true,
       "triangles": 6662,
-      "glbBytes": 225088,
+      "glbBytes": 225208,
       "usdzBytes": 694474
     },
     {

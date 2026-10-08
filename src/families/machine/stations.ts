@@ -6,6 +6,7 @@
  */
 import type * as THREE from 'three';
 import type { Rig } from '../../parts/rig';
+import { poseAnchor, type PoseData } from '../../parts/pose';
 
 export const STATION_KINDS = [
   'seat-back',
@@ -71,14 +72,20 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     );
   };
 
+  /** Marca onde fica o quadril de quem usa, para a pessoa do visualizador. */
+  const pose = (z: number, data: Partial<PoseData> = {}, y = hs + 0.13) =>
+    g.add(poseAnchor([0, y, z], { kind: 'seated', tilt: 0, feet: 'floor', ...data }));
+
   switch (o.kind) {
     case 'seat-back':
       seat();
       backrest();
+      pose(-0.05, { tilt });
       break;
     case 'recline': {
       seat(0.02, 0.44, 0.44);
       backrest(0.6);
+      pose(-0.04, { tilt, feet: 'roller' });
       // Quadro inclinado que sobe da frente do piso até debaixo do assento.
       const under = rig.group('seat_frame', g);
       for (const s of [-1, 1] as const)
@@ -93,6 +100,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     }
     case 'seat-chest': {
       seat(0, 0.38, 0.34);
+      pose(-0.02, { tilt: -0.14 });
       const c = rig.group('chest_pad', g);
       rig.tube(c, [0, y0, 0.33], [0, hs + 0.42, 0.33], post);
       rig.pad(c, [0.3, 0.42, 0.09], [0, hs + 0.44, 0.27], 0, 'chest_pad_cushion');
@@ -100,6 +108,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     }
     case 'seat-thigh': {
       seat(0, 0.4, 0.36);
+      pose(-0.02);
       const c = rig.group('thigh_pads', g);
       rig.tube(c, [0, y0, 0.38], [0, hs + 0.2, 0.32], post);
       rig.roller(c, [-0.3, hs + 0.2, 0.3], [0.3, hs + 0.2, 0.3], 0.12, 'thigh_roller');
@@ -107,6 +116,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     }
     case 'seat-only':
       seat(0, 0.4, 0.36);
+      pose(-0.02);
       break;
     case 'prone': {
       const b = rig.group('bench', g);
@@ -133,6 +143,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     }
     case 'preacher': {
       seat(-0.05, 0.38, 0.32);
+      pose(-0.08, { tilt: -0.3 });
       const c = rig.group('arm_pad', g);
       rig.tube(c, [0, y0, 0.32], [0, hs + 0.22, 0.3], post);
       rig.pad(c, [0.56, 0.07, 0.42], [0, hs + 0.28, 0.27], 0.75, 'arm_pad_cushion');
@@ -140,6 +151,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     }
     case 'standing': {
       const p = rig.group('platform', g);
+      pose(0, { kind: 'standing' }, t + 0.035 + 0.88);
       rig.box(p, [0.72, 0.035, 0.6], [0, t + 0.018, 0], 'plate', 'platform_plate');
       break;
     }

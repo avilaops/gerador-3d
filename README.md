@@ -86,6 +86,10 @@ new EquipmentViewer(document.getElementById('viewer')!).setEquipment(spec);
 
 Um spec só com dimensões e família já gera um modelo. `params` escolhe o mecanismo ou a variante e refina a forma; `articulations` ajusta o curso por nó; `materials` troca as cores.
 
+## Pessoa usando o equipamento
+
+O botão "Pessoa 1,75 m" do visualizador senta (ou põe de pé) uma pessoa no equipamento, com as mãos nas pegadas e os pés no piso ou no rolo, e ela acompanha o movimento. Para isso a família marca o quadril de quem usa com `poseAnchor` (`src/parts/pose.ts`), um nó vazio chamado `pose_hip`. Onde não há marca (bancos, suportes, leg press, estações de cabo, máquinas deitadas), a pessoa fica em pé ao lado, só para dar escala.
+
 ## Como o modelo cabe na caixa do catálogo
 
 A estrutura carrega as medidas: longarinas no comprimento C, travessa na largura L, torre ou quadro na altura A. O mecanismo é dimensionado pelo corpo de quem usa (altura do assento, ombro, joelho). Se alguma peça passa da caixa em mais de 1%, o gerador remonta a família com dimensões de projeto corrigidas, o que mantém a seção dos tubos. Só o que sobra depois disso é corrigido por escala, e vira aviso no manifesto.

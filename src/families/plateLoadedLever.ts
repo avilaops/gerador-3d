@@ -12,6 +12,7 @@ import { z } from 'zod';
 import type { FamilyDefinition } from './types';
 import { beam, bentTube, box, plateHorn } from '../parts/primitives';
 import { Rig } from '../parts/rig';
+import { poseAnchor } from '../parts/pose';
 import { pivotArm } from '../parts/assemblies';
 import type { Articulation, Vec3 } from '../spec/schema';
 import { buildMachine } from './machine/machine';
@@ -185,6 +186,7 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
     rig.tube(seat, [0, y0, sz], [0, p.seatHeight - 0.05, sz], 0.07, 'frame', 'seat_post');
     rig.box(seat, [0.014, 0.3, 0.05], [0.042, p.seatHeight - 0.24, sz], 'plate', 'seat_adjuster');
     rig.pad(seat, [0.36, 0.07, 0.46], [0, p.seatHeight, sz + 0.07], -0.06, 'seat_pad');
+    root.add(poseAnchor([0, p.seatHeight + 0.13, sz - 0.06], { kind: 'seated', tilt: p.backrestTilt, feet: 'floor' }));
 
     const bh = p.backrestHeight;
     const bBottomZ = sz - 0.17;

@@ -12,6 +12,7 @@ import { z } from 'zod';
 import type { FamilyDefinition } from './types';
 import { beam, bentTube, cable, upholstery } from '../parts/primitives';
 import { Rig } from '../parts/rig';
+import { poseAnchor } from '../parts/pose';
 import { pivotArm, stackTower } from '../parts/assemblies';
 import type { Articulation } from '../spec/schema';
 import { buildMachine } from './machine/machine';
@@ -153,6 +154,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     rig.box(seat, [0.014, 0.26, 0.05], [0.045, p.seatHeight - 0.22, p.seatZ + 0.02], 'plate', 'seat_adjuster');
     rig.rod(seat, [0.05, p.seatHeight - 0.16, p.seatZ + 0.02], [0.13, p.seatHeight - 0.2, p.seatZ + 0.02], 0.014, 'chrome', 'seat_pin');
     rig.pad(seat, [p.seatWidth, 0.085, p.seatDepth], [0, p.seatHeight, p.seatZ], 0, 'seat_pad');
+    root.add(poseAnchor([0, p.seatHeight + 0.13, p.seatZ - 0.06], { kind: 'seated', tilt: p.backrestTilt, feet: 'floor' }));
 
     const backZ = p.seatZ - p.seatDepth / 2 - 0.13;
     const backY = p.seatHeight + 0.06 + p.backrestHeight / 2;
