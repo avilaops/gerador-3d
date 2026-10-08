@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "gerador-3d", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "--port", "5183", "--strictPort"], "port": 5183 }
+    { "name": "gerador-3d", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "--port", "5183", "--strictPort"], "port": 5183 },
+    { "name": "site-ludus", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "D:/Projetos/Ludusequipamentos-website", "run", "preview", "--", "--port", "4321"], "port": 4321 }
   ]
 }

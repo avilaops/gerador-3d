@@ -23,8 +23,7 @@
     "specs": "vite-node scripts/build-specs.ts --",
     "export": "vite-node scripts/export.ts --",
     "thumbs": "vite-node scripts/thumbnails.ts --",
-    "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus",
-    "deploy": "bash scripts/deploy.sh"
+    "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"
   },
   "dependencies": {
     "three": "0.149.0",
