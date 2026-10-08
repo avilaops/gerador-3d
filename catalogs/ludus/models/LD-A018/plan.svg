@@ -1,63 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.3717 -1.8441 3.0749 3.8884" role="img" aria-label="Planta do Tríceps Sentado (LD-A018): 1240 × 1835 mm, com 60 cm de área de treino em volta" data-equipment="LD-A018" data-unit="m">
-<title>Planta do Tríceps Sentado (LD-A018): 1240 × 1835 mm, com 60 cm de área de treino em volta</title>
-<rect class="eq-zone" x="-1.22" y="-1.5175" width="2.44" height="3.035" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0182;stroke-dasharray:0.1093 0.0728"/>
-<text class="eq-zone-label" x="0" y="-1.5721" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1038px;fill:#96764a;text-anchor:middle">área de treino · 2,44 × 3,04 m · 7,41 m²</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.371 -1.835 3.0718 3.8694" role="img" aria-label="Planta do Tríceps Sentado (LD-A018): 1240 × 1820 mm, com 60 cm de área de treino em volta" data-equipment="LD-A018" data-unit="m">
+<title>Planta do Tríceps Sentado (LD-A018): 1240 × 1820 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-1.22" y="-1.5101" width="2.44" height="3.0201" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0181;stroke-dasharray:0.1087 0.0725"/>
+<text class="eq-zone-label" x="0" y="-1.5644" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1033px;fill:#96764a;text-anchor:middle">área de treino · 2,44 × 3,02 m · 7,37 m²</text>
 <g class="eq-parts">
-<polygon class="eq-part" points="-0.39,-0.9075 -0.31,-0.9075 -0.31,0.9125 -0.39,0.9125" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.615,-0.9175 -0.445,-0.9175 -0.445,-0.8175 -0.615,-0.8175" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.4,0.7475 -0.3,0.7475 -0.3,0.9175 -0.4,0.9175" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.31,-0.9075 0.39,-0.9075 0.39,0.9125 0.31,0.9125" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.445,-0.9175 0.615,-0.9175 0.615,-0.8175 0.445,-0.8175" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.3,0.7475 0.4,0.7475 0.4,0.9175 0.3,0.9175" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.62,-0.9075 0.62,-0.9075 0.62,-0.8275 -0.62,-0.8275" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.35,0.8325 0.35,0.8325 0.35,0.9125 -0.35,0.9125" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.04,-0.8675 0.04,-0.8675 0.04,0.8725 -0.04,0.8725" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.035,0.3271 -0.0346,0.324 -0.0334,0.3211 -0.0315,0.3186 -0.029,0.3167 -0.0261,0.3155 -0.023,0.3151 0.023,0.3151 0.0261,0.3155 0.029,0.3167 0.0315,0.3186 0.0334,0.3211 0.0346,0.324 0.035,0.3271 0.035,0.3731 0.0346,0.3762 0.0334,0.3791 0.0315,0.3816 0.029,0.3835 0.0261,0.3847 0.023,0.3851 -0.023,0.3851 -0.0261,0.3847 -0.029,0.3835 -0.0315,0.3816 -0.0334,0.3791 -0.0346,0.3762 -0.035,0.3731" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.035,0.3276 0.047,0.3276 0.047,0.3726 0.035,0.3726" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.0325,0.3501 0.0326,0.3483 0.0329,0.3466 0.0333,0.3452 0.0338,0.344 0.0344,0.3433 0.035,0.3431 0.115,0.3431 0.1156,0.3433 0.1162,0.344 0.1167,0.3452 0.1171,0.3466 0.1174,0.3483 0.1175,0.3501 0.1174,0.3519 0.1171,0.3536 0.1167,0.355 0.1162,0.3562 0.1156,0.3569 0.115,0.3571 0.035,0.3571 0.0344,0.3569 0.0338,0.3562 0.0333,0.355 0.0329,0.3536 0.0326,0.3519" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.21,0.1824 -0.2083,0.1722 -0.2046,0.1645 -0.2005,0.1596 -0.1956,0.1555 -0.1879,0.1518 -0.1777,0.1501 0.1777,0.1501 0.1879,0.1518 0.1956,0.1555 0.2005,0.1596 0.2046,0.1645 0.2083,0.1722 0.21,0.1824 0.21,0.5178 0.2083,0.528 0.2046,0.5357 0.2005,0.5406 0.1956,0.5447 0.1879,0.5484 0.1777,0.5501 -0.1777,0.5501 -0.1879,0.5484 -0.1956,0.5447 -0.2005,0.5406 -0.2046,0.5357 -0.2083,0.528 -0.21,0.5178" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.17,0.0599 -0.1683,0.0498 -0.1646,0.0421 -0.1605,0.0373 -0.1556,0.0333 -0.1479,0.0295 -0.1377,0.0279 0.1377,0.0279 0.1479,0.0295 0.1556,0.0333 0.1605,0.0373 0.1646,0.0421 0.1683,0.0498 0.17,0.0599 0.17,0.1364 0.1683,0.1465 0.1646,0.1541 0.1605,0.159 0.1556,0.163 0.1479,0.1668 0.1377,0.1684 -0.1377,0.1684 -0.1479,0.1668 -0.1556,0.163 -0.1605,0.159 -0.1646,0.1541 -0.1683,0.1465 -0.17,0.1364" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.03,-0.0041 -0.0284,-0.0101 -0.024,-0.0145 -0.018,-0.0161 0.018,-0.0161 0.024,-0.0145 0.0284,-0.0101 0.03,-0.0041 0.03,0.0881 0.0284,0.0941 0.024,0.0985 0.018,0.1001 -0.018,0.1001 -0.024,0.0985 -0.0284,0.0941 -0.03,0.0881" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.04,-0.3299 0.04,-0.3299 0.04,-0.2499 -0.04,-0.2499" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.33,-0.2899 0.39,-0.2899 0.39,0.4301 0.33,0.4301" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.342,0.4301 0.378,0.4301 0.378,0.5801 0.342,0.5801" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.33,-0.6139 0.39,-0.6139 0.39,-0.2899 0.33,-0.2899" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.39,-0.6689 0.405,-0.6689 0.405,-0.5589 0.39,-0.5589" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.405,-0.6389 0.59,-0.6389 0.59,-0.5889 0.405,-0.5889" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.39,-0.2899 -0.33,-0.2899 -0.33,0.4301 -0.39,0.4301" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.378,0.4301 -0.342,0.4301 -0.342,0.5801 -0.378,0.5801" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.39,-0.6139 -0.33,-0.6139 -0.33,-0.2899 -0.39,-0.2899" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.405,-0.6689 -0.39,-0.6689 -0.39,-0.5589 -0.405,-0.5589" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.59,-0.6389 -0.405,-0.6389 -0.405,-0.5889 -0.59,-0.5889" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.36,-0.3124 0.36,-0.3124 0.36,-0.2674 -0.36,-0.2674" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.36,0.0401 0.36,0.0401 0.36,0.1001 -0.36,0.1001" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.41,-0.1979 0.4116,-0.2039 0.416,-0.2083 0.422,-0.2099 0.448,-0.2099 0.454,-0.2083 0.4584,-0.2039 0.46,-0.1979 0.46,0.061 0.4584,0.0667 0.454,0.0709 0.448,0.0724 0.422,0.0724 0.416,0.0709 0.4116,0.0667 0.41,0.061" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.41,-0.6408 0.4116,-0.6465 0.416,-0.6507 0.422,-0.6522 0.448,-0.6522 0.454,-0.6507 0.4584,-0.6465 0.46,-0.6408 0.46,-0.3819 0.4584,-0.3759 0.454,-0.3715 0.448,-0.3699 0.422,-0.3699 0.416,-0.3715 0.4116,-0.3759 0.41,-0.3819" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.41,-0.4199 0.46,-0.4199 0.46,-0.1599 0.41,-0.1599" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.41,-0.4699 0.46,-0.4699 0.46,-0.1099 0.41,-0.1099" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.395,-0.6049 0.475,-0.6049 0.475,0.0251 0.395,0.0251" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.46,-0.1979 -0.4584,-0.2039 -0.454,-0.2083 -0.448,-0.2099 -0.422,-0.2099 -0.416,-0.2083 -0.4116,-0.2039 -0.41,-0.1979 -0.41,0.061 -0.4116,0.0667 -0.416,0.0709 -0.422,0.0724 -0.448,0.0724 -0.454,0.0709 -0.4584,0.0667 -0.46,0.061" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.46,-0.6408 -0.4584,-0.6465 -0.454,-0.6507 -0.448,-0.6522 -0.422,-0.6522 -0.416,-0.6507 -0.4116,-0.6465 -0.41,-0.6408 -0.41,-0.3819 -0.4116,-0.3759 -0.416,-0.3715 -0.422,-0.3699 -0.448,-0.3699 -0.454,-0.3715 -0.4584,-0.3759 -0.46,-0.3819" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.46,-0.4199 -0.41,-0.4199 -0.41,-0.1599 -0.46,-0.1599" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.46,-0.4699 -0.41,-0.4699 -0.41,-0.1099 -0.46,-0.1099" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.475,-0.6049 -0.395,-0.6049 -0.395,0.0251 -0.475,0.0251" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.435,-0.1899 0.435,-0.1899 0.435,-0.1299 -0.435,-0.1299" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.435,-0.4449 0.435,-0.4449 0.435,-0.3949 -0.435,-0.3949" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.435,-0.3299 0.435,-0.3299 0.435,-0.2499 -0.435,-0.2499" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.475,-0.3699 0.487,-0.3699 0.487,-0.2099 0.475,-0.2099" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.487,-0.3509 0.495,-0.3509 0.495,-0.3289 0.487,-0.3289" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.487,-0.2509 0.495,-0.2509 0.495,-0.2289 0.487,-0.2289" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.487,-0.3699 -0.475,-0.3699 -0.475,-0.2099 -0.487,-0.2099" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.495,-0.3509 -0.487,-0.3509 -0.487,-0.3289 -0.495,-0.3289" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.495,-0.2509 -0.487,-0.2509 -0.487,-0.2289 -0.495,-0.2289" style="fill:#141413;stroke:#141413;stroke-width:0.0073;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.39,-0.9001 -0.31,-0.9001 -0.31,0.9051 -0.39,0.9051" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.615,-0.9101 -0.445,-0.9101 -0.445,-0.8101 -0.615,-0.8101" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.4,0.7401 -0.3,0.7401 -0.3,0.9101 -0.4,0.9101" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.62,-0.9021 -0.608,-0.9021 -0.608,-0.8181 -0.62,-0.8181" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.392,0.8931 -0.308,0.8931 -0.308,0.9051 -0.392,0.9051" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.31,-0.9001 0.39,-0.9001 0.39,0.9051 0.31,0.9051" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.445,-0.9101 0.615,-0.9101 0.615,-0.8101 0.445,-0.8101" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.3,0.7401 0.4,0.7401 0.4,0.9101 0.3,0.9101" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.608,-0.9021 0.62,-0.9021 0.62,-0.8181 0.608,-0.8181" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.308,0.8931 0.392,0.8931 0.392,0.9051 0.308,0.9051" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.62,-0.9001 0.62,-0.9001 0.62,-0.8201 -0.62,-0.8201" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.35,0.8251 0.35,0.8251 0.35,0.9051 -0.35,0.9051" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.04,-0.8601 0.04,-0.8601 0.04,0.8651 -0.04,0.8651" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.035,0.3244 -0.0346,0.3213 -0.0334,0.3184 -0.0315,0.3159 -0.029,0.314 -0.0261,0.3128 -0.023,0.3124 0.023,0.3124 0.0261,0.3128 0.029,0.314 0.0315,0.3159 0.0334,0.3184 0.0346,0.3213 0.035,0.3244 0.035,0.3704 0.0346,0.3735 0.0334,0.3764 0.0315,0.3789 0.029,0.3808 0.0261,0.382 0.023,0.3824 -0.023,0.3824 -0.0261,0.382 -0.029,0.3808 -0.0315,0.3789 -0.0334,0.3764 -0.0346,0.3735 -0.035,0.3704" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.035,0.3249 0.047,0.3249 0.047,0.3699 0.035,0.3699" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.0325,0.3474 0.0326,0.3456 0.0329,0.3439 0.0333,0.3425 0.0338,0.3414 0.0344,0.3407 0.035,0.3404 0.115,0.3404 0.1156,0.3407 0.1162,0.3414 0.1167,0.3425 0.1171,0.3439 0.1174,0.3456 0.1175,0.3474 0.1174,0.3492 0.1171,0.3509 0.1167,0.3524 0.1162,0.3535 0.1156,0.3542 0.115,0.3544 0.035,0.3544 0.0344,0.3542 0.0338,0.3535 0.0333,0.3524 0.0329,0.3509 0.0326,0.3492" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.21,0.1797 -0.2083,0.1695 -0.2046,0.1618 -0.2005,0.1569 -0.1956,0.1528 -0.1879,0.1491 -0.1777,0.1474 0.1777,0.1474 0.1879,0.1491 0.1956,0.1528 0.2005,0.1569 0.2046,0.1618 0.2083,0.1695 0.21,0.1797 0.21,0.5151 0.2083,0.5253 0.2046,0.533 0.2005,0.538 0.1956,0.542 0.1879,0.5458 0.1777,0.5474 -0.1777,0.5474 -0.1879,0.5458 -0.1956,0.542 -0.2005,0.538 -0.2046,0.533 -0.2083,0.5253 -0.21,0.5151" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.17,0.0587 -0.1683,0.0485 -0.1646,0.0409 -0.1605,0.036 -0.1556,0.032 -0.1479,0.0283 -0.1377,0.0266 0.1377,0.0266 0.1479,0.0283 0.1556,0.032 0.1605,0.036 0.1646,0.0409 0.1683,0.0485 0.17,0.0587 0.17,0.1337 0.1683,0.1438 0.1646,0.1515 0.1605,0.1564 0.1556,0.1604 0.1479,0.1641 0.1377,0.1657 -0.1377,0.1657 -0.1479,0.1641 -0.1556,0.1604 -0.1605,0.1564 -0.1646,0.1515 -0.1683,0.1438 -0.17,0.1337" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,-0.0061 -0.0284,-0.0121 -0.024,-0.0164 -0.018,-0.018 0.018,-0.018 0.024,-0.0164 0.0284,-0.0121 0.03,-0.0061 0.03,0.0854 0.0284,0.0914 0.024,0.0958 0.018,0.0974 -0.018,0.0974 -0.024,0.0958 -0.0284,0.0914 -0.03,0.0854" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.04,-0.3326 0.04,-0.3326 0.04,-0.2526 -0.04,-0.2526" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.33,-0.2926 0.39,-0.2926 0.39,0.4274 0.33,0.4274" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.342,0.4274 0.378,0.4274 0.378,0.5774 0.342,0.5774" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.33,-0.6166 0.39,-0.6166 0.39,-0.2926 0.33,-0.2926" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.39,-0.6716 0.405,-0.6716 0.405,-0.5616 0.39,-0.5616" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.405,-0.6416 0.59,-0.6416 0.59,-0.5916 0.405,-0.5916" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.39,-0.2926 -0.33,-0.2926 -0.33,0.4274 -0.39,0.4274" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.378,0.4274 -0.342,0.4274 -0.342,0.5774 -0.378,0.5774" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.39,-0.6166 -0.33,-0.6166 -0.33,-0.2926 -0.39,-0.2926" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.405,-0.6716 -0.39,-0.6716 -0.39,-0.5616 -0.405,-0.5616" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.59,-0.6416 -0.405,-0.6416 -0.405,-0.5916 -0.59,-0.5916" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.36,-0.3151 0.36,-0.3151 0.36,-0.2701 -0.36,-0.2701" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.36,0.0374 0.36,0.0374 0.36,0.0974 -0.36,0.0974" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.41,-0.2006 0.4116,-0.2066 0.416,-0.211 0.422,-0.2126 0.448,-0.2126 0.454,-0.211 0.4584,-0.2066 0.46,-0.2006 0.46,0.0548 0.4584,0.0605 0.454,0.0647 0.448,0.0662 0.422,0.0662 0.416,0.0647 0.4116,0.0605 0.41,0.0548" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.41,-0.64 0.4116,-0.6457 0.416,-0.6498 0.422,-0.6513 0.448,-0.6513 0.454,-0.6498 0.4584,-0.6457 0.46,-0.64 0.46,-0.3846 0.4584,-0.3786 0.454,-0.3742 0.448,-0.3726 0.422,-0.3726 0.416,-0.3742 0.4116,-0.3786 0.41,-0.3846" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.41,-0.4226 0.46,-0.4226 0.46,-0.1626 0.41,-0.1626" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.41,-0.4726 0.46,-0.4726 0.46,-0.1126 0.41,-0.1126" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.395,-0.604 0.475,-0.604 0.475,0.0189 0.395,0.0189" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.46,-0.2006 -0.4584,-0.2066 -0.454,-0.211 -0.448,-0.2126 -0.422,-0.2126 -0.416,-0.211 -0.4116,-0.2066 -0.41,-0.2006 -0.41,0.0548 -0.4116,0.0605 -0.416,0.0647 -0.422,0.0662 -0.448,0.0662 -0.454,0.0647 -0.4584,0.0605 -0.46,0.0548" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.46,-0.64 -0.4584,-0.6457 -0.454,-0.6498 -0.448,-0.6513 -0.422,-0.6513 -0.416,-0.6498 -0.4116,-0.6457 -0.41,-0.64 -0.41,-0.3846 -0.4116,-0.3786 -0.416,-0.3742 -0.422,-0.3726 -0.448,-0.3726 -0.454,-0.3742 -0.4584,-0.3786 -0.46,-0.3846" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.46,-0.4226 -0.41,-0.4226 -0.41,-0.1626 -0.46,-0.1626" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.46,-0.4726 -0.41,-0.4726 -0.41,-0.1126 -0.46,-0.1126" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.475,-0.604 -0.395,-0.604 -0.395,0.0189 -0.475,0.0189" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.435,-0.1926 0.435,-0.1926 0.435,-0.1326 -0.435,-0.1326" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.435,-0.4476 0.435,-0.4476 0.435,-0.3976 -0.435,-0.3976" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.435,-0.3326 0.435,-0.3326 0.435,-0.2526 -0.435,-0.2526" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.475,-0.3726 0.487,-0.3726 0.487,-0.2126 0.475,-0.2126" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.487,-0.3536 0.495,-0.3536 0.495,-0.3316 0.487,-0.3316" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.487,-0.2536 0.495,-0.2536 0.495,-0.2316 0.487,-0.2316" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.487,-0.3726 -0.475,-0.3726 -0.475,-0.2126 -0.487,-0.2126" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.495,-0.3536 -0.487,-0.3536 -0.487,-0.3316 -0.495,-0.3316" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.495,-0.2536 -0.487,-0.2536 -0.487,-0.2316 -0.495,-0.2316" style="fill:#141413;stroke:#141413;stroke-width:0.0072;stroke-linejoin:round"/>
 </g>
-<line class="eq-dim" x1="-0.62" y1="1.7603" x2="0.62" y2="1.7603" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<line class="eq-dim" x1="-0.62" y1="1.6844" x2="-0.62" y2="1.8362" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<line class="eq-dim" x1="0.62" y1="1.6844" x2="0.62" y2="1.8362" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<text class="eq-text" x="0" y="1.9133" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1093px;fill:#6d6a63;text-anchor:middle">L 1240 mm</text>
-<line class="eq-dim" x1="1.4628" y1="-0.9175" x2="1.4628" y2="0.9175" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<line class="eq-dim" x1="1.3869" y1="-0.9175" x2="1.5387" y2="-0.9175" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<line class="eq-dim" x1="1.3869" y1="0.9175" x2="1.5387" y2="0.9175" style="stroke:#6d6a63;stroke-width:0.0146"/>
-<text class="eq-text" x="1.6048" y="0" transform="rotate(90 1.6048 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1093px;fill:#6d6a63;text-anchor:middle">C 1820 mm</text>
-<text class="eq-text" x="0" y="2.0225" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1093px;fill:#6d6a63;text-anchor:middle;font-size:0.0874px;letter-spacing:.1em">▼ FRENTE</text>
+<line class="eq-dim" x1="-0.62" y1="1.7517" x2="0.62" y2="1.7517" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<line class="eq-dim" x1="-0.62" y1="1.6762" x2="-0.62" y2="1.8272" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<line class="eq-dim" x1="0.62" y1="1.6762" x2="0.62" y2="1.8272" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<text class="eq-text" x="0" y="1.9039" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1087px;fill:#6d6a63;text-anchor:middle">L 1240 mm</text>
+<line class="eq-dim" x1="1.4616" y1="-0.9101" x2="1.4616" y2="0.9101" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<line class="eq-dim" x1="1.3861" y1="-0.9101" x2="1.5371" y2="-0.9101" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<line class="eq-dim" x1="1.3861" y1="0.9101" x2="1.5371" y2="0.9101" style="stroke:#6d6a63;stroke-width:0.0145"/>
+<text class="eq-text" x="1.603" y="0" transform="rotate(90 1.603 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1087px;fill:#6d6a63;text-anchor:middle">C 1820 mm</text>
+<text class="eq-text" x="0" y="2.0126" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.1087px;fill:#6d6a63;text-anchor:middle;font-size:0.087px;letter-spacing:.1em">▼ FRENTE</text>
 </svg>

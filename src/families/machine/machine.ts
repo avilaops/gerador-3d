@@ -68,6 +68,15 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const zFront = L / 2;
 
   const base = rig.group('base');
+  /** Tampa plástica preta na ponta aberta de um tubo da base. */
+  const tampa = (x: number, zc: number, eixo: 'x' | 'z', sentido: 1 | -1) =>
+    rig.box(
+      base,
+      eixo === 'x' ? [0.012, t + 0.004, t + 0.004] : [t + 0.004, t + 0.004, 0.012],
+      eixo === 'x' ? [x + sentido * 0.006, y0, zc] : [x, y0, zc + sentido * 0.006],
+      'rubber',
+      'end_cap'
+    );
   const sapata = (x: number, zc: number, ao_longo: 'x' | 'z' = 'x') =>
     rig.box(base, ao_longo === 'x' ? [0.17, 0.012, 0.1] : [0.1, 0.012, 0.17], [x, 0.006, zc], 'rubber', 'foot');
   if (plates) {
@@ -76,6 +85,8 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       rig.tube(base, [s * railX, y0, zRear], [s * railX, y0, zFront], t);
       sapata(s * (W / 2 - 0.09), zRear + t / 2);
       sapata(s * railX, zFront - 0.08, 'z');
+      tampa(s * (W / 2 - 0.012), zRear + t / 2, 'x', s);
+      tampa(s * railX, zFront - 0.012, 'z', 1);
     }
     rig.tube(base, [-W / 2, y0, zRear + t / 2], [W / 2, y0, zRear + t / 2], t);
     rig.tube(base, [-railX, y0, zFront - t / 2], [railX, y0, zFront - t / 2], t);
@@ -90,6 +101,8 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     for (const s of [-1, 1] as const) {
       sapata(s * (W / 2 - 0.09), zRear + t / 2);
       sapata(s * (pe - 0.06), zFront - t / 2);
+      tampa(s * (W / 2 - 0.012), zRear + t / 2, 'x', s);
+      tampa(s * (pe - 0.012), zFront - t / 2, 'x', s);
     }
   }
 

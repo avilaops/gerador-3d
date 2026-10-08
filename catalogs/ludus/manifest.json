@@ -33,9 +33,9 @@
         "areaM2": 6.65
       },
       "animated": true,
-      "triangles": 4460,
-      "glbBytes": 131900,
-      "usdzBytes": 405255
+      "triangles": 4508,
+      "glbBytes": 132316,
+      "usdzBytes": 406591
     },
     {
       "id": "LD-A002",
@@ -101,9 +101,9 @@
         "areaM2": 6.45
       },
       "animated": true,
-      "triangles": 6020,
-      "glbBytes": 243244,
-      "usdzBytes": 736927
+      "triangles": 6068,
+      "glbBytes": 243760,
+      "usdzBytes": 739041
     },
     {
       "id": "LD-A004",
@@ -135,9 +135,9 @@
         "areaM2": 6.58
       },
       "animated": true,
-      "triangles": 6040,
-      "glbBytes": 238996,
-      "usdzBytes": 732810
+      "triangles": 6088,
+      "glbBytes": 239464,
+      "usdzBytes": 733655
     },
     {
       "id": "LD-A005",
@@ -161,7 +161,7 @@
       "deviationPct": {
         "length": 0.9,
         "width": 0,
-        "height": 0.49
+        "height": 0.59
       },
       "trainingArea": {
         "widthM": 2.25,
@@ -169,9 +169,9 @@
         "areaM2": 6.47
       },
       "animated": true,
-      "triangles": 5352,
-      "glbBytes": 181212,
-      "usdzBytes": 535403
+      "triangles": 5400,
+      "glbBytes": 181628,
+      "usdzBytes": 536837
     },
     {
       "id": "LD-A006",
@@ -195,7 +195,7 @@
       "deviationPct": {
         "length": 0.97,
         "width": 0,
-        "height": 0.5
+        "height": 0.6
       },
       "trainingArea": {
         "widthM": 2.25,
@@ -203,9 +203,9 @@
         "areaM2": 6.22
       },
       "animated": true,
-      "triangles": 5352,
-      "glbBytes": 181412,
-      "usdzBytes": 536434
+      "triangles": 5400,
+      "glbBytes": 181800,
+      "usdzBytes": 537994
     },
     {
       "id": "LD-A007",
@@ -237,9 +237,9 @@
         "areaM2": 7.92
       },
       "animated": true,
-      "triangles": 5400,
-      "glbBytes": 159024,
-      "usdzBytes": 474150
+      "triangles": 5448,
+      "glbBytes": 159468,
+      "usdzBytes": 475540
     },
     {
       "id": "LD-A008",
@@ -263,7 +263,7 @@
       "deviationPct": {
         "length": 0.73,
         "width": 0,
-        "height": -0.02
+        "height": 0.36
       },
       "trainingArea": {
         "widthM": 2.02,
@@ -271,9 +271,9 @@
         "areaM2": 6.6
       },
       "animated": true,
-      "triangles": 2336,
-      "glbBytes": 49864,
-      "usdzBytes": 137799
+      "triangles": 2384,
+      "glbBytes": 50304,
+      "usdzBytes": 139270
     },
     {
       "id": "LD-A009",
@@ -305,9 +305,9 @@
         "areaM2": 5.81
       },
       "animated": true,
-      "triangles": 6040,
-      "glbBytes": 239016,
-      "usdzBytes": 732044
+      "triangles": 6088,
+      "glbBytes": 239480,
+      "usdzBytes": 733436
     },
     {
       "id": "LD-A010",
@@ -339,9 +339,9 @@
         "areaM2": 8.12
       },
       "animated": true,
-      "triangles": 5376,
-      "glbBytes": 190020,
-      "usdzBytes": 600057
+      "triangles": 5424,
+      "glbBytes": 190472,
+      "usdzBytes": 601534
     },
     {
       "id": "LD-A011",
@@ -373,9 +373,9 @@
         "areaM2": 6.67
       },
       "animated": true,
-      "triangles": 6404,
-      "glbBytes": 218040,
-      "usdzBytes": 672841
+      "triangles": 6452,
+      "glbBytes": 218464,
+      "usdzBytes": 674119
     },
     {
       "id": "LD-A012",
@@ -407,9 +407,9 @@
         "areaM2": 6.7
       },
       "animated": true,
-      "triangles": 6480,
-      "glbBytes": 224588,
-      "usdzBytes": 683534
+      "triangles": 6528,
+      "glbBytes": 225008,
+      "usdzBytes": 684905
     },
     {
       "id": "LD-A013",
@@ -433,7 +433,7 @@
       "deviationPct": {
         "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.01
       },
       "trainingArea": {
         "widthM": 2.7,
@@ -441,9 +441,9 @@
         "areaM2": 6.67
       },
       "animated": true,
-      "triangles": 6116,
-      "glbBytes": 245288,
-      "usdzBytes": 742666
+      "triangles": 6164,
+      "glbBytes": 245728,
+      "usdzBytes": 743810
     },
     {
       "id": "LD-A014",
@@ -475,9 +475,9 @@
         "areaM2": 6.35
       },
       "animated": true,
-      "triangles": 6116,
-      "glbBytes": 245192,
-      "usdzBytes": 742419
+      "triangles": 6164,
+      "glbBytes": 245632,
+      "usdzBytes": 744284
     },
     {
       "id": "LD-A015",
@@ -501,7 +501,7 @@
       "deviationPct": {
         "length": 0.83,
         "width": 0,
-        "height": 0.49
+        "height": 0.59
       },
       "trainingArea": {
         "widthM": 2.27,
@@ -509,9 +509,9 @@
         "areaM2": 6.87
       },
       "animated": true,
-      "triangles": 5352,
-      "glbBytes": 181156,
-      "usdzBytes": 535630
+      "triangles": 5400,
+      "glbBytes": 181544,
+      "usdzBytes": 537204
     },
     {
       "id": "LD-A016",
@@ -543,9 +543,9 @@
         "areaM2": 6.13
       },
       "animated": true,
-      "triangles": 6676,
-      "glbBytes": 283028,
-      "usdzBytes": 899447
+      "triangles": 6724,
+      "glbBytes": 283496,
+      "usdzBytes": 900856
     },
     {
       "id": "LD-A017",
@@ -569,7 +569,7 @@
       "deviationPct": {
         "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.01
       },
       "trainingArea": {
         "widthM": 2.5,
@@ -577,9 +577,9 @@
         "areaM2": 6.45
       },
       "animated": true,
-      "triangles": 5972,
-      "glbBytes": 288148,
-      "usdzBytes": 901488
+      "triangles": 6020,
+      "glbBytes": 288580,
+      "usdzBytes": 902905
     },
     {
       "id": "LD-A018",
@@ -601,19 +601,19 @@
         "height": 1090
       },
       "deviationPct": {
-        "length": 0.82,
+        "length": 0.01,
         "width": 0,
-        "height": 0.92
+        "height": 0.01
       },
       "trainingArea": {
         "widthM": 2.44,
-        "lengthM": 3.035,
-        "areaM2": 7.41
+        "lengthM": 3.02,
+        "areaM2": 7.37
       },
       "animated": true,
-      "triangles": 5688,
-      "glbBytes": 230780,
-      "usdzBytes": 713027
+      "triangles": 5736,
+      "glbBytes": 231396,
+      "usdzBytes": 715247
     },
     {
       "id": "LD-A019",
@@ -637,7 +637,7 @@
       "deviationPct": {
         "length": 0.96,
         "width": 0,
-        "height": 0
+        "height": 0.19
       },
       "trainingArea": {
         "widthM": 3.39,
@@ -645,9 +645,9 @@
         "areaM2": 11.22
       },
       "animated": true,
-      "triangles": 5016,
-      "glbBytes": 158268,
-      "usdzBytes": 472427
+      "triangles": 5064,
+      "glbBytes": 158660,
+      "usdzBytes": 473915
     },
     {
       "id": "LD-A020",
@@ -671,7 +671,7 @@
       "deviationPct": {
         "length": 0.96,
         "width": 0,
-        "height": 0
+        "height": 0.24
       },
       "trainingArea": {
         "widthM": 2.575,
@@ -679,9 +679,9 @@
         "areaM2": 7.13
       },
       "animated": true,
-      "triangles": 2944,
-      "glbBytes": 51180,
-      "usdzBytes": 140575
+      "triangles": 2992,
+      "glbBytes": 51604,
+      "usdzBytes": 141957
     },
     {
       "id": "LD-A021",
@@ -705,7 +705,7 @@
       "deviationPct": {
         "length": 0.83,
         "width": 0,
-        "height": 0
+        "height": 0.2
       },
       "trainingArea": {
         "widthM": 2.55,
@@ -713,9 +713,9 @@
         "areaM2": 7.71
       },
       "animated": true,
-      "triangles": 5880,
-      "glbBytes": 235776,
-      "usdzBytes": 733465
+      "triangles": 5928,
+      "glbBytes": 236168,
+      "usdzBytes": 734950
     },
     {
       "id": "LD-A022",
@@ -747,9 +747,9 @@
         "areaM2": 6.84
       },
       "animated": true,
-      "triangles": 6662,
-      "glbBytes": 226212,
-      "usdzBytes": 691350
+      "triangles": 6710,
+      "glbBytes": 226680,
+      "usdzBytes": 692697
     },
     {
       "id": "LD-A023",
@@ -815,9 +815,9 @@
         "areaM2": 6.79
       },
       "animated": true,
-      "triangles": 7158,
-      "glbBytes": 244476,
-      "usdzBytes": 750019
+      "triangles": 7206,
+      "glbBytes": 244956,
+      "usdzBytes": 751361
     },
     {
       "id": "LD-A025",
@@ -849,9 +849,9 @@
         "areaM2": 4.98
       },
       "animated": true,
-      "triangles": 4016,
-      "glbBytes": 132204,
-      "usdzBytes": 405104
+      "triangles": 4064,
+      "glbBytes": 132620,
+      "usdzBytes": 406539
     },
     {
       "id": "LD-A026",
@@ -883,9 +883,9 @@
         "areaM2": 7.5
       },
       "animated": true,
-      "triangles": 5364,
-      "glbBytes": 196900,
-      "usdzBytes": 615115
+      "triangles": 5412,
+      "glbBytes": 197376,
+      "usdzBytes": 616474
     },
     {
       "id": "LD-A027",
@@ -917,9 +917,9 @@
         "areaM2": 7.85
       },
       "animated": true,
-      "triangles": 4292,
-      "glbBytes": 132144,
-      "usdzBytes": 407526
+      "triangles": 4340,
+      "glbBytes": 132580,
+      "usdzBytes": 409061
     },
     {
       "id": "LD-A028",
@@ -951,9 +951,9 @@
         "areaM2": 7.78
       },
       "animated": true,
-      "triangles": 4488,
-      "glbBytes": 78972,
-      "usdzBytes": 209417
+      "triangles": 4536,
+      "glbBytes": 79416,
+      "usdzBytes": 210813
     },
     {
       "id": "LD-A029",
@@ -985,9 +985,9 @@
         "areaM2": 7.48
       },
       "animated": true,
-      "triangles": 2944,
-      "glbBytes": 51280,
-      "usdzBytes": 140491
+      "triangles": 2992,
+      "glbBytes": 51724,
+      "usdzBytes": 141949
     },
     {
       "id": "LD-A030",
@@ -1053,9 +1053,9 @@
         "areaM2": 5.7
       },
       "animated": true,
-      "triangles": 4996,
-      "glbBytes": 170008,
-      "usdzBytes": 546314
+      "triangles": 5044,
+      "glbBytes": 170436,
+      "usdzBytes": 547803
     },
     {
       "id": "LD-A032",
@@ -1087,9 +1087,9 @@
         "areaM2": 6.2
       },
       "animated": true,
-      "triangles": 6116,
-      "glbBytes": 245072,
-      "usdzBytes": 742308
+      "triangles": 6164,
+      "glbBytes": 245512,
+      "usdzBytes": 743799
     },
     {
       "id": "LD-A033",
@@ -1121,9 +1121,9 @@
         "areaM2": 5.85
       },
       "animated": true,
-      "triangles": 5692,
-      "glbBytes": 226308,
-      "usdzBytes": 699102
+      "triangles": 5740,
+      "glbBytes": 226752,
+      "usdzBytes": 701124
     },
     {
       "id": "LD-A034",
@@ -1189,9 +1189,9 @@
         "areaM2": 6.43
       },
       "animated": true,
-      "triangles": 6836,
-      "glbBytes": 273800,
-      "usdzBytes": 866667
+      "triangles": 6884,
+      "glbBytes": 274224,
+      "usdzBytes": 867958
     },
     {
       "id": "LD-A036",
@@ -1325,9 +1325,9 @@
         "areaM2": 5.92
       },
       "animated": true,
-      "triangles": 5688,
-      "glbBytes": 231404,
-      "usdzBytes": 712615
+      "triangles": 5736,
+      "glbBytes": 231872,
+      "usdzBytes": 714017
     },
     {
       "id": "LD-A040",
@@ -1359,9 +1359,9 @@
         "areaM2": 6.09
       },
       "animated": true,
-      "triangles": 6116,
-      "glbBytes": 245356,
-      "usdzBytes": 742617
+      "triangles": 6164,
+      "glbBytes": 245836,
+      "usdzBytes": 744235
     },
     {
       "id": "LD-A041",
@@ -1937,9 +1937,9 @@
         "areaM2": 6.6
       },
       "animated": true,
-      "triangles": 5484,
-      "glbBytes": 214108,
-      "usdzBytes": 671800
+      "triangles": 5532,
+      "glbBytes": 214644,
+      "usdzBytes": 673071
     },
     {
       "id": "LD-B002",
@@ -1971,9 +1971,9 @@
         "areaM2": 5.71
       },
       "animated": true,
-      "triangles": 5318,
-      "glbBytes": 203632,
-      "usdzBytes": 627176
+      "triangles": 5366,
+      "glbBytes": 204184,
+      "usdzBytes": 628491
     },
     {
       "id": "LD-B003",
@@ -2073,9 +2073,9 @@
         "areaM2": 4.89
       },
       "animated": true,
-      "triangles": 5140,
-      "glbBytes": 214248,
-      "usdzBytes": 702280
+      "triangles": 5188,
+      "glbBytes": 214780,
+      "usdzBytes": 703571
     },
     {
       "id": "LD-B006",
@@ -2107,9 +2107,9 @@
         "areaM2": 7.22
       },
       "animated": true,
-      "triangles": 5200,
-      "glbBytes": 201276,
-      "usdzBytes": 617281
+      "triangles": 5248,
+      "glbBytes": 201820,
+      "usdzBytes": 618603
     },
     {
       "id": "LD-B007",
@@ -2175,9 +2175,9 @@
         "areaM2": 6.11
       },
       "animated": true,
-      "triangles": 5248,
-      "glbBytes": 201792,
-      "usdzBytes": 618313
+      "triangles": 5296,
+      "glbBytes": 202336,
+      "usdzBytes": 619678
     },
     {
       "id": "LD-B009",
@@ -2209,9 +2209,9 @@
         "areaM2": 5.78
       },
       "animated": true,
-      "triangles": 4970,
-      "glbBytes": 140192,
-      "usdzBytes": 425102
+      "triangles": 5018,
+      "glbBytes": 140728,
+      "usdzBytes": 426391
     },
     {
       "id": "LD-B010",
@@ -2243,9 +2243,9 @@
         "areaM2": 6.33
       },
       "animated": true,
-      "triangles": 3684,
-      "glbBytes": 99552,
-      "usdzBytes": 311945
+      "triangles": 3732,
+      "glbBytes": 100088,
+      "usdzBytes": 313426
     },
     {
       "id": "LD-B011",
@@ -2277,9 +2277,9 @@
         "areaM2": 6.26
       },
       "animated": true,
-      "triangles": 3780,
-      "glbBytes": 99672,
-      "usdzBytes": 311574
+      "triangles": 3828,
+      "glbBytes": 100208,
+      "usdzBytes": 312898
     },
     {
       "id": "LD-B012",
@@ -2311,9 +2311,9 @@
         "areaM2": 6.31
       },
       "animated": true,
-      "triangles": 3600,
-      "glbBytes": 111800,
-      "usdzBytes": 335949
+      "triangles": 3648,
+      "glbBytes": 112336,
+      "usdzBytes": 337333
     },
     {
       "id": "LD-B013",
@@ -2345,9 +2345,9 @@
         "areaM2": 5.89
       },
       "animated": true,
-      "triangles": 5220,
-      "glbBytes": 238620,
-      "usdzBytes": 764232
+      "triangles": 5268,
+      "glbBytes": 239152,
+      "usdzBytes": 765588
     },
     {
       "id": "LD-B014",
@@ -2379,9 +2379,9 @@
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 6302,
-      "glbBytes": 260596,
-      "usdzBytes": 820146
+      "triangles": 6350,
+      "glbBytes": 261140,
+      "usdzBytes": 821569
     },
     {
       "id": "LD-B015",
@@ -2413,9 +2413,9 @@
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 6302,
-      "glbBytes": 260532,
-      "usdzBytes": 820273
+      "triangles": 6350,
+      "glbBytes": 261076,
+      "usdzBytes": 821696
     },
     {
       "id": "LD-B016",
@@ -2447,9 +2447,9 @@
         "areaM2": 6.65
       },
       "animated": true,
-      "triangles": 5414,
-      "glbBytes": 203796,
-      "usdzBytes": 627764
+      "triangles": 5462,
+      "glbBytes": 204352,
+      "usdzBytes": 629084
     },
     {
       "id": "LD-B017",
@@ -2481,9 +2481,9 @@
         "areaM2": 5.28
       },
       "animated": true,
-      "triangles": 4156,
-      "glbBytes": 157308,
-      "usdzBytes": 502843
+      "triangles": 4204,
+      "glbBytes": 157848,
+      "usdzBytes": 504125
     },
     {
       "id": "LD-B018",
@@ -2515,9 +2515,9 @@
         "areaM2": 5.36
       },
       "animated": true,
-      "triangles": 4156,
-      "glbBytes": 157252,
-      "usdzBytes": 502767
+      "triangles": 4204,
+      "glbBytes": 157784,
+      "usdzBytes": 504054
     },
     {
       "id": "LD-B019",
@@ -2549,9 +2549,9 @@
         "areaM2": 5.36
       },
       "animated": true,
-      "triangles": 4000,
-      "glbBytes": 118664,
-      "usdzBytes": 367335
+      "triangles": 4048,
+      "glbBytes": 119208,
+      "usdzBytes": 368734
     },
     {
       "id": "LD-B020",
@@ -2583,9 +2583,9 @@
         "areaM2": 5.17
       },
       "animated": true,
-      "triangles": 5172,
-      "glbBytes": 195304,
-      "usdzBytes": 608088
+      "triangles": 5220,
+      "glbBytes": 195840,
+      "usdzBytes": 609336
     },
     {
       "id": "LD-B021",
@@ -2617,9 +2617,9 @@
         "areaM2": 7.26
       },
       "animated": true,
-      "triangles": 4260,
-      "glbBytes": 126160,
-      "usdzBytes": 375440
+      "triangles": 4308,
+      "glbBytes": 126700,
+      "usdzBytes": 377001
     },
     {
       "id": "LD-B022",
@@ -2653,9 +2653,9 @@
         "areaM2": 5.82
       },
       "animated": true,
-      "triangles": 5004,
-      "glbBytes": 160832,
-      "usdzBytes": 513373
+      "triangles": 5052,
+      "glbBytes": 161416,
+      "usdzBytes": 515709
     },
     {
       "id": "LD-B023",
@@ -2687,9 +2687,9 @@
         "areaM2": 6.51
       },
       "animated": true,
-      "triangles": 7124,
-      "glbBytes": 252284,
-      "usdzBytes": 761021
+      "triangles": 7172,
+      "glbBytes": 252840,
+      "usdzBytes": 761802
     },
     {
       "id": "LD-B024",
@@ -2721,9 +2721,9 @@
         "areaM2": 6.95
       },
       "animated": true,
-      "triangles": 7048,
-      "glbBytes": 245892,
-      "usdzBytes": 751028
+      "triangles": 7096,
+      "glbBytes": 246460,
+      "usdzBytes": 751893
     },
     {
       "id": "LD-B025",
@@ -2755,9 +2755,9 @@
         "areaM2": 6.52
       },
       "animated": true,
-      "triangles": 7124,
-      "glbBytes": 252312,
-      "usdzBytes": 760813
+      "triangles": 7172,
+      "glbBytes": 252876,
+      "usdzBytes": 762104
     },
     {
       "id": "LD-B026",
@@ -2789,9 +2789,9 @@
         "areaM2": 6.54
       },
       "animated": true,
-      "triangles": 5984,
-      "glbBytes": 204960,
-      "usdzBytes": 627396
+      "triangles": 6032,
+      "glbBytes": 205528,
+      "usdzBytes": 628725
     },
     {
       "id": "LD-B027",
@@ -2823,9 +2823,9 @@
         "areaM2": 6.23
       },
       "animated": true,
-      "triangles": 7028,
-      "glbBytes": 250580,
-      "usdzBytes": 755374
+      "triangles": 7076,
+      "glbBytes": 251156,
+      "usdzBytes": 756715
     },
     {
       "id": "LD-B028",
@@ -2857,9 +2857,9 @@
         "areaM2": 5.37
       },
       "animated": true,
-      "triangles": 5004,
-      "glbBytes": 160812,
-      "usdzBytes": 511621
+      "triangles": 5052,
+      "glbBytes": 161360,
+      "usdzBytes": 512888
     },
     {
       "id": "LD-B029",
@@ -2891,9 +2891,9 @@
         "areaM2": 6.49
       },
       "animated": true,
-      "triangles": 5944,
-      "glbBytes": 172520,
-      "usdzBytes": 507091
+      "triangles": 5992,
+      "glbBytes": 173044,
+      "usdzBytes": 508259
     },
     {
       "id": "LD-B030",
@@ -2925,9 +2925,9 @@
         "areaM2": 7.28
       },
       "animated": true,
-      "triangles": 5944,
-      "glbBytes": 172548,
-      "usdzBytes": 507288
+      "triangles": 5992,
+      "glbBytes": 173108,
+      "usdzBytes": 508260
     },
     {
       "id": "LD-B031",
@@ -2959,9 +2959,9 @@
         "areaM2": 5.11
       },
       "animated": true,
-      "triangles": 5196,
-      "glbBytes": 238608,
-      "usdzBytes": 764758
+      "triangles": 5244,
+      "glbBytes": 239148,
+      "usdzBytes": 766102
     },
     {
       "id": "LD-B032",
@@ -2995,9 +2995,9 @@
         "areaM2": 6.53
       },
       "animated": true,
-      "triangles": 6758,
-      "glbBytes": 225432,
-      "usdzBytes": 697697
+      "triangles": 6806,
+      "glbBytes": 226020,
+      "usdzBytes": 700272
     },
     {
       "id": "LD-B033",
@@ -3029,9 +3029,9 @@
         "areaM2": 6.42
       },
       "animated": true,
-      "triangles": 6662,
-      "glbBytes": 225208,
-      "usdzBytes": 694474
+      "triangles": 6710,
+      "glbBytes": 225760,
+      "usdzBytes": 695606
     },
     {
       "id": "LD-B034",

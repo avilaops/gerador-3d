@@ -67,7 +67,7 @@
         ],
         "pivot": [
           0,
-          0.42,
+          0.422,
           -0.575
         ],
         "range": [
@@ -80,7 +80,7 @@
     "bboxM": {
       "length": 1.57,
       "width": 1.375,
-      "height": 0.85
+      "height": 0.852
     },
     "trainingArea": {
       "minX": -1.2875,
@@ -92,8 +92,8 @@
       "areaM2": 7.13275
     },
     "stats": {
-      "triangles": 2944,
-      "meshes": 31,
+      "triangles": 2992,
+      "meshes": 35,
       "geometries": 5,
       "materials": 5
     }
