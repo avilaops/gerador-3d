@@ -1,14 +1,14 @@
 {
   "id": "LD-A020",
   "name": "Suporte de Agachamento Búlgaro e Levantamentos",
-  "family": "rack",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1555,
     "width": 1375,
     "height": 850
   },
   "params": {
-    "variant": "stand"
+    "mechanism": "shrug"
   },
   "materials": {
     "frame": "#74787d",

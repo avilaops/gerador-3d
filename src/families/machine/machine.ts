@@ -181,7 +181,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
           break;
         case 'pad':
           if (!single)
-            rig.pad(g, [0.08, 0.22, 0.18], [T[0] + inward * 0.06, T[1], T[2]], 0, `${name}_pad`);
+            rig.pad(g, def.padSize ?? [0.08, 0.22, 0.18], [T[0] + inward * 0.06, T[1], T[2]], 0, `${name}_pad`);
           break;
         default:
           break;
@@ -235,6 +235,15 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         ? rig.group(baseName, station)
         : rig.arm(baseName, [0, py, pz], 'x', station, { diameter: 0.08, length: 0.08 });
       if (isStatic) g.position.set(0, py, pz);
+      if (def.cam && !isStatic) {
+        // Came: o disco por onde passa o cabo, ao lado do pivô.
+        const cam = new THREE.Mesh(kit.disc(def.cam, 0.02), kit.materials.plate);
+        cam.name = `${baseName}_cam`;
+        cam.rotation.z = Math.PI / 2;
+        cam.position.set(px + 0.05, 0, 0);
+        cam.castShadow = true;
+        g.add(cam);
+      }
       if (px > 0.05) {
         drawArm(g, 1, px, baseName);
         drawArm(g, -1, -px, baseName);
@@ -296,19 +305,37 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       const zTop = toTop
         ? clamp(footZ + ((pz - footZ) * (yTop - y0)) / Math.max(py - y0, 1e-3), zLo, zHi)
         : pz;
-      rig.path(
-        sup,
-        [
-          [-sx, y0, footZ],
-          [-sx, yTop, zTop],
-          [sx, yTop, zTop],
-          [sx, y0, footZ],
-        ],
-        t,
-        'frame',
-        'arch',
-        0.15
-      );
+      if (tallFrame && yTop > 1.0) {
+        // Laterais em "A" de chapa: duas pernas por lado, que se abrem para o piso e se
+        // encontram na viga do alto. É o quadro típico das máquinas de anilhas.
+        const abre = Math.min(0.42, 0.3 * yTop);
+        const zA = clamp(zTop + abre + (footZ - zTop) * 0.5, zLo, zHi);
+        const zB = clamp(zTop - abre + (footZ - zTop) * 0.5, zLo, zHi);
+        const chapa: [number, number] = [0.05, 0.1];
+        for (const s of [1, -1] as const) {
+          rig.path(sup, [[s * sx, y0, zA], [s * sx, 0.55 * yTop, zTop + 0.13], [s * sx, yTop, zTop + 0.13]], chapa, 'frame', 'side_leg', 0.3);
+          rig.path(sup, [[s * sx, y0, zB], [s * sx, 0.55 * yTop, zTop - 0.13], [s * sx, yTop, zTop - 0.13]], chapa, 'frame', 'side_leg', 0.3);
+          rig.tube(sup, [s * sx, 0.55 * yTop, zTop - 0.13], [s * sx, 0.55 * yTop, zTop + 0.13], [0.05, 0.08]);
+          rig.tube(sup, [s * sx, yTop, zTop - 0.18], [s * sx, yTop, zTop + 0.18], chapa);
+          rig.tube(sup, [s * sx, y0, zB], [s * sx, y0, zA], t);
+        }
+        rig.tube(sup, [-sx, yTop, zTop + 0.13], [sx, yTop, zTop + 0.13], [0.06, 0.1], 'frame', 'top_crossbar');
+        rig.tube(sup, [-sx, yTop, zTop - 0.13], [sx, yTop, zTop - 0.13], [0.05, 0.08]);
+      } else {
+        rig.path(
+          sup,
+          [
+            [-sx, y0, footZ],
+            [-sx, yTop, zTop],
+            [sx, yTop, zTop],
+            [sx, y0, footZ],
+          ],
+          t,
+          'frame',
+          'arch',
+          0.15
+        );
+      }
       if (toTop) frameDone = true;
       if (stacks === 1 && py < H - 0.05) {
         const yb = Math.min(py, H - 0.2);
@@ -321,6 +348,12 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       for (const s of [1, -1] as const)
         rig.rod(sup, [s * sx, py, pz], [s * (px - 0.03), py, pz], 0.045, 'chrome');
     rig.tube(sup, [-Math.max(sx, railX), y0, footZ], [Math.max(sx, railX), y0, footZ], t);
+    // Chapas de junção com parafusos, no pé de cada coluna.
+    for (const s of [1, -1] as const) {
+      rig.box(sup, [0.012, 0.14, 0.16], [s * (sx + t / 2 + 0.006), t + 0.05, footZ], 'frame', 'gusset');
+      for (const dz of [-0.05, 0.05])
+        rig.rod(sup, [s * (sx + t / 2 + 0.012), t + 0.07, footZ + dz], [s * (sx + t / 2 + 0.02), t + 0.07, footZ + dz], 0.022, 'chrome', 'bolt');
+    }
     if (stacks === 2) {
       const yb = Math.min(py, H - 0.25);
       for (const s of [1, -1] as const) rig.tube(sup, [s * towerX, yb, towerUz], [s * sx, py, pz], 0.06);

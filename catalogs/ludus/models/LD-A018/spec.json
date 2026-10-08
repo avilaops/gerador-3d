@@ -80,7 +80,7 @@
     "bboxM": {
       "length": 1.835,
       "width": 1.24,
-      "height": 1.09
+      "height": 1.1
     },
     "trainingArea": {
       "minX": -1.22,
@@ -92,9 +92,9 @@
       "areaM2": 7.4054
     },
     "stats": {
-      "triangles": 4140,
-      "meshes": 30,
-      "geometries": 9,
+      "triangles": 5688,
+      "meshes": 47,
+      "geometries": 15,
       "materials": 6
     }
   }

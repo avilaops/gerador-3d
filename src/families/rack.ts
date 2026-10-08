@@ -71,15 +71,24 @@ export const rack: FamilyDefinition<RackParams> = {
         rig.foot(base, s * (W / 2 - t / 2), L / 2 - 0.05, [0.08, 0.08]);
       }
       rig.tube(base, [-W / 2 + t / 2, y0, 0], [W / 2 - t / 2, y0, 0], t);
-      rig.tube(frame, [0, 0, 0], [0, H, 0], t + 0.01, 'frame', 'mast');
+      // Mastro de chapa que sobe inclinado para trás e volta em curva no alto.
+      const lean = Math.min(0.12, 0.2 * L);
+      const mast: [number, number, number][] = [
+        [0, 0, lean],
+        [0, 0.55 * H, -lean],
+        [0, H, lean * 0.4],
+      ];
+      rig.path(frame, mast, [t, t + 0.04], 'frame', 'mast', 0.5);
+      const zAt = (y: number) =>
+        y <= 0.55 * H ? lean + ((-2 * lean) * y) / (0.55 * H) : -lean + ((1.4 * lean) * (y - 0.55 * H)) / (0.45 * H);
       const hornLen = Math.max(0.1, W / 2 - t / 2 - 0.02);
       for (let i = 0; i < p.tiers; i++) {
         const y = 0.3 + (i * (H - 0.48)) / Math.max(1, p.tiers - 1);
         for (const s of [-1, 1] as const) {
-          rig.horn(frame, [s * (t / 2), y, 0], [s, 0, 0], hornLen - 0.02, 'storage_horn');
+          rig.horn(frame, [s * (t / 2), y, zAt(y)], [s, 0, 0], hornLen - 0.02, 'storage_horn');
           if (p.showPlates && i === 0) {
             const dia = Math.min(0.45, L - 0.04, 2 * (y - 0.03));
-            for (let k = 0; k < 2; k++) rig.plate(frame, [s * (t / 2 + 0.05 + k * 0.045), y, 0], dia, 0.04);
+            for (let k = 0; k < 2; k++) rig.plate(frame, [s * (t / 2 + 0.05 + k * 0.045), y, zAt(y)], dia, 0.04);
           }
         }
       }

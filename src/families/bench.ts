@@ -137,8 +137,20 @@ export const bench: FamilyDefinition<BenchParams> = {
         const back = rig.group('backrest');
         inclinedBack(back, hs + 0.02, zs - seatLen / 2 - 0.02, H, p.backAngle);
         const foot = rig.group('foot_rest');
-        rig.rod(foot, [-0.2, 0.2, zF - 0.03], [0.2, 0.2, zF - 0.03], 0.035);
-        rig.tube(foot, [0, y0, zF - t / 2], [0, 0.2, zF - 0.03], 0.04);
+        // Tubo que sobe em curva da ponta da base, com a barra de apoio dos pés.
+        rig.path(
+          foot,
+          [
+            [0, y0, zF - 0.3],
+            [0, 0.12, zF - 0.1],
+            [0, 0.22, zF - 0.02],
+          ],
+          0.05,
+          'frame',
+          'foot_rest_arm',
+          0.12
+        );
+        rig.rod(foot, [-0.22, 0.22, zF - 0.02], [0.22, 0.22, zF - 0.02], 0.036, 'rubber', 'foot_rest_bar');
         break;
       }
       case 'decline': {

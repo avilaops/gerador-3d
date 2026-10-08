@@ -41,7 +41,7 @@
       "towerZ": -0.5079588014981274,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.16690650515545538,
+      "stackTravel": 0.16600855099837375,
       "seatHeight": 0.46,
       "seatZ": 0.2785018726591761,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "row",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.8963313144431924,
+      "armPivotHeight": 1.885106887479672,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.16690650515545538
+          0.16600855099837375
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.16690650515545538
+          0.16600855099837375
         ],
         "driver": "phase"
       },
@@ -151,9 +151,9 @@
       "areaM2": 6.956386699524368
     },
     "stats": {
-      "triangles": 5080,
-      "meshes": 71,
-      "geometries": 9,
+      "triangles": 6628,
+      "meshes": 88,
+      "geometries": 15,
       "materials": 9
     }
   }

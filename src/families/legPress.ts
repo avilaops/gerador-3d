@@ -332,7 +332,8 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         articulations.push(unit.articulation);
       }
       const plat = rig.group('platform');
-      rig.box(plat, [Math.min(0.62, W - 0.2), 0.52, 0.03], [0, 0.78, zR + 0.44], 'plate', 'foot_plate').rotation.x = -0.12;
+      rig.box(plat, [Math.min(0.72, W - 0.14), 0.68, 0.03], [0, 0.74, zR + 0.47], 'plate', 'foot_plate').rotation.x = -0.24;
+      for (const s of [-1, 1] as const) rig.tube(plat, [s * 0.28, y0, zR + 0.36], [s * 0.28, 0.72, zR + 0.4], 0.05);
       rig.tube(plat, [0, y0, zR + 0.34], [0, 0.8, zR + 0.38], t);
 
       const z0 = clamp(0.12 * L, zR + 1.15, zF - 0.95);

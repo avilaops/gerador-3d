@@ -1,14 +1,14 @@
 {
   "id": "LD-A020",
   "name": "Suporte de Agachamento Búlgaro e Levantamentos",
-  "family": "rack",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1555,
     "width": 1375,
     "height": 850
   },
   "params": {
-    "variant": "stand"
+    "mechanism": "shrug"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,30 +31,70 @@
   },
   "resolved": {
     "params": {
-      "variant": "stand",
-      "tube": 0.07,
-      "tiers": 3,
-      "showPlates": true
+      "mechanism": "shrug",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.3625,
+      "pivotHeight": 0.731,
+      "pivotZ": -0.085525,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.175,
+        0.7308499999999999
+      ],
+      "leverRear": [
+        0.08005485213153055,
+        -0.35765
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.1866,
+      "backrestHeight": 0.39949999999999997,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.5,
+          -0.3109
+        ],
+        "range": [
+          0,
+          0.2
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
-      "length": 1.555,
-      "width": 1.376,
+      "length": 1.57,
+      "width": 1.375,
       "height": 0.85
     },
     "trainingArea": {
-      "minX": -1.2878202846975089,
-      "maxX": 1.2878202846975089,
-      "minZ": -1.3773800730680223,
-      "maxZ": 1.3773800730680223,
-      "widthM": 2.5756405693950177,
-      "lengthM": 2.7547601461360447,
-      "areaM2": 7.095271991340544
+      "minX": -1.2875,
+      "maxX": 1.2875,
+      "minZ": -1.3849999999999998,
+      "maxZ": 1.3849999999999998,
+      "widthM": 2.575,
+      "lengthM": 2.7699999999999996,
+      "areaM2": 7.13275
     },
     "stats": {
-      "triangles": 1752,
-      "meshes": 20,
-      "geometries": 6,
+      "triangles": 3688,
+      "meshes": 40,
+      "geometries": 5,
       "materials": 5
     }
   }

@@ -59,7 +59,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-A017': pl('pullover'),
   'LD-A018': pl('seated-dip'),
   'LD-A019': pl('lying-press'),
-  'LD-A020': rack('stand'),
+  'LD-A020': pl('shrug'),
   'LD-A021': pl('prone-leg-curl'),
   'LD-A022': pl('leg-extension'),
   'LD-A023': legs('hack'),

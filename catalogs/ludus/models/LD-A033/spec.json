@@ -35,22 +35,22 @@
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.25999999999999995,
-      "pivotHeight": 1.1610094114112828,
+      "pivotHeight": 1.1524632346627561,
       "pivotZ": -0.06903463035019455,
       "leverTube": 0.08,
       "leverFront": [
-        -0.32500328305044746,
+        -0.322022058603287,
         0.5899322957198443
       ],
       "leverRear": [
-        0.15387956351233345,
+        0.15241373659653412,
         -0.28869027237354083
       ],
       "hornLength": 0.175,
       "hornOffset": 0.3,
       "seatHeight": 0.46,
       "pressSeatZ": 0.2510350194552529,
-      "backrestHeight": 0.634505143445701,
+      "backrestHeight": 0.6298345584784829,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,
@@ -111,9 +111,9 @@
       "areaM2": 5.854314980544747
     },
     "stats": {
-      "triangles": 4144,
-      "meshes": 31,
-      "geometries": 8,
+      "triangles": 5692,
+      "meshes": 48,
+      "geometries": 14,
       "materials": 6
     }
   }

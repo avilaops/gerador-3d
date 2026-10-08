@@ -139,19 +139,64 @@ export const cableStation: FamilyDefinition<CableStationParams> = {
 
     for (const s of [-1, 1] as const) {
       const suffix = s < 0 ? '_left' : '_right';
-      const unit = stackTower(kit, {
-        suffix,
-        x: 0,
-        z: s * zt,
-        height: H,
-        post: t,
-        plates: p.stackPlates,
-        travel: p.stackTravel,
-      });
-      // A carenagem fica do lado de fora; a face da bateria olha para o vão.
-      if (s > 0) unit.group.rotation.y = Math.PI;
-      root.add(unit.group);
-      articulations.push(unit.articulation);
+      if (p.variant === 'crossover') {
+        // Pórtico aberto em A: duas pernas que se fecham no alto, com a bateria no meio.
+        const tw = rig.group(`tower${suffix}`);
+        const ztw = s * zt;
+        for (const sx of [-1, 1] as const) {
+          rig.path(
+            tw,
+            [
+              [sx * (W / 2 - 0.04), 0, ztw],
+              [sx * 0.17, 0.62 * H, ztw],
+              [sx * 0.17, H - t, ztw],
+            ],
+            [0.05, 0.09],
+            'frame',
+            'tower_leg',
+            0.3
+          );
+          rig.box(tw, [0.16, 0.012, 0.1], [sx * (W / 2 - 0.08), 0.006, ztw], 'rubber', 'foot');
+        }
+        rig.tube(tw, [-0.2, H - t / 2, ztw], [0.2, H - t / 2, ztw], t);
+        rig.tube(tw, [-0.17, 0.62 * H, ztw], [0.17, 0.62 * H, ztw], 0.05);
+        rig.box(tw, [0.3, 0.3, 0.01], [0, 0.62 * H + 0.2, ztw + s * 0.03], 'frame', 'tower_placard');
+        const guideHeight = 0.58 * H;
+        const st = weightStack(kit, {
+          x: 0,
+          z: ztw,
+          plates: p.stackPlates,
+          plateSize: [0.24, 0.03, 0.13],
+          gap: 0.005,
+          baseY: 0.11,
+          guideHeight,
+          cableTopY: H - t,
+        });
+        st.stack.name = `stack${suffix}`;
+        tw.add(st.guides, st.stack);
+        articulations.push({
+          node: `stack${suffix}`,
+          type: 'prismatic',
+          axis: [0, 1, 0],
+          pivot: [0, 0, ztw],
+          range: [0, p.stackTravel],
+          driver: 'phase',
+        });
+      } else {
+        const unit = stackTower(kit, {
+          suffix,
+          x: 0,
+          z: s * zt,
+          height: H,
+          post: t,
+          plates: p.stackPlates,
+          travel: p.stackTravel,
+        });
+        // A carenagem fica do lado de fora; a face da bateria olha para o vão.
+        if (s > 0) unit.group.rotation.y = Math.PI;
+        root.add(unit.group);
+        articulations.push(unit.articulation);
+      }
 
       // Trilho, carrinho da polia e pegada.
       const pg = rig.group(`pulley${suffix}`);

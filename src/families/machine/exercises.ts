@@ -42,6 +42,10 @@ export interface LeverDef {
   size?: number;
   /** Posição do pino de anilhas ao longo do primeiro trecho (0 = pivô, 1 = ponta; <0 = prolongamento atrás). */
   horn?: number;
+  /** Tamanho da almofada da ponta [largura, altura, profundidade], quando `end` é "pad" em braço independente. */
+  padSize?: Vec3;
+  /** Diâmetro do came (disco) junto ao pivô, nas alavancas únicas de máquinas com bateria. */
+  cam?: number;
   /** Dobra do braço (cotovelo), como fração do comprimento; o sinal escolhe o lado. Só para braço de um trecho. */
   bend?: number;
   /** Sem coluna de apoio própria (o pivô já está sobre outra estrutura). */
@@ -311,6 +315,7 @@ const DEFS = {
         pivot: [Math.min(c.ax, 0.34), c.hs + 0.3, 0.42],
         path: [[0, -0.14, 0.3]],
         axis: NX,
+        cam: 0.26,
         swing: 1.45,
         end: 'grip-x',
         horn: -0.9,
@@ -329,6 +334,7 @@ const DEFS = {
         pivot: [Math.min(c.ax, 0.34), c.hs + 0.3, 0.42],
         path: [[0, 0.3, -0.12]],
         axis: X,
+        cam: 0.26,
         swing: 1.3,
         end: 'grip-x',
         horn: -0.9,
@@ -413,6 +419,7 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.02, 0.26],
         path: [[0, -0.42, 0.04]],
         axis: NX,
+        cam: 0.26,
         swing: 1.15,
         end: 'roller',
         horn: 1.0,
@@ -432,6 +439,7 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.02, 0.26],
         path: [[0, -0.06, 0.44]],
         axis: X,
+        cam: 0.26,
         swing: 1.2,
         end: 'roller',
         horn: 0.8,
@@ -460,6 +468,7 @@ const DEFS = {
         pivot: [0.28, 0.74, -0.4],
         path: [[0, 0.14, -0.42]],
         axis: X,
+        cam: 0.26,
         swing: 1.35,
         end: 'roller',
         horn: -0.75,
@@ -508,6 +517,7 @@ const DEFS = {
         axis: [0, 1, 0],
         swing: 0.62,
         end: 'pad',
+        padSize: [0.09, 0.3, 0.3],
         horn: -0.5,
       },
     ],
@@ -527,6 +537,7 @@ const DEFS = {
         axis: [0, -1, 0],
         swing: 0.62,
         end: 'pad',
+        padSize: [0.09, 0.3, 0.3],
         horn: -0.5,
       },
     ],
@@ -589,6 +600,7 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.12, -0.12],
         path: [[0, Math.min(0.5, c.H - c.hs - 0.2), 0.14]],
         axis: NX,
+        cam: 0.26,
         swing: 0.75,
         end: 'roller',
         horn: -0.6,
@@ -608,6 +620,7 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.3, -0.2],
         path: [[0, Math.min(0.42, c.H - c.hs - 0.42), 0.22]],
         axis: X,
+        cam: 0.26,
         swing: 0.6,
         end: 'pad',
         horn: -0.6,

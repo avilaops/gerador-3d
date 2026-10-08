@@ -60,6 +60,12 @@
 <polygon class="eq-part" points="0.225,0.2643 0.27,0.2643 0.27,0.3093 0.225,0.3093" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.27,0.2643 -0.225,0.2643 -0.225,0.3093 -0.27,0.3093" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.435,0.2518 0.435,0.2518 0.435,0.3218 -0.435,0.3218" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.26,0.2068 0.272,0.2068 0.272,0.3668 0.26,0.3668" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.272,0.2258 0.28,0.2258 0.28,0.2478 0.272,0.2478" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.272,0.3258 0.28,0.3258 0.28,0.3478 0.272,0.3478" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.272,0.2068 -0.26,0.2068 -0.26,0.3668 -0.272,0.3668" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,0.2258 -0.272,0.2258 -0.272,0.2478 -0.28,0.2478" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,0.3258 -0.272,0.3258 -0.272,0.3478 -0.28,0.3478" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 </g>
 <line class="eq-dim" x1="-0.565" y1="1.4216" x2="0.565" y2="1.4216" style="stroke:#6d6a63;stroke-width:0.0118"/>
 <line class="eq-dim" x1="-0.565" y1="1.3603" x2="-0.565" y2="1.4828" style="stroke:#6d6a63;stroke-width:0.0118"/>

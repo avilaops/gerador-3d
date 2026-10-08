@@ -69,6 +69,12 @@
 <polygon class="eq-part" points="-0.27,-0.1961 -0.225,-0.1961 -0.225,-0.1521 -0.27,-0.1521" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
 <polygon class="eq-part" points="0.225,-0.1961 0.27,-0.1961 0.27,-0.1521 0.225,-0.1521" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.3,-0.2083 0.3,-0.2083 0.3,-0.1399 -0.3,-0.1399" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.272,-0.0959 -0.272,-0.2523 -0.26,-0.2523 -0.26,-0.0959" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,-0.1359 -0.272,-0.1359 -0.272,-0.1144 -0.28,-0.1144" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,-0.2337 -0.272,-0.2337 -0.272,-0.2122 -0.28,-0.2122" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.26,-0.0959 0.26,-0.2523 0.272,-0.2523 0.272,-0.0959" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.272,-0.1359 0.28,-0.1359 0.28,-0.1144 0.272,-0.1144" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.272,-0.2337 0.28,-0.2337 0.28,-0.2122 0.272,-0.2122" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.5163,-0.1573 -0.5137,-0.2159 -0.2237,-0.2034 -0.2263,-0.1448" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
 <polygon class="eq-part" points="0.2237,-0.2034 0.5137,-0.2159 0.5163,-0.1573 0.2263,-0.1448" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.335,-0.2971 -0.3334,-0.303 -0.329,-0.3073 -0.323,-0.3089 0.323,-0.3089 0.329,-0.3073 0.3334,-0.303 0.335,-0.2971 0.335,-0.2522 0.3334,-0.2463 0.329,-0.242 0.323,-0.2404 -0.323,-0.2404 -0.329,-0.242 -0.3334,-0.2463 -0.335,-0.2522" style="fill:#141413;stroke:#141413;stroke-width:0.0064;stroke-linejoin:round"/>
