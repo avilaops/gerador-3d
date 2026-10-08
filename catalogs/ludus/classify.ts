@@ -129,7 +129,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-B032': st('leg-curl'),
   'LD-B033': st('leg-extension'),
   'LD-B034': legs('lever-squat'),
-  'LD-B035': cable('dual-pulley'),
+  'LD-B035': cable('dual-arm'),
   'LD-B036': cable('cross-smith'),
   'LD-B037': cable('dual-pulley'),
   'LD-B038': cable('crossover'),
@@ -193,7 +193,9 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
     dimensionsMm: { length, width, height },
     ...(weightStackKg ? { weightStackKg } : {}),
     params,
-    ...(COLORS[product.linha] ? { materials: COLORS[product.linha] } : {}),
+    ...(COLORS[product.linha]
+      ? { materials: weightStackKg?.stacks === 2 && family === 'selectorized-tower' ? COLORS['Peso livre'] : COLORS[product.linha] }
+      : {}),
     trainingClearanceM: 0.6,
     review: {
       status: 'needs_review',

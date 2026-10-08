@@ -183,29 +183,37 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       rig.tube(base, [-W / 2, y0, zF - t / 2], [W / 2, y0, zF - t / 2], t);
 
       const py = H - 0.28;
-      const pz = zR + 0.3;
+      // Com anilhas, o quadro é um pórtico em "telhado": o pivô fica perto da cumeeira.
+      const pz = stack ? zR + 0.3 : zR + Math.max(0.45, 0.3 * L);
       if (stack) {
         const unit = stackTower(kit, { x: 0, z: zR + 0.135, height: H, post: t, plates: p.stackPlates, travel: p.stackTravel });
         root.add(unit.group);
         articulations.push(unit.articulation);
         for (const s of [-1, 1] as const) rig.tube(frame, [s * (ax - 0.07), y0, pz], [s * (ax - 0.07), py, pz], t);
       } else {
+        const fx = ax - 0.075;
         for (const s of [-1, 1] as const) {
-          rig.tube(frame, [s * (ax - 0.07), 0.55 * H, pz], [s * (ax - 0.07), y0, pz + 0.6], 0.06);
+          // Coluna curta na frente, diagonal até a cumeeira e descida até o fundo.
+          rig.path(
+            frame,
+            [
+              [s * fx, 0, zF - 0.1],
+              [s * fx, Math.min(0.85, 0.42 * H), zF - 0.1],
+              [s * fx, H - t / 2, pz],
+              [s * fx, 0, zR + 0.1],
+            ],
+            t,
+            'frame',
+            `side_frame_${s < 0 ? 'left' : 'right'}`,
+            0.22
+          );
+          rig.box(frame, [0.16, 0.012, 0.1], [s * fx, 0.006, zF - 0.1], 'rubber', 'foot');
+          rig.box(frame, [0.16, 0.012, 0.1], [s * fx, 0.006, zR + 0.1], 'rubber', 'foot');
         }
-        rig.path(
-          frame,
-          [
-            [-(ax - 0.07), 0, pz],
-            [-(ax - 0.07), H - t / 2, pz],
-            [ax - 0.07, H - t / 2, pz],
-            [ax - 0.07, 0, pz],
-          ],
-          t,
-          'frame',
-          'rear_arch',
-          0.14
-        );
+        // Travessa a meia altura da perna traseira (a cumeeira fica livre para a alavanca).
+        const zc = pz + 0.5 * (zR + 0.1 - pz);
+        rig.tube(frame, [-fx, 0.5 * H, zc], [fx, 0.5 * H, zc], t, 'frame', 'rear_crossbar');
+        rig.tube(frame, [-fx, y0, zR + 0.1], [fx, y0, zR + 0.1], t);
       }
       rig.tube(frame, [-ax, y0, pz], [ax, y0, pz], t);
 

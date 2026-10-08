@@ -15,9 +15,9 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#74787d",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -41,7 +41,7 @@
       "towerZ": -0.4651639343541465,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.15679999998807906,
+      "stackTravel": 0.15664174198658498,
       "seatHeight": 0.46,
       "seatZ": 0.2360655737416586,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "pulldown",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.7699999998509883,
+      "armPivotHeight": 1.7680217748323122,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.15679999998807906
+          0.15664174198658498
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.15679999998807906
+          0.15664174198658498
         ],
         "driver": "phase"
       },
@@ -107,7 +107,7 @@
         ],
         "pivot": [
           -0.4106648936170214,
-          1.8599999999999999,
+          1.8580217749813237,
           -0.3739344263328472
         ],
         "range": [
@@ -126,7 +126,7 @@
         ],
         "pivot": [
           0.4106648936170214,
-          1.8599999999999999,
+          1.8580217749813237,
           -0.3739344263328472
         ],
         "range": [
@@ -151,10 +151,10 @@
       "areaM2": 7.276185367995155
     },
     "stats": {
-      "triangles": 4704,
-      "meshes": 71,
+      "triangles": 4812,
+      "meshes": 73,
       "geometries": 8,
-      "materials": 8
+      "materials": 9
     }
   }
 }

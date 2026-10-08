@@ -15,9 +15,9 @@
     "mechanism": "triceps-extension"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#74787d",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -41,7 +41,7 @@
       "towerZ": -0.3252127658860777,
       "towerPostSpacing": 0.34,
       "stackPlates": 6,
-      "stackTravel": 0.12239999998807907,
+      "stackTravel": 0.12240031699024277,
       "seatHeight": 0.46,
       "seatZ": 0.1800851063544311,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "triceps-extension",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.3399999998509884,
+      "armPivotHeight": 1.3400039623780347,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.12239999998807907
+          0.12240031699024277
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.12239999998807907
+          0.12240031699024277
         ],
         "driver": "phase"
       },
@@ -151,10 +151,10 @@
       "areaM2": 5.368517946361859
     },
     "stats": {
-      "triangles": 4712,
-      "meshes": 68,
-      "geometries": 6,
-      "materials": 8
+      "triangles": 5556,
+      "meshes": 73,
+      "geometries": 8,
+      "materials": 9
     }
   }
 }

@@ -43,7 +43,9 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const y0 = t / 2;
   const plates = o.resistance === 'plates';
   const stacks = plates ? 0 : o.stacks;
-  const armMaterial = plates ? 'accent' : 'frame';
+  // Iso-lateral com bateria: torres baixas nas laterais; o quadro dos braços é que chega à altura A.
+  const tallFrame = plates || stacks === 2;
+  const armMaterial = tallFrame ? 'accent' : 'frame';
   const articulations: Articulation[] = [];
 
   // Distribuição lateral: braços independentes por dentro das torres ou dos pinos.
@@ -77,7 +79,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         suffix: s === 0 ? '' : s < 0 ? '_left' : '_right',
         x: s * towerX,
         z: towerZ,
-        height: H,
+        height: stacks === 2 ? Math.max(1.1, 0.64 * H) : H,
         post: t,
         plates: o.stackPlates,
         travel: o.stackTravel,
@@ -271,7 +273,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const clearOfBody =
       py > o.seatHeight + 0.95 || py < o.seatHeight - 0.12 || Math.abs(pz) > 0.42;
     // Com anilhas, o apoio mais alto vira o quadro: sobe até a altura A.
-    const toTop = plates && !frameDone && def === tallest && H - py <= 0.65;
+    const toTop = tallFrame && !frameDone && def === tallest && H - py <= 0.65;
     if ((clearOfBody && !single) || toTop) {
       // Arco de tubo curvado: sobe de um lado, atravessa e desce do outro.
       const yTop = toTop ? H - t / 2 : py;
@@ -311,7 +313,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   }
 
   // Anilhas: a altura A vem do quadro (colunas prolongadas ou mastro traseiro).
-  if (plates) {
+  if (tallFrame) {
     const top = postTops.reduce<{ x: number; y: number; z: number } | undefined>(
       (best, p) => (!best || p.y > best.y ? p : best),
       undefined
@@ -343,7 +345,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       for (const s of [1, -1] as const) {
         rig.tube(frame, [s * mx, Math.min(0.6 * H, 0.9), mz], [s * mx, y0, mz - Math.sign(uRear) * 0.4], 0.05);
         const len = storageLen(mx);
-        if (len >= 0.08)
+        if (plates && len >= 0.08)
           for (const y of [0.4, 0.8].filter((v) => v < H - 0.25))
             rig.horn(frame, [s * (mx + t / 2), y, mz], [s, 0, 0], len, 'storage_horn');
       }

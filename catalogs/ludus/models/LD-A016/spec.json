@@ -111,10 +111,10 @@
       "areaM2": 6.1279
     },
     "stats": {
-      "triangles": 5020,
-      "meshes": 29,
+      "triangles": 5128,
+      "meshes": 31,
       "geometries": 9,
-      "materials": 5
+      "materials": 6
     }
   }
 }

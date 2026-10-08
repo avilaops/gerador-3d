@@ -79,6 +79,8 @@ try {
         // Equipamento comprido e estreito (crossover, remada T) aparece melhor mais de lado.
         {
           ...options,
+          // O spec pode pedir a miniatura numa fase do movimento (ex.: braços já meio fechados).
+          phase: arg('phase') ? options.phase : Number(spec.meta?.thumbPhase ?? 0),
           azimuth:
             options.azimuth ??
             (spec.dimensionsMm.length > 1.7 * spec.dimensionsMm.width ? 62 : 38),

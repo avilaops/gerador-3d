@@ -29,7 +29,14 @@ export interface EquipmentViewerOptions {
   initial?: Partial<Record<ViewerToggle, boolean>>;
   /** Necessário para prints/miniaturas (lê o canvas depois do render). */
   preserveDrawingBuffer?: boolean;
+  /**
+   * Opções de cor que o visitante pode trocar no modelo: uma linha de amostras por
+   * papel do material (estrutura, braços, estofado). Cada opção é [nome, #rrggbb].
+   */
+  palette?: Partial<Record<ColorRole, { label: string; options: readonly (readonly [string, string])[] }>>;
 }
+
+export type ColorRole = 'frame' | 'accent' | 'upholstery';
 
 const LABELS: Record<ViewerToggle, string> = {
   motion: 'Movimento',
@@ -52,6 +59,12 @@ const CSS = `
 .eqv-tools { display: flex; flex-wrap: wrap; gap: 8px; }
 .eqv-tg { font: 14px Barlow, Inter, Arial, sans-serif; color: var(--eqv-ink, #141413); background: var(--eqv-surface, #fff); border: 1px solid var(--eqv-line, #e2dfd8); border-radius: 99px; padding: 7px 14px; cursor: pointer; }
 .eqv-tg[aria-pressed="true"] { background: var(--eqv-ink, #141413); color: var(--eqv-surface, #fff); border-color: var(--eqv-ink, #141413); }
+.eqv-colors { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font: 13px Barlow, Inter, Arial, sans-serif; color: var(--eqv-muted, #6d6a63); }
+.eqv-colors[hidden] { display: none; }
+.eqv-colors span { min-width: 68px; }
+.eqv-sw { width: 28px; height: 28px; border-radius: 50%; border: 1px solid rgba(0,0,0,.25); cursor: pointer; padding: 0; }
+.eqv-sw[aria-pressed="true"] { outline: 2px solid var(--eqv-ink, #141413); outline-offset: 2px; }
+.eqv-sw:focus-visible { outline: 3px solid var(--eqv-accent, #96764a); outline-offset: 2px; }
 .eqv-tg:focus-visible { outline: 3px solid var(--eqv-accent, #96764a); outline-offset: 2px; }
 `;
 
@@ -88,6 +101,8 @@ export class EquipmentViewer {
   private rest: ReturnType<typeof captureRestPose> = new Map();
   private overlays: { area: THREE.Group; human: THREE.Group; dims: THREE.Group } | null = null;
   private readonly overlayDisposables: Array<{ dispose(): void }> = [];
+  private readonly colorRows: HTMLElement[] = [];
+  private readonly colors: Partial<Record<ColorRole, string>> = {};
 
   constructor(container: HTMLElement, opts: EquipmentViewerOptions = {}) {
     const doc = container.ownerDocument;
@@ -132,6 +147,31 @@ export class EquipmentViewer {
         tools.append(b);
       });
       this.element.append(tools);
+    }
+    for (const role of ['frame', 'accent', 'upholstery'] as ColorRole[]) {
+      const group = opts.palette?.[role];
+      if (!group?.options.length) continue;
+      const row = doc.createElement('div');
+      row.className = 'eqv-colors';
+      row.dataset.role = role;
+      const label = doc.createElement('span');
+      label.textContent = group.label;
+      row.append(label);
+      for (const [name, hex] of group.options) {
+        const b = doc.createElement('button');
+        b.type = 'button';
+        b.className = 'eqv-sw';
+        b.title = name;
+        b.setAttribute('aria-label', `${group.label}: ${name}`);
+        b.style.background = hex;
+        b.addEventListener('click', () => {
+          this.setColor(role, hex);
+          row.querySelectorAll('.eqv-sw').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        });
+        row.append(b);
+      }
+      this.colorRows.push(row);
+      this.element.append(row);
     }
     container.append(this.element);
 
@@ -212,11 +252,28 @@ export class EquipmentViewer {
       const mat = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
       if (mat && 'envMapIntensity' in mat) mat.envMapIntensity = ENV_INTENSITY[mat.name] ?? 0.4;
     });
+    (Object.entries(this.colors) as [ColorRole, string][]).forEach(([role, hex]) => this.setColor(role, hex));
+    // Só mostra a linha de cor de um material que o modelo realmente usa.
+    const used = new Set<string>();
+    eq.object.traverse((o) => {
+      const mat = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
+      if (mat?.name) used.add(mat.name);
+    });
+    this.colorRows.forEach((row) => (row.hidden = !used.has(row.dataset.role!)));
     this.scene.add(eq.object);
     this.buildOverlays(eq);
     this.frame(eq);
     this.applyState();
     return eq;
+  }
+
+  /** Troca a cor de um papel de material (estrutura, braços ou estofado) no modelo atual e nos próximos. */
+  setColor(role: ColorRole, hex: string): void {
+    this.colors[role] = hex;
+    this.equipment?.object.traverse((o) => {
+      const mat = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
+      if (mat && mat.name === role) mat.color.set(hex);
+    });
   }
 
   get current(): GeneratedEquipment | null {

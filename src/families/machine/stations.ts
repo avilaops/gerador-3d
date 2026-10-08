@@ -44,6 +44,9 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
   const seat = (z = 0.02, w = 0.42, d = 0.4) => {
     const s = rig.group('seat', g);
     rig.tube(s, [0, y0, z], [0, hs - 0.04, z], post, 'frame', 'seat_post');
+    // Regulagem de altura: régua furada e pino.
+    rig.box(s, [0.012, Math.min(0.26, hs - 0.16), 0.045], [post / 2 + 0.006, hs - 0.2, z], 'plate', 'seat_adjuster');
+    rig.rod(s, [post / 2, hs - 0.14, z], [post / 2 + 0.08, hs - 0.17, z], 0.014, 'chrome', 'seat_pin');
     rig.pad(s, [w, 0.085, d], [0, hs, z], 0, 'seat_pad');
   };
 

@@ -21,8 +21,8 @@
     "footAssist": true
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -34,6 +34,7 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Peck Deck LD-B004.png",
+    "thumbPhase": 0.45,
     "pagina": 18,
     "peso": "298 kg",
     "bateria": "138 kg",

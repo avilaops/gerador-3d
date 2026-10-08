@@ -15,9 +15,9 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#74787d",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -41,7 +41,7 @@
       "towerZ": -0.37519230762064004,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.15679999998807906,
+      "stackTravel": 0.15653500935385314,
       "seatHeight": 0.48,
       "seatZ": 0.1200461538289536,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "chest-press",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.7699999998509883,
+      "armPivotHeight": 1.7666876169231642,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.15679999998807906
+          0.15653500935385314
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.15679999998807906
+          0.15653500935385314
         ],
         "driver": "phase"
       },
@@ -151,10 +151,10 @@
       "areaM2": 6.5088454408117995
     },
     "stats": {
-      "triangles": 5272,
-      "meshes": 71,
+      "triangles": 5380,
+      "meshes": 73,
       "geometries": 10,
-      "materials": 8
+      "materials": 9
     }
   }
 }

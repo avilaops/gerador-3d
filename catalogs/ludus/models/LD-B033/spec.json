@@ -15,9 +15,9 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#74787d",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -41,7 +41,7 @@
       "towerZ": -0.47516129025045883,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.11199999998807907,
+      "stackTravel": 0.1120003166088471,
       "seatHeight": 0.58,
       "seatZ": 0.024006451610018353,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "leg-extension",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.2099999998509883,
+      "armPivotHeight": 1.2100039576105888,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.11199999998807907
+          0.1120003166088471
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.11199999998807907
+          0.1120003166088471
         ],
         "driver": "phase"
       },
@@ -132,10 +132,10 @@
       "areaM2": 6.417888709690064
     },
     "stats": {
-      "triangles": 4968,
-      "meshes": 73,
-      "geometries": 8,
-      "materials": 8
+      "triangles": 5812,
+      "meshes": 78,
+      "geometries": 10,
+      "materials": 9
     }
   }
 }

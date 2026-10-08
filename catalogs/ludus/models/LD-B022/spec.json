@@ -15,9 +15,9 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#74787d",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -41,7 +41,7 @@
       "towerZ": -0.2898497401427693,
       "towerPostSpacing": 0.34,
       "stackPlates": 6,
-      "stackTravel": 0.11999999998807907,
+      "stackTravel": 0.1200003146656659,
       "seatHeight": 0.46,
       "seatZ": 0.16593989605710774,
       "seatWidth": 0.42,
@@ -51,7 +51,7 @@
       "mechanism": "biceps-curl",
       "stacks": 2,
       "swingScale": 1,
-      "armPivotHeight": 1.3099999998509884,
+      "armPivotHeight": 1.3100039333208238,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -74,7 +74,7 @@
         ],
         "range": [
           0,
-          0.11999999998807907
+          0.1200003146656659
         ],
         "driver": "phase"
       },
@@ -93,7 +93,7 @@
         ],
         "range": [
           0,
-          0.11999999998807907
+          0.1200003146656659
         ],
         "driver": "phase"
       },
@@ -107,7 +107,7 @@
         ],
         "pivot": [
           -0.2999999872433388,
-          0.7600000001490117,
+          0.7600000000735124,
           -0.17244865419879965
         ],
         "range": [
@@ -126,7 +126,7 @@
         ],
         "pivot": [
           0.2999999872433388,
-          0.7600000001490117,
+          0.7600000000735124,
           -0.17244865419879965
         ],
         "range": [
@@ -151,10 +151,10 @@
       "areaM2": 5.815599999999999
     },
     "stats": {
-      "triangles": 4712,
-      "meshes": 68,
-      "geometries": 6,
-      "materials": 8
+      "triangles": 5556,
+      "meshes": 73,
+      "geometries": 8,
+      "materials": 9
     }
   }
 }

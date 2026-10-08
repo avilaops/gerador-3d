@@ -10,7 +10,8 @@
 import * as THREE from 'three';
 import { z } from 'zod';
 import type { FamilyDefinition } from './types';
-import { beam, box, cable, rubberFoot, upholstery } from '../parts/primitives';
+import { beam, bentTube, cable, upholstery } from '../parts/primitives';
+import { Rig } from '../parts/rig';
 import { pivotArm, stackTower } from '../parts/assemblies';
 import type { Articulation } from '../spec/schema';
 import { buildMachine } from './machine/machine';
@@ -109,39 +110,32 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     }
     const root = new THREE.Group();
     root.name = 'equipment';
+    const rig = new Rig(kit, root);
     const t = p.tube;
     const y0 = t / 2;
-    const zRear = -dims.length / 2 + t / 2;
-    const zFront = dims.length / 2 - t / 2;
+    const L = dims.length;
+    const zRear = -L / 2;
+    const zFront = L / 2;
+    const tz = p.towerZ;
 
-    // Base
-    const base = new THREE.Group();
-    base.name = 'base';
-    base.add(beam(kit, [-p.baseRearHalfWidth, y0, zRear], [p.baseRearHalfWidth, y0, zRear], t));
-    for (const s of [-1, 1]) {
-      base.add(beam(kit, [s * p.baseRailX, y0, zRear], [s * p.baseRailX, y0, zFront], t));
+    // Base em T: espinha da torre até a frente, pernas traseiras abertas e pé dianteiro.
+    const base = rig.group('base');
+    const spineEnd = p.footAssist ? zFront - 0.3 : zFront - t / 2;
+    rig.tube(base, [0, y0, tz], [0, y0, spineEnd], t, 'frame', 'base_spine');
+    for (const s of [-1, 1] as const) {
+      const end: [number, number, number] = [s * p.baseRearHalfWidth, y0, zRear + t / 2];
+      rig.tube(base, [0, y0, tz + 0.04], end, t, 'frame', 'base_rear_leg');
+      rig.box(base, [0.17, 0.012, 0.1], [end[0], 0.006, end[2] + 0.01], 'rubber', 'foot');
     }
-    base.add(beam(kit, [-p.baseRailX, y0, zFront], [p.baseRailX, y0, zFront], t));
-    base.add(beam(kit, [0, y0, zRear], [0, y0, p.seatZ + 0.07], t));
-    // Sapatas recuadas para dentro da envolvente (não aumentam C).
-    const footRear = -dims.length / 2 + 0.05;
-    const footFront = dims.length / 2 - 0.05;
-    for (const [x, z] of [
-      [-p.baseRearHalfWidth, footRear],
-      [p.baseRearHalfWidth, footRear],
-      [-p.baseRailX, footFront],
-      [p.baseRailX, footFront],
-    ]) {
-      base.add(rubberFoot(kit, x, z));
-    }
-    root.add(base);
+    rig.tube(base, [-p.baseRailX, y0, spineEnd], [p.baseRailX, y0, spineEnd], t, 'frame', 'base_front_foot');
+    for (const s of [-1, 1] as const)
+      rig.box(base, [0.1, 0.012, 0.16], [s * p.baseRailX, 0.006, spineEnd], 'rubber', 'foot');
 
-    // Torre e bateria
-    const guideHeight = Math.min(0.7 * dims.height, dims.height - 0.3);
+    // Torre carenada com a bateria.
     root.add(
       stackTower(kit, {
         x: 0,
-        z: p.towerZ,
+        z: tz,
         height: dims.height,
         post: t,
         plates: p.stackPlates,
@@ -149,35 +143,30 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
       }).group
     );
 
-    // Assento e encosto
-    const seat = new THREE.Group();
-    seat.name = 'seat';
-    seat.add(
-      beam(kit, [0, y0, p.seatZ], [0, p.seatHeight - 0.04, p.seatZ], t, { name: 'seat_post' })
-    );
-    seat.add(
-      upholstery(kit, [p.seatWidth, 0.085, p.seatDepth], [0, p.seatHeight, p.seatZ], {
-        name: 'seat_pad',
-      })
-    );
-    root.add(seat);
+    // Assento com regulagem e encosto alto.
+    const seat = rig.group('seat');
+    rig.tube(seat, [0, y0, p.seatZ + 0.06], [0, p.seatHeight - 0.04, p.seatZ], t, 'frame', 'seat_post');
+    rig.box(seat, [0.014, 0.26, 0.05], [0.045, p.seatHeight - 0.22, p.seatZ + 0.02], 'plate', 'seat_adjuster');
+    rig.rod(seat, [0.05, p.seatHeight - 0.16, p.seatZ + 0.02], [0.13, p.seatHeight - 0.2, p.seatZ + 0.02], 0.014, 'chrome', 'seat_pin');
+    rig.pad(seat, [p.seatWidth, 0.085, p.seatDepth], [0, p.seatHeight, p.seatZ], 0, 'seat_pad');
 
     const backZ = p.seatZ - p.seatDepth / 2 - 0.13;
     const backY = p.seatHeight + 0.06 + p.backrestHeight / 2;
-    const backrest = new THREE.Group();
-    backrest.name = 'backrest';
-    backrest.add(
-      beam(kit, [0, backY - 0.11, p.towerZ], [0, backY - 0.11, backZ - 0.04], 0.06, {
-        name: 'backrest_support',
-      })
+    const backrest = rig.group('backrest');
+    rig.pad(backrest, [0.34, p.backrestHeight, 0.085], [0, backY, backZ], -p.backrestTilt, 'backrest_pad');
+    rig.path(
+      backrest,
+      [
+        [0, y0, backZ - 0.02],
+        [0, p.seatHeight + 0.05, backZ - 0.07],
+        [0, backY + 0.18, backZ - 0.08 - 0.3 * Math.sin(p.backrestTilt)],
+      ],
+      0.06,
+      'frame',
+      'backrest_support',
+      0.12
     );
-    backrest.add(
-      upholstery(kit, [0.34, p.backrestHeight, 0.085], [0, backY, backZ], {
-        tiltX: -p.backrestTilt,
-        name: 'backrest_pad',
-      })
-    );
-    root.add(backrest);
+    rig.tube(backrest, [0, backY, tz + 0.1], [0, backY, backZ - 0.08], 0.05);
 
     const articulations: Articulation[] = [
       {
@@ -191,48 +180,54 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     ];
 
     if (p.mechanism === 'pec-fly') {
-      const head = new THREE.Group();
-      head.name = 'head';
-      const hy = p.armPivotHeight + 0.06;
-      head.add(beam(kit, [0, hy, p.towerZ + 0.05], [0, hy, p.armPivotZ], 0.08));
-      head.add(
-        beam(
-          kit,
-          [-(p.armPivotX + 0.02), hy, p.armPivotZ],
-          [p.armPivotX + 0.02, hy, p.armPivotZ],
-          t
-        )
-      );
-      head.add(cable(kit, [0, dims.height - 0.12, p.towerZ], [0, p.armPivotHeight, p.armPivotZ]));
-      root.add(head);
+      // Cabeçote: viga que sai do alto da torre, travessa e os dois cames dos braços.
+      const head = rig.group('head');
+      const hy = p.armPivotHeight + 0.07;
+      rig.tube(head, [0, hy, tz + 0.1], [0, hy, p.armPivotZ], [0.09, 0.07]);
+      rig.tube(head, [-(p.armPivotX + 0.03), hy, p.armPivotZ], [p.armPivotX + 0.03, hy, p.armPivotZ], [t, 0.06]);
+      head.add(cable(kit, [0, dims.height - 0.24, tz], [0, p.armPivotHeight, p.armPivotZ]));
+      for (const s of [-1, 1] as const) {
+        for (const dy of [0.025, -0.075]) {
+          const cam = new THREE.Mesh(kit.disc(0.21, 0.014), kit.materials.plate);
+          cam.name = 'cam';
+          cam.position.set(s * p.armPivotX, p.armPivotHeight + dy, p.armPivotZ);
+          cam.castShadow = true;
+          head.add(cam);
+        }
+      }
 
       const reach = dims.width / 2 - p.armPivotX - 0.03;
       for (const side of [-1, 1] as const) {
         const name = side < 0 ? 'arm_left' : 'arm_right';
         const g = pivotArm(kit, name, [side * p.armPivotX, p.armPivotHeight, p.armPivotZ], {
           axis: 'y',
-          diameter: 0.09,
-          length: 0.09,
+          diameter: 0.07,
+          length: 0.12,
         });
-        g.add(beam(kit, [0, 0, 0], [side * reach, 0, 0], 0.06));
-        g.add(beam(kit, [side * reach, 0.03, 0], [side * reach, -p.armDrop, 0], 0.06));
+        // Braço de tubo curvado: sai do came, abre e desce até a almofada.
         g.add(
-          upholstery(kit, [0.07, 0.34, 0.17], [side * (reach - 0.04), -p.armDrop + 0.13, 0.02], {
+          bentTube(
+            kit,
+            [
+              [0, 0, 0],
+              [side * reach, 0, 0],
+              [side * reach, -p.armDrop, 0],
+            ],
+            0.055,
+            { radius: 0.13, name: `${name}_tube` }
+          )
+        );
+        g.add(
+          upholstery(kit, [0.075, 0.36, 0.17], [side * (reach - 0.045), -p.armDrop + 0.14, 0.02], {
             name: `${name}_pad`,
           })
         );
         g.add(
-          beam(
-            kit,
-            [side * reach, -p.armDrop * 0.44, 0],
-            [side * reach, -p.armDrop * 0.44, 0.16],
-            0.03,
-            {
-              round: true,
-              material: 'chrome',
-              name: `${name}_grip`,
-            }
-          )
+          beam(kit, [side * reach, -p.armDrop * 0.42, 0], [side * (reach - 0.02), -p.armDrop * 0.42, 0.17], 0.034, {
+            round: true,
+            material: 'rubber',
+            name: `${name}_grip`,
+          })
         );
         root.add(g);
         articulations.push({
@@ -248,20 +243,23 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     }
 
     if (p.footAssist) {
-      const fa = new THREE.Group();
-      fa.name = 'foot_assist';
-      const zf = dims.length / 2 - 0.12;
-      fa.add(beam(kit, [0, 0.09, p.seatZ + 0.09], [0, 0.33, zf - 0.01], 0.05));
-      fa.add(
-        beam(kit, [-0.16, 0.33, zf], [0.16, 0.33, zf], 0.035, { round: true, material: 'chrome' })
+      // Barra de pés: tubo que sobe da ponta da espinha, com a barra emborrachada.
+      const fa = rig.group('foot_assist');
+      const zf = zFront - 0.02;
+      rig.path(
+        fa,
+        [
+          [0, y0, spineEnd - 0.1],
+          [0, 0.17, zf - 0.12],
+          [0, 0.2, zf],
+        ],
+        0.05,
+        'frame',
+        'foot_assist_arm',
+        0.1
       );
-      root.add(fa);
+      rig.rod(fa, [-0.22, 0.2, zf], [0.22, 0.2, zf], 0.036, 'rubber', 'foot_assist_bar');
     }
-
-    // Placa de bateria visível de frente (marca da linha)
-    root.add(
-      box(kit, [0.1, 0.05, 0.004], [0, guideHeight + 0.09, p.towerZ + 0.07], { material: 'accent' })
-    );
 
     return { root, articulations };
   },

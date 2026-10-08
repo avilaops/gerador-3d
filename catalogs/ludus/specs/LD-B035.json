@@ -12,7 +12,7 @@
     "stacks": 2
   },
   "params": {
-    "variant": "dual-pulley"
+    "variant": "dual-arm"
   },
   "materials": {
     "frame": "#161616",
