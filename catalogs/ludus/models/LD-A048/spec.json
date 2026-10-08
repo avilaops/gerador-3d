@@ -32,7 +32,7 @@
       "tube": 0.06,
       "padWidth": 0.3,
       "backAngle": 0.6,
-      "seatHeight": 0.4199999985098837,
+      "seatHeight": 0.41999999850988384,
       "wheels": true
     },
     "articulations": [],
@@ -44,16 +44,16 @@
     "trainingArea": {
       "minX": -0.88,
       "maxX": 0.88,
-      "minZ": -1.2651136363636364,
-      "maxZ": 1.2651136363636364,
+      "minZ": -1.2651136363549844,
+      "maxZ": 1.2651136363549846,
       "widthM": 1.76,
-      "lengthM": 2.5302272727272728,
-      "areaM2": 4.4532
+      "lengthM": 2.5302272727099693,
+      "areaM2": 4.453199999969546
     },
     "stats": {
-      "triangles": 624,
+      "triangles": 1712,
       "meshes": 15,
-      "geometries": 3,
+      "geometries": 6,
       "materials": 3
     }
   }

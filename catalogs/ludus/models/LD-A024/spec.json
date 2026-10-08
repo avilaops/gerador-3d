@@ -32,11 +32,11 @@
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.36499999999999994,
-      "pivotHeight": 1.2469999999999999,
+      "pivotHeight": 1.247,
       "pivotZ": -0.07783356401384083,
       "leverTube": 0.08,
       "leverFront": [
-        -0.355,
+        -0.35500000000000004,
         0.6651231833910034
       ],
       "leverRear": [
@@ -64,7 +64,7 @@
         ],
         "pivot": [
           0,
-          0.6000000000000001,
+          0.6,
           0.29580311418685123
         ],
         "range": [
@@ -89,9 +89,9 @@
       "areaM2": 6.785801730103805
     },
     "stats": {
-      "triangles": 1988,
+      "triangles": 5116,
       "meshes": 44,
-      "geometries": 4,
+      "geometries": 9,
       "materials": 5
     }
   }

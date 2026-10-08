@@ -32,7 +32,7 @@
       "tube": 0.08,
       "travel": 0.35,
       "stackPlates": 0,
-      "stackTravel": 0.11869638945863548,
+      "stackTravel": 0.12,
       "showPlates": true
     },
     "articulations": [
@@ -41,12 +41,12 @@
         "type": "prismatic",
         "axis": [
           0,
-          0.8488436170012956,
-          -0.5286440332361254
+          0.8524856460542564,
+          -0.5227506320144024
         ],
         "pivot": [
           0,
-          0.5296150710112477,
+          0.5331999999999999,
           -0.4280000000000001
         ],
         "range": [
@@ -59,7 +59,7 @@
     "bboxM": {
       "length": 2.15,
       "width": 1.56,
-      "height": 1.502
+      "height": 1.515
     },
     "trainingArea": {
       "minX": -1.38,
@@ -71,9 +71,9 @@
       "areaM2": 9.245999999999999
     },
     "stats": {
-      "triangles": 1880,
+      "triangles": 5982,
       "meshes": 36,
-      "geometries": 5,
+      "geometries": 8,
       "materials": 6
     }
   }

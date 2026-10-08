@@ -9,6 +9,7 @@
  */
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { generateEquipment, type GeneratedEquipment } from '../generate';
 import type { EquipmentSpec, EquipmentSpecInput } from '../spec/schema';
 import { applyPhase, captureRestPose, phaseAt, DEFAULT_CYCLE_SECONDS } from '../animation';
@@ -146,20 +147,29 @@ export class EquipmentViewer {
     r.shadowMap.enabled = true;
     r.shadowMap.type = THREE.PCFSoftShadowMap;
     r.outputEncoding = THREE.sRGBEncoding;
+    r.toneMapping = THREE.ACESFilmicToneMapping;
+    r.toneMappingExposure = 0.54;
+    // Ambiente de estúdio para os reflexos do cromado e do metal pintado.
+    const pmrem = new THREE.PMREMGenerator(r);
+    const env = pmrem.fromScene(new RoomEnvironment(), 0.04);
+    this.scene.environment = env.texture;
+    pmrem.dispose();
+    this.overlayDisposables.push(env);
 
     this.scene.background = new THREE.Color(opts.background ?? 0xeeece7);
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.75));
-    const key = new THREE.DirectionalLight(0xffffff, 0.95);
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.08));
+    const key = new THREE.DirectionalLight(0xffffff, 1.1);
     key.castShadow = true;
-    key.shadow.mapSize.set(1024, 1024);
+    key.shadow.mapSize.set(2048, 2048);
+    key.shadow.radius = 4;
     key.shadow.bias = -0.0005;
     this.scene.add(key, key.target);
     this.keyLight = key;
-    const rim = new THREE.DirectionalLight(0xffffff, 0.35);
+    const rim = new THREE.DirectionalLight(0xffffff, 0.2);
     rim.position.set(-3, 2.5, -2.5);
     this.scene.add(rim);
     const groundGeo = new THREE.PlaneGeometry(20, 20);
-    const groundMat = new THREE.ShadowMaterial({ opacity: 0.2 });
+    const groundMat = new THREE.ShadowMaterial({ opacity: 0.26 });
     const ground = new THREE.Mesh(groundGeo, groundMat);
     ground.rotation.x = -Math.PI / 2;
     ground.receiveShadow = true;

@@ -44,16 +44,16 @@
     "trainingArea": {
       "minX": -0.905,
       "maxX": 0.905,
-      "minZ": -1.4050940860215055,
-      "maxZ": 1.4050940860215055,
+      "minZ": -1.405094086014334,
+      "maxZ": 1.405094086014334,
       "widthM": 1.81,
-      "lengthM": 2.810188172043011,
-      "areaM2": 5.08644059139785
+      "lengthM": 2.810188172028668,
+      "areaM2": 5.086440591371889
     },
     "stats": {
-      "triangles": 764,
+      "triangles": 2016,
       "meshes": 18,
-      "geometries": 3,
+      "geometries": 5,
       "materials": 3
     }
   }

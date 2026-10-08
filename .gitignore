@@ -7,3 +7,6 @@ dist/
 referencias/
 entrega-fase1/
 PROMPT*.md
+
+# USDZ é grande (≈0,5 MB por item) e sai do "npm run export": não versionar.
+*.usdz

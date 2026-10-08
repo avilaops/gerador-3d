@@ -10,9 +10,9 @@
 <polygon class="eq-part" points="-0.27,0.545 -0.19,0.545 -0.19,0.625 -0.27,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 <polygon class="eq-part" points="0.19,-0.625 0.27,-0.625 0.27,-0.545 0.19,-0.545" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 <polygon class="eq-part" points="0.19,0.545 0.27,0.545 0.27,0.625 0.19,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.03,-0.485 0.03,-0.485 0.03,-0.425 -0.03,-0.425" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.03,0.425 0.03,0.425 0.03,0.485 -0.03,0.485" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.15,-0.5925 -0.1476,-0.6026 -0.1434,-0.6084 -0.1376,-0.6126 -0.1275,-0.615 0.1275,-0.615 0.1376,-0.6126 0.1434,-0.6084 0.1476,-0.6026 0.15,-0.5925 0.15,0.5925 0.1476,0.6026 0.1434,0.6084 0.1376,0.6126 0.1275,0.615 -0.1275,0.615 -0.1376,0.6126 -0.1434,0.6084 -0.1476,0.6026 -0.15,0.5925" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,-0.473 -0.0296,-0.4761 -0.0284,-0.479 -0.0265,-0.4815 -0.024,-0.4834 -0.0211,-0.4846 -0.018,-0.485 0.018,-0.485 0.0211,-0.4846 0.024,-0.4834 0.0265,-0.4815 0.0284,-0.479 0.0296,-0.4761 0.03,-0.473 0.03,-0.437 0.0296,-0.4339 0.0284,-0.431 0.0265,-0.4285 0.024,-0.4266 0.0211,-0.4254 0.018,-0.425 -0.018,-0.425 -0.0211,-0.4254 -0.024,-0.4266 -0.0265,-0.4285 -0.0284,-0.431 -0.0296,-0.4339 -0.03,-0.437" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,0.437 -0.0296,0.4339 -0.0284,0.431 -0.0265,0.4285 -0.024,0.4266 -0.0211,0.4254 -0.018,0.425 0.018,0.425 0.0211,0.4254 0.024,0.4266 0.0265,0.4285 0.0284,0.431 0.0296,0.4339 0.03,0.437 0.03,0.473 0.0296,0.4761 0.0284,0.479 0.0265,0.4815 0.024,0.4834 0.0211,0.4846 0.018,0.485 -0.018,0.485 -0.0211,0.4846 -0.024,0.4834 -0.0265,0.4815 -0.0284,0.479 -0.0296,0.4761 -0.03,0.473" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.15,-0.5865 -0.1485,-0.5955 -0.1452,-0.6023 -0.1417,-0.6067 -0.1373,-0.6102 -0.1305,-0.6135 -0.1215,-0.615 0.1215,-0.615 0.1305,-0.6135 0.1373,-0.6102 0.1417,-0.6067 0.1452,-0.6023 0.1485,-0.5955 0.15,-0.5865 0.15,0.5865 0.1485,0.5955 0.1452,0.6023 0.1417,0.6067 0.1373,0.6102 0.1305,0.6135 0.1215,0.615 -0.1215,0.615 -0.1305,0.6135 -0.1373,0.6102 -0.1417,0.6067 -0.1452,0.6023 -0.1485,0.5955 -0.15,0.5865" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 <polygon class="eq-part" points="-0.03,-0.515 0.03,-0.515 0.03,0.515 -0.03,0.515" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 </g>
 <line class="eq-dim" x1="-0.28" y1="1.4326" x2="0.28" y2="1.4326" style="stroke:#6d6a63;stroke-width:0.0119"/>
@@ -20,8 +20,8 @@
 <line class="eq-dim" x1="0.28" y1="1.3708" x2="0.28" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
 <text class="eq-text" x="0" y="1.5571" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">L 560 mm</text>
 <line class="eq-dim" x1="1.0776" y1="-0.635" x2="1.0776" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="1.0159" y1="-0.635" x2="1.1393" y2="-0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="1.0159" y1="0.635" x2="1.1393" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0158" y1="-0.635" x2="1.1393" y2="-0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0158" y1="0.635" x2="1.1393" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
 <text class="eq-text" x="1.1932" y="0" transform="rotate(90 1.1932 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">C 1270 mm</text>
 <text class="eq-text" x="0" y="1.646" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle;font-size:0.0711px;letter-spacing:.1em">▼ FRENTE</text>
 </svg>

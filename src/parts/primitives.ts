@@ -54,9 +54,14 @@ export function beam(
   const B = new THREE.Vector3(...b);
   const len = A.distanceTo(B);
   const [sx, sz] = typeof size === 'number' ? [size, size] : size;
-  const geometry = opts.round ? kit.unitCylinder : kit.unitBox;
-  const m = mesh(kit, geometry, opts.material ?? 'frame', opts.name);
-  m.scale.set(sx, Math.max(len, 1e-4), sz);
+  const m = mesh(
+    kit,
+    opts.round ? kit.unitCylinder : kit.tube(sx, sz),
+    opts.material ?? 'frame',
+    opts.name
+  );
+  if (opts.round) m.scale.set(sx, Math.max(len, 1e-4), sz);
+  else m.scale.set(1, Math.max(len, 1e-4), 1);
   m.position.copy(A).add(B).multiplyScalar(0.5);
   if (len > 1e-6) m.quaternion.copy(beamOrientation(B.clone().sub(A).normalize()));
   return m;
@@ -117,7 +122,7 @@ export function upholstery(
   opts: UpholsteryOptions = {}
 ): THREE.Mesh {
   const [w, h, d] = size;
-  const r = opts.radius ?? Math.min(0.03, 0.3 * Math.min(w, h, d));
+  const r = opts.radius ?? Math.min(0.035, 0.38 * Math.min(w, h, d));
   const m = mesh(kit, kit.roundedBox(w, h, d, r), opts.material ?? 'upholstery', opts.name);
   m.position.set(...center);
   if (opts.tiltX) m.rotation.x = opts.tiltX;

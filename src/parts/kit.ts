@@ -27,7 +27,7 @@ export const DEFAULT_COLORS: Required<MaterialColors> = {
 };
 
 /** Segmentos radiais dos cilindros: suficiente para cromados de Ø ≤ 10 cm em tela de celular. */
-const RADIAL_SEGMENTS = 16;
+const RADIAL_SEGMENTS = 24;
 
 export class PartKit {
   readonly materials: Record<MaterialRole, THREE.MeshStandardMaterial>;
@@ -62,20 +62,73 @@ export class PartKit {
     return this.cached('cyl', () => new THREE.CylinderGeometry(0.5, 0.5, 1, RADIAL_SEGMENTS));
   }
 
+  /**
+   * Tubo de seção retangular com cantos arredondados, comprimento 1 ao longo de Y,
+   * centrado na origem. Cacheado por seção: o comprimento vem da escala em Y do nó,
+   * então o raio do canto não deforma.
+   */
+  tube(width: number, depth: number): THREE.BufferGeometry {
+    const w = Math.round(width * 1000) / 1000;
+    const d = Math.round(depth * 1000) / 1000;
+    return this.cached(`tube:${w}:${d}`, () => {
+      const r = Math.min(0.012, 0.24 * Math.min(w, d));
+      const hx = w / 2;
+      const hz = d / 2;
+      const shape = new THREE.Shape();
+      shape.moveTo(-hx + r, -hz);
+      shape.lineTo(hx - r, -hz);
+      shape.absarc(hx - r, -hz + r, r, -Math.PI / 2, 0, false);
+      shape.lineTo(hx, hz - r);
+      shape.absarc(hx - r, hz - r, r, 0, Math.PI / 2, false);
+      shape.lineTo(-hx + r, hz);
+      shape.absarc(-hx + r, hz - r, r, Math.PI / 2, Math.PI, false);
+      shape.lineTo(-hx, -hz + r);
+      shape.absarc(-hx + r, -hz + r, r, Math.PI, 1.5 * Math.PI, false);
+      const g = new THREE.ExtrudeGeometry(shape, { depth: 1, bevelEnabled: false, curveSegments: 3 });
+      // A extrusão sai ao longo de Z: deita para Y (o Y da forma vira o Z do tubo) e centraliza.
+      g.translate(0, 0, -0.5);
+      g.rotateX(Math.PI / 2);
+      return g;
+    });
+  }
+
   /** Caixa de cantos arredondados (estofados). Cacheada por medida, porque o raio não escala bem. */
   roundedBox(w: number, h: number, d: number, radius: number): THREE.BufferGeometry {
     const r = Math.min(radius, w / 2 - 1e-4, h / 2 - 1e-4, d / 2 - 1e-4);
     const key = `rbox:${w.toFixed(3)}:${h.toFixed(3)}:${d.toFixed(3)}:${r.toFixed(3)}`;
-    return this.cached(key, () => new RoundedBoxGeometry(w, h, d, 2, r));
+    return this.cached(key, () => new RoundedBoxGeometry(w, h, d, 3, r));
   }
 
-  /** Placa de anilha (disco), cacheada por medida. */
+  /** Anilha: disco torneado com cubo central, rebaixo e aro, eixo em Y. Cacheada por medida. */
   disc(diameter: number, thickness: number): THREE.BufferGeometry {
     const key = `disc:${diameter.toFixed(3)}:${thickness.toFixed(3)}`;
-    return this.cached(
-      key,
-      () => new THREE.CylinderGeometry(diameter / 2, diameter / 2, thickness, 24)
-    );
+    return this.cached(key, () => {
+      const R = diameter / 2;
+      const h = thickness / 2;
+      const hole = 0.026;
+      const profile: [number, number][] = [
+        [hole, -h],
+        [0.22 * R, -h],
+        [0.3 * R, -0.55 * h],
+        [0.8 * R, -0.55 * h],
+        [0.87 * R, -h],
+        [R - 0.004, -h],
+        [R, -h + 0.004],
+        [R, h - 0.004],
+        [R - 0.004, h],
+        [0.87 * R, h],
+        [0.8 * R, 0.55 * h],
+        [0.3 * R, 0.55 * h],
+        [0.22 * R, h],
+        [hole, h],
+        [hole, -h],
+      ];
+      const g = new THREE.LatheGeometry(
+        profile.map(([x, y]) => new THREE.Vector2(x, y)),
+        28
+      );
+      return g;
+    });
   }
 
   /** Toro (polias). */

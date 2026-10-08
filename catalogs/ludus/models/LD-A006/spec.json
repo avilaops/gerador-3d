@@ -32,11 +32,11 @@
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.25,
-      "pivotHeight": 1.695374215502597,
+      "pivotHeight": 1.6953742155025973,
       "pivotZ": -0.08525,
       "leverTube": 0.08,
       "leverFront": [
-        -0.5114096100590455,
+        -0.5114096100590456,
         0.7284999999999999
       ],
       "leverRear": [
@@ -108,9 +108,9 @@
       "areaM2": 6.1875
     },
     "stats": {
-      "triangles": 1268,
+      "triangles": 3708,
       "meshes": 34,
-      "geometries": 3,
+      "geometries": 6,
       "materials": 5
     }
   }
