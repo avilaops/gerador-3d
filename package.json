@@ -9,7 +9,9 @@
   "exports": {
     ".": "./src/index.ts",
     "./viewer": "./src/viewer/EquipmentViewer.ts",
-    "./viewer/react": "./src/viewer/EquipmentViewerView.tsx"
+    "./viewer/react": "./src/viewer/EquipmentViewerView.tsx",
+    "./catalogs/*": "./catalogs/*",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "dev": "vite",
