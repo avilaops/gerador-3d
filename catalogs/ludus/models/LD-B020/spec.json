@@ -51,6 +51,7 @@
       "mechanism": "row",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.7699999998509883,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

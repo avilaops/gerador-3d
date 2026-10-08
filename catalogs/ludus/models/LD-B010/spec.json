@@ -51,6 +51,7 @@
       "mechanism": "standing-calf",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.4299999998509885,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

@@ -51,6 +51,7 @@
       "mechanism": "pulldown",
       "stacks": 2,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.7551139231700923,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

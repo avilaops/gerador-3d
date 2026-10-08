@@ -44,6 +44,8 @@ export const SelectorizedTowerParamsSchema = z.object({
   stacks: z.union([z.literal(1), z.literal(2)]),
   /** Multiplicador do giro das alavancas (máquina genérica). */
   swingScale: z.number().positive(),
+  /** Torre preta e braços na cor de destaque (linha de quadro prata). */
+  darkTower: z.boolean(),
   armPivotHeight: z.number().positive(),
   armPivotX: z.number().nonnegative(),
   armPivotZ: z.number(),
@@ -84,6 +86,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
       mechanism: 'pec-fly',
       stacks: spec.weightStackKg?.stacks === 2 ? 2 : 1,
       swingScale: 1,
+      darkTower: false,
       armPivotHeight: d.height - 0.19,
       armPivotX: 0.18,
       armPivotZ: -0.14,
@@ -106,6 +109,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
         stackPlates: p.stackPlates,
         stackTravel: p.stackTravel,
         swingScale: p.swingScale,
+        darkTower: p.darkTower,
       });
     }
     const root = new THREE.Group();

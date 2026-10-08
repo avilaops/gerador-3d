@@ -16,6 +16,7 @@ import type { StationKind } from './stations';
 export type LeverEnd =
   | 'grip-x' // pegada horizontal, voltada para dentro
   | 'grip-z' // pegada no sentido do braço (frente/trás)
+  | 'long-handles' // quadro em U com duas pegadas compridas por lado
   | 'grip-y' // pegada vertical
   | 'roller' // rolo estofado atravessado
   | 'pad' // almofada (cotovelo, joelho, peito)
@@ -375,7 +376,7 @@ const DEFS = {
         path: [[0, Math.min(0.26, c.H - 0.6), c.zFront - c.zRear - 0.75]],
         axis: NX,
         swing: 0.3,
-        end: 'grip-z',
+        end: 'long-handles',
         horn: 0.5,
         size: 0.07,
       },

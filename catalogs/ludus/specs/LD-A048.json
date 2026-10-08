@@ -8,7 +8,8 @@
     "height": 470
   },
   "params": {
-    "variant": "flat"
+    "variant": "flat",
+    "adjustable": true
   },
   "materials": {
     "frame": "#161616",

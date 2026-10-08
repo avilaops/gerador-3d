@@ -51,6 +51,7 @@
       "mechanism": "assisted-chin",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 2.024999999850988,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

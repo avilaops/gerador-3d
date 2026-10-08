@@ -30,6 +30,8 @@ export interface MachineOptions {
   stackTravel: number;
   /** Multiplicador do giro das alavancas. */
   swingScale: number;
+  /** Torre preta e braços na cor de destaque, mesmo com uma bateria só. */
+  darkTower?: boolean;
 }
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(Math.max(v, lo), Math.max(lo, hi));
@@ -46,7 +48,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const stacks = plates ? 0 : o.stacks;
   // Iso-lateral com bateria: torres baixas nas laterais; o quadro dos braços é que chega à altura A.
   const tallFrame = plates || (stacks === 2 && H >= 1.6);
-  const armMaterial = plates || stacks === 2 ? 'accent' : 'frame';
+  const armMaterial = plates || stacks === 2 || o.darkTower ? 'accent' : 'frame';
   const articulations: Articulation[] = [];
 
   // Distribuição lateral: braços independentes por dentro das torres ou dos pinos.
@@ -99,7 +101,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       const unit = stackTower(kit, {
         suffix: s === 0 ? '' : s < 0 ? '_left' : '_right',
         x: s * towerX,
-        dark: stacks === 2,
+        dark: stacks === 2 || !!o.darkTower,
         z: towerZ,
         height: centralStacks ? Math.max(1.1, 0.64 * H) : H,
         post: t,
@@ -182,6 +184,14 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
           rig.grip(g, T, [T[0], T[1] + d.y, T[2] + d.z], `${name}_grip`);
           break;
         }
+        case 'long-handles': {
+          // Duas pegadas compridas por lado: uma segue o braço, outra desce para a frente.
+          const d = new THREE.Vector3(0, tip[1], tip[2]).normalize();
+          rig.grip(g, T, [T[0], T[1] + d.y * 0.42, T[2] + d.z * 0.42], `${name}_grip`);
+          const M: Vec3 = [T[0], T[1] * 0.62, T[2] * 0.62];
+          rig.grip(g, M, [M[0] + s * 0.06, M[1] - 0.3, M[2] + 0.3], `${name}_grip_low`);
+          break;
+        }
         case 'roller':
           if (!single) rig.roller(g, T, [T[0] + inward * 0.22, T[1], T[2]], 0.11, `${name}_roller`);
           break;
@@ -224,6 +234,10 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         case 'plate':
           rig.tube(g, [-half, T[1], T[2]], [half, T[1], T[2]], size, armMaterial);
           rig.box(g, [0.36, 0.02, 0.28], [0, T[1] - 0.04, T[2]], 'plate', `${name}_foot_plate`);
+          break;
+        case 'long-handles':
+          // Fecha o U na frente.
+          rig.tube(g, [-half, T[1], T[2]], [half, T[1], T[2]], size, armMaterial);
           break;
         case 'grip-z':
         case 'grip-x':

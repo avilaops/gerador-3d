@@ -33,6 +33,8 @@ export const BenchParamsSchema = z.object({
   wheels: z.boolean(),
   /** Banco reto sobre dois cavaletes em A, sem base no piso. */
   aLegs: z.boolean(),
+  /** Banco regulável: assento e encosto separados, com a cremalheira de regulagem. */
+  adjustable: z.boolean(),
 });
 export type BenchParams = z.infer<typeof BenchParamsSchema>;
 
@@ -50,6 +52,7 @@ export const bench: FamilyDefinition<BenchParams> = {
       seatHeight: Math.min(0.44, d.height - 0.05),
       wheels: true,
       aLegs: false,
+      adjustable: false,
     };
   },
 
@@ -111,7 +114,15 @@ export const bench: FamilyDefinition<BenchParams> = {
     switch (p.variant) {
       case 'flat': {
         const seat = rig.group('seat');
-        rig.pad(seat, [pw, 0.075, cavaletes ? L : L - 0.04], [0, H - 0.0375, 0], 0, 'bench_pad');
+        if (p.adjustable) {
+          const corte = zF - 0.34 * L;
+          rig.pad(seat, [pw, 0.075, zF - 0.02 - corte - 0.015], [0, H - 0.0375, (zF - 0.02 + corte + 0.015) / 2], 0, 'seat_pad');
+          rig.pad(rig.group('backrest'), [pw, 0.075, corte - 0.015 - (zR + 0.02)], [0, H - 0.0375, (corte - 0.015 + zR + 0.02) / 2], 0, 'backrest_pad');
+          // Cremalheira e escora da regulagem do encosto.
+          rig.tube(seat, [0.05, H - 0.14, corte - 0.08], [0.05, y0 + 0.05, zR + 0.3], [0.012, 0.06], 'plate', 'adjust_rack');
+          rig.rod(seat, [-0.05, H - 0.13, zR + 0.45], [-0.05, y0 + 0.04, zR + 0.62], 0.03, 'chrome', 'adjust_strut');
+        } else
+          rig.pad(seat, [pw, 0.075, cavaletes ? L : L - 0.04], [0, H - 0.0375, 0], 0, 'bench_pad');
         if (!cavaletes) rig.path(
           seat,
           [
@@ -222,22 +233,24 @@ export const bench: FamilyDefinition<BenchParams> = {
         break;
       }
       case 'preacher': {
-        const hs = Math.min(0.5, H - 0.4);
+        const hs = Math.min(0.5, H - 0.52);
         const seat = rig.group('seat');
         const zs = zR + 0.22;
         rig.pad(seat, [0.34, 0.08, 0.3], [0, hs, zs], 0, 'seat_pad');
         post(zs, hs - 0.04);
         const padG = rig.group('arm_pad');
         const zp = zs + 0.42;
-        const yp = Math.min(hs + 0.38, H - 0.12);
+        // O apoio de braço é o ponto mais alto; o descanso da barra fica baixo, na frente.
+        const yp = H - 0.16;
+        const yr = Math.min(0.72 * H, yp - 0.12);
         rig.pad(padG, [Math.min(0.6, W - 0.16), 0.075, 0.44], [0, yp, zp], 0.85, 'arm_pad_cushion');
         rig.tube(padG, [0, y0, zp + 0.05], [0, yp - 0.05, zp - 0.02], t);
         const restG = rig.group('bar_rest');
         const xr = Math.min(0.36, W / 2 - 0.08);
         for (const s of [-1, 1] as const) {
-          rig.tube(restG, [s * xr, y0, zF - 0.12], [s * xr, H - 0.05, zF - 0.12], 0.05);
-          rig.tube(restG, [s * xr, H - 0.075, zF - 0.12], [s * xr, H - 0.075, zF - 0.02], 0.04, 'chrome', 'hook');
-          rig.tube(restG, [s * xr, H - 0.075, zF - 0.02], [s * xr, H, zF - 0.02], 0.03, 'chrome');
+          rig.tube(restG, [s * xr, y0, zF - 0.12], [s * xr, yr, zF - 0.12], 0.05);
+          rig.tube(restG, [s * xr, yr - 0.025, zF - 0.12], [s * xr, yr - 0.025, zF - 0.02], 0.04, 'chrome', 'hook');
+          rig.tube(restG, [s * xr, yr - 0.025, zF - 0.02], [s * xr, yr + 0.05, zF - 0.02], 0.03, 'chrome');
         }
         rig.tube(restG, [-xr, y0, zF - 0.12], [xr, y0, zF - 0.12], t);
         break;

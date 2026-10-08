@@ -51,6 +51,7 @@
       "mechanism": "glute-kickback",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.5799999998509884,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

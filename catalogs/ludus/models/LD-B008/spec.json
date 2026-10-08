@@ -51,6 +51,7 @@
       "mechanism": "chest-press",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.3499999998509882,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

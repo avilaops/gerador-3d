@@ -8,7 +8,8 @@
     "height": 470
   },
   "params": {
-    "variant": "flat"
+    "variant": "flat",
+    "adjustable": true
   },
   "materials": {
     "frame": "#161616",
@@ -37,7 +38,8 @@
       "backAngle": 0.6,
       "seatHeight": 0.41999999850988384,
       "wheels": true,
-      "aLegs": false
+      "aLegs": false,
+      "adjustable": true
     },
     "articulations": [],
     "bboxM": {
@@ -55,10 +57,10 @@
       "areaM2": 4.453199999969546
     },
     "stats": {
-      "triangles": 1754,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 2550,
+      "meshes": 16,
+      "geometries": 8,
+      "materials": 5
     }
   }
 }

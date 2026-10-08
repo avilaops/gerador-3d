@@ -87,7 +87,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-A045': bench('incline', { backAngle: deg(55) }),
   'LD-A046': bench('incline', { backAngle: deg(75) }),
   'LD-A047': bench('decline'),
-  'LD-A048': bench('flat'),
+  'LD-A048': bench('flat', { adjustable: true }),
   'LD-A049': bench('decline'),
   'LD-A050': bench('olympic-flat'),
   'LD-A051': bench('olympic-incline', { backAngle: deg(35) }),
@@ -125,7 +125,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-B028': st('triceps-extension'),
   'LD-B029': st('pulldown'),
   'LD-B030': st('pulldown'),
-  'LD-B031': st('ab-crunch'),
+  'LD-B031': st('ab-crunch', { darkTower: true }),
   'LD-B032': st('leg-curl'),
   'LD-B033': st('leg-extension'),
   'LD-B034': legs('lever-squat'),
@@ -194,7 +194,13 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
     ...(weightStackKg ? { weightStackKg } : {}),
     params,
     ...(COLORS[product.linha]
-      ? { materials: weightStackKg?.stacks === 2 && family === 'selectorized-tower' ? COLORS['Peso livre'] : COLORS[product.linha] }
+      ? {
+          // Iso-laterais e as demais de quadro prata com coluna preta usam as cores do peso livre.
+          materials:
+            family === 'selectorized-tower' && (weightStackKg?.stacks === 2 || params.darkTower === true)
+              ? COLORS['Peso livre']
+              : COLORS[product.linha],
+        }
       : {}),
     trainingClearanceM: 0.6,
     review: {

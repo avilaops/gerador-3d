@@ -38,7 +38,8 @@
       "backAngle": 0.611,
       "seatHeight": 0.44,
       "wheels": true,
-      "aLegs": false
+      "aLegs": false,
+      "adjustable": false
     },
     "articulations": [],
     "bboxM": {

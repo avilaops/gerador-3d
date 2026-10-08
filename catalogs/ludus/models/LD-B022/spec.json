@@ -51,6 +51,7 @@
       "mechanism": "biceps-curl",
       "stacks": 2,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.3099999998509884,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

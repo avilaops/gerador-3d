@@ -51,6 +51,7 @@
       "mechanism": "leg-curl",
       "stacks": 2,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.1899999998509883,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

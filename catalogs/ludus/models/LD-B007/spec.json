@@ -51,6 +51,7 @@
       "mechanism": "pec-fly",
       "stacks": 1,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.859999999850988,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,

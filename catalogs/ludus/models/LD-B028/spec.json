@@ -51,6 +51,7 @@
       "mechanism": "triceps-extension",
       "stacks": 2,
       "swingScale": 1,
+      "darkTower": false,
       "armPivotHeight": 1.3399999998509884,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
