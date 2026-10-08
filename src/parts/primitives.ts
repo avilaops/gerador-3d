@@ -81,29 +81,145 @@ function beamOrientation(dir: THREE.Vector3): THREE.Quaternion {
   return new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(x, y, z));
 }
 
+export interface BentTubeOptions extends BeamOptions {
+  /** Raio da dobra, medido no eixo do tubo. Padrão: 1,8 × o lado. */
+  radius?: number;
+}
+
+/** Pontos da seção no plano (x, z) do tubo, com a normal de cada um. */
+function sectionProfile(size: number | [number, number], round: boolean): [number, number, number, number][] {
+  const [sx, sz] = typeof size === 'number' ? [size, size] : size;
+  const out: [number, number, number, number][] = [];
+  if (round) {
+    const n = 16;
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * 2 * Math.PI;
+      out.push([(sx / 2) * Math.cos(a), (sz / 2) * Math.sin(a), Math.cos(a), Math.sin(a)]);
+    }
+    return out;
+  }
+  const r = Math.min(0.012, 0.24 * Math.min(sx, sz));
+  const corners: [number, number, number][] = [
+    [sx / 2 - r, sz / 2 - r, 0],
+    [-(sx / 2 - r), sz / 2 - r, Math.PI / 2],
+    [-(sx / 2 - r), -(sz / 2 - r), Math.PI],
+    [sx / 2 - r, -(sz / 2 - r), 1.5 * Math.PI],
+  ];
+  for (const [cx, cz, a0] of corners) {
+    for (let k = 0; k <= 3; k++) {
+      const a = a0 + (k / 3) * (Math.PI / 2);
+      out.push([cx + r * Math.cos(a), cz + r * Math.sin(a), Math.cos(a), Math.sin(a)]);
+    }
+  }
+  return out;
+}
+
+/** Eixo do tubo: a polilinha com cada canto trocado por um arco de raio `radius`. */
+function filletPath(points: Vec3[], radius: number): THREE.Vector3[] {
+  const P = points.map((p) => new THREE.Vector3(...p));
+  const out: THREE.Vector3[] = [P[0].clone()];
+  for (let i = 1; i < P.length - 1; i++) {
+    const u = P[i - 1].clone().sub(P[i]);
+    const v = P[i + 1].clone().sub(P[i]);
+    const lu = u.length();
+    const lv = v.length();
+    u.normalize();
+    v.normalize();
+    const phi = Math.acos(THREE.MathUtils.clamp(u.dot(v), -1, 1));
+    if (phi > Math.PI - 0.03 || phi < 0.05 || lu < 1e-4 || lv < 1e-4) {
+      out.push(P[i].clone());
+      continue;
+    }
+    const tl = Math.min(radius / Math.tan(phi / 2), 0.45 * lu, 0.45 * lv);
+    const r = tl * Math.tan(phi / 2);
+    const center = P[i].clone().addScaledVector(u.clone().add(v).normalize(), r / Math.sin(phi / 2));
+    const a = P[i].clone().addScaledVector(u, tl).sub(center);
+    const b = P[i].clone().addScaledVector(v, tl).sub(center);
+    const axis = new THREE.Vector3().crossVectors(a, b).normalize();
+    const sweepAngle = Math.PI - phi;
+    const steps = Math.max(3, Math.ceil(sweepAngle / 0.28));
+    for (let k = 0; k <= steps; k++) {
+      out.push(center.clone().add(a.clone().applyAxisAngle(axis, (sweepAngle * k) / steps)));
+    }
+  }
+  out.push(P[P.length - 1].clone());
+  return out;
+}
+
 /**
- * Polilinha de tubos (quadro dobrado). Cada trecho é um `beam`; nos cantos
- * entra um cubo do mesmo lado para fechar a junta.
+ * Tubo dobrado: uma única malha que segue a polilinha, com as dobras em arco
+ * (como tubo curvado em máquina, e não soldado em quina). A seção acompanha o
+ * eixo sem torcer.
  */
 export function bentTube(
   kit: PartKit,
   points: Vec3[],
-  size: number,
-  opts: BeamOptions = {}
+  size: number | [number, number],
+  opts: BentTubeOptions = {}
 ): THREE.Group {
   const g = new THREE.Group();
   if (opts.name) g.name = opts.name;
-  for (let i = 0; i < points.length - 1; i++) {
-    g.add(beam(kit, points[i], points[i + 1], size, { ...opts, name: undefined }));
+  const side = typeof size === 'number' ? size : Math.max(...size);
+  const axis = filletPath(points, opts.radius ?? 1.8 * side);
+  const profile = sectionProfile(size, !!opts.round);
+  const n = profile.length;
+
+  const pos: number[] = [];
+  const nor: number[] = [];
+  const idx: number[] = [];
+  const T = new THREE.Vector3();
+  const X = new THREE.Vector3();
+  const Z = new THREE.Vector3();
+  const frames: { p: THREE.Vector3; t: THREE.Vector3; x: THREE.Vector3; z: THREE.Vector3 }[] = [];
+  for (let i = 0; i < axis.length; i++) {
+    T.copy(axis[Math.min(i + 1, axis.length - 1)]).sub(axis[Math.max(i - 1, 0)]).normalize();
+    if (i === 0) {
+      const ref = Math.abs(T.dot(UP)) > 0.999 ? new THREE.Vector3(0, 0, 1) : UP;
+      Z.copy(ref).addScaledVector(T, -ref.dot(T)).normalize();
+    } else {
+      // Transporte paralelo: mantém a seção alinhada de um anel para o outro.
+      Z.addScaledVector(T, -Z.dot(T)).normalize();
+    }
+    X.crossVectors(T, Z).normalize();
+    frames.push({ p: axis[i], t: T.clone(), x: X.clone(), z: Z.clone() });
+    for (const [px, pz, nx, nz] of profile) {
+      pos.push(
+        axis[i].x + px * X.x + pz * Z.x,
+        axis[i].y + px * X.y + pz * Z.y,
+        axis[i].z + px * X.z + pz * Z.z
+      );
+      nor.push(nx * X.x + nz * Z.x, nx * X.y + nz * Z.y, nx * X.z + nz * Z.z);
+    }
   }
-  for (let i = 1; i < points.length - 1; i++) {
-    const joint = opts.round
-      ? mesh(kit, kit.unitCylinder, opts.material ?? 'frame')
-      : mesh(kit, kit.unitBox, opts.material ?? 'frame');
-    joint.scale.setScalar(size);
-    joint.position.set(...points[i]);
-    g.add(joint);
+  for (let i = 0; i < axis.length - 1; i++) {
+    for (let k = 0; k < n; k++) {
+      const a = i * n + k;
+      const b = i * n + ((k + 1) % n);
+      idx.push(a, a + n, b, b, a + n, b + n);
+    }
   }
+  // Tampas.
+  for (const [f, sign] of [
+    [frames[0], -1],
+    [frames[frames.length - 1], 1],
+  ] as const) {
+    const start = pos.length / 3;
+    for (const [px, pz] of profile) {
+      pos.push(f.p.x + px * f.x.x + pz * f.z.x, f.p.y + px * f.x.y + pz * f.z.y, f.p.z + px * f.x.z + pz * f.z.z);
+      nor.push(sign * f.t.x, sign * f.t.y, sign * f.t.z);
+    }
+    for (let k = 1; k < n - 1; k++) {
+      if (sign > 0) idx.push(start, start + k + 1, start + k);
+      else idx.push(start, start + k, start + k + 1);
+    }
+  }
+
+  const geometry = kit.own(new THREE.BufferGeometry());
+  geometry.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geometry.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  geometry.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array((pos.length / 3) * 2), 2));
+  geometry.setIndex(idx);
+  g.add(mesh(kit, geometry, opts.material ?? 'frame', opts.name ? `${opts.name}_tube` : undefined));
   return g;
 }
 

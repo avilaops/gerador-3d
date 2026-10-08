@@ -99,24 +99,24 @@
       }
     ],
     "bboxM": {
-      "length": 2.58,
+      "length": 2.6,
       "width": 1.02,
       "height": 2.48
     },
     "trainingArea": {
       "minX": -1.1100000001490116,
       "maxX": 1.1099999999999999,
-      "minZ": -1.8900000001490116,
-      "maxZ": 1.8900000001490116,
+      "minZ": -1.9,
+      "maxZ": 1.9,
       "widthM": 2.220000000149011,
-      "lengthM": 3.780000000298023,
-      "areaM2": 8.391600001224873
+      "lengthM": 3.8,
+      "areaM2": 8.436000000566242
     },
     "stats": {
-      "triangles": 7920,
+      "triangles": 6736,
       "meshes": 101,
       "geometries": 7,
-      "materials": 6
+      "materials": 7
     }
   }
 }

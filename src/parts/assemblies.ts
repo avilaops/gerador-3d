@@ -3,7 +3,7 @@
  */
 import * as THREE from 'three';
 import type { PartKit } from './kit';
-import { beam, box, cable, mesh, pulley } from './primitives';
+import { beam, box, cable, mesh } from './primitives';
 import type { Articulation, Vec3 } from '../spec/schema';
 
 export interface TowerOptions {
@@ -182,16 +182,32 @@ export function stackTower(
   const unit = new THREE.Group();
   unit.name = `tower${suffix}`;
   unit.position.set(o.x, 0, o.z);
-  const frame = tower(kit, {
-    x: 0,
-    z: 0,
-    postSpacing: 0.34,
-    height: o.height,
-    post: o.post,
-    capDepth: 0.26,
-    capOffsetZ: 0.005,
-  });
+  // Coluna carenada: laterais e fundo em chapa, cabeçote na frente e tampo de madeira.
+  const frame = new THREE.Group();
   frame.name = 'tower_frame';
+  const capH = 0.035;
+  const bodyH = o.height - capH;
+  const halfW = 0.2;
+  const depth = 0.24;
+  for (const s of [-1, 1]) {
+    frame.add(
+      box(kit, [0.03, bodyH, depth], [s * (halfW - 0.015), bodyH / 2, 0], { name: 'tower_side' })
+    );
+  }
+  frame.add(box(kit, [2 * halfW, 0.2, depth], [0, bodyH - 0.1, 0], { name: 'tower_head' }));
+  frame.add(box(kit, [2 * halfW, 0.1, depth], [0, 0.05, 0], { name: 'tower_foot' }));
+  frame.add(
+    box(kit, [2 * halfW + 0.05, capH, depth + 0.05], [0, o.height - capH / 2, 0], {
+      material: 'wood',
+      name: 'tower_cap',
+    })
+  );
+  frame.add(
+    box(kit, [0.16, 0.11, 0.004], [0, bodyH - 0.1, depth / 2 + 0.002], {
+      material: 'label',
+      name: 'tower_label',
+    })
+  );
   unit.add(frame);
   const guideHeight = Math.min(0.7 * o.height, o.height - 0.3);
   const baseY = 0.11;
@@ -205,13 +221,12 @@ export function stackTower(
     gap: 0.005,
     baseY,
     guideHeight,
-    cableTopY: o.height - 0.12,
+    cableTopY: o.height - 0.24,
   });
   st.stack.name = `stack${suffix}`;
   unit.add(st.guides, st.stack);
-  unit.add(pulley(kit, [0, o.height - 0.12, 0], 0.09, 'x'));
   unit.add(
-    box(kit, [0.3, guideHeight - 0.1, 0.012], [0, (guideHeight + 0.1) / 2, -0.08], {
+    box(kit, [2 * halfW - 0.06, bodyH - 0.3, 0.012], [0, (bodyH - 0.3) / 2 + 0.1, -depth / 2 + 0.006], {
       name: 'tower_shroud',
     })
   );

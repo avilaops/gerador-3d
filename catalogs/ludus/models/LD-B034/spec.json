@@ -51,7 +51,7 @@
         "pivot": [
           0,
           0,
-          -1.0975
+          -1.0924999999999998
         ],
         "range": [
           0,
@@ -70,7 +70,7 @@
         "pivot": [
           0,
           1.7249999999999999,
-          -0.9324999999999999
+          -0.9274999999999999
         ],
         "range": [
           0,
@@ -80,24 +80,24 @@
       }
     ],
     "bboxM": {
-      "length": 2.465,
+      "length": 2.475,
       "width": 0.8,
       "height": 2.005
     },
     "trainingArea": {
       "minX": -1,
       "maxX": 1,
-      "minZ": -1.8325,
-      "maxZ": 1.8325,
+      "minZ": -1.8375,
+      "maxZ": 1.8375,
       "widthM": 2,
-      "lengthM": 3.665,
-      "areaM2": 7.33
+      "lengthM": 3.675,
+      "areaM2": 7.35
     },
     "stats": {
-      "triangles": 5210,
+      "triangles": 4618,
       "meshes": 61,
-      "geometries": 8,
-      "materials": 8
+      "geometries": 7,
+      "materials": 9
     }
   }
 }

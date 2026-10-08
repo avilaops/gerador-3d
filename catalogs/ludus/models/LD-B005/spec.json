@@ -35,12 +35,12 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.3255,
       "baseRailX": 0.2325,
-      "towerZ": -0.4225,
+      "towerZ": -0.41267937212545247,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10640000000000001,
+      "stackTravel": 0.10639999998807907,
       "seatHeight": 0.46,
-      "seatZ": 0.219,
+      "seatZ": 0.215071748850181,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -48,7 +48,7 @@
       "mechanism": "lateral-raise",
       "stacks": 1,
       "swingScale": 1,
-      "armPivotHeight": 1.1400000000000001,
+      "armPivotHeight": 1.1399999998509884,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -66,12 +66,12 @@
         ],
         "pivot": [
           0,
-          1.4901173350789776e-10,
-          -0.4225
+          1.4901172656900386e-10,
+          -0.40267937219995825
         ],
         "range": [
           0,
-          0.10640000000000001
+          0.10639999998807907
         ],
         "driver": "phase"
       },
@@ -86,7 +86,7 @@
         "pivot": [
           -0.2,
           1.0200000001490117,
-          0.199
+          0.20507174877567522
         ],
         "range": [
           0,
@@ -105,7 +105,7 @@
         "pivot": [
           0.2,
           1.0200000001490117,
-          0.199
+          0.20507174877567522
         ],
         "range": [
           0,
@@ -122,17 +122,17 @@
     "trainingArea": {
       "minX": -1.065,
       "maxX": 1.065,
-      "minZ": -1.1475000001490114,
-      "maxZ": 1.1475000001490114,
+      "minZ": -1.147679372199958,
+      "maxZ": 1.147679372199958,
       "widthM": 2.13,
-      "lengthM": 2.295000000298023,
-      "areaM2": 4.888350000634788
+      "lengthM": 2.295358744399916,
+      "areaM2": 4.889114125571822
     },
     "stats": {
-      "triangles": 5440,
+      "triangles": 4848,
       "meshes": 49,
-      "geometries": 8,
-      "materials": 7
+      "geometries": 7,
+      "materials": 8
     }
   }
 }

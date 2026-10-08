@@ -10,8 +10,8 @@
 import * as THREE from 'three';
 import { z } from 'zod';
 import type { FamilyDefinition } from './types';
-import { beam, box, cable, pulley, rubberFoot, upholstery } from '../parts/primitives';
-import { pivotArm, tower, weightStack } from '../parts/assemblies';
+import { beam, box, cable, rubberFoot, upholstery } from '../parts/primitives';
+import { pivotArm, stackTower } from '../parts/assemblies';
 import type { Articulation } from '../spec/schema';
 import { buildMachine } from './machine/machine';
 import { EXERCISES, EXERCISE_IDS, type ExerciseId } from './machine/exercises';
@@ -137,33 +137,17 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     root.add(base);
 
     // Torre e bateria
+    const guideHeight = Math.min(0.7 * dims.height, dims.height - 0.3);
     root.add(
-      tower(kit, {
+      stackTower(kit, {
         x: 0,
         z: p.towerZ,
-        postSpacing: p.towerPostSpacing,
         height: dims.height,
         post: t,
-        capDepth: 0.32,
-        capOffsetZ: 0.03,
-      })
+        plates: p.stackPlates,
+        travel: p.stackTravel,
+      }).group
     );
-    const guideHeight = 0.7 * dims.height;
-    const baseY = 0.11;
-    const available = guideHeight - baseY - p.stackTravel - 0.3;
-    const pitch = Math.min(0.037, available / (p.stackPlates + 1));
-    const st = weightStack(kit, {
-      x: 0,
-      z: p.towerZ,
-      plates: p.stackPlates,
-      plateSize: [0.24, pitch - 0.005, 0.13],
-      gap: 0.005,
-      baseY,
-      guideHeight,
-      cableTopY: dims.height - 0.12,
-    });
-    root.add(st.guides, st.stack);
-    root.add(pulley(kit, [0, dims.height - 0.12, p.towerZ], 0.09, 'x'));
 
     // Assento e encosto
     const seat = new THREE.Group();

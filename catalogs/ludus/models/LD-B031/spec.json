@@ -35,10 +35,10 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.35,
       "baseRailX": 0.25,
-      "towerZ": -0.43500000000000005,
+      "towerZ": -0.42517543852457684,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.1144,
+      "stackTravel": 0.11439999998807907,
       "seatHeight": 0.48,
       "seatZ": 0,
       "seatWidth": 0.42,
@@ -48,7 +48,7 @@
       "mechanism": "ab-crunch",
       "stacks": 1,
       "swingScale": 1,
-      "armPivotHeight": 1.24,
+      "armPivotHeight": 1.2399999998509883,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -67,11 +67,11 @@
         "pivot": [
           0,
           1.4901173350789776e-10,
-          -0.43500000000000005
+          -0.4151754385990826
         ],
         "range": [
           0,
-          0.1144
+          0.11439999998807907
         ],
         "driver": "phase"
       },
@@ -86,7 +86,7 @@
         "pivot": [
           0,
           0.7800000001490117,
-          -0.2
+          -0.1900000000745058
         ],
         "range": [
           0,
@@ -103,17 +103,17 @@
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.1600000001490116,
-      "maxZ": 1.1600000001490116,
+      "minZ": -1.1601754385990826,
+      "maxZ": 1.1601754385990826,
       "widthM": 2.2,
-      "lengthM": 2.3200000002980232,
-      "areaM2": 5.104000000655652
+      "lengthM": 2.320350877198165,
+      "areaM2": 5.104771929835963
     },
     "stats": {
-      "triangles": 4760,
-      "meshes": 46,
+      "triangles": 4120,
+      "meshes": 44,
       "geometries": 8,
-      "materials": 7
+      "materials": 8
     }
   }
 }

@@ -94,9 +94,19 @@ export const bench: FamilyDefinition<BenchParams> = {
       case 'flat': {
         const seat = rig.group('seat');
         rig.pad(seat, [pw, 0.075, L - 0.04], [0, H - 0.0375, 0], 0, 'bench_pad');
-        rig.tube(seat, [0, H - 0.11, zR + 0.12], [0, H - 0.11, zF - 0.12], [t, 0.05]);
-        post(zR + 0.18, H - 0.11);
-        post(zF - 0.18, H - 0.11);
+        rig.path(
+          seat,
+          [
+            [0, y0, zR + t / 2],
+            [0, H - 0.1, zR + 0.2],
+            [0, H - 0.1, zF - 0.2],
+            [0, y0, zF - t / 2],
+          ],
+          t,
+          'frame',
+          'bench_frame',
+          0.1
+        );
         break;
       }
       case 'incline': {

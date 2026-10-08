@@ -42,6 +42,8 @@ export interface LeverDef {
   size?: number;
   /** Posição do pino de anilhas ao longo do primeiro trecho (0 = pivô, 1 = ponta; <0 = prolongamento atrás). */
   horn?: number;
+  /** Dobra do braço (cotovelo), como fração do comprimento; o sinal escolhe o lado. Só para braço de um trecho. */
+  bend?: number;
   /** Sem coluna de apoio própria (o pivô já está sobre outra estrutura). */
   noSupport?: boolean;
 }
@@ -92,6 +94,7 @@ function press(c: ExerciseContext, handY: number, handZ = 0.16): LeverDef[] {
         axis: NX,
         swing: 0.36,
         end: 'grip-x',
+        bend: -0.16,
         horn: 0.62,
       },
     ];
@@ -104,6 +107,7 @@ function press(c: ExerciseContext, handY: number, handZ = 0.16): LeverDef[] {
       axis: X,
       swing: 0.3,
       end: 'grip-x',
+      bend: 0.16,
       horn: 0.5,
     },
   ];
@@ -122,6 +126,7 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
         axis: X,
         swing: 0.36,
         end: 'grip-y',
+        bend: -0.14,
         horn: 0.6,
       },
     ];
@@ -134,6 +139,7 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
       axis: NX,
       swing: 0.34,
       end: 'grip-y',
+      bend: 0.14,
       horn: 0.5,
     },
   ];
@@ -181,6 +187,7 @@ const DEFS = {
         axis: NX,
         swing: 0.3,
         end: 'grip-x',
+        bend: -0.14,
         horn: 0.72,
       },
     ],
@@ -202,6 +209,7 @@ const DEFS = {
           axis: NX,
           swing: 0.42,
           end: 'grip-x',
+          bend: 0.14,
           horn: 0.55,
         },
       ];
@@ -240,6 +248,7 @@ const DEFS = {
           axis: NX,
           swing: 0.5,
           end: 'grip-x',
+          bend: 0.14,
           horn: -0.45,
         },
       ];
@@ -378,6 +387,7 @@ const DEFS = {
         axis: X,
         swing: 0.45,
         end: 'grip-x',
+        bend: -0.1,
         horn: 0.5,
       },
     ],

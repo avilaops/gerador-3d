@@ -35,12 +35,12 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.37625,
       "baseRailX": 0.26875,
-      "towerZ": -0.4525,
+      "towerZ": -0.44267021269396634,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10640000000000001,
+      "stackTravel": 0.10639999998807907,
       "seatHeight": 0.46,
-      "seatZ": 0.231,
+      "seatZ": 0.22706808507758655,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -48,7 +48,7 @@
       "mechanism": "biceps-curl",
       "stacks": 1,
       "swingScale": 1,
-      "armPivotHeight": 1.1400000000000001,
+      "armPivotHeight": 1.1399999998509884,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -67,11 +67,11 @@
         "pivot": [
           0,
           1.4901173350789776e-10,
-          -0.4525
+          -0.4326702127684721
         ],
         "range": [
           0,
-          0.10640000000000001
+          0.10639999998807907
         ],
         "driver": "phase"
       },
@@ -86,7 +86,7 @@
         "pivot": [
           -0.34,
           0.7600000001490117,
-          -0.18899999999999997
+          -0.18293191499691921
         ],
         "range": [
           0,
@@ -105,7 +105,7 @@
         "pivot": [
           0.34,
           0.7600000001490117,
-          -0.18899999999999997
+          -0.18293191499691921
         ],
         "range": [
           0,
@@ -122,17 +122,17 @@
     "trainingArea": {
       "minX": -1.1375,
       "maxX": 1.1375,
-      "minZ": -1.1775000001490117,
-      "maxZ": 1.1775000001490117,
+      "minZ": -1.1776702127684722,
+      "maxZ": 1.1776702127684722,
       "widthM": 2.275,
-      "lengthM": 2.3550000002980234,
-      "areaM2": 5.357625000678003
+      "lengthM": 2.3553404255369443,
+      "areaM2": 5.3583994680965485
     },
     "stats": {
-      "triangles": 4456,
+      "triangles": 3864,
       "meshes": 49,
-      "geometries": 7,
-      "materials": 7
+      "geometries": 6,
+      "materials": 8
     }
   }
 }

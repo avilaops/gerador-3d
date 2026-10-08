@@ -110,6 +110,13 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
 
   const levers = ex.levers({ hs: o.seatHeight, H, W, ax, plates, zRear: uRear, zFront: uFront });
   const postTops: { x: number; y: number; z: number }[] = [];
+  const tallest = levers
+    .filter((l) => !l.noSupport)
+    .reduce<(typeof levers)[number] | undefined>(
+      (best, l) => (!best || l.pivot[1] > best.pivot[1] ? l : best),
+      undefined
+    );
+  let frameDone = false;
 
   for (const def of levers) {
     const size = def.size ?? 0.06;
@@ -120,15 +127,22 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const hornLen = clamp(W / 2 - px - size / 2 - 0.02, 0.1, 0.2);
     const tip: Vec3 = def.path.length ? def.path[def.path.length - 1] : [0, 0, 0];
     const single = !def.split;
+    // Dobra do braço: um cotovelo no meio, deslocado na perpendicular (no plano do movimento).
+    let armPath: Vec3[] = def.path;
+    if (def.bend && def.path.length === 1) {
+      const [, dy, dz] = def.path[0];
+      const elbow: Vec3 = [def.path[0][0] / 2, dy / 2 - dz * def.bend, dz / 2 + dy * def.bend];
+      armPath = [elbow, def.path[0]];
+    }
     const baseName = def.node ?? (single ? 'lever' : 'arm');
 
     // Braço de um lado: `s` é o lado (+1 direita, −1 esquerda); `offX` desloca o braço dentro do grupo.
     const drawArm = (g: THREE.Group, s: 1 | -1, offX: number, name: string) => {
       const P = (p: Vec3): Vec3 => [offX + s * p[0], p[1], p[2]];
-      let prev: Vec3 = [0, 0, 0];
-      for (const p of def.path) {
-        rig.tube(g, P(prev), P(p), size, armMaterial, `${name}_bar`);
-        prev = p;
+      if (armPath.length > 1) {
+        rig.path(g, [[0, 0, 0] as Vec3, ...armPath].map(P), size, armMaterial, `${name}_bar`, 0.16);
+      } else if (armPath.length === 1) {
+        rig.tube(g, P([0, 0, 0]), P(armPath[0]), size, armMaterial, `${name}_bar`);
       }
       const T = P(tip);
       const inward = -s;
@@ -154,10 +168,10 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         default:
           break;
       }
-      if (plates && def.horn !== undefined && def.path.length) {
-        const h = lerp([0, 0, 0], def.path[0], def.horn);
+      if (plates && def.horn !== undefined && armPath.length) {
+        const h = lerp([0, 0, 0], armPath[0], def.horn);
         if (def.horn < 0) rig.tube(g, P([0, 0, 0]), P(h), size, armMaterial, `${name}_tail`);
-        if (def.horn > 1) rig.tube(g, P(def.path[0]), P(h), size, armMaterial, `${name}_tail`);
+        if (def.horn > 1) rig.tube(g, P(armPath[0]), P(h), size, armMaterial, `${name}_tail`);
         const hb = P(h);
         rig.horn(g, [hb[0] + s * (size / 2), hb[1], hb[2]], [s, 0, 0], hornLen, `${name}_horn`);
       }
@@ -208,8 +222,8 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         drawArm(g, -1, -px, baseName);
       } else {
         drawArm(g, 1, 0, baseName);
-        if (plates && def.horn !== undefined && def.path.length) {
-          const h = lerp([0, 0, 0], def.path[0], def.horn);
+        if (plates && def.horn !== undefined && armPath.length) {
+          const h = lerp([0, 0, 0], armPath[0], def.horn);
           rig.horn(g, [-size / 2, h[1], h[2]], [-1, 0, 0], hornLen, `${baseName}_horn`);
         }
       }
@@ -254,19 +268,41 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const lean = py > 1.0 ? 0.3 * toRear : 0;
     const footZ = clamp(pz + lean, zLo, zHi);
     const sup = rig.group(`${baseName}_support`, station);
-    for (const s of [1, -1] as const) {
-      rig.tube(sup, [s * sx, y0, footZ], [s * sx, py, pz], t);
-      if (!single) rig.rod(sup, [s * sx, py, pz], [s * (px - 0.03), py, pz], 0.045, 'chrome');
-    }
-    rig.tube(sup, [-Math.max(sx, railX), y0, footZ], [Math.max(sx, railX), y0, footZ], t);
-    const clearOfBody = py > o.seatHeight + 0.95 || py < o.seatHeight - 0.12 || Math.abs(pz) > 0.42;
-    if (clearOfBody && !single) {
-      rig.tube(sup, [-sx, py, pz], [sx, py, pz], t, 'frame', 'crossbar');
+    const clearOfBody =
+      py > o.seatHeight + 0.95 || py < o.seatHeight - 0.12 || Math.abs(pz) > 0.42;
+    // Com anilhas, o apoio mais alto vira o quadro: sobe até a altura A.
+    const toTop = plates && !frameDone && def === tallest && H - py <= 0.65;
+    if ((clearOfBody && !single) || toTop) {
+      // Arco de tubo curvado: sobe de um lado, atravessa e desce do outro.
+      const yTop = toTop ? H - t / 2 : py;
+      const zTop = toTop
+        ? clamp(footZ + ((pz - footZ) * (yTop - y0)) / Math.max(py - y0, 1e-3), zLo, zHi)
+        : pz;
+      rig.path(
+        sup,
+        [
+          [-sx, y0, footZ],
+          [-sx, yTop, zTop],
+          [sx, yTop, zTop],
+          [sx, y0, footZ],
+        ],
+        t,
+        'frame',
+        'arch',
+        0.15
+      );
+      if (toTop) frameDone = true;
       if (stacks === 1 && py < H - 0.05) {
         const yb = Math.min(py, H - 0.2);
         rig.tube(sup, [0, yb, towerUz], [0, py, pz], 0.06);
       }
+    } else {
+      for (const s of [1, -1] as const) rig.tube(sup, [s * sx, y0, footZ], [s * sx, py, pz], t);
     }
+    if (!single)
+      for (const s of [1, -1] as const)
+        rig.rod(sup, [s * sx, py, pz], [s * (px - 0.03), py, pz], 0.045, 'chrome');
+    rig.tube(sup, [-Math.max(sx, railX), y0, footZ], [Math.max(sx, railX), y0, footZ], t);
     if (stacks === 2) {
       const yb = Math.min(py, H - 0.25);
       for (const s of [1, -1] as const) rig.tube(sup, [s * towerX, yb, towerUz], [s * sx, py, pz], 0.06);
@@ -282,21 +318,35 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     );
     const frame = rig.group('frame', station);
     const storageLen = (x: number) => clamp(W / 2 - x - t / 2 - 0.01, 0, 0.18);
-    if (top && H - top.y <= 0.65) {
-      for (const s of [1, -1] as const) rig.tube(frame, [s * top.x, top.y, top.z], [s * top.x, H, top.z], t);
+    if (frameDone) {
+      // O arco do apoio já chegou à altura A.
+    } else if (top && H - top.y <= 0.65) {
+      for (const s of [1, -1] as const)
+        rig.tube(frame, [s * top.x, top.y, top.z], [s * top.x, H, top.z], t);
       rig.tube(frame, [-top.x, H - t / 2, top.z], [top.x, H - t / 2, top.z], t, 'frame', 'top_crossbar');
     } else {
       const mz = uRear - Math.sign(uRear) * (t / 2);
       const mx = railX;
+      rig.path(
+        frame,
+        [
+          [-mx, 0, mz],
+          [-mx, H - t / 2, mz],
+          [mx, H - t / 2, mz],
+          [mx, 0, mz],
+        ],
+        t,
+        'frame',
+        'mast',
+        0.15
+      );
       for (const s of [1, -1] as const) {
-        rig.tube(frame, [s * mx, 0, mz], [s * mx, H, mz], t);
         rig.tube(frame, [s * mx, Math.min(0.6 * H, 0.9), mz], [s * mx, y0, mz - Math.sign(uRear) * 0.4], 0.05);
         const len = storageLen(mx);
         if (len >= 0.08)
-          for (const y of [0.4, 0.8].filter((v) => v < H - 0.15))
+          for (const y of [0.4, 0.8].filter((v) => v < H - 0.25))
             rig.horn(frame, [s * (mx + t / 2), y, mz], [s, 0, 0], len, 'storage_horn');
       }
-      rig.tube(frame, [-mx, H - t / 2, mz], [mx, H - t / 2, mz], t, 'frame', 'top_crossbar');
     }
   }
 

@@ -54,11 +54,12 @@ export class Rig {
   path(
     g: THREE.Object3D,
     points: Vec3[],
-    size = 0.07,
+    size: number | [number, number] = 0.07,
     material: MaterialRole = 'frame',
-    name?: string
+    name?: string,
+    radius?: number
   ): THREE.Group {
-    const p = bentTube(this.kit, points, size, { material, name });
+    const p = bentTube(this.kit, points, size, { material, name, radius });
     g.add(p);
     return p;
   }

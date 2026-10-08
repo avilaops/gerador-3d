@@ -12,7 +12,7 @@ import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 
 export type MaterialRole =
-  'frame' | 'upholstery' | 'accent' | 'plate' | 'chrome' | 'rubber' | 'cable' | 'label';
+  'frame' | 'upholstery' | 'accent' | 'plate' | 'chrome' | 'rubber' | 'cable' | 'label' | 'wood';
 
 export interface MaterialColors {
   frame?: string;
@@ -49,6 +49,7 @@ export class PartKit {
       rubber: std('rubber', 0x101010, 0.9, 0),
       cable: std('cable', 0x3a3a3a, 0.5, 0.6),
       label: std('label', 0x96764a, 0.5, 0.2),
+      wood: std('wood', 0x7d4c22, 0.6, 0),
     };
   }
 
@@ -135,6 +136,12 @@ export class PartKit {
   torus(radius: number, tube: number): THREE.BufferGeometry {
     const key = `torus:${radius.toFixed(3)}:${tube.toFixed(3)}`;
     return this.cached(key, () => new THREE.TorusGeometry(radius, tube, 8, 20));
+  }
+
+  /** Registra uma geometria feita sob medida (tubo curvado) para ser liberada com o kit. */
+  own<T extends THREE.BufferGeometry>(geometry: T): T {
+    this.geometries.set(`own:${this.geometries.size}`, geometry);
+    return geometry;
   }
 
   dispose(): void {

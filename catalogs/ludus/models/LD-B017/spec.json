@@ -35,12 +35,12 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.3675,
       "baseRailX": 0.2625,
-      "towerZ": -0.4475,
+      "towerZ": -0.43767167374777294,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10880000000000001,
+      "stackTravel": 0.10879999998807907,
       "seatHeight": 0.46,
-      "seatZ": 0.229,
+      "seatZ": 0.2250686694991092,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -48,7 +48,7 @@
       "mechanism": "triceps-extension",
       "stacks": 1,
       "swingScale": 1,
-      "armPivotHeight": 1.1700000000000002,
+      "armPivotHeight": 1.1699999998509885,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -67,11 +67,11 @@
         "pivot": [
           0,
           1.4901173350789776e-10,
-          -0.4475
+          -0.4276716738222787
         ],
         "range": [
           0,
-          0.10880000000000001
+          0.10879999998807907
         ],
         "driver": "phase"
       },
@@ -86,7 +86,7 @@
         "pivot": [
           -0.34,
           0.7600000001490117,
-          -0.19099999999999998
+          -0.18493133057539657
         ],
         "range": [
           0,
@@ -105,7 +105,7 @@
         "pivot": [
           0.34,
           0.7600000001490117,
-          -0.19099999999999998
+          -0.18493133057539657
         ],
         "range": [
           0,
@@ -122,17 +122,17 @@
     "trainingArea": {
       "minX": -1.125,
       "maxX": 1.125,
-      "minZ": -1.1725000001490116,
-      "maxZ": 1.1725000001490116,
+      "minZ": -1.1726716738222787,
+      "maxZ": 1.1726716738222787,
       "widthM": 2.25,
-      "lengthM": 2.345000000298023,
-      "areaM2": 5.276250000670552
+      "lengthM": 2.3453433476445573,
+      "areaM2": 5.277022532200254
     },
     "stats": {
-      "triangles": 4456,
+      "triangles": 3864,
       "meshes": 49,
-      "geometries": 7,
-      "materials": 7
+      "geometries": 6,
+      "materials": 8
     }
   }
 }

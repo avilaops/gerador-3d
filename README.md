@@ -94,7 +94,7 @@ Diferenças conhecidas em relação às fotos:
 
 - LD-B035 (Estação Multifuncional Dupla) é uma torre central com dois braços; o modelo usa duas torres.
 - As máquinas iso-laterais com bateria usam duas torres nas laterais; as fotos mostram carenagens integradas ao quadro.
-- Quadros são retos; os equipamentos reais têm tubos curvados.
+- Arcos, mastros e braços de empurrar e puxar já são de tubo curvado; bases, pernas de apoio e a maior parte dos bancos ainda são retos.
 
 ## Limites
 

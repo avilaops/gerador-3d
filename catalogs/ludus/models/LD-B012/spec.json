@@ -35,12 +35,12 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.43225,
       "baseRailX": 0.30875,
-      "towerZ": -0.57,
+      "towerZ": -0.560141843899224,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
-      "stackTravel": 0.1808,
+      "stackTravel": 0.18079999998807902,
       "seatHeight": 0.46,
-      "seatZ": 0.27799999999999997,
+      "seatZ": 0.27405673755968957,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -48,7 +48,7 @@
       "mechanism": "pulldown",
       "stacks": 1,
       "swingScale": 1,
-      "armPivotHeight": 2.07,
+      "armPivotHeight": 2.069999999850988,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -67,11 +67,11 @@
         "pivot": [
           0,
           1.4901176126347337e-10,
-          -0.57
+          -0.5501418439737298
         ],
         "range": [
           0,
-          0.1808
+          0.18079999998807902
         ],
         "driver": "phase"
       },
@@ -85,8 +85,8 @@
         ],
         "pivot": [
           -0.44,
-          2.1600000001490116,
-          -0.342
+          2.1599999999999997,
+          -0.3359432625148162
         ],
         "range": [
           0,
@@ -104,8 +104,8 @@
         ],
         "pivot": [
           0.44,
-          2.1600000001490116,
-          -0.342
+          2.1599999999999997,
+          -0.3359432625148162
         ],
         "range": [
           0,
@@ -122,17 +122,17 @@
     "trainingArea": {
       "minX": -1.2175,
       "maxX": 1.2175,
-      "minZ": -1.2950000001490114,
-      "maxZ": 1.2950000001490114,
+      "minZ": -1.2951418439737297,
+      "maxZ": 1.2951418439737297,
       "widthM": 2.435,
-      "lengthM": 2.590000000298023,
-      "areaM2": 6.306650000725686
+      "lengthM": 2.5902836879474593,
+      "areaM2": 6.307340780152064
     },
     "stats": {
-      "triangles": 4236,
-      "meshes": 55,
-      "geometries": 6,
-      "materials": 7
+      "triangles": 3968,
+      "meshes": 53,
+      "geometries": 8,
+      "materials": 8
     }
   }
 }

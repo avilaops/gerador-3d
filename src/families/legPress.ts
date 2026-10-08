@@ -93,7 +93,6 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         rig.tube(base, [s * bx, y0, zR], [s * bx, y0, zF], t);
         rig.foot(base, s * bx, zR + 0.06);
         rig.foot(base, s * bx, zF - 0.06);
-        rig.tube(frame, [s * bx, 0, zt], [s * bx, H, zt], t, 'frame', `upright_${s < 0 ? 'left' : 'right'}`);
         rig.tube(frame, [s * bx, y0, zb], [s * bx, yb, zb], t);
         rig.rod(frame, [s * bx, yb, zb], [s * bx, yt, zt], 0.055, 'chrome', 'rail');
         rig.tube(frame, [s * bx, y0, zt + 0.5], [s * bx, yb + 0.5 * (yt - yb), zt + 0.5 * (zb - zt)], 0.05);
@@ -101,7 +100,19 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       rig.tube(base, [-bx, y0, zR + t / 2], [bx, y0, zR + t / 2], t);
       rig.tube(base, [-bx, y0, zF - t / 2], [bx, y0, zF - t / 2], t);
       rig.tube(base, [-bx, y0, zb], [bx, y0, zb], t);
-      rig.tube(frame, [-bx, H - t / 2, zt], [bx, H - t / 2, zt], t, 'frame', 'top_crossbar');
+      rig.path(
+        frame,
+        [
+          [-bx, 0, zt],
+          [-bx, H - t / 2, zt],
+          [bx, H - t / 2, zt],
+          [bx, 0, zt],
+        ],
+        t,
+        'frame',
+        'rear_arch',
+        0.14
+      );
 
       const s0 = p.variant === 'sled' ? 0.3 * railLen : 0.22 * railLen;
       const travel = Math.min(p.travel, railLen - s0 - 0.35);
@@ -180,10 +191,21 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         for (const s of [-1, 1] as const) rig.tube(frame, [s * (ax - 0.07), y0, pz], [s * (ax - 0.07), py, pz], t);
       } else {
         for (const s of [-1, 1] as const) {
-          rig.tube(frame, [s * (ax - 0.07), 0, pz], [s * (ax - 0.07), H, pz], t, 'frame', `upright_${s < 0 ? 'left' : 'right'}`);
           rig.tube(frame, [s * (ax - 0.07), 0.55 * H, pz], [s * (ax - 0.07), y0, pz + 0.6], 0.06);
         }
-        rig.tube(frame, [-(ax - 0.07), H - t / 2, pz], [ax - 0.07, H - t / 2, pz], t, 'frame', 'top_crossbar');
+        rig.path(
+          frame,
+          [
+            [-(ax - 0.07), 0, pz],
+            [-(ax - 0.07), H - t / 2, pz],
+            [ax - 0.07, H - t / 2, pz],
+            [ax - 0.07, 0, pz],
+          ],
+          t,
+          'frame',
+          'rear_arch',
+          0.14
+        );
       }
       rig.tube(frame, [-ax, y0, pz], [ax, y0, pz], t);
 
@@ -245,8 +267,19 @@ export const legPress: FamilyDefinition<LegPressParams> = {
 
       const handles = rig.group('handles');
       const hx = Math.min(0.36, bx);
-      for (const s of [-1, 1] as const) rig.tube(handles, [s * hx, y0, zF - t / 2], [s * hx, H - 0.03, zF - t / 2], 0.06);
-      rig.rod(handles, [-hx, H - 0.03, zF - t / 2], [hx, H - 0.03, zF - t / 2], 0.06, 'frame', 'handle_bar');
+      rig.path(
+        handles,
+        [
+          [-hx, y0, zF - t / 2],
+          [-hx, H - 0.03, zF - t / 2],
+          [hx, H - 0.03, zF - t / 2],
+          [hx, y0, zF - t / 2],
+        ],
+        0.06,
+        'frame',
+        'handle_arch',
+        0.12
+      );
       rig.grip(handles, [-0.16, H - 0.03, zF - t / 2], [0.16, H - 0.03, zF - t / 2], 'handle_grip');
 
       const py = Math.min(0.2, hp - 0.14);
