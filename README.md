@@ -15,7 +15,8 @@ O núcleo (`src/`) não tem lógica de cliente. Cada catálogo mora em `catalogs
 | GLB, USDZ, planta SVG e manifesto | `npm run export -- --catalog ludus` |
 | Miniaturas PNG (Chrome ou Edge sem tela) | `npm run thumbs` |
 | Tudo de uma vez | `npm run catalog` |
-| Catálogo PDF com QR, render 3D e planta real | `python catalogs/ludus/catalogo/build.py --assets <pasta das fotos e logos>` |
+| Catálogo PDF completo (100 páginas: 94 fichas com QR, render 3D e planta real) | `python catalogs/ludus/catalogo/build.py --assets <fotos> --assets <logos>` |
+| Só o protótipo de 6 páginas | o mesmo comando com `--prototipo` |
 
 O site da Ludus (https://ludus.avilaops.com, repositório `avilaops/ludusequipamentos-website`) consome este pacote: loja com 3D em cada produto e simulador de academia. A galeria daqui é ferramenta de revisão local.
 
@@ -95,8 +96,8 @@ Os specs gerados pela tabela saem com `review.status = "needs_review"`: a silhue
 
 Diferenças conhecidas em relação às fotos:
 
-- LD-B035 (Estação Multifuncional Dupla) é uma torre central com dois braços; o modelo usa duas torres.
-- As máquinas iso-laterais com bateria usam duas torres nas laterais; as fotos mostram carenagens integradas ao quadro.
+- Ajustados contra a foto: LD-A002, LD-B004, LD-B035 e o pórtico do Pendulum e do V-squat. Os demais representam o tipo do equipamento.
+- Iso-laterais com bateria: torres baixas nas laterais e quadro prata com braços coloridos; nas fotos as colunas são pretas.
 - Arcos, mastros e braços de empurrar e puxar já são de tubo curvado; bases, pernas de apoio e a maior parte dos bancos ainda são retos.
 
 ## Limites

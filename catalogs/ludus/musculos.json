@@ -1,0 +1,372 @@
+{
+ "porMecanismo": {
+  "press-row": {
+   "principais": [
+    "Peitoral",
+    "Grande dorsal"
+   ],
+   "auxiliares": [
+    "Deltoides",
+    "Tríceps",
+    "Bíceps"
+   ]
+  },
+  "pec-fly": {
+   "principais": [
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Deltoide anterior"
+   ]
+  },
+  "chest-press": {
+   "principais": [
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Deltoide anterior",
+    "Tríceps"
+   ]
+  },
+  "incline-press": {
+   "principais": [
+    "Peitoral superior"
+   ],
+   "auxiliares": [
+    "Deltoide anterior",
+    "Tríceps"
+   ]
+  },
+  "decline-press": {
+   "principais": [
+    "Peitoral inferior"
+   ],
+   "auxiliares": [
+    "Deltoide anterior",
+    "Tríceps"
+   ]
+  },
+  "lying-press": {
+   "principais": [
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Deltoide anterior",
+    "Tríceps"
+   ]
+  },
+  "shoulder-press": {
+   "principais": [
+    "Deltoides"
+   ],
+   "auxiliares": [
+    "Tríceps",
+    "Trapézio"
+   ]
+  },
+  "row": {
+   "principais": [
+    "Grande dorsal",
+    "Romboides"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  },
+  "low-row": {
+   "principais": [
+    "Grande dorsal",
+    "Romboides"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  },
+  "t-bar": {
+   "principais": [
+    "Grande dorsal",
+    "Romboides"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Eretores da espinha"
+   ]
+  },
+  "pulldown": {
+   "principais": [
+    "Grande dorsal"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  },
+  "pullover": {
+   "principais": [
+    "Grande dorsal"
+   ],
+   "auxiliares": [
+    "Peitoral",
+    "Tríceps"
+   ]
+  },
+  "lateral-raise": {
+   "principais": [
+    "Deltoide medial"
+   ],
+   "auxiliares": [
+    "Trapézio"
+   ]
+  },
+  "shrug": {
+   "principais": [
+    "Trapézio"
+   ],
+   "auxiliares": [
+    "Antebraços"
+   ]
+  },
+  "jammer": {
+   "principais": [
+    "Deltoides",
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Tríceps",
+    "Quadríceps",
+    "Glúteos"
+   ]
+  },
+  "biceps-curl": {
+   "principais": [
+    "Bíceps"
+   ],
+   "auxiliares": [
+    "Braquial",
+    "Antebraços"
+   ]
+  },
+  "triceps-extension": {
+   "principais": [
+    "Tríceps"
+   ],
+   "auxiliares": []
+  },
+  "seated-dip": {
+   "principais": [
+    "Tríceps"
+   ],
+   "auxiliares": [
+    "Peitoral inferior",
+    "Deltoide anterior"
+   ]
+  },
+  "leg-extension": {
+   "principais": [
+    "Quadríceps"
+   ],
+   "auxiliares": []
+  },
+  "leg-curl": {
+   "principais": [
+    "Posteriores de coxa"
+   ],
+   "auxiliares": [
+    "Panturrilhas"
+   ]
+  },
+  "prone-leg-curl": {
+   "principais": [
+    "Posteriores de coxa"
+   ],
+   "auxiliares": [
+    "Panturrilhas"
+   ]
+  },
+  "standing-leg-curl": {
+   "principais": [
+    "Posteriores de coxa"
+   ],
+   "auxiliares": [
+    "Glúteos"
+   ]
+  },
+  "nordic": {
+   "principais": [
+    "Posteriores de coxa"
+   ],
+   "auxiliares": [
+    "Glúteos",
+    "Panturrilhas"
+   ]
+  },
+  "hip-abduction": {
+   "principais": [
+    "Glúteo médio"
+   ],
+   "auxiliares": [
+    "Tensor da fáscia lata"
+   ]
+  },
+  "hip-adduction": {
+   "principais": [
+    "Adutores"
+   ],
+   "auxiliares": []
+  },
+  "glute-kickback": {
+   "principais": [
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa"
+   ]
+  },
+  "hip-thrust": {
+   "principais": [
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa",
+    "Quadríceps"
+   ]
+  },
+  "reverse-hyper": {
+   "principais": [
+    "Glúteos",
+    "Eretores da espinha"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa"
+   ]
+  },
+  "back-extension": {
+   "principais": [
+    "Eretores da espinha"
+   ],
+   "auxiliares": [
+    "Glúteos",
+    "Posteriores de coxa"
+   ]
+  },
+  "ab-crunch": {
+   "principais": [
+    "Reto abdominal"
+   ],
+   "auxiliares": [
+    "Oblíquos"
+   ]
+  },
+  "standing-calf": {
+   "principais": [
+    "Panturrilhas"
+   ],
+   "auxiliares": []
+  },
+  "seated-calf": {
+   "principais": [
+    "Sóleo"
+   ],
+   "auxiliares": [
+    "Gastrocnêmio"
+   ]
+  },
+  "assisted-chin": {
+   "principais": [
+    "Grande dorsal",
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Tríceps"
+   ]
+  },
+  "sled": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa",
+    "Panturrilhas"
+   ]
+  },
+  "hack": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa"
+   ]
+  },
+  "lever-squat": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa",
+    "Eretores da espinha"
+   ]
+  },
+  "belt-squat": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Adutores",
+    "Posteriores de coxa"
+   ]
+  },
+  "horizontal": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa",
+    "Panturrilhas"
+   ]
+  }
+ },
+ "porCodigo": {
+  "LD-A026": {
+   "principais": [
+    "Panturrilhas"
+   ],
+   "auxiliares": []
+  },
+  "LD-A006": {
+   "principais": [
+    "Grande dorsal",
+    "Romboides"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  },
+  "LD-B030": {
+   "principais": [
+    "Grande dorsal",
+    "Romboides"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  },
+  "LD-B007": {
+   "principais": [
+    "Peitoral"
+   ],
+   "auxiliares": [
+    "Deltoide anterior"
+   ]
+  }
+ }
+}
