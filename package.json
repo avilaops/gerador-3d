@@ -21,7 +21,8 @@
     "specs": "vite-node scripts/build-specs.ts --",
     "export": "vite-node scripts/export.ts --",
     "thumbs": "vite-node scripts/thumbnails.ts --",
-    "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"
+    "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus",
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "three": "0.149.0",
@@ -31,7 +32,9 @@
     "react": ">=18"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true }
+    "react": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
@@ -44,5 +47,7 @@
     "vite-node": "^3.2.0",
     "vitest": "^3.2.0"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

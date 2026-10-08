@@ -15,6 +15,9 @@ O núcleo (`src/`) não tem lógica de cliente. Cada catálogo mora em `catalogs
 | GLB, USDZ, planta SVG e manifesto | `npm run export -- --catalog ludus` |
 | Miniaturas PNG (Chrome ou Edge sem tela) | `npm run thumbs` |
 | Tudo de uma vez | `npm run catalog` |
+| Publicar a galeria em https://ludus.avilaops.com | `npm run deploy` |
+
+A galeria publicada fica em https://ludus.avilaops.com (pré-visualização interna, marcada como noindex; servidor `applications`, arquivos estáticos em `/var/www/ludus.avilaops.com`).
 
 Na galeria, `?id=LD-B004` abre um equipamento e `?id=LD-B004&embed=1` mostra só o visualizador, para uso em iframe.
 
