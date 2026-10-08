@@ -1,14 +1,14 @@
 {
   "id": "LD-A029",
   "name": "Agachamento Múltiplo",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1490,
     "width": 1580,
     "height": 870
   },
   "params": {
-    "variant": "belt-squat"
+    "mechanism": "ground-lever"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,30 +31,48 @@
   },
   "resolved": {
     "params": {
-      "variant": "belt-squat",
+      "mechanism": "ground-lever",
+      "swingScale": 1,
       "tube": 0.08,
-      "travel": 0.2,
-      "stackPlates": 0,
-      "stackTravel": 0.0696,
-      "showPlates": true
+      "frameX": 0.465,
+      "pivotHeight": 0.7482006622797153,
+      "pivotZ": -0.08113322259136213,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.1810002310278076,
+        0.6933202657807308
+      ],
+      "leverRear": [
+        0.08304703191297826,
+        -0.3392843853820598
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.14751495016611296,
+      "backrestHeight": 0.40890036194356527,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
         "node": "lever",
         "type": "revolute",
         "axis": [
-          1,
+          -1,
           0,
           0
         ],
         "pivot": [
           0,
-          0.2,
-          -0.585
+          0.42,
+          -0.5350747508305647
         ],
         "range": [
           0,
-          0.12
+          0.3
         ],
         "driver": "phase"
       }
@@ -67,16 +85,16 @@
     "trainingArea": {
       "minX": -1.3900000000000001,
       "maxX": 1.3900000000000001,
-      "minZ": -1.345,
-      "maxZ": 1.345,
+      "minZ": -1.3450747508305647,
+      "maxZ": 1.3450747508305647,
       "widthM": 2.7800000000000002,
-      "lengthM": 2.69,
-      "areaM2": 7.4782
+      "lengthM": 2.6901495016611294,
+      "areaM2": 7.47861561461794
     },
     "stats": {
-      "triangles": 4616,
-      "meshes": 32,
-      "geometries": 7,
+      "triangles": 2752,
+      "meshes": 29,
+      "geometries": 5,
       "materials": 5
     }
   }

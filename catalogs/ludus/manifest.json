@@ -679,9 +679,9 @@
         "areaM2": 7.13
       },
       "animated": true,
-      "triangles": 3688,
-      "glbBytes": 52000,
-      "usdzBytes": 143440
+      "triangles": 2752,
+      "glbBytes": 50600,
+      "usdzBytes": 139517
     },
     {
       "id": "LD-A021",
@@ -857,7 +857,7 @@
       "id": "LD-A026",
       "ok": true,
       "name": "Panturrilha Horizontal",
-      "family": "leg-press",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -873,19 +873,19 @@
         "height": 1520
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.07,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.65,
-        "lengthM": 2.83,
+        "lengthM": 2.831,
         "areaM2": 7.5
       },
       "animated": true,
-      "triangles": 5564,
-      "glbBytes": 197020,
-      "usdzBytes": 624552
+      "triangles": 5364,
+      "glbBytes": 196788,
+      "usdzBytes": 615115
     },
     {
       "id": "LD-A027",
@@ -959,7 +959,7 @@
       "id": "LD-A029",
       "ok": true,
       "name": "Agachamento Múltiplo",
-      "family": "leg-press",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -975,7 +975,7 @@
         "height": 870
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
         "height": 0
       },
@@ -985,9 +985,9 @@
         "areaM2": 7.48
       },
       "animated": true,
-      "triangles": 4616,
-      "glbBytes": 81856,
-      "usdzBytes": 234883
+      "triangles": 2752,
+      "glbBytes": 50676,
+      "usdzBytes": 139415
     },
     {
       "id": "LD-A030",
@@ -1157,7 +1157,7 @@
       "animated": true,
       "triangles": 5564,
       "glbBytes": 197244,
-      "usdzBytes": 623646
+      "usdzBytes": 623649
     },
     {
       "id": "LD-A035",
@@ -1223,9 +1223,9 @@
         "areaM2": 8.95
       },
       "animated": true,
-      "triangles": 4616,
-      "glbBytes": 82016,
-      "usdzBytes": 234911
+      "triangles": 4768,
+      "glbBytes": 80996,
+      "usdzBytes": 237970
     },
     {
       "id": "LD-A037",
@@ -1257,9 +1257,9 @@
         "areaM2": 8.93
       },
       "animated": true,
-      "triangles": 4616,
-      "glbBytes": 81780,
-      "usdzBytes": 234620
+      "triangles": 4768,
+      "glbBytes": 80784,
+      "usdzBytes": 237659
     },
     {
       "id": "LD-A038",
@@ -1293,7 +1293,7 @@
       "animated": true,
       "triangles": 5564,
       "glbBytes": 196868,
-      "usdzBytes": 623250
+      "usdzBytes": 623252
     },
     {
       "id": "LD-A039",
@@ -1301,7 +1301,9 @@
       "name": "Encolhimento de Ombro",
       "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 18%)"
+      ],
       "files": {
         "glb": "models/LD-A039/model.glb",
         "usdz": "models/LD-A039/model.usdz",
@@ -1315,19 +1317,19 @@
         "height": 1230
       },
       "deviationPct": {
-        "length": 0.96,
+        "length": 0,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.65,
-        "lengthM": 2.235,
-        "areaM2": 5.92
+        "lengthM": 2.225,
+        "areaM2": 5.9
       },
       "animated": true,
-      "triangles": 4828,
-      "glbBytes": 99516,
-      "usdzBytes": 277877
+      "triangles": 5688,
+      "glbBytes": 231172,
+      "usdzBytes": 714043
     },
     {
       "id": "LD-A040",
@@ -2449,7 +2451,7 @@
       "animated": true,
       "triangles": 4796,
       "glbBytes": 176608,
-      "usdzBytes": 553149
+      "usdzBytes": 553148
     },
     {
       "id": "LD-B017",
@@ -2483,7 +2485,7 @@
       "animated": true,
       "triangles": 4156,
       "glbBytes": 157176,
-      "usdzBytes": 502642
+      "usdzBytes": 502843
     },
     {
       "id": "LD-B018",
@@ -2517,7 +2519,7 @@
       "animated": true,
       "triangles": 4156,
       "glbBytes": 157124,
-      "usdzBytes": 502563
+      "usdzBytes": 502767
     },
     {
       "id": "LD-B019",
@@ -2653,9 +2655,9 @@
         "areaM2": 5.82
       },
       "animated": true,
-      "triangles": 5740,
-      "glbBytes": 185884,
-      "usdzBytes": 586118
+      "triangles": 5004,
+      "glbBytes": 160700,
+      "usdzBytes": 513373
     },
     {
       "id": "LD-B023",
@@ -2678,18 +2680,18 @@
       },
       "deviationPct": {
         "length": 0.19,
-        "width": 0.08,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 2.931,
+        "widthM": 2.93,
         "lengthM": 2.222,
         "areaM2": 6.51
       },
       "animated": true,
       "triangles": 6704,
-      "glbBytes": 240116,
-      "usdzBytes": 724376
+      "glbBytes": 239768,
+      "usdzBytes": 723400
     },
     {
       "id": "LD-B024",
@@ -2712,18 +2714,18 @@
       },
       "deviationPct": {
         "length": 0.07,
-        "width": 0.1,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 2.782,
+        "widthM": 2.78,
         "lengthM": 2.501,
-        "areaM2": 6.96
+        "areaM2": 6.95
       },
       "animated": true,
       "triangles": 6628,
-      "glbBytes": 233608,
-      "usdzBytes": 713917
+      "glbBytes": 233532,
+      "usdzBytes": 713410
     },
     {
       "id": "LD-B025",
@@ -2746,18 +2748,18 @@
       },
       "deviationPct": {
         "length": 0.48,
-        "width": 0.08,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 2.931,
+        "widthM": 2.93,
         "lengthM": 2.225,
         "areaM2": 6.52
       },
       "animated": true,
       "triangles": 6704,
-      "glbBytes": 240136,
-      "usdzBytes": 724084
+      "glbBytes": 239792,
+      "usdzBytes": 723188
     },
     {
       "id": "LD-B026",
@@ -2779,19 +2781,19 @@
         "height": 1380
       },
       "deviationPct": {
-        "length": 0.76,
-        "width": 0,
+        "length": 0.09,
+        "width": 0.1,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 2.78,
-        "lengthM": 2.359,
-        "areaM2": 6.56
+        "widthM": 2.782,
+        "lengthM": 2.351,
+        "areaM2": 6.54
       },
       "animated": true,
-      "triangles": 6704,
-      "glbBytes": 240112,
-      "usdzBytes": 724739
+      "triangles": 5564,
+      "glbBytes": 192424,
+      "usdzBytes": 589576
     },
     {
       "id": "LD-B027",
@@ -2814,18 +2816,18 @@
       },
       "deviationPct": {
         "length": 0.19,
-        "width": 0.09,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 2.831,
+        "widthM": 2.83,
         "lengthM": 2.202,
         "areaM2": 6.23
       },
       "animated": true,
       "triangles": 6608,
-      "glbBytes": 238440,
-      "usdzBytes": 718992
+      "glbBytes": 238060,
+      "usdzBytes": 717759
     },
     {
       "id": "LD-B028",
@@ -2857,9 +2859,9 @@
         "areaM2": 5.37
       },
       "animated": true,
-      "triangles": 5740,
-      "glbBytes": 185864,
-      "usdzBytes": 583432
+      "triangles": 5004,
+      "glbBytes": 160684,
+      "usdzBytes": 511567
     },
     {
       "id": "LD-B029",
@@ -2882,18 +2884,18 @@
       },
       "deviationPct": {
         "length": 0.13,
-        "width": 0.11,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 2.682,
+        "widthM": 2.68,
         "lengthM": 2.422,
         "areaM2": 6.49
       },
       "animated": true,
       "triangles": 5944,
-      "glbBytes": 172496,
-      "usdzBytes": 507773
+      "glbBytes": 172392,
+      "usdzBytes": 507091
     },
     {
       "id": "LD-B030",
@@ -2916,18 +2918,18 @@
       },
       "deviationPct": {
         "length": 0.14,
-        "width": 0.07,
+        "width": 0,
         "height": 0.01
       },
       "trainingArea": {
-        "widthM": 3.031,
+        "widthM": 3.03,
         "lengthM": 2.402,
         "areaM2": 7.28
       },
       "animated": true,
       "triangles": 5944,
-      "glbBytes": 172720,
-      "usdzBytes": 507864
+      "glbBytes": 172420,
+      "usdzBytes": 507288
     },
     {
       "id": "LD-B031",
@@ -2995,9 +2997,9 @@
         "areaM2": 6.53
       },
       "animated": true,
-      "triangles": 6876,
-      "glbBytes": 223888,
-      "usdzBytes": 695953
+      "triangles": 6140,
+      "glbBytes": 198236,
+      "usdzBytes": 623122
     },
     {
       "id": "LD-B033",
@@ -3029,9 +3031,9 @@
         "areaM2": 6.42
       },
       "animated": true,
-      "triangles": 6780,
-      "glbBytes": 223656,
-      "usdzBytes": 692182
+      "triangles": 6044,
+      "glbBytes": 198012,
+      "usdzBytes": 620054
     },
     {
       "id": "LD-B034",

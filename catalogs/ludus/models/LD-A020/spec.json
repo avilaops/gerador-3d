@@ -8,7 +8,7 @@
     "height": 850
   },
   "params": {
-    "mechanism": "shrug"
+    "mechanism": "ground-lever"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,7 +31,7 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "shrug",
+      "mechanism": "ground-lever",
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.3625,
@@ -49,7 +49,7 @@
       "hornLength": 0.175,
       "hornOffset": 0.3,
       "seatHeight": 0.1,
-      "pressSeatZ": 0.1866,
+      "pressSeatZ": 0.1555,
       "backrestHeight": 0.39949999999999997,
       "backrestTilt": 0.38,
       "rowStation": true,
@@ -67,12 +67,12 @@
         ],
         "pivot": [
           0,
-          0.5,
-          -0.3109
+          0.42,
+          -0.575
         ],
         "range": [
           0,
-          0.2
+          0.3
         ],
         "driver": "phase"
       }
@@ -92,8 +92,8 @@
       "areaM2": 7.13275
     },
     "stats": {
-      "triangles": 3688,
-      "meshes": 40,
+      "triangles": 2752,
+      "meshes": 29,
       "geometries": 5,
       "materials": 5
     }

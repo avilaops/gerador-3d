@@ -331,15 +331,34 @@
     "Posteriores de coxa",
     "Panturrilhas"
    ]
-  }
- },
- "porCodigo": {
-  "LD-A026": {
+  },
+  "ground-lever": {
+   "principais": [
+    "Quadríceps",
+    "Glúteos"
+   ],
+   "auxiliares": [
+    "Posteriores de coxa",
+    "Eretores da espinha"
+   ]
+  },
+  "horizontal-calf": {
    "principais": [
     "Panturrilhas"
    ],
    "auxiliares": []
   },
+  "cable-pulldown": {
+   "principais": [
+    "Grande dorsal"
+   ],
+   "auxiliares": [
+    "Bíceps",
+    "Deltoide posterior"
+   ]
+  }
+ },
+ "porCodigo": {
   "LD-A006": {
    "principais": [
     "Grande dorsal",
@@ -366,6 +385,14 @@
    ],
    "auxiliares": [
     "Deltoide anterior"
+   ]
+  },
+  "LD-A039": {
+   "principais": [
+    "Trapézio"
+   ],
+   "auxiliares": [
+    "Antebraços"
    ]
   }
  }

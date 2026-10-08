@@ -1,14 +1,14 @@
 {
   "id": "LD-A026",
   "name": "Panturrilha Horizontal",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1630,
     "width": 1450,
     "height": 1520
   },
   "params": {
-    "variant": "sled"
+    "mechanism": "horizontal-calf"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,52 +31,70 @@
   },
   "resolved": {
     "params": {
-      "variant": "sled",
+      "mechanism": "horizontal-calf",
+      "swingScale": 1,
       "tube": 0.08,
-      "travel": 0.35,
-      "stackPlates": 0,
-      "stackTravel": 0.1216,
-      "showPlates": true
+      "frameX": 0.4000000000000001,
+      "pivotHeight": 1.3072010416039184,
+      "pivotZ": -0.08724149253731343,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.37600036335020404,
+        0.7455182089552239
+      ],
+      "leverRear": [
+        0.17699503602408664,
+        -0.36482805970149257
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.5,
+      "pressSeatZ": -0.19034507462686567,
+      "backrestHeight": 0.714400569248653,
+      "backrestTilt": 0.22,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
-        "node": "carriage",
-        "type": "prismatic",
+        "node": "lever",
+        "type": "revolute",
         "axis": [
+          1,
           0,
-          0.9074669071198411,
-          -0.42012356811103757
+          0
         ],
         "pivot": [
           0,
-          0.6239999999999999,
-          -0.3249999999999999
+          0.22,
+          0.7356044776119404
         ],
         "range": [
           0,
-          0.35
+          0.22
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.63,
+      "length": 1.631,
       "width": 1.45,
       "height": 1.52
     },
     "trainingArea": {
-      "minX": -1.3249999999999997,
-      "maxX": 1.3249999999999997,
-      "minZ": -1.415,
-      "maxZ": 1.415,
-      "widthM": 2.6499999999999995,
-      "lengthM": 2.83,
-      "areaM2": 7.4994999999999985
+      "minX": -1.3250000000000002,
+      "maxX": 1.3250000000000002,
+      "minZ": -1.4156044776119403,
+      "maxZ": 1.4156044776119403,
+      "widthM": 2.6500000000000004,
+      "lengthM": 2.8312089552238806,
+      "areaM2": 7.502703731343285
     },
     "stats": {
-      "triangles": 5564,
-      "meshes": 33,
-      "geometries": 9,
+      "triangles": 5364,
+      "meshes": 45,
+      "geometries": 10,
       "materials": 6
     }
   }

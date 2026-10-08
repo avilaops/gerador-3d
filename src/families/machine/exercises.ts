@@ -360,6 +360,45 @@ const DEFS = {
       },
     ],
   },
+  'ground-lever': {
+    label: 'Alavanca de piso (agachamento, levantamento, búlgaro)',
+    station: 'standing',
+    seatHeight: 0.1,
+    facing: 1,
+    seatAt: 0.1,
+    levers: (c) => [
+      {
+        // Quadro em U que gira atrás, com as pegadas longas saindo para a frente.
+        split: false,
+        pivot: [Math.min(c.ax, 0.46), Math.min(0.42, c.H - 0.3), c.zRear + 0.2],
+        path: [[0, Math.min(0.26, c.H - 0.6), c.zFront - c.zRear - 0.75]],
+        axis: NX,
+        swing: 0.3,
+        end: 'grip-z',
+        horn: 0.5,
+        size: 0.07,
+      },
+    ],
+  },
+  'horizontal-calf': {
+    label: 'Panturrilha horizontal',
+    station: 'seat-back',
+    seatHeight: 0.5,
+    backTilt: 0.22,
+    facing: 1,
+    seatAt: -0.12,
+    levers: (c) => [
+      {
+        split: false,
+        pivot: [0.3, 0.22, 1.0],
+        path: [[0, c.hs - 0.06, -0.22]],
+        axis: X,
+        swing: 0.22,
+        end: 'plate',
+        horn: 0.45,
+      },
+    ],
+  },
   shrug: {
     label: 'Encolhimento de ombros',
     station: 'standing',

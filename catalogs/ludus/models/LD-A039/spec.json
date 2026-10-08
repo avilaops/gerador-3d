@@ -8,7 +8,7 @@
     "height": 1230
   },
   "params": {
-    "mechanism": "shrug"
+    "mechanism": "seated-dip"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,27 +31,27 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "shrug",
+      "mechanism": "seated-dip",
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.39999999999999997,
       "pivotHeight": 1.0491999993965178,
-      "pivotZ": -0.050901319603919956,
+      "pivotZ": -0.023976758915262568,
       "leverTube": 0.08,
       "leverFront": [
         -0.2859999997894829,
-        0.43497491297895235
+        0.2048923034576983
       ],
       "leverRear": [
-        0.13731483472425893,
-        -0.21286006379821074
+        0.14778518137850288,
+        -0.1002664463729162
       ],
       "hornLength": 0.175,
       "hornOffset": 0.3,
-      "seatHeight": 0.1,
-      "pressSeatZ": 0.11105742459037081,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.07846939281358659,
       "backrestHeight": 0.5733999996701898,
-      "backrestTilt": 0.38,
+      "backrestTilt": 0.12,
       "rowStation": true,
       "storageHorns": 4,
       "swing": 0.45
@@ -61,41 +61,41 @@
         "node": "lever",
         "type": "revolute",
         "axis": [
-          -1,
+          1,
           0,
           0
         ],
         "pivot": [
           0,
-          0.5,
-          -0.3392389107023582
+          0.7599999999732242,
+          -0.2014711769415532
         ],
         "range": [
           0,
-          0.2
+          0.4
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.035,
+      "length": 1.025,
       "width": 1.45,
       "height": 1.23
     },
     "trainingArea": {
       "minX": -1.325,
       "maxX": 1.325,
-      "minZ": -1.117442933833816,
-      "maxZ": 1.117442933833816,
+      "minZ": -1.1124999999999998,
+      "maxZ": 1.1124999999999998,
       "widthM": 2.65,
-      "lengthM": 2.234885867667632,
-      "areaM2": 5.922447549319225
+      "lengthM": 2.2249999999999996,
+      "areaM2": 5.896249999999998
     },
     "stats": {
-      "triangles": 4828,
-      "meshes": 51,
-      "geometries": 11,
-      "materials": 5
+      "triangles": 5688,
+      "meshes": 47,
+      "geometries": 15,
+      "materials": 6
     }
   }
 }

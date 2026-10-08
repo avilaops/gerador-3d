@@ -1,14 +1,14 @@
 {
   "id": "LD-A026",
   "name": "Panturrilha Horizontal",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1630,
     "width": 1450,
     "height": 1520
   },
   "params": {
-    "variant": "sled"
+    "mechanism": "horizontal-calf"
   },
   "materials": {
     "frame": "#74787d",

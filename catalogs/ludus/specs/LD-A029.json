@@ -1,14 +1,14 @@
 {
   "id": "LD-A029",
   "name": "Agachamento Múltiplo",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1490,
     "width": 1580,
     "height": 870
   },
   "params": {
-    "variant": "belt-squat"
+    "mechanism": "ground-lever"
   },
   "materials": {
     "frame": "#74787d",

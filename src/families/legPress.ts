@@ -129,7 +129,7 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       }
 
       if (p.variant === 'sled') {
-        const fp = rig.box(carriage, [Math.min(0.72, 2 * bx + 0.1), 0.025, 0.56], [0, 0.2 * n.y, 0.2 * n.z], 'plate', 'foot_plate');
+        const fp = rig.box(carriage, [Math.min(0.86, 2 * bx + 0.22), 0.03, 0.72], [0, 0.2 * n.y, 0.2 * n.z], 'plate', 'foot_plate');
         fp.position.addScaledVector(u, -0.02);
         fp.rotation.x = tilt;
         rig.tube(carriage, [0, up[1], up[2]], [0, 0.19 * n.y, 0.19 * n.z], 0.06, 'accent');
@@ -275,20 +275,15 @@ export const legPress: FamilyDefinition<LegPressParams> = {
 
       const handles = rig.group('handles');
       const hx = Math.min(0.36, bx);
-      rig.path(
-        handles,
-        [
-          [-hx, y0, zF - t / 2],
-          [-hx, H - 0.03, zF - t / 2],
-          [hx, H - 0.03, zF - t / 2],
-          [hx, y0, zF - t / 2],
-        ],
-        0.06,
-        'frame',
-        'handle_arch',
-        0.12
-      );
-      rig.grip(handles, [-0.16, H - 0.03, zF - t / 2], [0.16, H - 0.03, zF - t / 2], 'handle_grip');
+      // Dois pegadores verticais na frente da plataforma, presos a uma travessa baixa.
+      const yh = Math.min(hp + 0.5, H - 0.36);
+      for (const s of [-1, 1] as const) {
+        rig.tube(handles, [s * hx, y0, zF - t / 2], [s * hx, yh, zF - t / 2], 0.06);
+        rig.tube(handles, [s * 0.1, yh, zF - t / 2], [s * 0.1, H - 0.3, zF - t / 2], 0.045);
+        rig.grip(handles, [s * 0.1, H - 0.3, zF - t / 2], [s * 0.1, H, zF - t / 2], 'handle_grip');
+      }
+      rig.tube(handles, [-hx, yh, zF - t / 2], [hx, yh, zF - t / 2], 0.06, 'frame', 'handle_bar');
+
 
       const py = Math.min(0.2, hp - 0.14);
       const pz = zR + 0.16;

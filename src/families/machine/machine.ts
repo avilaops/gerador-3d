@@ -45,16 +45,21 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const plates = o.resistance === 'plates';
   const stacks = plates ? 0 : o.stacks;
   // Iso-lateral com bateria: torres baixas nas laterais; o quadro dos braços é que chega à altura A.
-  const tallFrame = plates || stacks === 2;
-  const armMaterial = tallFrame ? 'accent' : 'frame';
+  const tallFrame = plates || (stacks === 2 && H >= 1.6);
+  const armMaterial = plates || stacks === 2 ? 'accent' : 'frame';
   const articulations: Articulation[] = [];
 
   // Distribuição lateral: braços independentes por dentro das torres ou dos pinos.
-  const towerX = stacks === 2 ? W / 2 - 0.2 : 0;
+  // Iso-lateral: nas máquinas altas as duas baterias ficam juntas no centro, atrás do
+  // assento; nas baixas, uma de cada lado, na altura toda.
+  const centralStacks = stacks === 2 && H >= 1.6;
+  const towerX = stacks === 2 ? (centralStacks ? 0.215 : W / 2 - 0.2) : 0;
   const ax = plates
     ? clamp(W / 2 - 0.27, 0.3, 0.52)
     : stacks === 2
-      ? clamp(towerX - 0.28, 0.3, 0.48)
+      ? centralStacks
+        ? clamp(W / 2 - 0.2, 0.3, 0.52)
+        : clamp(towerX - 0.28, 0.3, 0.48)
       : clamp(W / 2 - 0.13, 0.3, 0.44);
   const railX = clamp(ax, 0.22, W / 2 - t / 2);
   const zRear = -L / 2;
@@ -94,8 +99,9 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       const unit = stackTower(kit, {
         suffix: s === 0 ? '' : s < 0 ? '_left' : '_right',
         x: s * towerX,
+        dark: stacks === 2,
         z: towerZ,
-        height: stacks === 2 ? Math.max(1.1, 0.64 * H) : H,
+        height: centralStacks ? Math.max(1.1, 0.64 * H) : H,
         post: t,
         plates: o.stackPlates,
         travel: o.stackTravel,

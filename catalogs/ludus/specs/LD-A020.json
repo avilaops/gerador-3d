@@ -8,7 +8,7 @@
     "height": 850
   },
   "params": {
-    "mechanism": "shrug"
+    "mechanism": "ground-lever"
   },
   "materials": {
     "frame": "#74787d",

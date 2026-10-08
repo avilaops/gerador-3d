@@ -158,6 +158,8 @@ export function pivotArm(
 }
 
 export interface StackTowerOptions {
+  /** Coluna preta mesmo quando a estrutura tem outra cor (baterias das iso-laterais). */
+  dark?: boolean;
   /** Sufixo dos nós: "" (torre única), "_left", "_right"... */
   suffix?: string;
   /** Posição do eixo da torre no piso. */
@@ -183,6 +185,7 @@ export function stackTower(
   unit.name = `tower${suffix}`;
   unit.position.set(o.x, 0, o.z);
   // Coluna carenada: laterais e fundo em chapa, cabeçote na frente e tampo de madeira.
+  const panel = o.dark ? 'rubber' : 'frame';
   const frame = new THREE.Group();
   frame.name = 'tower_frame';
   const capH = 0.035;
@@ -191,11 +194,11 @@ export function stackTower(
   const depth = 0.24;
   for (const s of [-1, 1]) {
     frame.add(
-      box(kit, [0.03, bodyH, depth], [s * (halfW - 0.015), bodyH / 2, 0], { name: 'tower_side' })
+      box(kit, [0.03, bodyH, depth], [s * (halfW - 0.015), bodyH / 2, 0], { name: 'tower_side', material: panel })
     );
   }
-  frame.add(box(kit, [2 * halfW, 0.2, depth], [0, bodyH - 0.1, 0], { name: 'tower_head' }));
-  frame.add(box(kit, [2 * halfW, 0.1, depth], [0, 0.05, 0], { name: 'tower_foot' }));
+  frame.add(box(kit, [2 * halfW, 0.2, depth], [0, bodyH - 0.1, 0], { name: 'tower_head', material: panel }));
+  frame.add(box(kit, [2 * halfW, 0.1, depth], [0, 0.05, 0], { name: 'tower_foot', material: panel }));
   frame.add(
     box(kit, [2 * halfW + 0.05, capH, depth + 0.05], [0, o.height - capH / 2, 0], {
       material: 'wood',
@@ -228,6 +231,7 @@ export function stackTower(
   unit.add(
     box(kit, [2 * halfW - 0.06, bodyH - 0.3, 0.012], [0, (bodyH - 0.3) / 2 + 0.1, -depth / 2 + 0.006], {
       name: 'tower_shroud',
+      material: panel,
     })
   );
   return {
