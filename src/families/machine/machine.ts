@@ -175,6 +175,12 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       switch (def.end) {
         case 'grip-x':
           rig.grip(g, T, [T[0] + inward * 0.16, T[1], T[2]], `${name}_grip`);
+          // Segunda pegada, neutra, um pouco antes da ponta.
+          if (def.dualGrip) {
+            const B: Vec3 = [T[0], T[1] * 0.86, T[2] * 0.86];
+            rig.tube(g, B, [B[0] + inward * 0.07, B[1] - 0.02, B[2]], 0.035, armMaterial);
+            rig.grip(g, [B[0] + inward * 0.07, B[1] + 0.06, B[2]], [B[0] + inward * 0.07, B[1] - 0.1, B[2]], `${name}_grip_neutral`);
+          }
           break;
         case 'grip-y':
           rig.grip(g, [T[0] + inward * 0.05, T[1] + 0.07, T[2]], [T[0] + inward * 0.05, T[1] - 0.09, T[2]], `${name}_grip`);
@@ -436,19 +442,50 @@ function buildChinStation(
   o: { H: number; towerUz: number; t: number }
 ): void {
   const { H, towerUz, t } = o;
-  const top = rig.group('chin_bar', g);
-  rig.tube(top, [0, H - 0.1, towerUz], [0, H - 0.1, 0.05], t);
-  rig.tube(top, [-0.3, H - 0.1, 0.05], [0.3, H - 0.1, 0.05], 0.05);
+  const y0 = t / 2;
+  // Pórtico: duas colunas na frente da torre, que sobem e voltam em curva até o alto dela.
+  const zf = towerUz - Math.sign(towerUz) * 0.4;
+  const px = 0.22;
+  const frame = rig.group('chin_frame', g);
   for (const s of [-1, 1] as const) {
-    rig.grip(top, [s * 0.3, H - 0.1, 0.05], [s * 0.52, H - 0.2, 0.0]);
-    rig.grip(top, [s * 0.12, H - 0.1, 0.05], [s * 0.12, H - 0.1, -0.12]);
+    rig.path(
+      frame,
+      [
+        [s * px, 0, zf],
+        [s * px, H - t / 2, zf],
+        [s * px, H - t / 2, towerUz],
+      ],
+      t,
+      'frame',
+      'chin_post',
+      0.16
+    );
+    rig.tube(frame, [s * px, y0, zf], [s * px, y0, towerUz], t);
+    rig.tube(frame, [s * px, 0.5 * H, zf], [s * px, 0.5 * H, towerUz], 0.05);
   }
+  rig.tube(frame, [-px, y0, zf], [px, y0, zf], t);
+  rig.tube(frame, [-px, H - t / 2, zf], [px, H - t / 2, zf], t);
+
+  // Barra fixa com várias pegadas, à frente do pórtico.
+  const top = rig.group('chin_bar', g);
+  const zb = zf - Math.sign(towerUz) * 0.26;
+  for (const s of [-1, 1] as const) {
+    rig.tube(top, [s * px, H - t / 2, zf], [s * 0.3, H - 0.08, zb], 0.05);
+    rig.grip(top, [s * 0.3, H - 0.08, zb], [s * 0.54, H - 0.16, zb + Math.sign(towerUz) * 0.06]);
+    rig.grip(top, [s * 0.14, H - 0.08, zb], [s * 0.14, H - 0.08, zb - Math.sign(towerUz) * 0.14]);
+  }
+  rig.tube(top, [-0.3, H - 0.08, zb], [0.3, H - 0.08, zb], 0.045);
+
+  // Paralelas a meia altura e degraus de subida.
   const dip = rig.group('dip_bars', g);
   for (const s of [-1, 1] as const) {
-    rig.tube(dip, [s * 0.17, 1.25, towerUz], [s * 0.29, 1.25, 0.25], 0.05);
-    rig.grip(dip, [s * 0.29, 1.25, 0.25], [s * 0.29, 1.25, 0.02]);
-    rig.tube(dip, [s * 0.17, 0.32, towerUz], [s * 0.26, 0.32, 0.3], 0.05);
-    rig.box(dip, [0.2, 0.02, 0.14], [s * 0.3, 0.35, 0.3], 'plate', 'step');
+    rig.tube(dip, [s * px, 1.28, zf], [s * 0.3, 1.28, zf - Math.sign(towerUz) * 0.34], 0.05);
+    rig.grip(dip, [s * 0.3, 1.28, zf - Math.sign(towerUz) * 0.14], [s * 0.3, 1.28, zf - Math.sign(towerUz) * 0.36]);
+    const zs = zf - Math.sign(towerUz) * 0.42;
+    rig.tube(dip, [s * px, y0, zf], [s * 0.44, y0, zs], t);
+    rig.tube(dip, [s * 0.44, y0, zs], [s * 0.44, 0.36, zs], 0.06);
+    rig.box(dip, [0.24, 0.025, 0.16], [s * 0.44, 0.37, zs], 'plate', 'step');
+    rig.box(dip, [0.14, 0.012, 0.12], [s * 0.44, 0.006, zs], 'rubber', 'foot');
   }
 }
 

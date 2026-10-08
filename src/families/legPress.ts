@@ -27,6 +27,8 @@ export const LegPressParamsSchema = z.object({
   stackTravel: z.number().nonnegative(),
   /** Desenhar uma anilha em cada pino. */
   showPlates: z.boolean(),
+  /** Plataforma dividida em duas, uma por perna (leg press articulado). */
+  splitPlate: z.boolean(),
 });
 export type LegPressParams = z.infer<typeof LegPressParamsSchema>;
 
@@ -47,6 +49,7 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       stackPlates: kg ? Math.max(6, Math.min(24, Math.round(kg / 9.8))) : 0,
       stackTravel: Math.min(0.25, 0.08 * d.height),
       showPlates: true,
+      splitPlate: false,
     };
   },
 
@@ -132,9 +135,18 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       }
 
       if (p.variant === 'sled') {
-        const fp = rig.box(carriage, [Math.min(0.86, 2 * bx + 0.22), 0.03, 0.72], [0, 0.2 * n.y, 0.2 * n.z], 'plate', 'foot_plate');
-        fp.position.addScaledVector(u, -0.02);
-        fp.rotation.x = tilt;
+        const larguras = p.splitPlate ? [-1, 1] : [0];
+        for (const lado of larguras) {
+          const fp = rig.box(
+            carriage,
+            [p.splitPlate ? 0.34 : Math.min(0.86, 2 * bx + 0.22), 0.03, p.splitPlate ? 0.8 : 0.72],
+            [lado * 0.21, 0.2 * n.y, 0.2 * n.z],
+            'plate',
+            'foot_plate'
+          );
+          fp.position.addScaledVector(u, -0.02);
+          fp.rotation.x = tilt;
+        }
         rig.tube(carriage, [0, up[1], up[2]], [0, 0.19 * n.y, 0.19 * n.z], 0.06, 'accent');
 
         // Assento reclinado na frente, de costas para +Z.

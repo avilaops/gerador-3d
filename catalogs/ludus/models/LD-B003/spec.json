@@ -40,7 +40,8 @@
       "travel": 0.35,
       "stackPlates": 14,
       "stackTravel": 0.1232,
-      "showPlates": true
+      "showPlates": true,
+      "splitPlate": false
     },
     "articulations": [
       {

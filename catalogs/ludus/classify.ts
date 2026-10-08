@@ -37,7 +37,7 @@ const pl = (mechanism: string, extra: Params = {}): Rule => [
 const bench = (variant: string, extra: Params = {}): Rule => ['bench', { variant, ...extra }];
 const rack = (variant: string, extra: Params = {}): Rule => ['rack', { variant, ...extra }];
 const cable = (variant: string): Rule => ['cable-station', { variant }];
-const legs = (variant: string): Rule => ['leg-press', { variant }];
+const legs = (variant: string, extra: Params = {}): Rule => ['leg-press', { variant, ...extra }];
 const deg = (d: number) => Math.round(((d * Math.PI) / 180) * 1000) / 1000;
 
 const BY_CODE: Record<string, Rule> = {
@@ -70,14 +70,14 @@ const BY_CODE: Record<string, Rule> = {
   'LD-A028': pl('jammer'),
   'LD-A029': pl('ground-lever'),
   'LD-A030': legs('lever-squat'),
-  'LD-A031': pl('standing-leg-curl'),
+  'LD-A031': pl('kneeling-leg-curl'),
   'LD-A032': pl('chest-press'),
   'LD-A033': pl('biceps-curl'),
   'LD-A034': legs('sled'),
   'LD-A035': pl('ab-crunch'),
   'LD-A036': legs('belt-squat'),
   'LD-A037': legs('belt-squat'),
-  'LD-A038': legs('sled'),
+  'LD-A038': legs('sled', { splitPlate: true }),
   'LD-A039': pl('seated-dip'),
   'LD-A040': pl('incline-press'),
   'LD-A041': legs('lever-squat'),

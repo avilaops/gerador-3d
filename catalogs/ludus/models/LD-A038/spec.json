@@ -8,7 +8,8 @@
     "height": 1425
   },
   "params": {
-    "variant": "sled"
+    "variant": "sled",
+    "splitPlate": true
   },
   "materials": {
     "frame": "#74787d",
@@ -36,7 +37,8 @@
       "travel": 0.35,
       "stackPlates": 0,
       "stackTravel": 0.114,
-      "showPlates": true
+      "showPlates": true,
+      "splitPlate": true
     },
     "articulations": [
       {
@@ -74,8 +76,8 @@
       "areaM2": 10.130800000000002
     },
     "stats": {
-      "triangles": 6012,
-      "meshes": 37,
+      "triangles": 6024,
+      "meshes": 38,
       "geometries": 11,
       "materials": 6
     }

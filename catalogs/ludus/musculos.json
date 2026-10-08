@@ -356,6 +356,15 @@
     "Bíceps",
     "Deltoide posterior"
    ]
+  },
+  "kneeling-leg-curl": {
+   "principais": [
+    "Posteriores de coxa"
+   ],
+   "auxiliares": [
+    "Glúteos",
+    "Panturrilhas"
+   ]
   }
  },
  "porCodigo": {

@@ -18,6 +18,7 @@ export const STATION_KINDS = [
   'preacher',
   'standing',
   'kneel',
+  'kneel-lean',
   'hyper',
   'table',
   'none',
@@ -78,6 +79,11 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     case 'recline': {
       seat(0.02, 0.44, 0.44);
       backrest(0.6);
+      // Quadro inclinado que sobe da frente do piso até debaixo do assento.
+      const under = rig.group('seat_frame', g);
+      for (const s of [-1, 1] as const)
+        rig.path(under, [[s * 0.2, y0, 0.36], [s * 0.2, hs - 0.07, 0.16], [s * 0.2, hs - 0.07, -0.2]], [0.05, 0.08], 'frame', 'seat_rail', 0.12);
+      rig.tube(under, [-0.2, hs - 0.07, -0.18], [0.2, hs - 0.07, -0.18], 0.05);
       const h = rig.group('side_handles', g);
       for (const s of [-1, 1] as const) {
         rig.tube(h, [s * 0.2, hs - 0.06, -0.05], [s * 0.3, hs + 0.04, 0.0], 0.04);
@@ -131,6 +137,23 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
     case 'standing': {
       const p = rig.group('platform', g);
       rig.box(p, [0.72, 0.035, 0.6], [0, t + 0.018, 0], 'plate', 'platform_plate');
+      break;
+    }
+    case 'kneel-lean': {
+      // Joelhos numa almofada baixa e o tronco inclinado para a frente sobre duas almofadas.
+      const k = rig.group('knee_pad', g);
+      rig.tube(k, [0, y0, 0], [0, hs - 0.05, 0], post);
+      for (const s of [-1, 1] as const)
+        rig.pad(k, [0.22, 0.1, 0.36], [s * 0.13, hs, 0], 0.1, 'knee_pad_cushion');
+      const c = rig.group('chest_pad', g);
+      const top = Math.min(o.maxHeight - 0.1, hs + 0.72);
+      const len = Math.max(0.3, (top - hs - 0.16) / Math.cos(0.5));
+      const cy = hs + 0.16 + (len / 2) * Math.cos(0.5);
+      const cz = 0.2 + (len / 2) * Math.sin(0.5);
+      for (const s of [-1, 1] as const)
+        rig.pad(c, [0.2, len, 0.09], [s * 0.12, cy, cz], 0.5, 'chest_pad_cushion');
+      rig.path(c, [[0, y0, 0.52], [0, hs + 0.1, 0.34], [0, top, 0.2 + len * Math.sin(0.5) + 0.08]], post, 'frame', 'chest_pad_support', 0.14);
+      rig.rod(c, [-0.3, top, 0.2 + len * Math.sin(0.5) + 0.08], [0.3, top, 0.2 + len * Math.sin(0.5) + 0.08], 0.036, 'rubber', 'handle_bar');
       break;
     }
     case 'kneel': {

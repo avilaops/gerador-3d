@@ -8,7 +8,7 @@
     "height": 1200
   },
   "params": {
-    "mechanism": "standing-leg-curl"
+    "mechanism": "kneeling-leg-curl"
   },
   "materials": {
     "frame": "#74787d",
@@ -31,26 +31,26 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "standing-leg-curl",
+      "mechanism": "kneeling-leg-curl",
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.31,
-      "pivotHeight": 1.0234710737499624,
-      "pivotZ": -0.05968609865470852,
+      "pivotHeight": 1.0320020914118557,
+      "pivotZ": -0.05272903543956795,
       "leverTube": 0.08,
       "leverFront": [
-        -0.2770247931685915,
-        0.5100448430493273
+        -0.28000072956227523,
+        0.4505935755744897
       ],
       "leverRear": [
-        0.13138049197466142,
-        -0.24959641255605383
+        0.13395608464651065,
+        -0.2205032391109205
       ],
       "hornLength": 0.175,
       "hornOffset": 0.3,
-      "seatHeight": 0.1,
-      "pressSeatZ": 0.16278026905829596,
-      "backrestHeight": 0.5593388426307934,
+      "seatHeight": 0.38,
+      "pressSeatZ": -0.04793548676324359,
+      "backrestHeight": 0.5640011429808979,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,
@@ -67,12 +67,12 @@
         ],
         "pivot": [
           0,
-          0.56,
-          0.14528026905829597
+          0.43999998251597155,
+          -0.10554126612959827
         ],
         "range": [
           0,
-          1.3
+          1.25
         ],
         "driver": "phase"
       }
@@ -85,17 +85,17 @@
     "trainingArea": {
       "minX": -1.2349999999999999,
       "maxX": 1.2349999999999999,
-      "minZ": -1.1501008968609865,
-      "maxZ": 1.1501008968609865,
+      "minZ": -1.1500000000000001,
+      "maxZ": 1.15,
       "widthM": 2.4699999999999998,
-      "lengthM": 2.300201793721973,
-      "areaM2": 5.6814984304932725
+      "lengthM": 2.3,
+      "areaM2": 5.680999999999999
     },
     "stats": {
-      "triangles": 5016,
-      "meshes": 48,
-      "geometries": 12,
-      "materials": 6
+      "triangles": 6500,
+      "meshes": 45,
+      "geometries": 10,
+      "materials": 5
     }
   }
 }

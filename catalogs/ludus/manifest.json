@@ -101,9 +101,9 @@
         "areaM2": 6.45
       },
       "animated": true,
-      "triangles": 5600,
-      "glbBytes": 230740,
-      "usdzBytes": 699338
+      "triangles": 6020,
+      "glbBytes": 243128,
+      "usdzBytes": 736927
     },
     {
       "id": "LD-A004",
@@ -171,7 +171,7 @@
       "animated": true,
       "triangles": 5352,
       "glbBytes": 181088,
-      "usdzBytes": 535407
+      "usdzBytes": 535404
     },
     {
       "id": "LD-A006",
@@ -341,7 +341,7 @@
       "animated": true,
       "triangles": 5376,
       "glbBytes": 190020,
-      "usdzBytes": 600082
+      "usdzBytes": 600077
     },
     {
       "id": "LD-A011",
@@ -441,9 +441,9 @@
         "areaM2": 6.67
       },
       "animated": true,
-      "triangles": 5696,
-      "glbBytes": 232772,
-      "usdzBytes": 704937
+      "triangles": 6116,
+      "glbBytes": 245172,
+      "usdzBytes": 742666
     },
     {
       "id": "LD-A014",
@@ -475,9 +475,9 @@
         "areaM2": 6.35
       },
       "animated": true,
-      "triangles": 5696,
-      "glbBytes": 232680,
-      "usdzBytes": 704770
+      "triangles": 6116,
+      "glbBytes": 245076,
+      "usdzBytes": 742419
     },
     {
       "id": "LD-A015",
@@ -747,9 +747,9 @@
         "areaM2": 6.84
       },
       "animated": true,
-      "triangles": 6044,
-      "glbBytes": 210720,
-      "usdzBytes": 652815
+      "triangles": 6662,
+      "glbBytes": 226096,
+      "usdzBytes": 691350
     },
     {
       "id": "LD-A023",
@@ -815,9 +815,9 @@
         "areaM2": 6.79
       },
       "animated": true,
-      "triangles": 6540,
-      "glbBytes": 228984,
-      "usdzBytes": 711485
+      "triangles": 7158,
+      "glbBytes": 244360,
+      "usdzBytes": 750019
     },
     {
       "id": "LD-A025",
@@ -1029,7 +1029,9 @@
       "name": "Flexora em Pé de Peso Livre",
       "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 3%)"
+      ],
       "files": {
         "glb": "models/LD-A031/model.glb",
         "usdz": "models/LD-A031/model.usdz",
@@ -1043,9 +1045,9 @@
         "height": 1200
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0,
         "width": 0,
-        "height": 0.01
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.47,
@@ -1053,9 +1055,9 @@
         "areaM2": 5.68
       },
       "animated": true,
-      "triangles": 5016,
-      "glbBytes": 156072,
-      "usdzBytes": 470633
+      "triangles": 6500,
+      "glbBytes": 196696,
+      "usdzBytes": 621220
     },
     {
       "id": "LD-A032",
@@ -1087,9 +1089,9 @@
         "areaM2": 6.2
       },
       "animated": true,
-      "triangles": 5696,
-      "glbBytes": 232560,
-      "usdzBytes": 704755
+      "triangles": 6116,
+      "glbBytes": 244956,
+      "usdzBytes": 742308
     },
     {
       "id": "LD-A033",
@@ -1291,9 +1293,9 @@
         "areaM2": 10.13
       },
       "animated": true,
-      "triangles": 6012,
-      "glbBytes": 220528,
-      "usdzBytes": 695192
+      "triangles": 6024,
+      "glbBytes": 220708,
+      "usdzBytes": 695538
     },
     {
       "id": "LD-A039",
@@ -1359,9 +1361,9 @@
         "areaM2": 6.09
       },
       "animated": true,
-      "triangles": 5696,
-      "glbBytes": 232840,
-      "usdzBytes": 704892
+      "triangles": 6116,
+      "glbBytes": 245240,
+      "usdzBytes": 742617
     },
     {
       "id": "LD-A041",
@@ -1835,9 +1837,9 @@
         "areaM2": 5.18
       },
       "animated": false,
-      "triangles": 2828,
-      "glbBytes": 104476,
-      "usdzBytes": 331716
+      "triangles": 4110,
+      "glbBytes": 177256,
+      "usdzBytes": 573033
     },
     {
       "id": "LD-A055",
@@ -1971,9 +1973,9 @@
         "areaM2": 5.71
       },
       "animated": true,
-      "triangles": 4700,
-      "glbBytes": 176444,
-      "usdzBytes": 552748
+      "triangles": 5318,
+      "glbBytes": 203516,
+      "usdzBytes": 627176
     },
     {
       "id": "LD-B003",
@@ -2175,9 +2177,9 @@
         "areaM2": 6.11
       },
       "animated": true,
-      "triangles": 4828,
-      "glbBytes": 189280,
-      "usdzBytes": 580684
+      "triangles": 5248,
+      "glbBytes": 201680,
+      "usdzBytes": 618313
     },
     {
       "id": "LD-B009",
@@ -2209,9 +2211,9 @@
         "areaM2": 5.78
       },
       "animated": true,
-      "triangles": 3366,
-      "glbBytes": 110396,
-      "usdzBytes": 343232
+      "triangles": 4970,
+      "glbBytes": 140192,
+      "usdzBytes": 425102
     },
     {
       "id": "LD-B010",
@@ -2379,9 +2381,9 @@
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 5684,
-      "glbBytes": 233400,
-      "usdzBytes": 745401
+      "triangles": 6302,
+      "glbBytes": 260480,
+      "usdzBytes": 820200
     },
     {
       "id": "LD-B015",
@@ -2413,9 +2415,9 @@
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 5684,
-      "glbBytes": 233336,
-      "usdzBytes": 745528
+      "triangles": 6302,
+      "glbBytes": 260416,
+      "usdzBytes": 820273
     },
     {
       "id": "LD-B016",
@@ -2447,9 +2449,9 @@
         "areaM2": 6.65
       },
       "animated": true,
-      "triangles": 4796,
-      "glbBytes": 176608,
-      "usdzBytes": 553146
+      "triangles": 5414,
+      "glbBytes": 203680,
+      "usdzBytes": 627764
     },
     {
       "id": "LD-B017",
@@ -2687,9 +2689,9 @@
         "areaM2": 6.51
       },
       "animated": true,
-      "triangles": 6704,
-      "glbBytes": 239768,
-      "usdzBytes": 723400
+      "triangles": 7124,
+      "glbBytes": 252168,
+      "usdzBytes": 761021
     },
     {
       "id": "LD-B024",
@@ -2755,9 +2757,9 @@
         "areaM2": 6.52
       },
       "animated": true,
-      "triangles": 6704,
-      "glbBytes": 239792,
-      "usdzBytes": 723188
+      "triangles": 7124,
+      "glbBytes": 252196,
+      "usdzBytes": 760813
     },
     {
       "id": "LD-B026",
@@ -2823,9 +2825,9 @@
         "areaM2": 6.23
       },
       "animated": true,
-      "triangles": 6608,
-      "glbBytes": 238060,
-      "usdzBytes": 717759
+      "triangles": 7028,
+      "glbBytes": 250464,
+      "usdzBytes": 755388
     },
     {
       "id": "LD-B028",
@@ -2859,7 +2861,7 @@
       "animated": true,
       "triangles": 5004,
       "glbBytes": 160684,
-      "usdzBytes": 511567
+      "usdzBytes": 511621
     },
     {
       "id": "LD-B029",
@@ -2893,7 +2895,7 @@
       "animated": true,
       "triangles": 5944,
       "glbBytes": 172392,
-      "usdzBytes": 507020
+      "usdzBytes": 507091
     },
     {
       "id": "LD-B030",
@@ -2995,9 +2997,9 @@
         "areaM2": 6.53
       },
       "animated": true,
-      "triangles": 6140,
-      "glbBytes": 198236,
-      "usdzBytes": 623122
+      "triangles": 6758,
+      "glbBytes": 225312,
+      "usdzBytes": 697697
     },
     {
       "id": "LD-B033",
@@ -3029,9 +3031,9 @@
         "areaM2": 6.42
       },
       "animated": true,
-      "triangles": 6044,
-      "glbBytes": 198012,
-      "usdzBytes": 620054
+      "triangles": 6662,
+      "glbBytes": 225088,
+      "usdzBytes": 694474
     },
     {
       "id": "LD-B034",

@@ -47,6 +47,8 @@ export interface LeverDef {
   padSize?: Vec3;
   /** Diâmetro do came (disco) junto ao pivô, nas alavancas únicas de máquinas com bateria. */
   cam?: number;
+  /** Segunda pegada (neutra) perto da ponta, nos braços de empurrar e puxar. */
+  dualGrip?: boolean;
   /** Dobra do braço (cotovelo), como fração do comprimento; o sinal escolhe o lado. Só para braço de um trecho. */
   bend?: number;
   /** Sem coluna de apoio própria (o pivô já está sobre outra estrutura). */
@@ -99,6 +101,7 @@ function press(c: ExerciseContext, handY: number, handZ = 0.16): LeverDef[] {
         axis: NX,
         swing: 0.36,
         end: 'grip-x',
+        dualGrip: true,
         bend: -0.16,
         horn: 0.62,
       },
@@ -112,6 +115,7 @@ function press(c: ExerciseContext, handY: number, handZ = 0.16): LeverDef[] {
       axis: X,
       swing: 0.3,
       end: 'grip-x',
+        dualGrip: true,
       bend: 0.16,
       horn: 0.5,
     },
@@ -497,6 +501,24 @@ const DEFS = {
       },
     ],
   },
+  'kneeling-leg-curl': {
+    label: 'Flexora ajoelhada',
+    station: 'kneel-lean',
+    seatHeight: 0.38,
+    facing: 1,
+    seatAt: -0.05,
+    levers: (c) => [
+      {
+        split: false,
+        pivot: [0.3, c.hs + 0.06, -0.06],
+        path: [[0, 0.02, -0.4]],
+        axis: X,
+        swing: 1.25,
+        end: 'roller',
+        horn: 0.75,
+      },
+    ],
+  },
   'prone-leg-curl': {
     label: 'Mesa flexora',
     station: 'prone',
@@ -735,8 +757,8 @@ const DEFS = {
       {
         split: false,
         node: 'knee_pad',
-        pivot: [0.2, 0.62, 0.55],
-        path: [[0, 0.02, -0.55]],
+        pivot: [0.17, 0.62, 0.5],
+        path: [[0, 0.02, -0.62]],
         axis: X,
         swing: 0.55,
         end: 'pad',

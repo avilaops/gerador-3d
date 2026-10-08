@@ -8,7 +8,8 @@
     "height": 1425
   },
   "params": {
-    "variant": "sled"
+    "variant": "sled",
+    "splitPlate": true
   },
   "materials": {
     "frame": "#74787d",

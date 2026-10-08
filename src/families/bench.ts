@@ -256,24 +256,28 @@ export const bench: FamilyDefinition<BenchParams> = {
         break;
       }
       case 'hyper': {
-        // Apoio de quadril a 45°, com plataforma e rolos de tornozelo atrás e pegadas na frente.
-        const yPad = H - 0.2;
-        const zPad = 0.12 * L;
+        // Coluna dupla atrás, com as duas almofadas de quadril a 45° no alto e as pegadas;
+        // na frente, a plataforma inclinada e os apoios de tornozelo.
+        const yPad = H - 0.22;
+        const zPad = 0.2 * L;
         const hip = rig.group('hip_pad');
-        for (const s of [-1, 1] as const)
-          rig.pad(hip, [0.22, 0.1, 0.36], [s * 0.13, yPad, zPad], -0.7, 'hip_pad_cushion');
-        rig.tube(hip, [0, y0, zPad - 0.25], [0, yPad - 0.06, zPad], t);
-        rig.tube(hip, [-0.2, yPad - 0.08, zPad], [0.2, yPad - 0.08, zPad], 0.05);
+        for (const s of [-1, 1] as const) {
+          rig.pad(hip, [0.25, 0.13, 0.44], [s * 0.15, yPad, zPad], -0.75, 'hip_pad_cushion');
+          rig.tube(hip, [s * 0.07, y0, zPad + 0.16], [s * 0.07, yPad - 0.1, zPad + 0.1], [0.05, 0.09]);
+        }
+        rig.tube(hip, [-0.22, yPad - 0.1, zPad + 0.06], [0.22, yPad - 0.1, zPad + 0.06], 0.06);
+        rig.tube(hip, [0, 0.45 * H, zPad + 0.13], [0, y0, zPad - 0.3], [0.05, 0.08]);
         const handles = rig.group('handles');
         for (const s of [-1, 1] as const) {
-          rig.tube(handles, [s * 0.27, yPad - 0.08, zPad], [s * 0.3, H - 0.02, zPad + 0.28], 0.04);
-          rig.grip(handles, [s * 0.3, H - 0.02, zPad + 0.2], [s * 0.3, H - 0.02, zPad + 0.36]);
+          rig.tube(handles, [s * 0.22, yPad - 0.1, zPad + 0.06], [s * 0.3, H - 0.02, zPad + 0.26], 0.04);
+          rig.grip(handles, [s * 0.3, H - 0.02, zPad + 0.24], [s * 0.3, H - 0.02, zPad + 0.42]);
         }
         const feet = rig.group('foot_rest');
-        const zf = zR + 0.3;
-        rig.box(feet, [Math.min(0.5, W - 0.1), 0.02, 0.34], [0, 0.2, zf], 'plate', 'foot_plate').rotation.x = -0.75;
-        rig.tube(feet, [0, y0, zf + 0.1], [0, 0.5, zf - 0.1], t);
-        rig.roller(feet, [-0.27, 0.52, zf - 0.1], [0.27, 0.52, zf - 0.1], 0.12, 'ankle_roller');
+        const zf = zR + 0.36;
+        rig.box(feet, [Math.min(0.56, W - 0.1), 0.03, 0.46], [0, 0.3, zf], 'plate', 'foot_plate').rotation.x = -0.8;
+        rig.path(feet, [[0, y0, zf + 0.3], [0, 0.34, zf + 0.06], [0, 0.62, zf - 0.16]], t, 'frame', 'foot_rest_arm', 0.12);
+        for (const s of [-1, 1] as const)
+          rig.pad(feet, [0.2, 0.12, 0.2], [s * 0.14, 0.64, zf - 0.16], 0, 'ankle_pad');
         break;
       }
     }
