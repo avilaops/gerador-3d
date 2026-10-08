@@ -184,6 +184,11 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
           break;
         case 'grip-y':
           rig.grip(g, [T[0] + inward * 0.05, T[1] + 0.07, T[2]], [T[0] + inward * 0.05, T[1] - 0.09, T[2]], `${name}_grip`);
+          // Braço em "L": segunda pegada, horizontal, logo abaixo da vertical.
+          if (def.dualGrip) {
+            rig.tube(g, T, [T[0], T[1] - 0.16, T[2]], 0.04, armMaterial);
+            rig.grip(g, [T[0], T[1] - 0.16, T[2]], [T[0] + inward * 0.17, T[1] - 0.16, T[2]], `${name}_grip_wide`);
+          }
           break;
         case 'grip-z': {
           const d = new THREE.Vector3(0, tip[1], tip[2]).normalize().multiplyScalar(0.15);
@@ -388,7 +393,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   }
 
   // Anilhas: a altura A vem do quadro (colunas prolongadas ou mastro traseiro).
-  if (tallFrame) {
+  if (tallFrame && !ex.noFrame) {
     const top = postTops.reduce<{ x: number; y: number; z: number } | undefined>(
       (best, p) => (!best || p.y > best.y ? p : best),
       undefined

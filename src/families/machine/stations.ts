@@ -115,6 +115,10 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
       rig.tube(b, [0, hs - 0.1, 0.5], [0, hs - 0.1, -0.7], 0.06);
       rig.tube(b, [0, y0, 0.35], [0, hs - 0.1, 0.35], post);
       rig.tube(b, [0, y0, -0.45], [0, hs - 0.1, -0.45], post);
+      // Quadro lateral inclinado, da frente do piso até debaixo da mesa.
+      for (const s of [-1, 1] as const)
+        rig.path(b, [[s * 0.2, y0, 0.62], [s * 0.2, hs - 0.1, 0.34], [s * 0.2, hs - 0.1, -0.6]], [0.05, 0.08], 'frame', 'bench_rail', 0.12);
+      rig.tube(b, [-0.2, hs - 0.1, -0.58], [0.2, hs - 0.1, -0.58], 0.05);
       rig.tube(b, [0, hs - 0.1, 0.5], [0, hs - 0.2, 0.6], 0.04);
       rig.grip(b, [-0.26, hs - 0.2, 0.6], [0.26, hs - 0.2, 0.6]);
       break;
@@ -146,8 +150,8 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
       for (const s of [-1, 1] as const)
         rig.pad(k, [0.22, 0.1, 0.36], [s * 0.13, hs, 0], 0.1, 'knee_pad_cushion');
       const c = rig.group('chest_pad', g);
-      const top = Math.min(o.maxHeight - 0.1, hs + 0.72);
-      const len = Math.max(0.3, (top - hs - 0.16) / Math.cos(0.5));
+      const top = o.maxHeight - 0.02;
+      const len = Math.min(0.56, Math.max(0.3, (top - hs - 0.16) / Math.cos(0.5)));
       const cy = hs + 0.16 + (len / 2) * Math.cos(0.5);
       const cz = 0.2 + (len / 2) * Math.sin(0.5);
       for (const s of [-1, 1] as const)

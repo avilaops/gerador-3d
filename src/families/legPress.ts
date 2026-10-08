@@ -101,11 +101,14 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         // Viga do quadro sob o trilho e mão-francesa até a base, como nos leg press reais.
         rig.tube(frame, [s * bx, yb - 0.11, zb + 0.02], [s * bx, yt - 0.11, zt + 0.02], [0.06, 0.1], 'frame', 'rail_beam');
         rig.tube(frame, [s * bx, yb + 0.72 * (yt - yb) - 0.11, zb + 0.72 * (zt - zb)], [s * bx, y0, zb - 0.1], [0.05, 0.08]);
+        // Fecha o quadro: diagonal da coluna traseira até a base, por baixo dos trilhos.
+        rig.tube(frame, [s * bx, 0.5 * yt, zt], [s * bx, y0, zb + 0.4], [0.05, 0.08]);
         rig.tube(frame, [s * bx, y0, zt + 0.5], [s * bx, yb + 0.5 * (yt - yb), zt + 0.5 * (zb - zt)], 0.05);
       }
       rig.tube(base, [-bx, y0, zR + t / 2], [bx, y0, zR + t / 2], t);
       rig.tube(base, [-bx, y0, zF - t / 2], [bx, y0, zF - t / 2], t);
       rig.tube(base, [-bx, y0, zb], [bx, y0, zb], t);
+      rig.tube(frame, [-bx, 0.5 * yt, zt], [bx, 0.5 * yt, zt], [0.05, 0.08], 'frame', 'rear_tie');
       rig.path(
         frame,
         [

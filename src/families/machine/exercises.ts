@@ -82,6 +82,8 @@ export interface ExerciseDef {
   facing: 1 | -1;
   /** Posição do assento ao longo do comprimento, como fração de C (−0,5 = fundo, +0,5 = frente). */
   seatAt: number;
+  /** Sem quadro alto nem mastro: a altura vem da própria estação (máquinas baixas de anilhas). */
+  noFrame?: boolean;
   levers(c: ExerciseContext): LeverDef[];
 }
 
@@ -135,6 +137,7 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
         axis: X,
         swing: 0.36,
         end: 'grip-y',
+        dualGrip: true,
         bend: -0.14,
         horn: 0.6,
       },
@@ -148,6 +151,7 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
       axis: NX,
       swing: 0.34,
       end: 'grip-y',
+        dualGrip: true,
       bend: 0.14,
       horn: 0.5,
     },
@@ -218,6 +222,7 @@ const DEFS = {
           axis: NX,
           swing: 0.42,
           end: 'grip-x',
+          dualGrip: true,
           bend: 0.14,
           horn: 0.55,
         },
@@ -504,6 +509,7 @@ const DEFS = {
   'kneeling-leg-curl': {
     label: 'Flexora ajoelhada',
     station: 'kneel-lean',
+    noFrame: true,
     seatHeight: 0.38,
     facing: 1,
     seatAt: -0.05,
