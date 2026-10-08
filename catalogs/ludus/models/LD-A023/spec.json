@@ -1,0 +1,80 @@
+{
+  "id": "LD-A023",
+  "name": "Hack Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2150,
+    "width": 1560,
+    "height": 1500
+  },
+  "params": {
+    "variant": "hack"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Hack Squat LD-A023.png",
+    "pagina": 64
+  },
+  "resolved": {
+    "params": {
+      "variant": "hack",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.11869638945863548,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.8488436170012956,
+          -0.5286440332361254
+        ],
+        "pivot": [
+          0,
+          0.5296150710112477,
+          -0.4280000000000001
+        ],
+        "range": [
+          0,
+          0.35
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.15,
+      "width": 1.56,
+      "height": 1.502
+    },
+    "trainingArea": {
+      "minX": -1.38,
+      "maxX": 1.38,
+      "minZ": -1.6749999999999998,
+      "maxZ": 1.6749999999999998,
+      "widthM": 2.76,
+      "lengthM": 3.3499999999999996,
+      "areaM2": 9.245999999999999
+    },
+    "stats": {
+      "triangles": 1880,
+      "meshes": 36,
+      "geometries": 5,
+      "materials": 6
+    }
+  }
+}

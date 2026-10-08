@@ -1,0 +1,98 @@
+{
+  "id": "LD-A018",
+  "name": "Tríceps Sentado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1820,
+    "width": 1240,
+    "height": 1090
+  },
+  "params": {
+    "mechanism": "seated-dip"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Braços",
+    "foto": "Tríceps Sentado LD-A018.png",
+    "pagina": 51
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "seated-dip",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.295,
+      "pivotHeight": 0.9374,
+      "pivotZ": -0.10010000000000001,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.247,
+        0.8553999999999999
+      ],
+      "leverRear": [
+        0.11411611520612223,
+        -0.4186
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.3276,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.12,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.7600000000000002,
+          -0.2924
+        ],
+        "range": [
+          0,
+          0.4
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.82,
+      "width": 1.24,
+      "height": 1.09
+    },
+    "trainingArea": {
+      "minX": -1.22,
+      "maxX": 1.22,
+      "minZ": -1.51,
+      "maxZ": 1.51,
+      "widthM": 2.44,
+      "lengthM": 3.02,
+      "areaM2": 7.3688
+    },
+    "stats": {
+      "triangles": 1400,
+      "meshes": 34,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

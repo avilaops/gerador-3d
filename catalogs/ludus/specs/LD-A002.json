@@ -1,0 +1,32 @@
+{
+  "id": "LD-A002",
+  "name": "Supino e Remada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1830,
+    "width": 1330,
+    "height": 2090
+  },
+  "params": {
+    "rowStation": true,
+    "storageHorns": 4,
+    "backrestTilt": 0.38,
+    "swing": 0.45
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "approved",
+    "notes": "Escrito à mão a partir da foto: quadro prata, alavancas azuis independentes, estação de supino na frente e remada atrás."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino e Remada LD-A002.png",
+    "pagina": 10
+  }
+}

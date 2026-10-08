@@ -1,0 +1,80 @@
+{
+  "id": "LD-A041",
+  "name": "Agachamento V-Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2470,
+    "width": 1070,
+    "height": 2050
+  },
+  "params": {
+    "variant": "lever-squat"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Agachamento V-Squat LD-A041.png",
+    "pagina": 74
+  },
+  "resolved": {
+    "params": {
+      "variant": "lever-squat",
+      "tube": 0.08,
+      "travel": 0.3,
+      "stackPlates": 0,
+      "stackTravel": 0.16399999999999998,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.77,
+          -0.935
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.47,
+      "width": 1.07,
+      "height": 2.05
+    },
+    "trainingArea": {
+      "minX": -1.135,
+      "maxX": 1.135,
+      "minZ": -1.835,
+      "maxZ": 1.835,
+      "widthM": 2.27,
+      "lengthM": 3.67,
+      "areaM2": 8.3309
+    },
+    "stats": {
+      "triangles": 1868,
+      "meshes": 35,
+      "geometries": 5,
+      "materials": 6
+    }
+  }
+}

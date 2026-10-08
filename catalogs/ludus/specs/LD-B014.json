@@ -1,0 +1,33 @@
+{
+  "id": "LD-B014",
+  "name": "Abdutor",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1550,
+    "width": 1550,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "hip-abduction"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Abdutor LD-B014.png",
+    "pagina": 79
+  }
+}

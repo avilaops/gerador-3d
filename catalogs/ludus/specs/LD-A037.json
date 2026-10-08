@@ -1,0 +1,29 @@
+{
+  "id": "LD-A037",
+  "name": "Belt Squat Pro",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1986,
+    "width": 1604,
+    "height": 1527
+  },
+  "params": {
+    "variant": "belt-squat"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Belt Squat Pro LD-A037.png",
+    "pagina": 72
+  }
+}

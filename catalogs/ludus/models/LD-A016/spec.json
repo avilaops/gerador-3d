@@ -1,0 +1,117 @@
+{
+  "id": "LD-A016",
+  "name": "Elevação Lateral Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1430,
+    "width": 1130,
+    "height": 1200
+  },
+  "params": {
+    "mechanism": "lateral-raise"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Deltoides",
+    "foto": "Elevação Lateral Peso Livre LD-A016.png",
+    "pagina": 45
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "lateral-raise",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.032,
+      "pivotZ": -0.07865,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.27999999999999997,
+        0.6720999999999999
+      ],
+      "leverRear": [
+        0.13099755182181225,
+        -0.3289
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.286,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "pivot": [
+          -0.2,
+          1.0200000000000002,
+          0.26599999999999996
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot": [
+          0.2,
+          1.0200000000000002,
+          0.26599999999999996
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.43,
+      "width": 1.13,
+      "height": 1.2
+    },
+    "trainingArea": {
+      "minX": -1.165,
+      "maxX": 1.165,
+      "minZ": -1.315,
+      "maxZ": 1.315,
+      "widthM": 2.33,
+      "lengthM": 2.63,
+      "areaM2": 6.1279
+    },
+    "stats": {
+      "triangles": 1964,
+      "meshes": 33,
+      "geometries": 5,
+      "materials": 5
+    }
+  }
+}

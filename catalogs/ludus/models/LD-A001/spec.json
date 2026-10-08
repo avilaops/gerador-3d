@@ -1,0 +1,98 @@
+{
+  "id": "LD-A001",
+  "name": "Hiperextensão de Glúteos de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1810,
+    "width": 1010,
+    "height": 1320
+  },
+  "params": {
+    "mechanism": "reverse-hyper"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Hiperextensão de Glúteos de Peso Livre LD-A001.png",
+    "pagina": 59
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "reverse-hyper",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.1352,
+      "pivotZ": -0.09955,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.316,
+        0.8507
+      ],
+      "leverRear": [
+        0.14723217435197114,
+        -0.4163
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 1.05,
+      "pressSeatZ": 0.09050000000000001,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.0300000000000002,
+          -0.102
+        ],
+        "range": [
+          0,
+          0.8
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.825,
+      "width": 1.01,
+      "height": 1.32
+    },
+    "trainingArea": {
+      "minX": -1.105,
+      "maxX": 1.105,
+      "minZ": -1.5125000000000002,
+      "maxZ": 1.5125000000000002,
+      "widthM": 2.21,
+      "lengthM": 3.0250000000000004,
+      "areaM2": 6.685250000000001
+    },
+    "stats": {
+      "triangles": 1652,
+      "meshes": 40,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

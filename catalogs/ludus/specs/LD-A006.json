@@ -1,0 +1,29 @@
+{
+  "id": "LD-A006",
+  "name": "Remada Alta",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1550,
+    "width": 1050,
+    "height": 2010
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Alta LD-A006.png",
+    "pagina": 30
+  }
+}

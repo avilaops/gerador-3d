@@ -1,0 +1,103 @@
+{
+  "id": "LD-B034",
+  "name": "Agachamento V-Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2465,
+    "width": 800,
+    "height": 2005
+  },
+  "weightStackKg": {
+    "perStack": 195,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "lever-squat"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Agachamento V-Squat LD-B034.png",
+    "pagina": 84
+  },
+  "resolved": {
+    "params": {
+      "variant": "lever-squat",
+      "tube": 0.08,
+      "travel": 0.3,
+      "stackPlates": 20,
+      "stackTravel": 0.1604,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          2.706168622523819e-16,
+          -1.0975
+        ],
+        "range": [
+          0,
+          0.1604
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.725,
+          -0.9324999999999999
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.465,
+      "width": 0.8,
+      "height": 2.005
+    },
+    "trainingArea": {
+      "minX": -1,
+      "maxX": 1,
+      "minZ": -1.8325,
+      "maxZ": 1.8325,
+      "widthM": 2,
+      "lengthM": 3.665,
+      "areaM2": 7.33
+    },
+    "stats": {
+      "triangles": 2424,
+      "meshes": 61,
+      "geometries": 5,
+      "materials": 8
+    }
+  }
+}

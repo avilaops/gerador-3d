@@ -43,6 +43,10 @@ export interface GeneratedEquipment {
   dispose(): void;
 }
 
+/** Desvio máximo aceito antes de remontar com dimensões de projeto corrigidas. */
+const FIT_TOLERANCE = 0.01;
+const FIT_ITERATIONS = 4;
+
 export class UnsupportedFamilyError extends Error {
   constructor(readonly family: string) {
     super(`Família sem gerador implementado: ${family}`);
@@ -62,27 +66,62 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
     height: spec.dimensionsMm.height / 1000,
   };
 
-  // Parâmetros: padrões derivados das dimensões + o que o spec refinar.
-  const defaults = family.defaults(dims, spec) as Record<string, unknown>;
-  const merged: Record<string, unknown> = { ...defaults };
-  for (const [k, v] of Object.entries(spec.params)) {
-    if (!(k in defaults)) {
-      warnings.push(`Parâmetro desconhecido para ${spec.family}: "${k}" (ignorado)`);
-      continue;
-    }
-    merged[k] = v;
-  }
-  const parsed = family.paramsSchema.safeParse(merged);
-  if (!parsed.success) {
-    throw new EquipmentSpecError(
-      `Parâmetros inválidos (${spec.id})`,
-      parsed.error.issues.map((i) => `params.${i.path.join('.')}: ${i.message}`)
-    );
-  }
-  const params = parsed.data as Record<string, unknown>;
-
   const kit = new PartKit(spec.materials);
-  const { root, articulations: familyArts } = family.build({ spec, dims, params, kit });
+  const unknown = new Set<string>();
+
+  // Uma montagem: parâmetros (padrões derivados das dimensões + o que o spec refinar) → grupo.
+  const buildWith = (design: DimsM) => {
+    const defaults = family.defaults(design, spec) as Record<string, unknown>;
+    const merged: Record<string, unknown> = { ...defaults };
+    for (const [k, v] of Object.entries(spec.params)) {
+      if (k in defaults) merged[k] = v;
+      else unknown.add(k);
+    }
+    const parsed = family.paramsSchema.safeParse(merged);
+    if (!parsed.success) {
+      throw new EquipmentSpecError(
+        `Parâmetros inválidos (${spec.id})`,
+        parsed.error.issues.map((i) => `params.${i.path.join('.')}: ${i.message}`)
+      );
+    }
+    const params = parsed.data as Record<string, unknown>;
+    const built = family.build({ spec, dims: design, params, kit });
+    built.root.updateMatrixWorld(true);
+    const size = new THREE.Box3().setFromObject(built.root, true).getSize(new THREE.Vector3());
+    return { ...built, params, size };
+  };
+  const worst = (size: THREE.Vector3) =>
+    Math.max(
+      Math.abs(size.z / dims.length - 1),
+      Math.abs(size.x / dims.width - 1),
+      Math.abs(size.y / dims.height - 1)
+    );
+
+  // Ajuste à caixa do catálogo: se alguma peça passa (ou falta) mais de 1%, a
+  // família é remontada com dimensões de projeto corrigidas. Assim os tubos
+  // continuam com a seção certa, em vez de o modelo ser esticado.
+  let design: DimsM = { ...dims };
+  let built = buildWith(design);
+  for (let i = 0; i < FIT_ITERATIONS && worst(built.size) > FIT_TOLERANCE; i++) {
+    design = {
+      length: (design.length * dims.length) / built.size.z,
+      width: (design.width * dims.width) / built.size.x,
+      height: (design.height * dims.height) / built.size.y,
+    };
+    built = buildWith(design);
+  }
+  const { root, articulations: familyArts, params } = built;
+  unknown.forEach((k) =>
+    warnings.push(`Parâmetro desconhecido para ${spec.family}: "${k}" (ignorado)`)
+  );
+  // Último recurso: o que a remontagem não resolveu é corrigido por escala.
+  const scale = new THREE.Vector3(1, 1, 1);
+  if (worst(built.size) > FIT_TOLERANCE) {
+    scale.set(dims.width / built.size.x, dims.height / built.size.y, dims.length / built.size.z);
+    root.scale.copy(scale);
+    const pct = Math.round(Math.max(...scale.toArray().map((v) => Math.abs(v - 1))) * 100);
+    warnings.push(`Modelo ajustado por escala para caber na caixa do catálogo (até ${pct}%)`);
+  }
 
   const object = new THREE.Group();
   object.name = spec.id;
@@ -104,9 +143,9 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   const articulations = familyArts.map((a) => ({
     ...a,
     pivot: [
-      a.pivot[0] + offset.x,
-      a.pivot[1] + offset.y,
-      a.pivot[2] + offset.z,
+      a.pivot[0] * scale.x + offset.x,
+      a.pivot[1] * scale.y + offset.y,
+      a.pivot[2] * scale.z + offset.z,
     ] as Articulation['pivot'],
   }));
   for (const o of spec.articulations ?? []) {

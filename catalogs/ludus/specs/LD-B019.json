@@ -1,0 +1,33 @@
+{
+  "id": "LD-B019",
+  "name": "Extensão Lombar Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1220,
+    "width": 1015,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "back-extension"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Extensão Lombar Máquina LD-B019.png",
+    "pagina": 37
+  }
+}

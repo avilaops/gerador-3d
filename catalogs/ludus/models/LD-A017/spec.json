@@ -1,0 +1,98 @@
+{
+  "id": "LD-A017",
+  "name": "Pullover de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1380,
+    "width": 1300,
+    "height": 1500
+  },
+  "params": {
+    "mechanism": "pullover"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Pullover de Peso Livre LD-A017.png",
+    "pagina": 35
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "pullover",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.325,
+      "pivotHeight": 1.29,
+      "pivotZ": -0.0759,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.36999999999999994,
+        0.6486
+      ],
+      "leverRear": [
+        0.1751645888826641,
+        -0.3174
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.13799999999999998,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.3,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.0200000000000002,
+          -0.18200000000000002
+        ],
+        "range": [
+          0,
+          1.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.38,
+      "width": 1.3,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.25,
+      "maxX": 1.25,
+      "minZ": -1.29,
+      "maxZ": 1.29,
+      "widthM": 2.5,
+      "lengthM": 2.58,
+      "areaM2": 6.45
+    },
+    "stats": {
+      "triangles": 1560,
+      "meshes": 32,
+      "geometries": 5,
+      "materials": 5
+    }
+  }
+}

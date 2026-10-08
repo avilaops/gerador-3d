@@ -1,0 +1,29 @@
+{
+  "id": "LD-A005",
+  "name": "Puxada Alta Frontal",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1660,
+    "width": 1050,
+    "height": 2040
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Puxada Alta Frontal LD-A005.png",
+    "pagina": 29
+  }
+}

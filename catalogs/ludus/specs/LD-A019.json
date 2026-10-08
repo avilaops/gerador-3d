@@ -1,0 +1,29 @@
+{
+  "id": "LD-A019",
+  "name": "Super Fly",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 2090,
+    "width": 2190,
+    "height": 1050
+  },
+  "params": {
+    "mechanism": "lying-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Super Fly LD-A019.png",
+    "pagina": 15
+  }
+}

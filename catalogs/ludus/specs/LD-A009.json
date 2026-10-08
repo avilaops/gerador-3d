@@ -1,0 +1,29 @@
+{
+  "id": "LD-A009",
+  "name": "Remada Baixa",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1220,
+    "width": 1200,
+    "height": 1710
+  },
+  "params": {
+    "mechanism": "low-row"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Baixa LD-A009.png",
+    "pagina": 32
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "LD-A053",
+  "name": "Suporte para 10 Barras",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 790,
+    "width": 720,
+    "height": 1530
+  },
+  "params": {
+    "variant": "bar-holder"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Suporte para 10 Barras LD-A053.png",
+    "pagina": 109
+  }
+}

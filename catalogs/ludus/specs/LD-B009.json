@@ -1,0 +1,33 @@
+{
+  "id": "LD-B009",
+  "name": "Graviton - Barra Fixa e Paralela",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1285,
+    "width": 1125,
+    "height": 2215
+  },
+  "weightStackKg": {
+    "perStack": 82,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "assisted-chin"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Graviton - Barra Fixa e Paralela LD-B009.png",
+    "pagina": 95
+  }
+}

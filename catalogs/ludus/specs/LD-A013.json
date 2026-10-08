@@ -1,0 +1,29 @@
+{
+  "id": "LD-A013",
+  "name": "Supino Super Inclinado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1270,
+    "width": 1500,
+    "height": 1530
+  },
+  "params": {
+    "mechanism": "incline-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Super Inclinado LD-A013.png",
+    "pagina": 13
+  }
+}

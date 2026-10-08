@@ -1,0 +1,157 @@
+{
+  "id": "LD-B026",
+  "name": "Desenvolvimento de Ombros Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1150,
+    "width": 1580,
+    "height": 1380
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Deltoides",
+    "foto": "Desenvolvimento de Ombros Iso-Lateral LD-B026.png",
+    "pagina": 49
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.4941154658362861,
+      "baseRailX": 0.3529396184544901,
+      "towerZ": -0.44999999999999996,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 8,
+      "stackTravel": 0.11039999999999997,
+      "seatHeight": 0.46,
+      "seatZ": 0.11499999999999999,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.1,
+      "mechanism": "shoulder-press",
+      "stacks": 2,
+      "swingScale": 1,
+      "armPivotHeight": 1.1899999999999997,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.5058792369089802,
+          1.249000902703301e-16,
+          -0.44999999999999996
+        ],
+        "range": [
+          0,
+          0.11039999999999997
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0.5058792369089802,
+          1.249000902703301e-16,
+          -0.44999999999999996
+        ],
+        "range": [
+          0,
+          0.11039999999999997
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.9800000000000001,
+          -0.43500000000000005
+        ],
+        "range": [
+          0,
+          0.42
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.9800000000000001,
+          -0.43500000000000005
+        ],
+        "range": [
+          0,
+          0.42
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.15,
+      "width": 1.582,
+      "height": 1.38
+    },
+    "trainingArea": {
+      "minX": -1.3908792369089802,
+      "maxX": 1.3908792369089802,
+      "minZ": -1.1749999999999998,
+      "maxZ": 1.1749999999999998,
+      "widthM": 2.7817584738179604,
+      "lengthM": 2.3499999999999996,
+      "areaM2": 6.5371324134722055
+    },
+    "stats": {
+      "triangles": 3028,
+      "meshes": 75,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

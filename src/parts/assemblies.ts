@@ -3,8 +3,8 @@
  */
 import * as THREE from 'three';
 import type { PartKit } from './kit';
-import { beam, box, cable, mesh } from './primitives';
-import type { Vec3 } from '../spec/schema';
+import { beam, box, cable, mesh, pulley } from './primitives';
+import type { Articulation, Vec3 } from '../spec/schema';
 
 export interface TowerOptions {
   /** Centro da torre no piso (x, z). */
@@ -155,4 +155,75 @@ export function pivotArm(
   const b: Vec3 = [-a[0], -a[1], -a[2]];
   g.add(beam(kit, a, b, d, { round: true, material: 'chrome', name: `${name}_hub` }));
   return g;
+}
+
+export interface StackTowerOptions {
+  /** Sufixo dos nós: "" (torre única), "_left", "_right"... */
+  suffix?: string;
+  /** Posição do eixo da torre no piso. */
+  x: number;
+  z: number;
+  height: number;
+  post: number;
+  plates: number;
+  travel: number;
+}
+
+/**
+ * Torre completa com bateria: montantes, capa, hastes, placas, polia e
+ * carenagem traseira. Devolve o grupo (`tower<sufixo>`) e a articulação da
+ * bateria (`stack<sufixo>`).
+ */
+export function stackTower(
+  kit: PartKit,
+  o: StackTowerOptions
+): { group: THREE.Group; articulation: Articulation } {
+  const suffix = o.suffix ?? '';
+  const unit = new THREE.Group();
+  unit.name = `tower${suffix}`;
+  unit.position.set(o.x, 0, o.z);
+  const frame = tower(kit, {
+    x: 0,
+    z: 0,
+    postSpacing: 0.34,
+    height: o.height,
+    post: o.post,
+    capDepth: 0.26,
+    capOffsetZ: 0.005,
+  });
+  frame.name = 'tower_frame';
+  unit.add(frame);
+  const guideHeight = Math.min(0.7 * o.height, o.height - 0.3);
+  const baseY = 0.11;
+  const available = guideHeight - baseY - o.travel - 0.26;
+  const pitch = Math.min(0.037, Math.max(0.016, available / (o.plates + 1)));
+  const st = weightStack(kit, {
+    x: 0,
+    z: 0,
+    plates: o.plates,
+    plateSize: [0.24, pitch - 0.005, 0.13],
+    gap: 0.005,
+    baseY,
+    guideHeight,
+    cableTopY: o.height - 0.12,
+  });
+  st.stack.name = `stack${suffix}`;
+  unit.add(st.guides, st.stack);
+  unit.add(pulley(kit, [0, o.height - 0.12, 0], 0.09, 'x'));
+  unit.add(
+    box(kit, [0.3, guideHeight - 0.1, 0.012], [0, (guideHeight + 0.1) / 2, -0.08], {
+      name: 'tower_shroud',
+    })
+  );
+  return {
+    group: unit,
+    articulation: {
+      node: `stack${suffix}`,
+      type: 'prismatic',
+      axis: [0, 1, 0],
+      pivot: [o.x, 0, o.z],
+      range: [0, o.travel],
+      driver: 'phase',
+    },
+  };
 }

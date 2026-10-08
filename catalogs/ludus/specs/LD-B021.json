@@ -1,0 +1,33 @@
+{
+  "id": "LD-B021",
+  "name": "Puxada Fixa",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1565,
+    "width": 1425,
+    "height": 1865
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Puxada Fixa LD-B021.png",
+    "pagina": 39
+  }
+}

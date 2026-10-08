@@ -1,0 +1,80 @@
+{
+  "id": "LD-A036",
+  "name": "Belt Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1985,
+    "width": 1610,
+    "height": 1525
+  },
+  "params": {
+    "variant": "belt-squat"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Belt Squat LD-A036.png",
+    "pagina": 71
+  },
+  "resolved": {
+    "params": {
+      "variant": "belt-squat",
+      "tube": 0.08,
+      "travel": 0.2,
+      "stackPlates": 0,
+      "stackTravel": 0.122,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.20000000000000023,
+          -0.8325
+        ],
+        "range": [
+          0,
+          0.12
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.985,
+      "width": 1.61,
+      "height": 1.525
+    },
+    "trainingArea": {
+      "minX": -1.4050000000000002,
+      "maxX": 1.4050000000000002,
+      "minZ": -1.5925,
+      "maxZ": 1.5925,
+      "widthM": 2.8100000000000005,
+      "lengthM": 3.185,
+      "areaM2": 8.949850000000001
+    },
+    "stats": {
+      "triangles": 992,
+      "meshes": 34,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

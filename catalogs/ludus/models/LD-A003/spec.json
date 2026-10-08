@@ -1,0 +1,117 @@
+{
+  "id": "LD-A003",
+  "name": "Supino Declinado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 1380,
+    "height": 1730
+  },
+  "params": {
+    "mechanism": "decline-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Declinado LD-A003.png",
+    "pagina": 11
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "decline-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.36499999999999994,
+      "pivotHeight": 1.4878,
+      "pivotZ": -0.07150000000000001,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.439,
+        0.611
+      ],
+      "leverRear": [
+        0.209627440520015,
+        -0.29900000000000004
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.52,
+      "pressSeatZ": 0.156,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.06,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.41999999999999993,
+          1.6300000000000001,
+          -0.164
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.41999999999999993,
+          1.6300000000000001,
+          -0.164
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.3,
+      "width": 1.38,
+      "height": 1.73
+    },
+    "trainingArea": {
+      "minX": -1.29,
+      "maxX": 1.29,
+      "minZ": -1.25,
+      "maxZ": 1.25,
+      "widthM": 2.58,
+      "lengthM": 2.5,
+      "areaM2": 6.45
+    },
+    "stats": {
+      "triangles": 1504,
+      "meshes": 34,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

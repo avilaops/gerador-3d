@@ -1,0 +1,61 @@
+{
+  "id": "LD-A046",
+  "name": "Banco Multiuso 75°",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 640,
+    "height": 940
+  },
+  "params": {
+    "variant": "incline",
+    "backAngle": 1.309
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Multiuso 75° LD-A046.png",
+    "pagina": 105
+  },
+  "resolved": {
+    "params": {
+      "variant": "incline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 1.309,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.3,
+      "width": 0.64,
+      "height": 0.94
+    },
+    "trainingArea": {
+      "minX": -0.9199999999999999,
+      "maxX": 0.9199999999999999,
+      "minZ": -1.2501162239089185,
+      "maxZ": 1.2501162239089183,
+      "widthM": 1.8399999999999999,
+      "lengthM": 2.5002324478178366,
+      "areaM2": 4.600427703984819
+    },
+    "stats": {
+      "triangles": 1000,
+      "meshes": 18,
+      "geometries": 4,
+      "materials": 4
+    }
+  }
+}

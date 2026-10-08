@@ -13,6 +13,8 @@ import type { FamilyDefinition } from './types';
 import { beam, box, cable, pulley, rubberFoot, upholstery } from '../parts/primitives';
 import { pivotArm, tower, weightStack } from '../parts/assemblies';
 import type { Articulation } from '../spec/schema';
+import { buildMachine } from './machine/machine';
+import { EXERCISES, EXERCISE_IDS, type ExerciseId } from './machine/exercises';
 
 export const SelectorizedTowerParamsSchema = z.object({
   /** Lado do tubo da estrutura (m). */
@@ -35,7 +37,12 @@ export const SelectorizedTowerParamsSchema = z.object({
   backrestHeight: z.number().positive(),
   /** Inclinação do encosto para trás (rad). */
   backrestTilt: z.number(),
-  mechanism: z.enum(['pec-fly', 'none']),
+  /** `pec-fly` e `none` usam o corpo do Peck Deck; os demais, a máquina genérica (machine/). */
+  mechanism: z.enum(['pec-fly', 'none', ...EXERCISE_IDS]),
+  /** Número de baterias: 1 no centro ou 2 nas laterais (iso-lateral). */
+  stacks: z.union([z.literal(1), z.literal(2)]),
+  /** Multiplicador do giro das alavancas (máquina genérica). */
+  swingScale: z.number().positive(),
   armPivotHeight: z.number().positive(),
   armPivotX: z.number().nonnegative(),
   armPivotZ: z.number(),
@@ -57,6 +64,8 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
 
   defaults(d, spec) {
     const kg = spec.weightStackKg?.perStack ?? 100;
+    const mech = spec.params.mechanism;
+    const ex = typeof mech === 'string' && mech in EXERCISES ? EXERCISES[mech as ExerciseId] : undefined;
     return {
       tube: 0.07,
       baseRearHalfWidth: 0.35 * d.width,
@@ -65,13 +74,15 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
       towerPostSpacing: 0.34,
       stackPlates: Math.max(6, Math.min(24, Math.round(kg / KG_PER_PLATE))),
       stackTravel: Math.min(0.25, 0.08 * d.height),
-      seatHeight: 0.52,
-      seatZ: 0.03,
+      seatHeight: ex?.seatHeight ?? 0.52,
+      seatZ: ex ? ex.seatAt * d.length : 0.03,
       seatWidth: 0.42,
       seatDepth: 0.38,
       backrestHeight: 0.74,
-      backrestTilt: 0.12,
+      backrestTilt: ex?.backTilt ?? 0.12,
       mechanism: 'pec-fly',
+      stacks: spec.weightStackKg?.stacks === 2 ? 2 : 1,
+      swingScale: 1,
       armPivotHeight: d.height - 0.19,
       armPivotX: 0.18,
       armPivotZ: -0.14,
@@ -82,6 +93,20 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
   },
 
   build({ dims, params: p, kit }) {
+    if (p.mechanism !== 'pec-fly' && p.mechanism !== 'none') {
+      return buildMachine(dims, kit, {
+        exercise: p.mechanism,
+        resistance: 'stack',
+        stacks: p.stacks,
+        tube: p.tube,
+        seatHeight: p.seatHeight,
+        seatZ: p.seatZ,
+        backTilt: p.backrestTilt,
+        stackPlates: p.stackPlates,
+        stackTravel: p.stackTravel,
+        swingScale: p.swingScale,
+      });
+    }
     const root = new THREE.Group();
     root.name = 'equipment';
     const t = p.tube;

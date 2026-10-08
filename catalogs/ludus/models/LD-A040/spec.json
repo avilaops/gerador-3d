@@ -1,0 +1,117 @@
+{
+  "id": "LD-A040",
+  "name": "Supino Inclinado Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1380,
+    "width": 1160,
+    "height": 1910
+  },
+  "params": {
+    "mechanism": "incline-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Inclinado Articulado LD-A040.png",
+    "pagina": 17
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "incline-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25499999999999995,
+      "pivotHeight": 1.6425999999999998,
+      "pivotZ": -0.0759,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.49299999999999994,
+        0.6486
+      ],
+      "leverRear": [
+        0.23546299996830697,
+        -0.3174
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.42,
+      "pressSeatZ": 0.2208,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.55,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.30999999999999994,
+          1.5400000000000003,
+          -0.09920000000000001
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.30999999999999994,
+          1.5400000000000003,
+          -0.09920000000000001
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.38,
+      "width": 1.16,
+      "height": 1.91
+    },
+    "trainingArea": {
+      "minX": -1.18,
+      "maxX": 1.18,
+      "minZ": -1.29,
+      "maxZ": 1.29,
+      "widthM": 2.36,
+      "lengthM": 2.58,
+      "areaM2": 6.0888
+    },
+    "stats": {
+      "triangles": 1504,
+      "meshes": 34,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

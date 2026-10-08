@@ -1,0 +1,138 @@
+{
+  "id": "LD-B005",
+  "name": "Elevação Lateral Sentado",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1095,
+    "width": 930,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 95,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "lateral-raise"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Deltoides",
+    "foto": "Elevação Lateral Sentado LD-B005.png",
+    "pagina": 47
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.3255,
+      "baseRailX": 0.2325,
+      "towerZ": -0.4225,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.10640000000000001,
+      "seatHeight": 0.46,
+      "seatZ": 0.219,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "lateral-raise",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.1400000000000001,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.249000902703301e-16,
+          -0.4225
+        ],
+        "range": [
+          0,
+          0.10640000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "pivot": [
+          -0.2,
+          1.0200000000000002,
+          0.199
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "pivot": [
+          0.2,
+          1.0200000000000002,
+          0.199
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.095,
+      "width": 0.93,
+      "height": 1.33
+    },
+    "trainingArea": {
+      "minX": -1.065,
+      "maxX": 1.065,
+      "minZ": -1.1475,
+      "maxZ": 1.1475,
+      "widthM": 2.13,
+      "lengthM": 2.295,
+      "areaM2": 4.88835
+    },
+    "stats": {
+      "triangles": 2568,
+      "meshes": 49,
+      "geometries": 6,
+      "materials": 7
+    }
+  }
+}

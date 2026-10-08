@@ -1,0 +1,29 @@
+{
+  "id": "LD-A036",
+  "name": "Belt Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1985,
+    "width": 1610,
+    "height": 1525
+  },
+  "params": {
+    "variant": "belt-squat"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Belt Squat LD-A036.png",
+    "pagina": 71
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "LD-B007",
+  "name": "Crucifixo Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1250,
+    "width": 1435,
+    "height": 2050
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pec-fly"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Peitoral",
+    "foto": "Crucifixo Máquina LD-B007.png",
+    "pagina": 19
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "LD-B033",
+  "name": "Cadeira Extensora Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1220,
+    "width": 1450,
+    "height": 1400
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Cadeira Extensora Iso-Lateral LD-B033.png",
+    "pagina": 83
+  }
+}

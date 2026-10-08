@@ -13,8 +13,14 @@ import type { FamilyDefinition } from './types';
 import { beam, box, plateHorn, rubberFoot, upholstery } from '../parts/primitives';
 import { pivotArm } from '../parts/assemblies';
 import type { Articulation, Vec3 } from '../spec/schema';
+import { buildMachine } from './machine/machine';
+import { EXERCISES, EXERCISE_IDS, type ExerciseId } from './machine/exercises';
 
 export const PlateLoadedLeverParamsSchema = z.object({
+  /** `press-row` é o quadro em A do Supino e Remada; os demais usam a máquina genérica (machine/). */
+  mechanism: z.enum(['press-row', ...EXERCISE_IDS]),
+  /** Multiplicador do giro das alavancas (máquina genérica). */
+  swingScale: z.number().positive(),
   tube: z.number().positive(),
   /** Meia distância entre os quadros laterais (e as longarinas da base). */
   frameX: z.number().positive(),
@@ -57,7 +63,9 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
   label: 'Peso livre articulado (alavanca)',
   paramsSchema: PlateLoadedLeverParamsSchema,
 
-  defaults(d) {
+  defaults(d, spec) {
+    const mech = spec.params.mechanism;
+    const ex = typeof mech === 'string' && mech in EXERCISES ? EXERCISES[mech as ExerciseId] : undefined;
     const pivotHeight = 0.86 * d.height;
     const leverTube = 0.08;
     const front: [number, number] = [-0.3 * d.height + 0.08, 0.47 * d.length];
@@ -71,6 +79,8 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
     }
     const hornLength = 0.175;
     return {
+      mechanism: 'press-row',
+      swingScale: 1,
       tube: 0.08,
       frameX: Math.max(0.25, d.width / 2 - 0.325),
       pivotHeight,
@@ -80,10 +90,10 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
       leverRear: [rearDy, rearDz],
       hornLength,
       hornOffset: 0.3,
-      seatHeight: 0.45,
-      pressSeatZ: 0.25 * d.length,
+      seatHeight: ex?.seatHeight ?? 0.45,
+      pressSeatZ: (ex?.seatAt ?? 0.25) * d.length,
       backrestHeight: 0.8,
-      backrestTilt: 0.38,
+      backrestTilt: ex?.backTilt ?? 0.38,
       rowStation: true,
       storageHorns: 4,
       swing: 0.45,
@@ -91,6 +101,20 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
   },
 
   build({ dims, params: p, kit }) {
+    if (p.mechanism !== 'press-row') {
+      return buildMachine(dims, kit, {
+        exercise: p.mechanism,
+        resistance: 'plates',
+        stacks: 1,
+        tube: p.tube,
+        seatHeight: p.seatHeight,
+        seatZ: p.pressSeatZ,
+        backTilt: p.backrestTilt,
+        stackPlates: 0,
+        stackTravel: 0,
+        swingScale: p.swingScale,
+      });
+    }
     const root = new THREE.Group();
     root.name = 'equipment';
     const t = p.tube;

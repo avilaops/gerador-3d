@@ -1,0 +1,117 @@
+{
+  "id": "LD-A011",
+  "name": "Remada Sentada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1270,
+    "height": 1300
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Sentada LD-A011.png",
+    "pagina": 33
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "row",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.31,
+      "pivotHeight": 1.1179999999999999,
+      "pivotZ": -0.08168316831683169,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.30999999999999994,
+        0.698019801980198
+      ],
+      "leverRear": [
+        0.14536061952284826,
+        -0.3415841584158416
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.32673267326732675,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.365,
+          0.20000000000000018,
+          -0.3857673267326732
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.365,
+          0.20000000000000018,
+          -0.3857673267326732
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.5,
+      "width": 1.27,
+      "height": 1.3
+    },
+    "trainingArea": {
+      "minX": -1.2349999999999999,
+      "maxX": 1.2349999999999999,
+      "minZ": -1.3500742574257427,
+      "maxZ": 1.3500742574257427,
+      "widthM": 2.4699999999999998,
+      "lengthM": 2.7001485148514854,
+      "areaM2": 6.669366831683169
+    },
+    "stats": {
+      "triangles": 2016,
+      "meshes": 42,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

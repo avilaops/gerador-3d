@@ -1,0 +1,29 @@
+{
+  "id": "LD-A008",
+  "name": "Remada T-Bar",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 2050,
+    "width": 820,
+    "height": 530
+  },
+  "params": {
+    "mechanism": "t-bar"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada T-Bar LD-A008.png",
+    "pagina": 31
+  }
+}

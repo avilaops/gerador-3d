@@ -1,0 +1,33 @@
+{
+  "id": "LD-B026",
+  "name": "Desenvolvimento de Ombros Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1150,
+    "width": 1580,
+    "height": 1380
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Deltoides",
+    "foto": "Desenvolvimento de Ombros Iso-Lateral LD-B026.png",
+    "pagina": 49
+  }
+}

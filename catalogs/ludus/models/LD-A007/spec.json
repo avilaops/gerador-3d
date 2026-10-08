@@ -1,0 +1,117 @@
+{
+  "id": "LD-A007",
+  "name": "Supino Horizontal",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1680,
+    "width": 1550,
+    "height": 1070
+  },
+  "params": {
+    "mechanism": "lying-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Horizontal LD-A007.png",
+    "pagina": 12
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "lying-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.45,
+      "pivotHeight": 0.9202,
+      "pivotZ": -0.0924,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.241,
+        0.7896
+      ],
+      "leverRear": [
+        0.11148411710818966,
+        -0.3864
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.44,
+      "pressSeatZ": 0.3024,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.505,
+          0.3400000000000002,
+          -0.6901
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.505,
+          0.3400000000000002,
+          -0.6901
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.695,
+      "width": 1.55,
+      "height": 1.07
+    },
+    "trainingArea": {
+      "minX": -1.375,
+      "maxX": 1.375,
+      "minZ": -1.4474999999999998,
+      "maxZ": 1.4474999999999998,
+      "widthM": 2.75,
+      "lengthM": 2.8949999999999996,
+      "areaM2": 7.961249999999999
+    },
+    "stats": {
+      "triangles": 1728,
+      "meshes": 42,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

@@ -5,7 +5,6 @@ import {
   generateEquipment,
   HANDWRITTEN_SPECS,
   EquipmentSpecError,
-  UnsupportedFamilyError,
   type EquipmentSpecInput,
 } from '../src';
 
@@ -155,8 +154,10 @@ describe('validação', () => {
     ).toThrow(EquipmentSpecError);
   });
 
-  it('família sem gerador lança UnsupportedFamilyError', () => {
-    expect(() => generateEquipment({ ...base, family: 'bench' })).toThrow(UnsupportedFamilyError);
+  it('família fora do schema é rejeitada', () => {
+    expect(() => generateEquipment({ ...base, family: 'inexistente' as 'bench' })).toThrow(
+      EquipmentSpecError
+    );
   });
 
   it('ajuste de articulação do spec altera o curso', () => {

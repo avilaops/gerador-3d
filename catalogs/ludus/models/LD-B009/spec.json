@@ -1,0 +1,119 @@
+{
+  "id": "LD-B009",
+  "name": "Graviton - Barra Fixa e Paralela",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1285,
+    "width": 1125,
+    "height": 2215
+  },
+  "weightStackKg": {
+    "perStack": 82,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "assisted-chin"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Graviton - Barra Fixa e Paralela LD-B009.png",
+    "pagina": 95
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.39375,
+      "baseRailX": 0.28125,
+      "towerZ": -0.5175,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 8,
+      "stackTravel": 0.1772,
+      "seatHeight": 0.5,
+      "seatZ": 0.23129999999999998,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "assisted-chin",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 2.025,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.457167719820518e-16,
+          -0.5175
+        ],
+        "range": [
+          0,
+          0.1772
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "knee_pad",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.6200000000000001,
+          -0.3187000000000001
+        ],
+        "range": [
+          0,
+          0.55
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.285,
+      "width": 1.125,
+      "height": 2.215
+    },
+    "trainingArea": {
+      "minX": -1.1625,
+      "maxX": 1.1625,
+      "minZ": -1.2425,
+      "maxZ": 1.2425,
+      "widthM": 2.325,
+      "lengthM": 2.485,
+      "areaM2": 5.7776250000000005
+    },
+    "stats": {
+      "triangles": 1936,
+      "meshes": 51,
+      "geometries": 4,
+      "materials": 7
+    }
+  }
+}

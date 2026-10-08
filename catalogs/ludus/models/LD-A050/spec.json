@@ -1,0 +1,60 @@
+{
+  "id": "LD-A050",
+  "name": "Supino Reto Livre",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1330,
+    "width": 1270,
+    "height": 1270
+  },
+  "params": {
+    "variant": "olympic-flat"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Reto Livre LD-A050.png",
+    "pagina": 24
+  },
+  "resolved": {
+    "params": {
+      "variant": "olympic-flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.33,
+      "width": 1.27,
+      "height": 1.27
+    },
+    "trainingArea": {
+      "minX": -1.23515503875969,
+      "maxX": 1.23515503875969,
+      "minZ": -1.2650000000000001,
+      "maxZ": 1.2650000000000001,
+      "widthM": 2.47031007751938,
+      "lengthM": 2.5300000000000002,
+      "areaM2": 6.249884496124031
+    },
+    "stats": {
+      "triangles": 648,
+      "meshes": 30,
+      "geometries": 2,
+      "materials": 5
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "LD-B020",
+  "name": "Remada Sentada Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1345,
+    "width": 830,
+    "height": 1960
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Sentada Máquina LD-B020.png",
+    "pagina": 38
+  }
+}

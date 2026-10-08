@@ -1,0 +1,60 @@
+{
+  "id": "LD-A049",
+  "name": "Banco Declinado Ajustável",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1630,
+    "width": 720,
+    "height": 940
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Declinado Ajustável LD-A049.png",
+    "pagina": 108
+  },
+  "resolved": {
+    "params": {
+      "variant": "decline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.63,
+      "width": 0.72,
+      "height": 0.94
+    },
+    "trainingArea": {
+      "minX": -0.96,
+      "maxX": 0.96,
+      "minZ": -1.4150929438543247,
+      "maxZ": 1.4150929438543245,
+      "widthM": 1.92,
+      "lengthM": 2.830185887708649,
+      "areaM2": 5.433956904400606
+    },
+    "stats": {
+      "triangles": 764,
+      "meshes": 18,
+      "geometries": 3,
+      "materials": 3
+    }
+  }
+}

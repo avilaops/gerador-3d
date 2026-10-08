@@ -1,0 +1,80 @@
+{
+  "id": "LD-A026",
+  "name": "Panturrilha Horizontal",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1630,
+    "width": 1450,
+    "height": 1520
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Panturrilha",
+    "foto": "Panturrilha Horizontal LD-A026.png",
+    "pagina": 87
+  },
+  "resolved": {
+    "params": {
+      "variant": "sled",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.1216,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.9074669071198411,
+          -0.42012356811103757
+        ],
+        "pivot": [
+          0,
+          0.6240000000000001,
+          -0.3249999999999999
+        ],
+        "range": [
+          0,
+          0.35
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.63,
+      "width": 1.45,
+      "height": 1.52
+    },
+    "trainingArea": {
+      "minX": -1.3249999999999997,
+      "maxX": 1.3249999999999997,
+      "minZ": -1.415,
+      "maxZ": 1.415,
+      "widthM": 2.6499999999999995,
+      "lengthM": 2.83,
+      "areaM2": 7.4994999999999985
+    },
+    "stats": {
+      "triangles": 1580,
+      "meshes": 35,
+      "geometries": 5,
+      "materials": 6
+    }
+  }
+}

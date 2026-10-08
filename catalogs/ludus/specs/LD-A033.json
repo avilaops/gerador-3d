@@ -1,0 +1,29 @@
+{
+  "id": "LD-A033",
+  "name": "Scott Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1270,
+    "width": 1170,
+    "height": 1350
+  },
+  "params": {
+    "mechanism": "biceps-curl"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Braços",
+    "foto": "Scott Articulado LD-A033.png",
+    "pagina": 52
+  }
+}

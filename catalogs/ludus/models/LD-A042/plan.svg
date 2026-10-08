@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.0035 -1.5008 2.2767 3.1646" role="img" aria-label="Planta do Banco Reto (LD-A042): 560 × 1270 mm, com 60 cm de área de treino em volta" data-equipment="LD-A042" data-unit="m">
+<title>Planta do Banco Reto (LD-A042): 560 × 1270 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-0.88" y="-1.235" width="1.76" height="2.47" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0148;stroke-dasharray:0.0889 0.0593"/>
+<text class="eq-zone-label" x="0" y="-1.2795" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0845px;fill:#96764a;text-anchor:middle">área de treino · 1,76 × 2,47 m · 4,35 m²</text>
+<g class="eq-parts">
+<polygon class="eq-part" points="-0.03,-0.605 0.03,-0.605 0.03,0.605 -0.03,0.605" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,-0.635 0.28,-0.635 0.28,-0.575 -0.28,-0.575" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.28,0.575 0.28,0.575 0.28,0.635 -0.28,0.635" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.27,-0.625 -0.19,-0.625 -0.19,-0.545 -0.27,-0.545" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.27,0.545 -0.19,0.545 -0.19,0.625 -0.27,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.19,-0.625 0.27,-0.625 0.27,-0.545 0.19,-0.545" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.19,0.545 0.27,0.545 0.27,0.625 0.19,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,-0.485 0.03,-0.485 0.03,-0.425 -0.03,-0.425" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,0.425 0.03,0.425 0.03,0.485 -0.03,0.485" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.15,-0.5925 -0.1476,-0.6026 -0.1434,-0.6084 -0.1376,-0.6126 -0.1275,-0.615 0.1275,-0.615 0.1376,-0.6126 0.1434,-0.6084 0.1476,-0.6026 0.15,-0.5925 0.15,0.5925 0.1476,0.6026 0.1434,0.6084 0.1376,0.6126 0.1275,0.615 -0.1275,0.615 -0.1376,0.6126 -0.1434,0.6084 -0.1476,0.6026 -0.15,0.5925" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.03,-0.515 0.03,-0.515 0.03,0.515 -0.03,0.515" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+</g>
+<line class="eq-dim" x1="-0.28" y1="1.4326" x2="0.28" y2="1.4326" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="-0.28" y1="1.3708" x2="-0.28" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="0.28" y1="1.3708" x2="0.28" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<text class="eq-text" x="0" y="1.5571" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">L 560 mm</text>
+<line class="eq-dim" x1="1.0776" y1="-0.635" x2="1.0776" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0159" y1="-0.635" x2="1.1393" y2="-0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0159" y1="0.635" x2="1.1393" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<text class="eq-text" x="1.1932" y="0" transform="rotate(90 1.1932 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">C 1270 mm</text>
+<text class="eq-text" x="0" y="1.646" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle;font-size:0.0711px;letter-spacing:.1em">▼ FRENTE</text>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "id": "LD-B005",
+  "name": "Elevação Lateral Sentado",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1095,
+    "width": 930,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 95,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "lateral-raise"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Deltoides",
+    "foto": "Elevação Lateral Sentado LD-B005.png",
+    "pagina": 47
+  }
+}

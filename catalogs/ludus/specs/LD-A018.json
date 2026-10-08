@@ -1,0 +1,29 @@
+{
+  "id": "LD-A018",
+  "name": "Tríceps Sentado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1820,
+    "width": 1240,
+    "height": 1090
+  },
+  "params": {
+    "mechanism": "seated-dip"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Braços",
+    "foto": "Tríceps Sentado LD-A018.png",
+    "pagina": 51
+  }
+}

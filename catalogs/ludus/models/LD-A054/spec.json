@@ -1,0 +1,60 @@
+{
+  "id": "LD-A054",
+  "name": "Banco de Extensão Lombar",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 720,
+    "height": 1100
+  },
+  "params": {
+    "variant": "hyper"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco de Extensão Lombar LD-A054.png",
+    "pagina": 110
+  },
+  "resolved": {
+    "params": {
+      "variant": "hyper",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.5,
+      "width": 0.72,
+      "height": 1.1
+    },
+    "trainingArea": {
+      "minX": -0.96,
+      "maxX": 0.96,
+      "minZ": -1.3501009060955518,
+      "maxZ": 1.3501009060955518,
+      "widthM": 1.92,
+      "lengthM": 2.7002018121911036,
+      "areaM2": 5.184387479406919
+    },
+    "stats": {
+      "triangles": 1152,
+      "meshes": 22,
+      "geometries": 3,
+      "materials": 4
+    }
+  }
+}

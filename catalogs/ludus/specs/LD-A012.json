@@ -1,0 +1,29 @@
+{
+  "id": "LD-A012",
+  "name": "Desenvolvimento de Ombros",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 1480,
+    "height": 1880
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Deltoides",
+    "foto": "Desenvolvimento de Ombros LD-A012.png",
+    "pagina": 44
+  }
+}

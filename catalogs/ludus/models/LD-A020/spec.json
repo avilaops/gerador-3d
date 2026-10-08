@@ -1,0 +1,58 @@
+{
+  "id": "LD-A020",
+  "name": "Suporte de Agachamento Búlgaro e Levantamentos",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 1555,
+    "width": 1375,
+    "height": 850
+  },
+  "params": {
+    "variant": "stand"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Suporte de Agachamento Búlgaro e Levantamentos LD-A020.png",
+    "pagina": 61
+  },
+  "resolved": {
+    "params": {
+      "variant": "stand",
+      "tube": 0.07,
+      "tiers": 3,
+      "showPlates": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.555,
+      "width": 1.376,
+      "height": 0.85
+    },
+    "trainingArea": {
+      "minX": -1.2878202846975089,
+      "maxX": 1.2878202846975089,
+      "minZ": -1.3773800730680645,
+      "maxZ": 1.3773800730680645,
+      "widthM": 2.5756405693950177,
+      "lengthM": 2.754760146136129,
+      "areaM2": 7.095271991340762
+    },
+    "stats": {
+      "triangles": 292,
+      "meshes": 20,
+      "geometries": 2,
+      "materials": 5
+    }
+  }
+}

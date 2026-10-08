@@ -1,0 +1,30 @@
+{
+  "id": "LD-A044",
+  "name": "Banco Inclinado 30°",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 630,
+    "height": 780
+  },
+  "params": {
+    "variant": "incline",
+    "backAngle": 0.524
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Inclinado 30° LD-A044.png",
+    "pagina": 103
+  }
+}

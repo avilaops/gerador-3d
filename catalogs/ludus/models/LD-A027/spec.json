@@ -1,0 +1,98 @@
+{
+  "id": "LD-A027",
+  "name": "Elevação Pélvica",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1720,
+    "width": 1480,
+    "height": 1020
+  },
+  "params": {
+    "mechanism": "hip-thrust"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Elevação Pélvica LD-A027.png",
+    "pagina": 66
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "hip-thrust",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.415,
+      "pivotHeight": 0.8771999999999998,
+      "pivotZ": -0.08785181164168837,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.22599999999999992,
+        0.7507336631198824
+      ],
+      "leverRear": [
+        0.1044401145962614,
+        -0.36738030322887866
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.42,
+      "pressSeatZ": -0.0798652833106258,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.2600000000000002,
+          -0.6830465960831449
+        ],
+        "range": [
+          0,
+          0.26
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.729,
+      "width": 1.48,
+      "height": 1.02
+    },
+    "trainingArea": {
+      "minX": -1.3399999999999999,
+      "maxX": 1.3399999999999999,
+      "minZ": -1.464259070129371,
+      "maxZ": 1.464259070129371,
+      "widthM": 2.6799999999999997,
+      "lengthM": 2.928518140258742,
+      "areaM2": 7.848428615893427
+    },
+    "stats": {
+      "triangles": 1524,
+      "meshes": 38,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

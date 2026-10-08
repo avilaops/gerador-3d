@@ -1,0 +1,138 @@
+{
+  "id": "LD-B002",
+  "name": "Cadeira Extensora",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1250,
+    "width": 1130,
+    "height": 1445
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Cadeira Extensora LD-B002.png",
+    "pagina": 76
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.39549999999999996,
+      "baseRailX": 0.2825,
+      "towerZ": -0.5,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.11560000000000001,
+      "seatHeight": 0.58,
+      "seatZ": 0.025,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.32,
+      "mechanism": "leg-extension",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.2550000000000001,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.3877787807814457e-16,
+          -0.5
+        ],
+        "range": [
+          0,
+          0.11560000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.6000000000000001,
+          0.28500000000000003
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.6000000000000001,
+          0.28500000000000003
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.25,
+      "width": 1.13,
+      "height": 1.445
+    },
+    "trainingArea": {
+      "minX": -1.165,
+      "maxX": 1.165,
+      "minZ": -1.225,
+      "maxZ": 1.225,
+      "widthM": 2.33,
+      "lengthM": 2.45,
+      "areaM2": 5.708500000000001
+    },
+    "stats": {
+      "triangles": 2320,
+      "meshes": 59,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

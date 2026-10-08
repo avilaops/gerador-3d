@@ -1,0 +1,157 @@
+{
+  "id": "LD-B027",
+  "name": "Supino Declinado Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 1630,
+    "height": 1680
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "decline-press"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Declinado Iso-Lateral LD-B027.png",
+    "pagina": 23
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.5166194444444444,
+      "baseRailX": 0.36901388888888886,
+      "towerZ": -0.375,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 8,
+      "stackTravel": 0.13439999999999996,
+      "seatHeight": 0.52,
+      "seatZ": 0.12,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.06,
+      "mechanism": "decline-press",
+      "stacks": 2,
+      "swingScale": 1,
+      "armPivotHeight": 1.4899999999999995,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.5380277777777778,
+          1.1102230246251565e-16,
+          -0.375
+        ],
+        "range": [
+          0,
+          0.13439999999999996
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0.5380277777777778,
+          1.1102230246251565e-16,
+          -0.375
+        ],
+        "range": [
+          0,
+          0.13439999999999996
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          1.5799999999999996,
+          -0.2
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          1.5799999999999996,
+          -0.2
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1,
+      "width": 1.646,
+      "height": 1.68
+    },
+    "trainingArea": {
+      "minX": -1.4230277777777778,
+      "maxX": 1.4230277777777778,
+      "minZ": -1.1,
+      "maxZ": 1.1,
+      "widthM": 2.8460555555555556,
+      "lengthM": 2.2,
+      "areaM2": 6.261322222222223
+    },
+    "stats": {
+      "triangles": 3028,
+      "meshes": 75,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

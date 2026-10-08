@@ -1,0 +1,61 @@
+{
+  "id": "LD-A051",
+  "name": "Supino Inclinado Livre",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 1330,
+    "height": 1480
+  },
+  "params": {
+    "variant": "olympic-incline",
+    "backAngle": 0.611
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Inclinado Livre LD-A051.png",
+    "pagina": 25
+  },
+  "resolved": {
+    "params": {
+      "variant": "olympic-incline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.611,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.3,
+      "width": 1.33,
+      "height": 1.48
+    },
+    "trainingArea": {
+      "minX": -1.2651481481481481,
+      "maxX": 1.2651481481481481,
+      "minZ": -1.250051324045397,
+      "maxZ": 1.250051324045397,
+      "widthM": 2.5302962962962963,
+      "lengthM": 2.500102648090794,
+      "areaM2": 6.326000470824699
+    },
+    "stats": {
+      "triangles": 960,
+      "meshes": 32,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

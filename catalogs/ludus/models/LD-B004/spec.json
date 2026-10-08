@@ -1,0 +1,144 @@
+{
+  "id": "LD-B004",
+  "name": "Peck Deck",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1310,
+    "width": 1200,
+    "height": 2050
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pec-fly",
+    "stackPlates": 14,
+    "stackTravel": 0.13,
+    "seatHeight": 0.52,
+    "backrestTilt": 0.12,
+    "armSwing": 1.2,
+    "footAssist": true
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "approved",
+    "notes": "Escrito à mão a partir da foto e do protótipo peck-deck-prototipo.html (porte direto)."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Peitoral",
+    "foto": "Peck Deck LD-B004.png",
+    "pagina": 18
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.42,
+      "baseRailX": 0.3,
+      "towerZ": -0.53,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.13,
+      "seatHeight": 0.52,
+      "seatZ": 0.03,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "pec-fly",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.8599999999999999,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.3877787807814457e-16,
+          0.0025000000000000022
+        ],
+        "range": [
+          0,
+          0.13
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.18,
+          1.86,
+          -0.1375
+        ],
+        "range": [
+          0,
+          1.2
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.18,
+          1.86,
+          -0.1375
+        ],
+        "range": [
+          0,
+          1.2
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.315,
+      "width": 1.2,
+      "height": 2.05
+    },
+    "trainingArea": {
+      "minX": -1.2000000000000002,
+      "maxX": 1.2000000000000002,
+      "minZ": -1.2574999999999998,
+      "maxZ": 1.2575,
+      "widthM": 2.4000000000000004,
+      "lengthM": 2.5149999999999997,
+      "areaM2": 6.0360000000000005
+    },
+    "stats": {
+      "triangles": 2768,
+      "meshes": 57,
+      "geometries": 6,
+      "materials": 8
+    }
+  }
+}

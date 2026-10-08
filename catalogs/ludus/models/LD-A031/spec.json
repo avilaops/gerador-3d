@@ -1,0 +1,98 @@
+{
+  "id": "LD-A031",
+  "name": "Flexora em Pé de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 1270,
+    "height": 1200
+  },
+  "params": {
+    "mechanism": "standing-leg-curl"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Flexora em Pé de Peso Livre LD-A031.png",
+    "pagina": 69
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "standing-leg-curl",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.31,
+      "pivotHeight": 1.032,
+      "pivotZ": -0.060500000000000005,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.27999999999999997,
+        0.517
+      ],
+      "leverRear": [
+        0.13274548070583309,
+        -0.25300000000000006
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.165,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.5600000000000002,
+          0.14500000000000002
+        ],
+        "range": [
+          0,
+          1.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.1,
+      "width": 1.27,
+      "height": 1.2
+    },
+    "trainingArea": {
+      "minX": -1.2349999999999999,
+      "maxX": 1.2349999999999999,
+      "minZ": -1.15,
+      "maxZ": 1.15,
+      "widthM": 2.4699999999999998,
+      "lengthM": 2.3,
+      "areaM2": 5.680999999999999
+    },
+    "stats": {
+      "triangles": 1000,
+      "meshes": 29,
+      "geometries": 3,
+      "materials": 6
+    }
+  }
+}

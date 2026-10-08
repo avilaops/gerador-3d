@@ -1,0 +1,119 @@
+{
+  "id": "LD-B011",
+  "name": "Quadril e Glúteos Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1650,
+    "width": 995,
+    "height": 1770
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "glute-kickback"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Quadril e Glúteos Máquina LD-B011.png",
+    "pagina": 78
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.34825,
+      "baseRailX": 0.24875,
+      "towerZ": -0.7,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.1416,
+      "seatHeight": 0.1,
+      "seatZ": 0.297,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "glute-kickback",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.58,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.8041124150158794e-16,
+          -0.7
+        ],
+        "range": [
+          0,
+          0.1416
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.9200000000000003,
+          0.247
+        ],
+        "range": [
+          0,
+          0.85
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.65,
+      "width": 0.995,
+      "height": 1.77
+    },
+    "trainingArea": {
+      "minX": -1.0975,
+      "maxX": 1.0975,
+      "minZ": -1.4249999999999998,
+      "maxZ": 1.4249999999999998,
+      "widthM": 2.195,
+      "lengthM": 2.8499999999999996,
+      "areaM2": 6.255749999999999
+    },
+    "stats": {
+      "triangles": 1636,
+      "meshes": 52,
+      "geometries": 4,
+      "materials": 7
+    }
+  }
+}

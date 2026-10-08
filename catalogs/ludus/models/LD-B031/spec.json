@@ -1,0 +1,119 @@
+{
+  "id": "LD-B031",
+  "name": "Abdominal Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1120,
+    "width": 1000,
+    "height": 1430
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "ab-crunch"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Abdômen",
+    "foto": "Abdominal Máquina LD-B031.png",
+    "pagina": 92
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.35,
+      "baseRailX": 0.25,
+      "towerZ": -0.43500000000000005,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 8,
+      "stackTravel": 0.1144,
+      "seatHeight": 0.48,
+      "seatZ": 0,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.2,
+      "mechanism": "ab-crunch",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.24,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.249000902703301e-16,
+          -0.43500000000000005
+        ],
+        "range": [
+          0,
+          0.1144
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.7800000000000001,
+          -0.2
+        ],
+        "range": [
+          0,
+          0.6
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.12,
+      "width": 1,
+      "height": 1.43
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.1600000000000001,
+      "maxZ": 1.1600000000000001,
+      "widthM": 2.2,
+      "lengthM": 2.3200000000000003,
+      "areaM2": 5.104000000000001
+    },
+    "stats": {
+      "triangles": 2140,
+      "meshes": 46,
+      "geometries": 6,
+      "materials": 7
+    }
+  }
+}

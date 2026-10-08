@@ -1,0 +1,29 @@
+{
+  "id": "LD-A007",
+  "name": "Supino Horizontal",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1680,
+    "width": 1550,
+    "height": 1070
+  },
+  "params": {
+    "mechanism": "lying-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Horizontal LD-A007.png",
+    "pagina": 12
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "LD-B028",
+  "name": "Extensão de Tríceps Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 920,
+    "width": 1330,
+    "height": 1530
+  },
+  "weightStackKg": {
+    "perStack": 50,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "triceps-extension"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Braços",
+    "foto": "Extensão de Tríceps Iso-Lateral LD-B028.png",
+    "pagina": 56
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.406849622016898,
+      "baseRailX": 0.2906068728692129,
+      "towerZ": -0.335,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 6,
+      "stackTravel": 0.12240000000000001,
+      "seatHeight": 0.46,
+      "seatZ": 0.18400000000000002,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "triceps-extension",
+      "stacks": 2,
+      "swingScale": 1,
+      "armPivotHeight": 1.34,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.38121374573842576,
+          1.0408340855860843e-16,
+          -0.335
+        ],
+        "range": [
+          0,
+          0.12240000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0.38121374573842576,
+          1.0408340855860843e-16,
+          -0.335
+        ],
+        "range": [
+          0,
+          0.12240000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.7600000000000001,
+          -0.23599999999999996
+        ],
+        "range": [
+          0,
+          1.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.7600000000000001,
+          -0.23599999999999996
+        ],
+        "range": [
+          0,
+          1.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 0.92,
+      "width": 1.332,
+      "height": 1.53
+    },
+    "trainingArea": {
+      "minX": -1.2662137457384257,
+      "maxX": 1.2662137457384257,
+      "minZ": -1.06,
+      "maxZ": 1.06,
+      "widthM": 2.5324274914768514,
+      "lengthM": 2.12,
+      "areaM2": 5.3687462819309255
+    },
+    "stats": {
+      "triangles": 2944,
+      "meshes": 68,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

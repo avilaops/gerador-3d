@@ -1,0 +1,33 @@
+{
+  "id": "LD-B012",
+  "name": "Puxada Alta",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1390,
+    "width": 1235,
+    "height": 2260
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Puxada Alta LD-B012.png",
+    "pagina": 36
+  }
+}

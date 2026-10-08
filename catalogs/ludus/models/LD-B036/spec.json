@@ -1,0 +1,122 @@
+{
+  "id": "LD-B036",
+  "name": "Cross-Smith",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 2580,
+    "width": 1020,
+    "height": 2480
+  },
+  "weightStackKg": {
+    "perStack": 92,
+    "stacks": 2
+  },
+  "params": {
+    "variant": "cross-smith"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Cross-Smith LD-B036.png",
+    "pagina": 97
+  },
+  "resolved": {
+    "params": {
+      "variant": "cross-smith",
+      "tube": 0.07,
+      "stackPlates": 9,
+      "stackTravel": 0.1984,
+      "pulleyHeight": 1.7855999999999999,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          2.706168622523819e-16,
+          -1.155
+        ],
+        "range": [
+          0,
+          0.1984
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          2.706168622523819e-16,
+          1.155
+        ],
+        "range": [
+          0,
+          0.1984
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "bar",
+        "type": "prismatic",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.36,
+          1.3500000000000003,
+          0
+        ],
+        "range": [
+          0,
+          0.55
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.58,
+      "width": 1.02,
+      "height": 2.48
+    },
+    "trainingArea": {
+      "minX": -1.1099999999999999,
+      "maxX": 1.1099999999999999,
+      "minZ": -1.8900000000000001,
+      "maxZ": 1.8900000000000001,
+      "widthM": 2.2199999999999998,
+      "lengthM": 3.7800000000000002,
+      "areaM2": 8.3916
+    },
+    "stats": {
+      "triangles": 3952,
+      "meshes": 101,
+      "geometries": 3,
+      "materials": 6
+    }
+  }
+}

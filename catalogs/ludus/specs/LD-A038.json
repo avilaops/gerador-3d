@@ -1,0 +1,29 @@
+{
+  "id": "LD-A038",
+  "name": "Leg Press Articulado",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2240,
+    "width": 1745,
+    "height": 1425
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Leg Press Articulado LD-A038.png",
+    "pagina": 73
+  }
+}

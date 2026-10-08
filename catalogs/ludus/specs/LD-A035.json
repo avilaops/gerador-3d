@@ -1,0 +1,29 @@
+{
+  "id": "LD-A035",
+  "name": "Cadeira Abdominal de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 1480,
+    "height": 1680
+  },
+  "params": {
+    "mechanism": "ab-crunch"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Abdômen",
+    "foto": "Cadeira Abdominal de Peso Livre LD-A035.png",
+    "pagina": 90
+  }
+}

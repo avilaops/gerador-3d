@@ -1,0 +1,61 @@
+{
+  "id": "LD-A045",
+  "name": "Banco Inclinado 55°",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 890,
+    "width": 550,
+    "height": 1010
+  },
+  "params": {
+    "variant": "incline",
+    "backAngle": 0.96
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Inclinado 55° LD-A045.png",
+    "pagina": 104
+  },
+  "resolved": {
+    "params": {
+      "variant": "incline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.96,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.89,
+      "width": 0.55,
+      "height": 1.011
+    },
+    "trainingArea": {
+      "minX": -0.875,
+      "maxX": 0.875,
+      "minZ": -1.045168732782369,
+      "maxZ": 1.045168732782369,
+      "widthM": 1.75,
+      "lengthM": 2.090337465564738,
+      "areaM2": 3.6580905647382918
+    },
+    "stats": {
+      "triangles": 1000,
+      "meshes": 18,
+      "geometries": 4,
+      "materials": 4
+    }
+  }
+}

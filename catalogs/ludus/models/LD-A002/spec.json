@@ -1,0 +1,120 @@
+{
+  "id": "LD-A002",
+  "name": "Supino e Remada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1830,
+    "width": 1330,
+    "height": 2090
+  },
+  "params": {
+    "rowStation": true,
+    "storageHorns": 4,
+    "backrestTilt": 0.38,
+    "swing": 0.45
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "approved",
+    "notes": "Escrito à mão a partir da foto: quadro prata, alavancas azuis independentes, estação de supino na frente e remada atrás."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino e Remada LD-A002.png",
+    "pagina": 10
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "press-row",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.34,
+      "pivotHeight": 1.7973999999999999,
+      "pivotZ": -0.10065,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.5469999999999999,
+        0.8601
+      ],
+      "leverRear": [
+        0.25874098211786295,
+        -0.42090000000000005
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.45,
+      "pressSeatZ": 0.4575,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.45,
+          1.7974,
+          -0.10065
+        ],
+        "range": [
+          0,
+          0.45
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.45,
+          1.7974,
+          -0.10065
+        ],
+        "range": [
+          0,
+          0.45
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.83,
+      "width": 1.33,
+      "height": 2.09
+    },
+    "trainingArea": {
+      "minX": -1.265,
+      "maxX": 1.265,
+      "minZ": -1.5150000000000001,
+      "maxZ": 1.5150000000000001,
+      "widthM": 2.53,
+      "lengthM": 3.0300000000000002,
+      "areaM2": 7.6659
+    },
+    "stats": {
+      "triangles": 2852,
+      "meshes": 55,
+      "geometries": 6,
+      "materials": 5
+    }
+  }
+}

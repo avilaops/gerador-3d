@@ -1,0 +1,29 @@
+{
+  "id": "LD-A015",
+  "name": "Puxada Alta",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1810,
+    "width": 1070,
+    "height": 2040
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Puxada Alta LD-A015.png",
+    "pagina": 34
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "LD-A048",
+  "name": "Banco Regulável de 0° a 90°",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1330,
+    "width": 560,
+    "height": 470
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Regulável de 0° a 90° LD-A048.png",
+    "pagina": 107
+  },
+  "resolved": {
+    "params": {
+      "variant": "flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.4199999985098837,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.33,
+      "width": 0.56,
+      "height": 0.47
+    },
+    "trainingArea": {
+      "minX": -0.88,
+      "maxX": 0.88,
+      "minZ": -1.2651136363636364,
+      "maxZ": 1.2651136363636364,
+      "widthM": 1.76,
+      "lengthM": 2.5302272727272728,
+      "areaM2": 4.4532
+    },
+    "stats": {
+      "triangles": 624,
+      "meshes": 15,
+      "geometries": 3,
+      "materials": 3
+    }
+  }
+}

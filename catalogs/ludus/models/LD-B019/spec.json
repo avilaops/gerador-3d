@@ -1,0 +1,119 @@
+{
+  "id": "LD-B019",
+  "name": "Extensão Lombar Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1220,
+    "width": 1015,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "back-extension"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Extensão Lombar Máquina LD-B019.png",
+    "pagina": 37
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.35524999999999995,
+      "baseRailX": 0.25375,
+      "towerZ": -0.485,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.10640000000000001,
+      "seatHeight": 0.5,
+      "seatZ": 0,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "back-extension",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.1400000000000001,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.3877787807814457e-16,
+          -0.485
+        ],
+        "range": [
+          0,
+          0.10640000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.6200000000000001,
+          -0.12
+        ],
+        "range": [
+          0,
+          0.75
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.22,
+      "width": 1.015,
+      "height": 1.33
+    },
+    "trainingArea": {
+      "minX": -1.1075,
+      "maxX": 1.1075,
+      "minZ": -1.21,
+      "maxZ": 1.21,
+      "widthM": 2.215,
+      "lengthM": 2.42,
+      "areaM2": 5.3603
+    },
+    "stats": {
+      "triangles": 1640,
+      "meshes": 48,
+      "geometries": 4,
+      "materials": 7
+    }
+  }
+}

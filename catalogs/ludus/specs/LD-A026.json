@@ -1,0 +1,29 @@
+{
+  "id": "LD-A026",
+  "name": "Panturrilha Horizontal",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1630,
+    "width": 1450,
+    "height": 1520
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Panturrilha",
+    "foto": "Panturrilha Horizontal LD-A026.png",
+    "pagina": 87
+  }
+}

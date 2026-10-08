@@ -1,0 +1,138 @@
+{
+  "id": "LD-B020",
+  "name": "Remada Sentada Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1345,
+    "width": 830,
+    "height": 1960
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Sentada Máquina LD-B020.png",
+    "pagina": 38
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.2905,
+      "baseRailX": 0.2075,
+      "towerZ": -0.5475,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.1568,
+      "seatHeight": 0.46,
+      "seatZ": 0.2959,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "row",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.77,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.5265566588595902e-16,
+          -0.5475
+        ],
+        "range": [
+          0,
+          0.1568
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          1.61,
+          -0.12409999999999999
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          1.61,
+          -0.12409999999999999
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.345,
+      "width": 0.83,
+      "height": 1.96
+    },
+    "trainingArea": {
+      "minX": -1.015,
+      "maxX": 1.015,
+      "minZ": -1.2725,
+      "maxZ": 1.2725,
+      "widthM": 2.03,
+      "lengthM": 2.545,
+      "areaM2": 5.1663499999999996
+    },
+    "stats": {
+      "triangles": 2168,
+      "meshes": 55,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

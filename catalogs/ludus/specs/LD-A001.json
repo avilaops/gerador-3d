@@ -1,0 +1,29 @@
+{
+  "id": "LD-A001",
+  "name": "Hiperextensão de Glúteos de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1810,
+    "width": 1010,
+    "height": 1320
+  },
+  "params": {
+    "mechanism": "reverse-hyper"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Hiperextensão de Glúteos de Peso Livre LD-A001.png",
+    "pagina": 59
+  }
+}

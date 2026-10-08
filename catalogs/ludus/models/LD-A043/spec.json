@@ -1,0 +1,60 @@
+{
+  "id": "LD-A043",
+  "name": "Banco Abdominal",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1740,
+    "width": 610,
+    "height": 880
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Abdominal LD-A043.png",
+    "pagina": 102
+  },
+  "resolved": {
+    "params": {
+      "variant": "decline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.74,
+      "width": 0.61,
+      "height": 0.88
+    },
+    "trainingArea": {
+      "minX": -0.905,
+      "maxX": 0.905,
+      "minZ": -1.4700871266002846,
+      "maxZ": 1.4700871266002844,
+      "widthM": 1.81,
+      "lengthM": 2.940174253200569,
+      "areaM2": 5.32171539829303
+    },
+    "stats": {
+      "triangles": 764,
+      "meshes": 18,
+      "geometries": 3,
+      "materials": 3
+    }
+  }
+}

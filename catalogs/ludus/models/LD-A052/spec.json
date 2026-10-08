@@ -1,0 +1,60 @@
+{
+  "id": "LD-A052",
+  "name": "Supino Declinado Livre",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1530,
+    "width": 1350,
+    "height": 1270
+  },
+  "params": {
+    "variant": "olympic-decline"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Declinado Livre LD-A052.png",
+    "pagina": 26
+  },
+  "resolved": {
+    "params": {
+      "variant": "olympic-decline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.53,
+      "width": 1.35,
+      "height": 1.27
+    },
+    "trainingArea": {
+      "minX": -1.2751459854014597,
+      "maxX": 1.2751459854014597,
+      "minZ": -1.365,
+      "maxZ": 1.365,
+      "widthM": 2.5502919708029195,
+      "lengthM": 2.73,
+      "areaM2": 6.96229708029197
+    },
+    "stats": {
+      "triangles": 788,
+      "meshes": 33,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

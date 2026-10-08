@@ -1,0 +1,117 @@
+{
+  "id": "LD-A006",
+  "name": "Remada Alta",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1550,
+    "width": 1050,
+    "height": 2010
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Alta LD-A006.png",
+    "pagina": 30
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "pulldown",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.695374215502597,
+      "pivotZ": -0.08525,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.5114096100590455,
+        0.7284999999999999
+      ],
+      "leverRear": [
+        0.24315180514931814,
+        -0.35650000000000004
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.31000000000000005,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          1.871365366863485,
+          -0.30999999999999994
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          1.871365366863485,
+          -0.30999999999999994
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.55,
+      "width": 1.05,
+      "height": 2.021
+    },
+    "trainingArea": {
+      "minX": -1.125,
+      "maxX": 1.125,
+      "minZ": -1.375,
+      "maxZ": 1.375,
+      "widthM": 2.25,
+      "lengthM": 2.75,
+      "areaM2": 6.1875
+    },
+    "stats": {
+      "triangles": 1268,
+      "meshes": 34,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

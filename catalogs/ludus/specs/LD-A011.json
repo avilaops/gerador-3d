@@ -1,0 +1,29 @@
+{
+  "id": "LD-A011",
+  "name": "Remada Sentada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1270,
+    "height": 1300
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Sentada LD-A011.png",
+    "pagina": 33
+  }
+}

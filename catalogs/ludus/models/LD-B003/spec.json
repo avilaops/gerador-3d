@@ -1,0 +1,103 @@
+{
+  "id": "LD-B003",
+  "name": "Leg Press 180°",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2000,
+    "width": 1085,
+    "height": 1540
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "horizontal"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Leg Press 180° LD-B003.png",
+    "pagina": 77
+  },
+  "resolved": {
+    "params": {
+      "variant": "horizontal",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 14,
+      "stackTravel": 0.1232,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          2.220446049250313e-16,
+          -0.865
+        ],
+        "range": [
+          0,
+          0.1232
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "pivot": [
+          0,
+          2.220446049250313e-16,
+          0.1499999999999999
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2,
+      "width": 1.085,
+      "height": 1.54
+    },
+    "trainingArea": {
+      "minX": -1.1425,
+      "maxX": 1.1425,
+      "minZ": -1.6,
+      "maxZ": 1.6,
+      "widthM": 2.285,
+      "lengthM": 3.2,
+      "areaM2": 7.312000000000001
+    },
+    "stats": {
+      "triangles": 2064,
+      "meshes": 55,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

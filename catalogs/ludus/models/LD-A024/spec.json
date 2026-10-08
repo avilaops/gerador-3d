@@ -1,0 +1,98 @@
+{
+  "id": "LD-A024",
+  "name": "Cadeira Extensora de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1430,
+    "width": 1380,
+    "height": 1450
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Cadeira Extensora de Peso Livre LD-A024.png",
+    "pagina": 65
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "leg-extension",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.36499999999999994,
+      "pivotHeight": 1.2469999999999999,
+      "pivotZ": -0.07783356401384083,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.355,
+        0.6651231833910034
+      ],
+      "leverRear": [
+        0.16762166553888738,
+        -0.3254858131487889
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.58,
+      "pressSeatZ": 0.02830311418685121,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.32,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.6000000000000001,
+          0.29580311418685123
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.43,
+      "width": 1.38,
+      "height": 1.45
+    },
+    "trainingArea": {
+      "minX": -1.29,
+      "maxX": 1.29,
+      "minZ": -1.31507785467128,
+      "maxZ": 1.31507785467128,
+      "widthM": 2.58,
+      "lengthM": 2.63015570934256,
+      "areaM2": 6.785801730103805
+    },
+    "stats": {
+      "triangles": 1988,
+      "meshes": 44,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

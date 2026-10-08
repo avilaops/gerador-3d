@@ -1,0 +1,80 @@
+{
+  "id": "LD-A030",
+  "name": "Agachamento Pendulum",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2480,
+    "width": 1430,
+    "height": 1995
+  },
+  "params": {
+    "variant": "lever-squat"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Agachamento Pendulum LD-A030.png",
+    "pagina": 68
+  },
+  "resolved": {
+    "params": {
+      "variant": "lever-squat",
+      "tube": 0.08,
+      "travel": 0.3,
+      "stackPlates": 0,
+      "stackTravel": 0.15960000000000002,
+      "showPlates": true
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.7150000000000003,
+          -0.94
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.48,
+      "width": 1.43,
+      "height": 1.995
+    },
+    "trainingArea": {
+      "minX": -1.315,
+      "maxX": 1.315,
+      "minZ": -1.8399999999999999,
+      "maxZ": 1.8399999999999999,
+      "widthM": 2.63,
+      "lengthM": 3.6799999999999997,
+      "areaM2": 9.678399999999998
+    },
+    "stats": {
+      "triangles": 1868,
+      "meshes": 35,
+      "geometries": 5,
+      "materials": 6
+    }
+  }
+}

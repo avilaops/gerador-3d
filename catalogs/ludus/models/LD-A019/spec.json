@@ -1,0 +1,117 @@
+{
+  "id": "LD-A019",
+  "name": "Super Fly",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 2090,
+    "width": 2190,
+    "height": 1050
+  },
+  "params": {
+    "mechanism": "lying-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Super Fly LD-A019.png",
+    "pagina": 15
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "lying-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.77,
+      "pivotHeight": 0.903,
+      "pivotZ": -0.11495,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.235,
+        0.9822999999999998
+      ],
+      "leverRear": [
+        0.10805632776387211,
+        -0.48069999999999996
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.44,
+      "pressSeatZ": 0.3762,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.52,
+          0.34000000000000025,
+          -0.6163000000000001
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.52,
+          0.34000000000000025,
+          -0.6163000000000001
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.105,
+      "width": 2.19,
+      "height": 1.05
+    },
+    "trainingArea": {
+      "minX": -1.6949999999999998,
+      "maxX": 1.6949999999999998,
+      "minZ": -1.6524999999999999,
+      "maxZ": 1.6524999999999999,
+      "widthM": 3.3899999999999997,
+      "lengthM": 3.3049999999999997,
+      "areaM2": 11.203949999999997
+    },
+    "stats": {
+      "triangles": 1728,
+      "meshes": 42,
+      "geometries": 3,
+      "materials": 5
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "LD-A034",
+  "name": "Leg Press",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2400,
+    "width": 1688,
+    "height": 1480
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Leg Press LD-A034.png",
+    "pagina": 70
+  }
+}

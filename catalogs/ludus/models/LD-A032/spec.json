@@ -1,0 +1,117 @@
+{
+  "id": "LD-A032",
+  "name": "Supino Reto Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1250,
+    "width": 1330,
+    "height": 1760
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Reto Articulado LD-A032.png",
+    "pagina": 16
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "chest-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.34,
+      "pivotHeight": 1.5136,
+      "pivotZ": -0.06875,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.448,
+        0.5874999999999999
+      ],
+      "leverRear": [
+        0.21450984300009307,
+        -0.28750000000000003
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0.15,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.18,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.395,
+          1.6000000000000003,
+          -0.17
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.395,
+          1.6000000000000003,
+          -0.17
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.25,
+      "width": 1.33,
+      "height": 1.76
+    },
+    "trainingArea": {
+      "minX": -1.2650000000000001,
+      "maxX": 1.2650000000000001,
+      "minZ": -1.225,
+      "maxZ": 1.225,
+      "widthM": 2.5300000000000002,
+      "lengthM": 2.45,
+      "areaM2": 6.198500000000001
+    },
+    "stats": {
+      "triangles": 1504,
+      "meshes": 34,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

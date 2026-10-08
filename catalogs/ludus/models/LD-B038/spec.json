@@ -1,0 +1,103 @@
+{
+  "id": "LD-B038",
+  "name": "Crossover",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 4400,
+    "width": 750,
+    "height": 2280
+  },
+  "weightStackKg": {
+    "perStack": 110,
+    "stacks": 2
+  },
+  "params": {
+    "variant": "crossover"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Crossover LD-B038.png",
+    "pagina": 99
+  },
+  "resolved": {
+    "params": {
+      "variant": "crossover",
+      "tube": 0.07,
+      "stackPlates": 11,
+      "stackTravel": 0.18239999999999998,
+      "pulleyHeight": 1.6415999999999997,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          4.85722573273506e-17,
+          -2.0650000000000004
+        ],
+        "range": [
+          0,
+          0.18239999999999998
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          4.85722573273506e-17,
+          2.0650000000000004
+        ],
+        "range": [
+          0,
+          0.18239999999999998
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 4.4,
+      "width": 0.75,
+      "height": 2.28
+    },
+    "trainingArea": {
+      "minX": -0.975,
+      "maxX": 0.975,
+      "minZ": -2.8000000000000003,
+      "maxZ": 2.8000000000000003,
+      "widthM": 1.95,
+      "lengthM": 5.6000000000000005,
+      "areaM2": 10.92
+    },
+    "stats": {
+      "triangles": 3452,
+      "meshes": 81,
+      "geometries": 3,
+      "materials": 6
+    }
+  }
+}

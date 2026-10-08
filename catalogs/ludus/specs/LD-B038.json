@@ -1,0 +1,33 @@
+{
+  "id": "LD-B038",
+  "name": "Crossover",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 4400,
+    "width": 750,
+    "height": 2280
+  },
+  "weightStackKg": {
+    "perStack": 110,
+    "stacks": 2
+  },
+  "params": {
+    "variant": "crossover"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Crossover LD-B038.png",
+    "pagina": 99
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "LD-A035",
+  "name": "Cadeira Abdominal de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 1480,
+    "height": 1680
+  },
+  "params": {
+    "mechanism": "ab-crunch"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Abdômen",
+    "foto": "Cadeira Abdominal de Peso Livre LD-A035.png",
+    "pagina": 90
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "ab-crunch",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.415,
+      "pivotHeight": 1.4447999999999996,
+      "pivotZ": -0.0651851851851852,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.42399999999999977,
+        0.5570370370370371
+      ],
+      "leverRear": [
+        0.2032938659075611,
+        -0.27259259259259266
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.2,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.7800000000000001,
+          -0.1925
+        ],
+        "range": [
+          0,
+          0.6
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.2,
+      "width": 1.48,
+      "height": 1.68
+    },
+    "trainingArea": {
+      "minX": -1.3399999999999999,
+      "maxX": 1.3399999999999999,
+      "minZ": -1.2000925925925927,
+      "maxZ": 1.2000925925925925,
+      "widthM": 2.6799999999999997,
+      "lengthM": 2.400185185185185,
+      "areaM2": 6.4324962962962955
+    },
+    "stats": {
+      "triangles": 2096,
+      "meshes": 42,
+      "geometries": 5,
+      "materials": 5
+    }
+  }
+}

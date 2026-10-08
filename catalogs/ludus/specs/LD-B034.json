@@ -1,0 +1,33 @@
+{
+  "id": "LD-B034",
+  "name": "Agachamento V-Squat",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2465,
+    "width": 800,
+    "height": 2005
+  },
+  "weightStackKg": {
+    "perStack": 195,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "lever-squat"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Agachamento V-Squat LD-B034.png",
+    "pagina": 84
+  }
+}

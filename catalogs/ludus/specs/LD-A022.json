@@ -1,0 +1,29 @@
+{
+  "id": "LD-A022",
+  "name": "Cadeira Extensora Iso-Lateral",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1380,
+    "width": 1450,
+    "height": 1450
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Cadeira Extensora Iso-Lateral LD-A022.png",
+    "pagina": 63
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "LD-B016",
+  "name": "Cadeira Flexora",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1510,
+    "width": 1255,
+    "height": 1445
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "leg-curl"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Cadeira Flexora LD-B016.png",
+    "pagina": 81
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "LD-A028",
+  "name": "Ground Base Jammer",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1680,
+    "height": 2290
+  },
+  "params": {
+    "mechanism": "jammer"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Multitrabalho",
+    "foto": "Ground Base Jammer LD-A028.png",
+    "pagina": 94
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "jammer",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.5149999999999999,
+      "pivotHeight": 1.9694,
+      "pivotZ": -0.08168316831683169,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.607,
+        0.698019801980198
+      ],
+      "leverRear": [
+        0.2903195857489657,
+        -0.3415841584158416
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.22277227722772278,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.52,
+          0.3200000000000002,
+          -0.26972772277227725
+        ],
+        "range": [
+          0,
+          0.45
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.52,
+          0.3200000000000002,
+          -0.26972772277227725
+        ],
+        "range": [
+          0,
+          0.45
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.5,
+      "width": 1.68,
+      "height": 2.29
+    },
+    "trainingArea": {
+      "minX": -1.44,
+      "maxX": 1.44,
+      "minZ": -1.3500742574257425,
+      "maxZ": 1.3500742574257427,
+      "widthM": 2.88,
+      "lengthM": 2.7001485148514854,
+      "areaM2": 7.776427722772278
+    },
+    "stats": {
+      "triangles": 1404,
+      "meshes": 39,
+      "geometries": 2,
+      "materials": 5
+    }
+  }
+}

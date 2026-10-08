@@ -1,0 +1,58 @@
+{
+  "id": "LD-A056",
+  "name": "Suporte para Anilhas",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 510,
+    "width": 690,
+    "height": 1000
+  },
+  "params": {
+    "variant": "plate-tree"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Suporte para Anilhas LD-A056.png",
+    "pagina": 111
+  },
+  "resolved": {
+    "params": {
+      "variant": "plate-tree",
+      "tube": 0.07,
+      "tiers": 3,
+      "showPlates": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.51,
+      "width": 0.69,
+      "height": 1
+    },
+    "trainingArea": {
+      "minX": -0.9450714285714286,
+      "maxX": 0.9450714285714286,
+      "minZ": -0.855,
+      "maxZ": 0.855,
+      "widthM": 1.8901428571428571,
+      "lengthM": 1.71,
+      "areaM2": 3.2321442857142855
+    },
+    "stats": {
+      "triangles": 1248,
+      "meshes": 24,
+      "geometries": 3,
+      "materials": 4
+    }
+  }
+}

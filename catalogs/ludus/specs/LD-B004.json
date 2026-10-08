@@ -1,0 +1,39 @@
+{
+  "id": "LD-B004",
+  "name": "Peck Deck",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1310,
+    "width": 1200,
+    "height": 2050
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pec-fly",
+    "stackPlates": 14,
+    "stackTravel": 0.13,
+    "seatHeight": 0.52,
+    "backrestTilt": 0.12,
+    "armSwing": 1.2,
+    "footAssist": true
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "approved",
+    "notes": "Escrito à mão a partir da foto e do protótipo peck-deck-prototipo.html (porte direto)."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Peitoral",
+    "foto": "Peck Deck LD-B004.png",
+    "pagina": 18
+  }
+}

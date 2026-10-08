@@ -1,0 +1,138 @@
+{
+  "id": "LD-B015",
+  "name": "Adutor",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1550,
+    "width": 1550,
+    "height": 1330
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "hip-adduction"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Adutor LD-B015.png",
+    "pagina": 80
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.5425,
+      "baseRailX": 0.3875,
+      "towerZ": -0.65,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.10640000000000001,
+      "seatHeight": 0.52,
+      "seatZ": -0.07750000000000001,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.35,
+      "mechanism": "hip-adduction",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.1400000000000001,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.734723475976807e-16,
+          -0.65
+        ],
+        "range": [
+          0,
+          0.10640000000000001
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.12,
+          0.5400000000000003,
+          0.04249999999999998
+        ],
+        "range": [
+          0,
+          0.62
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.12,
+          0.5400000000000003,
+          0.04249999999999998
+        ],
+        "range": [
+          0,
+          0.62
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.55,
+      "width": 1.55,
+      "height": 1.33
+    },
+    "trainingArea": {
+      "minX": -1.375,
+      "maxX": 1.375,
+      "minZ": -1.375,
+      "maxZ": 1.375,
+      "widthM": 2.75,
+      "lengthM": 2.75,
+      "areaM2": 7.5625
+    },
+    "stats": {
+      "triangles": 2792,
+      "meshes": 59,
+      "geometries": 6,
+      "materials": 7
+    }
+  }
+}

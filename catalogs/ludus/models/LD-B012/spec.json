@@ -1,0 +1,138 @@
+{
+  "id": "LD-B012",
+  "name": "Puxada Alta",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1390,
+    "width": 1235,
+    "height": 2260
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Puxada Alta LD-B012.png",
+    "pagina": 36
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.43225,
+      "baseRailX": 0.30875,
+      "towerZ": -0.57,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.1808,
+      "seatHeight": 0.46,
+      "seatZ": 0.27799999999999997,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "pulldown",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 2.07,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.5265566588595902e-16,
+          -0.57
+        ],
+        "range": [
+          0,
+          0.1808
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.44,
+          2.1599999999999997,
+          -0.342
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.44,
+          2.1599999999999997,
+          -0.342
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.39,
+      "width": 1.235,
+      "height": 2.26
+    },
+    "trainingArea": {
+      "minX": -1.2175,
+      "maxX": 1.2175,
+      "minZ": -1.295,
+      "maxZ": 1.295,
+      "widthM": 2.435,
+      "lengthM": 2.59,
+      "areaM2": 6.306649999999999
+    },
+    "stats": {
+      "triangles": 1932,
+      "meshes": 55,
+      "geometries": 4,
+      "materials": 7
+    }
+  }
+}

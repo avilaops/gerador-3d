@@ -1,0 +1,157 @@
+{
+  "id": "LD-B030",
+  "name": "Remada Alta Iso-Lateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 1830,
+    "height": 1960
+  },
+  "weightStackKg": {
+    "perStack": 75,
+    "stacks": 2
+  },
+  "params": {
+    "mechanism": "pulldown"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Costas",
+    "foto": "Remada Alta Iso-Lateral LD-B030.png",
+    "pagina": 42
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.5860575,
+      "baseRailX": 0.41861250000000005,
+      "towerZ": -0.475,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 8,
+      "stackTravel": 0.1568,
+      "seatHeight": 0.46,
+      "seatZ": 0.24,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "pulldown",
+      "stacks": 2,
+      "swingScale": 1,
+      "armPivotHeight": 1.7699999999999998,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.6372250000000002,
+          1.3183898417423734e-16,
+          -0.475
+        ],
+        "range": [
+          0,
+          0.1568
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0.6372250000000002,
+          1.3183898417423734e-16,
+          -0.475
+        ],
+        "range": [
+          0,
+          0.1568
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3572250000000001,
+          1.8599999999999999,
+          -0.38
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3572250000000001,
+          1.8599999999999999,
+          -0.38
+        ],
+        "range": [
+          0,
+          0.5
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.2,
+      "width": 1.844,
+      "height": 1.96
+    },
+    "trainingArea": {
+      "minX": -1.5222250000000002,
+      "maxX": 1.5222250000000002,
+      "minZ": -1.2,
+      "maxZ": 1.2,
+      "widthM": 3.0444500000000003,
+      "lengthM": 2.4,
+      "areaM2": 7.30668
+    },
+    "stats": {
+      "triangles": 2768,
+      "meshes": 73,
+      "geometries": 4,
+      "materials": 7
+    }
+  }
+}

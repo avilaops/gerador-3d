@@ -1,0 +1,33 @@
+{
+  "id": "LD-B011",
+  "name": "Quadril e Glúteos Máquina",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1650,
+    "width": 995,
+    "height": 1770
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "glute-kickback"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Quadril e Glúteos Máquina LD-B011.png",
+    "pagina": 78
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "LD-A051",
+  "name": "Supino Inclinado Livre",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 1330,
+    "height": 1480
+  },
+  "params": {
+    "variant": "olympic-incline",
+    "backAngle": 0.611
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Inclinado Livre LD-A051.png",
+    "pagina": 25
+  }
+}

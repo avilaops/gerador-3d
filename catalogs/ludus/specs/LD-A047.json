@@ -1,0 +1,29 @@
+{
+  "id": "LD-A047",
+  "name": "Banco Declinado e Abdominal",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1610,
+    "width": 610,
+    "height": 870
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Acessórios",
+    "foto": "Banco Declinado e Abdominal LD-A047.png",
+    "pagina": 106
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "LD-B008",
+  "name": "Supino Vertical",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1480,
+    "width": 1080,
+    "height": 1540
+  },
+  "weightStackKg": {
+    "perStack": 138,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bateria de pesos",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Vertical LD-B008.png",
+    "pagina": 20
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.378,
+      "baseRailX": 0.27,
+      "towerZ": -0.615,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 14,
+      "stackTravel": 0.1232,
+      "seatHeight": 0.48,
+      "seatZ": 0.17759999999999998,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.18,
+      "mechanism": "chest-press",
+      "stacks": 1,
+      "swingScale": 1,
+      "armPivotHeight": 1.35,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.6653345369377348e-16,
+          -0.615
+        ],
+        "range": [
+          0,
+          0.1232
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.41000000000000003,
+          1.4400000000000002,
+          -0.14240000000000003
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.41000000000000003,
+          1.4400000000000002,
+          -0.14240000000000003
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.48,
+      "width": 1.08,
+      "height": 1.54
+    },
+    "trainingArea": {
+      "minX": -1.1400000000000001,
+      "maxX": 1.1400000000000001,
+      "minZ": -1.3399999999999999,
+      "maxZ": 1.3399999999999999,
+      "widthM": 2.2800000000000002,
+      "lengthM": 2.6799999999999997,
+      "areaM2": 6.1104
+    },
+    "stats": {
+      "triangles": 2192,
+      "meshes": 57,
+      "geometries": 5,
+      "materials": 7
+    }
+  }
+}

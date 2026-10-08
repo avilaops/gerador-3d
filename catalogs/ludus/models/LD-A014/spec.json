@@ -1,0 +1,117 @@
+{
+  "id": "LD-A014",
+  "name": "Supino Vertical Aberto",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1150,
+    "width": 1500,
+    "height": 1760
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Peitoral",
+    "foto": "Supino Vertical Aberto LD-A014.png",
+    "pagina": 14
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "chest-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.425,
+      "pivotHeight": 1.5136,
+      "pivotZ": -0.06325,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.448,
+        0.5405
+      ],
+      "leverRear": [
+        0.21553394693963607,
+        -0.2645
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0.13799999999999998,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.18,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.48,
+          1.6000000000000003,
+          -0.18200000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.48,
+          1.6000000000000003,
+          -0.18200000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.15,
+      "width": 1.5,
+      "height": 1.76
+    },
+    "trainingArea": {
+      "minX": -1.35,
+      "maxX": 1.35,
+      "minZ": -1.1749999999999998,
+      "maxZ": 1.1749999999999998,
+      "widthM": 2.7,
+      "lengthM": 2.3499999999999996,
+      "areaM2": 6.345
+    },
+    "stats": {
+      "triangles": 1504,
+      "meshes": 34,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}

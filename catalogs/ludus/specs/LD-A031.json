@@ -1,0 +1,29 @@
+{
+  "id": "LD-A031",
+  "name": "Flexora em Pé de Peso Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 1270,
+    "height": 1200
+  },
+  "params": {
+    "mechanism": "standing-leg-curl"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Flexora em Pé de Peso Livre LD-A031.png",
+    "pagina": 69
+  }
+}

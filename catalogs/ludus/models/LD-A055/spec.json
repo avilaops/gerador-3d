@@ -1,0 +1,60 @@
+{
+  "id": "LD-A055",
+  "name": "Scott Peso Livre",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 920,
+    "height": 1100
+  },
+  "params": {
+    "variant": "preacher"
+  },
+  "materials": {
+    "frame": "#1d1d1d",
+    "upholstery": "#121212",
+    "accent": "#96764a"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Bancos e suportes",
+    "grupoMuscular": "Braços",
+    "foto": "Scott Peso Livre LD-A055.png",
+    "pagina": 57
+  },
+  "resolved": {
+    "params": {
+      "variant": "preacher",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1,
+      "width": 0.92,
+      "height": 1.1
+    },
+    "trainingArea": {
+      "minX": -1.06,
+      "maxX": 1.06,
+      "minZ": -1.1001504914004914,
+      "maxZ": 1.1001504914004911,
+      "widthM": 2.12,
+      "lengthM": 2.2003009828009823,
+      "areaM2": 4.664638083538082
+    },
+    "stats": {
+      "triangles": 996,
+      "meshes": 22,
+      "geometries": 4,
+      "materials": 4
+    }
+  }
+}

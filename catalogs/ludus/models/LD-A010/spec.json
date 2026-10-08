@@ -1,0 +1,98 @@
+{
+  "id": "LD-A010",
+  "name": "Flexão Nórdica",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1970,
+    "width": 1360,
+    "height": 1470
+  },
+  "params": {
+    "mechanism": "nordic"
+  },
+  "materials": {
+    "frame": "#b9bcc0",
+    "upholstery": "#141414",
+    "accent": "#1f3a9e"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto."
+  },
+  "meta": {
+    "linha": "Peso livre",
+    "grupoMuscular": "Pernas e glúteos",
+    "foto": "Flexão Nórdica LD-A010.png",
+    "pagina": 60
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "nordic",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.35500000000000004,
+      "pivotHeight": 1.1912653846153844,
+      "pivotZ": -0.10753123425692697,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.3355576923076923,
+        0.918903274559194
+      ],
+      "leverRear": [
+        0.15628400882697435,
+        -0.4496760705289673
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.3,
+      "pressSeatZ": -0.35192040302267,
+      "backrestHeight": 0.8,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.43,
+          -0.04442040302267003
+        ],
+        "range": [
+          0,
+          0.9
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.97,
+      "width": 1.36,
+      "height": 1.475
+    },
+    "trainingArea": {
+      "minX": -1.28,
+      "maxX": 1.28,
+      "minZ": -1.5850566750629724,
+      "maxZ": 1.5850566750629724,
+      "widthM": 2.56,
+      "lengthM": 3.170113350125945,
+      "areaM2": 8.11549017632242
+    },
+    "stats": {
+      "triangles": 1836,
+      "meshes": 40,
+      "geometries": 4,
+      "materials": 5
+    }
+  }
+}
