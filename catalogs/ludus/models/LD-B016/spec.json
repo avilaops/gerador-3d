@@ -31,19 +31,20 @@
     "pagina": 81,
     "peso": "305 kg",
     "bateria": "138 kg",
-    "descricao": "Projetada para o treino direcionado dos músculos posteriores da coxa na posição sentada. O encosto e o apoio de coxas ajustáveis ajudam a encontrar um alinhamento estável. A regulagem da posição inicial oferece opções para diferentes níveis de mobilidade e preferências de treino."
+    "descricao": "Projetada para o treino direcionado dos músculos posteriores da coxa na posição sentada. O encosto e o apoio de coxas ajustáveis ajudam a encontrar um alinhamento estável. A regulagem da posição inicial oferece opções para diferentes níveis de mobilidade e preferências de treino.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.4392499999999999,
-      "baseRailX": 0.31375,
-      "towerZ": -0.6128964401294499,
+      "baseRearHalfWidth": 0.5211228979530346,
+      "baseRailX": 0.3722306413950247,
+      "towerZ": -0.63,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
-      "stackTravel": 0.11544022114720111,
+      "stackTravel": 0.11544000030608549,
       "seatHeight": 0.58,
-      "seatZ": -0.029515857605177998,
+      "seatZ": -0.0302,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.253002764340014,
+      "armPivotHeight": 1.2530000038260687,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,18 +70,18 @@
           0
         ],
         "pivot": [
-          0,
+          -0.20750000000000002,
           0.0020000000000000018,
-          -0.6103964401294499
+          0.08979999999999999
         ],
         "range": [
           0,
-          0.11544022114720111
+          0.11544000030608549
         ],
         "driver": "phase"
       },
       {
-        "node": "arm_right",
+        "node": "lever",
         "type": "revolute",
         "axis": [
           1,
@@ -88,28 +89,9 @@
           0
         ],
         "pivot": [
-          0.3,
+          0.19196128279004943,
           0.602,
-          0.232984142394822
-        ],
-        "range": [
-          0,
-          1.2
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_left",
-        "type": "revolute",
-        "axis": [
-          1,
-          0,
-          0
-        ],
-        "pivot": [
-          -0.3,
-          0.602,
-          0.232984142394822
+          0.2298
         ],
         "range": [
           0,
@@ -119,23 +101,23 @@
       }
     ],
     "bboxM": {
-      "length": 1.511,
-      "width": 1.255,
+      "length": 1.51,
+      "width": 1.244,
       "height": 1.445
     },
     "trainingArea": {
-      "minX": -1.2275,
-      "maxX": 1.2275,
-      "minZ": -1.35539644012945,
-      "maxZ": 1.35539644012945,
-      "widthM": 2.455,
-      "lengthM": 2.7107928802589,
-      "areaM2": 6.6549965210356
+      "minX": -1.2219612827900495,
+      "maxX": 1.2219612827900495,
+      "minZ": -1.355,
+      "maxZ": 1.355,
+      "widthM": 2.443922565580099,
+      "lengthM": 2.71,
+      "areaM2": 6.623030152722068
     },
     "stats": {
-      "triangles": 5462,
-      "meshes": 71,
-      "geometries": 11,
+      "triangles": 7182,
+      "meshes": 83,
+      "geometries": 12,
       "materials": 8
     }
   }

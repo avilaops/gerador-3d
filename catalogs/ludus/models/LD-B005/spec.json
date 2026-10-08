@@ -31,19 +31,20 @@
     "pagina": 47,
     "peso": "260 kg",
     "bateria": "95 kg",
-    "descricao": "Proporciona um treino direcionado dos ombros, com apoios e pegadores posicionados para a elevação controlada dos braços. Os pegadores articulados acomodam diferentes biotipos. A trajetória guiada favorece uma execução estável e consistente da elevação lateral."
+    "descricao": "Proporciona um treino direcionado dos ombros, com apoios e pegadores posicionados para a elevação controlada dos braços. Os pegadores articulados acomodam diferentes biotipos. A trajetória guiada favorece uma execução estável e consistente da elevação lateral.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.3255,
       "baseRailX": 0.2325,
-      "towerZ": -0.4055420353982302,
+      "towerZ": -0.40320484581497795,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
       "stackTravel": 0.10624024024024024,
       "seatHeight": 0.46,
-      "seatZ": 0.21221681415929208,
+      "seatZ": 0.21128193832599118,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -71,7 +72,7 @@
         "pivot": [
           0,
           0.0020000000000000018,
-          -0.4030420353982302
+          -0.39820484581497795
         ],
         "range": [
           0,
@@ -90,7 +91,7 @@
         "pivot": [
           -0.2,
           1.022,
-          0.1947168141592921
+          0.1962819383259912
         ],
         "range": [
           0,
@@ -109,7 +110,7 @@
         "pivot": [
           0.2,
           1.022,
-          0.1947168141592921
+          0.1962819383259912
         ],
         "range": [
           0,
@@ -126,15 +127,15 @@
     "trainingArea": {
       "minX": -1.065,
       "maxX": 1.065,
-      "minZ": -1.1480420353982301,
-      "maxZ": 1.1480420353982301,
+      "minZ": -1.1482048458149778,
+      "maxZ": 1.1482048458149778,
       "widthM": 2.13,
-      "lengthM": 2.2960840707964603,
-      "areaM2": 4.89065907079646
+      "lengthM": 2.2964096916299557,
+      "areaM2": 4.891352643171805
     },
     "stats": {
-      "triangles": 5188,
-      "meshes": 59,
+      "triangles": 6172,
+      "meshes": 71,
       "geometries": 7,
       "materials": 8
     }

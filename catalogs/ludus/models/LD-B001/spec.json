@@ -31,19 +31,20 @@
     "pagina": 75,
     "peso": "240 kg",
     "bateria": "95 kg",
-    "descricao": "Projetada para o treino controlado dos músculos posteriores da coxa em áreas de musculação profissional. Os apoios separados para quadril e peito ajudam a manter uma posição estável deitada de bruços. O ajuste da posição inicial permite escolher um ângulo confortável de treino, conforme a mobilidade e a preferência de cada usuário."
+    "descricao": "Projetada para o treino controlado dos músculos posteriores da coxa em áreas de musculação profissional. Os apoios separados para quadril e peito ajudam a manter uma posição estável deitada de bruços. O ajuste da posição inicial permite escolher um ângulo confortável de treino, conforme a mobilidade e a preferência de cada usuário.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.38325,
-      "baseRailX": 0.27375,
-      "towerZ": -0.6953581871345029,
+      "baseRearHalfWidth": 0.47763842390440225,
+      "baseRailX": 0.3411703027888588,
+      "towerZ": -0.7125,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10624024024024024,
+      "stackTravel": 0.10624000000054325,
       "seatHeight": 0.78,
-      "seatZ": 0.1640716374269006,
+      "seatZ": 0.1675,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.138003003003003,
+      "armPivotHeight": 1.1380000000067907,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,13 +70,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.1975,
           0.0020000000000000018,
-          -0.692858187134503
+          0.2875
         ],
         "range": [
           0,
-          0.10624024024024024
+          0.10624000000054325
         ],
         "driver": "phase"
       },
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          0,
+          0.1398406055777176,
           0.742,
-          -0.23342836257309943
+          -0.2325
         ],
         "range": [
           0,
@@ -100,22 +101,22 @@
       }
     ],
     "bboxM": {
-      "length": 1.676,
-      "width": 1.095,
+      "length": 1.675,
+      "width": 1.1,
       "height": 1.33
     },
     "trainingArea": {
-      "minX": -1.1475,
-      "maxX": 1.1475,
-      "minZ": -1.4378581871345029,
-      "maxZ": 1.4378581871345029,
-      "widthM": 2.295,
-      "lengthM": 2.8757163742690057,
-      "areaM2": 6.599769078947368
+      "minX": -1.1498406055777175,
+      "maxX": 1.1498406055777175,
+      "minZ": -1.4375,
+      "maxZ": 1.4375,
+      "widthM": 2.299681211155435,
+      "lengthM": 2.875,
+      "areaM2": 6.611583482071875
     },
     "stats": {
-      "triangles": 5532,
-      "meshes": 61,
+      "triangles": 6852,
+      "meshes": 76,
       "geometries": 11,
       "materials": 8
     }

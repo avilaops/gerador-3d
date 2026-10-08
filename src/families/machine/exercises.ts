@@ -47,6 +47,10 @@ export interface LeverDef {
   padSize?: Vec3;
   /** Diâmetro do came (disco) junto ao pivô, nas alavancas únicas de máquinas com bateria. */
   cam?: number;
+  /** Sem o eixo cromado entre os dois braços (quando o pivô fica na linha dos joelhos). */
+  noAxle?: boolean;
+  /** Diâmetro do rolo estofado da ponta. */
+  rollerDia?: number;
   /** Segunda pegada (neutra) perto da ponta, nos braços de empurrar e puxar. */
   dualGrip?: boolean;
   /** Dobra do braço (cotovelo), como fração do comprimento; o sinal escolhe o lado. Só para braço de um trecho. */
@@ -82,6 +86,10 @@ export interface ExerciseDef {
   facing: 1 | -1;
   /** Posição do assento ao longo do comprimento, como fração de C (−0,5 = fundo, +0,5 = frente). */
   seatAt: number;
+  /** Torre ao lado do assento, virada para quem usa (padrão: atrás, em linha). */
+  tower?: 'side';
+  /** Nome do exercício no adesivo da torre, como vem de fábrica. */
+  sticker?: string;
   /** Sem quadro alto nem mastro: a altura vem da própria estação (máquinas baixas de anilhas). */
   noFrame?: boolean;
   levers(c: ExerciseContext): LeverDef[];
@@ -161,6 +169,8 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
 const DEFS = {
   'chest-press': {
     label: 'Supino (empurrar à frente)',
+    sticker: 'CHEST PRESS',
+    tower: 'side',
     station: 'seat-back',
     seatHeight: 0.48,
     backTilt: 0.18,
@@ -170,6 +180,7 @@ const DEFS = {
   },
   'incline-press': {
     label: 'Supino inclinado',
+    sticker: 'INCLINE PRESS',
     station: 'seat-back',
     seatHeight: 0.42,
     backTilt: 0.55,
@@ -179,6 +190,7 @@ const DEFS = {
   },
   'decline-press': {
     label: 'Supino declinado',
+    sticker: 'DECLINE PRESS',
     station: 'seat-back',
     seatHeight: 0.52,
     backTilt: 0.06,
@@ -207,6 +219,8 @@ const DEFS = {
   },
   'shoulder-press': {
     label: 'Desenvolvimento de ombros',
+    sticker: 'SHOULDER PRESS',
+    tower: 'side',
     station: 'seat-back',
     seatHeight: 0.46,
     backTilt: 0.1,
@@ -231,6 +245,7 @@ const DEFS = {
   },
   row: {
     label: 'Remada sentada',
+    sticker: 'SEATED ROW',
     station: 'seat-chest',
     seatHeight: 0.46,
     facing: -1,
@@ -239,6 +254,7 @@ const DEFS = {
   },
   'low-row': {
     label: 'Remada baixa',
+    sticker: 'LOW ROW',
     station: 'seat-chest',
     seatHeight: 0.46,
     facing: -1,
@@ -247,6 +263,7 @@ const DEFS = {
   },
   'cable-pulldown': {
     label: 'Puxada alta por cabo',
+    sticker: 'LAT PULLDOWN',
     station: 'seat-thigh',
     seatHeight: 0.46,
     facing: -1,
@@ -255,6 +272,7 @@ const DEFS = {
   },
   pulldown: {
     label: 'Puxada alta',
+    sticker: 'LAT PULLDOWN',
     station: 'seat-thigh',
     seatHeight: 0.46,
     facing: -1,
@@ -297,6 +315,8 @@ const DEFS = {
   },
   'lateral-raise': {
     label: 'Elevação lateral',
+    sticker: 'LATERAL RAISE',
+    tower: 'side',
     station: 'seat-chest',
     seatHeight: 0.46,
     facing: -1,
@@ -315,6 +335,8 @@ const DEFS = {
   },
   'biceps-curl': {
     label: 'Rosca (apoio Scott)',
+    sticker: 'BICEPS CURL',
+    tower: 'side',
     station: 'preacher',
     seatHeight: 0.46,
     facing: -1,
@@ -334,6 +356,8 @@ const DEFS = {
   },
   'triceps-extension': {
     label: 'Extensão de tríceps',
+    sticker: 'TRICEPS EXTENSION',
+    tower: 'side',
     station: 'preacher',
     seatHeight: 0.46,
     facing: -1,
@@ -458,6 +482,8 @@ const DEFS = {
   },
   'leg-extension': {
     label: 'Cadeira extensora',
+    sticker: 'LEG EXTENSION',
+    tower: 'side',
     station: 'recline',
     seatHeight: 0.58,
     backTilt: 0.32,
@@ -469,7 +495,9 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.02, 0.26],
         path: [[0, -0.42, 0.04]],
         axis: NX,
-        cam: 0.26,
+        noAxle: true,
+        rollerDia: 0.16,
+        cam: 0.36,
         swing: 1.15,
         end: 'roller',
         horn: 1.0,
@@ -478,6 +506,8 @@ const DEFS = {
   },
   'leg-curl': {
     label: 'Cadeira flexora',
+    sticker: 'SEATED LEG CURL',
+    tower: 'side',
     station: 'recline',
     seatHeight: 0.58,
     backTilt: 0.32,
@@ -489,6 +519,8 @@ const DEFS = {
         pivot: [0.3, c.hs + 0.02, 0.26],
         path: [[0, -0.06, 0.44]],
         axis: X,
+        noAxle: true,
+        rollerDia: 0.16,
         cam: 0.26,
         swing: 1.2,
         end: 'roller',
@@ -527,6 +559,8 @@ const DEFS = {
   },
   'prone-leg-curl': {
     label: 'Mesa flexora',
+    sticker: 'PRONE LEG CURL',
+    tower: 'side',
     station: 'prone',
     seatHeight: 0.78,
     facing: 1,
@@ -573,6 +607,8 @@ const DEFS = {
   },
   'hip-abduction': {
     label: 'Abdutor',
+    sticker: 'HIP ABDUCTION',
+    tower: 'side',
     station: 'recline',
     seatHeight: 0.52,
     backTilt: 0.35,
@@ -593,6 +629,8 @@ const DEFS = {
   },
   'hip-adduction': {
     label: 'Adutor',
+    sticker: 'HIP ADDUCTION',
+    tower: 'side',
     station: 'recline',
     seatHeight: 0.52,
     backTilt: 0.35,
@@ -613,6 +651,7 @@ const DEFS = {
   },
   'glute-kickback': {
     label: 'Glúteo (coice)',
+    sticker: 'GLUTE ISOLATOR',
     station: 'standing',
     seatHeight: 0.1,
     facing: -1,
@@ -659,6 +698,8 @@ const DEFS = {
   },
   'back-extension': {
     label: 'Extensão lombar',
+    sticker: 'BACK EXTENSION',
+    tower: 'side',
     station: 'seat-only',
     seatHeight: 0.5,
     facing: 1,
@@ -678,6 +719,8 @@ const DEFS = {
   },
   'ab-crunch': {
     label: 'Abdominal',
+    sticker: 'ABDOMINAL',
+    tower: 'side',
     station: 'seat-back',
     seatHeight: 0.48,
     backTilt: 0.2,
@@ -698,6 +741,7 @@ const DEFS = {
   },
   'standing-calf': {
     label: 'Panturrilha em pé',
+    sticker: 'CALF RAISE',
     station: 'standing',
     seatHeight: 0.1,
     facing: 1,
@@ -755,6 +799,7 @@ const DEFS = {
   },
   'assisted-chin': {
     label: 'Barra fixa e paralela com auxílio',
+    sticker: 'CHIN DIP ASSIST',
     station: 'none',
     seatHeight: 0.5,
     facing: -1,

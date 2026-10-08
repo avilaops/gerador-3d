@@ -83,6 +83,7 @@ try {
           phase: arg('phase') ? options.phase : Number(spec.meta?.thumbPhase ?? 0),
           azimuth:
             options.azimuth ??
+            (typeof spec.meta?.thumbAzimuth === 'number' ? spec.meta.thumbAzimuth : undefined) ??
             (spec.dimensionsMm.length > 1.7 * spec.dimensionsMm.width ? -62 : -38),
         }
       )) as string;

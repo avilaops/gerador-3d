@@ -31,19 +31,20 @@
     "pagina": 54,
     "peso": "225 kg",
     "bateria": "95 kg",
-    "descricao": "Oferece um movimento guiado de flexão dos braços, com apoios angulados para estabilizar a parte superior dos braços. As posições do eixo e dos pegadores favorecem uma trajetória confortável para os punhos, permitindo concentrar o esforço na contração controlada dos bíceps."
+    "descricao": "Oferece um movimento guiado de flexão dos braços, com apoios angulados para estabilizar a parte superior dos braços. As posições do eixo e dos pegadores favorecem uma trajetória confortável para os punhos, permitindo concentrar o esforço na contração controlada dos bíceps.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.37625,
-      "baseRailX": 0.26875,
-      "towerZ": -0.43551470588235297,
+      "baseRearHalfWidth": 0.48418673016849284,
+      "baseRailX": 0.34584766440606635,
+      "towerZ": -0.4525,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10624024024024024,
+      "stackTravel": 0.10624000000054325,
       "seatHeight": 0.46,
-      "seatZ": 0.2242058823529412,
+      "seatZ": 0.231,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.138003003003003,
+      "armPivotHeight": 1.1380000000067907,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,13 +70,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.18000000000000005,
           0.0020000000000000018,
-          -0.43301470588235297
+          0.11100000000000002
         ],
         "range": [
           0,
-          0.10624024024024024
+          0.10624000000054325
         ],
         "driver": "phase"
       },
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          -0.34,
+          -0.16330467118786735,
           0.762,
-          -0.19329411764705878
+          -0.18899999999999997
         ],
         "range": [
           0,
@@ -107,9 +108,9 @@
           0
         ],
         "pivot": [
-          0.34,
+          0.49669532881213263,
           0.762,
-          -0.19329411764705878
+          -0.18899999999999997
         ],
         "range": [
           0,
@@ -119,22 +120,22 @@
       }
     ],
     "bboxM": {
-      "length": 1.156,
-      "width": 1.075,
+      "length": 1.155,
+      "width": 1.083,
       "height": 1.33
     },
     "trainingArea": {
-      "minX": -1.1375,
-      "maxX": 1.1375,
-      "minZ": -1.178014705882353,
-      "maxZ": 1.1780147058823531,
-      "widthM": 2.275,
-      "lengthM": 2.3560294117647063,
-      "areaM2": 5.359966911764706
+      "minX": -1.1416953288121328,
+      "maxX": 1.1416953288121328,
+      "minZ": -1.1775,
+      "maxZ": 1.1775,
+      "widthM": 2.2833906576242655,
+      "lengthM": 2.355,
+      "areaM2": 5.377384998705145
     },
     "stats": {
-      "triangles": 4204,
-      "meshes": 59,
+      "triangles": 5524,
+      "meshes": 74,
       "geometries": 6,
       "materials": 8
     }

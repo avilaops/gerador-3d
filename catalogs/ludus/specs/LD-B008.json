@@ -31,6 +31,7 @@
     "pagina": 20,
     "peso": "286 kg",
     "bateria": "138 kg",
-    "descricao": "Oferece um movimento de pressão guiado para o treino controlado do peitoral. O braço de movimento ajustável permite diferentes posições iniciais, ajudando o usuário a escolher uma amplitude adequada e a manter uma postura sentada estável durante todo o exercício."
+    "descricao": "Oferece um movimento de pressão guiado para o treino controlado do peitoral. O braço de movimento ajustável permite diferentes posições iniciais, ajudando o usuário a escolher uma amplitude adequada e a manter uma postura sentada estável durante todo o exercício.",
+    "thumbAzimuth": 42
   }
 }

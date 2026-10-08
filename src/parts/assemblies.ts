@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import type { PartKit } from './kit';
 import { beam, box, cable, mesh } from './primitives';
 import type { Articulation, Vec3 } from '../spec/schema';
+import { decalPlane, incrementDecal, placardDecal, scaleDecal } from './decals';
 
 export interface TowerOptions {
   /** Centro da torre no piso (x, z). */
@@ -169,6 +170,10 @@ export interface StackTowerOptions {
   post: number;
   plates: number;
   travel: number;
+  /** Nome do exercício no adesivo da torre (como vem de fábrica, em inglês). */
+  title?: string;
+  /** Carga total da bateria, para a régua numerada. */
+  totalKg?: number;
 }
 
 /**
@@ -184,33 +189,71 @@ export function stackTower(
   const unit = new THREE.Group();
   unit.name = `tower${suffix}`;
   unit.position.set(o.x, 0, o.z);
-  // Coluna carenada: laterais e fundo em chapa, cabeçote na frente e tampo de madeira.
+  // Coluna carenada, como nas máquinas reais: laterais e fundo em chapa, tampo de
+  // madeira com o suporte arredondado atrás, e a frente fechada por duas chapas que
+  // deixam uma fenda no meio (por onde se vê a haste e se troca o pino).
   const panel = o.dark ? 'rubber' : 'frame';
   const frame = new THREE.Group();
   frame.name = 'tower_frame';
   const capH = 0.035;
-  const bodyH = o.height - capH;
+  const bracket = 0.07;
+  const capY = o.height - bracket - capH / 2;
+  const bodyH = o.height - bracket - capH;
   const halfW = 0.2;
   const depth = 0.24;
+  const front = depth / 2;
   for (const s of [-1, 1]) {
     frame.add(
       box(kit, [0.03, bodyH, depth], [s * (halfW - 0.015), bodyH / 2, 0], { name: 'tower_side', material: panel })
     );
   }
-  frame.add(box(kit, [2 * halfW, 0.2, depth], [0, bodyH - 0.1, 0], { name: 'tower_head', material: panel }));
   frame.add(box(kit, [2 * halfW, 0.1, depth], [0, 0.05, 0], { name: 'tower_foot', material: panel }));
   frame.add(
-    box(kit, [2 * halfW + 0.05, capH, depth + 0.05], [0, o.height - capH / 2, 0], {
-      material: 'wood',
-      name: 'tower_cap',
+    box(kit, [2 * halfW + 0.06, capH, depth + 0.06], [0, capY, 0], { material: 'wood', name: 'tower_cap' })
+  );
+  // Suporte de chapa que sobe atrás do tampo, com dois parafusos.
+  frame.add(
+    box(kit, [2 * halfW - 0.08, bracket + capH + 0.05, 0.014], [0, o.height - (bracket + capH + 0.05) / 2, -front + 0.007], {
+      material: panel,
+      name: 'tower_bracket',
     })
+  );
+  for (const s of [-1, 1]) {
+    frame.add(
+      beam(kit, [s * 0.09, o.height - 0.035, -front + 0.014], [s * 0.09, o.height - 0.035, -front + 0.024], 0.03, {
+        round: true,
+        material: 'chrome',
+        name: 'tower_bolt',
+      })
+    );
+  }
+  // Chapas da frente: a da esquerda (larga) leva a placa do exercício.
+  const slot = 0.07;
+  const leftW = 0.2;
+  const rightW = 2 * halfW - leftW - slot;
+  const panelY0 = 0.42 * bodyH;
+  const panelH = bodyH - panelY0;
+  const xLeft = -halfW + leftW / 2;
+  const xRight = halfW - rightW / 2;
+  frame.add(
+    box(kit, [leftW, panelH, 0.012], [xLeft, panelY0 + panelH / 2, front - 0.006], { name: 'tower_front_left', material: panel })
   );
   frame.add(
-    box(kit, [0.16, 0.11, 0.004], [0, bodyH - 0.1, depth / 2 + 0.002], {
-      material: 'label',
-      name: 'tower_label',
-    })
+    box(kit, [rightW, panelH, 0.012], [xRight, panelY0 + panelH / 2, front - 0.006], { name: 'tower_front_right', material: panel })
   );
+  const placard = placardDecal(kit, o.title ?? '');
+  if (placard && o.title) {
+    const ph = Math.min(panelH - 0.06, 0.46);
+    frame.add(decalPlane(kit, placard, [ph * 0.4, ph], [xLeft, panelY0 + panelH - 0.04 - ph / 2, front + 0.001], 'decal_placard'));
+  } else {
+    frame.add(
+      box(kit, [0.14, 0.1, 0.004], [xLeft, bodyH - 0.12, front + 0.002], { material: 'label', name: 'tower_label' })
+    );
+  }
+  const increment = incrementDecal(kit);
+  if (increment) {
+    frame.add(decalPlane(kit, increment, [rightW - 0.02, (rightW - 0.02) / 2], [xRight, bodyH - 0.08, front + 0.001], 'decal_increment'));
+  }
   unit.add(frame);
   const guideHeight = Math.min(0.7 * o.height, o.height - 0.3);
   const baseY = 0.11;
@@ -224,12 +267,18 @@ export function stackTower(
     gap: 0.005,
     baseY,
     guideHeight,
-    cableTopY: o.height - 0.24,
+    cableTopY: bodyH - 0.06,
   });
   st.stack.name = `stack${suffix}`;
   unit.add(st.guides, st.stack);
+  // Régua numerada ao lado das placas.
+  const scale = scaleDecal(kit, o.plates, o.totalKg ?? o.plates * 9.8);
+  if (scale) {
+    const sh = o.plates * pitch;
+    unit.add(decalPlane(kit, scale, [0.045, sh], [-0.155, baseY - pitch / 2 + sh / 2, front - 0.02], 'decal_scale'));
+  }
   unit.add(
-    box(kit, [2 * halfW - 0.06, bodyH - 0.3, 0.012], [0, (bodyH - 0.3) / 2 + 0.1, -depth / 2 + 0.006], {
+    box(kit, [2 * halfW - 0.06, bodyH - 0.1, 0.012], [0, (bodyH - 0.1) / 2 + 0.1, -front + 0.006], {
       name: 'tower_shroud',
       material: panel,
     })

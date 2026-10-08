@@ -86,6 +86,12 @@ new EquipmentViewer(document.getElementById('viewer')!).setEquipment(spec);
 
 Um spec só com dimensões e família já gera um modelo. `params` escolhe o mecanismo ou a variante e refina a forma; `articulations` ajusta o curso por nó; `materials` troca as cores.
 
+## Adesivos da torre
+
+A torre das máquinas de bateria leva a placa com o nome do exercício e três pictogramas, a etiqueta do peso de incremento e a régua com a carga placa a placa (`src/parts/decals.ts`). São texturas desenhadas em canvas, então aparecem no visualizador e nas miniaturas (que rodam no navegador), mas não nos arquivos GLB e USDZ exportados pelo Node.
+
+Nas máquinas em que a foto mostra a torre ao lado do assento (`tower: 'side'` em `exercises.ts`), ela fica à direita de quem usa, com a frente virada para o assento. Máquinas estreitas demais para isso (largura abaixo de 1,02 m) mantêm a torre atrás.
+
 ## Pessoa usando o equipamento
 
 O botão "Pessoa 1,75 m" do visualizador senta (ou põe de pé) uma pessoa no equipamento, com as mãos nas pegadas e os pés no piso ou no rolo, e ela acompanha o movimento. Para isso a família marca o quadril de quem usa com `poseAnchor` (`src/parts/pose.ts`), um nó vazio chamado `pose_hip`. Onde não há marca (bancos, suportes, leg press, estações de cabo, máquinas deitadas), a pessoa fica em pé ao lado, só para dar escala.

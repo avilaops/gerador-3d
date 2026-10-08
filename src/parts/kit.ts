@@ -32,6 +32,7 @@ const RADIAL_SEGMENTS = 24;
 export class PartKit {
   readonly materials: Record<MaterialRole, THREE.MeshStandardMaterial>;
   private readonly geometries = new Map<string, THREE.BufferGeometry>();
+  private readonly extras: { dispose(): void }[] = [];
 
   constructor(colors: MaterialColors = {}) {
     const c = { ...DEFAULT_COLORS, ...stripUndefined(colors) };
@@ -144,7 +145,14 @@ export class PartKit {
     return geometry;
   }
 
+  /** Registra algo feito sob medida (textura ou material de adesivo) para ser liberado com o kit. */
+  track(item: { dispose(): void }): void {
+    this.extras.push(item);
+  }
+
   dispose(): void {
+    this.extras.forEach((e) => e.dispose());
+    this.extras.length = 0;
     this.geometries.forEach((g) => g.dispose());
     this.geometries.clear();
     Object.values(this.materials).forEach((m) => m.dispose());

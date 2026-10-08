@@ -31,14 +31,15 @@
     "pagina": 91,
     "peso": "248 kg",
     "bateria": "95 kg",
-    "descricao": "Permite o treino controlado do abdômen por meio de uma trajetória guiada de flexão do tronco. O braço de movimento contrabalançado ajuda a reduzir a resistência inicial excessiva. Os apoios duplos para os pés estabilizam os membros inferiores sem exigir regulagens complexas."
+    "descricao": "Permite o treino controlado do abdômen por meio de uma trajetória guiada de flexão do tronco. O braço de movimento contrabalançado ajuda a reduzir a resistência inicial excessiva. Os apoios duplos para os pés estabilizam os membros inferiores sem exigir regulagens complexas.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.3255,
       "baseRailX": 0.2325,
-      "towerZ": -0.6403828124999998,
+      "towerZ": -0.6379984423676012,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
       "stackTravel": 0.10624024024024024,
@@ -71,7 +72,7 @@
         "pivot": [
           0,
           0.0020000000000000018,
-          -0.6378828124999998
+          -0.6329984423676012
         ],
         "range": [
           0,
@@ -90,7 +91,7 @@
         "pivot": [
           0,
           0.782,
-          -0.1975
+          -0.195
         ],
         "range": [
           0,
@@ -107,15 +108,15 @@
     "trainingArea": {
       "minX": -1.065,
       "maxX": 1.065,
-      "minZ": -1.3828828124999997,
-      "maxZ": 1.3828828124999997,
+      "minZ": -1.3829984423676012,
+      "maxZ": 1.3829984423676012,
       "widthM": 2.13,
-      "lengthM": 2.7657656249999993,
-      "areaM2": 5.891080781249999
+      "lengthM": 2.7659968847352023,
+      "areaM2": 5.89157336448598
     },
     "stats": {
-      "triangles": 5268,
-      "meshes": 57,
+      "triangles": 6252,
+      "meshes": 69,
       "geometries": 9,
       "materials": 8
     }

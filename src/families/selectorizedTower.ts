@@ -97,7 +97,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     };
   },
 
-  build({ dims, params: p, kit }) {
+  build({ dims, params: p, kit, spec }) {
     if (p.mechanism !== 'pec-fly' && p.mechanism !== 'none') {
       return buildMachine(dims, kit, {
         exercise: p.mechanism,
@@ -111,6 +111,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
         stackTravel: p.stackTravel,
         swingScale: p.swingScale,
         darkTower: p.darkTower,
+        stackKg: spec.weightStackKg?.perStack,
       });
     }
     const root = new THREE.Group();
@@ -145,6 +146,8 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
         post: t,
         plates: p.stackPlates,
         travel: p.stackTravel,
+        title: p.mechanism === 'pec-fly' ? 'PECTORAL FLY' : undefined,
+        totalKg: spec.weightStackKg?.perStack,
       }).group
     );
 

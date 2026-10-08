@@ -32,17 +32,18 @@
     "pagina": 92,
     "peso": "241 kg",
     "bateria": "75 kg",
-    "descricao": "O movimento simultâneo das partes superior e inferior do corpo trabalha a região abdominal. A estrutura compacta permite um exercício controlado e desafiador, com uso eficiente do espaço."
+    "descricao": "O movimento simultâneo das partes superior e inferior do corpo trabalha a região abdominal. A estrutura compacta permite um exercício controlado e desafiador, com uso eficiente do espaço.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.35,
       "baseRailX": 0.25,
-      "towerZ": -0.418030303030303,
+      "towerZ": -0.41568965517241385,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.11424022346368715,
+      "stackTravel": 0.11424022346368712,
       "seatHeight": 0.48,
       "seatZ": 0,
       "seatWidth": 0.42,
@@ -53,7 +54,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": true,
-      "armPivotHeight": 1.2380027932960893,
+      "armPivotHeight": 1.238002793296089,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -72,11 +73,11 @@
         "pivot": [
           0,
           0.0020000000000000018,
-          -0.41553030303030297
+          -0.41068965517241385
         ],
         "range": [
           0,
-          0.11424022346368715
+          0.11424022346368712
         ],
         "driver": "phase"
       },
@@ -91,7 +92,7 @@
         "pivot": [
           0,
           0.782,
-          -0.1975
+          -0.195
         ],
         "range": [
           0,
@@ -108,15 +109,15 @@
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.160530303030303,
-      "maxZ": 1.1605303030303031,
+      "minZ": -1.1606896551724137,
+      "maxZ": 1.1606896551724137,
       "widthM": 2.2,
-      "lengthM": 2.3210606060606063,
-      "areaM2": 5.1063333333333345
+      "lengthM": 2.3213793103448275,
+      "areaM2": 5.107034482758621
     },
     "stats": {
-      "triangles": 5244,
-      "meshes": 55,
+      "triangles": 6228,
+      "meshes": 67,
       "geometries": 9,
       "materials": 9
     }

@@ -142,6 +142,12 @@ const COLORS: Record<string, { frame: string; upholstery: string; accent: string
   'Bancos e suportes': { frame: '#161616', upholstery: '#0c0c0c', accent: '#96764a' },
 };
 
+/** Máquinas de bateria com a torre ao lado do assento: a foto do catálogo é tirada pelo outro lado. */
+const TORRE_LATERAL = new Set([
+  'shoulder-press', 'lateral-raise', 'biceps-curl', 'triceps-extension', 'leg-extension', 'leg-curl',
+  'prone-leg-curl', 'hip-abduction', 'hip-adduction', 'back-extension', 'ab-crunch', 'chest-press',
+]);
+
 /** Regras por nome, para itens que ainda não estão na tabela. A primeira que casar vale. */
 const BY_NAME: [RegExp, (stack: boolean) => Rule][] = [
   [/crossover|multifuncional|cross-smith/i, () => cable('crossover')],
@@ -209,6 +215,9 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
         ? 'Gerado pela tabela do catálogo (família e mecanismo por código). Conferir com a foto.'
         : 'Gerado pelas regras por nome. Conferir família e mecanismo com a foto.',
     },
-    meta,
+    meta:
+      family === 'selectorized-tower' && weightStackKg?.stacks !== 2 && TORRE_LATERAL.has(String(params.mechanism))
+        ? { ...meta, thumbAzimuth: 42 }
+        : meta,
   };
 }

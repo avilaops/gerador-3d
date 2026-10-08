@@ -31,19 +31,20 @@
     "pagina": 76,
     "peso": "300 kg",
     "bateria": "138 kg",
-    "descricao": "Permite treinar o quadríceps de forma direcionada, com ajustes organizados e de fácil acesso. As principais regulagens podem ser alcançadas na posição sentada. O ajuste da posição inicial ajuda a definir uma amplitude adequada para executar a extensão de joelhos com controle."
+    "descricao": "Permite treinar o quadríceps de forma direcionada, com ajustes organizados e de fácil acesso. As principais regulagens podem ser alcançadas na posição sentada. O ajuste da posição inicial ajuda a definir uma amplitude adequada para executar a extensão de joelhos com controle.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.39549999999999996,
-      "baseRailX": 0.2825,
-      "towerZ": -0.482976653696498,
+      "baseRearHalfWidth": 0.48231581558532627,
+      "baseRailX": 0.34451129684666165,
+      "towerZ": -0.5,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
-      "stackTravel": 0.11544022114720111,
+      "stackTravel": 0.11544000000042363,
       "seatHeight": 0.58,
-      "seatZ": 0.02431906614785992,
+      "seatZ": 0.025,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.253002764340014,
+      "armPivotHeight": 1.2530000000052954,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,18 +70,18 @@
           0
         ],
         "pivot": [
-          0,
+          -0.20750000000000002,
           0.0020000000000000018,
-          -0.480476653696498
+          0.145
         ],
         "range": [
           0,
-          0.11544022114720111
+          0.11544000000042363
         ],
         "driver": "phase"
       },
       {
-        "node": "arm_right",
+        "node": "lever",
         "type": "revolute",
         "axis": [
           -1,
@@ -88,28 +89,9 @@
           0
         ],
         "pivot": [
-          0.3,
+          0.1365225936933233,
           0.602,
-          0.28681906614785996
-        ],
-        "range": [
-          0,
-          1.15
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_left",
-        "type": "revolute",
-        "axis": [
-          -1,
-          0,
-          0
-        ],
-        "pivot": [
-          -0.3,
-          0.602,
-          0.28681906614785996
+          0.28500000000000003
         ],
         "range": [
           0,
@@ -119,23 +101,23 @@
       }
     ],
     "bboxM": {
-      "length": 1.251,
-      "width": 1.13,
+      "length": 1.25,
+      "width": 1.133,
       "height": 1.445
     },
     "trainingArea": {
-      "minX": -1.165,
-      "maxX": 1.165,
-      "minZ": -1.2254766536964978,
-      "maxZ": 1.2254766536964978,
-      "widthM": 2.33,
-      "lengthM": 2.4509533073929957,
-      "areaM2": 5.7107212062256805
+      "minX": -1.1665225936933235,
+      "maxX": 1.1665225936933235,
+      "minZ": -1.225,
+      "maxZ": 1.225,
+      "widthM": 2.333045187386647,
+      "lengthM": 2.45,
+      "areaM2": 5.715960709097286
     },
     "stats": {
-      "triangles": 5366,
-      "meshes": 70,
-      "geometries": 11,
+      "triangles": 7882,
+      "meshes": 85,
+      "geometries": 14,
       "materials": 8
     }
   }

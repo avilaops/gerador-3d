@@ -31,14 +31,15 @@
     "pagina": 37,
     "peso": "280 kg",
     "bateria": "138 kg",
-    "descricao": "Projetada para o treino controlado da cadeia posterior e da região lombar. O mecanismo de ajuste inicial permite escolher uma amplitude adequada. O apoio lombar e as duas posições para os pés ajudam a manter o alinhamento estável do corpo durante o exercício."
+    "descricao": "Projetada para o treino controlado da cadeia posterior e da região lombar. O mecanismo de ajuste inicial permite escolher uma amplitude adequada. O apoio lombar e as duas posições para os pés ajudam a manter o alinhamento estável do corpo durante o exercício.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.35524999999999995,
       "baseRailX": 0.25375,
-      "towerZ": -0.467988047808765,
+      "towerZ": -0.4656349206349206,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
       "stackTravel": 0.10624024024024024,
@@ -71,7 +72,7 @@
         "pivot": [
           0,
           0.0020000000000000018,
-          -0.465488047808765
+          -0.4606349206349206
         ],
         "range": [
           0,
@@ -90,7 +91,7 @@
         "pivot": [
           0,
           0.622,
-          -0.1175
+          -0.11499999999999999
         ],
         "range": [
           0,
@@ -107,15 +108,15 @@
     "trainingArea": {
       "minX": -1.1075,
       "maxX": 1.1075,
-      "minZ": -1.210488047808765,
-      "maxZ": 1.2104880478087652,
+      "minZ": -1.2106349206349205,
+      "maxZ": 1.2106349206349205,
       "widthM": 2.215,
-      "lengthM": 2.4209760956175304,
-      "areaM2": 5.362462051792829
+      "lengthM": 2.421269841269841,
+      "areaM2": 5.3631126984126976
     },
     "stats": {
-      "triangles": 4048,
-      "meshes": 59,
+      "triangles": 5032,
+      "meshes": 71,
       "geometries": 6,
       "materials": 8
     }

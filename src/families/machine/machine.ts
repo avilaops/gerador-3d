@@ -30,6 +30,8 @@ export interface MachineOptions {
   stackTravel: number;
   /** Multiplicador do giro das alavancas. */
   swingScale: number;
+  /** Carga total por bateria (kg), para a régua numerada da torre. */
+  stackKg?: number;
   /** Torre preta e braços na cor de destaque, mesmo com uma bateria só. */
   darkTower?: boolean;
 }
@@ -55,15 +57,21 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   // Iso-lateral: nas máquinas altas as duas baterias ficam juntas no centro, atrás do
   // assento; nas baixas, uma de cada lado, na altura toda.
   const centralStacks = stacks === 2 && H >= 1.6;
-  const towerX = stacks === 2 ? (centralStacks ? 0.215 : W / 2 - 0.2) : 0;
+  // Torre lateral: ao lado do assento e virada para quem usa, como na maioria das
+  // máquinas de bateria. Precisa de largura para o assento e a torre lado a lado.
+  const sideTower = stacks === 1 && ex.tower === 'side' && W >= 1.02;
+  const stationX = sideTower ? W / 2 - 0.345 : 0;
+  const towerX = sideTower ? -(W / 2 - 0.23) : stacks === 2 ? (centralStacks ? 0.215 : W / 2 - 0.2) : 0;
   const ax = plates
     ? clamp(W / 2 - 0.27, 0.3, 0.52)
     : stacks === 2
       ? centralStacks
         ? clamp(W / 2 - 0.2, 0.3, 0.52)
         : clamp(towerX - 0.28, 0.3, 0.48)
-      : clamp(W / 2 - 0.13, 0.3, 0.44);
-  const railX = clamp(ax, 0.22, W / 2 - t / 2);
+      : sideTower
+        ? 0.33
+        : clamp(W / 2 - 0.13, 0.3, 0.44);
+  const railX = sideTower ? 0.3 : clamp(ax, 0.22, W / 2 - t / 2);
   const zRear = -L / 2;
   const zFront = L / 2;
 
@@ -77,8 +85,14 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       'rubber',
       'end_cap'
     );
-  const sapata = (x: number, zc: number, ao_longo: 'x' | 'z' = 'x') =>
+  const sapata = (x: number, zc: number, ao_longo: 'x' | 'z' = 'x') => {
     rig.box(base, ao_longo === 'x' ? [0.17, 0.012, 0.1] : [0.1, 0.012, 0.17], [x, 0.006, zc], 'rubber', 'foot');
+    // Parafusos de fixação ao piso.
+    for (const d of [-0.055, 0.055]) {
+      const [bx, bz] = ao_longo === 'x' ? [x + d, zc] : [x, zc + d];
+      rig.rod(base, [bx, 0.012, bz], [bx, 0.022, bz], 0.022, 'chrome', 'foot_bolt');
+    }
+  };
   if (plates) {
     // Anilhas: longarinas no comprimento todo, travessa traseira na largura toda.
     for (const s of [-1, 1] as const) {
@@ -91,6 +105,19 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     rig.tube(base, [-W / 2, y0, zRear + t / 2], [W / 2, y0, zRear + t / 2], t);
     rig.tube(base, [-railX, y0, zFront - t / 2], [railX, y0, zFront - t / 2], t);
     rig.tube(base, [0, y0, zRear + t / 2], [0, y0, zFront - t / 2], t);
+  } else if (sideTower) {
+    // Torre lateral: quadro retangular em volta do assento, com sapata e parafusos nos
+    // quatro cantos, e duas travessas até o pé da torre.
+    for (const s of [-1, 1] as const) {
+      const x = stationX + s * railX;
+      rig.tube(base, [x, y0, zRear], [x, y0, zFront], t, 'frame', 'base_rail');
+      sapata(x, zRear + 0.09, 'z');
+      sapata(x, zFront - 0.09, 'z');
+      tampa(x, zRear + 0.012, 'z', -1);
+      tampa(x, zFront - 0.012, 'z', 1);
+    }
+    rig.tube(base, [stationX - railX, y0, zRear + 0.2], [stationX + railX, y0, zRear + 0.2], t);
+    rig.tube(base, [stationX - railX, y0, zFront - 0.2], [stationX + railX, y0, zFront - 0.2], t);
   } else {
     // Bateria: base compacta. Estabilizador atrás (na largura toda), espinha central
     // e um pé na frente; os apoios das alavancas trazem as próprias travessas.
@@ -107,7 +134,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   }
 
   // Resistência: torre(s) com bateria.
-  const towerZ = zRear + 0.125;
+  const towerZ = sideTower ? clamp(o.seatZ + ex.facing * 0.12, zRear + 0.22, zFront - 0.22) : zRear + 0.125;
   if (stacks > 0) {
     const sides = stacks === 2 ? ([-1, 1] as const) : ([0] as const);
     for (const s of sides) {
@@ -120,7 +147,15 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         post: t,
         plates: o.stackPlates,
         travel: o.stackTravel,
+        title: ex.sticker,
+        totalKg: o.stackKg,
       });
+      if (sideTower) {
+        // A frente da torre (a fenda e os adesivos) olha para o assento.
+        unit.group.rotation.y = Math.PI / 2;
+        for (const dz of [-0.14, 0.14])
+          rig.tube(base, [stationX - railX, y0, towerZ + dz], [towerX + 0.1, y0, towerZ + dz], t, 'frame', 'base_tower_link');
+      }
       root.add(unit.group);
       articulations.push(unit.articulation);
     }
@@ -129,10 +164,10 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   // Estação e alavancas, no referencial do usuário (virado para a torre quando facing = −1).
   const f = ex.facing;
   const station = rig.group('station');
-  station.position.z = o.seatZ;
+  station.position.set(stationX, 0, o.seatZ);
   if (f === -1) station.rotation.y = Math.PI;
   const toUser = (zw: number) => f * (zw - o.seatZ);
-  const toWorld = (p: Vec3): Vec3 => [f * p[0], p[1], o.seatZ + f * p[2]];
+  const toWorld = (p: Vec3): Vec3 => [stationX + f * p[0], p[1], o.seatZ + f * p[2]];
   const uRear = toUser(zRear);
   const uFront = toUser(zFront);
   const zLo = Math.min(uRear, uFront) + 0.05;
@@ -239,10 +274,10 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const drawBridge = (g: THREE.Group, name: string) => {
       const half = Math.max(px, 0.02);
       const T = tip;
-      if (px > 0.05 && !isStatic) rig.rod(g, [-half, 0, 0], [half, 0, 0], 0.045, 'chrome', `${name}_axle`);
+      if (px > 0.05 && !isStatic && !def.noAxle) rig.rod(g, [-half, 0, 0], [half, 0, 0], 0.045, 'chrome', `${name}_axle`);
       switch (def.end) {
         case 'roller':
-          rig.roller(g, [-(half - 0.02), T[1], T[2]], [half - 0.02, T[1], T[2]], 0.12, `${name}_roller`);
+          rig.roller(g, [-(half - 0.02), T[1], T[2]], [half - 0.02, T[1], T[2]], def.rollerDia ?? 0.12, `${name}_roller`);
           break;
         case 'pad':
           rig.pad(g, [clamp(2 * half - 0.06, 0.24, 0.56), 0.1, 0.26], [0, T[1], T[2]], 0, `${name}_pad`);
@@ -281,10 +316,11 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       if (isStatic) g.position.set(0, py, pz);
       if (def.cam && !isStatic) {
         // Came: o disco por onde passa o cabo, ao lado do pivô.
-        const cam = new THREE.Mesh(kit.disc(def.cam, 0.02), kit.materials.plate);
+        const cam = new THREE.Mesh(kit.disc(def.cam, 0.03), kit.materials.rubber);
         cam.name = `${baseName}_cam`;
         cam.rotation.z = Math.PI / 2;
-        cam.position.set(px + 0.05, 0, 0);
+        // Do lado da torre (à direita de quem usa, que é −X no referencial da estação).
+        cam.position.set(-(px + 0.055), 0, 0);
         cam.castShadow = true;
         g.add(cam);
       }
@@ -381,7 +417,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         );
       }
       if (toTop) frameDone = true;
-      if (stacks === 1 && py < H - 0.05) {
+      if (stacks === 1 && !sideTower && py < H - 0.05) {
         const yb = Math.min(py, H - 0.2);
         rig.tube(sup, [0, yb, towerUz], [0, py, pz], 0.06);
       }
@@ -445,6 +481,14 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     }
   }
 
+  if (o.exercise === 'leg-extension' && sideTower) {
+    // Bloco de apoio regulável acima do joelho, do lado da torre, e a alavanca de ajuste do encosto.
+    const extra = rig.group('thigh_block', station);
+    const hs = o.seatHeight;
+    rig.tube(extra, [-0.4, y0, 0.3], [-0.4, hs + 0.3, 0.3], [0.05, 0.08]);
+    rig.pad(extra, [0.2, 0.1, 0.26], [-0.34, hs + 0.36, 0.3], 0, 'thigh_block_pad');
+    rig.rod(extra, [0.2, hs - 0.07, -0.16], [0.34, hs - 0.0, -0.22], 0.022, 'rubber', 'backrest_lever');
+  }
   if (o.exercise === 'assisted-chin') buildChinStation(rig, station, { H, towerUz, t });
   if (o.exercise === 'cable-pulldown') {
     articulations.push(buildCablePulldown(rig, station, { H, towerUz, t, hs: o.seatHeight }));

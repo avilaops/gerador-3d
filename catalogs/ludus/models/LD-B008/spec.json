@@ -31,19 +31,20 @@
     "pagina": 20,
     "peso": "286 kg",
     "bateria": "138 kg",
-    "descricao": "Oferece um movimento de pressão guiado para o treino controlado do peitoral. O braço de movimento ajustável permite diferentes posições iniciais, ajudando o usuário a escolher uma amplitude adequada e a manter uma postura sentada estável durante todo o exercício."
+    "descricao": "Oferece um movimento de pressão guiado para o treino controlado do peitoral. O braço de movimento ajustável permite diferentes posições iniciais, ajudando o usuário a escolher uma amplitude adequada e a manter uma postura sentada estável durante todo o exercício.",
+    "thumbAzimuth": 42
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.378,
-      "baseRailX": 0.27,
-      "towerZ": -0.5979042904290428,
+      "baseRearHalfWidth": 0.48589288075821024,
+      "baseRailX": 0.3470663433987216,
+      "towerZ": -0.615,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
-      "stackTravel": 0.12304020752269779,
+      "stackTravel": 0.12304000000035002,
       "seatHeight": 0.48,
-      "seatZ": 0.17349702970297026,
+      "seatZ": 0.17759999999999998,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.3480025940337224,
+      "armPivotHeight": 1.3480000000043753,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,13 +70,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.18,
           0.0020000000000000018,
-          -0.5954042904290429
+          0.2976
         ],
         "range": [
           0,
-          0.12304020752269779
+          0.12304000000035002
         ],
         "driver": "phase"
       },
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          0.41000000000000003,
-          1.4400025940337222,
-          -0.14400297029702974
+          0.4991326867974432,
+          1.4400000000043751,
+          -0.14240000000000003
         ],
         "range": [
           0,
@@ -107,9 +108,9 @@
           0
         ],
         "pivot": [
-          -0.41000000000000003,
-          1.4400025940337222,
-          -0.14400297029702974
+          -0.16086731320255676,
+          1.4400000000043751,
+          -0.14240000000000003
         ],
         "range": [
           0,
@@ -119,23 +120,23 @@
       }
     ],
     "bboxM": {
-      "length": 1.481,
-      "width": 1.08,
+      "length": 1.48,
+      "width": 1.088,
       "height": 1.54
     },
     "trainingArea": {
-      "minX": -1.1400000000000001,
-      "maxX": 1.1400000000000001,
-      "minZ": -1.340404290429043,
-      "maxZ": 1.340404290429043,
-      "widthM": 2.2800000000000002,
-      "lengthM": 2.680808580858086,
-      "areaM2": 6.112243564356437
+      "minX": -1.1441326867974433,
+      "maxX": 1.1441326867974433,
+      "minZ": -1.3399999999999999,
+      "maxZ": 1.3399999999999999,
+      "widthM": 2.2882653735948866,
+      "lengthM": 2.6799999999999997,
+      "areaM2": 6.132551201234295
     },
     "stats": {
-      "triangles": 5296,
-      "meshes": 67,
-      "geometries": 11,
+      "triangles": 6504,
+      "meshes": 81,
+      "geometries": 10,
       "materials": 8
     }
   }
