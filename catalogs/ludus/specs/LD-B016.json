@@ -15,8 +15,8 @@
     "mechanism": "leg-curl"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Cadeira Flexora LD-B016.png",
-    "pagina": 81
+    "pagina": 81,
+    "peso": "305 kg",
+    "bateria": "138 kg",
+    "descricao": "Projetada para o treino direcionado dos músculos posteriores da coxa na posição sentada. O encosto e o apoio de coxas ajustáveis ajudam a encontrar um alinhamento estável. A regulagem da posição inicial oferece opções para diferentes níveis de mobilidade e preferências de treino."
   }
 }

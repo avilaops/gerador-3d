@@ -15,8 +15,8 @@
     "mechanism": "leg-curl"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Flexora Iso-Lateral LD-B032.png",
-    "pagina": 82
+    "pagina": 82,
+    "peso": "339 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Os apoios ergonômicos e os braços contrabalançados favorecem o trabalho dos músculos posteriores da coxa. Os ajustes facilitam a entrada e a saída e proporcionam uma execução confortável e suave."
   }
 }

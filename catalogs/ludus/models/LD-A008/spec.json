@@ -11,8 +11,8 @@
     "mechanism": "t-bar"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Remada T-Bar LD-A008.png",
-    "pagina": 31
+    "pagina": 31,
+    "peso": "91 kg",
+    "bateria": null,
+    "descricao": "A posição de treino em pé, sem apoio para o tronco, envolve a cadeia posterior desde a base. A ausência de apoios acolchoados exige força das costas, pegada e estabilização de todo o corpo durante a remada."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.1,
       "pressSeatZ": 0.1025,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.2491,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

@@ -11,8 +11,8 @@
     "mechanism": "reverse-hyper"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Hiperextensão de Glúteos de Peso Livre LD-A001.png",
-    "pagina": 59
+    "pagina": 59,
+    "peso": "156 kg",
+    "bateria": null,
+    "descricao": "Desenvolvido para trabalhar a extensão do quadril, a cadeia posterior e a força explosiva. Reforça padrões de movimento usados em corridas, saltos e levantamentos. A mecânica suave e os apoios favorecem o fortalecimento dos quadris e da cadeia posterior."
   }
 }

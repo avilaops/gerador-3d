@@ -38,6 +38,9 @@ const LABELS: Record<ViewerToggle, string> = {
   dims: 'Medidas',
 };
 
+/** Peso do reflexo do ambiente por material (o padrão é 0,4). */
+const ENV_INTENSITY: Record<string, number> = { chrome: 1, upholstery: 0.18, rubber: 0.15, plate: 0.5 };
+
 const STYLE_ID = 'eqv-style';
 const CSS = `
 .eqv { display: grid; gap: 10px; }
@@ -148,7 +151,7 @@ export class EquipmentViewer {
     r.shadowMap.type = THREE.PCFSoftShadowMap;
     r.outputEncoding = THREE.sRGBEncoding;
     r.toneMapping = THREE.ACESFilmicToneMapping;
-    r.toneMappingExposure = 0.54;
+    r.toneMappingExposure = 0.72;
     // Ambiente de estúdio para os reflexos do cromado e do metal pintado.
     const pmrem = new THREE.PMREMGenerator(r);
     const env = pmrem.fromScene(new RoomEnvironment(), 0.04);
@@ -204,6 +207,11 @@ export class EquipmentViewer {
     this.equipment = eq;
     this.ownsEquipment = owns;
     this.rest = captureRestPose(eq.object, eq.articulations);
+    // O ambiente de estúdio serve ao cromado; na pintura e no estofado ele lava o preto.
+    eq.object.traverse((o) => {
+      const mat = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
+      if (mat && 'envMapIntensity' in mat) mat.envMapIntensity = ENV_INTENSITY[mat.name] ?? 0.4;
+    });
     this.scene.add(eq.object);
     this.buildOverlays(eq);
     this.frame(eq);

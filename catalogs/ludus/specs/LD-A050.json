@@ -11,8 +11,8 @@
     "variant": "olympic-flat"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Reto Livre LD-A050.png",
-    "pagina": 24
+    "pagina": 24,
+    "peso": "66 kg",
+    "bateria": null,
+    "descricao": "Estação de supino reto com padrão olímpico, com a elevada durabilidade e qualidade da linha de bancos e suportes."
   }
 }

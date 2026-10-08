@@ -15,8 +15,8 @@
     "variant": "dual-pulley"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Multitrabalho",
     "foto": "Estação Multifuncional Dupla LD-B035.png",
-    "pagina": 96
+    "pagina": 96,
+    "peso": "452 kg",
+    "bateria": "2 × 105 kg",
+    "descricao": "Permite realizar movimentos semelhantes aos das atividades cotidianas, trabalhando de forma integrada os músculos do corpo inteiro. Os cabos permitem explorar diferentes planos de movimento e desenvolver força, estabilidade e coordenação."
   }
 }

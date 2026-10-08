@@ -15,8 +15,8 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Braços",
     "foto": "Rosca Direta Iso-Lateral LD-B022.png",
-    "pagina": 55
+    "pagina": 55,
+    "peso": "236 kg",
+    "bateria": "2 × 50 kg",
+    "descricao": "Os braços independentes permitem movimentos naturais de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. O banco e os apoios ajustáveis ajudam a manter os punhos alinhados e uma posição confortável durante a rosca."
   },
   "resolved": {
     "params": {

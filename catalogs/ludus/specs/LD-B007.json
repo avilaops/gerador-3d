@@ -15,8 +15,8 @@
     "mechanism": "pec-fly"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Crucifixo Máquina LD-B007.png",
-    "pagina": 19
+    "pagina": 19,
+    "peso": "295 kg",
+    "bateria": "138 kg",
+    "descricao": "Reúne dois movimentos isolados para a parte superior do corpo em uma estação compacta: crucifixo para peitoral e crucifixo inverso para deltoide posterior. Os braços articulados e os pegadores cuidadosamente posicionados atendem aos dois exercícios, reduzindo a necessidade de ajustes complexos entre eles."
   }
 }

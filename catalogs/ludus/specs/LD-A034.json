@@ -11,8 +11,8 @@
     "variant": "sled"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Leg Press LD-A034.png",
-    "pagina": 70
+    "pagina": 70,
+    "peso": "265 kg",
+    "bateria": null,
+    "descricao": "O ângulo de 45 graus proporciona um movimento de empurrar suave e estável. Permite adicionar anilhas para trabalhar quadríceps, posteriores da coxa e glúteos em um exercício direcionado aos membros inferiores."
   }
 }

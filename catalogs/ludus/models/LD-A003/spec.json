@@ -11,8 +11,8 @@
     "mechanism": "decline-press"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Declinado LD-A003.png",
-    "pagina": 11
+    "pagina": 11,
+    "peso": "143 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, inspirados no movimento humano. Essa configuração favorece o desenvolvimento equilibrado da força e a variedade de estímulos musculares."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.52,
       "pressSeatZ": 0.156,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.8130999999999999,
       "backrestTilt": 0.06,
       "rowStation": true,
       "storageHorns": 4,

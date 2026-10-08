@@ -15,8 +15,8 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Remada Sentada Máquina LD-B020.png",
-    "pagina": 38
+    "pagina": 38,
+    "peso": "295 kg",
+    "bateria": "138 kg",
+    "descricao": "Permite treinar as regiões superior e média das costas por uma trajetória guiada de puxada. O eixo superior proporciona um arco de movimento suave. As múltiplas posições das mãos oferecem variedade ao treino e permitem trabalhar diferentes ângulos de puxada."
   },
   "resolved": {
     "params": {

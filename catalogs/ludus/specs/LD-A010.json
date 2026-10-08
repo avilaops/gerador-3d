@@ -11,8 +11,8 @@
     "mechanism": "nordic"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Flexão Nórdica LD-A010.png",
-    "pagina": 60
+    "pagina": 60,
+    "peso": "183 kg",
+    "bateria": null,
+    "descricao": "O sistema contrabalançado permite ajustar a dificuldade da flexão nórdica: mais anilhas aumentam a assistência. O ajuste do apoio superior acomoda diferentes usuários e mantém uma posição firme para o treino dos posteriores da coxa."
   }
 }

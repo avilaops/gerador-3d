@@ -15,8 +15,8 @@
     "mechanism": "lateral-raise"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Deltoides",
     "foto": "Elevação Lateral Sentado LD-B005.png",
-    "pagina": 47
+    "pagina": 47,
+    "peso": "260 kg",
+    "bateria": "95 kg",
+    "descricao": "Proporciona um treino direcionado dos ombros, com apoios e pegadores posicionados para a elevação controlada dos braços. Os pegadores articulados acomodam diferentes biotipos. A trajetória guiada favorece uma execução estável e consistente da elevação lateral."
   }
 }

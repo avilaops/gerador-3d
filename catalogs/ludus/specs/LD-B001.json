@@ -15,8 +15,8 @@
     "mechanism": "prone-leg-curl"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Mesa Flexora LD-B001.png",
-    "pagina": 75
+    "pagina": 75,
+    "peso": "240 kg",
+    "bateria": "95 kg",
+    "descricao": "Projetada para o treino controlado dos músculos posteriores da coxa em áreas de musculação profissional. Os apoios separados para quadril e peito ajudam a manter uma posição estável deitada de bruços. O ajuste da posição inicial permite escolher um ângulo confortável de treino, conforme a mobilidade e a preferência de cada usuário."
   }
 }

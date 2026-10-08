@@ -15,9 +15,16 @@
         --accent: #96764a;
       }
       * { box-sizing: border-box; margin: 0; }
-      body { background: var(--bg); color: var(--ink); font: 15px/1.5 Barlow, Inter, Arial, sans-serif; }
+      body { background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, 'Segoe UI', Arial, sans-serif; }
       main { max-width: 1320px; margin: 0 auto; padding: 24px 16px 64px; }
-      h1 { font-size: 26px; letter-spacing: -0.01em; }
+      .brand { font-size: 15px; letter-spacing: 0.22em; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+      .brand b { font-weight: 800; }
+      .brand span { color: var(--accent); text-transform: uppercase; font-size: 11px; letter-spacing: 0.24em; margin-left: 6px; }
+      h1 { font-size: 30px; letter-spacing: -0.02em; font-weight: 600; }
+      .kicker { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+      .desc { font-size: 14px; line-height: 1.55; margin-top: 14px; }
+      .blk-t { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; margin-top: 18px; }
+      .note { font-size: 12px; color: var(--muted); margin-top: 10px; line-height: 1.45; }
       .lead { color: var(--muted); margin-top: 4px; }
       .bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; align-items: center; }
       .bar input { font: inherit; padding: 8px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); min-width: 240px; }
@@ -55,8 +62,9 @@
   <body>
     <main>
       <header>
-        <h1>Gerador 3D paramétrico</h1>
-        <p class="lead">Cada modelo nasce do spec (dimensões + família + mecanismo). Clique para girar, animar e baixar.</p>
+        <div class="brand" id="brand"><b>Gerador 3D</b></div>
+        <h1 id="title">Catálogo 3D</h1>
+        <p class="lead" id="lead">Cada modelo nasce das medidas do catálogo. Clique para girar e ver o movimento.</p>
       </header>
       <div class="bar" id="bar"></div>
       <div class="grid" id="grid"></div>

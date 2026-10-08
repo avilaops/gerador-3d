@@ -11,8 +11,8 @@
     "mechanism": "shrug"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Deltoides",
     "foto": "Encolhimento de Ombro LD-A039.png",
-    "pagina": 46
+    "pagina": 46,
+    "peso": "107 kg",
+    "bateria": null,
+    "descricao": "Permite executar encolhimentos sentado ou em pé para trabalhar o trapézio. A estrutura estável oferece apoio para exercícios com carga elevada e para o desenvolvimento da força de sustentação e estabilização dos membros superiores."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.1,
       "pressSeatZ": 0.12299999999999998,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.5781,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

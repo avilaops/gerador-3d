@@ -11,8 +11,8 @@
     "variant": "hyper"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco de Extensão Lombar LD-A054.png",
-    "pagina": 110
+    "pagina": 110,
+    "peso": "62 kg",
+    "bateria": null,
+    "descricao": "Possui apoio angulado ajustável, que proporciona sustentação firme e excelente conforto para os exercícios de extensão lombar."
   }
 }

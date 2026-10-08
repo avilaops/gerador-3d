@@ -11,8 +11,8 @@
     "mechanism": "seated-dip"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Braços",
     "foto": "Tríceps Sentado LD-A018.png",
-    "pagina": 51
+    "pagina": 51,
+    "peso": "130 kg",
+    "bateria": null,
+    "descricao": "Permite executar o exercício sentado de frente ou de costas para o equipamento, oferecendo diferentes posições e maior variedade para o treino de tríceps."
   }
 }

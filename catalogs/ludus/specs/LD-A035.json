@@ -11,8 +11,8 @@
     "mechanism": "ab-crunch"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Abdômen",
     "foto": "Cadeira Abdominal de Peso Livre LD-A035.png",
-    "pagina": 90
+    "pagina": 90,
+    "peso": "162 kg",
+    "bateria": null,
+    "descricao": "O banco giratório permite direcionar o exercício para os dois lados dos músculos oblíquos. O movimento de dupla ação trabalha a parede abdominal de forma abrangente."
   }
 }

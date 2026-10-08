@@ -11,8 +11,8 @@
     "mechanism": "jammer"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Multitrabalho",
     "foto": "Ground Base Jammer LD-A028.png",
-    "pagina": 94
+    "pagina": 94,
+    "peso": "168 kg",
+    "bateria": null,
+    "descricao": "Desenvolvido para exercícios esportivos que exigem força explosiva a partir do solo. Mantém os pés firmemente apoiados enquanto permite produzir força e potência dos membros inferiores para os superiores."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.1,
       "pressSeatZ": 0.22277227722772278,
-      "backrestHeight": 0.8,
+      "backrestHeight": 1,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

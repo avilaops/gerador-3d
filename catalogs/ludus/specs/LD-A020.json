@@ -11,8 +11,8 @@
     "variant": "stand"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Suporte de Agachamento Búlgaro e Levantamentos LD-A020.png",
-    "pagina": 61
+    "pagina": 61,
+    "peso": "103 kg",
+    "bateria": null,
+    "descricao": "Favorece uma posição natural dos pés e a estabilização do corpo inteiro. Permite exercícios bilaterais ou unilaterais, incluindo agachamentos, avanços e variações com uma perna. As empunhaduras inclinadas oferecem pegada firme e controle do movimento."
   }
 }

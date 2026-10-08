@@ -11,8 +11,8 @@
     "mechanism": "standing-leg-curl"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Flexora em Pé de Peso Livre LD-A031.png",
-    "pagina": 69
+    "pagina": 69,
+    "peso": "114 kg",
+    "bateria": null,
+    "descricao": "Os braços com carga independente favorecem o desenvolvimento equilibrado dos posteriores da coxa. A posição ajoelhada e o ângulo divergente entre os apoios de quadril e peito ajudam a reduzir a tensão na região lombar."
   }
 }

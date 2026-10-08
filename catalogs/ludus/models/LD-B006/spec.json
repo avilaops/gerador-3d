@@ -15,8 +15,8 @@
     "mechanism": "shoulder-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Deltoides",
     "foto": "Desenvolvimento de Ombros Máquina LD-B006.png",
-    "pagina": 48
+    "pagina": 48,
+    "peso": "258 kg",
+    "bateria": "95 kg",
+    "descricao": "Projetado para o desenvolvimento acima da cabeça na posição sentada, com estrutura de apoio estável e regulagem simples. A posição do assento ajuda a definir a amplitude de treino. As diferentes opções de pegada permitem escolher uma posição de execução natural e controlada."
   },
   "resolved": {
     "params": {

@@ -11,8 +11,8 @@
     "variant": "decline"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Abdominal LD-A043.png",
-    "pagina": 102
+    "pagina": 102,
+    "peso": "52 kg",
+    "bateria": null,
+    "descricao": "Banco para exercícios com pesos livres, inclinado para baixo de modo a elevar a pelve e posicionar a cabeça mais baixa, com rolos para apoiar os pés. Os exercícios abdominais trabalham a musculatura das costas e do tronco; os exercícios para a parte superior do corpo realizados nesse banco trabalham a porção inferior do peitoral e os deltoides."
   },
   "resolved": {
     "params": {

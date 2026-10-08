@@ -15,8 +15,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Puxada Alta LD-B012.png",
-    "pagina": 36
+    "pagina": 36,
+    "peso": "270 kg",
+    "bateria": "138 kg",
+    "descricao": "Projetada para o treino da região superior das costas, com apoios de coxa ajustáveis para maior estabilidade e conforto. A barra reta com extremidades anguladas favorece uma posição natural das mãos e dos punhos, ajudando o usuário a manter o controle durante a puxada."
   },
   "resolved": {
     "params": {

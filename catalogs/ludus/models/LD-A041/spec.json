@@ -11,8 +11,8 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Agachamento V-Squat LD-A041.png",
-    "pagina": 74
+    "pagina": 74,
+    "peso": "241 kg",
+    "bateria": null,
+    "descricao": "A trajetória curva acompanha o movimento natural do agachamento e ajuda a reduzir a sobrecarga nas costas e nos joelhos. O sistema contrabalançado reduz a resistência inicial do exercício."
   },
   "resolved": {
     "params": {

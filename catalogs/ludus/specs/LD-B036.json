@@ -15,8 +15,8 @@
     "variant": "cross-smith"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Multitrabalho",
     "foto": "Cross-Smith LD-B036.png",
-    "pagina": 97
+    "pagina": 97,
+    "peso": "480 kg",
+    "bateria": "2 × 92 kg",
+    "descricao": "Combina o treino por cabos com uma máquina Smith. O par de polias e as duas baterias de pesos ampliam as possibilidades de exercícios e permitem que mais pessoas treinem ao mesmo tempo, reunindo diferentes opções de treino de força em uma única estação."
   }
 }

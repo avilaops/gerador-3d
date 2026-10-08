@@ -11,8 +11,8 @@
     "variant": "sled"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Leg Press Articulado LD-A038.png",
-    "pagina": 73
+    "pagina": 73,
+    "peso": "240 kg",
+    "bateria": null,
+    "descricao": "As plataformas articuladas para os pés e a curva de resistência proporcionam um movimento de empurrar suave e desafiador. Os braços independentes permitem o treino unilateral para o desenvolvimento equilibrado das pernas."
   }
 }

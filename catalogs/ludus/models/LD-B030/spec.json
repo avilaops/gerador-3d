@@ -15,8 +15,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Remada Alta Iso-Lateral LD-B030.png",
-    "pagina": 42
+    "pagina": 42,
+    "peso": "354 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Combina uma trajetória específica de puxada com braços independentes para um treino de costas dinâmico e versátil. O desenho favorece o trabalho da parte superior das costas e um movimento suave."
   },
   "resolved": {
     "params": {

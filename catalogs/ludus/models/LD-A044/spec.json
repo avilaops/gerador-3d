@@ -12,8 +12,8 @@
     "backAngle": 0.524
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -25,7 +25,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Inclinado 30° LD-A044.png",
-    "pagina": 103
+    "pagina": 103,
+    "peso": "34 kg",
+    "bateria": null,
+    "descricao": "O banco inclinado a 30° possui ângulo fixo que oferece posicionamento adequado para diversos exercícios da parte superior do corpo."
   },
   "resolved": {
     "params": {

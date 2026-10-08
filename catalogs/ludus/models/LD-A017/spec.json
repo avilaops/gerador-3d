@@ -11,8 +11,8 @@
     "mechanism": "pullover"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Pullover de Peso Livre LD-A017.png",
-    "pagina": 35
+    "pagina": 35,
+    "peso": "195 kg",
+    "bateria": null,
+    "descricao": "O desenho ergonômico favorece a estabilidade e o controle durante o exercício. O banco inclinado e a menor amplitude de extensão dos ombros ajudam a estabilizar o corpo e a reduzir a tensão sobre a articulação do ombro."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.46,
       "pressSeatZ": 0.13799999999999998,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.705,
       "backrestTilt": 0.3,
       "rowStation": true,
       "storageHorns": 4,

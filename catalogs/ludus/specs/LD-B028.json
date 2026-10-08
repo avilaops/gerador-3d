@@ -15,8 +15,8 @@
     "mechanism": "triceps-extension"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Braços",
     "foto": "Extensão de Tríceps Iso-Lateral LD-B028.png",
-    "pagina": 56
+    "pagina": 56,
+    "peso": "264 kg",
+    "bateria": "2 × 50 kg",
+    "descricao": "As trajetórias independentes dos braços favorecem o movimento natural dos cotovelos. O banco e os apoios ajustáveis ajudam a manter os punhos bem posicionados para um treino de tríceps direcionado e confortável."
   }
 }

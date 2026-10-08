@@ -12,8 +12,8 @@
     "backAngle": 0.96
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -25,6 +25,9 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Inclinado 55° LD-A045.png",
-    "pagina": 104
+    "pagina": 104,
+    "peso": "33 kg",
+    "bateria": null,
+    "descricao": "O banco inclinado a 55° possui ângulo fixo que oferece posicionamento adequado para diversos exercícios da parte superior do corpo."
   }
 }

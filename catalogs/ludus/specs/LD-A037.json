@@ -11,8 +11,8 @@
     "variant": "belt-squat"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Belt Squat Pro LD-A037.png",
-    "pagina": 72
+    "pagina": 72,
+    "peso": "208 kg",
+    "bateria": null,
+    "descricao": "As barras paralelas fixas permitem executar mergulhos com carga diretamente no sistema de agachamento com cinturão. Essa configuração acrescenta o treino de empurrar para os membros superiores sem exigir uma estação separada ou espaço adicional."
   }
 }

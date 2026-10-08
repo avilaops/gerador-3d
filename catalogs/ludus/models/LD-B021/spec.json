@@ -15,8 +15,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Puxada Fixa LD-B021.png",
-    "pagina": 39
+    "pagina": 39,
+    "peso": "305 kg",
+    "bateria": "138 kg",
+    "descricao": "Oferece uma trajetória de puxada definida para o treino controlado das costas e para áreas de musculação em circuito. O assento angulado e o posicionamento dos pegadores ajudam o usuário a manter uma postura estável durante as repetições de puxada."
   },
   "resolved": {
     "params": {

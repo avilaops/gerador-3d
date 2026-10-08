@@ -11,8 +11,8 @@
     "mechanism": "incline-press"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Inclinado Articulado LD-A040.png",
-    "pagina": 17
+    "pagina": 17,
+    "peso": "148 kg",
+    "bateria": null,
+    "descricao": "A trajetória natural de empurrar para cima reproduz a mecânica do supino inclinado tradicional. Os braços independentes favorecem o desenvolvimento equilibrado da força dos dois lados do corpo."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.42,
       "pressSeatZ": 0.2208,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.8976999999999999,
       "backrestTilt": 0.55,
       "rowStation": true,
       "storageHorns": 4,

@@ -15,8 +15,8 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Cadeira Extensora Iso-Lateral LD-B033.png",
-    "pagina": 83
+    "pagina": 83,
+    "peso": "341 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Permite o treino individual de cada perna e ajustes personalizados da amplitude de movimento. As trajetórias independentes favorecem o desenvolvimento equilibrado, a biomecânica adequada e o controle da extensão dos joelhos."
   },
   "resolved": {
     "params": {

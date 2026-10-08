@@ -11,8 +11,8 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Braços",
     "foto": "Scott Articulado LD-A033.png",
-    "pagina": 52
+    "pagina": 52,
+    "peso": "103 kg",
+    "bateria": null,
+    "descricao": "Oferece resistência articulada para a rosca na posição Scott. As empunhaduras giratórias acomodam diferenças no comprimento dos antebraços, permitindo ajustar a pegada ao usuário."
   }
 }

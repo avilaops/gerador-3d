@@ -11,8 +11,8 @@
     "variant": "preacher"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Braços",
     "foto": "Scott Peso Livre LD-A055.png",
-    "pagina": 57
+    "pagina": 57,
+    "peso": "73 kg",
+    "bateria": null,
+    "descricao": "Oferece a posição tradicional da rosca Scott, com a elevada durabilidade e qualidade da linha de bancos e suportes."
   },
   "resolved": {
     "params": {

@@ -11,8 +11,8 @@
     "mechanism": "seated-calf"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Panturrilha",
     "foto": "Panturrilha Sentada LD-A025.png",
-    "pagina": 86
+    "pagina": 86,
+    "peso": "91 kg",
+    "bateria": null,
+    "descricao": "Projetado para trabalhar o músculo sóleo por meio da elevação de panturrilhas na posição sentada. O apoio ajustável sobre as coxas permite acomodar diferentes usuários."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.46,
       "pressSeatZ": -0.21742465736473626,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.6439021246026598,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

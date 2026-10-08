@@ -15,8 +15,8 @@
     "mechanism": "shoulder-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Deltoides",
     "foto": "Desenvolvimento de Ombros Iso-Lateral LD-B026.png",
-    "pagina": 49
+    "pagina": 49,
+    "peso": "339 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Os braços independentes permitem um movimento natural de empurrar acima da cabeça e o desenvolvimento equilibrado dos ombros. As empunhaduras ajustáveis e a estrutura de apoio facilitam a entrada, a saída e a execução das séries."
   }
 }

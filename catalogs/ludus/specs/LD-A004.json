@@ -11,8 +11,8 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Remada D.Y. LD-A004.png",
-    "pagina": 28
+    "pagina": 28,
+    "peso": "164 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado da força. A pegada supinada e os pivôs elevados proporcionam um arco natural de movimento durante a remada."
   }
 }

@@ -14,8 +14,8 @@
     "swing": 0.45
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -27,7 +27,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino e Remada LD-A002.png",
-    "pagina": 10
+    "pagina": 10,
+    "peso": "177 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força e a variedade de estímulos. Reúne exercícios para peitoral e costas em um único equipamento."
   },
   "resolved": {
     "params": {
@@ -50,7 +53,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.45,
       "pressSeatZ": 0.4575,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.9822999999999998,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,
@@ -99,7 +102,7 @@
     "bboxM": {
       "length": 1.83,
       "width": 1.33,
-      "height": 2.09
+      "height": 2.093
     },
     "trainingArea": {
       "minX": -1.265,
@@ -111,10 +114,10 @@
       "areaM2": 7.6659
     },
     "stats": {
-      "triangles": 7152,
-      "meshes": 55,
-      "geometries": 12,
-      "materials": 5
+      "triangles": 8844,
+      "meshes": 64,
+      "geometries": 25,
+      "materials": 6
     }
   }
 }

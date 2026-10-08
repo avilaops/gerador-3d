@@ -11,8 +11,8 @@
     "variant": "hack"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Hack Squat LD-A023.png",
-    "pagina": 64
+    "pagina": 64,
+    "peso": "236 kg",
+    "bateria": null,
+    "descricao": "O ângulo de 45 graus enfatiza a flexão dos joelhos e a extensão controlada para o trabalho dos quadríceps. Os rolamentos lineares proporcionam deslocamento suave, e as alavancas de travamento facilitam transições firmes entre a execução e o apoio da carga."
   }
 }

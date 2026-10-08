@@ -11,8 +11,8 @@
     "mechanism": "lying-press"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Super Fly LD-A019.png",
-    "pagina": 15
+    "pagina": 15,
+    "peso": "142 kg",
+    "bateria": null,
+    "descricao": "Oferece posições de crucifixo reto e declinado para trabalhar o peitoral em diferentes ângulos. Os apoios de costas abertos permitem movimentos mais amplos e livres, com menor interferência na região dos ombros."
   }
 }

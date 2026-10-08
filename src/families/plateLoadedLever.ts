@@ -10,7 +10,8 @@
 import * as THREE from 'three';
 import { z } from 'zod';
 import type { FamilyDefinition } from './types';
-import { beam, box, plateHorn, rubberFoot, upholstery } from '../parts/primitives';
+import { beam, bentTube, box, plateHorn } from '../parts/primitives';
+import { Rig } from '../parts/rig';
 import { pivotArm } from '../parts/assemblies';
 import type { Articulation, Vec3 } from '../spec/schema';
 import { buildMachine } from './machine/machine';
@@ -92,7 +93,7 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
       hornOffset: 0.3,
       seatHeight: ex?.seatHeight ?? 0.45,
       pressSeatZ: (ex?.seatAt ?? 0.25) * d.length,
-      backrestHeight: 0.8,
+      backrestHeight: Math.min(1.0, 0.47 * d.height),
       backrestTilt: ex?.backTilt ?? 0.38,
       rowStation: true,
       storageHorns: 4,
@@ -117,100 +118,133 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
     }
     const root = new THREE.Group();
     root.name = 'equipment';
+    const rig = new Rig(kit, root);
     const t = p.tube;
-    const y0 = t * 0.4;
     const railH = t * 0.8;
-    const zMax = dims.length / 2;
+    const y0 = railH / 2;
+    const L = dims.length;
+    const zMax = L / 2;
     const fx = p.frameX;
+    const pz = p.pivotZ;
 
-    // Base: duas longarinas no comprimento todo, travessas e sapatas.
-    const base = new THREE.Group();
-    base.name = 'base';
-    for (const s of [-1, 1]) {
-      base.add(beam(kit, [s * fx, y0, -zMax], [s * fx, y0, zMax], [t, railH]));
-      base.add(rubberFoot(kit, s * fx, -zMax + 0.05, [0.12, 0.1]));
-      base.add(rubberFoot(kit, s * fx, zMax - 0.05, [0.12, 0.1]));
+    // Base: duas longarinas no comprimento todo, travessas e sapatas chatas.
+    const base = rig.group('base');
+    for (const s of [-1, 1] as const) {
+      rig.tube(base, [s * fx, y0, -zMax], [s * fx, y0, zMax], [t, railH]);
+      for (const zf of [-zMax + 0.08, zMax - 0.08])
+        rig.box(base, [0.18, 0.012, 0.11], [s * fx, 0.006, zf], 'rubber', 'foot');
     }
-    for (const zc of [-zMax + 0.15, zMax - 0.15, p.pivotZ]) {
-      base.add(beam(kit, [-fx, y0, zc], [fx, y0, zc], [t, railH]));
-    }
-    // Longarina central: sustenta assentos e apoio de peito.
-    base.add(beam(kit, [0, y0, -zMax + 0.15], [0, y0, zMax - 0.15], [t, railH]));
-    root.add(base);
+    for (const zc of [-zMax + 0.2, zMax - 0.3, pz])
+      rig.tube(base, [-fx, y0, zc], [fx, y0, zc], [t, railH]);
+    rig.tube(base, [0, y0, -zMax + 0.2], [0, y0, zMax - 0.3], [t, railH]);
 
-    // Quadros laterais em "A" + mancais do eixo.
-    const frame = new THREE.Group();
-    frame.name = 'frame';
-    const topY = p.pivotHeight - 0.07;
-    for (const s of [-1, 1]) {
+    // Quadros laterais em ampulheta: duas pernas de chapa que se fecham na cintura
+    // e voltam a abrir até a viga do alto. Os mancais sobem da viga até o eixo.
+    const frame = rig.group('frame');
+    const topY = p.pivotHeight - 0.28;
+    const waistY = 0.5 * topY;
+    const plate: [number, number] = [0.05, 0.11];
+    const frontLeg = (x: number): Vec3[] => [
+      [x, railH, 0.24 * L],
+      [x, waistY, pz + 0.11],
+      [x, topY, pz + 0.24],
+    ];
+    const rearLeg = (x: number): Vec3[] => [
+      [x, railH, -0.3 * L],
+      [x, waistY, pz - 0.11],
+      [x, topY, pz - 0.24],
+    ];
+    /** Ponto de uma perna (polilinha) numa altura dada. */
+    const at = (leg: Vec3[], y: number): Vec3 => {
+      for (let k = 0; k < leg.length - 1; k++) {
+        const [a, b] = [leg[k], leg[k + 1]];
+        if (y <= b[1] || k === leg.length - 2) {
+          const u = (y - a[1]) / (b[1] - a[1]);
+          return [a[0], y, a[2] + (b[2] - a[2]) * u];
+        }
+      }
+      return leg[0];
+    };
+    for (const s of [-1, 1] as const) {
       const x = s * fx;
-      // As pernas nascem em cima da longarina: tubo inclinado começando em y = 0 furaria o piso.
-      frame.add(beam(kit, [x, railH, 0.22 * dims.length], [x, topY, p.pivotZ + 0.08], t));
-      frame.add(beam(kit, [x, railH, -0.27 * dims.length], [x, topY, p.pivotZ - 0.08], t));
-      frame.add(beam(kit, [x, 0.95, 0.12 * dims.length], [x, 0.95, -0.17 * dims.length], t * 0.8));
-      frame.add(
-        box(kit, [0.07, 0.18, 0.28], [x, p.pivotHeight - 0.03, p.pivotZ], {
-          name: `bearing_${s < 0 ? 'left' : 'right'}`,
-        })
-      );
+      const side = s < 0 ? 'left' : 'right';
+      rig.path(frame, frontLeg(x), plate, 'frame', `leg_front_${side}`, 0.3);
+      rig.path(frame, rearLeg(x), plate, 'frame', `leg_rear_${side}`, 0.3);
+      rig.tube(frame, [x, waistY, pz - 0.11], [x, waistY, pz + 0.11], [0.05, 0.1]);
+      rig.tube(frame, [x, topY, pz - 0.29], [x, topY, pz + 0.29], plate);
+      const bh = p.pivotHeight - topY + 0.09;
+      for (const dz of [-0.07, 0.07])
+        rig.box(frame, [0.05, bh, 0.016], [x, topY + bh / 2, pz + dz], 'frame', `bearing_${side}`);
     }
-    frame.add(beam(kit, [-fx, topY, p.pivotZ], [fx, topY, p.pivotZ], t, { name: 'top_crossbar' }));
-    root.add(frame);
+    rig.tube(frame, [-fx, topY, pz + 0.24], [fx, topY, pz + 0.24], [0.06, 0.1], 'frame', 'top_crossbar');
+    rig.tube(frame, [-fx, topY, pz - 0.24], [fx, topY, pz - 0.24], [0.05, 0.08]);
 
-    // Estação de supino (frente, usuário de frente para +Z).
-    const seat = new THREE.Group();
-    seat.name = 'seat';
-    seat.add(beam(kit, [0, y0, p.pressSeatZ], [0, p.seatHeight - 0.04, p.pressSeatZ], 0.07));
-    seat.add(
-      upholstery(kit, [0.4, 0.08, 0.34], [0, p.seatHeight, p.pressSeatZ], { name: 'seat_pad' })
-    );
-    root.add(seat);
+    // Estação de supino (frente): assento comprido e encosto alto e estreito, inclinado para trás.
+    const sz = p.pressSeatZ;
+    const seat = rig.group('seat');
+    rig.tube(seat, [0, y0, sz], [0, p.seatHeight - 0.05, sz], 0.07, 'frame', 'seat_post');
+    rig.box(seat, [0.014, 0.3, 0.05], [0.042, p.seatHeight - 0.24, sz], 'plate', 'seat_adjuster');
+    rig.pad(seat, [0.36, 0.07, 0.46], [0, p.seatHeight, sz + 0.07], -0.06, 'seat_pad');
 
     const bh = p.backrestHeight;
-    const bBottomZ = p.pressSeatZ - 0.2;
+    const bBottomZ = sz - 0.17;
     const bc: Vec3 = [
       0,
-      p.seatHeight + 0.07 + (bh / 2) * Math.cos(p.backrestTilt),
+      p.seatHeight + 0.06 + (bh / 2) * Math.cos(p.backrestTilt),
       bBottomZ - (bh / 2) * Math.sin(p.backrestTilt),
     ];
-    const backrest = new THREE.Group();
-    backrest.name = 'backrest';
-    backrest.add(
-      upholstery(kit, [0.38, bh, 0.08], bc, { tiltX: -p.backrestTilt, name: 'backrest_pad' })
+    const backrest = rig.group('backrest');
+    rig.pad(backrest, [0.3, bh, 0.075], bc, -p.backrestTilt, 'backrest_pad');
+    const behind = (h: number): Vec3 => [
+      0,
+      p.seatHeight + 0.06 + h * Math.cos(p.backrestTilt) - 0.07 * Math.sin(p.backrestTilt),
+      bBottomZ - h * Math.sin(p.backrestTilt) - 0.07 * Math.cos(p.backrestTilt),
+    ];
+    rig.path(
+      backrest,
+      [[0, y0, bBottomZ - 0.04], behind(0.12), behind(bh * 0.86)],
+      0.06,
+      'frame',
+      'backrest_support',
+      0.12
     );
-    const backSupportTop: Vec3 = [0, bc[1] + 0.1, bc[2] - 0.12];
-    backrest.add(
-      beam(kit, [0, y0, bBottomZ + 0.02], [0, p.seatHeight - 0.02, bBottomZ - 0.02], 0.06)
-    );
-    backrest.add(beam(kit, [0, p.seatHeight - 0.02, bBottomZ - 0.02], backSupportTop, 0.06));
-    backrest.add(beam(kit, backSupportTop, [0, topY, p.pivotZ], 0.06));
-    root.add(backrest);
+    rig.tube(backrest, behind(bh * 0.86), [0, topY, pz + 0.24], 0.05);
 
-    // Estação de remada (atrás, usuário de frente para −Z... apoiando o peito no apoio).
+    // Estação de remada (atrás): arco de tubo com apoio de peito e assento.
     if (p.rowStation) {
-      const row = new THREE.Group();
-      row.name = 'row_station';
-      const rz = -dims.length / 2 + 0.28;
-      row.add(beam(kit, [0, y0, rz], [0, 0.44, rz], 0.07));
-      row.add(upholstery(kit, [0.34, 0.08, 0.3], [0, 0.48, rz], { name: 'row_seat_pad' }));
-      const cz = rz + 0.3;
-      row.add(beam(kit, [0, y0, cz], [0, 1.0, cz], 0.07));
-      row.add(upholstery(kit, [0.3, 0.42, 0.09], [0, 1.18, cz - 0.05], { name: 'chest_pad' }));
-      root.add(row);
+      const row = rig.group('row_station');
+      const rz = -zMax + 0.1;
+      const hoopY = Math.min(1.24, 0.62 * dims.height);
+      row.add(
+        bentTube(
+          kit,
+          [
+            [-0.25, y0, rz],
+            [-0.25, hoopY, rz],
+            [0.25, hoopY, rz],
+            [0.25, y0, rz],
+          ],
+          0.055,
+          { round: true, radius: 0.15, name: 'row_hoop' }
+        )
+      );
+      rig.tube(row, [-0.25, hoopY - 0.26, rz], [0.25, hoopY - 0.26, rz], 0.045);
+      rig.pad(row, [0.26, 0.4, 0.075], [0, hoopY - 0.26, rz + 0.07], 0, 'chest_pad');
+      const rsz = rz + 0.42;
+      rig.tube(row, [0, y0, rsz], [0, 0.46, rsz], 0.07);
+      rig.box(row, [0.014, 0.26, 0.05], [0.042, 0.3, rsz], 'plate', 'row_seat_adjuster');
+      rig.pad(row, [0.32, 0.07, 0.3], [0, 0.5, rsz], 0, 'row_seat_pad');
     }
 
-    // Pinos de armazenamento de anilhas na base.
+    // Pinos de armazenamento de anilhas, nas pernas do quadro.
     if (p.storageHorns > 0) {
-      const zs =
-        p.storageHorns === 4 ? [0.3 * dims.length, -0.3 * dims.length] : [0.3 * dims.length];
-      zs.forEach((zh) => {
-        for (const s of [-1, 1]) {
-          root.add(beam(kit, [s * fx, y0, zh], [s * fx, 0.2, zh], 0.05));
-          root.add(
-            plateHorn(kit, [s * (fx + 0.025), 0.17, zh], [s, 0, 0], 0.18, 0.05, 'storage_horn')
-          );
-        }
-      });
+      for (const s of [-1, 1] as const) {
+        const x = s * fx;
+        const spots: Vec3[] = [at(frontLeg(x), 0.3)];
+        if (p.storageHorns === 4) spots.push(at(rearLeg(x), 0.3), at(rearLeg(x), waistY + 0.22));
+        for (const q of spots)
+          rig.horn(root, [q[0] + s * 0.025, q[1], q[2]], [s, 0, 0], 0.18, 'storage_horn');
+      }
     }
 
     // Alavancas independentes.
@@ -221,48 +255,52 @@ export const plateLoadedLever: FamilyDefinition<PlateLoadedLeverParams> = {
     const fwd = new THREE.Vector3(0, fDy, fDz).normalize();
     for (const side of [-1, 1] as const) {
       const name = side < 0 ? 'arm_left' : 'arm_right';
-      const pivot: Vec3 = [side * armX, p.pivotHeight, p.pivotZ];
-      // Eixo fixo do quadro até o mancal da alavanca.
-      root.add(
-        beam(
-          kit,
-          [side * fx, p.pivotHeight, p.pivotZ],
-          [side * (armX - 0.04), p.pivotHeight, p.pivotZ],
-          0.05,
-          {
-            round: true,
-            material: 'chrome',
-            name: `${name}_axle`,
-          }
-        )
-      );
+      const pivot: Vec3 = [side * armX, p.pivotHeight, pz];
+      rig.rod(root, [side * fx, p.pivotHeight, pz], [side * (armX - 0.04), p.pivotHeight, pz], 0.05, 'chrome', `${name}_axle`);
       const g = pivotArm(kit, name, pivot, { axis: 'x', diameter: 0.11, length: 0.1 });
       g.add(
-        beam(kit, [0, rDy, rDz], [0, fDy, fDz], p.leverTube, {
+        beam(kit, [0, rDy, rDz], [0, fDy, fDz], [p.leverTube * 0.7, p.leverTube * 1.1], {
           material: 'accent',
           name: `${name}_lever`,
         })
       );
-      // Pegada do supino (ponta dianteira) e da remada (ponta traseira), voltadas para dentro.
+      // Pegada do supino: alça que desce da ponta dianteira e vira para dentro.
       g.add(
-        beam(kit, [0, fDy, fDz], [-side * 0.17, fDy - 0.03, fDz - 0.02], 0.035, {
-          round: true,
-          material: 'rubber',
-          name: `${name}_press_grip`,
-        })
+        bentTube(
+          kit,
+          [
+            [0, fDy - 0.03, fDz - 0.03],
+            [-side * 0.03, fDy - 0.17, fDz + 0.0],
+            [-side * 0.19, fDy - 0.19, fDz - 0.05],
+          ],
+          0.034,
+          { round: true, material: 'rubber', radius: 0.07, name: `${name}_press_grip` }
+        )
       );
+      // Pegada da remada: alça na ponta traseira, voltada para dentro.
       g.add(
-        beam(kit, [0, rDy, rDz], [-side * 0.15, rDy, rDz], 0.035, {
-          round: true,
-          material: 'rubber',
-          name: `${name}_row_grip`,
-        })
+        bentTube(
+          kit,
+          [
+            [0, rDy - 0.05, rDz + 0.05],
+            [-side * 0.07, rDy - 0.14, rDz + 0.07],
+            [-side * 0.22, rDy - 0.14, rDz + 0.12],
+          ],
+          0.034,
+          { round: true, material: 'rubber', radius: 0.07, name: `${name}_row_grip` }
+        )
       );
       const hb = fwd.clone().multiplyScalar(p.hornOffset);
       g.add(
+        box(kit, [p.leverTube * 0.75 + 0.02, 0.13, 0.1], [0, hb.y - 0.09, hb.z], {
+          material: 'rubber',
+          name: `${name}_horn_bracket`,
+        })
+      );
+      g.add(
         plateHorn(
           kit,
-          [side * (p.leverTube / 2), hb.y, hb.z],
+          [side * (p.leverTube / 2), hb.y - 0.1, hb.z],
           [side, 0, 0],
           p.hornLength,
           0.05,

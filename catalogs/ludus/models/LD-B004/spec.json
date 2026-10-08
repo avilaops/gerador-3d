@@ -34,7 +34,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Peck Deck LD-B004.png",
-    "pagina": 18
+    "pagina": 18,
+    "peso": "298 kg",
+    "bateria": "138 kg",
+    "descricao": "Desenvolvido para exercícios isolados de peitoral, com posicionamento ajustável dos braços e apoio estável para o usuário. A barra de auxílio acionada pelos pés facilita a entrada e a estabilização durante o exercício. O mecanismo de ajuste inicial permite variar a amplitude de movimento conforme a necessidade de treino."
   },
   "resolved": {
     "params": {

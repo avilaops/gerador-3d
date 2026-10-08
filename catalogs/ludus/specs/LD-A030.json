@@ -11,8 +11,8 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Agachamento Pendulum LD-A030.png",
-    "pagina": 68
+    "pagina": 68,
+    "peso": "368 kg",
+    "bateria": null,
+    "descricao": "O movimento pendular enfatiza a extensão dos quadris e das pernas. A resistência varia de forma suave ao longo da amplitude, sendo menor na parte inferior e maior na parte superior, para um treino intenso dos membros inferiores."
   }
 }

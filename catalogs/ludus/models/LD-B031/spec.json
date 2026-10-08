@@ -15,8 +15,8 @@
     "mechanism": "ab-crunch"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Abdômen",
     "foto": "Abdominal Máquina LD-B031.png",
-    "pagina": 92
+    "pagina": 92,
+    "peso": "241 kg",
+    "bateria": "75 kg",
+    "descricao": "O movimento simultâneo das partes superior e inferior do corpo trabalha a região abdominal. A estrutura compacta permite um exercício controlado e desafiador, com uso eficiente do espaço."
   },
   "resolved": {
     "params": {

@@ -15,8 +15,8 @@
     "mechanism": "triceps-extension"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Braços",
     "foto": "Extensão de Tríceps Máquina LD-B017.png",
-    "pagina": 53
+    "pagina": 53,
+    "peso": "228 kg",
+    "bateria": "95 kg",
+    "descricao": "Permite o treino direcionado dos braços com postura sentada estável e movimento guiado de extensão. O assento e os apoios de braços angulados ajudam a manter o controle do tronco. A estrutura articulada dos pegadores se adapta a diferentes comprimentos de antebraço durante o exercício."
   },
   "resolved": {
     "params": {

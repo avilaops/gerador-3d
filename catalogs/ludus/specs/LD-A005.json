@@ -11,8 +11,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Puxada Alta Frontal LD-A005.png",
-    "pagina": 29
+    "pagina": 29,
+    "peso": "143 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento. A trajetória em arco e as posições de pegada supinada oferecem variação de estímulos e um movimento natural durante a puxada."
   }
 }

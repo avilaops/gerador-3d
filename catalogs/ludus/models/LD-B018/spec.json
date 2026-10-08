@@ -15,8 +15,8 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Braços",
     "foto": "Scott Máquina LD-B018.png",
-    "pagina": 54
+    "pagina": 54,
+    "peso": "225 kg",
+    "bateria": "95 kg",
+    "descricao": "Oferece um movimento guiado de flexão dos braços, com apoios angulados para estabilizar a parte superior dos braços. As posições do eixo e dos pegadores favorecem uma trajetória confortável para os punhos, permitindo concentrar o esforço na contração controlada dos bíceps."
   },
   "resolved": {
     "params": {

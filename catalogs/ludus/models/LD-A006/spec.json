@@ -11,8 +11,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Remada Alta LD-A006.png",
-    "pagina": 30
+    "pagina": 30,
+    "peso": "150 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado da força. A trajetória específica de puxada se contrapõe à do supino inclinado e oferece um estímulo distinto para o treino de costas."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.46,
       "pressSeatZ": 0.31000000000000005,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.9446999999999999,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

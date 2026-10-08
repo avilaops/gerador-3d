@@ -15,8 +15,8 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Vertical LD-B008.png",
-    "pagina": 20
+    "pagina": 20,
+    "peso": "286 kg",
+    "bateria": "138 kg",
+    "descricao": "Oferece um movimento de pressão guiado para o treino controlado do peitoral. O braço de movimento ajustável permite diferentes posições iniciais, ajudando o usuário a escolher uma amplitude adequada e a manter uma postura sentada estável durante todo o exercício."
   }
 }

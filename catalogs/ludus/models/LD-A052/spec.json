@@ -11,8 +11,8 @@
     "variant": "olympic-decline"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Declinado Livre LD-A052.png",
-    "pagina": 26
+    "pagina": 26,
+    "peso": "87 kg",
+    "bateria": null,
+    "descricao": "Estação de supino declinado com padrão olímpico, com a elevada durabilidade e qualidade da linha de bancos e suportes."
   },
   "resolved": {
     "params": {

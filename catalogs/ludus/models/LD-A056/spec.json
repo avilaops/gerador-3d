@@ -11,8 +11,8 @@
     "variant": "plate-tree"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Suporte para Anilhas LD-A056.png",
-    "pagina": 111
+    "pagina": 111,
+    "peso": "34 kg",
+    "bateria": null,
+    "descricao": "Oferece quatro hastes para apoiar e armazenar as anilhas utilizadas no treinamento."
   },
   "resolved": {
     "params": {

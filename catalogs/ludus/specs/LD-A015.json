@@ -11,8 +11,8 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Puxada Alta LD-A015.png",
-    "pagina": 34
+    "pagina": 34,
+    "peso": "146 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento. Os pivôs inclinados em dois planos distintos oferecem uma trajetória articulada para variar o estímulo durante a puxada."
   }
 }

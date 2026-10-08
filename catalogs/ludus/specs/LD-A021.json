@@ -11,8 +11,8 @@
     "mechanism": "prone-leg-curl"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Mesa Flexora de Peso Livre LD-A021.png",
-    "pagina": 62
+    "pagina": 62,
+    "peso": "130 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado dos posteriores da coxa. O ângulo divergente entre os apoios de quadril e peito ajuda a reduzir a tensão na região lombar."
   }
 }

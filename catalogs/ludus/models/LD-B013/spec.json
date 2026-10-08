@@ -15,8 +15,8 @@
     "mechanism": "ab-crunch"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Abdômen",
     "foto": "Abdominal Crunch Máquina LD-B013.png",
-    "pagina": 91
+    "pagina": 91,
+    "peso": "248 kg",
+    "bateria": "95 kg",
+    "descricao": "Permite o treino controlado do abdômen por meio de uma trajetória guiada de flexão do tronco. O braço de movimento contrabalançado ajuda a reduzir a resistência inicial excessiva. Os apoios duplos para os pés estabilizam os membros inferiores sem exigir regulagens complexas."
   },
   "resolved": {
     "params": {

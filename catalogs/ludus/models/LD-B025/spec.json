@@ -15,8 +15,8 @@
     "mechanism": "incline-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Inclinado Iso-Lateral LD-B025.png",
-    "pagina": 22
+    "pagina": 22,
+    "peso": "347 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Os braços independentes favorecem o desenvolvimento equilibrado do peitoral e dos ombros. O encosto inclinado facilita a entrada e a saída e oferece uma posição confortável para executar o movimento."
   },
   "resolved": {
     "params": {

@@ -15,8 +15,8 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Iso-Lateral LD-B023.png",
-    "pagina": 21
+    "pagina": 21,
+    "peso": "347 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Os braços de empurrar independentes permitem o trabalho natural do peitoral e o desenvolvimento equilibrado dos dois lados do corpo. O desenho ergonômico proporciona um movimento suave e resistência equilibrada ao longo da amplitude."
   },
   "resolved": {
     "params": {

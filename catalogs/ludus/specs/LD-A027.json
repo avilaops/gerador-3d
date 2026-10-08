@@ -11,8 +11,8 @@
     "mechanism": "hip-thrust"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Elevação Pélvica LD-A027.png",
-    "pagina": 66
+    "pagina": 66,
+    "peso": "152 kg",
+    "bateria": null,
+    "descricao": "A plataforma antiderrapante estabiliza os pés, enquanto os apoios de alta densidade sustentam a extensão do quadril. Permite preparar e repetir o treino de glúteos com anilhas sem utilizar bancos ou barras separados."
   }
 }

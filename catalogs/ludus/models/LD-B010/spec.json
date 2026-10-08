@@ -15,8 +15,8 @@
     "mechanism": "standing-calf"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Panturrilha",
     "foto": "Panturrilha em Pé LD-B010.png",
-    "pagina": 88
+    "pagina": 88,
+    "peso": "340 kg",
+    "bateria": "195 kg",
+    "descricao": "Desenvolvido para a elevação de panturrilhas em pé, com regulagem de altura dos apoios de ombros e suporte estável para os pés. A plataforma anatômica ajuda a manter um posicionamento seguro, permitindo uma amplitude natural de movimento dos tornozelos durante as repetições."
   },
   "resolved": {
     "params": {

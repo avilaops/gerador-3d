@@ -11,8 +11,8 @@
     "variant": "decline"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Declinado Ajustável LD-A049.png",
-    "pagina": 108
+    "pagina": 108,
+    "peso": "60 kg",
+    "bateria": null,
+    "descricao": "Oferece múltiplos ajustes de ângulo, de uma declinação leve para movimentos de pressão controlados a uma inclinação mais acentuada para intensificar o trabalho abdominal e de peitoral. O sistema simples de alavanca permite mudanças rápidas, sem improvisos. Estável e confortável, foi desenvolvido para dar suporte ao treino com cargas elevadas e ao trabalho direcionado da musculatura do tronco."
   },
   "resolved": {
     "params": {

@@ -11,8 +11,8 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Remada Sentada LD-A011.png",
-    "pagina": 33
+    "pagina": 33,
+    "peso": "128 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes e diferentes estímulos musculares. A estrutura compacta e baixa conta com múltiplas opções de pegada para variar o treino de remada."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.46,
       "pressSeatZ": 0.32673267326732675,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.6110011429808063,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

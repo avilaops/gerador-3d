@@ -15,8 +15,8 @@
     "variant": "dual-pulley"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Multitrabalho",
     "foto": "Crossover Angular LD-B037.png",
-    "pagina": 98
+    "pagina": 98,
+    "peso": "381 kg",
+    "bateria": "2 × 95 kg",
+    "descricao": "Oferece 17 posições de ajuste dos cabos para diferentes exercícios e usuários de várias estaturas, incluindo os mais altos. Pode ser utilizado como estação independente. As duas baterias de 95 kg oferecem carga também para praticantes experientes."
   }
 }

@@ -14,8 +14,8 @@
     "swing": 0.45
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -27,6 +27,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino e Remada LD-A002.png",
-    "pagina": 10
+    "pagina": 10,
+    "peso": "177 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força e a variedade de estímulos. Reúne exercícios para peitoral e costas em um único equipamento."
   }
 }

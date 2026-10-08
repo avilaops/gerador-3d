@@ -15,8 +15,8 @@
     "mechanism": "glute-kickback"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Quadril e Glúteos Máquina LD-B011.png",
-    "pagina": 78
+    "pagina": 78,
+    "peso": "340 kg",
+    "bateria": "138 kg",
+    "descricao": "Oferece treino direcionado dos membros inferiores para ativação do quadril e dos glúteos. A estrutura de resistência bidirecional permite movimentos controlados nos dois sentidos, favorecendo exercícios de extensão de quadril e treino de glúteos com posicionamento estável do corpo."
   }
 }

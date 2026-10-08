@@ -11,8 +11,8 @@
     "variant": "decline"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Declinado e Abdominal LD-A047.png",
-    "pagina": 106
+    "pagina": 106,
+    "peso": "46 kg",
+    "bateria": null,
+    "descricao": "Reúne duas opções de treino em um único equipamento, com a elevada durabilidade e qualidade da linha de bancos e suportes."
   }
 }

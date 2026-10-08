@@ -11,8 +11,8 @@
     "mechanism": "low-row"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,6 +24,9 @@
     "linha": "Peso livre",
     "grupoMuscular": "Costas",
     "foto": "Remada Baixa LD-A009.png",
-    "pagina": 32
+    "pagina": 32,
+    "peso": "152 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. A trajetória específica da remada oferece um movimento complementar ao do supino declinado."
   }
 }

@@ -137,9 +137,9 @@ const BY_CODE: Record<string, Rule> = {
 
 /** Cores das fotos do catálogo: peso livre em prata e azul; bateria e bancos em preto. */
 const COLORS: Record<string, { frame: string; upholstery: string; accent: string }> = {
-  'Peso livre': { frame: '#b9bcc0', upholstery: '#141414', accent: '#1f3a9e' },
-  'Bateria de pesos': { frame: '#1d1d1d', upholstery: '#121212', accent: '#96764a' },
-  'Bancos e suportes': { frame: '#1d1d1d', upholstery: '#121212', accent: '#96764a' },
+  'Peso livre': { frame: '#74787d', upholstery: '#0c0c0c', accent: '#1f3a9e' },
+  'Bateria de pesos': { frame: '#161616', upholstery: '#0c0c0c', accent: '#96764a' },
+  'Bancos e suportes': { frame: '#161616', upholstery: '#0c0c0c', accent: '#96764a' },
 };
 
 /** Regras por nome, para itens que ainda não estão na tabela. A primeira que casar vale. */
@@ -173,6 +173,9 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
     grupoMuscular: product.grupo_muscular,
     foto: product.foto,
     pagina: product.pagina,
+    peso: product.peso,
+    bateria: product.bateria,
+    descricao: product.descricao,
   };
   const handwritten = HANDWRITTEN_SPECS.find((s) => s.id === product.code);
   if (handwritten) return { ...handwritten, meta: { ...handwritten.meta, ...meta } };

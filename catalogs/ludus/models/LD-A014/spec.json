@@ -11,8 +11,8 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Vertical Aberto LD-A014.png",
-    "pagina": 14
+    "pagina": 14,
+    "peso": "139 kg",
+    "bateria": null,
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado da força. Oferece maior convergência que o supino declinado e espaço para acomodar usuários de maior porte."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.48,
       "pressSeatZ": 0.13799999999999998,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.8271999999999999,
       "backrestTilt": 0.18,
       "rowStation": true,
       "storageHorns": 4,

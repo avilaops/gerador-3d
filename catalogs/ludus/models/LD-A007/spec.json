@@ -11,8 +11,8 @@
     "mechanism": "lying-press"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Horizontal LD-A007.png",
-    "pagina": 12
+    "pagina": 12,
+    "peso": "109 kg",
+    "bateria": null,
+    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. É uma variação articulada do supino tradicional, com apoios de costas inclinados para estabilização."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.44,
       "pressSeatZ": 0.3024,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.5029,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,

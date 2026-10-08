@@ -92,6 +92,16 @@ for (const spec of specs) {
     writeFileSync(join(dir, 'model.glb'), Buffer.from(glb));
     writeFileSync(join(dir, 'model.usdz'), Buffer.from(usdz));
     writeFileSync(join(dir, 'plan.svg'), planSvg(eq));
+    const mm = (pts: [number, number][]) => pts.map(([x, z]) => [round(x), round(z)]);
+    writeFileSync(
+      join(dir, 'footprint.json'),
+      JSON.stringify({
+        unit: 'm',
+        bounds: eq.footprint.bounds,
+        outline: mm(eq.footprint.outline),
+        parts: eq.footprint.parts.map(mm),
+      })
+    );
     const size = eq.bbox.getSize(eq.bbox.min.clone());
     const { widthM, lengthM, areaM2 } = eq.footprint.trainingArea;
     writeFileSync(

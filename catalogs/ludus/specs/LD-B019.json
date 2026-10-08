@@ -15,8 +15,8 @@
     "mechanism": "back-extension"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Extensão Lombar Máquina LD-B019.png",
-    "pagina": 37
+    "pagina": 37,
+    "peso": "280 kg",
+    "bateria": "138 kg",
+    "descricao": "Projetada para o treino controlado da cadeia posterior e da região lombar. O mecanismo de ajuste inicial permite escolher uma amplitude adequada. O apoio lombar e as duas posições para os pés ajudam a manter o alinhamento estável do corpo durante o exercício."
   }
 }

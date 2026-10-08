@@ -15,8 +15,8 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Cadeira Extensora LD-B002.png",
-    "pagina": 76
+    "pagina": 76,
+    "peso": "300 kg",
+    "bateria": "138 kg",
+    "descricao": "Permite treinar o quadríceps de forma direcionada, com ajustes organizados e de fácil acesso. As principais regulagens podem ser alcançadas na posição sentada. O ajuste da posição inicial ajuda a definir uma amplitude adequada para executar a extensão de joelhos com controle."
   }
 }

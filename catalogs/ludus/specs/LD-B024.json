@@ -15,8 +15,8 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,6 +28,9 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Costas",
     "foto": "Remada Iso-Lateral LD-B024.png",
-    "pagina": 40
+    "pagina": 40,
+    "peso": "347 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Os braços de puxada independentes e a pegada supinada ergonômica favorecem movimentos naturais e o trabalho direcionado das costas. O banco ajustável oferece estabilidade e alinhamento adequado durante as repetições."
   }
 }

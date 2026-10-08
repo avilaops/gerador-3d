@@ -11,8 +11,8 @@
     "variant": "flat"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Bancos e suportes",
     "grupoMuscular": "Acessórios",
     "foto": "Banco Regulável de 0° a 90° LD-A048.png",
-    "pagina": 107
+    "pagina": 107,
+    "peso": "39 kg",
+    "bateria": null,
+    "descricao": "O banco regulável oferece seis ângulos de encosto para exercícios de pressão e três ajustes do assento, atendendo às necessidades de diferentes usuários."
   },
   "resolved": {
     "params": {

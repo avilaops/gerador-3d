@@ -16,6 +16,7 @@ O núcleo (`src/`) não tem lógica de cliente. Cada catálogo mora em `catalogs
 | Miniaturas PNG (Chrome ou Edge sem tela) | `npm run thumbs` |
 | Tudo de uma vez | `npm run catalog` |
 | Publicar a galeria em https://ludus.avilaops.com | `npm run deploy` |
+| Catálogo PDF com QR, render 3D e planta real | `python catalogs/ludus/catalogo/build.py --assets <pasta das fotos e logos>` |
 
 A galeria publicada fica em https://ludus.avilaops.com (pré-visualização interna, marcada como noindex; servidor `applications`, arquivos estáticos em `/var/www/ludus.avilaops.com`).
 

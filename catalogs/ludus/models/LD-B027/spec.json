@@ -15,8 +15,8 @@
     "mechanism": "decline-press"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Peitoral",
     "foto": "Supino Declinado Iso-Lateral LD-B027.png",
-    "pagina": 23
+    "pagina": 23,
+    "peso": "343 kg",
+    "bateria": "2 × 75 kg",
+    "descricao": "Projetado para enfatizar a porção inferior do peitoral, oferece uma trajetória de empurrar estável e natural. O ajuste do ângulo do banco melhora o conforto, enquanto os braços independentes permitem o trabalho individual de cada lado."
   },
   "resolved": {
     "params": {

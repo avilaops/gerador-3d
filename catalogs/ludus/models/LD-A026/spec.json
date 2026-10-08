@@ -11,8 +11,8 @@
     "variant": "sled"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Panturrilha",
     "foto": "Panturrilha Horizontal LD-A026.png",
-    "pagina": 87
+    "pagina": 87,
+    "peso": "173 kg",
+    "bateria": null,
+    "descricao": "Direciona a resistência para os quadris, em vez da coluna, durante o exercício. Permite trabalhar os músculos gastrocnêmio e sóleo em uma posição horizontal."
   },
   "resolved": {
     "params": {

@@ -26,7 +26,27 @@ for (const [path, url] of Object.entries(thumbModules)) thumbs.set(path.split('/
 const specs = Object.values(specModules).sort((a, b) => a.id.localeCompare(b.id));
 const byId = new Map(specs.map((s) => [s.id, s]));
 
+interface SiteInfo {
+  brand: string;
+  brandSub?: string;
+  title: string;
+  lead: string;
+  note?: string;
+}
+const site = Object.values(
+  import.meta.glob<SiteInfo>('../catalogs/*/site.json', { eager: true, import: 'default' })
+)[0];
+
 const params = new URLSearchParams(location.search);
+/** `?dev=1` mostra os dados técnicos (família, desvio, triângulos) e os downloads. */
+const dev = params.has('dev');
+if (site) {
+  document.title = `${site.brand} ${site.brandSub ?? ''} · ${site.title}`;
+  document.getElementById('brand')!.innerHTML =
+    `<b>${site.brand}</b>${site.brandSub ? ` <span>${site.brandSub}</span>` : ''}`;
+  document.getElementById('title')!.textContent = site.title;
+  document.getElementById('lead')!.textContent = site.lead;
+}
 const grid = document.getElementById('grid')!;
 const bar = document.getElementById('bar')!;
 const dialog = document.getElementById('dialog') as HTMLDialogElement;
@@ -56,20 +76,33 @@ function openDetail(spec: EquipmentSpecInput) {
   const cls = (v: number) => (Math.abs(v) <= 0.02 ? 'ok' : 'bad');
   const dm = eq.spec.dimensionsMm;
   const svg = planSvg(eq);
+  const meta = (eq.spec.meta ?? {}) as Record<string, string | null | undefined>;
+  const row = (k: string, v: string) => `<tr><td>${k}</td><td>${v}</td></tr>`;
+  const rows = [
+    row('Dimensões (C × L × A)', `${dm.length} × ${dm.width} × ${dm.height} mm`),
+    meta.peso ? row('Peso do equipamento', meta.peso) : '',
+    meta.bateria ? row('Bateria de pesos', meta.bateria) : meta.linha === 'Peso livre' ? row('Carga', 'Anilhas') : '',
+    row('Área de treino', `${eq.footprint.trainingArea.areaM2.toFixed(1).replace('.', ',')} m²`),
+  ];
+  if (dev) {
+    rows.push(
+      row('Família', `${eq.spec.family}${kindOf(spec) ? ` · ${kindOf(spec)}` : ''}`),
+      row('Revisão', eq.spec.review?.status ?? 'auto'),
+      row('Modelo C × L × A', `${Math.round(s.z * 1000)} × ${Math.round(s.x * 1000)} × ${Math.round(s.y * 1000)} mm`),
+      row('Desvio C / L / A', `<span class="${cls(d.length)}">${pct(d.length)}</span> / <span class="${cls(d.width)}">${pct(d.width)}</span> / <span class="${cls(d.height)}">${pct(d.height)}</span>`),
+      row('Triângulos', eq.stats.triangles.toLocaleString('pt-BR')),
+      row('Articulações', eq.articulations.map((a) => a.node).join(', ') || 'nenhuma')
+    );
+  }
   info.innerHTML = `
     <div class="code">${eq.spec.id}</div><h2>${eq.spec.name}</h2>
-    <table>
-      <tr><td>Família</td><td>${eq.spec.family}${kindOf(spec) ? ` · ${kindOf(spec)}` : ''}</td></tr>
-      <tr><td>Revisão</td><td>${eq.spec.review?.status ?? 'auto'}</td></tr>
-      <tr><td>Catálogo C × L × A</td><td>${dm.length} × ${dm.width} × ${dm.height} mm</td></tr>
-      <tr><td>Modelo C × L × A</td><td>${Math.round(s.z * 1000)} × ${Math.round(s.x * 1000)} × ${Math.round(s.y * 1000)} mm</td></tr>
-      <tr><td>Desvio C / L / A</td><td><span class="${cls(d.length)}">${pct(d.length)}</span> / <span class="${cls(d.width)}">${pct(d.width)}</span> / <span class="${cls(d.height)}">${pct(d.height)}</span></td></tr>
-      <tr><td>Triângulos</td><td>${eq.stats.triangles.toLocaleString('pt-BR')}</td></tr>
-      <tr><td>Articulações</td><td>${eq.articulations.map((a) => a.node).join(', ') || 'nenhuma'}</td></tr>
-      <tr><td>Área de treino</td><td>${eq.footprint.trainingArea.areaM2.toFixed(2).replace('.', ',')} m²</td></tr>
-    </table>
-    ${eq.warnings.length ? `<p class="warn">${eq.warnings.join(' · ')}</p>` : ''}
+    ${meta.linha ? `<div class="kicker">${meta.linha}${meta.grupoMuscular ? ` · ${meta.grupoMuscular}` : ''}</div>` : ''}
+    <table>${rows.join('')}</table>
+    ${meta.descricao ? `<p class="desc">${meta.descricao}</p>` : ''}
+    ${dev && eq.warnings.length ? `<p class="warn">${eq.warnings.join(' · ')}</p>` : ''}
+    <div class="blk-t">Planta do equipamento</div>
     <div class="plan">${svg}</div>
+    ${site?.note ? `<p class="note">${site.note}</p>` : ''}
     <div class="dl"></div>`;
   const dl = info.querySelector('.dl')!;
   const btn = (label: string, fn: () => void) => {
@@ -78,16 +111,18 @@ function openDetail(spec: EquipmentSpecInput) {
     b.onclick = fn;
     dl.append(b);
   };
-  btn('Baixar GLB', async () => download(await exportGlb(eq), `${eq.spec.id}.glb`, 'model/gltf-binary'));
-  btn('Baixar USDZ', async () => download(await exportUsdz(eq), `${eq.spec.id}.usdz`, 'model/vnd.usdz+zip'));
-  btn('Baixar planta SVG', () => download(svg, `${eq.spec.id}-planta.svg`, 'image/svg+xml'));
-  history.replaceState(null, '', `?id=${eq.spec.id}`);
+  if (dev) {
+    btn('Baixar GLB', async () => download(await exportGlb(eq), `${eq.spec.id}.glb`, 'model/gltf-binary'));
+    btn('Baixar USDZ', async () => download(await exportUsdz(eq), `${eq.spec.id}.usdz`, 'model/vnd.usdz+zip'));
+  }
+  btn('Baixar planta', () => download(svg, `${eq.spec.id}-planta.svg`, 'image/svg+xml'));
+  history.replaceState(null, '', `?id=${eq.spec.id}${dev ? '&dev=1' : ''}`);
 }
 
 dialog.addEventListener('close', () => {
   viewer?.dispose();
   viewer = null;
-  history.replaceState(null, '', location.pathname);
+  history.replaceState(null, '', location.pathname + (dev ? '?dev=1' : ''));
 });
 
 if (params.has('embed') && byId.has(params.get('id') ?? '')) {
@@ -134,7 +169,7 @@ if (params.has('embed') && byId.has(params.get('id') ?? '')) {
         const approved = s.review?.status === 'approved';
         b.innerHTML = `${thumbs.has(s.id) ? `<img loading="lazy" alt="" src="${thumbs.get(s.id)}" />` : '<img alt="" />'}
           <div class="txt"><div class="code">${s.id}</div><div class="name">${s.name}</div>
-          <span class="tag ${approved ? 'ok' : ''}">${approved ? 'aprovado' : 'precisa revisão'}</span></div>`;
+          ${dev ? `<span class="tag ${approved ? 'ok' : ''}">${approved ? 'aprovado' : 'precisa revisão'}</span>` : `<span class="tag">${lineOf(s)}</span>`}</div>`;
         b.onclick = () => openDetail(s);
         return b;
       })

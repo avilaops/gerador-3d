@@ -15,8 +15,8 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#1d1d1d",
-    "upholstery": "#121212",
+    "frame": "#161616",
+    "upholstery": "#0c0c0c",
     "accent": "#96764a"
   },
   "trainingClearanceM": 0.6,
@@ -28,7 +28,10 @@
     "linha": "Bateria de pesos",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Agachamento V-Squat LD-B034.png",
-    "pagina": 84
+    "pagina": 84,
+    "peso": "430 kg",
+    "bateria": "195 kg",
+    "descricao": "Projetado para reproduzir a biomecânica natural do agachamento, apresenta uma trajetória curva e suave que ajuda a reduzir a sobrecarga na lombar e nos joelhos. Oferece uma alternativa ao leg press e ao hack squat."
   },
   "resolved": {
     "params": {

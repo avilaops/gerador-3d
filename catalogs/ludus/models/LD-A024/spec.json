@@ -11,8 +11,8 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#b9bcc0",
-    "upholstery": "#141414",
+    "frame": "#74787d",
+    "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
@@ -24,7 +24,10 @@
     "linha": "Peso livre",
     "grupoMuscular": "Pernas e glúteos",
     "foto": "Cadeira Extensora de Peso Livre LD-A024.png",
-    "pagina": 65
+    "pagina": 65,
+    "peso": "134 kg",
+    "bateria": null,
+    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. Duas posições para colocação das anilhas oferecem curvas de resistência diferentes conforme o objetivo do exercício."
   },
   "resolved": {
     "params": {
@@ -47,7 +50,7 @@
       "hornOffset": 0.3,
       "seatHeight": 0.58,
       "pressSeatZ": 0.02830311418685121,
-      "backrestHeight": 0.8,
+      "backrestHeight": 0.681500705958144,
       "backrestTilt": 0.32,
       "rowStation": true,
       "storageHorns": 4,
