@@ -1301,9 +1301,7 @@
       "name": "Encolhimento de Ombro",
       "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 18%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-A039/model.glb",
         "usdz": "models/LD-A039/model.usdz",
@@ -1317,19 +1315,19 @@
         "height": 1230
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.98,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.65,
-        "lengthM": 2.225,
-        "areaM2": 5.9
+        "lengthM": 2.235,
+        "areaM2": 5.92
       },
       "animated": true,
       "triangles": 5688,
-      "glbBytes": 231172,
-      "usdzBytes": 714043
+      "glbBytes": 231276,
+      "usdzBytes": 712615
     },
     {
       "id": "LD-A040",
@@ -2451,7 +2449,7 @@
       "animated": true,
       "triangles": 4796,
       "glbBytes": 176608,
-      "usdzBytes": 553148
+      "usdzBytes": 553149
     },
     {
       "id": "LD-B017",
@@ -2485,7 +2483,7 @@
       "animated": true,
       "triangles": 4156,
       "glbBytes": 157176,
-      "usdzBytes": 502843
+      "usdzBytes": 502642
     },
     {
       "id": "LD-B018",
@@ -2519,7 +2517,7 @@
       "animated": true,
       "triangles": 4156,
       "glbBytes": 157124,
-      "usdzBytes": 502767
+      "usdzBytes": 502775
     },
     {
       "id": "LD-B019",
@@ -2895,7 +2893,7 @@
       "animated": true,
       "triangles": 5944,
       "glbBytes": 172392,
-      "usdzBytes": 507091
+      "usdzBytes": 507036
     },
     {
       "id": "LD-B030",

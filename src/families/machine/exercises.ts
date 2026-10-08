@@ -351,8 +351,9 @@ const DEFS = {
     levers: (c) => [
       {
         split: false,
-        pivot: [0.36, Math.min(c.hs + 0.3, c.H - 0.1), -0.62],
-        path: [[0, 0, 0.72]],
+        // Em máquina curta a alavanca encolhe para caber no comprimento.
+        pivot: [0.36, Math.min(c.hs + 0.3, c.H - 0.1), Math.max(-0.62, c.zRear + 0.14)],
+        path: [[0, 0, Math.min(0.72, c.zFront - Math.max(-0.62, c.zRear + 0.14) - 0.2)]],
         axis: X,
         swing: 0.4,
         end: 'grip-z',
