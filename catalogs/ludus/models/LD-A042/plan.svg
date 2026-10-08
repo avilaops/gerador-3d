@@ -1,25 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.0035 -1.5008 2.2767 3.1646" role="img" aria-label="Planta do Banco Reto (LD-A042): 560 × 1270 mm, com 60 cm de área de treino em volta" data-equipment="LD-A042" data-unit="m">
-<title>Planta do Banco Reto (LD-A042): 560 × 1270 mm, com 60 cm de área de treino em volta</title>
-<rect class="eq-zone" x="-0.88" y="-1.235" width="1.76" height="2.47" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0148;stroke-dasharray:0.0889 0.0593"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.0031 -1.5008 2.2758 3.1646" role="img" aria-label="Planta do Banco Reto (LD-A042): 559 × 1270 mm, com 60 cm de área de treino em volta" data-equipment="LD-A042" data-unit="m">
+<title>Planta do Banco Reto (LD-A042): 559 × 1270 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-0.8796" y="-1.235" width="1.7591" height="2.47" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0148;stroke-dasharray:0.0889 0.0593"/>
 <text class="eq-zone-label" x="0" y="-1.2795" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0845px;fill:#96764a;text-anchor:middle">área de treino · 1,76 × 2,47 m · 4,35 m²</text>
 <g class="eq-parts">
-<polygon class="eq-part" points="-0.03,-0.605 0.03,-0.605 0.03,0.605 -0.03,0.605" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.28,-0.635 0.28,-0.635 0.28,-0.575 -0.28,-0.575" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.28,0.575 0.28,0.575 0.28,0.635 -0.28,0.635" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.27,-0.625 -0.19,-0.625 -0.19,-0.545 -0.27,-0.545" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.27,0.545 -0.19,0.545 -0.19,0.625 -0.27,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.19,-0.625 0.27,-0.625 0.27,-0.545 0.19,-0.545" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="0.19,0.545 0.27,0.545 0.27,0.625 0.19,0.625" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.15,-0.5865 -0.1485,-0.5955 -0.1452,-0.6023 -0.1417,-0.6067 -0.1373,-0.6102 -0.1305,-0.6135 -0.1215,-0.615 0.1215,-0.615 0.1305,-0.6135 0.1373,-0.6102 0.1417,-0.6067 0.1452,-0.6023 0.1485,-0.5955 0.15,-0.5865 0.15,0.5865 0.1485,0.5955 0.1452,0.6023 0.1417,0.6067 0.1373,0.6102 0.1305,0.6135 0.1215,0.615 -0.1215,0.615 -0.1305,0.6135 -0.1373,0.6102 -0.1417,0.6067 -0.1452,0.6023 -0.1485,0.5955 -0.15,0.5865" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
-<polygon class="eq-part" points="-0.03,-0.6204 -0.0284,-0.6255 -0.024,-0.6293 -0.018,-0.6306 0.018,-0.6306 0.024,-0.6293 0.0284,-0.6255 0.03,-0.6204 0.03,0.6204 0.0284,0.6255 0.024,0.6293 0.018,0.6306 -0.018,0.6306 -0.024,0.6293 -0.0284,0.6255 -0.03,0.6204" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.2796,-0.5603 -0.2795,-0.563 -0.2787,-0.5657 -0.2772,-0.5684 -0.2752,-0.5708 -0.2564,-0.5887 -0.254,-0.5907 -0.2512,-0.592 -0.2484,-0.5927 -0.2457,-0.5926 -0.2434,-0.5919 -0.2414,-0.5904 -0.0346,-0.3741 -0.0332,-0.3721 -0.0326,-0.3697 -0.0326,-0.367 -0.0334,-0.3643 -0.0349,-0.3616 -0.0369,-0.3592 -0.0557,-0.3413 -0.0582,-0.3393 -0.0609,-0.338 -0.0637,-0.3373 -0.0664,-0.3374 -0.0688,-0.3381 -0.0707,-0.3396 -0.2776,-0.5559 -0.2789,-0.5579" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.2771,-0.62 -0.1771,-0.62 -0.1771,-0.49 -0.2771,-0.49" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.0326,-0.3697 0.0332,-0.3721 0.0346,-0.3741 0.2414,-0.5904 0.2434,-0.5919 0.2457,-0.5926 0.2484,-0.5927 0.2512,-0.592 0.254,-0.5907 0.2564,-0.5887 0.2752,-0.5708 0.2772,-0.5684 0.2787,-0.5657 0.2795,-0.563 0.2796,-0.5603 0.2789,-0.5579 0.2776,-0.5559 0.0707,-0.3396 0.0688,-0.3381 0.0664,-0.3374 0.0637,-0.3373 0.0609,-0.338 0.0582,-0.3393 0.0557,-0.3413 0.0369,-0.3592 0.0349,-0.3616 0.0334,-0.3643 0.0326,-0.367" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.1771,-0.62 0.2771,-0.62 0.2771,-0.49 0.1771,-0.49" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.09,-0.405 0.09,-0.405 0.09,-0.345 -0.09,-0.345" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.2796,0.5603 -0.2789,0.5579 -0.2776,0.5559 -0.0707,0.3396 -0.0688,0.3381 -0.0664,0.3374 -0.0637,0.3373 -0.0609,0.338 -0.0582,0.3393 -0.0557,0.3413 -0.0369,0.3592 -0.0349,0.3616 -0.0334,0.3643 -0.0326,0.367 -0.0326,0.3697 -0.0332,0.3721 -0.0346,0.3741 -0.2414,0.5904 -0.2434,0.5919 -0.2457,0.5926 -0.2484,0.5927 -0.2512,0.592 -0.254,0.5907 -0.2564,0.5887 -0.2752,0.5708 -0.2772,0.5684 -0.2787,0.5657 -0.2795,0.563" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.2771,0.49 -0.1771,0.49 -0.1771,0.62 -0.2771,0.62" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.0326,0.3697 0.0326,0.367 0.0334,0.3643 0.0349,0.3616 0.0369,0.3592 0.0557,0.3413 0.0582,0.3393 0.0609,0.338 0.0637,0.3373 0.0664,0.3374 0.0688,0.3381 0.0707,0.3396 0.2776,0.5559 0.2789,0.5579 0.2796,0.5603 0.2795,0.563 0.2787,0.5657 0.2772,0.5684 0.2752,0.5708 0.2564,0.5887 0.254,0.5907 0.2512,0.592 0.2484,0.5927 0.2457,0.5926 0.2434,0.5919 0.2414,0.5904 0.0346,0.3741 0.0332,0.3721" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="0.1771,0.49 0.2771,0.49 0.2771,0.62 0.1771,0.62" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.09,0.345 0.09,0.345 0.09,0.405 -0.09,0.405" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.035,-0.375 0.035,-0.375 0.035,0.375 -0.035,0.375" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
+<polygon class="eq-part" points="-0.15,-0.6065 -0.1485,-0.6155 -0.1452,-0.6223 -0.1417,-0.6267 -0.1373,-0.6302 -0.1305,-0.6335 -0.1215,-0.635 0.1215,-0.635 0.1305,-0.6335 0.1373,-0.6302 0.1417,-0.6267 0.1452,-0.6223 0.1485,-0.6155 0.15,-0.6065 0.15,0.6065 0.1485,0.6155 0.1452,0.6223 0.1417,0.6267 0.1373,0.6302 0.1305,0.6335 0.1215,0.635 -0.1215,0.635 -0.1305,0.6335 -0.1373,0.6302 -0.1417,0.6267 -0.1452,0.6223 -0.1485,0.6155 -0.15,0.6065" style="fill:#141413;stroke:#141413;stroke-width:0.0059;stroke-linejoin:round"/>
 </g>
-<line class="eq-dim" x1="-0.28" y1="1.4326" x2="0.28" y2="1.4326" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="-0.28" y1="1.3708" x2="-0.28" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="0.28" y1="1.3708" x2="0.28" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="-0.2796" y1="1.4326" x2="0.2796" y2="1.4326" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="-0.2796" y1="1.3708" x2="-0.2796" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="0.2796" y1="1.3708" x2="0.2796" y2="1.4943" style="stroke:#6d6a63;stroke-width:0.0119"/>
 <text class="eq-text" x="0" y="1.5571" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">L 560 mm</text>
-<line class="eq-dim" x1="1.0776" y1="-0.635" x2="1.0776" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="1.0158" y1="-0.635" x2="1.1393" y2="-0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<line class="eq-dim" x1="1.0158" y1="0.635" x2="1.1393" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
-<text class="eq-text" x="1.1932" y="0" transform="rotate(90 1.1932 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">C 1270 mm</text>
+<line class="eq-dim" x1="1.0772" y1="-0.635" x2="1.0772" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0154" y1="-0.635" x2="1.1389" y2="-0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<line class="eq-dim" x1="1.0154" y1="0.635" x2="1.1389" y2="0.635" style="stroke:#6d6a63;stroke-width:0.0119"/>
+<text class="eq-text" x="1.1928" y="0" transform="rotate(90 1.1928 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle">C 1270 mm</text>
 <text class="eq-text" x="0" y="1.646" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0889px;fill:#6d6a63;text-anchor:middle;font-size:0.0711px;letter-spacing:.1em">▼ FRENTE</text>
 </svg>

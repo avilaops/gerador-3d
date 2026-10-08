@@ -231,6 +231,14 @@ const DEFS = {
     seatAt: 0.22,
     levers: (c) => row(c, 0.22),
   },
+  'cable-pulldown': {
+    label: 'Puxada alta por cabo',
+    station: 'seat-thigh',
+    seatHeight: 0.46,
+    facing: -1,
+    seatAt: 0.16,
+    levers: () => [],
+  },
   pulldown: {
     label: 'Puxada alta',
     station: 'seat-thigh',

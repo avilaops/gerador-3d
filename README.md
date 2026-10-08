@@ -96,7 +96,7 @@ Os specs gerados pela tabela saem com `review.status = "needs_review"`: a silhue
 
 Diferenças conhecidas em relação às fotos:
 
-- Ajustados contra a foto: LD-A002, LD-B004, LD-B035 e o pórtico do Pendulum e do V-squat. Os demais representam o tipo do equipamento.
+- Ajustados contra a foto: LD-A002, LD-B004, LD-B012 (puxada por cabo), LD-B035, LD-A042 (cavaletes em A) e o pórtico do Pendulum e do V-squat. As máquinas de bateria usam a base compacta das fotos (estabilizador, espinha e pé dianteiro). Os demais representam o tipo do equipamento.
 - Iso-laterais com bateria: torres baixas nas laterais e quadro prata com braços coloridos; nas fotos as colunas são pretas.
 - Arcos, mastros e braços de empurrar e puxar já são de tubo curvado; bases, pernas de apoio e a maior parte dos bancos ainda são retos.
 

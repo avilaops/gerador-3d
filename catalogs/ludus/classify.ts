@@ -35,7 +35,7 @@ const pl = (mechanism: string, extra: Params = {}): Rule => [
   { mechanism, ...extra },
 ];
 const bench = (variant: string, extra: Params = {}): Rule => ['bench', { variant, ...extra }];
-const rack = (variant: string): Rule => ['rack', { variant }];
+const rack = (variant: string, extra: Params = {}): Rule => ['rack', { variant, ...extra }];
 const cable = (variant: string): Rule => ['cable-station', { variant }];
 const legs = (variant: string): Rule => ['leg-press', { variant }];
 const deg = (d: number) => Math.round(((d * Math.PI) / 180) * 1000) / 1000;
@@ -81,7 +81,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-A039': pl('shrug'),
   'LD-A040': pl('incline-press'),
   'LD-A041': legs('lever-squat'),
-  'LD-A042': bench('flat', { wheels: false }),
+  'LD-A042': bench('flat', { wheels: false, aLegs: true }),
   'LD-A043': bench('decline'),
   'LD-A044': bench('incline', { backAngle: deg(30) }),
   'LD-A045': bench('incline', { backAngle: deg(55) }),
@@ -95,7 +95,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-A053': rack('bar-holder'),
   'LD-A054': bench('hyper'),
   'LD-A055': bench('preacher'),
-  'LD-A056': rack('plate-tree'),
+  'LD-A056': rack('plate-tree', { showPlates: false }),
   'LD-B001': st('prone-leg-curl'),
   'LD-B002': st('leg-extension'),
   'LD-B003': legs('horizontal'),
@@ -106,7 +106,7 @@ const BY_CODE: Record<string, Rule> = {
   'LD-B009': st('assisted-chin'),
   'LD-B010': st('standing-calf'),
   'LD-B011': st('glute-kickback'),
-  'LD-B012': st('pulldown'),
+  'LD-B012': st('cable-pulldown'),
   'LD-B013': st('ab-crunch'),
   'LD-B014': st('hip-abduction'),
   'LD-B015': st('hip-adduction'),

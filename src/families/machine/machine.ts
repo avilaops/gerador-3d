@@ -11,6 +11,7 @@ import type { FamilyBuildResult, DimsM } from '../types';
 import type { PartKit } from '../../parts/kit';
 import { Rig, lerp } from '../../parts/rig';
 import { stackTower } from '../../parts/assemblies';
+import { bentTube, cable, pulley } from '../../parts/primitives';
 import type { Articulation, Vec3 } from '../../spec/schema';
 import { buildStation } from './stations';
 import { EXERCISES, type ExerciseId } from './exercises';
@@ -59,16 +60,31 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const zRear = -L / 2;
   const zFront = L / 2;
 
-  // Base: longarinas no comprimento todo, travessa traseira na largura toda.
   const base = rig.group('base');
-  for (const s of [-1, 1] as const) {
-    rig.tube(base, [s * railX, y0, zRear], [s * railX, y0, zFront], t);
-    rig.foot(base, s * (W / 2 - 0.06), zRear + 0.06);
-    rig.foot(base, s * railX, zFront - 0.06);
+  const sapata = (x: number, zc: number, ao_longo: 'x' | 'z' = 'x') =>
+    rig.box(base, ao_longo === 'x' ? [0.17, 0.012, 0.1] : [0.1, 0.012, 0.17], [x, 0.006, zc], 'rubber', 'foot');
+  if (plates) {
+    // Anilhas: longarinas no comprimento todo, travessa traseira na largura toda.
+    for (const s of [-1, 1] as const) {
+      rig.tube(base, [s * railX, y0, zRear], [s * railX, y0, zFront], t);
+      sapata(s * (W / 2 - 0.09), zRear + t / 2);
+      sapata(s * railX, zFront - 0.08, 'z');
+    }
+    rig.tube(base, [-W / 2, y0, zRear + t / 2], [W / 2, y0, zRear + t / 2], t);
+    rig.tube(base, [-railX, y0, zFront - t / 2], [railX, y0, zFront - t / 2], t);
+    rig.tube(base, [0, y0, zRear + t / 2], [0, y0, zFront - t / 2], t);
+  } else {
+    // Bateria: base compacta. Estabilizador atrás (na largura toda), espinha central
+    // e um pé na frente; os apoios das alavancas trazem as próprias travessas.
+    const pe = Math.min(railX, 0.3);
+    rig.tube(base, [-W / 2, y0, zRear + t / 2], [W / 2, y0, zRear + t / 2], t, 'frame', 'base_rear');
+    rig.tube(base, [0, y0, zRear + t / 2], [0, y0, zFront - t / 2], t, 'frame', 'base_spine');
+    rig.tube(base, [-pe, y0, zFront - t / 2], [pe, y0, zFront - t / 2], t, 'frame', 'base_front');
+    for (const s of [-1, 1] as const) {
+      sapata(s * (W / 2 - 0.09), zRear + t / 2);
+      sapata(s * (pe - 0.06), zFront - t / 2);
+    }
   }
-  rig.tube(base, [-W / 2, y0, zRear + t / 2], [W / 2, y0, zRear + t / 2], t);
-  rig.tube(base, [-railX, y0, zFront - t / 2], [railX, y0, zFront - t / 2], t);
-  rig.tube(base, [0, y0, zRear + t / 2], [0, y0, zFront - t / 2], t);
 
   // Resistência: torre(s) com bateria.
   const towerZ = zRear + 0.125;
@@ -353,6 +369,9 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   }
 
   if (o.exercise === 'assisted-chin') buildChinStation(rig, station, { H, towerUz, t });
+  if (o.exercise === 'cable-pulldown') {
+    articulations.push(buildCablePulldown(rig, station, { H, towerUz, t, hs: o.seatHeight }));
+  }
 
   return { root, articulations };
 }
@@ -378,4 +397,66 @@ function buildChinStation(
     rig.tube(dip, [s * 0.17, 0.32, towerUz], [s * 0.26, 0.32, 0.3], 0.05);
     rig.box(dip, [0.2, 0.02, 0.14], [s * 0.3, 0.35, 0.3], 'plate', 'step');
   }
+}
+
+/**
+ * Puxada alta por cabo: lança que sai do alto da torre, polia, cabo e barra.
+ * A barra desce em linha reta. O cabo tem dois trechos sobrepostos (um fixo, da
+ * polia até a barra em repouso; outro que desce com a barra), de modo que o
+ * conjunto parece um cabo só em qualquer ponto do movimento.
+ */
+function buildCablePulldown(
+  rig: Rig,
+  g: THREE.Group,
+  o: { H: number; towerUz: number; t: number; hs: number }
+): Articulation {
+  const { H, towerUz, t, hs } = o;
+  const boom = rig.group('boom', g);
+  const yb = H - 0.06;
+  const zp = 0.08;
+  rig.path(
+    boom,
+    [
+      [0, H - 0.3, towerUz],
+      [0, yb, towerUz - Math.sign(towerUz) * 0.18],
+      [0, yb, zp],
+    ],
+    [t, 0.06],
+    'frame',
+    'boom_tube',
+    0.14
+  );
+  const py = yb - 0.1;
+  boom.add(pulley(rig.kit, [0, py, zp], 0.11, 'x'));
+  const travel = Math.min(0.55, py - (hs + 0.75));
+  const barY = py - Math.max(travel, 0.3) - 0.02;
+  boom.add(cable(rig.kit, [0, py, zp], [0, barY, zp], 'cable_fixed'));
+
+  const bar = rig.group('bar', g);
+  bar.position.set(0, barY, zp);
+  bar.add(cable(rig.kit, [0, 0, 0], [0, travel, 0], 'cable_moving'));
+  rig.rod(bar, [0, 0, 0], [0, -0.05, 0], 0.03, 'chrome', 'bar_swivel');
+  // Barra larga com as pontas dobradas para baixo.
+  bar.add(
+    bentTube(
+      rig.kit,
+      [
+        [-0.6, -0.17, 0],
+        [-0.42, -0.06, 0],
+        [0.42, -0.06, 0],
+        [0.6, -0.17, 0],
+      ],
+      0.03,
+      { round: true, material: 'chrome', radius: 0.08, name: 'bar_tube' }
+    )
+  );
+  for (const s of [-1, 1] as const) rig.grip(bar, [s * 0.44, -0.07, 0], [s * 0.6, -0.17, 0], 'bar_grip');
+  return {
+    node: 'bar',
+    type: 'prismatic',
+    axis: [0, -1, 0],
+    pivot: [0, barY, zp],
+    range: [0, travel],
+    driver: 'phase',
+  };
 }

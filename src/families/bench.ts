@@ -31,6 +31,8 @@ export const BenchParamsSchema = z.object({
   seatHeight: z.number().positive(),
   /** Rodinhas e alça de transporte. */
   wheels: z.boolean(),
+  /** Banco reto sobre dois cavaletes em A, sem base no piso. */
+  aLegs: z.boolean(),
 });
 export type BenchParams = z.infer<typeof BenchParamsSchema>;
 
@@ -47,6 +49,7 @@ export const bench: FamilyDefinition<BenchParams> = {
       backAngle: 0.6,
       seatHeight: Math.min(0.44, d.height - 0.05),
       wheels: true,
+      aLegs: false,
     };
   },
 
@@ -63,14 +66,29 @@ export const bench: FamilyDefinition<BenchParams> = {
     const olympic = p.variant.startsWith('olympic');
 
     const base = rig.group('base');
-    rig.tube(base, [0, y0, zR + t / 2], [0, y0, zF - t / 2], t);
-    rig.tube(base, [-W / 2, y0, zR + t / 2], [W / 2, y0, zR + t / 2], t);
-    rig.tube(base, [-W / 2, y0, zF - t / 2], [W / 2, y0, zF - t / 2], t);
-    for (const s of [-1, 1] as const) {
-      rig.foot(base, s * (W / 2 - 0.05), zR + 0.05, [0.08, 0.08]);
-      rig.foot(base, s * (W / 2 - 0.05), zF - 0.05, [0.08, 0.08]);
+    const cavaletes = p.variant === 'flat' && p.aLegs;
+    if (cavaletes) {
+      // Dois cavaletes em A: as pernas abrem na largura toda, sem tubo no piso.
+      const yTop = H - 0.09;
+      for (const zc of [zR + 0.16, zF - 0.16]) {
+        const lean = zc < 0 ? -1 : 1;
+        for (const s of [-1, 1] as const) {
+          rig.tube(base, [s * 0.07, yTop, zc - lean * 0.1], [s * (W / 2 - 0.035), 0.01, zc + lean * 0.08], [0.05, 0.09]);
+          rig.box(base, [0.1, 0.012, 0.13], [s * (W / 2 - 0.05), 0.006, zc + lean * 0.08], 'rubber', 'foot');
+        }
+        rig.tube(base, [-0.09, yTop, zc - lean * 0.1], [0.09, yTop, zc - lean * 0.1], [0.06, 0.05]);
+      }
+      rig.tube(base, [0, yTop, zR + 0.26], [0, yTop, zF - 0.26], [0.07, 0.05], 'frame', 'bench_spine');
+    } else {
+      rig.tube(base, [0, y0, zR + t / 2], [0, y0, zF - t / 2], t);
+      rig.tube(base, [-W / 2, y0, zR + t / 2], [W / 2, y0, zR + t / 2], t);
+      rig.tube(base, [-W / 2, y0, zF - t / 2], [W / 2, y0, zF - t / 2], t);
+      for (const s of [-1, 1] as const) {
+        rig.foot(base, s * (W / 2 - 0.05), zR + 0.05, [0.08, 0.08]);
+        rig.foot(base, s * (W / 2 - 0.05), zF - 0.05, [0.08, 0.08]);
+      }
     }
-    if (p.wheels && !olympic) {
+    if (p.wheels && !olympic && !cavaletes) {
       for (const s of [-1, 1] as const)
         rig.rod(base, [s * (W / 2 - 0.09), 0.04, zR + 0.02], [s * (W / 2 - 0.03), 0.04, zR + 0.02], 0.075, 'rubber', 'wheel');
       rig.grip(base, [-0.08, 0.16, zF - 0.02], [0.08, 0.16, zF - 0.02], 'carry_handle');
@@ -93,8 +111,8 @@ export const bench: FamilyDefinition<BenchParams> = {
     switch (p.variant) {
       case 'flat': {
         const seat = rig.group('seat');
-        rig.pad(seat, [pw, 0.075, L - 0.04], [0, H - 0.0375, 0], 0, 'bench_pad');
-        rig.path(
+        rig.pad(seat, [pw, 0.075, cavaletes ? L : L - 0.04], [0, H - 0.0375, 0], 0, 'bench_pad');
+        if (!cavaletes) rig.path(
           seat,
           [
             [0, y0, zR + t / 2],

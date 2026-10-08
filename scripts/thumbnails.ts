@@ -83,7 +83,7 @@ try {
           phase: arg('phase') ? options.phase : Number(spec.meta?.thumbPhase ?? 0),
           azimuth:
             options.azimuth ??
-            (spec.dimensionsMm.length > 1.7 * spec.dimensionsMm.width ? 62 : 38),
+            (spec.dimensionsMm.length > 1.7 * spec.dimensionsMm.width ? -62 : -38),
         }
       )) as string;
       const out = join(dir, 'models', spec.id);

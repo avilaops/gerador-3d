@@ -8,7 +8,8 @@
     "height": 1000
   },
   "params": {
-    "variant": "plate-tree"
+    "variant": "plate-tree",
+    "showPlates": false
   },
   "materials": {
     "frame": "#161616",
@@ -34,7 +35,7 @@
       "variant": "plate-tree",
       "tube": 0.07,
       "tiers": 3,
-      "showPlates": true
+      "showPlates": false
     },
     "articulations": [],
     "bboxM": {
@@ -52,10 +53,10 @@
       "areaM2": 3.2321442857142855
     },
     "stats": {
-      "triangles": 4784,
-      "meshes": 24,
-      "geometries": 5,
-      "materials": 4
+      "triangles": 1648,
+      "meshes": 20,
+      "geometries": 4,
+      "materials": 3
     }
   }
 }

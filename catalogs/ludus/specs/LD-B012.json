@@ -12,7 +12,7 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "pulldown"
+    "mechanism": "cable-pulldown"
   },
   "materials": {
     "frame": "#161616",

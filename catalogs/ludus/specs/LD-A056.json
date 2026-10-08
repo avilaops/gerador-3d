@@ -8,7 +8,8 @@
     "height": 1000
   },
   "params": {
-    "variant": "plate-tree"
+    "variant": "plate-tree",
+    "showPlates": false
   },
   "materials": {
     "frame": "#161616",

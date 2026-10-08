@@ -9,7 +9,8 @@
   },
   "params": {
     "variant": "flat",
-    "wheels": false
+    "wheels": false,
+    "aLegs": true
   },
   "materials": {
     "frame": "#161616",
@@ -36,28 +37,29 @@
       "tube": 0.06,
       "padWidth": 0.3,
       "backAngle": 0.6,
-      "seatHeight": 0.36,
-      "wheels": false
+      "seatHeight": 0.34246318883680227,
+      "wheels": false,
+      "aLegs": true
     },
     "articulations": [],
     "bboxM": {
       "length": 1.27,
-      "width": 0.56,
-      "height": 0.41
+      "width": 0.559,
+      "height": 0.412
     },
     "trainingArea": {
-      "minX": -0.88,
-      "maxX": 0.88,
-      "minZ": -1.2349999993294478,
-      "maxZ": 1.2349999993294478,
-      "widthM": 1.76,
-      "lengthM": 2.4699999986588956,
-      "areaM2": 4.347199997639656
+      "minX": -0.8795581970146809,
+      "maxX": 0.8795581970146809,
+      "minZ": -1.234999990463257,
+      "maxZ": 1.234999990463257,
+      "widthM": 1.7591163940293617,
+      "lengthM": 2.469999980926514,
+      "areaM2": 4.345017459700041
     },
     "stats": {
-      "triangles": 1352,
-      "meshes": 9,
-      "geometries": 4,
+      "triangles": 1426,
+      "meshes": 12,
+      "geometries": 5,
       "materials": 3
     }
   }

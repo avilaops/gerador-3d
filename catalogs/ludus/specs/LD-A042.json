@@ -9,7 +9,8 @@
   },
   "params": {
     "variant": "flat",
-    "wheels": false
+    "wheels": false,
+    "aLegs": true
   },
   "materials": {
     "frame": "#161616",

@@ -68,7 +68,7 @@
         "pivot": [
           -0.3,
           1.94,
-          -0.288
+          -0.2855
         ],
         "range": [
           0,
@@ -87,7 +87,7 @@
         "pivot": [
           0.3,
           1.94,
-          -0.288
+          -0.2855
         ],
         "range": [
           0,
@@ -97,18 +97,18 @@
       }
     ],
     "bboxM": {
-      "length": 1.66,
+      "length": 1.675,
       "width": 1.05,
       "height": 2.044
     },
     "trainingArea": {
       "minX": -1.125,
       "maxX": 1.125,
-      "minZ": -1.43,
-      "maxZ": 1.43,
+      "minZ": -1.4375,
+      "maxZ": 1.4375,
       "widthM": 2.25,
-      "lengthM": 2.86,
-      "areaM2": 6.435
+      "lengthM": 2.875,
+      "areaM2": 6.46875
     },
     "stats": {
       "triangles": 3804,

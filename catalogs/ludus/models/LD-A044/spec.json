@@ -37,7 +37,8 @@
       "padWidth": 0.3,
       "backAngle": 0.524,
       "seatHeight": 0.44,
-      "wheels": true
+      "wheels": true,
+      "aLegs": false
     },
     "articulations": [],
     "bboxM": {

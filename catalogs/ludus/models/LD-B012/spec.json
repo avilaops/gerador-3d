@@ -12,7 +12,7 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "pulldown"
+    "mechanism": "cable-pulldown"
   },
   "materials": {
     "frame": "#161616",
@@ -38,17 +38,17 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.43225,
       "baseRailX": 0.30875,
-      "towerZ": -0.560141843899224,
+      "towerZ": -0.5529298245614035,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
       "stackTravel": 0.18079999998807902,
       "seatHeight": 0.46,
-      "seatZ": 0.27405673755968957,
+      "seatZ": 0.2169375438596491,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
       "backrestTilt": 0.12,
-      "mechanism": "pulldown",
+      "mechanism": "cable-pulldown",
       "stacks": 1,
       "swingScale": 1,
       "armPivotHeight": 2.069999999850988,
@@ -69,8 +69,8 @@
         ],
         "pivot": [
           0,
-          1.4901176126347337e-10,
-          -0.5501418439737298
+          1.4901175432457947e-10,
+          -0.5504298245614034
         ],
         "range": [
           0,
@@ -79,62 +79,43 @@
         "driver": "phase"
       },
       {
-        "node": "arm_right",
-        "type": "revolute",
+        "node": "bar",
+        "type": "prismatic",
         "axis": [
-          -1,
           0,
+          -1,
           0
         ],
         "pivot": [
-          -0.44,
-          2.1599999999999997,
-          -0.3359432625148162
+          0,
+          1.5299999999999994,
+          0.0825
         ],
         "range": [
           0,
-          0.5
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_left",
-        "type": "revolute",
-        "axis": [
-          -1,
-          0,
-          0
-        ],
-        "pivot": [
-          0.44,
-          2.1599999999999997,
-          -0.3359432625148162
-        ],
-        "range": [
-          0,
-          0.5
+          0.55
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.39,
+      "length": 1.391,
       "width": 1.235,
       "height": 2.26
     },
     "trainingArea": {
       "minX": -1.2175,
       "maxX": 1.2175,
-      "minZ": -1.2951418439737297,
-      "maxZ": 1.2951418439737297,
+      "minZ": -1.2954298245614035,
+      "maxZ": 1.2954298245614035,
       "widthM": 2.435,
-      "lengthM": 2.5902836879474593,
-      "areaM2": 6.307340780152064
+      "lengthM": 2.590859649122807,
+      "areaM2": 6.3087432456140355
     },
     "stats": {
-      "triangles": 4076,
-      "meshes": 55,
-      "geometries": 8,
+      "triangles": 3600,
+      "meshes": 51,
+      "geometries": 7,
       "materials": 8
     }
   }

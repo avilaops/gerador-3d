@@ -23,19 +23,19 @@
         "height": 1320
       },
       "deviationPct": {
-        "length": 0.83,
+        "length": 0.01,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.21,
-        "lengthM": 3.025,
-        "areaM2": 6.69
+        "lengthM": 3.01,
+        "areaM2": 6.65
       },
       "animated": true,
       "triangles": 4460,
-      "glbBytes": 131592,
-      "usdzBytes": 404775
+      "glbBytes": 131900,
+      "usdzBytes": 405255
     },
     {
       "id": "LD-A002",
@@ -69,7 +69,7 @@
       "animated": true,
       "triangles": 8844,
       "glbBytes": 426572,
-      "usdzBytes": 1318831
+      "usdzBytes": 1318928
     },
     {
       "id": "LD-A003",
@@ -91,9 +91,9 @@
         "height": 1730
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.26
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.58,
@@ -102,8 +102,8 @@
       },
       "animated": true,
       "triangles": 4052,
-      "glbBytes": 182216,
-      "usdzBytes": 561964
+      "glbBytes": 182420,
+      "usdzBytes": 562320
     },
     {
       "id": "LD-A004",
@@ -125,19 +125,19 @@
         "height": 2090
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.22
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.63,
         "lengthM": 2.5,
-        "areaM2": 6.57
+        "areaM2": 6.58
       },
       "animated": true,
       "triangles": 4072,
-      "glbBytes": 178128,
-      "usdzBytes": 557319
+      "glbBytes": 178300,
+      "usdzBytes": 557486
     },
     {
       "id": "LD-A005",
@@ -159,19 +159,19 @@
         "height": 2040
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.9,
         "width": 0,
         "height": 0.19
       },
       "trainingArea": {
         "widthM": 2.25,
-        "lengthM": 2.86,
-        "areaM2": 6.44
+        "lengthM": 2.875,
+        "areaM2": 6.47
       },
       "animated": true,
       "triangles": 3804,
-      "glbBytes": 132752,
-      "usdzBytes": 398321
+      "glbBytes": 132912,
+      "usdzBytes": 398346
     },
     {
       "id": "LD-A006",
@@ -193,19 +193,19 @@
         "height": 2010
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.97,
         "width": 0,
         "height": 0.19
       },
       "trainingArea": {
         "widthM": 2.25,
-        "lengthM": 2.75,
-        "areaM2": 6.19
+        "lengthM": 2.765,
+        "areaM2": 6.22
       },
       "animated": true,
       "triangles": 3804,
-      "glbBytes": 132864,
-      "usdzBytes": 398616
+      "glbBytes": 132968,
+      "usdzBytes": 398648
     },
     {
       "id": "LD-A007",
@@ -227,19 +227,19 @@
         "height": 1070
       },
       "deviationPct": {
-        "length": 0.89,
+        "length": 0.01,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.75,
-        "lengthM": 2.895,
-        "areaM2": 7.96
+        "lengthM": 2.88,
+        "areaM2": 7.92
       },
       "animated": true,
       "triangles": 4992,
-      "glbBytes": 158096,
-      "usdzBytes": 471815
+      "glbBytes": 158144,
+      "usdzBytes": 471987
     },
     {
       "id": "LD-A008",
@@ -261,19 +261,19 @@
         "height": 530
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.73,
         "width": 0,
         "height": -0.02
       },
       "trainingArea": {
         "widthM": 2.02,
-        "lengthM": 3.25,
-        "areaM2": 6.57
+        "lengthM": 3.265,
+        "areaM2": 6.6
       },
       "animated": true,
       "triangles": 1928,
-      "glbBytes": 48680,
-      "usdzBytes": 135651
+      "glbBytes": 48788,
+      "usdzBytes": 135728
     },
     {
       "id": "LD-A009",
@@ -295,9 +295,9 @@
         "height": 1710
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.27
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.4,
@@ -306,8 +306,8 @@
       },
       "animated": true,
       "triangles": 4072,
-      "glbBytes": 178032,
-      "usdzBytes": 556908
+      "glbBytes": 178284,
+      "usdzBytes": 557098
     },
     {
       "id": "LD-A010",
@@ -340,8 +340,8 @@
       },
       "animated": true,
       "triangles": 4968,
-      "glbBytes": 189080,
-      "usdzBytes": 597874
+      "glbBytes": 189144,
+      "usdzBytes": 597863
     },
     {
       "id": "LD-A011",
@@ -363,7 +363,7 @@
         "height": 1300
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -374,8 +374,8 @@
       },
       "animated": true,
       "triangles": 5576,
-      "glbBytes": 204688,
-      "usdzBytes": 632820
+      "glbBytes": 204748,
+      "usdzBytes": 632773
     },
     {
       "id": "LD-A012",
@@ -397,7 +397,7 @@
         "height": 1880
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -408,8 +408,8 @@
       },
       "animated": true,
       "triangles": 5652,
-      "glbBytes": 211028,
-      "usdzBytes": 643352
+      "glbBytes": 211064,
+      "usdzBytes": 643472
     },
     {
       "id": "LD-A013",
@@ -431,9 +431,9 @@
         "height": 1530
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.33
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.7,
@@ -442,8 +442,8 @@
       },
       "animated": true,
       "triangles": 4148,
-      "glbBytes": 184176,
-      "usdzBytes": 567448
+      "glbBytes": 184448,
+      "usdzBytes": 567788
     },
     {
       "id": "LD-A014",
@@ -465,9 +465,9 @@
         "height": 1760
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.02,
         "width": 0,
-        "height": 0.26
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.7,
@@ -476,8 +476,8 @@
       },
       "animated": true,
       "triangles": 4148,
-      "glbBytes": 184236,
-      "usdzBytes": 567700
+      "glbBytes": 184352,
+      "usdzBytes": 567782
     },
     {
       "id": "LD-A015",
@@ -499,19 +499,19 @@
         "height": 2040
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.83,
         "width": 0,
         "height": 0.19
       },
       "trainingArea": {
         "widthM": 2.27,
-        "lengthM": 3.01,
-        "areaM2": 6.83
+        "lengthM": 3.025,
+        "areaM2": 6.87
       },
       "animated": true,
       "triangles": 3804,
-      "glbBytes": 132752,
-      "usdzBytes": 398446
+      "glbBytes": 132880,
+      "usdzBytes": 398653
     },
     {
       "id": "LD-A016",
@@ -533,9 +533,9 @@
         "height": 1200
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.55
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.33,
@@ -544,8 +544,8 @@
       },
       "animated": true,
       "triangles": 5128,
-      "glbBytes": 234596,
-      "usdzBytes": 761457
+      "glbBytes": 234764,
+      "usdzBytes": 761796
     },
     {
       "id": "LD-A017",
@@ -567,9 +567,9 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.44
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.5,
@@ -578,8 +578,8 @@
       },
       "animated": true,
       "triangles": 4424,
-      "glbBytes": 239480,
-      "usdzBytes": 763926
+      "glbBytes": 239708,
+      "usdzBytes": 764190
     },
     {
       "id": "LD-A018",
@@ -601,19 +601,19 @@
         "height": 1090
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.82,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.44,
-        "lengthM": 3.02,
-        "areaM2": 7.37
+        "lengthM": 3.035,
+        "areaM2": 7.41
       },
       "animated": true,
       "triangles": 4140,
-      "glbBytes": 182496,
-      "usdzBytes": 576694
+      "glbBytes": 182572,
+      "usdzBytes": 576660
     },
     {
       "id": "LD-A019",
@@ -635,19 +635,19 @@
         "height": 1050
       },
       "deviationPct": {
-        "length": 0.72,
+        "length": 0.96,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 3.39,
-        "lengthM": 3.305,
-        "areaM2": 11.2
+        "lengthM": 3.31,
+        "areaM2": 11.22
       },
       "animated": true,
       "triangles": 4608,
-      "glbBytes": 157380,
-      "usdzBytes": 470338
+      "glbBytes": 157388,
+      "usdzBytes": 470244
     },
     {
       "id": "LD-A020",
@@ -703,19 +703,19 @@
         "height": 1000
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.83,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.55,
-        "lengthM": 3.01,
-        "areaM2": 7.68
+        "lengthM": 3.025,
+        "areaM2": 7.71
       },
       "animated": true,
       "triangles": 4070,
-      "glbBytes": 187776,
-      "usdzBytes": 596251
+      "glbBytes": 187932,
+      "usdzBytes": 596349
     },
     {
       "id": "LD-A022",
@@ -737,7 +737,7 @@
         "height": 1450
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -748,8 +748,8 @@
       },
       "animated": true,
       "triangles": 5636,
-      "glbBytes": 209644,
-      "usdzBytes": 650603
+      "glbBytes": 209724,
+      "usdzBytes": 650582
     },
     {
       "id": "LD-A023",
@@ -805,7 +805,7 @@
         "height": 1450
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -816,8 +816,8 @@
       },
       "animated": true,
       "triangles": 5348,
-      "glbBytes": 208384,
-      "usdzBytes": 649622
+      "glbBytes": 208416,
+      "usdzBytes": 649649
     },
     {
       "id": "LD-A025",
@@ -839,19 +839,19 @@
         "height": 1370
       },
       "deviationPct": {
-        "length": 0.17,
+        "length": 0.2,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.04,
-        "lengthM": 2.442,
+        "lengthM": 2.443,
         "areaM2": 4.98
       },
       "animated": true,
       "triangles": 3608,
-      "glbBytes": 130996,
-      "usdzBytes": 402985
+      "glbBytes": 131084,
+      "usdzBytes": 402945
     },
     {
       "id": "LD-A026",
@@ -907,7 +907,7 @@
         "height": 1020
       },
       "deviationPct": {
-        "length": 0.5,
+        "length": 0.53,
         "width": 0,
         "height": 0
       },
@@ -918,8 +918,8 @@
       },
       "animated": true,
       "triangles": 3884,
-      "glbBytes": 131144,
-      "usdzBytes": 405323
+      "glbBytes": 131176,
+      "usdzBytes": 405343
     },
     {
       "id": "LD-A028",
@@ -941,7 +941,7 @@
         "height": 2290
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -952,8 +952,8 @@
       },
       "animated": true,
       "triangles": 4080,
-      "glbBytes": 77912,
-      "usdzBytes": 207248
+      "glbBytes": 77976,
+      "usdzBytes": 207236
     },
     {
       "id": "LD-A029",
@@ -1043,7 +1043,7 @@
         "height": 1200
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
@@ -1054,8 +1054,8 @@
       },
       "animated": true,
       "triangles": 3060,
-      "glbBytes": 106988,
-      "usdzBytes": 330844
+      "glbBytes": 107172,
+      "usdzBytes": 331031
     },
     {
       "id": "LD-A032",
@@ -1077,9 +1077,9 @@
         "height": 1760
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.26
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.53,
@@ -1088,8 +1088,8 @@
       },
       "animated": true,
       "triangles": 4148,
-      "glbBytes": 184172,
-      "usdzBytes": 567656
+      "glbBytes": 184436,
+      "usdzBytes": 567965
     },
     {
       "id": "LD-A033",
@@ -1111,7 +1111,7 @@
         "height": 1350
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
         "height": 0
       },
@@ -1122,8 +1122,8 @@
       },
       "animated": true,
       "triangles": 4144,
-      "glbBytes": 177664,
-      "usdzBytes": 561784
+      "glbBytes": 177872,
+      "usdzBytes": 562077
     },
     {
       "id": "LD-A034",
@@ -1179,7 +1179,7 @@
         "height": 1680
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.03,
         "width": 0,
         "height": 0
       },
@@ -1190,8 +1190,8 @@
       },
       "animated": true,
       "triangles": 5644,
-      "glbBytes": 253084,
-      "usdzBytes": 804863
+      "glbBytes": 253116,
+      "usdzBytes": 804771
     },
     {
       "id": "LD-A036",
@@ -1315,9 +1315,9 @@
         "height": 1230
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.02,
         "width": 0,
-        "height": 0.17
+        "height": -0.02
       },
       "trainingArea": {
         "widthM": 2.65,
@@ -1326,8 +1326,8 @@
       },
       "animated": true,
       "triangles": 2872,
-      "glbBytes": 50268,
-      "usdzBytes": 139117
+      "glbBytes": 50468,
+      "usdzBytes": 139371
     },
     {
       "id": "LD-A040",
@@ -1349,9 +1349,9 @@
         "height": 1910
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0.25
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.36,
@@ -1360,8 +1360,8 @@
       },
       "animated": true,
       "triangles": 4148,
-      "glbBytes": 184332,
-      "usdzBytes": 567761
+      "glbBytes": 184476,
+      "usdzBytes": 567967
     },
     {
       "id": "LD-A041",
@@ -1418,18 +1418,18 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0,
-        "height": 0
+        "width": -0.16,
+        "height": 0.4
       },
       "trainingArea": {
-        "widthM": 1.76,
+        "widthM": 1.759,
         "lengthM": 2.47,
         "areaM2": 4.35
       },
       "animated": false,
-      "triangles": 1352,
-      "glbBytes": 82432,
-      "usdzBytes": 265769
+      "triangles": 1426,
+      "glbBytes": 96836,
+      "usdzBytes": 311837
     },
     {
       "id": "LD-A043",
@@ -1903,9 +1903,9 @@
         "areaM2": 3.23
       },
       "animated": false,
-      "triangles": 4784,
-      "glbBytes": 54328,
-      "usdzBytes": 160477
+      "triangles": 1648,
+      "glbBytes": 34204,
+      "usdzBytes": 99193
     },
     {
       "id": "LD-B001",
@@ -1927,19 +1927,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.04,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.295,
-        "lengthM": 2.875,
+        "lengthM": 2.876,
         "areaM2": 6.6
       },
       "animated": true,
-      "triangles": 3898,
-      "glbBytes": 166784,
-      "usdzBytes": 536200
+      "triangles": 3674,
+      "glbBytes": 166640,
+      "usdzBytes": 535366
     },
     {
       "id": "LD-B002",
@@ -1961,19 +1961,19 @@
         "height": 1445
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.08,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.33,
-        "lengthM": 2.45,
+        "lengthM": 2.451,
         "areaM2": 5.71
       },
       "animated": true,
-      "triangles": 4516,
-      "glbBytes": 175916,
-      "usdzBytes": 551423
+      "triangles": 4292,
+      "glbBytes": 175672,
+      "usdzBytes": 550465
     },
     {
       "id": "LD-B003",
@@ -2063,19 +2063,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.1,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.13,
-        "lengthM": 2.295,
+        "lengthM": 2.296,
         "areaM2": 4.89
       },
       "animated": true,
-      "triangles": 4956,
-      "glbBytes": 213520,
-      "usdzBytes": 700520
+      "triangles": 4732,
+      "glbBytes": 213380,
+      "usdzBytes": 699687
     },
     {
       "id": "LD-B006",
@@ -2097,19 +2097,19 @@
         "height": 1540
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.665,
-        "lengthM": 2.71,
+        "lengthM": 2.711,
         "areaM2": 7.22
       },
       "animated": true,
-      "triangles": 4596,
-      "glbBytes": 188064,
-      "usdzBytes": 578063
+      "triangles": 4372,
+      "glbBytes": 187920,
+      "usdzBytes": 577328
     },
     {
       "id": "LD-B007",
@@ -2165,19 +2165,19 @@
         "height": 1540
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.28,
-        "lengthM": 2.68,
+        "lengthM": 2.681,
         "areaM2": 6.11
       },
       "animated": true,
-      "triangles": 4644,
-      "glbBytes": 188748,
-      "usdzBytes": 579328
+      "triangles": 4420,
+      "glbBytes": 188532,
+      "usdzBytes": 578533
     },
     {
       "id": "LD-B009",
@@ -2199,19 +2199,19 @@
         "height": 2215
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.07,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.325,
-        "lengthM": 2.485,
+        "lengthM": 2.486,
         "areaM2": 5.78
       },
       "animated": true,
-      "triangles": 3590,
-      "glbBytes": 110516,
-      "usdzBytes": 343989
+      "triangles": 3366,
+      "glbBytes": 110396,
+      "usdzBytes": 343232
     },
     {
       "id": "LD-B010",
@@ -2233,19 +2233,19 @@
         "height": 1620
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.345,
-        "lengthM": 2.69,
+        "lengthM": 2.691,
         "areaM2": 6.31
       },
       "animated": true,
-      "triangles": 3500,
-      "glbBytes": 98712,
-      "usdzBytes": 310437
+      "triangles": 3276,
+      "glbBytes": 98616,
+      "usdzBytes": 309789
     },
     {
       "id": "LD-B011",
@@ -2267,19 +2267,19 @@
         "height": 1770
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.04,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.195,
-        "lengthM": 2.85,
+        "lengthM": 2.851,
         "areaM2": 6.26
       },
       "animated": true,
-      "triangles": 3188,
-      "glbBytes": 98028,
-      "usdzBytes": 307362
+      "triangles": 2964,
+      "glbBytes": 97892,
+      "usdzBytes": 306500
     },
     {
       "id": "LD-B012",
@@ -2301,19 +2301,19 @@
         "height": 2260
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.06,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.435,
-        "lengthM": 2.59,
+        "lengthM": 2.591,
         "areaM2": 6.31
       },
       "animated": true,
-      "triangles": 4076,
-      "glbBytes": 125328,
-      "usdzBytes": 373565
+      "triangles": 3600,
+      "glbBytes": 111672,
+      "usdzBytes": 335949
     },
     {
       "id": "LD-B013",
@@ -2335,19 +2335,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.13,
-        "lengthM": 2.765,
+        "lengthM": 2.766,
         "areaM2": 5.89
       },
       "animated": true,
-      "triangles": 4252,
-      "glbBytes": 218140,
-      "usdzBytes": 703136
+      "triangles": 4028,
+      "glbBytes": 217992,
+      "usdzBytes": 702210
     },
     {
       "id": "LD-B014",
@@ -2369,19 +2369,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.75,
-        "lengthM": 2.75,
+        "lengthM": 2.751,
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 5500,
-      "glbBytes": 232740,
-      "usdzBytes": 749506
+      "triangles": 5276,
+      "glbBytes": 232568,
+      "usdzBytes": 748658
     },
     {
       "id": "LD-B015",
@@ -2403,19 +2403,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.75,
-        "lengthM": 2.75,
+        "lengthM": 2.751,
         "areaM2": 7.56
       },
       "animated": true,
-      "triangles": 5500,
-      "glbBytes": 232676,
-      "usdzBytes": 749629
+      "triangles": 5276,
+      "glbBytes": 232508,
+      "usdzBytes": 748785
     },
     {
       "id": "LD-B016",
@@ -2437,19 +2437,19 @@
         "height": 1445
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.455,
-        "lengthM": 2.71,
+        "lengthM": 2.711,
         "areaM2": 6.65
       },
       "animated": true,
-      "triangles": 4612,
-      "glbBytes": 176004,
-      "usdzBytes": 551694
+      "triangles": 4388,
+      "glbBytes": 175836,
+      "usdzBytes": 550860
     },
     {
       "id": "LD-B017",
@@ -2471,19 +2471,19 @@
         "height": 1360
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.09,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.25,
-        "lengthM": 2.345,
+        "lengthM": 2.346,
         "areaM2": 5.28
       },
       "animated": true,
-      "triangles": 3972,
-      "glbBytes": 156484,
-      "usdzBytes": 500971
+      "triangles": 3748,
+      "glbBytes": 156352,
+      "usdzBytes": 500144
     },
     {
       "id": "LD-B018",
@@ -2505,19 +2505,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.09,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.275,
-        "lengthM": 2.355,
+        "lengthM": 2.356,
         "areaM2": 5.36
       },
       "animated": true,
-      "triangles": 3972,
-      "glbBytes": 156452,
-      "usdzBytes": 500940
+      "triangles": 3748,
+      "glbBytes": 156300,
+      "usdzBytes": 500198
     },
     {
       "id": "LD-B019",
@@ -2539,19 +2539,19 @@
         "height": 1330
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.08,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.215,
-        "lengthM": 2.42,
+        "lengthM": 2.421,
         "areaM2": 5.36
       },
       "animated": true,
-      "triangles": 3032,
-      "glbBytes": 98272,
-      "usdzBytes": 306249
+      "triangles": 2808,
+      "glbBytes": 98000,
+      "usdzBytes": 305141
     },
     {
       "id": "LD-B020",
@@ -2573,19 +2573,19 @@
         "height": 1960
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.07,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.03,
-        "lengthM": 2.545,
+        "lengthM": 2.546,
         "areaM2": 5.17
       },
       "animated": true,
-      "triangles": 4568,
-      "glbBytes": 182288,
-      "usdzBytes": 568495
+      "triangles": 4344,
+      "glbBytes": 182180,
+      "usdzBytes": 567727
     },
     {
       "id": "LD-B021",
@@ -2607,19 +2607,19 @@
         "height": 1865
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.625,
-        "lengthM": 2.765,
+        "lengthM": 2.766,
         "areaM2": 7.26
       },
       "animated": true,
-      "triangles": 4076,
-      "glbBytes": 125348,
-      "usdzBytes": 373753
+      "triangles": 3852,
+      "glbBytes": 125184,
+      "usdzBytes": 372751
     },
     {
       "id": "LD-B022",
@@ -2653,9 +2653,9 @@
         "areaM2": 5.82
       },
       "animated": true,
-      "triangles": 5556,
-      "glbBytes": 185276,
-      "usdzBytes": 584325
+      "triangles": 5332,
+      "glbBytes": 185144,
+      "usdzBytes": 583177
     },
     {
       "id": "LD-B023",
@@ -2677,19 +2677,19 @@
         "height": 1960
       },
       "deviationPct": {
-        "length": 0.04,
+        "length": 0.11,
         "width": 0.08,
         "height": -0.01
       },
       "trainingArea": {
         "widthM": 2.931,
-        "lengthM": 2.22,
+        "lengthM": 2.221,
         "areaM2": 6.51
       },
       "animated": true,
-      "triangles": 5380,
-      "glbBytes": 192048,
-      "usdzBytes": 587729
+      "triangles": 5156,
+      "glbBytes": 191848,
+      "usdzBytes": 586793
     },
     {
       "id": "LD-B024",
@@ -2711,19 +2711,19 @@
         "height": 2090
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.07,
         "width": 0.1,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.782,
-        "lengthM": 2.5,
-        "areaM2": 6.95
+        "lengthM": 2.501,
+        "areaM2": 6.96
       },
       "animated": true,
-      "triangles": 5304,
-      "glbBytes": 185664,
-      "usdzBytes": 576685
+      "triangles": 5080,
+      "glbBytes": 185544,
+      "usdzBytes": 576033
     },
     {
       "id": "LD-B025",
@@ -2745,19 +2745,19 @@
         "height": 1960
       },
       "deviationPct": {
-        "length": 0.04,
+        "length": 0.11,
         "width": 0.08,
-        "height": 0
+        "height": -0.01
       },
       "trainingArea": {
         "widthM": 2.931,
-        "lengthM": 2.22,
+        "lengthM": 2.221,
         "areaM2": 6.51
       },
       "animated": true,
-      "triangles": 5380,
-      "glbBytes": 192084,
-      "usdzBytes": 587773
+      "triangles": 5156,
+      "glbBytes": 191876,
+      "usdzBytes": 586715
     },
     {
       "id": "LD-B026",
@@ -2779,19 +2779,19 @@
         "height": 1380
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.09,
         "width": 0.1,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.782,
-        "lengthM": 2.35,
+        "lengthM": 2.351,
         "areaM2": 6.54
       },
       "animated": true,
-      "triangles": 5380,
-      "glbBytes": 192132,
-      "usdzBytes": 588133
+      "triangles": 5156,
+      "glbBytes": 192000,
+      "usdzBytes": 587088
     },
     {
       "id": "LD-B027",
@@ -2813,19 +2813,19 @@
         "height": 1680
       },
       "deviationPct": {
-        "length": 0.04,
+        "length": 0.12,
         "width": 0.09,
         "height": -0.01
       },
       "trainingArea": {
         "widthM": 2.831,
-        "lengthM": 2.2,
+        "lengthM": 2.201,
         "areaM2": 6.23
       },
       "animated": true,
-      "triangles": 5284,
-      "glbBytes": 190328,
-      "usdzBytes": 582225
+      "triangles": 5060,
+      "glbBytes": 190128,
+      "usdzBytes": 581454
     },
     {
       "id": "LD-B028",
@@ -2847,19 +2847,19 @@
         "height": 1530
       },
       "deviationPct": {
-        "length": 0.05,
+        "length": 0.14,
         "width": 0.14,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.532,
-        "lengthM": 2.12,
+        "lengthM": 2.121,
         "areaM2": 5.37
       },
       "animated": true,
-      "triangles": 5556,
-      "glbBytes": 185256,
-      "usdzBytes": 581429
+      "triangles": 5332,
+      "glbBytes": 185124,
+      "usdzBytes": 580613
     },
     {
       "id": "LD-B029",
@@ -2881,19 +2881,19 @@
         "height": 2040
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.08,
         "width": 0.11,
         "height": -0.01
       },
       "trainingArea": {
         "widthM": 2.682,
-        "lengthM": 2.42,
+        "lengthM": 2.421,
         "areaM2": 6.49
       },
       "animated": true,
-      "triangles": 4812,
-      "glbBytes": 128728,
-      "usdzBytes": 382173
+      "triangles": 4588,
+      "glbBytes": 128576,
+      "usdzBytes": 381251
     },
     {
       "id": "LD-B030",
@@ -2915,19 +2915,19 @@
         "height": 1960
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.08,
         "width": 0.07,
         "height": -0.01
       },
       "trainingArea": {
         "widthM": 3.031,
-        "lengthM": 2.4,
+        "lengthM": 2.401,
         "areaM2": 7.28
       },
       "animated": true,
-      "triangles": 4812,
-      "glbBytes": 128896,
-      "usdzBytes": 382560
+      "triangles": 4588,
+      "glbBytes": 128680,
+      "usdzBytes": 381657
     },
     {
       "id": "LD-B031",
@@ -2949,19 +2949,19 @@
         "height": 1430
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.09,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.2,
-        "lengthM": 2.32,
-        "areaM2": 5.1
+        "lengthM": 2.321,
+        "areaM2": 5.11
       },
       "animated": true,
-      "triangles": 4228,
-      "glbBytes": 217932,
-      "usdzBytes": 702413
+      "triangles": 4004,
+      "glbBytes": 217812,
+      "usdzBytes": 701781
     },
     {
       "id": "LD-B032",
@@ -2995,9 +2995,9 @@
         "areaM2": 6.53
       },
       "animated": true,
-      "triangles": 5908,
-      "glbBytes": 203512,
-      "usdzBytes": 634274
+      "triangles": 5684,
+      "glbBytes": 203368,
+      "usdzBytes": 633580
     },
     {
       "id": "LD-B033",
@@ -3019,19 +3019,19 @@
         "height": 1400
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0.08,
         "width": 0.11,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.652,
-        "lengthM": 2.42,
+        "lengthM": 2.421,
         "areaM2": 6.42
       },
       "animated": true,
-      "triangles": 5812,
-      "glbBytes": 203304,
-      "usdzBytes": 631120
+      "triangles": 5588,
+      "glbBytes": 203140,
+      "usdzBytes": 630050
     },
     {
       "id": "LD-B034",
@@ -3167,7 +3167,7 @@
       "animated": true,
       "triangles": 4432,
       "glbBytes": 53892,
-      "usdzBytes": 150638
+      "usdzBytes": 150686
     },
     {
       "id": "LD-B038",
@@ -3201,7 +3201,7 @@
       "animated": true,
       "triangles": 4344,
       "glbBytes": 53632,
-      "usdzBytes": 150606
+      "usdzBytes": 150781
     }
   ]
 }
