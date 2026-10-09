@@ -207,3 +207,14 @@ Cada rodada termina igual: testes, miniaturas, prancha foto × modelo dos itens 
 - **Uma foto por produto.** Fundo, traseira e o lado oposto de cada máquina são dedução. Com mais duas fotos por item (lateral e traseira) ou o desenho técnico da fábrica, os itens nota C saem certos de primeira.
 - **Pictogramas e marca.** Os desenhos da placa são feitos aqui. Para ficarem iguais aos reais é preciso a arte dos adesivos.
 - **Medidas internas.** Só existem comprimento, largura e altura totais. Altura de assento, curso da alavanca e posição do pivô são estimados pelo corpo de quem usa.
+
+## Ferramentas decididas (09/10/2026)
+
+- **Geometria:** só three.js nativo (`ExtrudeGeometry` com `Shape` e `holes` para chapas, `bentTube` para tubos, `RoundedBoxGeometry` para estofado). Sem kernel CAD. `manifold-3d` entra no primeiro recorte que não couber em `shape.holes`.
+- **Adesivos no GLB/USDZ:** os adesivos já são planos deslocados 1 mm da chapa, com `MeshStandardMaterial`. Falta desenhá-los fora do navegador (canvas no Node) e subir a textura do USDZ para 2048 px, o que pede atualizar o three.js (hoje r149).
+- **Checagem:** `gltf-validator` nos 94 GLB dentro dos testes; glTF-Transform para comprimir as texturas quando os adesivos entrarem.
+- **Foto × modelo:** IoU de silhueta por item na página de revisão, para ordenar do mais divergente ao menos.
+
+## Andamento
+
+- Rodada 1 publicada em 09/10/2026 (commit `502e409`): lado da foto nas miniaturas da linha de anilhas, dos leg press e das iso-laterais; torre mais estreita; tampo de madeira só na linha preta de uma coluna; cores do LD-B034 e do LD-B035.
