@@ -15,7 +15,7 @@
     "mechanism": "shoulder-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 49,
     "peso": "339 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços independentes permitem um movimento natural de empurrar acima da cabeça e o desenvolvimento equilibrado dos ombros. As empunhaduras ajustáveis e a estrutura de apoio facilitam a entrada, a saída e a execução das séries."
+    "descricao": "Os braços independentes permitem um movimento natural de empurrar acima da cabeça e o desenvolvimento equilibrado dos ombros. As empunhaduras ajustáveis e a estrutura de apoio facilitam a entrada, a saída e a execução das séries.",
+    "thumbAzimuth": 38
   }
 }

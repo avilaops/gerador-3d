@@ -11,7 +11,7 @@
     "variant": "sled"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 70,
     "peso": "265 kg",
     "bateria": null,
-    "descricao": "O ângulo de 45 graus proporciona um movimento de empurrar suave e estável. Permite adicionar anilhas para trabalhar quadríceps, posteriores da coxa e glúteos em um exercício direcionado aos membros inferiores."
+    "descricao": "O ângulo de 45 graus proporciona um movimento de empurrar suave e estável. Permite adicionar anilhas para trabalhar quadríceps, posteriores da coxa e glúteos em um exercício direcionado aos membros inferiores.",
+    "thumbAzimuth": 38
   }
 }

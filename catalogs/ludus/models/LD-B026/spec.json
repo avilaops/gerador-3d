@@ -15,7 +15,7 @@
     "mechanism": "shoulder-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,19 +31,20 @@
     "pagina": 49,
     "peso": "339 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços independentes permitem um movimento natural de empurrar acima da cabeça e o desenvolvimento equilibrado dos ombros. As empunhaduras ajustáveis e a estrutura de apoio facilitam a entrada, a saída e a execução das séries."
+    "descricao": "Os braços independentes permitem um movimento natural de empurrar acima da cabeça e o desenvolvimento equilibrado dos ombros. As empunhaduras ajustáveis e a estrutura de apoio facilitam a entrada, a saída e a execução das séries.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.5327682926829268,
-      "baseRailX": 0.3805487804878049,
-      "towerZ": -0.43067226890756294,
+      "baseRearHalfWidth": 0.5529999999999999,
+      "baseRailX": 0.395,
+      "towerZ": -0.4353813559322033,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
       "stackTravel": 0.11024023154848045,
       "seatHeight": 0.46,
-      "seatZ": 0.1111344537815126,
+      "seatZ": 0.11207627118644066,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -69,9 +70,9 @@
           0
         ],
         "pivot": [
-          -0.5610975609756097,
+          -0.5900000000000001,
           0.0020000000000000018,
-          -0.42567226890756293
+          -0.4353813559322033
         ],
         "range": [
           0,
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          0.5610975609756097,
+          0.5900000000000001,
           0.0020000000000000018,
-          -0.42567226890756293
+          -0.4353813559322033
         ],
         "range": [
           0,
@@ -107,9 +108,9 @@
           0
         ],
         "pivot": [
-          0.3,
+          0.31000000000000005,
           0.982,
-          -0.43386554621848744
+          -0.4379237288135594
         ],
         "range": [
           0,
@@ -126,9 +127,9 @@
           0
         ],
         "pivot": [
-          -0.3,
+          -0.31000000000000005,
           0.982,
-          -0.43386554621848744
+          -0.4379237288135594
         ],
         "range": [
           0,
@@ -139,23 +140,23 @@
     ],
     "bboxM": {
       "length": 1.151,
-      "width": 1.582,
+      "width": 1.58,
       "height": 1.38
     },
     "trainingArea": {
-      "minX": -1.3910975609756098,
-      "maxX": 1.3910975609756098,
-      "minZ": -1.175672268907563,
-      "maxZ": 1.175672268907563,
-      "widthM": 2.7821951219512195,
-      "lengthM": 2.351344537815126,
-      "areaM2": 6.541899303135888
+      "minX": -1.3900000000000001,
+      "maxX": 1.3900000000000001,
+      "minZ": -1.1753813559322033,
+      "maxZ": 1.1753813559322033,
+      "widthM": 2.7800000000000002,
+      "lengthM": 2.3507627118644066,
+      "areaM2": 6.535120338983051
     },
     "stats": {
-      "triangles": 7232,
-      "meshes": 101,
+      "triangles": 6824,
+      "meshes": 95,
       "geometries": 11,
-      "materials": 9
+      "materials": 8
     }
   }
 }

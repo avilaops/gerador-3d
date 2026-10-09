@@ -11,7 +11,7 @@
     "mechanism": "prone-leg-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 62,
     "peso": "130 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado dos posteriores da coxa. O ângulo divergente entre os apoios de quadril e peito ajuda a reduzir a tensão na região lombar."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado dos posteriores da coxa. O ângulo divergente entre os apoios de quadril e peito ajuda a reduzir a tensão na região lombar.",
+    "thumbAzimuth": 38
   }
 }

@@ -15,7 +15,7 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,7 +31,8 @@
     "pagina": 41,
     "peso": "360 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "A trajetória de puxada em arco natural combina braços independentes e opções ergonômicas de pegada supinada. O conjunto favorece o trabalho da musculatura das costas e o conforto dos punhos."
+    "descricao": "A trajetória de puxada em arco natural combina braços independentes e opções ergonômicas de pegada supinada. O conjunto favorece o trabalho da musculatura das costas e o conforto dos punhos.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
@@ -152,10 +153,10 @@
       "areaM2": 6.489890118577073
     },
     "stats": {
-      "triangles": 7192,
-      "meshes": 108,
+      "triangles": 6784,
+      "meshes": 102,
       "geometries": 14,
-      "materials": 9
+      "materials": 8
     }
   }
 }

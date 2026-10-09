@@ -28,7 +28,8 @@
     "pagina": 105,
     "peso": "30 kg",
     "bateria": null,
-    "descricao": "Oferece a funcionalidade de um banco multiuso de 75°, com apoio curvo para os pés."
+    "descricao": "Oferece a funcionalidade de um banco multiuso de 75°, com apoio curvo para os pés.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

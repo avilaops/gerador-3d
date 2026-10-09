@@ -11,7 +11,7 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 65,
     "peso": "134 kg",
     "bateria": null,
-    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. Duas posições para colocação das anilhas oferecem curvas de resistência diferentes conforme o objetivo do exercício."
+    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. Duas posições para colocação das anilhas oferecem curvas de resistência diferentes conforme o objetivo do exercício.",
+    "thumbAzimuth": 38
   }
 }

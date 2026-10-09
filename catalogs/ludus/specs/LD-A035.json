@@ -11,7 +11,7 @@
     "mechanism": "ab-crunch"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 90,
     "peso": "162 kg",
     "bateria": null,
-    "descricao": "O banco giratório permite direcionar o exercício para os dois lados dos músculos oblíquos. O movimento de dupla ação trabalha a parede abdominal de forma abrangente."
+    "descricao": "O banco giratório permite direcionar o exercício para os dois lados dos músculos oblíquos. O movimento de dupla ação trabalha a parede abdominal de forma abrangente.",
+    "thumbAzimuth": 38
   }
 }

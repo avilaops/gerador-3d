@@ -15,7 +15,7 @@
     "mechanism": "incline-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,7 +31,8 @@
     "pagina": 22,
     "peso": "347 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços independentes favorecem o desenvolvimento equilibrado do peitoral e dos ombros. O encosto inclinado facilita a entrada e a saída e oferece uma posição confortável para executar o movimento."
+    "descricao": "Os braços independentes favorecem o desenvolvimento equilibrado do peitoral e dos ombros. O encosto inclinado facilita a entrada e a saída e oferece uma posição confortável para executar o movimento.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
@@ -152,10 +153,10 @@
       "areaM2": 6.518797447730269
     },
     "stats": {
-      "triangles": 8372,
-      "meshes": 112,
+      "triangles": 7964,
+      "meshes": 106,
       "geometries": 17,
-      "materials": 9
+      "materials": 8
     }
   }
 }

@@ -11,7 +11,7 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 74,
     "peso": "241 kg",
     "bateria": null,
-    "descricao": "A trajetória curva acompanha o movimento natural do agachamento e ajuda a reduzir a sobrecarga nas costas e nos joelhos. O sistema contrabalançado reduz a resistência inicial do exercício."
+    "descricao": "A trajetória curva acompanha o movimento natural do agachamento e ajuda a reduzir a sobrecarga nas costas e nos joelhos. O sistema contrabalançado reduz a resistência inicial do exercício.",
+    "thumbAzimuth": -38
   },
   "resolved": {
     "params": {

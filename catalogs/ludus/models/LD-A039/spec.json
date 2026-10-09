@@ -11,7 +11,7 @@
     "mechanism": "seated-dip"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 46,
     "peso": "107 kg",
     "bateria": null,
-    "descricao": "Permite executar encolhimentos sentado ou em pé para trabalhar o trapézio. A estrutura estável oferece apoio para exercícios com carga elevada e para o desenvolvimento da força de sustentação e estabilização dos membros superiores."
+    "descricao": "Permite executar encolhimentos sentado ou em pé para trabalhar o trapézio. A estrutura estável oferece apoio para exercícios com carga elevada e para o desenvolvimento da força de sustentação e estabilização dos membros superiores.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

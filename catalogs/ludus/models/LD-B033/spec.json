@@ -15,7 +15,7 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,19 +31,20 @@
     "pagina": 83,
     "peso": "341 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Permite o treino individual de cada perna e ajustes personalizados da amplitude de movimento. As trajetórias independentes favorecem o desenvolvimento equilibrado, a biomecânica adequada e o controle da extensão dos joelhos."
+    "descricao": "Permite o treino individual de cada perna e ajustes personalizados da amplitude de movimento. As trajetórias independentes favorecem o desenvolvimento equilibrado, a biomecânica adequada e o controle da extensão dos joelhos.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.48733443708609275,
-      "baseRailX": 0.34809602649006627,
-      "towerZ": -0.4656349206349206,
+      "baseRearHalfWidth": 0.5075000000000001,
+      "baseRailX": 0.36250000000000004,
+      "towerZ": -0.47036,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
       "stackTravel": 0.11184022824536376,
       "seatHeight": 0.58,
-      "seatZ": 0.023625396825396827,
+      "seatZ": 0.0238144,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -69,9 +70,9 @@
           0
         ],
         "pivot": [
-          -0.4961920529801325,
+          -0.5250000000000001,
           0.0020000000000000018,
-          -0.4606349206349206
+          -0.47036
         ],
         "range": [
           0,
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          0.4961920529801325,
+          0.5250000000000001,
           0.0020000000000000018,
-          -0.4606349206349206
+          -0.47036
         ],
         "range": [
           0,
@@ -109,7 +110,7 @@
         "pivot": [
           0,
           0.602,
-          0.28862539682539684
+          0.2838144
         ],
         "range": [
           0,
@@ -120,23 +121,23 @@
     ],
     "bboxM": {
       "length": 1.221,
-      "width": 1.452,
+      "width": 1.45,
       "height": 1.4
     },
     "trainingArea": {
-      "minX": -1.3261920529801325,
-      "maxX": 1.3261920529801325,
-      "minZ": -1.2106349206349205,
-      "maxZ": 1.2106349206349205,
-      "widthM": 2.652384105960265,
-      "lengthM": 2.421269841269841,
-      "areaM2": 6.42213764322506
+      "minX": -1.3250000000000002,
+      "maxX": 1.3250000000000002,
+      "minZ": -1.21036,
+      "maxZ": 1.21036,
+      "widthM": 2.6500000000000004,
+      "lengthM": 2.42072,
+      "areaM2": 6.414908000000001
     },
     "stats": {
-      "triangles": 7814,
-      "meshes": 102,
+      "triangles": 7406,
+      "meshes": 96,
       "geometries": 12,
-      "materials": 9
+      "materials": 8
     }
   }
 }

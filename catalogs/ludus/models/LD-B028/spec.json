@@ -15,7 +15,7 @@
     "mechanism": "triceps-extension"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,19 +31,20 @@
     "pagina": 56,
     "peso": "264 kg",
     "bateria": "2 × 50 kg",
-    "descricao": "As trajetórias independentes dos braços favorecem o movimento natural dos cotovelos. O banco e os apoios ajustáveis ajudam a manter os punhos bem posicionados para um treino de tríceps direcionado e confortável."
+    "descricao": "As trajetórias independentes dos braços favorecem o movimento natural dos cotovelos. O banco e os apoios ajustáveis ajudam a manter os punhos bem posicionados para um treino de tríceps direcionado e confortável.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.44540647482014384,
-      "baseRailX": 0.31814748201438847,
-      "towerZ": -0.31583333333333335,
+      "baseRearHalfWidth": 0.46549999999999997,
+      "baseRailX": 0.3325,
+      "towerZ": -0.3204736842105263,
       "towerPostSpacing": 0.34,
       "stackPlates": 6,
-      "stackTravel": 0.12224020887728458,
+      "stackTravel": 0.1222402088772846,
       "seatHeight": 0.46,
-      "seatZ": 0.17633333333333334,
+      "seatZ": 0.17818947368421054,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 2,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.3380026109660572,
+      "armPivotHeight": 1.3380026109660574,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,13 +70,13 @@
           0
         ],
         "pivot": [
-          -0.43629496402877693,
+          -0.465,
           0.0020000000000000018,
-          -0.3108333333333334
+          -0.3204736842105263
         ],
         "range": [
           0,
-          0.12224020887728458
+          0.1222402088772846
         ],
         "driver": "phase"
       },
@@ -88,13 +89,13 @@
           0
         ],
         "pivot": [
-          0.43629496402877693,
+          0.465,
           0.0020000000000000018,
-          -0.3108333333333334
+          -0.3204736842105263
         ],
         "range": [
           0,
-          0.12224020887728458
+          0.1222402088772846
         ],
         "driver": "phase"
       },
@@ -109,7 +110,7 @@
         "pivot": [
           -0.3,
           0.762,
-          -0.23866666666666667
+          -0.24181052631578945
         ],
         "range": [
           0,
@@ -128,7 +129,7 @@
         "pivot": [
           0.3,
           0.762,
-          -0.23866666666666667
+          -0.24181052631578945
         ],
         "range": [
           0,
@@ -138,24 +139,24 @@
       }
     ],
     "bboxM": {
-      "length": 0.922,
-      "width": 1.333,
+      "length": 0.921,
+      "width": 1.33,
       "height": 1.53
     },
     "trainingArea": {
-      "minX": -1.266294964028777,
-      "maxX": 1.266294964028777,
-      "minZ": -1.0608333333333335,
-      "maxZ": 1.0608333333333333,
-      "widthM": 2.532589928057554,
-      "lengthM": 2.121666666666667,
-      "areaM2": 5.3733116306954445
+      "minX": -1.2650000000000001,
+      "maxX": 1.2650000000000001,
+      "minZ": -1.0604736842105262,
+      "maxZ": 1.0604736842105262,
+      "widthM": 2.5300000000000002,
+      "lengthM": 2.1209473684210525,
+      "areaM2": 5.365996842105263
     },
     "stats": {
-      "triangles": 6252,
-      "meshes": 94,
+      "triangles": 5844,
+      "meshes": 88,
       "geometries": 6,
-      "materials": 9
+      "materials": 8
     }
   }
 }

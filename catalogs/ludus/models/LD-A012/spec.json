@@ -11,7 +11,7 @@
     "mechanism": "shoulder-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 44,
     "peso": "159 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado dos ombros. O encosto inclinado a 40 graus oferece estabilização e ajuda a evitar a hiperextensão da coluna."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado dos ombros. O encosto inclinado a 40 graus oferece estabilização e ajuda a evitar a hiperextensão da coluna.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

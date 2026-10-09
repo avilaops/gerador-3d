@@ -11,7 +11,7 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 52,
     "peso": "103 kg",
     "bateria": null,
-    "descricao": "Oferece resistência articulada para a rosca na posição Scott. As empunhaduras giratórias acomodam diferenças no comprimento dos antebraços, permitindo ajustar a pegada ao usuário."
+    "descricao": "Oferece resistência articulada para a rosca na posição Scott. As empunhaduras giratórias acomodam diferenças no comprimento dos antebraços, permitindo ajustar a pegada ao usuário.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

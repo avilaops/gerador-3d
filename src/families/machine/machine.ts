@@ -142,6 +142,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         suffix: s === 0 ? '' : s < 0 ? '_left' : '_right',
         x: s * towerX,
         dark: stacks === 2 || !!o.darkTower,
+        cap: !(stacks === 2 || o.darkTower),
         z: towerZ,
         height: centralStacks ? Math.max(1.1, 0.64 * H) : H,
         post: t,

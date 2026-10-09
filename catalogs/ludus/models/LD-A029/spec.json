@@ -11,7 +11,7 @@
     "mechanism": "ground-lever"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 67,
     "peso": "100 kg",
     "bateria": null,
-    "descricao": "Combina equilíbrio no agachamento com uma posição corporal adequada ao treino de desempenho. A base mantém os pés firmes no solo e favorece a produção de força e potência a partir dos membros inferiores."
+    "descricao": "Combina equilíbrio no agachamento com uma posição corporal adequada ao treino de desempenho. A base mantém os pés firmes no solo e favorece a produção de força e potência a partir dos membros inferiores.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

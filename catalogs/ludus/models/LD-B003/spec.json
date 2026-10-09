@@ -31,7 +31,8 @@
     "pagina": 77,
     "peso": "385 kg",
     "bateria": "138 kg",
-    "descricao": "Desenvolvido para o treino de membros inferiores, com posicionamento estável do corpo e movimento guiado suave. A estrutura sobre trilhos favorece uma trajetória consistente, enquanto o percurso de pressão inclinado proporciona uma experiência de treino confortável e segura em academias."
+    "descricao": "Desenvolvido para o treino de membros inferiores, com posicionamento estável do corpo e movimento guiado suave. A estrutura sobre trilhos favorece uma trajetória consistente, enquanto o percurso de pressão inclinado proporciona uma experiência de treino confortável e segura em academias.",
+    "thumbAzimuth": 62
   },
   "resolved": {
     "params": {

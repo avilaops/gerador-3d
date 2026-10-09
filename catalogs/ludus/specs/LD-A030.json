@@ -11,7 +11,7 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 68,
     "peso": "368 kg",
     "bateria": null,
-    "descricao": "O movimento pendular enfatiza a extensão dos quadris e das pernas. A resistência varia de forma suave ao longo da amplitude, sendo menor na parte inferior e maior na parte superior, para um treino intenso dos membros inferiores."
+    "descricao": "O movimento pendular enfatiza a extensão dos quadris e das pernas. A resistência varia de forma suave ao longo da amplitude, sendo menor na parte inferior e maior na parte superior, para um treino intenso dos membros inferiores.",
+    "thumbAzimuth": 62
   }
 }

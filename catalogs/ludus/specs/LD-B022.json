@@ -15,7 +15,7 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 55,
     "peso": "236 kg",
     "bateria": "2 × 50 kg",
-    "descricao": "Os braços independentes permitem movimentos naturais de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. O banco e os apoios ajustáveis ajudam a manter os punhos alinhados e uma posição confortável durante a rosca."
+    "descricao": "Os braços independentes permitem movimentos naturais de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. O banco e os apoios ajustáveis ajudam a manter os punhos alinhados e uma posição confortável durante a rosca.",
+    "thumbAzimuth": 38
   }
 }

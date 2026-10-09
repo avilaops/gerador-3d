@@ -11,7 +11,7 @@
     "mechanism": "seated-calf"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 86,
     "peso": "91 kg",
     "bateria": null,
-    "descricao": "Projetado para trabalhar o músculo sóleo por meio da elevação de panturrilhas na posição sentada. O apoio ajustável sobre as coxas permite acomodar diferentes usuários."
+    "descricao": "Projetado para trabalhar o músculo sóleo por meio da elevação de panturrilhas na posição sentada. O apoio ajustável sobre as coxas permite acomodar diferentes usuários.",
+    "thumbAzimuth": 38
   }
 }

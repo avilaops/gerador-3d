@@ -11,7 +11,7 @@
     "mechanism": "seated-dip"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 51,
     "peso": "130 kg",
     "bateria": null,
-    "descricao": "Permite executar o exercício sentado de frente ou de costas para o equipamento, oferecendo diferentes posições e maior variedade para o treino de tríceps."
+    "descricao": "Permite executar o exercício sentado de frente ou de costas para o equipamento, oferecendo diferentes posições e maior variedade para o treino de tríceps.",
+    "thumbAzimuth": 38
   }
 }

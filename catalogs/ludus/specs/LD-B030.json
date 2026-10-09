@@ -15,7 +15,7 @@
     "mechanism": "pulldown"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 42,
     "peso": "354 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Combina uma trajetória específica de puxada com braços independentes para um treino de costas dinâmico e versátil. O desenho favorece o trabalho da parte superior das costas e um movimento suave."
+    "descricao": "Combina uma trajetória específica de puxada com braços independentes para um treino de costas dinâmico e versátil. O desenho favorece o trabalho da parte superior das costas e um movimento suave.",
+    "thumbAzimuth": 38
   }
 }

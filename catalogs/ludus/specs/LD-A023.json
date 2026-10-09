@@ -11,7 +11,7 @@
     "variant": "hack"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 64,
     "peso": "236 kg",
     "bateria": null,
-    "descricao": "O ângulo de 45 graus enfatiza a flexão dos joelhos e a extensão controlada para o trabalho dos quadríceps. Os rolamentos lineares proporcionam deslocamento suave, e as alavancas de travamento facilitam transições firmes entre a execução e o apoio da carga."
+    "descricao": "O ângulo de 45 graus enfatiza a flexão dos joelhos e a extensão controlada para o trabalho dos quadríceps. Os rolamentos lineares proporcionam deslocamento suave, e as alavancas de travamento facilitam transições firmes entre a execução e o apoio da carga.",
+    "thumbAzimuth": 38
   }
 }

@@ -11,7 +11,7 @@
     "mechanism": "low-row"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 32,
     "peso": "152 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. A trajetória específica da remada oferece um movimento complementar ao do supino declinado."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. A trajetória específica da remada oferece um movimento complementar ao do supino declinado.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

@@ -11,7 +11,7 @@
     "mechanism": "t-bar"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 31,
     "peso": "91 kg",
     "bateria": null,
-    "descricao": "A posição de treino em pé, sem apoio para o tronco, envolve a cadeia posterior desde a base. A ausência de apoios acolchoados exige força das costas, pegada e estabilização de todo o corpo durante a remada."
+    "descricao": "A posição de treino em pé, sem apoio para o tronco, envolve a cadeia posterior desde a base. A ausência de apoios acolchoados exige força das costas, pegada e estabilização de todo o corpo durante a remada.",
+    "thumbAzimuth": 62
   }
 }

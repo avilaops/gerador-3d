@@ -11,7 +11,7 @@
     "mechanism": "nordic"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 60,
     "peso": "183 kg",
     "bateria": null,
-    "descricao": "O sistema contrabalançado permite ajustar a dificuldade da flexão nórdica: mais anilhas aumentam a assistência. O ajuste do apoio superior acomoda diferentes usuários e mantém uma posição firme para o treino dos posteriores da coxa."
+    "descricao": "O sistema contrabalançado permite ajustar a dificuldade da flexão nórdica: mais anilhas aumentam a assistência. O ajuste do apoio superior acomoda diferentes usuários e mantém uma posição firme para o treino dos posteriores da coxa.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

@@ -12,7 +12,7 @@
     "splitPlate": true
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -28,7 +28,8 @@
     "pagina": 73,
     "peso": "240 kg",
     "bateria": null,
-    "descricao": "As plataformas articuladas para os pés e a curva de resistência proporcionam um movimento de empurrar suave e desafiador. Os braços independentes permitem o treino unilateral para o desenvolvimento equilibrado das pernas."
+    "descricao": "As plataformas articuladas para os pés e a curva de resistência proporcionam um movimento de empurrar suave e desafiador. Os braços independentes permitem o treino unilateral para o desenvolvimento equilibrado das pernas.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

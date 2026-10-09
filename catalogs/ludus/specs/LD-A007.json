@@ -11,7 +11,7 @@
     "mechanism": "lying-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 12,
     "peso": "109 kg",
     "bateria": null,
-    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. É uma variação articulada do supino tradicional, com apoios de costas inclinados para estabilização."
+    "descricao": "Os braços com carga independente permitem movimentos de abertura e fechamento para o desenvolvimento equilibrado da força. É uma variação articulada do supino tradicional, com apoios de costas inclinados para estabilização.",
+    "thumbAzimuth": 38
   }
 }

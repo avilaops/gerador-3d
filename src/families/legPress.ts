@@ -204,7 +204,7 @@ export const legPress: FamilyDefinition<LegPressParams> = {
       // Com anilhas, o quadro é um pórtico em "telhado": o pivô fica perto da cumeeira.
       const pz = stack ? zR + 0.3 : zR + Math.max(0.45, 0.3 * L);
       if (stack) {
-        const unit = stackTower(kit, { x: 0, z: zR + 0.135, height: H, post: t, plates: p.stackPlates, travel: p.stackTravel });
+        const unit = stackTower(kit, { x: 0, z: zR + 0.135, height: H, post: t, plates: p.stackPlates, travel: p.stackTravel, dark: true, cap: false });
         root.add(unit.group);
         articulations.push(unit.articulation);
         for (const s of [-1, 1] as const) rig.tube(frame, [s * (ax - 0.07), y0, pz], [s * (ax - 0.07), py, pz], t);

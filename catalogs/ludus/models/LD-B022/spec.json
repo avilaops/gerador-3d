@@ -15,7 +15,7 @@
     "mechanism": "biceps-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,17 +31,18 @@
     "pagina": 55,
     "peso": "236 kg",
     "bateria": "2 × 50 kg",
-    "descricao": "Os braços independentes permitem movimentos naturais de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. O banco e os apoios ajustáveis ajudam a manter os punhos alinhados e uma posição confortável durante a rosca."
+    "descricao": "Os braços independentes permitem movimentos naturais de abertura e fechamento, favorecendo o desenvolvimento equilibrado da força. O banco e os apoios ajustáveis ajudam a manter os punhos alinhados e uma posição confortável durante a rosca.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.4970000544257109,
-      "baseRailX": 0.3550000388755078,
+      "baseRearHalfWidth": 0.518,
+      "baseRailX": 0.37,
       "towerZ": -0.2734644146518167,
       "towerPostSpacing": 0.34,
       "stackPlates": 6,
-      "stackTravel": 0.1198400000000005,
+      "stackTravel": 0.11984000000000052,
       "seatHeight": 0.46,
       "seatZ": 0.1593857658607267,
       "seatWidth": 0.42,
@@ -52,7 +53,7 @@
       "stacks": 2,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.3080000000000063,
+      "armPivotHeight": 1.3080000000000065,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,13 +70,13 @@
           0
         ],
         "pivot": [
-          -0.5100000241658537,
+          -0.54,
           0.001999999999999995,
           -0.186641270817065
         ],
         "range": [
           0,
-          0.1198400000000005
+          0.11984000000000052
         ],
         "driver": "phase"
       },
@@ -88,13 +89,13 @@
           0
         ],
         "pivot": [
-          0.5100000241658537,
+          0.54,
           0.001999999999999995,
           -0.186641270817065
         ],
         "range": [
           0,
-          0.1198400000000005
+          0.11984000000000052
         ],
         "driver": "phase"
       },
@@ -107,7 +108,7 @@
           0
         ],
         "pivot": [
-          -0.2999999684793213,
+          -0.3,
           0.7619999999999967,
           -0.174077070274743
         ],
@@ -126,7 +127,7 @@
           0
         ],
         "pivot": [
-          0.2999999684793213,
+          0.3,
           0.7619999999999967,
           -0.174077070274743
         ],
@@ -152,10 +153,10 @@
       "areaM2": 5.815599999999999
     },
     "stats": {
-      "triangles": 6252,
-      "meshes": 94,
+      "triangles": 5844,
+      "meshes": 88,
       "geometries": 6,
-      "materials": 9
+      "materials": 8
     }
   }
 }

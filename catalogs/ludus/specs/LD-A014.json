@@ -11,7 +11,7 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 14,
     "peso": "139 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado da força. Oferece maior convergência que o supino declinado e espaço para acomodar usuários de maior porte."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes para o desenvolvimento equilibrado da força. Oferece maior convergência que o supino declinado e espaço para acomodar usuários de maior porte.",
+    "thumbAzimuth": 38
   }
 }

@@ -15,7 +15,7 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 40,
     "peso": "347 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços de puxada independentes e a pegada supinada ergonômica favorecem movimentos naturais e o trabalho direcionado das costas. O banco ajustável oferece estabilidade e alinhamento adequado durante as repetições."
+    "descricao": "Os braços de puxada independentes e a pegada supinada ergonômica favorecem movimentos naturais e o trabalho direcionado das costas. O banco ajustável oferece estabilidade e alinhamento adequado durante as repetições.",
+    "thumbAzimuth": 38
   }
 }

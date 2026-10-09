@@ -11,7 +11,7 @@
     "variant": "belt-squat"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 72,
     "peso": "208 kg",
     "bateria": null,
-    "descricao": "As barras paralelas fixas permitem executar mergulhos com carga diretamente no sistema de agachamento com cinturão. Essa configuração acrescenta o treino de empurrar para os membros superiores sem exigir uma estação separada ou espaço adicional."
+    "descricao": "As barras paralelas fixas permitem executar mergulhos com carga diretamente no sistema de agachamento com cinturão. Essa configuração acrescenta o treino de empurrar para os membros superiores sem exigir uma estação separada ou espaço adicional.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

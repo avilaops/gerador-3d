@@ -17,7 +17,7 @@
   "materials": {
     "frame": "#161616",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#59616b"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -138,7 +138,7 @@
       "triangles": 6452,
       "meshes": 67,
       "geometries": 6,
-      "materials": 8
+      "materials": 7
     }
   }
 }

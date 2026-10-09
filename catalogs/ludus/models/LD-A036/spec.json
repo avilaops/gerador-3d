@@ -11,7 +11,7 @@
     "variant": "belt-squat"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 71,
     "peso": "185 kg",
     "bateria": null,
-    "descricao": "Permite treinar os membros inferiores com carga no cinturão, reduzindo a carga sobre a coluna. A trajetória natural, definida pelo usuário, aproxima-se do agachamento com pesos livres e permite exercícios de força e potência."
+    "descricao": "Permite treinar os membros inferiores com carga no cinturão, reduzindo a carga sobre a coluna. A trajetória natural, definida pelo usuário, aproxima-se do agachamento com pesos livres e permite exercícios de força e potência.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

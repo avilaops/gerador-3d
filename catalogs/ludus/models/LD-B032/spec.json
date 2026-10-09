@@ -15,7 +15,7 @@
     "mechanism": "leg-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,19 +31,20 @@
     "pagina": 82,
     "peso": "339 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os apoios ergonômicos e os braços contrabalançados favorecem o trabalho dos músculos posteriores da coxa. Os ajustes facilitam a entrada e a saída e proporcionam uma execução confortável e suave."
+    "descricao": "Os apoios ergonômicos e os braços contrabalançados favorecem o trabalho dos músculos posteriores da coxa. Os ajustes facilitam a entrada e a saída e proporcionam uma execução confortável e suave.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.532000042012883,
-      "baseRailX": 0.3800000300092021,
-      "towerZ": -0.2666153836480684,
+      "baseRearHalfWidth": 0.5529999999999999,
+      "baseRailX": 0.395,
+      "towerZ": -0.273069689490818,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
       "stackTravel": 0.1102400000000007,
       "seatHeight": 0.58,
-      "seatZ": -0.015664615345922738,
+      "seatZ": -0.01592278757963272,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -69,9 +70,9 @@
           0
         ],
         "pivot": [
-          -0.5600000174737113,
+          -0.5900000000000001,
           0.001999999999999988,
-          -0.4039373618495768
+          -0.40982088885726325
         ],
         "range": [
           0,
@@ -88,9 +89,9 @@
           0
         ],
         "pivot": [
-          0.5600000174737113,
+          0.5900000000000001,
           0.001999999999999988,
-          -0.4039373618495768
+          -0.40982088885726325
         ],
         "range": [
           0,
@@ -109,7 +110,7 @@
         "pivot": [
           0,
           0.6019999999999961,
-          0.08123497861093698
+          0.08123497861093693
         ],
         "range": [
           0,
@@ -133,10 +134,10 @@
       "areaM2": 6.5329999999999995
     },
     "stats": {
-      "triangles": 7910,
-      "meshes": 103,
+      "triangles": 7502,
+      "meshes": 97,
       "geometries": 12,
-      "materials": 9
+      "materials": 8
     }
   }
 }

@@ -15,7 +15,7 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 83,
     "peso": "341 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Permite o treino individual de cada perna e ajustes personalizados da amplitude de movimento. As trajetórias independentes favorecem o desenvolvimento equilibrado, a biomecânica adequada e o controle da extensão dos joelhos."
+    "descricao": "Permite o treino individual de cada perna e ajustes personalizados da amplitude de movimento. As trajetórias independentes favorecem o desenvolvimento equilibrado, a biomecânica adequada e o controle da extensão dos joelhos.",
+    "thumbAzimuth": 38
   }
 }

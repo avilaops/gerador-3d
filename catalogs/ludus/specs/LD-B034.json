@@ -15,9 +15,9 @@
     "variant": "lever-squat"
   },
   "materials": {
-    "frame": "#161616",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
-    "accent": "#96764a"
+    "accent": "#1f3a9e"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -31,6 +31,7 @@
     "pagina": 84,
     "peso": "430 kg",
     "bateria": "195 kg",
-    "descricao": "Projetado para reproduzir a biomecânica natural do agachamento, apresenta uma trajetória curva e suave que ajuda a reduzir a sobrecarga na lombar e nos joelhos. Oferece uma alternativa ao leg press e ao hack squat."
+    "descricao": "Projetado para reproduzir a biomecânica natural do agachamento, apresenta uma trajetória curva e suave que ajuda a reduzir a sobrecarga na lombar e nos joelhos. Oferece uma alternativa ao leg press e ao hack squat.",
+    "thumbAzimuth": 62
   }
 }

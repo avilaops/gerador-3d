@@ -11,7 +11,7 @@
     "mechanism": "reverse-hyper"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 59,
     "peso": "156 kg",
     "bateria": null,
-    "descricao": "Desenvolvido para trabalhar a extensão do quadril, a cadeia posterior e a força explosiva. Reforça padrões de movimento usados em corridas, saltos e levantamentos. A mecânica suave e os apoios favorecem o fortalecimento dos quadris e da cadeia posterior."
+    "descricao": "Desenvolvido para trabalhar a extensão do quadril, a cadeia posterior e a força explosiva. Reforça padrões de movimento usados em corridas, saltos e levantamentos. A mecânica suave e os apoios favorecem o fortalecimento dos quadris e da cadeia posterior.",
+    "thumbAzimuth": 62
   },
   "resolved": {
     "params": {

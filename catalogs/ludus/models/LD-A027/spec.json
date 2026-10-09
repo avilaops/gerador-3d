@@ -11,7 +11,7 @@
     "mechanism": "hip-thrust"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 66,
     "peso": "152 kg",
     "bateria": null,
-    "descricao": "A plataforma antiderrapante estabiliza os pés, enquanto os apoios de alta densidade sustentam a extensão do quadril. Permite preparar e repetir o treino de glúteos com anilhas sem utilizar bancos ou barras separados."
+    "descricao": "A plataforma antiderrapante estabiliza os pés, enquanto os apoios de alta densidade sustentam a extensão do quadril. Permite preparar e repetir o treino de glúteos com anilhas sem utilizar bancos ou barras separados.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

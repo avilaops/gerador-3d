@@ -15,7 +15,7 @@
     "mechanism": "leg-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 82,
     "peso": "339 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os apoios ergonômicos e os braços contrabalançados favorecem o trabalho dos músculos posteriores da coxa. Os ajustes facilitam a entrada e a saída e proporcionam uma execução confortável e suave."
+    "descricao": "Os apoios ergonômicos e os braços contrabalançados favorecem o trabalho dos músculos posteriores da coxa. Os ajustes facilitam a entrada e a saída e proporcionam uma execução confortável e suave.",
+    "thumbAzimuth": 38
   }
 }

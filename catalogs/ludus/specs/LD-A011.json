@@ -11,7 +11,7 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 33,
     "peso": "128 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes e diferentes estímulos musculares. A estrutura compacta e baixa conta com múltiplas opções de pegada para variar o treino de remada."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes e diferentes estímulos musculares. A estrutura compacta e baixa conta com múltiplas opções de pegada para variar o treino de remada.",
+    "thumbAzimuth": 38
   }
 }

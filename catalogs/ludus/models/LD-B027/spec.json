@@ -15,7 +15,7 @@
     "mechanism": "decline-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,7 +31,8 @@
     "pagina": 23,
     "peso": "343 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Projetado para enfatizar a porção inferior do peitoral, oferece uma trajetória de empurrar estável e natural. O ajuste do ângulo do banco melhora o conforto, enquanto os braços independentes permitem o trabalho individual de cada lado."
+    "descricao": "Projetado para enfatizar a porção inferior do peitoral, oferece uma trajetória de empurrar estável e natural. O ajuste do ângulo do banco melhora o conforto, enquanto os braços independentes permitem o trabalho individual de cada lado.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
@@ -152,10 +153,10 @@
       "areaM2": 6.2314839712918655
     },
     "stats": {
-      "triangles": 8276,
-      "meshes": 112,
+      "triangles": 7868,
+      "meshes": 106,
       "geometries": 17,
-      "materials": 9
+      "materials": 8
     }
   }
 }

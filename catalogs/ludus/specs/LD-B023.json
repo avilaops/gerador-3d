@@ -15,7 +15,7 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,6 +31,7 @@
     "pagina": 21,
     "peso": "347 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços de empurrar independentes permitem o trabalho natural do peitoral e o desenvolvimento equilibrado dos dois lados do corpo. O desenho ergonômico proporciona um movimento suave e resistência equilibrada ao longo da amplitude."
+    "descricao": "Os braços de empurrar independentes permitem o trabalho natural do peitoral e o desenvolvimento equilibrado dos dois lados do corpo. O desenho ergonômico proporciona um movimento suave e resistência equilibrada ao longo da amplitude.",
+    "thumbAzimuth": 38
   }
 }

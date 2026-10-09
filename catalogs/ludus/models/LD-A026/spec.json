@@ -11,7 +11,7 @@
     "mechanism": "horizontal-calf"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 87,
     "peso": "173 kg",
     "bateria": null,
-    "descricao": "Direciona a resistência para os quadris, em vez da coluna, durante o exercício. Permite trabalhar os músculos gastrocnêmio e sóleo em uma posição horizontal."
+    "descricao": "Direciona a resistência para os quadris, em vez da coluna, durante o exercício. Permite trabalhar os músculos gastrocnêmio e sóleo em uma posição horizontal.",
+    "thumbAzimuth": -38
   },
   "resolved": {
     "params": {

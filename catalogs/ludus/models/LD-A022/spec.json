@@ -11,7 +11,7 @@
     "mechanism": "leg-extension"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 63,
     "peso": "137 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de cada perna, com trajetórias inspiradas no movimento humano. Essa configuração favorece o desenvolvimento equilibrado da força e a variedade de estímulos musculares."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de cada perna, com trajetórias inspiradas no movimento humano. Essa configuração favorece o desenvolvimento equilibrado da força e a variedade de estímulos musculares.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

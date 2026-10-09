@@ -70,7 +70,7 @@ export const cableStation: FamilyDefinition<CableStationParams> = {
       rig.box(tower, [0.02, H - 0.04, cd], [-cw / 2 + 0.01, (H - 0.04) / 2, 0]);
       rig.box(tower, [cw, 0.24, cd], [0, H - 0.16, 0], 'frame', 'tower_head');
       rig.box(tower, [cw, 0.1, cd], [0, 0.05, 0], 'frame', 'tower_foot');
-      rig.box(tower, [cw + 0.05, 0.035, cd + 0.05], [0, H - 0.0175, 0], 'wood', 'tower_cap');
+      rig.box(tower, [cw + 0.05, 0.035, cd + 0.05], [0, H - 0.0175, 0], 'frame', 'tower_cap');
       rig.box(tower, [0.004, 0.36, cd * 0.62], [cw / 2 + 0.002, H - 0.5, 0], 'label', 'tower_placard');
       const guideHeight = Math.min(0.5 * H, 1.15);
       for (const s of [-1, 1] as const) {
@@ -191,6 +191,7 @@ export const cableStation: FamilyDefinition<CableStationParams> = {
           post: t,
           plates: p.stackPlates,
           travel: p.stackTravel,
+          cap: false,
         });
         // A carenagem fica do lado de fora; a face da bateria olha para o vão.
         if (s > 0) unit.group.rotation.y = Math.PI;

@@ -15,7 +15,7 @@
     "mechanism": "row"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -31,19 +31,20 @@
     "pagina": 40,
     "peso": "347 kg",
     "bateria": "2 × 75 kg",
-    "descricao": "Os braços de puxada independentes e a pegada supinada ergonômica favorecem movimentos naturais e o trabalho direcionado das costas. O banco ajustável oferece estabilidade e alinhamento adequado durante as repetições."
+    "descricao": "Os braços de puxada independentes e a pegada supinada ergonômica favorecem movimentos naturais e o trabalho direcionado das costas. O banco ajustável oferece estabilidade e alinhamento adequado durante as repetições.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.5529999999999999,
       "baseRailX": 0.395,
-      "towerZ": -0.5055970149253731,
+      "towerZ": -0.5103383458646616,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
       "stackTravel": 0.1658509728886718,
       "seatHeight": 0.46,
-      "seatZ": 0.27746268656716416,
+      "seatZ": 0.2795488721804511,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -71,7 +72,7 @@
         "pivot": [
           -0.215,
           0.0020000000000000018,
-          -0.5005970149253731
+          -0.5103383458646616
         ],
         "range": [
           0,
@@ -90,7 +91,7 @@
         "pivot": [
           0.215,
           0.0020000000000000018,
-          -0.5005970149253731
+          -0.5103383458646616
         ],
         "range": [
           0,
@@ -109,7 +110,7 @@
         "pivot": [
           -0.52,
           1.6119999999999999,
-          -0.13753731343283582
+          -0.14045112781954888
         ],
         "range": [
           0,
@@ -128,7 +129,7 @@
         "pivot": [
           0.52,
           1.6119999999999999,
-          -0.13753731343283582
+          -0.14045112781954888
         ],
         "range": [
           0,
@@ -145,17 +146,17 @@
     "trainingArea": {
       "minX": -1.3900000000000001,
       "maxX": 1.3900000000000001,
-      "minZ": -1.2505970149253731,
-      "maxZ": 1.2505970149253731,
+      "minZ": -1.2503383458646615,
+      "maxZ": 1.2503383458646615,
       "widthM": 2.7800000000000002,
-      "lengthM": 2.5011940298507462,
-      "areaM2": 6.953319402985075
+      "lengthM": 2.500676691729323,
+      "areaM2": 6.9518812030075186
     },
     "stats": {
-      "triangles": 8296,
-      "meshes": 112,
+      "triangles": 7888,
+      "meshes": 106,
       "geometries": 16,
-      "materials": 9
+      "materials": 8
     }
   }
 }

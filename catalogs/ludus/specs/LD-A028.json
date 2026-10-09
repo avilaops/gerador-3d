@@ -11,7 +11,7 @@
     "mechanism": "jammer"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 94,
     "peso": "168 kg",
     "bateria": null,
-    "descricao": "Desenvolvido para exercícios esportivos que exigem força explosiva a partir do solo. Mantém os pés firmemente apoiados enquanto permite produzir força e potência dos membros inferiores para os superiores."
+    "descricao": "Desenvolvido para exercícios esportivos que exigem força explosiva a partir do solo. Mantém os pés firmemente apoiados enquanto permite produzir força e potência dos membros inferiores para os superiores.",
+    "thumbAzimuth": 38
   }
 }

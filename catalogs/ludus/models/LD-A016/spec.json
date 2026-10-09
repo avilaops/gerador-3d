@@ -11,7 +11,7 @@
     "mechanism": "lateral-raise"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 45,
     "peso": "116 kg",
     "bateria": null,
-    "descricao": "O movimento em arco suave e natural acompanha a mecânica dos ombros, favorecendo força, resistência e estabilidade. Permite trabalhar os deltoides e o equilíbrio muscular para as exigências esportivas e cotidianas."
+    "descricao": "O movimento em arco suave e natural acompanha a mecânica dos ombros, favorecendo força, resistência e estabilidade. Permite trabalhar os deltoides e o equilíbrio muscular para as exigências esportivas e cotidianas.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

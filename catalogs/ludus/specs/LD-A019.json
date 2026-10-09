@@ -11,7 +11,7 @@
     "mechanism": "lying-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 15,
     "peso": "142 kg",
     "bateria": null,
-    "descricao": "Oferece posições de crucifixo reto e declinado para trabalhar o peitoral em diferentes ângulos. Os apoios de costas abertos permitem movimentos mais amplos e livres, com menor interferência na região dos ombros."
+    "descricao": "Oferece posições de crucifixo reto e declinado para trabalhar o peitoral em diferentes ângulos. Os apoios de costas abertos permitem movimentos mais amplos e livres, com menor interferência na região dos ombros.",
+    "thumbAzimuth": 38
   }
 }

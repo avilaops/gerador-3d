@@ -11,7 +11,7 @@
     "mechanism": "incline-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 17,
     "peso": "148 kg",
     "bateria": null,
-    "descricao": "A trajetória natural de empurrar para cima reproduz a mecânica do supino inclinado tradicional. Os braços independentes favorecem o desenvolvimento equilibrado da força dos dois lados do corpo."
+    "descricao": "A trajetória natural de empurrar para cima reproduz a mecânica do supino inclinado tradicional. Os braços independentes favorecem o desenvolvimento equilibrado da força dos dois lados do corpo.",
+    "thumbAzimuth": 38
   }
 }

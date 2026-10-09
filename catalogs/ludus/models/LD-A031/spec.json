@@ -11,7 +11,7 @@
     "mechanism": "kneeling-leg-curl"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,7 +27,8 @@
     "pagina": 69,
     "peso": "114 kg",
     "bateria": null,
-    "descricao": "Os braços com carga independente favorecem o desenvolvimento equilibrado dos posteriores da coxa. A posição ajoelhada e o ângulo divergente entre os apoios de quadril e peito ajudam a reduzir a tensão na região lombar."
+    "descricao": "Os braços com carga independente favorecem o desenvolvimento equilibrado dos posteriores da coxa. A posição ajoelhada e o ângulo divergente entre os apoios de quadril e peito ajudam a reduzir a tensão na região lombar.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

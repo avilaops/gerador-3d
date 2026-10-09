@@ -11,7 +11,7 @@
     "mechanism": "chest-press"
   },
   "materials": {
-    "frame": "#74787d",
+    "frame": "#666a6f",
     "upholstery": "#0c0c0c",
     "accent": "#1f3a9e"
   },
@@ -27,6 +27,7 @@
     "pagina": 16,
     "peso": "159 kg",
     "bateria": null,
-    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento. As opções de pegada horizontal e vertical permitem variar a posição dos punhos e a execução, reproduzindo o supino tradicional ou movimentos voltados ao treino esportivo."
+    "descricao": "Os suportes de anilhas separados permitem movimentos independentes de abertura e fechamento. As opções de pegada horizontal e vertical permitem variar a posição dos punhos e a execução, reproduzindo o supino tradicional ou movimentos voltados ao treino esportivo.",
+    "thumbAzimuth": 38
   }
 }
