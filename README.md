@@ -88,7 +88,7 @@ Um spec só com dimensões e família já gera um modelo. `params` escolhe o mec
 
 ## Adesivos da torre
 
-A torre das máquinas de bateria leva a placa com o nome do exercício e três pictogramas, a etiqueta do peso de incremento e a régua com a carga placa a placa (`src/parts/decals.ts`). São texturas desenhadas em canvas, então aparecem no visualizador e nas miniaturas (que rodam no navegador), mas não nos arquivos GLB e USDZ exportados pelo Node.
+A torre das máquinas de bateria leva a placa com o nome do exercício e três pictogramas, a etiqueta do peso de incremento e a régua com a carga placa a placa (`src/parts/decals.ts`). São texturas desenhadas em canvas. No navegador usam o canvas da página; na exportação pelo Node, o do pacote `@napi-rs/canvas`, e vão como textura dentro do GLB e do USDZ. O GLB de cada modelo passa pelo validador da Khronos (`gltf-validator`) nos testes.
 
 Nas máquinas em que a foto mostra a torre ao lado do assento (`tower: 'side'` em `exercises.ts`), ela fica à direita de quem usa, com a frente virada para o assento. Máquinas estreitas demais para isso (largura abaixo de 1,02 m) mantêm a torre atrás.
 

@@ -4,6 +4,7 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { generateEquipment, HANDWRITTEN_SPECS, exportGlb, exportUsdz, planSvg } from '../src';
 import { installNodeShims } from '../src/export/nodeShims';
+import validator from 'gltf-validator';
 
 const GLB_BUDGET_BYTES = 1.5 * 1024 * 1024;
 
@@ -26,6 +27,12 @@ describe.each(HANDWRITTEN_SPECS.map((s) => [s.id, s] as const))('exportação %s
     for (const a of eq.articulations)
       expect(gltf.scene.getObjectByName(a.node), a.node).toBeTruthy();
     expect(gltf.scene.getObjectByName(spec.id)).toBeTruthy();
+  });
+
+  it('GLB passa no validador da Khronos sem erro', async () => {
+    const report = await validator.validateBytes(new Uint8Array(await exportGlb(eq)));
+    const erros = report.issues.messages.filter((m: { severity: number }) => m.severity === 0);
+    expect(erros, JSON.stringify(erros.slice(0, 3))).toHaveLength(0);
   });
 
   it('USDZ é um zip com o model.usda', async () => {

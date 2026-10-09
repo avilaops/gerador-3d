@@ -2,9 +2,9 @@
  * Adesivos da torre: placa com o nome do exercício e os pictogramas, etiqueta
  * do peso de incremento e a régua com a numeração da bateria.
  *
- * São texturas desenhadas num canvas, então só existem onde há `document`
- * (navegador). No Node (testes e exportação por linha de comando) as funções
- * devolvem `null` e o modelo sai sem os adesivos.
+ * São texturas desenhadas num canvas: no navegador, o do `document`; no Node, o
+ * que `installNodeShims()` instala. Sem canvas as funções devolvem `null` e o
+ * modelo sai sem os adesivos.
  */
 import * as THREE from 'three';
 import type { PartKit } from './kit';
@@ -13,10 +13,16 @@ const FONT = '"Barlow Condensed", "Arial Narrow", Arial, sans-serif';
 
 function canvas(w: number, h: number): [HTMLCanvasElement, CanvasRenderingContext2D] | null {
   if (typeof document === 'undefined') return null;
-  const c = document.createElement('canvas');
+  const c = document.createElement('canvas') as HTMLCanvasElement | undefined;
+  if (!c || typeof c.getContext !== 'function') return null;
   c.width = w;
   c.height = h;
-  const ctx = c.getContext('2d');
+  let ctx: CanvasRenderingContext2D | null = null;
+  try {
+    ctx = c.getContext('2d');
+  } catch {
+    // jsdom sem o pacote de canvas
+  }
   return ctx ? [c, ctx] : null;
 }
 

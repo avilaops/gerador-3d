@@ -218,3 +218,4 @@ Cada rodada termina igual: testes, miniaturas, prancha foto × modelo dos itens 
 ## Andamento
 
 - Rodada 1 publicada em 09/10/2026 (commit `502e409`): lado da foto nas miniaturas da linha de anilhas, dos leg press e das iso-laterais; torre mais estreita; tampo de madeira só na linha preta de uma coluna; cores do LD-B034 e do LD-B035.
+- Adesivos dentro do GLB e do USDZ em 09/10/2026: desenhados no Node com `@napi-rs/canvas`. Conferido que a textura está no arquivo; falta ver no iPhone. `gltf-validator` entrou nos testes.
