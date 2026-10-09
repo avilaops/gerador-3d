@@ -36,6 +36,8 @@ export interface StationOptions {
   t: number;
   /** Altura máxima disponível (o encosto encurta para caber). */
   maxHeight: number;
+  /** Comprimento do encosto, quando é ele que dá a altura da máquina. */
+  backHeight?: number;
 }
 
 export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void {
@@ -53,7 +55,7 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
   };
 
   const backrest = (wanted = 0.72) => {
-    const h = Math.max(0.3, Math.min(wanted, (o.maxHeight - hs - 0.1) / Math.cos(tilt)));
+    const h = Math.max(0.3, Math.min(o.backHeight ?? wanted, (o.maxHeight - hs - 0.1) / Math.cos(tilt)));
     const b = rig.group('backrest', g);
     const bottomZ = -0.2;
     const cy = hs + 0.07 + (h / 2) * Math.cos(tilt);

@@ -175,15 +175,24 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const zHi = Math.max(uRear, uFront) - 0.05;
   const towerUz = toUser(towerZ);
 
+  const levers = ex.levers({ hs: o.seatHeight, H, W, ax, plates, zRear: uRear, zFront: uFront });
+  // Máquina baixa de anilhas: nenhum apoio de alavanca chega perto da altura A. Com encosto,
+  // é ele que sobe até lá; sem encosto, duas laterais em "A" ao lado de quem usa. Nada de
+  // mastro atrás, que as máquinas reais não têm.
+  const highestPivot = Math.max(0, ...levers.filter((l) => !l.noSupport).map((l) => clamp(l.pivot[1], 0.12, H - 0.04)));
+  const lowFrame = plates && !ex.noFrame && H - highestPivot > 0.65;
+  const backNeeded = (H - o.seatHeight - 0.13) / Math.cos(o.backTilt);
+  const backIsTop = lowFrame && (ex.station === 'seat-back' || ex.station === 'recline') && backNeeded <= 1.0;
+
   buildStation(rig, station, {
     kind: ex.station,
     hs: o.seatHeight,
     tilt: o.backTilt,
     t,
     maxHeight: H,
+    backHeight: backIsTop ? backNeeded : undefined,
   });
 
-  const levers = ex.levers({ hs: o.seatHeight, H, W, ax, plates, zRear: uRear, zFront: uFront });
   const postTops: { x: number; y: number; z: number }[] = [];
   const tallest = levers
     .filter((l) => !l.noSupport)
@@ -456,6 +465,23 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       for (const s of [1, -1] as const)
         rig.tube(frame, [s * top.x, top.y, top.z], [s * top.x, H, top.z], t);
       rig.tube(frame, [-top.x, H - t / 2, top.z], [top.x, H - t / 2, top.z], t, 'frame', 'top_crossbar');
+    } else if (backIsTop) {
+      // A altura A é a do encosto.
+    } else if (lowFrame) {
+      const xs = clamp(Math.max(top?.x ?? 0, 0.36), 0.3, W / 2 - 0.06);
+      const zc = clamp(top?.z ?? 0, zLo + 0.3, zHi - 0.3);
+      const abre = Math.min(0.34, 0.3 * H);
+      const chapa: [number, number] = [0.05, 0.1];
+      for (const s of [1, -1] as const) {
+        for (const d of [1, -1] as const)
+          rig.path(frame, [[s * xs, y0, zc + d * abre], [s * xs, 0.6 * H, zc + d * 0.1], [s * xs, H - 0.05, zc + d * 0.1]], chapa, 'frame', 'side_leg', 0.25);
+        rig.tube(frame, [s * xs, 0.6 * H, zc - 0.1], [s * xs, 0.6 * H, zc + 0.1], [0.05, 0.08]);
+        rig.tube(frame, [s * xs, H - 0.05, zc - 0.15], [s * xs, H - 0.05, zc + 0.15], chapa, 'frame', 'side_cap');
+        rig.tube(frame, [s * xs, y0, zc - abre], [s * xs, y0, zc + abre], t);
+        const len = storageLen(xs);
+        if (len >= 0.08) rig.horn(frame, [s * (xs + 0.025), 0.36 * H, zc - 0.6 * abre], [s, 0, 0], len, 'storage_horn');
+      }
+      rig.tube(frame, [-xs, y0, zc - abre], [xs, y0, zc - abre], t, 'frame', 'side_link');
     } else {
       const mz = uRear - Math.sign(uRear) * (t / 2);
       const mx = railX;

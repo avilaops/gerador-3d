@@ -219,3 +219,4 @@ Cada rodada termina igual: testes, miniaturas, prancha foto × modelo dos itens 
 
 - Rodada 1 publicada em 09/10/2026 (commit `502e409`): lado da foto nas miniaturas da linha de anilhas, dos leg press e das iso-laterais; torre mais estreita; tampo de madeira só na linha preta de uma coluna; cores do LD-B034 e do LD-B035.
 - Adesivos dentro do GLB e do USDZ em 09/10/2026: desenhados no Node com `@napi-rs/canvas`. Conferido que a textura está no arquivo; falta ver no iPhone. `gltf-validator` entrou nos testes.
+- Rodada 2, primeira parte, em 09/10/2026: o mastro falso saiu das máquinas baixas de anilhas. Com encosto (LD-A022, A024, A026), a altura vem do próprio encosto; sem encosto (LD-A001, A007, A010, A011, A019, A025, A027, A028, A035), de duas laterais em "A" ao lado de quem usa. LD-A020, A021 e A029 ainda têm o arco do apoio da alavanca. Faltam os quadros em ampulheta e gaiola e a nota de silhueta.
