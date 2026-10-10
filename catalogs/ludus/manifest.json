@@ -773,7 +773,7 @@
       "deviationPct": {
         "length": 0,
         "width": 0,
-        "height": 0.98
+        "height": 0.46
       },
       "trainingArea": {
         "widthM": 2.76,
@@ -782,8 +782,8 @@
       },
       "animated": true,
       "triangles": 6938,
-      "glbBytes": 221296,
-      "usdzBytes": 696762
+      "glbBytes": 221396,
+      "usdzBytes": 697228
     },
     {
       "id": "LD-A024",
@@ -1156,8 +1156,8 @@
       },
       "animated": true,
       "triangles": 6348,
-      "glbBytes": 221456,
-      "usdzBytes": 696922
+      "glbBytes": 221396,
+      "usdzBytes": 695579
     },
     {
       "id": "LD-A035",
@@ -1292,8 +1292,8 @@
       },
       "animated": true,
       "triangles": 6360,
-      "glbBytes": 221156,
-      "usdzBytes": 696817
+      "glbBytes": 221104,
+      "usdzBytes": 695470
     },
     {
       "id": "LD-A039",
@@ -2041,7 +2041,7 @@
       "animated": true,
       "triangles": 8940,
       "glbBytes": 367672,
-      "usdzBytes": 988452
+      "usdzBytes": 988449
     },
     {
       "id": "LD-B005",

@@ -99,7 +99,7 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         rig.tube(frame, [s * bx, y0, zb], [s * bx, yb, zb], t);
         rig.rod(frame, [s * bx, yb, zb], [s * bx, yt, zt], 0.055, 'chrome', 'rail');
         // Viga do quadro sob o trilho e mão-francesa até a base, como nos leg press reais.
-        rig.tube(frame, [s * bx, yb - 0.11, zb + 0.02], [s * bx, yt - 0.11, zt + 0.02], [0.06, 0.1], 'frame', 'rail_beam');
+        rig.tube(frame, [s * bx, yb - 0.11, zb + 0.02], [s * bx, yt - 0.11, zt + 0.02], [0.08, 0.13], 'frame', 'rail_beam');
         rig.tube(frame, [s * bx, yb + 0.72 * (yt - yb) - 0.11, zb + 0.72 * (zt - zb)], [s * bx, y0, zb - 0.1], [0.05, 0.08]);
         // Fecha o quadro: diagonal da coluna traseira até a base, por baixo dos trilhos.
         rig.tube(frame, [s * bx, 0.5 * yt, zt], [s * bx, y0, zb + 0.4], [0.05, 0.08]);
@@ -142,8 +142,8 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         for (const lado of larguras) {
           const fp = rig.box(
             carriage,
-            [p.splitPlate ? 0.34 : Math.min(0.86, 2 * bx + 0.22), 0.03, p.splitPlate ? 0.8 : 0.72],
-            [lado * 0.21, 0.2 * n.y, 0.2 * n.z],
+            [p.splitPlate ? 0.42 : Math.min(1.0, 2 * bx + 0.3), 0.045, p.splitPlate ? 0.92 : 0.86],
+            [lado * 0.25, 0.2 * n.y, 0.2 * n.z],
             'plate',
             'foot_plate'
           );
@@ -155,25 +155,25 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         // Assento reclinado na frente, de costas para +Z.
         const zs = zb + 0.48;
         const seat = rig.group('seat');
-        rig.pad(seat, [0.42, 0.08, 0.42], [0, 0.3, zs], 0.15, 'seat_pad');
+        rig.pad(seat, [0.5, 0.1, 0.46], [0, 0.3, zs], 0.15, 'seat_pad');
         rig.tube(seat, [0, y0, zs], [0, 0.26, zs], t);
         const back = rig.group('backrest');
         const bl = Math.min(0.8, (zF - 0.05 - (zs + 0.2)) / Math.sin(0.95));
-        rig.pad(back, [0.38, bl, 0.085], [0, 0.34 + (bl / 2) * Math.cos(0.95), zs + 0.2 + (bl / 2) * Math.sin(0.95)], 0.95, 'backrest_pad');
+        rig.pad(back, [0.48, bl, 0.1], [0, 0.34 + (bl / 2) * Math.cos(0.95), zs + 0.2 + (bl / 2) * Math.sin(0.95)], 0.95, 'backrest_pad');
         rig.tube(back, [0, y0, zF - 0.2], [0, 0.34 + bl * 0.55 * Math.cos(0.95), zs + 0.16 + bl * 0.55 * Math.sin(0.95)], t);
         for (const s of [-1, 1] as const) rig.grip(seat, [s * 0.27, 0.36, zs - 0.1], [s * 0.27, 0.36, zs + 0.08], 'side_handle');
       } else {
-        const fp = rig.box(frame, [Math.min(0.78, 2 * bx + 0.14), 0.025, 0.55], [0, yb - 0.02, zb + 0.22], 'plate', 'foot_plate');
+        const fp = rig.box(frame, [Math.min(0.92, 2 * bx + 0.22), 0.04, 0.7], [0, yb - 0.02, zb + 0.22], 'plate', 'foot_plate');
         fp.rotation.x = tilt;
         rig.tube(frame, [0, y0, zb + 0.3], [0, yb - 0.06, zb + 0.26], t);
         const bl = Math.min(0.85, railLen - s0 - 0.2);
-        const bp = rig.pad(carriage, [0.4, bl, 0.085], [0, 0, 0], 0, 'backrest_pad');
+        const bp = rig.pad(carriage, [0.48, bl, 0.1], [0, 0, 0], 0, 'backrest_pad');
         bp.position.copy(u.clone().multiplyScalar(0.1 + bl / 2).addScaledVector(n, 0.16));
         bp.rotation.x = tilt;
         for (const s of [-1, 1] as const) {
-          const sp = rig.pad(carriage, [0.15, 0.1, 0.3], [0, 0, 0], 0, 'shoulder_pad');
+          const sp = rig.pad(carriage, [0.19, 0.14, 0.34], [0, 0, 0], 0, 'shoulder_pad');
           sp.position.copy(u.clone().multiplyScalar(bl + 0.02).addScaledVector(n, 0.32));
-          sp.position.x = s * 0.18;
+          sp.position.x = s * 0.2;
           sp.rotation.x = tilt + Math.PI / 2;
           const hp = u.clone().multiplyScalar(bl + 0.0).addScaledVector(n, 0.3);
           rig.grip(carriage, [s * 0.33, hp.y, hp.z], [s * 0.33, hp.y + 0.12 * n.y, hp.z + 0.12 * n.z], 'handle');
