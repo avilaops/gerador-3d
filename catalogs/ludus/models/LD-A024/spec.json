@@ -59,7 +59,7 @@
     },
     "articulations": [
       {
-        "node": "lever",
+        "node": "arm_right",
         "type": "revolute",
         "axis": [
           -1,
@@ -67,7 +67,26 @@
           0
         ],
         "pivot": [
+          0.3,
+          0.602,
+          0.29080311418685123
+        ],
+        "range": [
           0,
+          1.15
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
           0.602,
           0.29080311418685123
         ],
@@ -93,9 +112,9 @@
       "areaM2": 6.785801730103805
     },
     "stats": {
-      "triangles": 6374,
-      "meshes": 52,
-      "geometries": 13,
+      "triangles": 5974,
+      "meshes": 55,
+      "geometries": 12,
       "materials": 6
     }
   }

@@ -154,7 +154,7 @@ const COLORS_BY_CODE: Record<string, { frame: string; upholstery: string; accent
  * Lado da foto do catálogo. A câmera padrão das miniaturas mostra a frente para a
  * direita; as fotos das linhas abaixo mostram a frente para a esquerda.
  */
-const FOTO_ESPELHADA = new Set<FamilyId>(['plate-loaded-lever', 'leg-press']);
+const FOTO_ESPELHADA = new Set<FamilyId>(['plate-loaded-lever', 'leg-press', 'selectorized-tower']);
 const AZIMUTE_POR_CODIGO: Record<string, number> = {
   'LD-A026': -38,
   'LD-A041': -38,
@@ -175,6 +175,7 @@ const TORRE_LATERAL = new Set([
   'back-extension',
   'ab-crunch',
   'chest-press',
+  'pulldown',
 ]);
 
 /** Regras por nome, para itens que ainda não estão na tabela. A primeira que casar vale. */
@@ -214,7 +215,8 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
     descricao: product.descricao,
   };
   const handwritten = HANDWRITTEN_SPECS.find((s) => s.id === product.code);
-  if (handwritten) return { ...handwritten, meta: { ...handwritten.meta, ...meta } };
+  // As fotos dos dois escritos à mão também mostram a frente para a esquerda.
+  if (handwritten) return { ...handwritten, meta: { ...handwritten.meta, ...meta, thumbAzimuth: 38 } };
 
   const weightStackKg = parseStack(product.bateria);
   const rule = BY_CODE[product.code] ?? BY_NAME.find(([re]) => re.test(product.nome))?.[1](!!weightStackKg);
@@ -251,7 +253,7 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
         AZIMUTE_POR_CODIGO[product.code] ??
         (family === 'selectorized-tower' && weightStackKg?.stacks !== 2 && TORRE_LATERAL.has(String(params.mechanism))
           ? 42
-          : FOTO_ESPELHADA.has(family) || (family === 'selectorized-tower' && weightStackKg?.stacks === 2)
+          : FOTO_ESPELHADA.has(family) || String(params.variant).startsWith('olympic')
             ? comprido
               ? 62
               : 38

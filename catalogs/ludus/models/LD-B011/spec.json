@@ -31,19 +31,20 @@
     "pagina": 78,
     "peso": "340 kg",
     "bateria": "138 kg",
-    "descricao": "Oferece treino direcionado dos membros inferiores para ativação do quadril e dos glúteos. A estrutura de resistência bidirecional permite movimentos controlados nos dois sentidos, favorecendo exercícios de extensão de quadril e treino de glúteos com posicionamento estável do corpo."
+    "descricao": "Oferece treino direcionado dos membros inferiores para ativação do quadril e dos glúteos. A estrutura de resistência bidirecional permite movimentos controlados nos dois sentidos, favorecendo exercícios de extensão de quadril e treino de glúteos com posicionamento estável do corpo.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {
       "tube": 0.07,
       "baseRearHalfWidth": 0.34825,
       "baseRailX": 0.24875,
-      "towerZ": -0.680473372781065,
+      "towerZ": -0.6432391873172231,
       "towerPostSpacing": 0.34,
       "stackPlates": 14,
-      "stackTravel": 0.14144018058690747,
-      "seatHeight": 0.1,
-      "seatZ": 0.2899704142011834,
+      "stackTravel": 0.14144000020405276,
+      "seatHeight": 0.3,
+      "seatZ": 0.30729567492688925,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -52,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.5780022573363433,
+      "armPivotHeight": 1.5780000025506593,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -71,11 +72,11 @@
         "pivot": [
           0,
           0.0020000000000000018,
-          -0.675473372781065
+          -0.6802674311220562
         ],
         "range": [
           0,
-          0.14144018058690747
+          0.14144000020405276
         ],
         "driver": "phase"
       },
@@ -89,34 +90,34 @@
         ],
         "pivot": [
           0,
-          0.922,
-          0.24497041420118343
+          0.982,
+          -0.04973256887794386
         ],
         "range": [
           0,
-          0.85
+          0.8
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.651,
+      "length": 1.661,
       "width": 0.995,
       "height": 1.77
     },
     "trainingArea": {
       "minX": -1.0975,
       "maxX": 1.0975,
-      "minZ": -1.425473372781065,
-      "maxZ": 1.425473372781065,
+      "minZ": -1.4302674311220562,
+      "maxZ": 1.430267431122056,
       "widthM": 2.195,
-      "lengthM": 2.85094674556213,
-      "areaM2": 6.2578281065088746
+      "lengthM": 2.860534862244112,
+      "areaM2": 6.278874022625826
     },
     "stats": {
-      "triangles": 4806,
-      "meshes": 80,
-      "geometries": 8,
+      "triangles": 5558,
+      "meshes": 77,
+      "geometries": 9,
       "materials": 10
     }
   }

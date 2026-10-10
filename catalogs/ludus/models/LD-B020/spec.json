@@ -31,7 +31,8 @@
     "pagina": 38,
     "peso": "295 kg",
     "bateria": "138 kg",
-    "descricao": "Permite treinar as regiões superior e média das costas por uma trajetória guiada de puxada. O eixo superior proporciona um arco de movimento suave. As múltiplas posições das mãos oferecem variedade ao treino e permitem trabalhar diferentes ângulos de puxada."
+    "descricao": "Permite treinar as regiões superior e média das costas por uma trajetória guiada de puxada. O eixo superior proporciona um arco de movimento suave. As múltiplas posições das mãos oferecem variedade ao treino e permitem trabalhar diferentes ângulos de puxada.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

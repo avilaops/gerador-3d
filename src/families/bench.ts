@@ -172,8 +172,14 @@ export const bench: FamilyDefinition<BenchParams> = {
         const zLow = zR + 0.06;
         const len = Math.hypot(zHigh - zLow, yHigh - yLow);
         const a = Math.atan2(yHigh - yLow, zHigh - zLow);
+        // Duas almofadas na mesma rampa: o assento curto no alto, junto aos rolos, e a longa das costas.
         const seat = rig.group('seat');
-        rig.pad(seat, [pw, 0.075, len], [0, (yHigh + yLow) / 2, (zHigh + zLow) / 2], -a, 'bench_pad');
+        const seatLen = Math.min(0.36, 0.3 * len);
+        const at = (d: number): Vec3 => [0, yHigh - d * Math.sin(a), zHigh - d * Math.cos(a)];
+        rig.pad(seat, [pw, 0.075, seatLen], at(seatLen / 2), -a, 'seat_pad');
+        const backLen = len - seatLen - 0.03;
+        rig.pad(seat, [pw, 0.075, backLen], at(seatLen + 0.03 + backLen / 2), -a, 'bench_pad');
+        rig.tube(seat, at(0.08).map((v, i) => (i === 1 ? v - 0.07 : v)) as Vec3, at(len - 0.1).map((v, i) => (i === 1 ? v - 0.07 : v)) as Vec3, [0.05, 0.07], 'frame', 'bench_spine');
         post(zLow + 0.2, yLow + 0.02);
         post(zHigh - 0.15, yHigh - 0.08);
         const legs = rig.group('leg_rollers');

@@ -37,14 +37,14 @@
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.3255,
-      "baseRailX": 0.2325,
-      "towerZ": -0.40320484581497795,
+      "baseRearHalfWidth": 0.4417740943628681,
+      "baseRailX": 0.3155529245449058,
+      "towerZ": -0.4225,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10624024024024024,
+      "stackTravel": 0.10624000000054325,
       "seatHeight": 0.46,
-      "seatZ": 0.21128193832599118,
+      "seatZ": 0.219,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
@@ -53,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.138003003003003,
+      "armPivotHeight": 1.1380000000067907,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -70,13 +70,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.16750000000000004,
           0.0020000000000000018,
-          -0.39820484581497795
+          0.099
         ],
         "range": [
           0,
-          0.10624024024024024
+          0.10624000000054325
         ],
         "driver": "phase"
       },
@@ -89,9 +89,9 @@
           1
         ],
         "pivot": [
-          -0.2,
+          -0.08139415091018842,
           1.022,
-          0.1962819383259912
+          0.199
         ],
         "range": [
           0,
@@ -108,9 +108,9 @@
           -1
         ],
         "pivot": [
-          0.2,
+          0.3186058490898116,
           1.022,
-          0.1962819383259912
+          0.199
         ],
         "range": [
           0,
@@ -120,22 +120,22 @@
       }
     ],
     "bboxM": {
-      "length": 1.096,
-      "width": 0.93,
+      "length": 1.095,
+      "width": 0.937,
       "height": 1.33
     },
     "trainingArea": {
-      "minX": -1.065,
-      "maxX": 1.065,
-      "minZ": -1.1482048458149778,
-      "maxZ": 1.1482048458149778,
-      "widthM": 2.13,
-      "lengthM": 2.2964096916299557,
-      "areaM2": 4.891352643171805
+      "minX": -1.0686058490898116,
+      "maxX": 1.0686058490898116,
+      "minZ": -1.1475,
+      "maxZ": 1.1475,
+      "widthM": 2.137211698179623,
+      "lengthM": 2.295,
+      "areaM2": 4.904900847322235
     },
     "stats": {
-      "triangles": 6166,
-      "meshes": 73,
+      "triangles": 6502,
+      "meshes": 76,
       "geometries": 10,
       "materials": 10
     }

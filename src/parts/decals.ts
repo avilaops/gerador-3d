@@ -159,6 +159,31 @@ export function scaleDecal(kit: PartKit, plates: number, totalKg: number): THREE
 }
 
 /** Plano com um adesivo, de frente para +Z, centrado em `center`. */
+/** Etiqueta amarela de aviso (triângulo e linhas de texto), como a que vai no quadro das máquinas. */
+export function warningDecal(kit: PartKit): THREE.MeshStandardMaterial | null {
+  const made = canvas(192, 256);
+  if (!made) return null;
+  const [c, ctx] = made;
+  ctx.fillStyle = '#f0c419';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.strokeStyle = '#131314';
+  ctx.lineWidth = 6;
+  ctx.strokeRect(6, 6, c.width - 12, c.height - 12);
+  ctx.lineJoin = 'round';
+  ctx.beginPath();
+  ctx.moveTo(96, 28);
+  ctx.lineTo(156, 126);
+  ctx.lineTo(36, 126);
+  ctx.closePath();
+  ctx.lineWidth = 9;
+  ctx.stroke();
+  ctx.fillStyle = '#131314';
+  ctx.fillRect(91, 58, 10, 38);
+  ctx.fillRect(91, 104, 10, 10);
+  for (const [y, w] of [[150, 140], [172, 150], [194, 120], [216, 144]]) ctx.fillRect(22, y, w, 9);
+  return finish(kit, c);
+}
+
 export function decalPlane(
   kit: PartKit,
   material: THREE.Material,

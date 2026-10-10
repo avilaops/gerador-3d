@@ -38,12 +38,12 @@
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.35,
-      "baseRailX": 0.25,
-      "towerZ": -0.4203913043478261,
+      "baseRearHalfWidth": 0.4339085928158373,
+      "baseRailX": 0.30993470915416954,
+      "towerZ": -0.43500000000000005,
       "towerPostSpacing": 0.34,
       "stackPlates": 8,
-      "stackTravel": 0.11424022346368715,
+      "stackTravel": 0.1142400000004371,
       "seatHeight": 0.48,
       "seatZ": 0,
       "seatWidth": 0.42,
@@ -54,7 +54,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": true,
-      "armPivotHeight": 1.2380027932960893,
+      "armPivotHeight": 1.2380000000054638,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -71,13 +71,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.20750000000000002,
           0.0020000000000000018,
-          -0.4203913043478261
+          0.12
         ],
         "range": [
           0,
-          0.11424022346368715
+          0.1142400000004371
         ],
         "driver": "phase"
       },
@@ -90,7 +90,7 @@
           0
         ],
         "pivot": [
-          0,
+          0.06736941830833909,
           0.782,
           -0.2
         ],
@@ -102,22 +102,22 @@
       }
     ],
     "bboxM": {
-      "length": 1.121,
-      "width": 1,
+      "length": 1.12,
+      "width": 0.995,
       "height": 1.43
     },
     "trainingArea": {
-      "minX": -1.1,
-      "maxX": 1.1,
-      "minZ": -1.1603913043478262,
-      "maxZ": 1.1603913043478262,
-      "widthM": 2.2,
-      "lengthM": 2.3207826086956524,
-      "areaM2": 5.105721739130436
+      "minX": -1.0973694183083391,
+      "maxX": 1.0973694183083391,
+      "minZ": -1.1600000000000001,
+      "maxZ": 1.1600000000000001,
+      "widthM": 2.1947388366166782,
+      "lengthM": 2.3200000000000003,
+      "areaM2": 5.091794100950694
     },
     "stats": {
-      "triangles": 6018,
-      "meshes": 66,
+      "triangles": 6258,
+      "meshes": 68,
       "geometries": 12,
       "materials": 10
     }

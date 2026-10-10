@@ -27,7 +27,8 @@
     "pagina": 24,
     "peso": "66 kg",
     "bateria": null,
-    "descricao": "Estação de supino reto com padrão olímpico, com a elevada durabilidade e qualidade da linha de bancos e suportes."
+    "descricao": "Estação de supino reto com padrão olímpico, com a elevada durabilidade e qualidade da linha de bancos e suportes.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

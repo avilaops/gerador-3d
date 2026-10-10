@@ -37,12 +37,12 @@
   "resolved": {
     "params": {
       "tube": 0.07,
-      "baseRearHalfWidth": 0.3255,
-      "baseRailX": 0.2325,
-      "towerZ": -0.6379984423676012,
+      "baseRearHalfWidth": 0.4116275980416818,
+      "baseRailX": 0.2940197128869156,
+      "towerZ": -0.6575,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.10624024024024024,
+      "stackTravel": 0.10624000000054325,
       "seatHeight": 0.48,
       "seatZ": 0,
       "seatWidth": 0.42,
@@ -53,7 +53,7 @@
       "stacks": 1,
       "swingScale": 1,
       "darkTower": false,
-      "armPivotHeight": 1.138003003003003,
+      "armPivotHeight": 1.1380000000067907,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -70,13 +70,13 @@
           0
         ],
         "pivot": [
-          0,
+          -0.20750000000000002,
           0.0020000000000000018,
-          -0.6329984423676012
+          0.12
         ],
         "range": [
           0,
-          0.10624024024024024
+          0.10624000000054325
         ],
         "driver": "phase"
       },
@@ -89,9 +89,9 @@
           0
         ],
         "pivot": [
-          0,
+          0.03553942577383118,
           0.782,
-          -0.195
+          -0.2
         ],
         "range": [
           0,
@@ -101,22 +101,22 @@
       }
     ],
     "bboxM": {
-      "length": 1.566,
-      "width": 0.93,
+      "length": 1.565,
+      "width": 0.931,
       "height": 1.33
     },
     "trainingArea": {
-      "minX": -1.065,
-      "maxX": 1.065,
-      "minZ": -1.3829984423676012,
-      "maxZ": 1.3829984423676012,
-      "widthM": 2.13,
-      "lengthM": 2.7659968847352023,
-      "areaM2": 5.89157336448598
+      "minX": -1.065539425773831,
+      "maxX": 1.065539425773831,
+      "minZ": -1.3824999999999998,
+      "maxZ": 1.3824999999999998,
+      "widthM": 2.131078851547662,
+      "lengthM": 2.7649999999999997,
+      "areaM2": 5.892433024529285
     },
     "stats": {
-      "triangles": 6246,
-      "meshes": 71,
+      "triangles": 6486,
+      "meshes": 73,
       "geometries": 12,
       "materials": 10
     }

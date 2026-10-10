@@ -6,6 +6,7 @@
  * C, a travessa traseira ocupa a largura L e a torre (ou o quadro) chega à
  * altura A. O mecanismo é dimensionado pelo corpo de quem usa.
  */
+import { decalPlane, warningDecal } from '../../parts/decals';
 import * as THREE from 'three';
 import type { FamilyBuildResult, DimsM } from '../types';
 import type { PartKit } from '../../parts/kit';
@@ -59,7 +60,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
   const centralStacks = false as boolean;
   // Torre lateral: ao lado do assento e virada para quem usa, como na maioria das
   // máquinas de bateria. Precisa de largura para o assento e a torre lado a lado.
-  const sideTower = stacks === 1 && ex.tower === 'side' && W >= 1.02;
+  const sideTower = stacks === 1 && ex.tower === 'side' && W >= 0.92;
   const stationX = sideTower ? W / 2 - 0.345 : 0;
   const towerX = sideTower ? -(W / 2 - 0.23) : stacks === 2 ? (centralStacks ? 0.215 : W / 2 - 0.2) : 0;
   const ax = plates
@@ -71,7 +72,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       : sideTower
         ? 0.33
         : clamp(W / 2 - 0.13, 0.3, 0.44);
-  const railX = sideTower ? 0.3 : clamp(ax, 0.22, W / 2 - t / 2);
+  const railX = sideTower ? Math.min(0.3, W / 2 - 0.2) : clamp(ax, 0.22, W / 2 - t / 2);
   const zRear = -L / 2;
   const zFront = L / 2;
 
@@ -218,6 +219,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const zW = zTop - rearSign * 0.03;
     const zT = clamp(zTop - rearSign * 0.2, zLo, zHi);
     const chapa: [number, number] = [0.05, 0.1];
+    const aviso = warningDecal(kit);
     // Com bateria, a gaiola fica por dentro das colunas.
     const gx = plates ? Math.max(sx, Math.min(W / 2 - 0.2, sx + 0.1)) : Math.min(sx, W / 2 - 0.46);
     for (const s of [1, -1] as const) {
@@ -235,6 +237,12 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
         0.35,
       );
       rig.tube(sup, [s * gx, yTop, zP], [s * gx, yTop, zT], chapa, 'frame', 'cage_top');
+      // Etiqueta de aviso na face de fora da coluna.
+      if (aviso) {
+        const etiqueta = decalPlane(kit, aviso, [0.075, 0.1], [s * (gx + 0.026), 0.82 * yTop, zP], 'decal_warning');
+        etiqueta.rotation.y = (s * Math.PI) / 2;
+        sup.add(etiqueta);
+      }
       for (const k of [0.3, 0.7]) {
         const zk = k < 0.5 ? zF + (zW - zF) * (k / 0.5) : zW + (zT - zW) * ((k - 0.5) / 0.5);
         rig.tube(sup, [s * gx, k * yTop, zP], [s * gx, k * yTop, zk], [0.05, 0.08], 'frame', 'cage_brace');
