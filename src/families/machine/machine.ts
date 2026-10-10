@@ -444,7 +444,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
       const zTop = toTop ? clamp(footZ + ((pz - footZ) * (yTop - y0)) / Math.max(py - y0, 1e-3), zLo, zHi) : pz;
       if (tallFrame && yTop > 1.0) {
         drawCage(sup, sx, yTop, zTop);
-      } else if (tallFrame) {
+      } else if (tallFrame && !toTop) {
         // Máquina baixa: cada lado tem o próprio cavalete, sem arco passando por cima de quem usa.
         for (const s of [1, -1] as const) {
           for (const d of [1, -1] as const) rig.tube(sup, [s * sx, y0, clamp(pz + d * 0.26, zLo, zHi)], [s * sx, py, pz], [0.05, 0.09], 'frame', 'trestle_leg');
