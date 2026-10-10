@@ -92,6 +92,8 @@ export interface ExerciseDef {
   sticker?: string;
   /** Sem quadro alto nem mastro: a altura vem da própria estação (máquinas baixas de anilhas). */
   noFrame?: boolean;
+  /** Máquina aberta: nunca leva a gaiola, mesmo com o pivô perto do alto. */
+  openFrame?: boolean;
   levers(c: ExerciseContext): LeverDef[];
 }
 
@@ -334,6 +336,7 @@ const DEFS = {
     ],
   },
   'biceps-curl': {
+    openFrame: true,
     label: 'Rosca (apoio Scott)',
     sticker: 'BICEPS CURL',
     tower: 'side',
@@ -376,6 +379,7 @@ const DEFS = {
     ],
   },
   'seated-dip': {
+    openFrame: true,
     label: 'Tríceps sentado (mergulho)',
     station: 'seat-back',
     seatHeight: 0.46,

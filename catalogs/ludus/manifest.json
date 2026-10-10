@@ -1,3207 +1,477 @@
 {
   "catalog": "ludus",
   "count": 94,
-  "failed": 0,
+  "failed": 94,
   "items": [
     {
       "id": "LD-A001",
-      "ok": true,
-      "name": "Hiperextensão de Glúteos de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A001/model.glb",
-        "usdz": "models/LD-A001/model.usdz",
-        "plan": "models/LD-A001/plan.svg",
-        "spec": "models/LD-A001/spec.json",
-        "thumb": "models/LD-A001/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1810,
-        "width": 1010,
-        "height": 1320
-      },
-      "deviationPct": {
-        "length": 0.83,
-        "width": 0,
-        "height": 0.15
-      },
-      "trainingArea": {
-        "widthM": 2.21,
-        "lengthM": 3.025,
-        "areaM2": 6.69
-      },
-      "animated": true,
-      "triangles": 5692,
-      "glbBytes": 156012,
-      "usdzBytes": 469831
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A002",
-      "ok": true,
-      "name": "Supino e Remada",
-      "family": "plate-loaded-lever",
-      "review": "approved",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A002/model.glb",
-        "usdz": "models/LD-A002/model.usdz",
-        "plan": "models/LD-A002/plan.svg",
-        "spec": "models/LD-A002/spec.json",
-        "thumb": "models/LD-A002/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1830,
-        "width": 1330,
-        "height": 2090
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0.16
-      },
-      "trainingArea": {
-        "widthM": 2.53,
-        "lengthM": 3.03,
-        "areaM2": 7.67
-      },
-      "animated": true,
-      "triangles": 8844,
-      "glbBytes": 426704,
-      "usdzBytes": 1318819
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A003",
-      "ok": true,
-      "name": "Supino Declinado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A003/model.glb",
-        "usdz": "models/LD-A003/model.usdz",
-        "plan": "models/LD-A003/plan.svg",
-        "spec": "models/LD-A003/spec.json",
-        "thumb": "models/LD-A003/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 1380,
-        "height": 1730
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.58,
-        "lengthM": 2.5,
-        "areaM2": 6.45
-      },
-      "animated": true,
-      "triangles": 8396,
-      "glbBytes": 235960,
-      "usdzBytes": 718214
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A004",
-      "ok": true,
-      "name": "Remada D.Y.",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A004/model.glb",
-        "usdz": "models/LD-A004/model.usdz",
-        "plan": "models/LD-A004/plan.svg",
-        "spec": "models/LD-A004/spec.json",
-        "thumb": "models/LD-A004/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 1430,
-        "height": 2090
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.63,
-        "lengthM": 2.5,
-        "areaM2": 6.58
-      },
-      "animated": true,
-      "triangles": 8416,
-      "glbBytes": 231412,
-      "usdzBytes": 715046
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A005",
-      "ok": true,
-      "name": "Puxada Alta Frontal",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A005/model.glb",
-        "usdz": "models/LD-A005/model.usdz",
-        "plan": "models/LD-A005/plan.svg",
-        "spec": "models/LD-A005/spec.json",
-        "thumb": "models/LD-A005/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1660,
-        "width": 1050,
-        "height": 2040
-      },
-      "deviationPct": {
-        "length": 0.9,
-        "width": 0,
-        "height": 0.59
-      },
-      "trainingArea": {
-        "widthM": 2.25,
-        "lengthM": 2.875,
-        "areaM2": 6.47
-      },
-      "animated": true,
-      "triangles": 7728,
-      "glbBytes": 173424,
-      "usdzBytes": 517891
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A006",
-      "ok": true,
-      "name": "Remada Alta",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A006/model.glb",
-        "usdz": "models/LD-A006/model.usdz",
-        "plan": "models/LD-A006/plan.svg",
-        "spec": "models/LD-A006/spec.json",
-        "thumb": "models/LD-A006/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1550,
-        "width": 1050,
-        "height": 2010
-      },
-      "deviationPct": {
-        "length": 0.97,
-        "width": 0,
-        "height": 0.6
-      },
-      "trainingArea": {
-        "widthM": 2.25,
-        "lengthM": 2.765,
-        "areaM2": 6.22
-      },
-      "animated": true,
-      "triangles": 7728,
-      "glbBytes": 173716,
-      "usdzBytes": 518361
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A007",
-      "ok": true,
-      "name": "Supino Horizontal",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A007/model.glb",
-        "usdz": "models/LD-A007/model.usdz",
-        "plan": "models/LD-A007/plan.svg",
-        "spec": "models/LD-A007/spec.json",
-        "thumb": "models/LD-A007/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1680,
-        "width": 1550,
-        "height": 1070
-      },
-      "deviationPct": {
-        "length": -0.02,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.75,
-        "lengthM": 2.88,
-        "areaM2": 7.92
-      },
-      "animated": true,
-      "triangles": 6632,
-      "glbBytes": 183644,
-      "usdzBytes": 539785
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A008",
-      "ok": true,
-      "name": "Remada T-Bar",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A008/model.glb",
-        "usdz": "models/LD-A008/model.usdz",
-        "plan": "models/LD-A008/plan.svg",
-        "spec": "models/LD-A008/spec.json",
-        "thumb": "models/LD-A008/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2050,
-        "width": 820,
-        "height": 530
-      },
-      "deviationPct": {
-        "length": 0.73,
-        "width": 0,
-        "height": 0.36
-      },
-      "trainingArea": {
-        "widthM": 2.02,
-        "lengthM": 3.265,
-        "areaM2": 6.6
-      },
-      "animated": true,
-      "triangles": 3152,
-      "glbBytes": 51296,
-      "usdzBytes": 142317
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A009",
-      "ok": true,
-      "name": "Remada Baixa",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A009/model.glb",
-        "usdz": "models/LD-A009/model.usdz",
-        "plan": "models/LD-A009/plan.svg",
-        "spec": "models/LD-A009/spec.json",
-        "thumb": "models/LD-A009/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1220,
-        "width": 1200,
-        "height": 1710
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.4,
-        "lengthM": 2.42,
-        "areaM2": 5.81
-      },
-      "animated": true,
-      "triangles": 8416,
-      "glbBytes": 231468,
-      "usdzBytes": 715012
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A010",
-      "ok": true,
-      "name": "Flexão Nórdica",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A010/model.glb",
-        "usdz": "models/LD-A010/model.usdz",
-        "plan": "models/LD-A010/plan.svg",
-        "spec": "models/LD-A010/spec.json",
-        "thumb": "models/LD-A010/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1970,
-        "width": 1360,
-        "height": 1470
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.35
-      },
-      "trainingArea": {
-        "widthM": 2.56,
-        "lengthM": 3.17,
-        "areaM2": 8.12
-      },
-      "animated": true,
-      "triangles": 6608,
-      "glbBytes": 214456,
-      "usdzBytes": 665001
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A011",
-      "ok": true,
-      "name": "Remada Sentada",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A011/model.glb",
-        "usdz": "models/LD-A011/model.usdz",
-        "plan": "models/LD-A011/plan.svg",
-        "spec": "models/LD-A011/spec.json",
-        "thumb": "models/LD-A011/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1500,
-        "width": 1270,
-        "height": 1300
-      },
-      "deviationPct": {
-        "length": 0.71,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.47,
-        "lengthM": 2.711,
-        "areaM2": 6.7
-      },
-      "animated": true,
-      "triangles": 7636,
-      "glbBytes": 242588,
-      "usdzBytes": 738103
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A012",
-      "ok": true,
-      "name": "Desenvolvimento de Ombros",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A012/model.glb",
-        "usdz": "models/LD-A012/model.usdz",
-        "plan": "models/LD-A012/plan.svg",
-        "spec": "models/LD-A012/spec.json",
-        "thumb": "models/LD-A012/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 1480,
-        "height": 1880
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.68,
-        "lengthM": 2.5,
-        "areaM2": 6.7
-      },
-      "animated": true,
-      "triangles": 9000,
-      "glbBytes": 250984,
-      "usdzBytes": 759494
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A013",
-      "ok": true,
-      "name": "Supino Super Inclinado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A013/model.glb",
-        "usdz": "models/LD-A013/model.usdz",
-        "plan": "models/LD-A013/plan.svg",
-        "spec": "models/LD-A013/spec.json",
-        "thumb": "models/LD-A013/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1270,
-        "width": 1500,
-        "height": 1530
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.7,
-        "lengthM": 2.47,
-        "areaM2": 6.67
-      },
-      "animated": true,
-      "triangles": 8492,
-      "glbBytes": 237684,
-      "usdzBytes": 723532
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A014",
-      "ok": true,
-      "name": "Supino Vertical Aberto",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A014/model.glb",
-        "usdz": "models/LD-A014/model.usdz",
-        "plan": "models/LD-A014/plan.svg",
-        "spec": "models/LD-A014/spec.json",
-        "thumb": "models/LD-A014/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1150,
-        "width": 1500,
-        "height": 1760
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.7,
-        "lengthM": 2.35,
-        "areaM2": 6.35
-      },
-      "animated": true,
-      "triangles": 8492,
-      "glbBytes": 237544,
-      "usdzBytes": 723514
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A015",
-      "ok": true,
-      "name": "Puxada Alta",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A015/model.glb",
-        "usdz": "models/LD-A015/model.usdz",
-        "plan": "models/LD-A015/plan.svg",
-        "spec": "models/LD-A015/spec.json",
-        "thumb": "models/LD-A015/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1810,
-        "width": 1070,
-        "height": 2040
-      },
-      "deviationPct": {
-        "length": 0.83,
-        "width": 0,
-        "height": 0.59
-      },
-      "trainingArea": {
-        "widthM": 2.27,
-        "lengthM": 3.025,
-        "areaM2": 6.87
-      },
-      "animated": true,
-      "triangles": 7728,
-      "glbBytes": 173340,
-      "usdzBytes": 518224
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A016",
-      "ok": true,
-      "name": "Elevação Lateral Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A016/model.glb",
-        "usdz": "models/LD-A016/model.usdz",
-        "plan": "models/LD-A016/plan.svg",
-        "spec": "models/LD-A016/spec.json",
-        "thumb": "models/LD-A016/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1430,
-        "width": 1130,
-        "height": 1200
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.33,
-        "lengthM": 2.63,
-        "areaM2": 6.13
-      },
-      "animated": true,
-      "triangles": 9052,
-      "glbBytes": 275512,
-      "usdzBytes": 881271
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A017",
-      "ok": true,
-      "name": "Pullover de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A017/model.glb",
-        "usdz": "models/LD-A017/model.usdz",
-        "plan": "models/LD-A017/plan.svg",
-        "spec": "models/LD-A017/spec.json",
-        "thumb": "models/LD-A017/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1380,
-        "width": 1300,
-        "height": 1500
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.5,
-        "lengthM": 2.58,
-        "areaM2": 6.45
-      },
-      "animated": true,
-      "triangles": 8348,
-      "glbBytes": 280660,
-      "usdzBytes": 882353
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A018",
-      "ok": true,
-      "name": "Tríceps Sentado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A018/model.glb",
-        "usdz": "models/LD-A018/model.usdz",
-        "plan": "models/LD-A018/plan.svg",
-        "spec": "models/LD-A018/spec.json",
-        "thumb": "models/LD-A018/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1820,
-        "width": 1240,
-        "height": 1090
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.44,
-        "lengthM": 3.02,
-        "areaM2": 7.37
-      },
-      "animated": true,
-      "triangles": 7904,
-      "glbBytes": 224380,
-      "usdzBytes": 698263
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A019",
-      "ok": true,
-      "name": "Super Fly",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A019/model.glb",
-        "usdz": "models/LD-A019/model.usdz",
-        "plan": "models/LD-A019/plan.svg",
-        "spec": "models/LD-A019/spec.json",
-        "thumb": "models/LD-A019/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2090,
-        "width": 2190,
-        "height": 1050
-      },
-      "deviationPct": {
-        "length": 0.72,
-        "width": 0,
-        "height": 0.19
-      },
-      "trainingArea": {
-        "widthM": 3.39,
-        "lengthM": 3.305,
-        "areaM2": 11.2
-      },
-      "animated": true,
-      "triangles": 6632,
-      "glbBytes": 183076,
-      "usdzBytes": 538944
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A020",
-      "ok": true,
-      "name": "Suporte de Agachamento Búlgaro e Levantamentos",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A020/model.glb",
-        "usdz": "models/LD-A020/model.usdz",
-        "plan": "models/LD-A020/plan.svg",
-        "spec": "models/LD-A020/spec.json",
-        "thumb": "models/LD-A020/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1555,
-        "width": 1375,
-        "height": 850
-      },
-      "deviationPct": {
-        "length": 0.96,
-        "width": 0,
-        "height": 0.24
-      },
-      "trainingArea": {
-        "widthM": 2.575,
-        "lengthM": 2.77,
-        "areaM2": 7.13
-      },
-      "animated": true,
-      "triangles": 3760,
-      "glbBytes": 52592,
-      "usdzBytes": 144878
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A021",
-      "ok": true,
-      "name": "Mesa Flexora de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A021/model.glb",
-        "usdz": "models/LD-A021/model.usdz",
-        "plan": "models/LD-A021/plan.svg",
-        "spec": "models/LD-A021/spec.json",
-        "thumb": "models/LD-A021/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1810,
-        "width": 1350,
-        "height": 1000
-      },
-      "deviationPct": {
-        "length": 0.83,
-        "width": 0,
-        "height": 0.2
-      },
-      "trainingArea": {
-        "widthM": 2.55,
-        "lengthM": 3.025,
-        "areaM2": 7.71
-      },
-      "animated": true,
-      "triangles": 6696,
-      "glbBytes": 236904,
-      "usdzBytes": 736849
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A022",
-      "ok": true,
-      "name": "Cadeira Extensora Iso-Lateral",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A022/model.glb",
-        "usdz": "models/LD-A022/model.usdz",
-        "plan": "models/LD-A022/plan.svg",
-        "spec": "models/LD-A022/spec.json",
-        "thumb": "models/LD-A022/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1380,
-        "width": 1450,
-        "height": 1450
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.14
-      },
-      "trainingArea": {
-        "widthM": 2.65,
-        "lengthM": 2.58,
-        "areaM2": 6.84
-      },
-      "animated": true,
-      "triangles": 5974,
-      "glbBytes": 212772,
-      "usdzBytes": 658541
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A023",
-      "ok": true,
-      "name": "Hack Squat",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A023/model.glb",
-        "usdz": "models/LD-A023/model.usdz",
-        "plan": "models/LD-A023/plan.svg",
-        "spec": "models/LD-A023/spec.json",
-        "thumb": "models/LD-A023/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2150,
-        "width": 1560,
-        "height": 1500
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0.98
-      },
-      "trainingArea": {
-        "widthM": 2.76,
-        "lengthM": 3.35,
-        "areaM2": 9.25
-      },
-      "animated": true,
-      "triangles": 6938,
-      "glbBytes": 221296,
-      "usdzBytes": 696762
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A024",
-      "ok": true,
-      "name": "Cadeira Extensora de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A024/model.glb",
-        "usdz": "models/LD-A024/model.usdz",
-        "plan": "models/LD-A024/plan.svg",
-        "spec": "models/LD-A024/spec.json",
-        "thumb": "models/LD-A024/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1430,
-        "width": 1380,
-        "height": 1450
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.14
-      },
-      "trainingArea": {
-        "widthM": 2.58,
-        "lengthM": 2.63,
-        "areaM2": 6.79
-      },
-      "animated": true,
-      "triangles": 6374,
-      "glbBytes": 230864,
-      "usdzBytes": 716658
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A025",
-      "ok": true,
-      "name": "Panturrilha Sentada",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A025/model.glb",
-        "usdz": "models/LD-A025/model.usdz",
-        "plan": "models/LD-A025/plan.svg",
-        "spec": "models/LD-A025/spec.json",
-        "thumb": "models/LD-A025/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1240,
-        "width": 840,
-        "height": 1370
-      },
-      "deviationPct": {
-        "length": 0.2,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.04,
-        "lengthM": 2.443,
-        "areaM2": 4.98
-      },
-      "animated": true,
-      "triangles": 5632,
-      "glbBytes": 157336,
-      "usdzBytes": 471539
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A026",
-      "ok": true,
-      "name": "Panturrilha Horizontal",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A026/model.glb",
-        "usdz": "models/LD-A026/model.usdz",
-        "plan": "models/LD-A026/plan.svg",
-        "spec": "models/LD-A026/spec.json",
-        "thumb": "models/LD-A026/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1630,
-        "width": 1450,
-        "height": 1520
-      },
-      "deviationPct": {
-        "length": 0.06,
-        "width": 0,
-        "height": 0.14
-      },
-      "trainingArea": {
-        "widthM": 2.65,
-        "lengthM": 2.831,
-        "areaM2": 7.5
-      },
-      "animated": true,
-      "triangles": 4676,
-      "glbBytes": 171772,
-      "usdzBytes": 546799
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A027",
-      "ok": true,
-      "name": "Elevação Pélvica",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A027/model.glb",
-        "usdz": "models/LD-A027/model.usdz",
-        "plan": "models/LD-A027/plan.svg",
-        "spec": "models/LD-A027/spec.json",
-        "thumb": "models/LD-A027/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1720,
-        "width": 1480,
-        "height": 1020
-      },
-      "deviationPct": {
-        "length": 0.53,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.68,
-        "lengthM": 2.929,
-        "areaM2": 7.85
-      },
-      "animated": true,
-      "triangles": 5908,
-      "glbBytes": 157424,
-      "usdzBytes": 474344
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A028",
-      "ok": true,
-      "name": "Ground Base Jammer",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A028/model.glb",
-        "usdz": "models/LD-A028/model.usdz",
-        "plan": "models/LD-A028/plan.svg",
-        "spec": "models/LD-A028/spec.json",
-        "thumb": "models/LD-A028/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1500,
-        "width": 1680,
-        "height": 2290
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.88,
-        "lengthM": 2.7,
-        "areaM2": 7.78
-      },
-      "animated": true,
-      "triangles": 5720,
-      "glbBytes": 103364,
-      "usdzBytes": 274245
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A029",
-      "ok": true,
-      "name": "Agachamento Múltiplo",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A029/model.glb",
-        "usdz": "models/LD-A029/model.usdz",
-        "plan": "models/LD-A029/plan.svg",
-        "spec": "models/LD-A029/spec.json",
-        "thumb": "models/LD-A029/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1490,
-        "width": 1580,
-        "height": 870
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.78,
-        "lengthM": 2.69,
-        "areaM2": 7.48
-      },
-      "animated": true,
-      "triangles": 3760,
-      "glbBytes": 52720,
-      "usdzBytes": 144854
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A030",
-      "ok": true,
-      "name": "Agachamento Pendulum",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A030/model.glb",
-        "usdz": "models/LD-A030/model.usdz",
-        "plan": "models/LD-A030/plan.svg",
-        "spec": "models/LD-A030/spec.json",
-        "thumb": "models/LD-A030/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2480,
-        "width": 1430,
-        "height": 1995
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": -0.55
-      },
-      "trainingArea": {
-        "widthM": 2.63,
-        "lengthM": 3.68,
-        "areaM2": 9.68
-      },
-      "animated": true,
-      "triangles": 6730,
-      "glbBytes": 208704,
-      "usdzBytes": 652383
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A031",
-      "ok": true,
-      "name": "Flexora em Pé de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A031/model.glb",
-        "usdz": "models/LD-A031/model.usdz",
-        "plan": "models/LD-A031/plan.svg",
-        "spec": "models/LD-A031/spec.json",
-        "thumb": "models/LD-A031/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1100,
-        "width": 1270,
-        "height": 1200
-      },
-      "deviationPct": {
-        "length": 0.6,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.47,
-        "lengthM": 2.307,
-        "areaM2": 5.7
-      },
-      "animated": true,
-      "triangles": 5812,
-      "glbBytes": 171460,
-      "usdzBytes": 550798
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A032",
-      "ok": true,
-      "name": "Supino Reto Articulado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A032/model.glb",
-        "usdz": "models/LD-A032/model.usdz",
-        "plan": "models/LD-A032/plan.svg",
-        "spec": "models/LD-A032/spec.json",
-        "thumb": "models/LD-A032/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1250,
-        "width": 1330,
-        "height": 1760
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.53,
-        "lengthM": 2.45,
-        "areaM2": 6.2
-      },
-      "animated": true,
-      "triangles": 8492,
-      "glbBytes": 237716,
-      "usdzBytes": 723624
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A033",
-      "ok": true,
-      "name": "Scott Articulado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A033/model.glb",
-        "usdz": "models/LD-A033/model.usdz",
-        "plan": "models/LD-A033/plan.svg",
-        "spec": "models/LD-A033/spec.json",
-        "thumb": "models/LD-A033/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1270,
-        "width": 1170,
-        "height": 1350
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.37,
-        "lengthM": 2.47,
-        "areaM2": 5.85
-      },
-      "animated": true,
-      "triangles": 8132,
-      "glbBytes": 220152,
-      "usdzBytes": 685906
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A034",
-      "ok": true,
-      "name": "Leg Press",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A034/model.glb",
-        "usdz": "models/LD-A034/model.usdz",
-        "plan": "models/LD-A034/plan.svg",
-        "spec": "models/LD-A034/spec.json",
-        "thumb": "models/LD-A034/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2400,
-        "width": 1688,
-        "height": 1480
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.888,
-        "lengthM": 3.6,
-        "areaM2": 10.4
-      },
-      "animated": true,
-      "triangles": 6348,
-      "glbBytes": 221456,
-      "usdzBytes": 696922
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A035",
-      "ok": true,
-      "name": "Cadeira Abdominal de Peso Livre",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A035/model.glb",
-        "usdz": "models/LD-A035/model.usdz",
-        "plan": "models/LD-A035/plan.svg",
-        "spec": "models/LD-A035/spec.json",
-        "thumb": "models/LD-A035/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1200,
-        "width": 1480,
-        "height": 1680
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.68,
-        "lengthM": 2.4,
-        "areaM2": 6.43
-      },
-      "animated": true,
-      "triangles": 9356,
-      "glbBytes": 300128,
-      "usdzBytes": 942636
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A036",
-      "ok": true,
-      "name": "Belt Squat",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A036/model.glb",
-        "usdz": "models/LD-A036/model.usdz",
-        "plan": "models/LD-A036/plan.svg",
-        "spec": "models/LD-A036/spec.json",
-        "thumb": "models/LD-A036/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1985,
-        "width": 1610,
-        "height": 1525
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.81,
-        "lengthM": 3.185,
-        "areaM2": 8.95
-      },
-      "animated": true,
-      "triangles": 4768,
-      "glbBytes": 80984,
-      "usdzBytes": 237985
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A037",
-      "ok": true,
-      "name": "Belt Squat Pro",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A037/model.glb",
-        "usdz": "models/LD-A037/model.usdz",
-        "plan": "models/LD-A037/plan.svg",
-        "spec": "models/LD-A037/spec.json",
-        "thumb": "models/LD-A037/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1986,
-        "width": 1604,
-        "height": 1527
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.804,
-        "lengthM": 3.186,
-        "areaM2": 8.93
-      },
-      "animated": true,
-      "triangles": 4768,
-      "glbBytes": 80768,
-      "usdzBytes": 237546
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A038",
-      "ok": true,
-      "name": "Leg Press Articulado",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A038/model.glb",
-        "usdz": "models/LD-A038/model.usdz",
-        "plan": "models/LD-A038/plan.svg",
-        "spec": "models/LD-A038/spec.json",
-        "thumb": "models/LD-A038/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2240,
-        "width": 1745,
-        "height": 1425
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.945,
-        "lengthM": 3.44,
-        "areaM2": 10.13
-      },
-      "animated": true,
-      "triangles": 6360,
-      "glbBytes": 221156,
-      "usdzBytes": 696817
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A039",
-      "ok": true,
-      "name": "Encolhimento de Ombro",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A039/model.glb",
-        "usdz": "models/LD-A039/model.usdz",
-        "plan": "models/LD-A039/plan.svg",
-        "spec": "models/LD-A039/spec.json",
-        "thumb": "models/LD-A039/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1025,
-        "width": 1450,
-        "height": 1230
-      },
-      "deviationPct": {
-        "length": 0.98,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.65,
-        "lengthM": 2.235,
-        "areaM2": 5.92
-      },
-      "animated": true,
-      "triangles": 8128,
-      "glbBytes": 225560,
-      "usdzBytes": 697835
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A040",
-      "ok": true,
-      "name": "Supino Inclinado Articulado",
-      "family": "plate-loaded-lever",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A040/model.glb",
-        "usdz": "models/LD-A040/model.usdz",
-        "plan": "models/LD-A040/plan.svg",
-        "spec": "models/LD-A040/spec.json",
-        "thumb": "models/LD-A040/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1380,
-        "width": 1160,
-        "height": 1910
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.36,
-        "lengthM": 2.58,
-        "areaM2": 6.09
-      },
-      "animated": true,
-      "triangles": 8492,
-      "glbBytes": 237904,
-      "usdzBytes": 723808
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A041",
-      "ok": true,
-      "name": "Agachamento V-Squat",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A041/model.glb",
-        "usdz": "models/LD-A041/model.usdz",
-        "plan": "models/LD-A041/plan.svg",
-        "spec": "models/LD-A041/spec.json",
-        "thumb": "models/LD-A041/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2470,
-        "width": 1070,
-        "height": 2050
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": -0.66
-      },
-      "trainingArea": {
-        "widthM": 2.27,
-        "lengthM": 3.67,
-        "areaM2": 8.33
-      },
-      "animated": true,
-      "triangles": 6730,
-      "glbBytes": 208656,
-      "usdzBytes": 652236
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A042",
-      "ok": true,
-      "name": "Banco Reto",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A042/model.glb",
-        "usdz": "models/LD-A042/model.usdz",
-        "plan": "models/LD-A042/plan.svg",
-        "spec": "models/LD-A042/spec.json",
-        "thumb": "models/LD-A042/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1270,
-        "width": 560,
-        "height": 410
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": -0.16,
-        "height": 0.4
-      },
-      "trainingArea": {
-        "widthM": 1.759,
-        "lengthM": 2.47,
-        "areaM2": 4.35
-      },
-      "animated": false,
-      "triangles": 1426,
-      "glbBytes": 96836,
-      "usdzBytes": 311837
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A043",
-      "ok": true,
-      "name": "Banco Abdominal",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A043/model.glb",
-        "usdz": "models/LD-A043/model.usdz",
-        "plan": "models/LD-A043/plan.svg",
-        "spec": "models/LD-A043/spec.json",
-        "thumb": "models/LD-A043/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1740,
-        "width": 610,
-        "height": 880
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.81,
-        "lengthM": 2.94,
-        "areaM2": 5.32
-      },
-      "animated": false,
-      "triangles": 2016,
-      "glbBytes": 91324,
-      "usdzBytes": 292744
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A044",
-      "ok": true,
-      "name": "Banco Inclinado 30°",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A044/model.glb",
-        "usdz": "models/LD-A044/model.usdz",
-        "plan": "models/LD-A044/plan.svg",
-        "spec": "models/LD-A044/spec.json",
-        "thumb": "models/LD-A044/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1100,
-        "width": 630,
-        "height": 780
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0.28
-      },
-      "trainingArea": {
-        "widthM": 1.83,
-        "lengthM": 2.3,
-        "areaM2": 4.21
-      },
-      "animated": false,
-      "triangles": 2584,
-      "glbBytes": 166436,
-      "usdzBytes": 536946
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A045",
-      "ok": true,
-      "name": "Banco Inclinado 55°",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A045/model.glb",
-        "usdz": "models/LD-A045/model.usdz",
-        "plan": "models/LD-A045/plan.svg",
-        "spec": "models/LD-A045/spec.json",
-        "thumb": "models/LD-A045/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 890,
-        "width": 550,
-        "height": 1010
-      },
-      "deviationPct": {
-        "length": 0.04,
-        "width": 0,
-        "height": 0.09
-      },
-      "trainingArea": {
-        "widthM": 1.75,
-        "lengthM": 2.09,
-        "areaM2": 3.66
-      },
-      "animated": false,
-      "triangles": 2584,
-      "glbBytes": 166496,
-      "usdzBytes": 536741
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A046",
-      "ok": true,
-      "name": "Banco Multiuso 75°",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A046/model.glb",
-        "usdz": "models/LD-A046/model.usdz",
-        "plan": "models/LD-A046/plan.svg",
-        "spec": "models/LD-A046/spec.json",
-        "thumb": "models/LD-A046/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 640,
-        "height": 940
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0.03
-      },
-      "trainingArea": {
-        "widthM": 1.84,
-        "lengthM": 2.5,
-        "areaM2": 4.6
-      },
-      "animated": false,
-      "triangles": 2584,
-      "glbBytes": 166428,
-      "usdzBytes": 538216
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A047",
-      "ok": true,
-      "name": "Banco Declinado e Abdominal",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A047/model.glb",
-        "usdz": "models/LD-A047/model.usdz",
-        "plan": "models/LD-A047/plan.svg",
-        "spec": "models/LD-A047/spec.json",
-        "thumb": "models/LD-A047/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1610,
-        "width": 610,
-        "height": 870
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.81,
-        "lengthM": 2.81,
-        "areaM2": 5.09
-      },
-      "animated": false,
-      "triangles": 2016,
-      "glbBytes": 91316,
-      "usdzBytes": 293188
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A048",
-      "ok": true,
-      "name": "Banco Regulável de 0° a 90°",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A048/model.glb",
-        "usdz": "models/LD-A048/model.usdz",
-        "plan": "models/LD-A048/plan.svg",
-        "spec": "models/LD-A048/spec.json",
-        "thumb": "models/LD-A048/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1330,
-        "width": 560,
-        "height": 470
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.76,
-        "lengthM": 2.53,
-        "areaM2": 4.45
-      },
-      "animated": false,
-      "triangles": 2550,
-      "glbBytes": 170688,
-      "usdzBytes": 550438
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A049",
-      "ok": true,
-      "name": "Banco Declinado Ajustável",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A049/model.glb",
-        "usdz": "models/LD-A049/model.usdz",
-        "plan": "models/LD-A049/plan.svg",
-        "spec": "models/LD-A049/spec.json",
-        "thumb": "models/LD-A049/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1630,
-        "width": 720,
-        "height": 940
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.92,
-        "lengthM": 2.83,
-        "areaM2": 5.43
-      },
-      "animated": false,
-      "triangles": 2016,
-      "glbBytes": 91384,
-      "usdzBytes": 292740
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A050",
-      "ok": true,
-      "name": "Supino Reto Livre",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A050/model.glb",
-        "usdz": "models/LD-A050/model.usdz",
-        "plan": "models/LD-A050/plan.svg",
-        "spec": "models/LD-A050/spec.json",
-        "thumb": "models/LD-A050/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1330,
-        "width": 1270,
-        "height": 1270
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.02,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.47,
-        "lengthM": 2.53,
-        "areaM2": 6.25
-      },
-      "animated": false,
-      "triangles": 3184,
-      "glbBytes": 111084,
-      "usdzBytes": 358182
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A051",
-      "ok": true,
-      "name": "Supino Inclinado Livre",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A051/model.glb",
-        "usdz": "models/LD-A051/model.usdz",
-        "plan": "models/LD-A051/plan.svg",
-        "spec": "models/LD-A051/spec.json",
-        "thumb": "models/LD-A051/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 1330,
-        "height": 1480
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0.02,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.53,
-        "lengthM": 2.5,
-        "areaM2": 6.33
-      },
-      "animated": false,
-      "triangles": 3886,
-      "glbBytes": 168828,
-      "usdzBytes": 551477
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A052",
-      "ok": true,
-      "name": "Supino Declinado Livre",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A052/model.glb",
-        "usdz": "models/LD-A052/model.usdz",
-        "plan": "models/LD-A052/plan.svg",
-        "spec": "models/LD-A052/spec.json",
-        "thumb": "models/LD-A052/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1530,
-        "width": 1350,
-        "height": 1270
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.02,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.55,
-        "lengthM": 2.73,
-        "areaM2": 6.96
-      },
-      "animated": false,
-      "triangles": 3488,
-      "glbBytes": 117796,
-      "usdzBytes": 374131
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A053",
-      "ok": true,
-      "name": "Suporte para 10 Barras",
-      "family": "rack",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A053/model.glb",
-        "usdz": "models/LD-A053/model.usdz",
-        "plan": "models/LD-A053/plan.svg",
-        "spec": "models/LD-A053/spec.json",
-        "thumb": "models/LD-A053/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 790,
-        "width": 720,
-        "height": 1530
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.02,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.92,
-        "lengthM": 1.99,
-        "areaM2": 3.82
-      },
-      "animated": false,
-      "triangles": 5856,
-      "glbBytes": 57164,
-      "usdzBytes": 171551
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A054",
-      "ok": true,
-      "name": "Banco de Extensão Lombar",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A054/model.glb",
-        "usdz": "models/LD-A054/model.usdz",
-        "plan": "models/LD-A054/plan.svg",
-        "spec": "models/LD-A054/spec.json",
-        "thumb": "models/LD-A054/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1500,
-        "width": 720,
-        "height": 1100
-      },
-      "deviationPct": {
-        "length": 0.01,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 1.92,
-        "lengthM": 2.7,
-        "areaM2": 5.18
-      },
-      "animated": false,
-      "triangles": 4110,
-      "glbBytes": 177256,
-      "usdzBytes": 573033
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A055",
-      "ok": true,
-      "name": "Scott Peso Livre",
-      "family": "bench",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A055/model.glb",
-        "usdz": "models/LD-A055/model.usdz",
-        "plan": "models/LD-A055/plan.svg",
-        "spec": "models/LD-A055/spec.json",
-        "thumb": "models/LD-A055/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1000,
-        "width": 920,
-        "height": 1100
-      },
-      "deviationPct": {
-        "length": 0.03,
-        "width": 0,
-        "height": 0.03
-      },
-      "trainingArea": {
-        "widthM": 2.12,
-        "lengthM": 2.2,
-        "areaM2": 4.66
-      },
-      "animated": false,
-      "triangles": 2994,
-      "glbBytes": 173312,
-      "usdzBytes": 562318
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-A056",
-      "ok": true,
-      "name": "Suporte para Anilhas",
-      "family": "rack",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-A056/model.glb",
-        "usdz": "models/LD-A056/model.usdz",
-        "plan": "models/LD-A056/plan.svg",
-        "spec": "models/LD-A056/spec.json",
-        "thumb": "models/LD-A056/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 510,
-        "width": 690,
-        "height": 1000
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.02,
-        "height": 0.24
-      },
-      "trainingArea": {
-        "widthM": 1.89,
-        "lengthM": 1.71,
-        "areaM2": 3.23
-      },
-      "animated": false,
-      "triangles": 1724,
-      "glbBytes": 29140,
-      "usdzBytes": 79540
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B001",
-      "ok": true,
-      "name": "Mesa Flexora",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B001/model.glb",
-        "usdz": "models/LD-B001/model.usdz",
-        "plan": "models/LD-B001/plan.svg",
-        "spec": "models/LD-B001/spec.json",
-        "thumb": "models/LD-B001/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1675,
-        "width": 1095,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.43,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.3,
-        "lengthM": 2.875,
-        "areaM2": 6.61
-      },
-      "animated": true,
-      "triangles": 6846,
-      "glbBytes": 291780,
-      "usdzBytes": 762281
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B002",
-      "ok": true,
-      "name": "Cadeira Extensora",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B002/model.glb",
-        "usdz": "models/LD-B002/model.usdz",
-        "plan": "models/LD-B002/plan.svg",
-        "spec": "models/LD-B002/spec.json",
-        "thumb": "models/LD-B002/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1250,
-        "width": 1130,
-        "height": 1445
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.27,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.333,
-        "lengthM": 2.45,
-        "areaM2": 5.72
-      },
-      "animated": true,
-      "triangles": 7876,
-      "glbBytes": 377408,
-      "usdzBytes": 1014579
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B003",
-      "ok": true,
-      "name": "Leg Press 180°",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B003/model.glb",
-        "usdz": "models/LD-B003/model.usdz",
-        "plan": "models/LD-B003/plan.svg",
-        "spec": "models/LD-B003/spec.json",
-        "thumb": "models/LD-B003/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2000,
-        "width": 1085,
-        "height": 1540
-      },
-      "deviationPct": {
-        "length": 0.75,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.285,
-        "lengthM": 3.215,
-        "areaM2": 7.35
-      },
-      "animated": true,
-      "triangles": 4316,
-      "glbBytes": 214788,
-      "usdzBytes": 587417
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B004",
-      "ok": true,
-      "name": "Peck Deck",
-      "family": "selectorized-tower",
-      "review": "approved",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B004/model.glb",
-        "usdz": "models/LD-B004/model.usdz",
-        "plan": "models/LD-B004/plan.svg",
-        "spec": "models/LD-B004/spec.json",
-        "thumb": "models/LD-B004/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1310,
-        "width": 1200,
-        "height": 2050
-      },
-      "deviationPct": {
-        "length": 0.03,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.4,
-        "lengthM": 2.51,
-        "areaM2": 6.03
-      },
-      "animated": true,
-      "triangles": 8940,
-      "glbBytes": 367672,
-      "usdzBytes": 988325
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B005",
-      "ok": true,
-      "name": "Elevação Lateral Sentado",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B005/model.glb",
-        "usdz": "models/LD-B005/model.usdz",
-        "plan": "models/LD-B005/plan.svg",
-        "spec": "models/LD-B005/spec.json",
-        "thumb": "models/LD-B005/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1095,
-        "width": 930,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0.13,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.13,
-        "lengthM": 2.296,
-        "areaM2": 4.89
-      },
-      "animated": true,
-      "triangles": 6166,
-      "glbBytes": 288380,
-      "usdzBytes": 789025
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B006",
-      "ok": true,
-      "name": "Desenvolvimento de Ombros Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B006/model.glb",
-        "usdz": "models/LD-B006/model.usdz",
-        "plan": "models/LD-B006/plan.svg",
-        "spec": "models/LD-B006/spec.json",
-        "thumb": "models/LD-B006/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1510,
-        "width": 1465,
-        "height": 1540
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.21,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.668,
-        "lengthM": 2.71,
-        "areaM2": 7.23
-      },
-      "animated": true,
-      "triangles": 6450,
-      "glbBytes": 270096,
-      "usdzBytes": 675913
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B007",
-      "ok": true,
-      "name": "Crucifixo Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B007/model.glb",
-        "usdz": "models/LD-B007/model.usdz",
-        "plan": "models/LD-B007/plan.svg",
-        "spec": "models/LD-B007/spec.json",
-        "thumb": "models/LD-B007/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1250,
-        "width": 1435,
-        "height": 2050
-      },
-      "deviationPct": {
-        "length": 0.03,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.635,
-        "lengthM": 2.45,
-        "areaM2": 6.46
-      },
-      "animated": true,
-      "triangles": 8940,
-      "glbBytes": 367684,
-      "usdzBytes": 988548
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B008",
-      "ok": true,
-      "name": "Supino Vertical",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B008/model.glb",
-        "usdz": "models/LD-B008/model.usdz",
-        "plan": "models/LD-B008/plan.svg",
-        "spec": "models/LD-B008/spec.json",
-        "thumb": "models/LD-B008/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1480,
-        "width": 1080,
-        "height": 1540
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.77,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.288,
-        "lengthM": 2.68,
-        "areaM2": 6.13
-      },
-      "animated": true,
-      "triangles": 6498,
-      "glbBytes": 274632,
-      "usdzBytes": 680559
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B009",
-      "ok": true,
-      "name": "Graviton - Barra Fixa e Paralela",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B009/model.glb",
-        "usdz": "models/LD-B009/model.usdz",
-        "plan": "models/LD-B009/plan.svg",
-        "spec": "models/LD-B009/spec.json",
-        "thumb": "models/LD-B009/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1285,
-        "width": 1125,
-        "height": 2215
-      },
-      "deviationPct": {
-        "length": 0.09,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.325,
-        "lengthM": 2.486,
-        "areaM2": 5.78
-      },
-      "animated": true,
-      "triangles": 5996,
-      "glbBytes": 211956,
-      "usdzBytes": 508345
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B010",
-      "ok": true,
-      "name": "Panturrilha em Pé",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B010/model.glb",
-        "usdz": "models/LD-B010/model.usdz",
-        "plan": "models/LD-B010/plan.svg",
-        "spec": "models/LD-B010/spec.json",
-        "thumb": "models/LD-B010/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1490,
-        "width": 1145,
-        "height": 1620
-      },
-      "deviationPct": {
-        "length": 0.41,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.345,
-        "lengthM": 2.696,
-        "areaM2": 6.32
-      },
-      "animated": true,
-      "triangles": 4710,
-      "glbBytes": 180608,
-      "usdzBytes": 403031
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B011",
-      "ok": true,
-      "name": "Quadril e Glúteos Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B011/model.glb",
-        "usdz": "models/LD-B011/model.usdz",
-        "plan": "models/LD-B011/plan.svg",
-        "spec": "models/LD-B011/spec.json",
-        "thumb": "models/LD-B011/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1650,
-        "width": 995,
-        "height": 1770
-      },
-      "deviationPct": {
-        "length": 0.06,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.195,
-        "lengthM": 2.851,
-        "areaM2": 6.26
-      },
-      "animated": true,
-      "triangles": 4806,
-      "glbBytes": 188004,
-      "usdzBytes": 411301
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B012",
-      "ok": true,
-      "name": "Puxada Alta",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B012/model.glb",
-        "usdz": "models/LD-B012/model.usdz",
-        "plan": "models/LD-B012/plan.svg",
-        "spec": "models/LD-B012/spec.json",
-        "thumb": "models/LD-B012/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1390,
-        "width": 1235,
-        "height": 2260
-      },
-      "deviationPct": {
-        "length": 0.08,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.435,
-        "lengthM": 2.591,
-        "areaM2": 6.31
-      },
-      "animated": true,
-      "triangles": 4626,
-      "glbBytes": 197608,
-      "usdzBytes": 432574
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B013",
-      "ok": true,
-      "name": "Abdominal Crunch Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B013/model.glb",
-        "usdz": "models/LD-B013/model.usdz",
-        "plan": "models/LD-B013/plan.svg",
-        "spec": "models/LD-B013/spec.json",
-        "thumb": "models/LD-B013/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1565,
-        "width": 930,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0.06,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.13,
-        "lengthM": 2.766,
-        "areaM2": 5.89
-      },
-      "animated": true,
-      "triangles": 6246,
-      "glbBytes": 313328,
-      "usdzBytes": 849918
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B014",
-      "ok": true,
-      "name": "Abdutor",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B014/model.glb",
-        "usdz": "models/LD-B014/model.usdz",
-        "plan": "models/LD-B014/plan.svg",
-        "spec": "models/LD-B014/spec.json",
-        "thumb": "models/LD-B014/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1550,
-        "width": 1550,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.23,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.754,
-        "lengthM": 2.75,
-        "areaM2": 7.57
-      },
-      "animated": true,
-      "triangles": 7664,
-      "glbBytes": 347404,
-      "usdzBytes": 920924
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B015",
-      "ok": true,
-      "name": "Adutor",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B015/model.glb",
-        "usdz": "models/LD-B015/model.usdz",
-        "plan": "models/LD-B015/plan.svg",
-        "spec": "models/LD-B015/spec.json",
-        "thumb": "models/LD-B015/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1550,
-        "width": 1550,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": -0.25,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.746,
-        "lengthM": 2.75,
-        "areaM2": 7.55
-      },
-      "animated": true,
-      "triangles": 7664,
-      "glbBytes": 347140,
-      "usdzBytes": 920926
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B016",
-      "ok": true,
-      "name": "Cadeira Flexora",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B016/model.glb",
-        "usdz": "models/LD-B016/model.usdz",
-        "plan": "models/LD-B016/plan.svg",
-        "spec": "models/LD-B016/spec.json",
-        "thumb": "models/LD-B016/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1510,
-        "width": 1255,
-        "height": 1445
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": -0.88,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.444,
-        "lengthM": 2.71,
-        "areaM2": 6.62
-      },
-      "animated": true,
-      "triangles": 7176,
-      "glbBytes": 307840,
-      "usdzBytes": 785943
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B017",
-      "ok": true,
-      "name": "Extensão de Tríceps Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B017/model.glb",
-        "usdz": "models/LD-B017/model.usdz",
-        "plan": "models/LD-B017/plan.svg",
-        "spec": "models/LD-B017/spec.json",
-        "thumb": "models/LD-B017/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1145,
-        "width": 1050,
-        "height": 1360
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.86,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.259,
-        "lengthM": 2.345,
-        "areaM2": 5.3
-      },
-      "animated": true,
-      "triangles": 5518,
-      "glbBytes": 238100,
-      "usdzBytes": 597746
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B018",
-      "ok": true,
-      "name": "Scott Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B018/model.glb",
-        "usdz": "models/LD-B018/model.usdz",
-        "plan": "models/LD-B018/plan.svg",
-        "spec": "models/LD-B018/spec.json",
-        "thumb": "models/LD-B018/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1155,
-        "width": 1075,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.78,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.283,
-        "lengthM": 2.355,
-        "areaM2": 5.38
-      },
-      "animated": true,
-      "triangles": 5518,
-      "glbBytes": 230612,
-      "usdzBytes": 590910
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B019",
-      "ok": true,
-      "name": "Extensão Lombar Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B019/model.glb",
-        "usdz": "models/LD-B019/model.usdz",
-        "plan": "models/LD-B019/plan.svg",
-        "spec": "models/LD-B019/spec.json",
-        "thumb": "models/LD-B019/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1220,
-        "width": 1015,
-        "height": 1330
-      },
-      "deviationPct": {
-        "length": 0.1,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.215,
-        "lengthM": 2.421,
-        "areaM2": 5.36
-      },
-      "animated": true,
-      "triangles": 5026,
-      "glbBytes": 208836,
-      "usdzBytes": 468928
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B020",
-      "ok": true,
-      "name": "Remada Sentada Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B020/model.glb",
-        "usdz": "models/LD-B020/model.usdz",
-        "plan": "models/LD-B020/plan.svg",
-        "spec": "models/LD-B020/spec.json",
-        "thumb": "models/LD-B020/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1345,
-        "width": 830,
-        "height": 1960
-      },
-      "deviationPct": {
-        "length": 0.09,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.03,
-        "lengthM": 2.546,
-        "areaM2": 5.17
-      },
-      "animated": true,
-      "triangles": 6198,
-      "glbBytes": 279936,
-      "usdzBytes": 703750
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B021",
-      "ok": true,
-      "name": "Puxada Fixa",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B021/model.glb",
-        "usdz": "models/LD-B021/model.usdz",
-        "plan": "models/LD-B021/plan.svg",
-        "spec": "models/LD-B021/spec.json",
-        "thumb": "models/LD-B021/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1565,
-        "width": 1425,
-        "height": 1865
-      },
-      "deviationPct": {
-        "length": 0.06,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.625,
-        "lengthM": 2.766,
-        "areaM2": 7.26
-      },
-      "animated": true,
-      "triangles": 5286,
-      "glbBytes": 211944,
-      "usdzBytes": 472220
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B022",
-      "ok": true,
-      "name": "Rosca Direta Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
-      ],
-      "files": {
-        "glb": "models/LD-B022/model.glb",
-        "usdz": "models/LD-B022/model.usdz",
-        "plan": "models/LD-B022/plan.svg",
-        "spec": "models/LD-B022/spec.json",
-        "thumb": "models/LD-B022/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 970,
-        "width": 1480,
-        "height": 1500
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.68,
-        "lengthM": 2.17,
-        "areaM2": 5.82
-      },
-      "animated": true,
-      "triangles": 5832,
-      "glbBytes": 285316,
-      "usdzBytes": 657672
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B023",
-      "ok": true,
-      "name": "Supino Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B023/model.glb",
-        "usdz": "models/LD-B023/model.usdz",
-        "plan": "models/LD-B023/plan.svg",
-        "spec": "models/LD-B023/spec.json",
-        "thumb": "models/LD-B023/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1020,
-        "width": 1730,
-        "height": 1960
-      },
-      "deviationPct": {
-        "length": 0.19,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.93,
-        "lengthM": 2.222,
-        "areaM2": 6.51
-      },
-      "animated": true,
-      "triangles": 9512,
-      "glbBytes": 379692,
-      "usdzBytes": 891959
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B024",
-      "ok": true,
-      "name": "Remada Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B024/model.glb",
-        "usdz": "models/LD-B024/model.usdz",
-        "plan": "models/LD-B024/plan.svg",
-        "spec": "models/LD-B024/spec.json",
-        "thumb": "models/LD-B024/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1300,
-        "width": 1580,
-        "height": 2090
-      },
-      "deviationPct": {
-        "length": 0.05,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.78,
-        "lengthM": 2.501,
-        "areaM2": 6.95
-      },
-      "animated": true,
-      "triangles": 9436,
-      "glbBytes": 374372,
-      "usdzBytes": 883806
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B025",
-      "ok": true,
-      "name": "Supino Inclinado Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B025/model.glb",
-        "usdz": "models/LD-B025/model.usdz",
-        "plan": "models/LD-B025/plan.svg",
-        "spec": "models/LD-B025/spec.json",
-        "thumb": "models/LD-B025/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1020,
-        "width": 1730,
-        "height": 1960
-      },
-      "deviationPct": {
-        "length": 0.48,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.93,
-        "lengthM": 2.225,
-        "areaM2": 6.52
-      },
-      "animated": true,
-      "triangles": 9512,
-      "glbBytes": 383692,
-      "usdzBytes": 895947
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B026",
-      "ok": true,
-      "name": "Desenvolvimento de Ombros Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B026/model.glb",
-        "usdz": "models/LD-B026/model.usdz",
-        "plan": "models/LD-B026/plan.svg",
-        "spec": "models/LD-B026/spec.json",
-        "thumb": "models/LD-B026/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1150,
-        "width": 1580,
-        "height": 1380
-      },
-      "deviationPct": {
-        "length": 0.07,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.78,
-        "lengthM": 2.351,
-        "areaM2": 6.54
-      },
-      "animated": true,
-      "triangles": 6812,
-      "glbBytes": 353136,
-      "usdzBytes": 795019
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B027",
-      "ok": true,
-      "name": "Supino Declinado Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B027/model.glb",
-        "usdz": "models/LD-B027/model.usdz",
-        "plan": "models/LD-B027/plan.svg",
-        "spec": "models/LD-B027/spec.json",
-        "thumb": "models/LD-B027/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1000,
-        "width": 1630,
-        "height": 1680
-      },
-      "deviationPct": {
-        "length": 0.19,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.83,
-        "lengthM": 2.202,
-        "areaM2": 6.23
-      },
-      "animated": true,
-      "triangles": 9416,
-      "glbBytes": 382448,
-      "usdzBytes": 891407
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B028",
-      "ok": true,
-      "name": "Extensão de Tríceps Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B028/model.glb",
-        "usdz": "models/LD-B028/model.usdz",
-        "plan": "models/LD-B028/plan.svg",
-        "spec": "models/LD-B028/spec.json",
-        "thumb": "models/LD-B028/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 920,
-        "width": 1330,
-        "height": 1530
-      },
-      "deviationPct": {
-        "length": 0.1,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.53,
-        "lengthM": 2.121,
-        "areaM2": 5.37
-      },
-      "animated": true,
-      "triangles": 5832,
-      "glbBytes": 300268,
-      "usdzBytes": 669799
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B029",
-      "ok": true,
-      "name": "Puxada Frontal Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B029/model.glb",
-        "usdz": "models/LD-B029/model.usdz",
-        "plan": "models/LD-B029/plan.svg",
-        "spec": "models/LD-B029/spec.json",
-        "thumb": "models/LD-B029/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1220,
-        "width": 1480,
-        "height": 2040
-      },
-      "deviationPct": {
-        "length": 0.13,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 2.68,
-        "lengthM": 2.422,
-        "areaM2": 6.49
-      },
-      "animated": true,
-      "triangles": 8524,
-      "glbBytes": 307564,
-      "usdzBytes": 653579
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B030",
-      "ok": true,
-      "name": "Remada Alta Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B030/model.glb",
-        "usdz": "models/LD-B030/model.usdz",
-        "plan": "models/LD-B030/plan.svg",
-        "spec": "models/LD-B030/spec.json",
-        "thumb": "models/LD-B030/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1200,
-        "width": 1830,
-        "height": 1960
-      },
-      "deviationPct": {
-        "length": 0.14,
-        "width": 0,
-        "height": 0.01
-      },
-      "trainingArea": {
-        "widthM": 3.03,
-        "lengthM": 2.402,
-        "areaM2": 7.28
-      },
-      "animated": true,
-      "triangles": 8524,
-      "glbBytes": 307696,
-      "usdzBytes": 653788
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B031",
-      "ok": true,
-      "name": "Abdominal Máquina",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B031/model.glb",
-        "usdz": "models/LD-B031/model.usdz",
-        "plan": "models/LD-B031/plan.svg",
-        "spec": "models/LD-B031/spec.json",
-        "thumb": "models/LD-B031/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1120,
-        "width": 1000,
-        "height": 1430
-      },
-      "deviationPct": {
-        "length": 0.07,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.2,
-        "lengthM": 2.321,
-        "areaM2": 5.11
-      },
-      "animated": true,
-      "triangles": 6018,
-      "glbBytes": 307944,
-      "usdzBytes": 843601
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B032",
-      "ok": true,
-      "name": "Flexora Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 5%)"
-      ],
-      "files": {
-        "glb": "models/LD-B032/model.glb",
-        "usdz": "models/LD-B032/model.usdz",
-        "plan": "models/LD-B032/plan.svg",
-        "spec": "models/LD-B032/spec.json",
-        "thumb": "models/LD-B032/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1150,
-        "width": 1580,
-        "height": 1380
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.78,
-        "lengthM": 2.35,
-        "areaM2": 6.53
-      },
-      "animated": true,
-      "triangles": 7490,
-      "glbBytes": 364124,
-      "usdzBytes": 854650
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B033",
-      "ok": true,
-      "name": "Cadeira Extensora Iso-Lateral",
-      "family": "selectorized-tower",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B033/model.glb",
-        "usdz": "models/LD-B033/model.usdz",
-        "plan": "models/LD-B033/plan.svg",
-        "spec": "models/LD-B033/spec.json",
-        "thumb": "models/LD-B033/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1220,
-        "width": 1450,
-        "height": 1400
-      },
-      "deviationPct": {
-        "length": 0.06,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.65,
-        "lengthM": 2.421,
-        "areaM2": 6.41
-      },
-      "animated": true,
-      "triangles": 7394,
-      "glbBytes": 364796,
-      "usdzBytes": 851159
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B034",
-      "ok": true,
-      "name": "Agachamento V-Squat",
-      "family": "leg-press",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B034/model.glb",
-        "usdz": "models/LD-B034/model.usdz",
-        "plan": "models/LD-B034/plan.svg",
-        "spec": "models/LD-B034/spec.json",
-        "thumb": "models/LD-B034/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2465,
-        "width": 800,
-        "height": 2005
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2,
-        "lengthM": 3.665,
-        "areaM2": 7.33
-      },
-      "animated": true,
-      "triangles": 4634,
-      "glbBytes": 213744,
-      "usdzBytes": 586264
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B035",
-      "ok": true,
-      "name": "Estação Multifuncional Dupla",
-      "family": "cable-station",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B035/model.glb",
-        "usdz": "models/LD-B035/model.usdz",
-        "plan": "models/LD-B035/plan.svg",
-        "spec": "models/LD-B035/spec.json",
-        "thumb": "models/LD-B035/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1560,
-        "width": 1150,
-        "height": 2150
-      },
-      "deviationPct": {
-        "length": 0.02,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.35,
-        "lengthM": 2.76,
-        "areaM2": 6.49
-      },
-      "animated": true,
-      "triangles": 6452,
-      "glbBytes": 73636,
-      "usdzBytes": 203761
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B036",
-      "ok": true,
-      "name": "Cross-Smith",
-      "family": "cable-station",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B036/model.glb",
-        "usdz": "models/LD-B036/model.usdz",
-        "plan": "models/LD-B036/plan.svg",
-        "spec": "models/LD-B036/spec.json",
-        "thumb": "models/LD-B036/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 2580,
-        "width": 1020,
-        "height": 2480
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.22,
-        "lengthM": 3.78,
-        "areaM2": 8.39
-      },
-      "animated": true,
-      "triangles": 6768,
-      "glbBytes": 155092,
-      "usdzBytes": 311697
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B037",
-      "ok": true,
-      "name": "Crossover Angular",
-      "family": "cable-station",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B037/model.glb",
-        "usdz": "models/LD-B037/model.usdz",
-        "plan": "models/LD-B037/plan.svg",
-        "spec": "models/LD-B037/spec.json",
-        "thumb": "models/LD-B037/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 1950,
-        "width": 1040,
-        "height": 2350
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0,
-        "height": 0
-      },
-      "trainingArea": {
-        "widthM": 2.24,
-        "lengthM": 3.15,
-        "areaM2": 7.06
-      },
-      "animated": true,
-      "triangles": 4464,
-      "glbBytes": 132360,
-      "usdzBytes": 236212
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     },
     {
       "id": "LD-B038",
-      "ok": true,
-      "name": "Crossover",
-      "family": "cable-station",
-      "review": "needs_review",
-      "warnings": [],
-      "files": {
-        "glb": "models/LD-B038/model.glb",
-        "usdz": "models/LD-B038/model.usdz",
-        "plan": "models/LD-B038/plan.svg",
-        "spec": "models/LD-B038/spec.json",
-        "thumb": "models/LD-B038/thumb.png"
-      },
-      "dimensionsMm": {
-        "length": 4400,
-        "width": 750,
-        "height": 2280
-      },
-      "deviationPct": {
-        "length": 0,
-        "width": 0.02,
-        "height": -0.01
-      },
-      "trainingArea": {
-        "widthM": 1.95,
-        "lengthM": 5.6,
-        "areaM2": 10.92
-      },
-      "animated": true,
-      "triangles": 5452,
-      "glbBytes": 90152,
-      "usdzBytes": 243597
+      "ok": false,
+      "error": "Cannot read properties of undefined (reading 'validateBytes')"
     }
   ]
 }

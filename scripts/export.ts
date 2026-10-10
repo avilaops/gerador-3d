@@ -11,6 +11,7 @@
  * Itens que falham (família sem gerador, spec inválido) vão para o manifesto
  * sem interromper o lote. Código de saída 1 se algum item falhou.
  */
+import validator from 'gltf-validator';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { installNodeShims } from '../src/export/nodeShims';
@@ -88,6 +89,8 @@ for (const spec of specs) {
     const dir = join(out, eq.spec.id);
     mkdirSync(dir, { recursive: true });
     const glb = await exportGlb(eq);
+    const erros = (await validator.validateBytes(new Uint8Array(glb))).issues.messages.filter((m) => m.severity === 0);
+    if (erros.length) throw new Error(`GLB inválido: ${erros[0].code} ${erros[0].message}`);
     const usdz = await exportUsdz(eq);
     writeFileSync(join(dir, 'model.glb'), Buffer.from(glb));
     writeFileSync(join(dir, 'model.usdz'), Buffer.from(usdz));
