@@ -22,7 +22,7 @@ CATALOG = HERE.parent
 ap = argparse.ArgumentParser()
 ap.add_argument('--assets', required=True, action='append', help='pasta com as fotos (LD-xxxx.png/.jpg) e os logos; pode repetir')
 ap.add_argument('--prototipo', action='store_true', help='gera só o protótipo de 6 páginas (duas fichas)')
-ap.add_argument('--site', default='https://ludus.avilaops.com', help='endereço que o QR abre')
+ap.add_argument('--site', default='https://ludusequipamentos.com', help='endereço que o QR abre')
 ap.add_argument('--out', default=str(HERE / 'out'))
 args = ap.parse_args()
 ASSETS = [Path(a).resolve() for a in args.assets]

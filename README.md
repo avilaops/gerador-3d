@@ -18,7 +18,7 @@ O núcleo (`src/`) não tem lógica de cliente. Cada catálogo mora em `catalogs
 | Catálogo PDF completo (100 páginas: 94 fichas com QR, render 3D e planta real) | `python catalogs/ludus/catalogo/build.py --assets <fotos> --assets <logos>` |
 | Só o protótipo de 6 páginas | o mesmo comando com `--prototipo` |
 
-O site da Ludus (https://ludus.avilaops.com, repositório `avilaops/ludusequipamentos-website`) consome este pacote: loja com 3D em cada produto e simulador de academia. A galeria daqui é ferramenta de revisão local.
+O site da Ludus (https://ludusequipamentos.com, repositório `avilaops/ludusequipamentos-website`) consome este pacote: loja com 3D em cada produto e simulador de academia. A galeria daqui é ferramenta de revisão local.
 
 Na galeria, `?id=LD-B004` abre um equipamento e `?id=LD-B004&embed=1` mostra só o visualizador, para uso em iframe.
 
