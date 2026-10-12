@@ -297,7 +297,7 @@
       "deviationPct": {
         "length": 0.01,
         "width": 0,
-        "height": -0.55
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.4,
@@ -305,9 +305,9 @@
         "areaM2": 5.81
       },
       "animated": true,
-      "triangles": 8644,
-      "glbBytes": 249988,
-      "usdzBytes": 760069
+      "triangles": 7848,
+      "glbBytes": 225348,
+      "usdzBytes": 691654
     },
     {
       "id": "LD-A010",
@@ -669,19 +669,19 @@
         "height": 850
       },
       "deviationPct": {
-        "length": 0.96,
+        "length": 0.01,
         "width": 0,
-        "height": 0.24
+        "height": -0.67
       },
       "trainingArea": {
         "widthM": 2.575,
-        "lengthM": 2.77,
-        "areaM2": 7.13
+        "lengthM": 2.755,
+        "areaM2": 7.09
       },
       "animated": true,
-      "triangles": 3760,
-      "glbBytes": 52592,
-      "usdzBytes": 144878
+      "triangles": 3992,
+      "glbBytes": 41308,
+      "usdzBytes": 111003
     },
     {
       "id": "LD-A021",
@@ -951,9 +951,9 @@
         "areaM2": 7.78
       },
       "animated": true,
-      "triangles": 5884,
-      "glbBytes": 102500,
-      "usdzBytes": 276510
+      "triangles": 6492,
+      "glbBytes": 98484,
+      "usdzBytes": 258002
     },
     {
       "id": "LD-A029",
@@ -975,9 +975,9 @@
         "height": 870
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0,
         "width": 0,
-        "height": 0
+        "height": 0.8
       },
       "trainingArea": {
         "widthM": 2.78,
@@ -985,9 +985,9 @@
         "areaM2": 7.48
       },
       "animated": true,
-      "triangles": 3760,
-      "glbBytes": 52720,
-      "usdzBytes": 144854
+      "triangles": 3992,
+      "glbBytes": 41472,
+      "usdzBytes": 111280
     },
     {
       "id": "LD-A030",
@@ -2075,7 +2075,7 @@
       "animated": true,
       "triangles": 6502,
       "glbBytes": 288984,
-      "usdzBytes": 791809
+      "usdzBytes": 791749
     },
     {
       "id": "LD-B006",
@@ -2723,7 +2723,7 @@
       "animated": true,
       "triangles": 8064,
       "glbBytes": 378836,
-      "usdzBytes": 887497
+      "usdzBytes": 887483
     },
     {
       "id": "LD-B025",

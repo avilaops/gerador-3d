@@ -36,22 +36,22 @@
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.465,
-      "pivotHeight": 0.7464846041993459,
-      "pivotZ": -0.08113322259136213,
+      "pivotHeight": 0.7269854454405051,
+      "pivotZ": -0.08112508276946057,
       "leverTube": 0.08,
       "leverFront": [
-        -0.18040160611605088,
-        0.6933202657807308
+        -0.1735995739908739,
+        0.693250707302663
       ],
       "leverRear": [
-        0.08275970418966765,
-        -0.3392843853820598
+        0.0794966525212373,
+        -0.33925034612683513
       ],
       "hornLength": 0.175,
       "hornOffset": 0.3,
       "seatHeight": 0.1,
-      "pressSeatZ": 0.14751495016611296,
-      "backrestHeight": 0.40796251624847973,
+      "pressSeatZ": 0.14750015048992832,
+      "backrestHeight": 0.3973059992523691,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,
@@ -59,7 +59,7 @@
     },
     "articulations": [
       {
-        "node": "lever",
+        "node": "arm_right",
         "type": "revolute",
         "axis": [
           -1,
@@ -67,9 +67,28 @@
           0
         ],
         "pivot": [
+          0.49000000000000005,
+          0.302,
+          -0.4350007524496414
+        ],
+        "range": [
           0,
-          0.422,
-          -0.5350747508305647
+          0.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.49000000000000005,
+          0.302,
+          -0.4350007524496414
         ],
         "range": [
           0,
@@ -81,22 +100,22 @@
     "bboxM": {
       "length": 1.49,
       "width": 1.58,
-      "height": 0.87
+      "height": 0.877
     },
     "trainingArea": {
       "minX": -1.3900000000000001,
       "maxX": 1.3900000000000001,
-      "minZ": -1.3450747508305647,
-      "maxZ": 1.3450747508305647,
+      "minZ": -1.3450007524496415,
+      "maxZ": 1.3450007524496415,
       "widthM": 2.7800000000000002,
-      "lengthM": 2.6901495016611294,
-      "areaM2": 7.47861561461794
+      "lengthM": 2.690001504899283,
+      "areaM2": 7.478204183620007
     },
     "stats": {
-      "triangles": 3760,
-      "meshes": 43,
-      "geometries": 5,
-      "materials": 5
+      "triangles": 3992,
+      "meshes": 48,
+      "geometries": 4,
+      "materials": 4
     }
   }
 }

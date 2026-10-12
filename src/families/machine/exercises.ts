@@ -135,7 +135,7 @@ function press(c: ExerciseContext, handY: number, handZ = 0.16): LeverDef[] {
 }
 
 /** Puxar em direção ao peito, com apoio de peito. */
-function row(c: ExerciseContext, handY: number): LeverDef[] {
+function row(c: ExerciseContext, handY: number, cross = false): LeverDef[] {
   const hand = c.hs + handY;
   if (c.H >= 1.6) {
     const py = Math.min(c.hs + 1.15, c.H - 0.1);
@@ -143,13 +143,15 @@ function row(c: ExerciseContext, handY: number): LeverDef[] {
       {
         split: true,
         pivot: [c.ax, py, 0.42],
-        path: [[0, hand - py, 0.2]],
+        // Cruzada: cada alavanca desce até a pegada do lado oposto, formando um X.
+        path: [[cross ? -(c.ax + 0.16) : 0, hand - py, 0.2]],
         axis: X,
         swing: 0.36,
         end: 'grip-y',
-        dualGrip: true,
-        bend: -0.14,
-        horn: c.plates ? -0.32 : 0.6,
+        dualGrip: !cross,
+        bend: cross ? 0 : -0.14,
+        // Cruzada, o prolongamento sairia da largura da máquina: o pino fica no próprio braço.
+        horn: cross ? 0.35 : c.plates ? -0.32 : 0.6,
       },
     ];
   }
@@ -261,7 +263,7 @@ const DEFS = {
     seatHeight: 0.46,
     facing: -1,
     seatAt: 0.22,
-    levers: (c) => row(c, 0.22),
+    levers: (c) => row(c, 0.22, c.plates),
   },
   'cable-pulldown': {
     label: 'Puxada alta por cabo',
@@ -406,21 +408,23 @@ const DEFS = {
   },
   'ground-lever': {
     label: 'Alavanca de piso (agachamento, levantamento, búlgaro)',
-    station: 'standing',
+    station: 'none',
+    noFrame: true,
     seatHeight: 0.1,
     facing: 1,
     seatAt: 0.1,
     levers: (c) => [
       {
-        // Quadro em U que gira atrás, com as pegadas longas saindo para a frente.
-        split: false,
-        pivot: [Math.min(c.ax, 0.46), Math.min(0.42, c.H - 0.3), c.zRear + 0.2],
-        path: [[0, Math.min(0.26, c.H - 0.6), c.zFront - c.zRear - 0.75]],
+        // Uma alavanca por lado: gira num cavalete baixo atrás e sobe para a frente,
+        // com as pegadas compridas na ponta.
+        split: true,
+        pivot: [Math.min(c.ax, c.W / 2 - 0.3), 0.3, c.zRear + 0.3],
+        path: [[0, Math.max(0.16, c.H - 0.54), 0.55 * (c.zFront - c.zRear - 0.75)]],
         axis: NX,
         swing: 0.3,
         end: 'long-handles',
-        horn: 0.5,
-        size: 0.07,
+        horn: 0.55,
+        size: 0.08,
       },
     ],
   },
@@ -472,22 +476,27 @@ const DEFS = {
   },
   jammer: {
     label: 'Jammer (empurrar em pé)',
-    station: 'standing',
+    station: 'none',
     seatHeight: 0.1,
     facing: 1,
     seatAt: 0.15,
-    levers: (c) => [
-      {
-        split: true,
-        pivot: [c.ax, 0.32, -0.5],
-        path: [[0, Math.min(1.15, c.H - 0.9), 0.42]],
-        axis: X,
-        swing: 0.45,
-        end: 'grip-x',
-        bend: -0.1,
-        horn: 0.5,
-      },
-    ],
+    levers: (c) => {
+      const py = c.H - 0.2;
+      return [
+        {
+          // As alavancas saem do alto da gaiola e descem pela frente até a altura do peito.
+          split: true,
+          pivot: [c.ax, py, -0.2],
+          path: [[0, 1.25 - py, 0.5]],
+          axis: NX,
+          swing: 0.45,
+          end: 'grip-x',
+          bend: 0.12,
+          horn: 0.55,
+          size: 0.07,
+        },
+      ];
+    },
   },
   'leg-extension': {
     label: 'Cadeira extensora',
