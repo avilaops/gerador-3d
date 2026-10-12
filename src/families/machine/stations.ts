@@ -22,6 +22,7 @@ export const STATION_KINDS = [
   'kneel-lean',
   'hyper',
   'table',
+  'thrust',
   'none',
 ] as const;
 export type StationKind = (typeof STATION_KINDS)[number];
@@ -210,6 +211,23 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
       const yr = o.maxHeight - 0.07;
       rig.tube(b, [0, top - 0.09, 0.46], [0, yr, 0.6], post, 'frame', 'head_post');
       rig.roller(b, [-0.2, yr, 0.6], [0.2, yr, 0.6], 0.13, 'head_roller');
+      break;
+    }
+    case 'thrust': {
+      // Elevação pélvica: assento baixo e, na frente, um banco atravessado para apoiar as costas.
+      const a = rig.group('seat', g);
+      rig.pad(a, [0.46, 0.09, 0.4], [0, hs, 0], 0, 'seat_pad');
+      rig.tube(a, [0, y0, 0], [0, hs - 0.04, 0], post, 'frame', 'seat_post');
+      const b = rig.group('bench', g);
+      const yb = Math.min(0.44, o.maxHeight - 0.2);
+      const zb = 0.56;
+      rig.pad(b, [1.1, 0.09, 0.32], [0, yb, zb], 0, 'bench_pad');
+      for (const s of [-1, 1] as const) {
+        for (const d of [-1, 1] as const) rig.tube(b, [s * 0.42, yb - 0.06, zb + d * 0.06], [s * 0.5, 0.01, zb + d * 0.15], [0.05, 0.08], 'frame', 'bench_leg');
+        rig.tube(b, [s * 0.5, y0 * 0.6, zb - 0.15], [s * 0.5, y0 * 0.6, zb + 0.15], 0.05);
+      }
+      rig.tube(b, [-0.44, yb - 0.07, zb], [0.44, yb - 0.07, zb], [0.06, 0.05], 'frame', 'bench_spine');
+      pose(-0.02);
       break;
     }
     case 'none':

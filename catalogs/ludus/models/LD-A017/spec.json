@@ -52,7 +52,7 @@
       "seatHeight": 0.46,
       "pressSeatZ": 0.13651612903225804,
       "backrestHeight": 0.6994047615601209,
-      "backrestTilt": 0.3,
+      "backrestTilt": 0.5,
       "rowStation": true,
       "storageHorns": 4,
       "swing": 0.45
@@ -93,9 +93,9 @@
       "areaM2": 6.450403225806451
     },
     "stats": {
-      "triangles": 8352,
+      "triangles": 8760,
       "meshes": 76,
-      "geometries": 16,
+      "geometries": 18,
       "materials": 7
     }
   }
