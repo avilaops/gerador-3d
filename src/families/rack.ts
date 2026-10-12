@@ -64,31 +64,47 @@ export const rack: FamilyDefinition<RackParams> = {
       rig.tube(frame, [-ux, 0.18, 0], [ux, 0.18, 0], t, 'frame', 'crossbar');
       rig.tube(frame, [-ux, H - t / 2, 0], [ux, H - t / 2, 0], t, 'frame', 'top_crossbar');
     } else if (p.variant === 'plate-tree') {
-      // Mastro central com pinos para os dois lados (X) e base em H.
+      // Quadro em "A" visto de lado: coluna reta atrás, perna curvada na frente, as duas
+      // unidas no alto e por dois degraus; os pinos saem das duas para os dois lados.
+      const ux = W / 2 - t / 2;
+      const zr = -L / 2 + 0.07;
+      const zf = L / 2 - 0.07;
       for (const s of [-1, 1] as const) {
-        rig.tube(base, [s * (W / 2 - t / 2), y0, -L / 2], [s * (W / 2 - t / 2), y0, L / 2], t);
-        rig.foot(base, s * (W / 2 - t / 2), -L / 2 + 0.05, [0.08, 0.08]);
-        rig.foot(base, s * (W / 2 - t / 2), L / 2 - 0.05, [0.08, 0.08]);
+        rig.tube(base, [s * ux, y0, -L / 2], [s * ux, y0, L / 2], t);
+        rig.foot(base, s * ux, -L / 2 + 0.05, [0.08, 0.08]);
+        rig.foot(base, s * ux, L / 2 - 0.05, [0.08, 0.08]);
       }
-      rig.tube(base, [-W / 2 + t / 2, y0, 0], [W / 2 - t / 2, y0, 0], t);
-      // Mastro de chapa que sobe inclinado para trás e volta em curva no alto.
-      const lean = Math.min(0.12, 0.2 * L);
-      const mast: [number, number, number][] = [
-        [0, 0, lean],
-        [0, 0.55 * H, -lean],
-        [0, H, lean * 0.4],
-      ];
-      rig.path(frame, mast, [t, t + 0.04], 'frame', 'mast', 0.5);
-      const zAt = (y: number) =>
-        y <= 0.55 * H ? lean + ((-2 * lean) * y) / (0.55 * H) : -lean + ((1.4 * lean) * (y - 0.55 * H)) / (0.45 * H);
-      const hornLen = Math.max(0.1, W / 2 - t / 2 - 0.02);
+      rig.tube(base, [-ux, y0, zr], [ux, y0, zr], t);
+      rig.tube(base, [-ux, y0, zf], [ux, y0, zf], t);
+      const zTop = zr + 0.3 * (zf - zr);
+      const chapa: [number, number] = [t, t + 0.03];
+      rig.tube(frame, [0, 0, zr], [0, H - 0.03, zTop - 0.03], chapa, 'frame', 'mast');
+      rig.path(
+        frame,
+        [
+          [0, 0, zf],
+          [0, 0.5 * H, zf - 0.04],
+          [0, H - 0.03, zTop + 0.03],
+        ],
+        chapa,
+        'frame',
+        'mast_front',
+        0.6
+      );
+      rig.tube(frame, [0, H - 0.03, zTop - 0.06], [0, H - 0.03, zTop + 0.06], chapa, 'frame', 'mast_cap');
+      const zRear = (y: number) => zr + ((zTop - 0.03 - zr) * y) / (H - 0.03);
+      const zFront = (y: number) => (y <= 0.5 * H ? zf - (0.04 * y) / (0.5 * H) : zf - 0.04 + ((zTop + 0.03 - zf + 0.04) * (y - 0.5 * H)) / (0.5 * H - 0.03));
+      const hornLen = Math.max(0.1, ux - 0.03);
       for (let i = 0; i < p.tiers; i++) {
-        const y = 0.3 + (i * (H - 0.48)) / Math.max(1, p.tiers - 1);
+        const y = 0.26 + (i * (H - 0.46)) / Math.max(1, p.tiers - 1);
+        if (i < p.tiers - 1) rig.tube(frame, [0, y + 0.1, zRear(y + 0.1)], [0, y + 0.1, zFront(y + 0.1)], [0.04, 0.06], 'frame', 'rung');
         for (const s of [-1, 1] as const) {
-          rig.horn(frame, [s * (t / 2), y, zAt(y)], [s, 0, 0], hornLen - 0.02, 'storage_horn');
+          rig.horn(frame, [s * (t / 2), y, zRear(y)], [s, 0, 0], hornLen, 'storage_horn');
+          // Na frente, os pinos ficam só até onde a perna ainda está longe da coluna.
+          if (zFront(y) - zRear(y) > 0.2) rig.horn(frame, [s * (t / 2), y, zFront(y)], [s, 0, 0], hornLen, 'storage_horn');
           if (p.showPlates && i === 0) {
-            const dia = Math.min(0.45, L - 0.04, 2 * (y - 0.03));
-            for (let k = 0; k < 2; k++) rig.plate(frame, [s * (t / 2 + 0.05 + k * 0.045), y, zAt(y)], dia, 0.04);
+            const dia = Math.min(0.45, 2 * (y - 0.03));
+            for (let k = 0; k < 2; k++) rig.plate(frame, [s * (t / 2 + 0.05 + k * 0.045), y, zRear(y)], dia, 0.04);
           }
         }
       }

@@ -857,12 +857,16 @@ const DEFS = {
       {
         split: false,
         pivot: [0, 0.16, c.zRear + 0.12],
-        path: [[0, 0.2, c.zFront - c.zRear - 0.42]],
+        // Viga em cavalete: sobe até o meio e desce até a barra de pegada.
+        path: [
+          [0, Math.min(0.3, c.H - 0.24), 0.45 * (c.zFront - c.zRear - 0.42)],
+          [0, 0.2, c.zFront - c.zRear - 0.42],
+        ],
         axis: NX,
         swing: 0.25,
         end: 'bar',
         horn: 0.82,
-        size: 0.07,
+        size: 0.09,
       },
     ],
   },

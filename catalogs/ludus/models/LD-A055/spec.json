@@ -28,7 +28,7 @@
     "peso": "73 kg",
     "bateria": null,
     "descricao": "Oferece a posição tradicional da rosca Scott, com a elevada durabilidade e qualidade da linha de bancos e suportes.",
-    "thumbAzimuth": 25
+    "thumbAzimuth": 155
   },
   "resolved": {
     "params": {
@@ -57,10 +57,10 @@
       "areaM2": 4.664638083489605
     },
     "stats": {
-      "triangles": 2994,
-      "meshes": 22,
-      "geometries": 8,
-      "materials": 4
+      "triangles": 3900,
+      "meshes": 32,
+      "geometries": 14,
+      "materials": 5
     }
   }
 }

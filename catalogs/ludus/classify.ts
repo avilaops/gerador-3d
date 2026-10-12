@@ -185,7 +185,7 @@ const AZIMUTE_POR_CODIGO: Record<string, number> = {
   'LD-A048': 25,
   'LD-A052': 70,
   'LD-A054': 38,
-  'LD-A055': 25,
+  'LD-A055': 155,
   'LD-B001': 25,
   'LD-B002': 25,
   'LD-B003': 38,

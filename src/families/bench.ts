@@ -246,19 +246,34 @@ export const bench: FamilyDefinition<BenchParams> = {
         post(zs, hs - 0.04);
         const padG = rig.group('arm_pad');
         const zp = zs + 0.42;
-        // O apoio de braço é o ponto mais alto; o descanso da barra fica baixo, na frente.
-        const yp = H - 0.16;
-        const yr = Math.min(0.72 * H, yp - 0.12);
-        rig.pad(padG, [Math.min(0.6, W - 0.16), 0.075, 0.44], [0, yp, zp], 0.85, 'arm_pad_cushion');
-        rig.tube(padG, [0, y0, zp + 0.05], [0, yp - 0.05, zp - 0.02], t);
-        const restG = rig.group('bar_rest');
-        const xr = Math.min(0.36, W / 2 - 0.08);
+        // O apoio de braço é o ponto mais alto, sobre duas laterais em ampulheta; os berços da
+        // barra saem dessas laterais para a frente, à meia altura.
+        const yp = H - 0.2;
+        const yr = Math.min(0.62 * H, yp - 0.16);
+        const zLegF = Math.min(zp + 0.36, zF - 0.07);
+        const zLegR = Math.max(zp - 0.32, zR + 0.07);
+        const padW = Math.min(0.72, W - 0.14);
+        rig.pad(padG, [padW, 0.09, 0.46], [0, yp, zp], 0.7, 'arm_pad_cushion');
+        const xs = Math.min(padW / 2 - 0.05, W / 2 - 0.1);
+        const side = rig.group('side_frames');
         for (const s of [-1, 1] as const) {
-          rig.tube(restG, [s * xr, y0, zF - 0.12], [s * xr, yr, zF - 0.12], 0.05);
-          rig.tube(restG, [s * xr, yr - 0.025, zF - 0.12], [s * xr, yr - 0.025, zF - 0.02], 0.04, 'chrome', 'hook');
-          rig.tube(restG, [s * xr, yr - 0.025, zF - 0.02], [s * xr, yr + 0.05, zF - 0.02], 0.03, 'chrome');
+          rig.path(side, [[s * (W / 2 - 0.05), 0, zLegR], [s * xs, 0.5 * yp, zp - 0.06], [s * xs, yp - 0.07, zp - 0.1]], [0.05, 0.09], 'frame', 'side_leg', 0.3);
+          rig.path(side, [[s * (W / 2 - 0.05), 0, zLegF], [s * xs, 0.5 * yp, zp + 0.08], [s * xs, yp - 0.07, zp + 0.1]], [0.05, 0.09], 'frame', 'side_leg', 0.3);
+          rig.tube(side, [s * xs, yp - 0.07, zp - 0.12], [s * xs, yp - 0.07, zp + 0.12], [0.05, 0.08]);
+          rig.box(side, [0.12, 0.012, 0.1], [s * (W / 2 - 0.06), 0.006, zLegR], 'rubber', 'foot');
+          rig.box(side, [0.12, 0.012, 0.1], [s * (W / 2 - 0.06), 0.006, zLegF], 'rubber', 'foot');
         }
-        rig.tube(restG, [-xr, y0, zF - 0.12], [xr, y0, zF - 0.12], t);
+        rig.tube(side, [-xs, yp - 0.07, zp], [xs, yp - 0.07, zp], [0.05, 0.08], 'frame', 'pad_beam');
+        rig.tube(side, [-xs, 0.5 * yp, zp], [xs, 0.5 * yp, zp], 0.05, 'frame', 'side_tie');
+        const restG = rig.group('bar_rest');
+        const zc = Math.min(zF - 0.04, zp + 0.44);
+        for (const s of [-1, 1] as const) {
+          rig.tube(restG, [s * xs, yr, zp + 0.1], [s * xs, yr, zc], [0.05, 0.07], 'frame', 'rest_arm');
+          rig.tube(restG, [s * xs, yr, zc], [s * xs, yr + 0.07, zc], 0.035, 'chrome', 'hook');
+        }
+        // Coluna do assento com a régua de regulagem, ligada ao quadro por uma viga.
+        rig.box(seat, [0.012, Math.min(0.24, hs - 0.16), 0.045], [0.045, hs - 0.2, zs], 'plate', 'seat_adjuster');
+        rig.tube(seat, [0, hs - 0.2, zs], [0, 0.5 * yp, zp], 0.06, 'frame', 'seat_beam');
         break;
       }
       case 'hyper': {
