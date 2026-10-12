@@ -27,7 +27,8 @@
     "pagina": 110,
     "peso": "62 kg",
     "bateria": null,
-    "descricao": "Possui apoio angulado ajustável, que proporciona sustentação firme e excelente conforto para os exercícios de extensão lombar."
+    "descricao": "Possui apoio angulado ajustável, que proporciona sustentação firme e excelente conforto para os exercícios de extensão lombar.",
+    "thumbAzimuth": 38
   },
   "resolved": {
     "params": {

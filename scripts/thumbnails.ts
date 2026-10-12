@@ -31,6 +31,7 @@ const options = {
   human: process.argv.includes('--human'),
   area: process.argv.includes('--area'),
   dims: process.argv.includes('--dims'),
+  mask: process.argv.includes('--mask'),
 };
 const dir = resolve('catalogs', catalog);
 const specsDir = join(dir, 'specs');

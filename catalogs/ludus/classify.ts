@@ -155,10 +155,56 @@ const COLORS_BY_CODE: Record<string, { frame: string; upholstery: string; accent
  * direita; as fotos das linhas abaixo mostram a frente para a esquerda.
  */
 const FOTO_ESPELHADA = new Set<FamilyId>(['plate-loaded-lever', 'leg-press', 'selectorized-tower']);
+/** Escolhido pela nota de silhueta (catalogs/ludus/silhueta.py) entre os ângulos do mesmo lado da foto. */
 const AZIMUTE_POR_CODIGO: Record<string, number> = {
+  // Conferidos na foto: a frente aponta para a direita.
   'LD-A026': -38,
   'LD-A041': -38,
-  'LD-A046': 38,
+  'LD-A001': 38,
+  'LD-A002': 70,
+  'LD-A003': 70,
+  'LD-A004': 70,
+  'LD-A005': 55,
+  'LD-A006': 70,
+  'LD-A007': 70,
+  'LD-A009': 70,
+  'LD-A012': 70,
+  'LD-A013': 70,
+  'LD-A015': 70,
+  'LD-A024': 55,
+  'LD-A028': 70,
+  'LD-A030': 38,
+  'LD-A031': 25,
+  'LD-A032': 70,
+  'LD-A033': 70,
+  'LD-A035': 70,
+  'LD-A038': 70,
+  'LD-A042': -25,
+  'LD-A044': -38,
+  'LD-A046': 70,
+  'LD-A048': 25,
+  'LD-A052': 70,
+  'LD-A054': 38,
+  'LD-A055': 25,
+  'LD-B001': 25,
+  'LD-B002': 25,
+  'LD-B003': 38,
+  'LD-B004': 25,
+  'LD-B005': 25,
+  'LD-B008': 25,
+  'LD-B009': 55,
+  'LD-B015': 25,
+  'LD-B022': 25,
+  'LD-B024': 25,
+  'LD-B026': 25,
+  'LD-B027': 55,
+  'LD-B029': 55,
+  'LD-B030': 70,
+  'LD-B032': 25,
+  'LD-B035': 70,
+  'LD-B036': 25,
+  'LD-B037': -38,
+  'LD-B038': -38,
 };
 
 /** Máquinas de bateria com a torre ao lado do assento: a foto do catálogo é tirada pelo outro lado. */
@@ -216,7 +262,7 @@ export function toSpec(product: LudusProduct): EquipmentSpecInput | null {
   };
   const handwritten = HANDWRITTEN_SPECS.find((s) => s.id === product.code);
   // As fotos dos dois escritos à mão também mostram a frente para a esquerda.
-  if (handwritten) return { ...handwritten, meta: { ...handwritten.meta, ...meta, thumbAzimuth: 38 } };
+  if (handwritten) return { ...handwritten, meta: { ...handwritten.meta, ...meta, thumbAzimuth: AZIMUTE_POR_CODIGO[product.code] ?? 38 } };
 
   const weightStackKg = parseStack(product.bateria);
   const rule = BY_CODE[product.code] ?? BY_NAME.find(([re]) => re.test(product.nome))?.[1](!!weightStackKg);

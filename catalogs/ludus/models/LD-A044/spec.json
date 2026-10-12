@@ -28,7 +28,8 @@
     "pagina": 103,
     "peso": "34 kg",
     "bateria": null,
-    "descricao": "O banco inclinado a 30° possui ângulo fixo que oferece posicionamento adequado para diversos exercícios da parte superior do corpo."
+    "descricao": "O banco inclinado a 30° possui ângulo fixo que oferece posicionamento adequado para diversos exercícios da parte superior do corpo.",
+    "thumbAzimuth": -38
   },
   "resolved": {
     "params": {

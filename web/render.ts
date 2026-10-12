@@ -13,6 +13,8 @@ export interface ShootOptions {
   human?: boolean;
   area?: boolean;
   dims?: boolean;
+  /** Sem a sombra do piso, para recortar a silhueta. */
+  mask?: boolean;
 }
 
 const host = document.getElementById('host')!;
@@ -32,6 +34,11 @@ function shoot(spec: EquipmentSpecInput, o: ShootOptions = {}): string {
   viewer.set('dims', !!o.dims);
   viewer.setView(o.azimuth ?? 38, o.elevation ?? 16, o.distance ?? 1);
   viewer.setPhase(o.phase ?? 0);
+  // A sombra é um plano com ShadowMaterial dentro da cena do visualizador.
+  const cena = (viewer as unknown as { scene: { traverse(f: (o: { visible: boolean; material?: { isShadowMaterial?: boolean } }) => void): void } }).scene;
+  cena.traverse((obj) => {
+    if (obj.material?.isShadowMaterial) obj.visible = !o.mask;
+  });
   viewer.renderNow();
   return host.querySelector('canvas')!.toDataURL('image/png');
 }

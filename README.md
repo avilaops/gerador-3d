@@ -92,6 +92,10 @@ A torre das máquinas de bateria leva a placa com o nome do exercício e três p
 
 Nas máquinas em que a foto mostra a torre ao lado do assento (`tower: 'side'` em `exercises.ts`), ela fica à direita de quem usa, com a frente virada para o assento. Máquinas estreitas demais para isso (largura abaixo de 1,02 m) mantêm a torre atrás.
 
+## Nota de silhueta foto × modelo
+
+`python catalogs/ludus/silhueta.py --fotos <pasta das fotos>` compara o contorno de cada foto com o da miniatura sem sombra (`npm run thumbs -- --mask --name mask`) e grava `catalogs/ludus/silhueta.json`, de 0 a 1. É uma medida grosseira: ordena os itens do mais divergente ao menos, e ajudou a escolher o ângulo de câmera de cada miniatura (`AZIMUTE_POR_CODIGO` em `classify.ts`). Não distingue um modelo espelhado, então o lado da foto continua conferido a olho.
+
 ## Pessoa usando o equipamento
 
 O botão "Pessoa 1,75 m" do visualizador senta (ou põe de pé) uma pessoa no equipamento, com as mãos nas pegadas e os pés no piso ou no rolo, e ela acompanha o movimento. Para isso a família marca o quadril de quem usa com `poseAnchor` (`src/parts/pose.ts`), um nó vazio chamado `pose_hip`. Onde não há marca (bancos, suportes, leg press, estações de cabo, máquinas deitadas), a pessoa fica em pé ao lado, só para dar escala.

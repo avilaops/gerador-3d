@@ -28,7 +28,8 @@
     "pagina": 107,
     "peso": "39 kg",
     "bateria": null,
-    "descricao": "O banco regulável oferece seis ângulos de encosto para exercícios de pressão e três ajustes do assento, atendendo às necessidades de diferentes usuários."
+    "descricao": "O banco regulável oferece seis ângulos de encosto para exercícios de pressão e três ajustes do assento, atendendo às necessidades de diferentes usuários.",
+    "thumbAzimuth": 25
   },
   "resolved": {
     "params": {

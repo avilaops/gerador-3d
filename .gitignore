@@ -10,3 +10,6 @@ PROMPT*.md
 
 # USDZ é grande (≈0,5 MB por item) e sai do "npm run export": não versionar.
 *.usdz
+
+# Máscaras da nota de silhueta (geradas por scripts/thumbnails.ts --mask)
+catalogs/*/models/*/mask*.png

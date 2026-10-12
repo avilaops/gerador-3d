@@ -29,7 +29,8 @@
     "pagina": 101,
     "peso": "25 kg",
     "bateria": null,
-    "descricao": "Banco reto tradicional que oferece elevada durabilidade e qualidade para o treinamento."
+    "descricao": "Banco reto tradicional que oferece elevada durabilidade e qualidade para o treinamento.",
+    "thumbAzimuth": -25
   },
   "resolved": {
     "params": {

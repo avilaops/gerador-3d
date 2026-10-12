@@ -31,7 +31,8 @@
     "pagina": 97,
     "peso": "480 kg",
     "bateria": "2 × 92 kg",
-    "descricao": "Combina o treino por cabos com uma máquina Smith. O par de polias e as duas baterias de pesos ampliam as possibilidades de exercícios e permitem que mais pessoas treinem ao mesmo tempo, reunindo diferentes opções de treino de força em uma única estação."
+    "descricao": "Combina o treino por cabos com uma máquina Smith. O par de polias e as duas baterias de pesos ampliam as possibilidades de exercícios e permitem que mais pessoas treinem ao mesmo tempo, reunindo diferentes opções de treino de força em uma única estação.",
+    "thumbAzimuth": 25
   },
   "resolved": {
     "params": {

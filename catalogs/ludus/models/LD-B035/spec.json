@@ -31,7 +31,8 @@
     "pagina": 96,
     "peso": "452 kg",
     "bateria": "2 × 105 kg",
-    "descricao": "Permite realizar movimentos semelhantes aos das atividades cotidianas, trabalhando de forma integrada os músculos do corpo inteiro. Os cabos permitem explorar diferentes planos de movimento e desenvolver força, estabilidade e coordenação."
+    "descricao": "Permite realizar movimentos semelhantes aos das atividades cotidianas, trabalhando de forma integrada os músculos do corpo inteiro. Os cabos permitem explorar diferentes planos de movimento e desenvolver força, estabilidade e coordenação.",
+    "thumbAzimuth": 70
   },
   "resolved": {
     "params": {
