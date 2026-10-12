@@ -690,19 +690,48 @@ const DEFS = {
   'reverse-hyper': {
     label: 'Hiperextensão reversa',
     station: 'table',
+    noFrame: true,
     seatHeight: 1.05,
     facing: 1,
-    seatAt: 0.05,
+    seatAt: 0.06,
     levers: (c) => [
       {
+        // Pêndulo pendurado na ponta de trás da mesa, com o rolo embaixo.
         split: false,
-        pivot: [0.2, c.hs - 0.02, -0.2],
-        path: [[0, -(c.hs - 0.3), 0]],
+        pivot: [0.2, Math.min(c.hs, c.H - 0.2) - 0.05, -0.7],
+        path: [[0, -(Math.min(c.hs, c.H - 0.2) - 0.32), 0.06]],
         axis: X,
         swing: 0.8,
         end: 'roller',
         horn: 0.92,
+        size: 0.07,
         noSupport: true,
+      },
+    ],
+  },
+  'incline-fly': {
+    label: 'Crucifixo inclinado (Super Fly)',
+    station: 'seat-back',
+    noFrame: true,
+    seatHeight: 0.36,
+    backTilt: 0.78,
+    facing: 1,
+    seatAt: 0.1,
+    levers: (c) => [
+      {
+        // Um braço por lado, que abre e fecha em arco sobre o peito.
+        split: true,
+        pivot: [Math.min(0.5, c.W / 2 - 0.5), 0.34, -0.5],
+        path: [
+          [0.3, 0.18, 0.1],
+          // A ponta dos braços é o que dá a largura e a altura do catálogo.
+          [Math.max(0.4, c.W / 2 - 0.14 - Math.min(0.5, c.W / 2 - 0.5)), c.H - 0.4, 0.5],
+        ],
+        axis: [0, 0, -1],
+        swing: 0.7,
+        end: 'grip-z',
+        horn: 0.7,
+        size: 0.07,
       },
     ],
   },

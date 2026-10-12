@@ -25,7 +25,7 @@
       "deviationPct": {
         "length": 0.83,
         "width": 0,
-        "height": 0.15
+        "height": -0.23
       },
       "trainingArea": {
         "widthM": 2.21,
@@ -33,9 +33,9 @@
         "areaM2": 6.69
       },
       "animated": true,
-      "triangles": 5692,
-      "glbBytes": 156012,
-      "usdzBytes": 469831
+      "triangles": 5328,
+      "glbBytes": 144096,
+      "usdzBytes": 430089
     },
     {
       "id": "LD-A002",
@@ -69,7 +69,7 @@
       "animated": true,
       "triangles": 8844,
       "glbBytes": 426704,
-      "usdzBytes": 1318819
+      "usdzBytes": 1318827
     },
     {
       "id": "LD-A003",
@@ -171,7 +171,7 @@
       "animated": true,
       "triangles": 7732,
       "glbBytes": 180132,
-      "usdzBytes": 527080
+      "usdzBytes": 527081
     },
     {
       "id": "LD-A006",
@@ -273,7 +273,7 @@
       "animated": true,
       "triangles": 3228,
       "glbBytes": 45836,
-      "usdzBytes": 122063
+      "usdzBytes": 122072
     },
     {
       "id": "LD-A009",
@@ -635,19 +635,19 @@
         "height": 1050
       },
       "deviationPct": {
-        "length": 0.72,
+        "length": 0.01,
         "width": 0,
-        "height": 0.19
+        "height": 0.03
       },
       "trainingArea": {
         "widthM": 3.39,
-        "lengthM": 3.305,
-        "areaM2": 11.2
+        "lengthM": 3.29,
+        "areaM2": 11.15
       },
       "animated": true,
-      "triangles": 6796,
-      "glbBytes": 182208,
-      "usdzBytes": 541272
+      "triangles": 5536,
+      "glbBytes": 186084,
+      "usdzBytes": 576419
     },
     {
       "id": "LD-A020",
@@ -2041,7 +2041,7 @@
       "animated": true,
       "triangles": 8940,
       "glbBytes": 367672,
-      "usdzBytes": 988565
+      "usdzBytes": 988567
     },
     {
       "id": "LD-B005",

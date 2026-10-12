@@ -192,14 +192,24 @@ export function buildStation(rig: Rig, g: THREE.Group, o: StationOptions): void 
       break;
     }
     case 'table': {
+      // Mesa comprida de duas almofadas sobre quatro pernas abertas, com o rolo de cabeça
+      // numa haste que sobe na ponta da frente (é ele que dá a altura da máquina).
       const b = rig.group('table', g);
-      rig.pad(b, [0.56, 0.1, 0.9], [0, hs, 0.25], 0, 'table_pad');
+      const top = Math.min(hs, o.maxHeight - 0.2);
+      rig.pad(b, [0.56, 0.11, 0.62], [0, top, 0.22], 0, 'table_pad');
+      rig.pad(b, [0.56, 0.11, 0.62], [0, top, -0.42], 0, 'table_pad_rear');
       for (const s of [-1, 1] as const) {
-        rig.tube(b, [s * 0.24, y0, 0.6], [s * 0.24, hs - 0.06, 0.6], post);
-        rig.tube(b, [s * 0.24, y0, -0.1], [s * 0.24, hs - 0.06, -0.1], post);
-        rig.tube(b, [s * 0.24, hs - 0.09, -0.1], [s * 0.24, hs - 0.09, 0.6], 0.06);
-        rig.grip(b, [s * 0.2, hs - 0.18, 0.72], [s * 0.34, hs - 0.18, 0.72]);
+        rig.path(b, [[s * 0.4, y0, 0.62], [s * 0.3, 0.5 * top, 0.52], [s * 0.26, top - 0.07, 0.44]], [0.05, 0.09], 'frame', 'table_leg', 0.2);
+        rig.path(b, [[s * 0.4, y0, -0.82], [s * 0.3, 0.5 * top, -0.72], [s * 0.26, top - 0.07, -0.64]], [0.05, 0.09], 'frame', 'table_leg', 0.2);
+        rig.tube(b, [s * 0.26, top - 0.09, -0.66], [s * 0.26, top - 0.09, 0.46], [0.05, 0.08], 'frame', 'table_rail');
+        rig.tube(b, [s * 0.3, 0.5 * top, -0.72], [s * 0.3, 0.5 * top, 0.52], 0.05, 'frame', 'table_brace');
+        rig.grip(b, [s * 0.2, top - 0.2, 0.58], [s * 0.34, top - 0.2, 0.58]);
       }
+      rig.tube(b, [-0.3, 0.5 * top, 0.52], [0.3, 0.5 * top, 0.52], 0.05);
+      rig.tube(b, [-0.3, 0.5 * top, -0.72], [0.3, 0.5 * top, -0.72], 0.05);
+      const yr = o.maxHeight - 0.07;
+      rig.tube(b, [0, top - 0.09, 0.46], [0, yr, 0.6], post, 'frame', 'head_post');
+      rig.roller(b, [-0.2, yr, 0.6], [0.2, yr, 0.6], 0.13, 'head_roller');
       break;
     }
     case 'none':

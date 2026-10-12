@@ -445,7 +445,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const sup = rig.group(`${baseName}_support`, station);
     const clearOfBody = py > o.seatHeight + 0.95 || py < o.seatHeight - 0.12 || Math.abs(pz) > 0.42;
     // Com anilhas, o apoio mais alto vira o quadro: sobe até a altura A.
-    const toTop = tallFrame && !lowFrame && !frameDone && def === tallest && H - py <= 0.65;
+    const toTop = tallFrame && !lowFrame && !ex.noFrame && !frameDone && def === tallest && H - py <= 0.65;
     if ((clearOfBody && !single) || toTop) {
       // Arco de tubo curvado: sobe de um lado, atravessa e desce do outro.
       const yTop = toTop ? H - t / 2 : py;

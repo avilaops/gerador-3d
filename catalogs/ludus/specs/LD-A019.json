@@ -8,7 +8,7 @@
     "height": 1050
   },
   "params": {
-    "mechanism": "lying-press"
+    "mechanism": "incline-fly"
   },
   "materials": {
     "frame": "#666a6f",
