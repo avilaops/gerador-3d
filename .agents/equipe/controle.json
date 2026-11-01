@@ -2,7 +2,39 @@
   "schemaVersion": 1,
   "application": "avila-gerador-3d",
   "members": [],
-  "tasks": [],
-  "decisions": [],
+  "tasks": [
+    {
+      "id": "AVL-417",
+      "title": "Adicionar família paramétrica de caixa térmica ao gerador 3D",
+      "objective": "Permitir que o configurador MRG use o mesmo motor Three.js e o mesmo visualizador adotados pela Ludus.",
+      "assignee": "codex",
+      "priority": "alta",
+      "status": "em-revisao",
+      "acceptanceCriteria": [
+        "Casco, liner, isolamento, ferragens, divisórias e mobilidade são paramétricos.",
+        "Tampas superior, dupla e frontal possuem articulações estáveis.",
+        "Dimensões externas permanecem coerentes com o spec.",
+        "Testes e TypeScript passam."
+      ],
+      "evidence": "415 testes e npm run typecheck aprovados no worktree gerador-3d-avl-417.",
+      "environment": "checkout-isolado",
+      "history": [
+        {
+          "at": "2026-11-01",
+          "status": "em-revisao",
+          "note": "Família thermal-box implementada por TDD e validada localmente."
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-AVL-417-1",
+      "title": "Reutilizar gerador-3d, não motor-web",
+      "decision": "A caixa térmica será uma família do @avilaops/gerador-3d e o Lojas consumirá o pacote por commit fixo.",
+      "reason": "motor-web é um crate Rust de conteúdo e SEO; gerador-3d já fornece PBR, Three.js, OrbitControls, fallback WebGL e wrapper React.",
+      "evidence": "READMEs, manifests e integração Viewer3D.astro da Ludus revisados em 2026-11-01."
+    }
+  ],
   "integrations": []
 }

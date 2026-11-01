@@ -130,6 +130,82 @@ describe('spec mínimo (só dimensões e família)', () => {
   });
 });
 
+describe('caixa térmica paramétrica', () => {
+  const gerar = (params: EquipmentSpecInput['params'] = {}) =>
+    generateEquipment({
+      id: 'MRG-TESTE',
+      name: 'Caixa térmica sob medida',
+      family: 'thermal-box',
+      dimensionsMm: { length: 900, width: 1200, height: 850 },
+      materials: { frame: '#b8bdc4', accent: '#2367d1', upholstery: '#eceff1' },
+      params: {
+        lid: 'top',
+        mobility: 'casters',
+        dividers: 2,
+        ...params,
+      },
+    });
+
+  it('gera casco, isolamento, ferragens, divisórias e tampa articulada dentro das medidas', () => {
+    const eq = gerar();
+    const size = eq.bbox.getSize(new THREE.Vector3());
+
+    expect(size.x).toBeCloseTo(1.2, 2);
+    expect(size.y).toBeCloseTo(0.85, 2);
+    expect(size.z).toBeCloseTo(0.9, 2);
+    for (const name of [
+      'shell',
+      'liner',
+      'insulation_rim',
+      'lid',
+      'hinge',
+      'latch_left',
+      'latch_right',
+      'handle_left',
+      'handle_right',
+      'caster_front_left',
+      'caster_front_right',
+      'caster_back_left',
+      'caster_back_right',
+      'divider_1',
+      'divider_2',
+    ]) {
+      expect(eq.object.getObjectByName(name), name).toBeTruthy();
+    }
+    expect(eq.articulations).toEqual([
+      expect.objectContaining({ node: 'lid', type: 'revolute', range: [0, -1.75] }),
+    ]);
+    expect(eq.warnings).toEqual([]);
+  });
+
+  it('troca rodízios por pés sem manter peças da opção anterior', () => {
+    const eq = gerar({ lid: 'top', mobility: 'feet', dividers: 0 });
+
+    expect(eq.object.getObjectByName('foot_front_left')).toBeTruthy();
+    expect(eq.object.getObjectByName('caster_front_left')).toBeFalsy();
+    expect(eq.object.getObjectByName('divider_1')).toBeFalsy();
+  });
+
+  it('modela tampa dupla com duas folhas articuladas', () => {
+    const eq = gerar({ lid: 'double', mobility: 'fixed', dividers: 1 });
+
+    expect(eq.object.getObjectByName('lid_left')).toBeTruthy();
+    expect(eq.object.getObjectByName('lid_right')).toBeTruthy();
+    expect(eq.object.getObjectByName('lid')).toBeFalsy();
+    expect(eq.articulations.map((a) => a.node).sort()).toEqual(['lid_left', 'lid_right']);
+  });
+
+  it('modela abertura frontal articulada na base', () => {
+    const eq = gerar({ lid: 'front', mobility: 'fixed', dividers: 0 });
+
+    expect(eq.object.getObjectByName('front_door')).toBeTruthy();
+    expect(eq.object.getObjectByName('lid')).toBeFalsy();
+    expect(eq.articulations).toEqual([
+      expect.objectContaining({ node: 'front_door', type: 'revolute', range: [0, 1.57] }),
+    ]);
+  });
+});
+
 describe('validação', () => {
   const base: EquipmentSpecInput = {
     id: 'X',
