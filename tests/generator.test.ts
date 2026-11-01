@@ -176,6 +176,13 @@ describe('caixa térmica paramétrica', () => {
       expect.objectContaining({ node: 'lid', type: 'revolute', range: [0, -1.75] }),
     ]);
     expect(eq.warnings).toEqual([]);
+    expect(eq.object.getObjectByName('latch_left')?.parent?.name).toBe('lid');
+  });
+
+  it('aceita o limite de dez divisórias usado pelo configurador da loja', () => {
+    const eq = gerar({ lid: 'top', mobility: 'fixed', dividers: 10 });
+
+    expect(eq.object.getObjectByName('divider_10')).toBeTruthy();
   });
 
   it('troca rodízios por pés sem manter peças da opção anterior', () => {
@@ -203,6 +210,7 @@ describe('caixa térmica paramétrica', () => {
     expect(eq.articulations).toEqual([
       expect.objectContaining({ node: 'front_door', type: 'revolute', range: [0, 1.57] }),
     ]);
+    expect(eq.object.getObjectByName('latch_left')?.parent?.name).toBe('front_door');
   });
 });
 

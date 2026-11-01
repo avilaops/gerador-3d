@@ -283,6 +283,11 @@ export class EquipmentViewer {
     return this.equipment;
   }
 
+  /** Indica se o contexto WebGL foi criado e o palco pode renderizar o modelo. */
+  get available(): boolean {
+    return this.renderer !== null;
+  }
+
   set(toggle: ViewerToggle, value: boolean): void {
     this.state[toggle] = value;
     const b = this.buttons.get(toggle);

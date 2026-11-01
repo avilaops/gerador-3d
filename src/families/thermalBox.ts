@@ -11,7 +11,7 @@ const MOBILITY = ['fixed', 'feet', 'casters'] as const;
 export const ThermalBoxParamsSchema = z.object({
   lid: z.enum(LIDS),
   mobility: z.enum(MOBILITY),
-  dividers: z.number().int().min(0).max(8),
+  dividers: z.number().int().min(0).max(10),
   wallThickness: z.number().positive().max(0.12),
 });
 export type ThermalBoxParams = z.infer<typeof ThermalBoxParamsSchema>;
@@ -47,6 +47,11 @@ export const thermalBox: FamilyDefinition<ThermalBoxParams> = {
     const bodyCenterY = bodyBottom + bodyH / 2;
     const bodyTop = bodyBottom + bodyH;
     const articulations: Articulation[] = [];
+
+    const addLatch = (parent: THREE.Object3D, name: string, center: Vec3) => {
+      const latch = rig.group(name, parent);
+      rig.box(latch, [Math.min(0.07, W * 0.08), Math.min(0.12, bodyH * 0.18), t * 0.35], center, 'chrome');
+    };
 
     const shell = rig.group('shell');
     rig.box(shell, [W, t, L], [0, bodyBottom + t / 2, 0], 'frame', 'outer_floor');
@@ -91,6 +96,8 @@ export const thermalBox: FamilyDefinition<ThermalBoxParams> = {
       lid.position.set(...pivot);
       rig.box(lid, [W, lidT, L], [0, lidT / 2, L / 2 - t * 0.4], 'frame', 'lid_panel');
       rig.box(lid, [W - 2 * t, lidT * 0.24, L - 2 * t], [0, -lidT * 0.08, L / 2 - t * 0.4], 'upholstery', 'lid_liner');
+      addLatch(lid, 'latch_left', [-W * 0.28, -lidT * 0.1, L - t * 0.58]);
+      addLatch(lid, 'latch_right', [W * 0.28, -lidT * 0.1, L - t * 0.58]);
       rig.rod(hinge, [-W * 0.43, bodyTop, -L / 2 + t * 0.5], [W * 0.43, bodyTop, -L / 2 + t * 0.5], t * 0.34, 'chrome');
       articulations.push(articulation('lid', [1, 0, 0], pivot, [0, -1.75]));
     } else if (p.lid === 'double') {
@@ -100,9 +107,11 @@ export const thermalBox: FamilyDefinition<ThermalBoxParams> = {
       const left = rig.group('lid_left');
       left.position.set(...leftPivot);
       rig.box(left, [leafW, lidT, L], [leafW / 2, lidT / 2, 0], 'frame', 'lid_left_panel');
+      addLatch(left, 'latch_left', [leafW * 0.44, -lidT * 0.1, L / 2 - t * 0.18]);
       const right = rig.group('lid_right');
       right.position.set(...rightPivot);
       rig.box(right, [leafW, lidT, L], [-leafW / 2, lidT / 2, 0], 'frame', 'lid_right_panel');
+      addLatch(right, 'latch_right', [-leafW * 0.44, -lidT * 0.1, L / 2 - t * 0.18]);
       rig.rod(hinge, [-W / 2 + t * 0.45, bodyTop, -L * 0.42], [-W / 2 + t * 0.45, bodyTop, L * 0.42], t * 0.34, 'chrome');
       rig.rod(hinge, [W / 2 - t * 0.45, bodyTop, -L * 0.42], [W / 2 - t * 0.45, bodyTop, L * 0.42], t * 0.34, 'chrome');
       articulations.push(
@@ -114,17 +123,16 @@ export const thermalBox: FamilyDefinition<ThermalBoxParams> = {
       const door = rig.group('front_door');
       door.position.set(...pivot);
       rig.box(door, [W - 2 * t, bodyH, lidT], [0, bodyH / 2, -lidT / 2], 'frame', 'front_door_panel');
+      addLatch(door, 'latch_left', [-W * 0.28, bodyH * 0.76, -lidT * 0.65]);
+      addLatch(door, 'latch_right', [W * 0.28, bodyH * 0.76, -lidT * 0.65]);
       rig.rod(hinge, [-W * 0.42, bodyBottom + t * 0.35, L / 2 - t * 0.5], [W * 0.42, bodyBottom + t * 0.35, L / 2 - t * 0.5], t * 0.34, 'chrome');
       articulations.push(articulation('front_door', [1, 0, 0], pivot, [0, 1.57]));
       // Abertura frontal ainda recebe um tampo térmico fixo.
       rig.box(shell, [W, lidT, L], [0, H - lidT / 2, 0], 'frame', 'fixed_top');
     }
 
-    const latchY = p.lid === 'front' ? bodyTop * 0.76 : bodyTop - lidT * 0.25;
     for (const side of [-1, 1] as const) {
       const label = side < 0 ? 'left' : 'right';
-      const latch = rig.group(`latch_${label}`);
-      rig.box(latch, [Math.min(0.07, W * 0.08), Math.min(0.12, bodyH * 0.18), t * 0.35], [side * W * 0.28, latchY, L / 2 - t * 0.18], 'chrome');
       const handle = rig.group(`handle_${label}`);
       const x = side * (W / 2 - t * 0.18);
       rig.rod(handle, [x, bodyCenterY - 0.09, -L * 0.12], [x, bodyCenterY + 0.09, -L * 0.12], t * 0.3, 'chrome');
