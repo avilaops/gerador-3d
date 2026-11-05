@@ -5,8 +5,8 @@
  * animação por fase, planta 2D e exportação GLB/USDZ. Ver README.md.
  */
 export * from './spec/schema';
-export { generateEquipment, collectStats, UnsupportedFamilyError } from './generate';
-export type { GeneratedEquipment, EquipmentStats } from './generate';
+export { generateEquipment, collectStats, validateGeneratedEquipment, UnsupportedFamilyError } from './generate';
+export type { GeneratedEquipment, EquipmentStats, QualityReport } from './generate';
 export { getFamily, implementedFamilies } from './families/registry';
 export type { FamilyDefinition, DimsM } from './families/types';
 export { PartKit, DEFAULT_COLORS } from './parts/kit';

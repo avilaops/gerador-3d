@@ -119,3 +119,17 @@ Diferenças conhecidas em relação às fotos:
 - Até 30 mil triângulos e GLB de até 1,5 MB por modelo (testado). Hoje o maior tem cerca de 8 mil triângulos e 320 KB.
 - O USDZ vai estático: o Quick Look não toca a animação desse exportador.
 - O GLTFExporter r149 não exporta `InstancedMesh`; as peças compartilham geometria e material, o que dá o mesmo efeito no arquivo.
+
+## Contrato de qualidade
+
+Cada `EquipmentSpec` pode declarar `camera`, `calibration` (landmarks da foto) e
+`lod`. O resultado de `generateEquipment` expõe `quality`, com validações
+determinísticas de caixa, piso, articulações e orçamento de triângulos. Isso é um
+gate de exportação, não uma aprovação visual automática.
+
+## Ludus Core
+
+Os primeiros seeds nacionais ficam em `catalogs/ludus-core/specs`. O catálogo
+Core usa o mesmo núcleo paramétrico do Premium, mas mantém materiais próprios e
+status `needs_review` até a conferência contra foto/ficha. O repositório continua
+independente do site.

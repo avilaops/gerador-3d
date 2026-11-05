@@ -1,0 +1,13 @@
+{
+  "id": "LD-WH024",
+  "name": "Cross Over Angular com Regulagem e Barra Fixa",
+  "family": "cable-station",
+  "dimensionsMm": { "length": 1000, "width": 2000, "height": 2300 },
+  "weightStackKg": { "perStack": 200, "stacks": 2 },
+  "params": { "variant": "crossover" },
+  "materials": { "frame": "#171717", "upholstery": "#0b0b0b", "accent": "#f2bd00" },
+  "trainingClearanceM": 0.6,
+  "camera": { "azimuthDeg": 35, "elevationDeg": 22, "distanceM": 3.8, "target": [0, 1.0, 0] },
+  "review": { "status": "needs_review", "notes": "Primeiro seed Core; conferir número de torres e curso dos cabos." },
+  "meta": { "linha": "Ludus Core", "grupoMuscular": "Multifuncionais", "source": "core.json" }
+}

@@ -38,9 +38,22 @@ export interface GeneratedEquipment {
   deviation: { length: number; width: number; height: number };
   footprint: Footprint;
   stats: EquipmentStats;
+  /** Câmera comercial resolvida: o spec pode sobrescrever o enquadramento padrão. */
+  camera: NonNullable<EquipmentSpec['camera']>;
+  /** Resultado das verificações geométricas executadas após a montagem. */
+  quality: QualityReport;
   warnings: string[];
   /** Libera geometrias e materiais deste modelo. */
   dispose(): void;
+}
+
+export interface QualityReport {
+  valid: boolean;
+  floorClearanceM: number;
+  dimensionsWithinTolerance: boolean;
+  articulationNodesValid: boolean;
+  triangleBudget: number;
+  issues: string[];
 }
 
 /** Desvio máximo aceito antes de remontar com dimensões de projeto corrigidas. */
@@ -126,7 +139,20 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   const object = new THREE.Group();
   object.name = spec.id;
   object.add(root);
-  object.userData = { equipmentId: spec.id, family: spec.family, name: spec.name };
+  const camera = spec.camera ?? {
+    azimuthDeg: 35,
+    elevationDeg: 18,
+    distanceM: 3,
+    target: [0, 0.5, 0] as [number, number, number],
+  };
+  object.userData = {
+    equipmentId: spec.id,
+    family: spec.family,
+    name: spec.name,
+    camera,
+    lod: spec.lod,
+    calibration: spec.calibration,
+  };
 
   // Garante a convenção de origem: apoiado em y = 0 e centrado em x e z.
   object.updateMatrixWorld(true);
@@ -174,6 +200,14 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
 
   const clip = buildPhaseClip(object, articulations);
   const footprint = computeFootprint(object, spec.trainingClearanceM);
+  const quality = validateGeneratedEquipment({
+    bbox,
+    deviation,
+    object,
+    articulations,
+    stats: collectStats(object),
+  });
+  warnings.push(...quality.issues);
 
   return {
     spec,
@@ -185,8 +219,46 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
     deviation,
     footprint,
     stats: collectStats(object),
+    camera,
+    quality,
     warnings,
     dispose: () => kit.dispose(),
+  };
+}
+
+/**
+ * Gate barato e determinístico para exportação. Não substitui revisão visual:
+ * ele captura regressões de escala, piso, nós animados e orçamento de polígonos.
+ */
+export function validateGeneratedEquipment(input: {
+  bbox: THREE.Box3;
+  deviation: { length: number; width: number; height: number };
+  object: THREE.Object3D;
+  articulations: Articulation[];
+  stats: EquipmentStats;
+  tolerance?: number;
+  triangleBudget?: number;
+}): QualityReport {
+  const tolerance = input.tolerance ?? FIT_TOLERANCE * 2;
+  const triangleBudget = input.triangleBudget ?? 30_000;
+  const issues: string[] = [];
+  const dimensionsWithinTolerance =
+    Math.abs(input.deviation.length) <= tolerance &&
+    Math.abs(input.deviation.width) <= tolerance &&
+    Math.abs(input.deviation.height) <= tolerance;
+  if (!dimensionsWithinTolerance) issues.push('Dimensões fora da tolerância de validação');
+  const floorClearanceM = input.bbox.min.y;
+  if (Math.abs(floorClearanceM) > 1e-3) issues.push('Modelo não está apoiado no piso');
+  const articulationNodesValid = input.articulations.every((a) => !!input.object.getObjectByName(a.node));
+  if (!articulationNodesValid) issues.push('Articulação aponta para nó inexistente');
+  if (input.stats.triangles > triangleBudget) issues.push(`Orçamento de triângulos excedido: ${input.stats.triangles}`);
+  return {
+    valid: issues.length === 0,
+    floorClearanceM,
+    dimensionsWithinTolerance,
+    articulationNodesValid,
+    triangleBudget,
+    issues,
   };
 }
 

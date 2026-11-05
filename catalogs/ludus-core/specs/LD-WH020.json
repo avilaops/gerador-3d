@@ -1,0 +1,12 @@
+{
+  "id": "LD-WH020",
+  "name": "Cadeira Extensora Articulada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": { "length": 1000, "width": 1550, "height": 1000 },
+  "params": { "mechanism": "leg-extension" },
+  "materials": { "frame": "#171717", "upholstery": "#0b0b0b", "accent": "#f2bd00" },
+  "trainingClearanceM": 0.6,
+  "camera": { "azimuthDeg": 32, "elevationDeg": 18, "distanceM": 2.6, "target": [0, 0.45, 0] },
+  "review": { "status": "needs_review", "notes": "Primeiro seed Core; conferir alavanca, roletes e regulagens." },
+  "meta": { "linha": "Ludus Core", "grupoMuscular": "Pernas e glúteos", "source": "core.json" }
+}

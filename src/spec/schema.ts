@@ -31,6 +31,33 @@ export type Vec3 = z.infer<typeof Vec3Schema>;
 
 const HexColorSchema = z.string().regex(/^#[0-9a-fA-F]{6}$/, 'cor no formato #rrggbb');
 
+const CameraSchema = z.object({
+  azimuthDeg: z.number().finite().default(35),
+  elevationDeg: z.number().finite().min(-89).max(89).default(18),
+  distanceM: z.number().positive().default(3),
+  target: Vec3Schema.default([0, 0.5, 0]),
+});
+export type EquipmentCamera = z.infer<typeof CameraSchema>;
+
+const LandmarkSchema = z.object({
+  name: z.string().min(1),
+  model: Vec3Schema,
+  image: z.tuple([z.number().finite(), z.number().finite()]),
+});
+
+const CalibrationSchema = z.object({
+  sourceImage: z.string().min(1).optional(),
+  landmarks: z.array(LandmarkSchema).min(2).optional(),
+  confidence: z.number().min(0).max(1).default(0),
+});
+export type EquipmentCalibration = z.infer<typeof CalibrationSchema>;
+
+const LodSchema = z.object({
+  mediumRatio: z.number().positive().max(1).default(0.55),
+  lowRatio: z.number().positive().max(1).default(0.25),
+});
+export type EquipmentLod = z.infer<typeof LodSchema>;
+
 export const ArticulationSchema = z.object({
   /** Nome estável do nó animado (ex.: "arm_left", "stack"). */
   node: z.string().min(1),
@@ -78,6 +105,9 @@ export const EquipmentSpecSchema = z.object({
     })
     .optional(),
   articulations: z.array(ArticulationOverrideSchema).optional(),
+  camera: CameraSchema.optional(),
+  calibration: CalibrationSchema.optional(),
+  lod: LodSchema.optional(),
   trainingClearanceM: z.number().nonnegative().default(0.6),
   review: z
     .object({

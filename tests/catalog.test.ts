@@ -29,6 +29,20 @@ describe('catálogos', () => {
   it('o catálogo Ludus tem os 94 specs', () => {
     expect(specs.filter(([k]) => k.startsWith('ludus/')).length).toBe(94);
   });
+
+  it('o seed Core tem specs revisáveis e câmera resolvida', () => {
+    const core = specs.filter(([k]) => k.startsWith('ludus-core/'));
+    expect(core.map(([k]) => k)).toEqual([
+      'ludus-core/LD-WH002',
+      'ludus-core/LD-WH020',
+      'ludus-core/LD-WH024',
+    ]);
+    for (const [, input] of core) {
+      const eq = generateEquipment(input);
+      expect(eq.camera.distanceM).toBeGreaterThan(0);
+      expect(eq.quality.valid).toBe(true);
+    }
+  });
 });
 
 describe.each(specs)('%s', (_key, spec) => {
