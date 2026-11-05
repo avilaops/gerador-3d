@@ -13,7 +13,8 @@
   },
   "params": {
     "mechanism": "leg-extension",
-    "swingScale": 0.1
+    "swingScale": 0.1,
+    "stackTravel": 0.08
   },
   "materials": {
     "frame": "#171717",

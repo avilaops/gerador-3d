@@ -12,7 +12,8 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "hip-adduction"
+    "mechanism": "hip-adduction",
+    "swingScale": 0.2
   },
   "materials": {
     "frame": "#171717",
@@ -22,7 +23,7 @@
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -48,7 +49,7 @@
       "backrestTilt": 0.35,
       "mechanism": "hip-adduction",
       "stacks": 1,
-      "swingScale": 1,
+      "swingScale": 0.2,
       "darkTower": false,
       "armPivotHeight": 1.3080000035508148,
       "armPivotX": 0.18,
@@ -92,7 +93,7 @@
         ],
         "range": [
           0,
-          0.62
+          0.124
         ],
         "driver": "phase"
       },
@@ -111,7 +112,7 @@
         ],
         "range": [
           0,
-          0.62
+          0.124
         ],
         "driver": "phase"
       }

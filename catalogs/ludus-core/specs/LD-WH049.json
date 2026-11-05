@@ -8,7 +8,8 @@
     "height": 1100
   },
   "params": {
-    "mechanism": "pec-fly"
+    "mechanism": "pec-fly",
+    "stackTravel": 0
   },
   "materials": {
     "frame": "#171717",
@@ -18,7 +19,7 @@
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",

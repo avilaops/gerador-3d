@@ -20,12 +20,21 @@ const MOTION_OVERRIDES: Record<string, Params> = {
   'LD-WH017': { swingScale: 0.1 },
   'LD-WH019': { swingScale: 0.1 },
   'LD-WH020': { swingScale: 0.1 },
-  'LD-WH021': { swingScale: 0.1 },
+  'LD-WH021': { swingScale: 0.1, stackTravel: 0.08 },
   'LD-WH022': { swingScale: 0.1 },
   'LD-WH034': { travel: 0 },
   'LD-WH035': { travel: 0 },
   'LD-WH036': { travel: 0 },
   'LD-WH040': { travel: 0.05 },
+  // Aberturas reduzidas para manter braços e roletes dentro do vão real do
+  // assento, sem alterar a geometria de repouso publicada.
+  'LD-WH018': { swingScale: 0.2 },
+  'LD-WH023': { swingScale: 0.5 },
+  'LD-WH031': { swingScale: 0.5 },
+  'LD-WH032': { swingScale: 0.5 },
+  'LD-WH042': { swingScale: 0.5 },
+  'LD-WH044': { swingScale: 0.5 },
+  'LD-WH049': { stackTravel: 0 },
 };
 
 function stackValue(value: string | null): { perStack: number; stacks: number } | undefined {

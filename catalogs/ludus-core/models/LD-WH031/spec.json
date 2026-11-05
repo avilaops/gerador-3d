@@ -12,7 +12,8 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "leg-curl"
+    "mechanism": "leg-curl",
+    "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
@@ -22,7 +23,7 @@
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -48,7 +49,7 @@
       "backrestTilt": 0.32,
       "mechanism": "leg-curl",
       "stacks": 1,
-      "swingScale": 1,
+      "swingScale": 0.5,
       "darkTower": false,
       "armPivotHeight": 1.3080000000000063,
       "armPivotX": 0.18,
@@ -92,7 +93,7 @@
         ],
         "range": [
           0,
-          1.2
+          0.6
         ],
         "driver": "phase"
       }

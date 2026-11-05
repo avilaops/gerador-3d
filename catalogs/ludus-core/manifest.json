@@ -145,15 +145,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -864,7 +858,7 @@
       },
       "animated": true,
       "triangles": 7616,
-      "glbBytes": 337608,
+      "glbBytes": 337644,
       "usdzBytes": 908965,
       "quality": {
         "valid": true,
@@ -915,27 +909,16 @@
       },
       "animated": true,
       "triangles": 7616,
-      "glbBytes": 337348,
+      "glbBytes": 337384,
       "usdzBytes": 908849,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "stack_plate_09"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_selector_pin"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -977,7 +960,7 @@
       },
       "animated": true,
       "triangles": 7280,
-      "glbBytes": 337040,
+      "glbBytes": 337076,
       "usdzBytes": 906132,
       "quality": {
         "valid": true,
@@ -1028,7 +1011,7 @@
       },
       "animated": true,
       "triangles": 7828,
-      "glbBytes": 368552,
+      "glbBytes": 368588,
       "usdzBytes": 1007709,
       "quality": {
         "valid": true,
@@ -1079,7 +1062,7 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297872,
+      "glbBytes": 297908,
       "usdzBytes": 771314,
       "quality": {
         "valid": true,
@@ -1130,7 +1113,7 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297864,
+      "glbBytes": 297896,
       "usdzBytes": 771317,
       "quality": {
         "valid": true,
@@ -1183,7 +1166,7 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297500,
+      "glbBytes": 297536,
       "usdzBytes": 773491,
       "quality": {
         "valid": true,
@@ -1234,7 +1217,7 @@
       },
       "animated": true,
       "triangles": 5284,
-      "glbBytes": 90160,
+      "glbBytes": 90228,
       "usdzBytes": 246734,
       "quality": {
         "valid": true,
@@ -1285,7 +1268,7 @@
       },
       "animated": true,
       "triangles": 5668,
-      "glbBytes": 92512,
+      "glbBytes": 92580,
       "usdzBytes": 249465,
       "quality": {
         "valid": true,
@@ -1336,7 +1319,7 @@
       },
       "animated": true,
       "triangles": 6648,
-      "glbBytes": 173796,
+      "glbBytes": 173864,
       "usdzBytes": 332720,
       "quality": {
         "valid": true,
@@ -1394,50 +1377,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 8,
-        "motionCollisions": [
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "cage_top"
-          },
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "480fdbe3-34c0-45ff-9d44-337250034b25"
-          },
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "top_crossbar"
-          },
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "810eba08-4bb8-4dbf-b2ed-bc2ee0757a61"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "cage_top"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "a7c7e0d6-ecbe-4f09-bbe7-38425e9a3564"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "top_crossbar"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "810eba08-4bb8-4dbf-b2ed-bc2ee0757a61"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1634,7 +1576,7 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297500,
+      "glbBytes": 297536,
       "usdzBytes": 773482,
       "quality": {
         "valid": true,
@@ -1687,7 +1629,7 @@
       },
       "animated": true,
       "triangles": 7128,
-      "glbBytes": 299128,
+      "glbBytes": 299164,
       "usdzBytes": 778945,
       "quality": {
         "valid": true,
@@ -1949,15 +1891,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2006,20 +1942,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_tie"
-          },
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2112,7 +2037,7 @@
       },
       "animated": true,
       "triangles": 4268,
-      "glbBytes": 207296,
+      "glbBytes": 207328,
       "usdzBytes": 578854,
       "quality": {
         "valid": true,
@@ -2172,20 +2097,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "lever",
-            "phase": 0.5,
-            "other": "c71304c3-a27e-4b7d-9e5a-84f10d49ae0b"
-          },
-          {
-            "node": "lever",
-            "phase": 0.5,
-            "other": "3063e6af-2152-40b8-850f-6594e40317de"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2227,7 +2141,7 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297448,
+      "glbBytes": 297484,
       "usdzBytes": 771449,
       "quality": {
         "valid": true,
@@ -2278,7 +2192,7 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297868,
+      "glbBytes": 297904,
       "usdzBytes": 771306,
       "quality": {
         "valid": true,
@@ -2329,7 +2243,7 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297456,
+      "glbBytes": 297492,
       "usdzBytes": 771449,
       "quality": {
         "valid": true,
@@ -2387,15 +2301,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2541,27 +2449,16 @@
       },
       "animated": true,
       "triangles": 6450,
-      "glbBytes": 265156,
+      "glbBytes": 265188,
       "usdzBytes": 669630,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "tower_front_left"
-          },
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "tower_front_right"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2605,7 +2502,7 @@
       },
       "animated": true,
       "triangles": 8892,
-      "glbBytes": 359144,
+      "glbBytes": 359160,
       "usdzBytes": 981447,
       "quality": {
         "valid": true,
@@ -2656,27 +2553,16 @@
       },
       "animated": true,
       "triangles": 8892,
-      "glbBytes": 358260,
+      "glbBytes": 358296,
       "usdzBytes": 977751,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "tower_front_left"
-          },
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "tower_front_right"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2769,7 +2655,7 @@
       },
       "animated": true,
       "triangles": 5044,
-      "glbBytes": 88056,
+      "glbBytes": 88124,
       "usdzBytes": 240498,
       "quality": {
         "valid": true,
@@ -2820,7 +2706,7 @@
       },
       "animated": true,
       "triangles": 4080,
-      "glbBytes": 131956,
+      "glbBytes": 132024,
       "usdzBytes": 234646,
       "quality": {
         "valid": true,
@@ -2871,7 +2757,7 @@
       },
       "animated": true,
       "triangles": 4464,
-      "glbBytes": 132844,
+      "glbBytes": 132912,
       "usdzBytes": 236279,
       "quality": {
         "valid": true,
@@ -2922,7 +2808,7 @@
       },
       "animated": true,
       "triangles": 4464,
-      "glbBytes": 132824,
+      "glbBytes": 132892,
       "usdzBytes": 236260,
       "quality": {
         "valid": true,
@@ -2973,7 +2859,7 @@
       },
       "animated": true,
       "triangles": 4080,
-      "glbBytes": 131896,
+      "glbBytes": 131964,
       "usdzBytes": 234529,
       "quality": {
         "valid": true,
@@ -3033,30 +2919,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 4,
-        "motionCollisions": [
-          {
-            "node": "arm_right",
-            "phase": 0.5,
-            "other": "1f57b6ea-ed7b-4fd4-89fd-95da82a8214f"
-          },
-          {
-            "node": "arm_right",
-            "phase": 0.5,
-            "other": "98ad8959-7576-412c-8c8d-5ed3b2693c26"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "fbff048d-4d38-48e3-8de4-b168580f5327"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "1d844d41-5480-424c-b793-f496ec443fac"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3158,30 +3023,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 4,
-        "motionCollisions": [
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "876212ac-0f52-42f0-ac98-ed6a893f5e5f"
-          },
-          {
-            "node": "arm_right",
-            "phase": 1,
-            "other": "a8ce2c61-0a3c-493b-8e76-4e7d78c2d17a"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "69822a87-736d-4a5f-b26a-5e817b9a42e3"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "34b68878-0b5f-491e-9a68-992bcc96be53"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3485,20 +3329,9 @@
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_tie"
-          },
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,

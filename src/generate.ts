@@ -329,21 +329,35 @@ function articulationCollisions(
     const movingMeshes: THREE.Mesh[] = [];
     moving.traverse((node) => {
       const mesh = node as THREE.Mesh;
-      if (mesh.isMesh && !mesh.userData.collisionExempt) movingMeshes.push(mesh);
+      if (mesh.isMesh && !isCollisionExempt(mesh)) movingMeshes.push(mesh);
     });
     const movingSet = new Set(movingMeshes);
-    const movingBox = new THREE.Box3().setFromObject(moving, true);
-    if (movingBox.isEmpty()) continue;
-    for (const other of allMeshes) {
-      if (other.userData.collisionExempt) continue;
-      if (movingSet.has(other) || moving === other || moving.getObjectById(other.id)) continue;
-      const otherBox = new THREE.Box3().setFromObject(other, true);
-      const overlap = new THREE.Box3().copy(movingBox).intersect(otherBox);
-      const size = overlap.getSize(new THREE.Vector3());
-      if (size.x * size.y * size.z > 1e-6) hits.push({ node: articulation.node, phase, other: other.name || other.uuid });
+    for (const movingMesh of movingMeshes) {
+      const movingBox = new THREE.Box3().setFromObject(movingMesh, true);
+      if (movingBox.isEmpty()) continue;
+      for (const other of allMeshes) {
+        if (isCollisionExempt(other)) continue;
+        if (movingSet.has(other) || moving === other || moving.getObjectById(other.id)) continue;
+        const otherBox = new THREE.Box3().setFromObject(other, true);
+        const overlap = new THREE.Box3().copy(movingBox).intersect(otherBox);
+        const size = overlap.getSize(new THREE.Vector3());
+        if (size.x * size.y * size.z > 1e-6) {
+          hits.push({ node: articulation.node, phase, other: other.name || other.uuid });
+          break;
+        }
+      }
     }
   }
   return hits;
+}
+
+function isCollisionExempt(object: THREE.Object3D): boolean {
+  let current: THREE.Object3D | null = object;
+  while (current) {
+    if (current.userData.collisionExempt) return true;
+    current = current.parent;
+  }
+  return false;
 }
 
 export function collectStats(root: THREE.Object3D): EquipmentStats {

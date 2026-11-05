@@ -125,6 +125,9 @@ export function weightStack(kit: PartKit, o: WeightStackOptions): WeightStackPar
 
   const guides = new THREE.Group();
   guides.name = 'stack_guides';
+  // The moving plates are intentionally guided by these rails. They are not
+  // an obstruction for the articulation clearance audit.
+  guides.userData.collisionExempt = true;
   const gx = pw / 2 - 0.04;
   for (const s of [-1, 1]) {
     guides.add(

@@ -13,7 +13,8 @@
   },
   "params": {
     "mechanism": "leg-extension",
-    "swingScale": 0.1
+    "swingScale": 0.1,
+    "stackTravel": 0.08
   },
   "materials": {
     "frame": "#171717",
@@ -40,7 +41,7 @@
       "towerZ": -0.4057017543859649,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.1838401390095569,
+      "stackTravel": 0.08,
       "seatHeight": 0.58,
       "seatZ": 0.021228070175438596,
       "seatWidth": 0.42,
@@ -74,7 +75,7 @@
         ],
         "range": [
           0,
-          0.1838401390095569
+          0.08
         ],
         "driver": "phase"
       },
