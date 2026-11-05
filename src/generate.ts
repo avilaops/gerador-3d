@@ -7,6 +7,7 @@ import type { DimsM } from './families/types';
 import { PartKit } from './parts/kit';
 import { applyPhase, buildPhaseClip, captureRestPose } from './animation';
 import { computeFootprint, type Footprint } from './footprint';
+import { evaluateCalibration, type CalibrationReport } from './calibration';
 import {
   EquipmentSpecError,
   parseEquipmentSpec,
@@ -59,6 +60,7 @@ export interface QualityReport {
     collisions: { node: string; phase: number; other: string }[];
     collisionFree: boolean;
   };
+  calibration: CalibrationReport;
   issues: string[];
 }
 
@@ -207,6 +209,7 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   const clip = buildPhaseClip(object, articulations);
   const footprint = computeFootprint(object, spec.trainingClearanceM);
   const motion = sampleMotion(object, articulations, dims);
+  const calibration = evaluateCalibration(spec.calibration);
   const quality = validateGeneratedEquipment({
     bbox,
     deviation,
@@ -214,6 +217,7 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
     articulations,
     stats: collectStats(object),
     motion,
+    calibration,
   });
   warnings.push(...quality.issues);
 
@@ -247,6 +251,7 @@ export function validateGeneratedEquipment(input: {
   tolerance?: number;
   triangleBudget?: number;
   motion: QualityReport['motion'];
+  calibration: CalibrationReport;
 }): QualityReport {
   const tolerance = input.tolerance ?? FIT_TOLERANCE * 2;
   const triangleBudget = input.triangleBudget ?? 30_000;
@@ -268,6 +273,7 @@ export function validateGeneratedEquipment(input: {
     articulationNodesValid,
     triangleBudget,
     motion: input.motion,
+    calibration: input.calibration,
     issues,
   };
 }

@@ -78,6 +78,9 @@ interface ManifestItem {
     motionWithinDesignBox: boolean;
     motionCollisionFree: boolean;
     motionCollisionCount: number;
+    calibrationStatus: string;
+    calibrationLandmarks: number;
+    calibrationRmsePx: number;
     motionMaxSizeM: { length: number; width: number; height: number };
   };
 }
@@ -168,6 +171,9 @@ for (const spec of specs) {
         motionWithinDesignBox: eq.quality.motion.withinDesignBox,
         motionCollisionFree: eq.quality.motion.collisionFree,
         motionCollisionCount: eq.quality.motion.collisions.length,
+        calibrationStatus: eq.quality.calibration.status,
+        calibrationLandmarks: eq.quality.calibration.landmarks,
+        calibrationRmsePx: eq.quality.calibration.rmsePx,
         motionMaxSizeM: eq.quality.motion.maxSize,
       },
     });

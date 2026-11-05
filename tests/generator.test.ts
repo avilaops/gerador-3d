@@ -3,6 +3,7 @@ import { describe, it, expect } from 'vitest';
 import * as THREE from 'three';
 import {
   buildLodVariants,
+  evaluateCalibration,
   generateEquipment,
   HANDWRITTEN_SPECS,
   EquipmentSpecError,
@@ -178,5 +179,20 @@ describe('validação', () => {
     expect(variants[2].triangles).toBeLessThan(variants[1].triangles);
     variants.slice(1).forEach((v) => v.dispose());
     eq.dispose();
+  });
+
+  it('calcula erro de reprojeção para quatro landmarks', () => {
+    const report = evaluateCalibration({
+      confidence: 1,
+      landmarks: [
+        { name: 'a', model: [0, 0, 0], image: [10, 20] },
+        { name: 'b', model: [1, 0, 0], image: [20, 20] },
+        { name: 'c', model: [0, 1, 0], image: [10, 30] },
+        { name: 'd', model: [0, 0, 1], image: [10, 20] },
+      ],
+    });
+    expect(report.status).toBe('calibrated');
+    expect(report.rmsePx).toBeLessThan(1e-6);
+    expect(report.maxErrorPx).toBeLessThan(1e-6);
   });
 });
