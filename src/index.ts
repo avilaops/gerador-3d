@@ -21,6 +21,8 @@ export {
 } from './animation';
 export { computeFootprint, convexHull } from './footprint';
 export type { Footprint, Point2 } from './footprint';
+export { buildLodVariants } from './lod';
+export type { LodVariant } from './lod';
 export { exportGlb } from './export/glb';
 export { exportUsdz } from './export/usdz';
 export { planSvg } from './export/planSvg';

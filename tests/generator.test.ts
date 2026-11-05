@@ -2,6 +2,7 @@
 import { describe, it, expect } from 'vitest';
 import * as THREE from 'three';
 import {
+  buildLodVariants,
   generateEquipment,
   HANDWRITTEN_SPECS,
   EquipmentSpecError,
@@ -167,5 +168,15 @@ describe('validação', () => {
       articulations: [{ node: 'arm_left', range: [0, 0.5] }],
     });
     expect(eq.articulations.find((a) => a.node === 'arm_left')!.range).toEqual([0, 0.5]);
+  });
+
+  it('gera variantes LOD sem alterar o modelo original', () => {
+    const eq = generateEquipment(base);
+    const variants = buildLodVariants(eq.object, { mediumRatio: 0.6, lowRatio: 0.3 });
+    expect(variants.map((v) => v.level)).toEqual(['original', 'medium', 'low']);
+    expect(variants[1].triangles).toBeLessThan(variants[0].triangles);
+    expect(variants[2].triangles).toBeLessThan(variants[1].triangles);
+    variants.slice(1).forEach((v) => v.dispose());
+    eq.dispose();
   });
 });
