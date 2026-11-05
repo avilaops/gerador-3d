@@ -329,12 +329,13 @@ function articulationCollisions(
     const movingMeshes: THREE.Mesh[] = [];
     moving.traverse((node) => {
       const mesh = node as THREE.Mesh;
-      if (mesh.isMesh) movingMeshes.push(mesh);
+      if (mesh.isMesh && !mesh.userData.collisionExempt) movingMeshes.push(mesh);
     });
     const movingSet = new Set(movingMeshes);
     const movingBox = new THREE.Box3().setFromObject(moving, true);
     if (movingBox.isEmpty()) continue;
     for (const other of allMeshes) {
+      if (other.userData.collisionExempt) continue;
       if (movingSet.has(other) || moving === other || moving.getObjectById(other.id)) continue;
       const otherBox = new THREE.Box3().setFromObject(other, true);
       const overlap = new THREE.Box3().copy(movingBox).intersect(otherBox);

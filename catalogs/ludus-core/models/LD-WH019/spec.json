@@ -12,7 +12,8 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "hip-abduction"
+    "mechanism": "hip-abduction",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
@@ -22,7 +23,7 @@
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -48,7 +49,7 @@
       "backrestTilt": 0.35,
       "mechanism": "hip-abduction",
       "stacks": 1,
-      "swingScale": 1,
+      "swingScale": 0.1,
       "darkTower": false,
       "armPivotHeight": 1.3080000000000063,
       "armPivotX": 0.18,
@@ -92,7 +93,7 @@
         ],
         "range": [
           0,
-          0.62
+          0.062
         ],
         "driver": "phase"
       },
@@ -111,7 +112,7 @@
         ],
         "range": [
           0,
-          0.62
+          0.062
         ],
         "driver": "phase"
       }

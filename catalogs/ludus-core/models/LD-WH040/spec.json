@@ -12,7 +12,8 @@
     "stacks": 1
   },
   "params": {
-    "variant": "horizontal"
+    "variant": "horizontal",
+    "travel": 0.05
   },
   "materials": {
     "frame": "#171717",
@@ -22,7 +23,7 @@
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -35,7 +36,7 @@
     "params": {
       "variant": "horizontal",
       "tube": 0.08,
-      "travel": 0.35,
+      "travel": 0.05,
       "stackPlates": 10,
       "stackTravel": 0.14400000000000002,
       "showPlates": true,
@@ -76,7 +77,7 @@
         ],
         "range": [
           0,
-          0.3
+          0.05
         ],
         "driver": "phase"
       }

@@ -864,98 +864,22 @@
       },
       "animated": true,
       "triangles": 7616,
-      "glbBytes": 337576,
+      "glbBytes": 337608,
       "usdzBytes": 908965,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 15,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "arm_left_bar"
-          },
-          {
-            "node": "arm_right",
-            "phase": 0.5,
-            "other": "3599d341-51ac-46a9-8ac5-2c6dd41e41ae"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "tower_side"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "tower_front_left"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "stack_plate_09"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "stack_plate_10"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "stack_top_plate"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "9cd82963-add7-4459-9ed6-d155ae6c2e5b"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "42fdf4f1-68bb-43bf-b47e-a0742f116153"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_cable"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_plate_07"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_plate_08"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_selector_rod"
-          },
-          {
-            "node": "arm_left",
-            "phase": 1,
-            "other": "stack_selector_pin"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 1.4,
-          "width": 1.3604386726460143,
+          "width": 1.2082493790075675,
           "height": 1.500000000004734
         }
       }
@@ -991,7 +915,7 @@
       },
       "animated": true,
       "triangles": 7616,
-      "glbBytes": 337312,
+      "glbBytes": 337348,
       "usdzBytes": 908849,
       "quality": {
         "valid": true,
@@ -999,13 +923,8 @@
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
-        "motionCollisionCount": 3,
+        "motionCollisionCount": 2,
         "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
           {
             "node": "arm_left",
             "phase": 0.5,
@@ -1058,38 +977,22 @@
       },
       "animated": true,
       "triangles": 7280,
-      "glbBytes": 337008,
+      "glbBytes": 337040,
       "usdzBytes": 906132,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 3,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "arm_right",
-            "phase": 0.5,
-            "other": "5927ecec-6d5b-46c5-9cc5-48c78e167145"
-          },
-          {
-            "node": "arm_left",
-            "phase": 0.5,
-            "other": "fa3b0381-dc73-46f5-9090-5e3cef898b3e"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 1.2092708238083665,
-          "width": 1.0043785872768936,
+          "width": 0.9,
           "height": 1.5000000000000062
         }
       }
@@ -1125,27 +1028,21 @@
       },
       "animated": true,
       "triangles": 7828,
-      "glbBytes": 368516,
+      "glbBytes": 368552,
       "usdzBytes": 1007709,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.259277989839058,
+          "length": 1,
           "width": 1.5429391676969426,
           "height": 1.0000000079840001
         }
@@ -1182,27 +1079,21 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297840,
+      "glbBytes": 297872,
       "usdzBytes": 771314,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3162078144004616,
+          "length": 1.1014035087719298,
           "width": 0.9,
           "height": 2.300001737619461
         }
@@ -1239,27 +1130,21 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297828,
+      "glbBytes": 297864,
       "usdzBytes": 771317,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3681489575809935,
+          "length": 1.201290322580645,
           "width": 0.9,
           "height": 1.5000026631158456
         }
@@ -1298,22 +1183,16 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297468,
+      "glbBytes": 297500,
       "usdzBytes": 773491,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1355,27 +1234,16 @@
       },
       "animated": true,
       "triangles": 5284,
-      "glbBytes": 90024,
+      "glbBytes": 90160,
       "usdzBytes": 246734,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1417,27 +1285,16 @@
       },
       "animated": true,
       "triangles": 5668,
-      "glbBytes": 92376,
+      "glbBytes": 92512,
       "usdzBytes": 249465,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1479,27 +1336,16 @@
       },
       "animated": true,
       "triangles": 6648,
-      "glbBytes": 173660,
+      "glbBytes": 173796,
       "usdzBytes": 332720,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1559,7 +1405,7 @@
           {
             "node": "arm_right",
             "phase": 1,
-            "other": "73fc3042-bfb9-4df1-9f90-99dc825d71ec"
+            "other": "480fdbe3-34c0-45ff-9d44-337250034b25"
           },
           {
             "node": "arm_right",
@@ -1569,7 +1415,7 @@
           {
             "node": "arm_right",
             "phase": 1,
-            "other": "b8e377e7-5f42-4f10-9a17-9b5a5ff29e65"
+            "other": "810eba08-4bb8-4dbf-b2ed-bc2ee0757a61"
           },
           {
             "node": "arm_left",
@@ -1579,7 +1425,7 @@
           {
             "node": "arm_left",
             "phase": 1,
-            "other": "27a43537-5574-47a7-9df9-5e7e31bde940"
+            "other": "a7c7e0d6-ecbe-4f09-bbe7-38425e9a3564"
           },
           {
             "node": "arm_left",
@@ -1589,7 +1435,7 @@
           {
             "node": "arm_left",
             "phase": 1,
-            "other": "b8e377e7-5f42-4f10-9a17-9b5a5ff29e65"
+            "other": "810eba08-4bb8-4dbf-b2ed-bc2ee0757a61"
           }
         ],
         "calibrationStatus": "not_provided",
@@ -1788,22 +1634,16 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297464,
+      "glbBytes": 297500,
       "usdzBytes": 773482,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1847,22 +1687,16 @@
       },
       "animated": true,
       "triangles": 7128,
-      "glbBytes": 299096,
+      "glbBytes": 299128,
       "usdzBytes": 778945,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1961,28 +1795,17 @@
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_tie"
-          },
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 2.05,
           "width": 1.5,
-          "height": 1.9224252806533981
+          "height": 1.6061725719823683
         }
       }
     },
@@ -2023,28 +1846,17 @@
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_tie"
-          },
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 2.05,
           "width": 1.5,
-          "height": 1.9224252806533981
+          "height": 1.6061725719823683
         }
       }
     },
@@ -2085,28 +1897,17 @@
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_tie"
-          },
-          {
-            "node": "carriage",
-            "phase": 1,
-            "other": "rear_arch_tube"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 1.6,
           "width": 1.5,
-          "height": 2.0025451804685352
+          "height": 1.6999964714050293
         }
       }
     },
@@ -2311,37 +2112,21 @@
       },
       "animated": true,
       "triangles": 4268,
-      "glbBytes": 207260,
+      "glbBytes": 207296,
       "usdzBytes": 578854,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": false,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 3,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "carriage",
-            "phase": 0.5,
-            "other": "4b470433-b2dd-46a6-b3be-1aaf90d26a41"
-          },
-          {
-            "node": "carriage",
-            "phase": 0.5,
-            "other": "c53f194d-5ab2-4946-a9e7-57de768c90a3"
-          }
-        ],
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 2.1340207289289,
+          "length": 2.0149999999999997,
           "width": 1.2,
           "height": 1.8000000000000003
         }
@@ -2393,12 +2178,12 @@
           {
             "node": "lever",
             "phase": 0.5,
-            "other": "cc60d473-b0d4-4f65-9fef-dde695b2f3c8"
+            "other": "c71304c3-a27e-4b7d-9e5a-84f10d49ae0b"
           },
           {
             "node": "lever",
             "phase": 0.5,
-            "other": "f6ba2863-a37d-497b-8c1a-0c5ecbdca543"
+            "other": "3063e6af-2152-40b8-850f-6594e40317de"
           }
         ],
         "calibrationStatus": "not_provided",
@@ -2442,22 +2227,16 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297416,
+      "glbBytes": 297448,
       "usdzBytes": 771449,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2499,22 +2278,16 @@
       },
       "animated": true,
       "triangles": 6696,
-      "glbBytes": 297836,
+      "glbBytes": 297868,
       "usdzBytes": 771306,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2556,22 +2329,16 @@
       },
       "animated": true,
       "triangles": 6792,
-      "glbBytes": 297420,
+      "glbBytes": 297456,
       "usdzBytes": 771449,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 1,
-        "motionCollisions": [
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2774,7 +2541,7 @@
       },
       "animated": true,
       "triangles": 6450,
-      "glbBytes": 265120,
+      "glbBytes": 265156,
       "usdzBytes": 669630,
       "quality": {
         "valid": true,
@@ -2782,7 +2549,7 @@
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
-        "motionCollisionCount": 3,
+        "motionCollisionCount": 2,
         "motionCollisions": [
           {
             "node": "stack",
@@ -2793,11 +2560,6 @@
             "node": "stack",
             "phase": 0.5,
             "other": "tower_front_right"
-          },
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
           }
         ],
         "calibrationStatus": "not_provided",
@@ -2843,7 +2605,7 @@
       },
       "animated": true,
       "triangles": 8892,
-      "glbBytes": 359076,
+      "glbBytes": 359144,
       "usdzBytes": 981447,
       "quality": {
         "valid": true,
@@ -2894,7 +2656,7 @@
       },
       "animated": true,
       "triangles": 8892,
-      "glbBytes": 358192,
+      "glbBytes": 358260,
       "usdzBytes": 977751,
       "quality": {
         "valid": true,
@@ -2902,7 +2664,7 @@
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
-        "motionCollisionCount": 3,
+        "motionCollisionCount": 2,
         "motionCollisions": [
           {
             "node": "stack",
@@ -2913,11 +2675,6 @@
             "node": "stack",
             "phase": 0.5,
             "other": "tower_front_right"
-          },
-          {
-            "node": "stack",
-            "phase": 0.5,
-            "other": "stack_cable"
           }
         ],
         "calibrationStatus": "not_provided",
@@ -3012,27 +2769,16 @@
       },
       "animated": true,
       "triangles": 5044,
-      "glbBytes": 87920,
+      "glbBytes": 88056,
       "usdzBytes": 240498,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3074,27 +2820,16 @@
       },
       "animated": true,
       "triangles": 4080,
-      "glbBytes": 131820,
+      "glbBytes": 131956,
       "usdzBytes": 234646,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3136,27 +2871,16 @@
       },
       "animated": true,
       "triangles": 4464,
-      "glbBytes": 132708,
+      "glbBytes": 132844,
       "usdzBytes": 236279,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3198,27 +2922,16 @@
       },
       "animated": true,
       "triangles": 4464,
-      "glbBytes": 132688,
+      "glbBytes": 132824,
       "usdzBytes": 236260,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3260,27 +2973,16 @@
       },
       "animated": true,
       "triangles": 4080,
-      "glbBytes": 131760,
+      "glbBytes": 131896,
       "usdzBytes": 234529,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": false,
-        "motionCollisionCount": 2,
-        "motionCollisions": [
-          {
-            "node": "stack_left",
-            "phase": 0.5,
-            "other": "stack_cable"
-          },
-          {
-            "node": "stack_right",
-            "phase": 0.5,
-            "other": "stack_cable"
-          }
-        ],
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3337,22 +3039,22 @@
           {
             "node": "arm_right",
             "phase": 0.5,
-            "other": "b8633408-932e-4f43-80bf-b4cb29c5791c"
+            "other": "1f57b6ea-ed7b-4fd4-89fd-95da82a8214f"
           },
           {
             "node": "arm_right",
             "phase": 0.5,
-            "other": "5b5cb6f9-5ad6-41c8-a9e9-e7c4fa741971"
+            "other": "98ad8959-7576-412c-8c8d-5ed3b2693c26"
           },
           {
             "node": "arm_left",
             "phase": 0.5,
-            "other": "43bb4b82-0abb-429c-bc39-40e08db787bb"
+            "other": "fbff048d-4d38-48e3-8de4-b168580f5327"
           },
           {
             "node": "arm_left",
             "phase": 0.5,
-            "other": "344717c1-4cfa-445c-b684-b086aac1aa0f"
+            "other": "1d844d41-5480-424c-b793-f496ec443fac"
           }
         ],
         "calibrationStatus": "not_provided",
@@ -3462,22 +3164,22 @@
           {
             "node": "arm_right",
             "phase": 1,
-            "other": "545a10b6-4a1c-45b7-a087-03b11cc04908"
+            "other": "876212ac-0f52-42f0-ac98-ed6a893f5e5f"
           },
           {
             "node": "arm_right",
             "phase": 1,
-            "other": "f10c11c0-c37a-40a9-9f78-be598ab38f35"
+            "other": "a8ce2c61-0a3c-493b-8e76-4e7d78c2d17a"
           },
           {
             "node": "arm_left",
             "phase": 1,
-            "other": "1d2365ac-0de1-4157-afbb-e90c2d0dffcc"
+            "other": "69822a87-736d-4a5f-b26a-5e817b9a42e3"
           },
           {
             "node": "arm_left",
             "phase": 1,
-            "other": "6677a773-dc6e-43d1-9928-ceceb6c33ac4"
+            "other": "34b68878-0b5f-491e-9a68-992bcc96be53"
           }
         ],
         "calibrationStatus": "not_provided",

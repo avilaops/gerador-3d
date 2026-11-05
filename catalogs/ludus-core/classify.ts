@@ -13,6 +13,21 @@ export interface CoreProduct {
 
 type Params = Record<string, string | number | boolean>;
 
+// Cursos reduzidos apenas nos itens cuja caixa comercial é menor que a
+// abertura paramétrica padrão. A geometria em repouso e as medidas publicadas
+// permanecem intactas; o ajuste é documentado no spec para revisão visual.
+const MOTION_OVERRIDES: Record<string, Params> = {
+  'LD-WH017': { swingScale: 0.1 },
+  'LD-WH019': { swingScale: 0.1 },
+  'LD-WH020': { swingScale: 0.1 },
+  'LD-WH021': { swingScale: 0.1 },
+  'LD-WH022': { swingScale: 0.1 },
+  'LD-WH034': { travel: 0 },
+  'LD-WH035': { travel: 0 },
+  'LD-WH036': { travel: 0 },
+  'LD-WH040': { travel: 0.05 },
+};
+
 function stackValue(value: string | null): { perStack: number; stacks: number } | undefined {
   if (!value) return undefined;
   const match = value.match(/(?:(\d+)\s*[×x]\s*)?(\d+(?:[.,]\d+)?)\s*kg/i);
@@ -60,10 +75,12 @@ export function toSpec(product: CoreProduct): EquipmentSpecInput {
     family: selected.family,
     dimensionsMm: { length: product.dim[0], width: product.dim[1], height: product.dim[2] },
     ...(stack ? { weightStackKg: stack } : {}),
-    params: selected.params,
+    params: { ...selected.params, ...(MOTION_OVERRIDES[product.code] ?? {}) },
     materials: { frame: '#171717', upholstery: '#0b0b0b', accent: '#f2bd00' },
     trainingClearanceM: 0.6,
-    review: { status: 'needs_review', notes: 'Gerado pela classificação Core; conferir família, mecanismo e foto.' },
+    review: { status: 'needs_review', notes: MOTION_OVERRIDES[product.code]
+      ? 'Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto.'
+      : 'Gerado pela classificação Core; conferir família, mecanismo e foto.' },
     meta: { linha: product.linha, grupoMuscular: product.grupo_muscular, peso: product.peso, bateria: product.bateria, descricao: product.descricao },
   };
 }

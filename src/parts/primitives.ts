@@ -281,7 +281,12 @@ export function pulley(
 
 /** Cabo de aço entre dois pontos. */
 export function cable(kit: PartKit, a: Vec3, b: Vec3, name = 'cable'): THREE.Mesh {
-  return beam(kit, a, b, 0.008, { round: true, material: 'cable', name });
+  const mesh = beam(kit, a, b, 0.008, { round: true, material: 'cable', name });
+  // A cable is a routing element, not a rigid clearance envelope. Excluding
+  // it from the broad-phase collision audit avoids flagging the intentional
+  // passage through selectorized stacks and pulleys.
+  mesh.userData.collisionExempt = true;
+  return mesh;
 }
 
 /**

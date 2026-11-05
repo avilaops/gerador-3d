@@ -13,7 +13,11 @@ for (const product of products) {
   // Preserva ajustes manuais (câmera, calibração, articulações e parâmetros)
   // quando a fonte comercial é reimportada.
   const previous = existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) as Record<string, unknown> : {};
-  writeFileSync(path, JSON.stringify({ ...generated, ...previous, meta: { ...generated.meta, ...(previous.meta as object ?? {}) } }, null, 2) + '\n');
+  const manual = String((previous.review as { notes?: unknown } | undefined)?.notes ?? '').startsWith('Primeiro seed');
+  const merged = manual
+    ? { ...generated, ...previous, meta: { ...generated.meta, ...(previous.meta as object ?? {}) } }
+    : { ...previous, ...generated, meta: { ...(previous.meta as object ?? {}), ...generated.meta } };
+  writeFileSync(path, JSON.stringify(merged, null, 2) + '\n');
 }
 writeFileSync(join(catalog, 'specs-report.json'), JSON.stringify({ total: products.length, generated: products.length, unmatched: [] }, null, 2) + '\n');
 console.log(`${products.length}/${products.length} specs Core gerados`);

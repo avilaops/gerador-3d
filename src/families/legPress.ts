@@ -187,7 +187,11 @@ export const legPress: FamilyDefinition<LegPressParams> = {
         type: 'prismatic',
         axis: [u.x, u.y, u.z],
         pivot: [C.x, C.y, C.z],
-        range: [0, Math.max(0.1, travel)],
+        // Zero travel is a valid static configuration for catalog models whose
+        // reference photo does not expose an operating stroke. Keeping a
+        // synthetic 100 mm minimum made the motion audit report movement that
+        // the product spec explicitly disabled.
+        range: [0, Math.max(0, travel)],
         driver: 'phase',
       });
     } else if (p.variant === 'lever-squat') {
