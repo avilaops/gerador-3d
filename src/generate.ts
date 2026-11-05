@@ -56,6 +56,8 @@ export interface QualityReport {
   motion: {
     maxSize: { length: number; width: number; height: number };
     withinDesignBox: boolean;
+    collisions: { node: string; phase: number; other: string }[];
+    collisionFree: boolean;
   };
   issues: string[];
 }
@@ -277,11 +279,18 @@ function sampleMotion(
 ): QualityReport['motion'] {
   const rest = captureRestPose(object, articulations);
   const max = new THREE.Vector3();
+  const collisions: { node: string; phase: number; other: string }[] = [];
+  const baseline = new Set<string>();
   for (const phase of [0, 0.5, 1]) {
     applyPhase(object, articulations, rest, phase);
     object.updateMatrixWorld(true);
     const size = new THREE.Box3().setFromObject(object, true).getSize(new THREE.Vector3());
     max.max(size);
+    for (const hit of articulationCollisions(object, articulations, phase)) {
+      const key = `${hit.node}|${hit.other}`;
+      if (phase === 0) baseline.add(key);
+      else if (!baseline.has(key) && !collisions.some((c) => c.node === hit.node && c.other === hit.other)) collisions.push(hit);
+    }
   }
   applyPhase(object, articulations, rest, 0);
   object.updateMatrixWorld(true);
@@ -292,7 +301,42 @@ function sampleMotion(
   return {
     maxSize: { length: max.z, width: max.x, height: max.y },
     withinDesignBox,
+    collisions,
+    collisionFree: collisions.length === 0,
   };
+}
+
+function articulationCollisions(
+  root: THREE.Object3D,
+  articulations: Articulation[],
+  phase: number
+): { node: string; phase: number; other: string }[] {
+  const allMeshes: THREE.Mesh[] = [];
+  root.traverse((node) => {
+    const mesh = node as THREE.Mesh;
+    if (mesh.isMesh) allMeshes.push(mesh);
+  });
+  const hits: { node: string; phase: number; other: string }[] = [];
+  for (const articulation of articulations) {
+    const moving = root.getObjectByName(articulation.node);
+    if (!moving) continue;
+    const movingMeshes: THREE.Mesh[] = [];
+    moving.traverse((node) => {
+      const mesh = node as THREE.Mesh;
+      if (mesh.isMesh) movingMeshes.push(mesh);
+    });
+    const movingSet = new Set(movingMeshes);
+    const movingBox = new THREE.Box3().setFromObject(moving, true);
+    if (movingBox.isEmpty()) continue;
+    for (const other of allMeshes) {
+      if (movingSet.has(other) || moving === other || moving.getObjectById(other.id)) continue;
+      const otherBox = new THREE.Box3().setFromObject(other, true);
+      const overlap = new THREE.Box3().copy(movingBox).intersect(otherBox);
+      const size = overlap.getSize(new THREE.Vector3());
+      if (size.x * size.y * size.z > 1e-6) hits.push({ node: articulation.node, phase, other: other.name || other.uuid });
+    }
+  }
+  return hits;
 }
 
 export function collectStats(root: THREE.Object3D): EquipmentStats {

@@ -76,6 +76,8 @@ interface ManifestItem {
     dimensionsWithinTolerance: boolean;
     articulationNodesValid: boolean;
     motionWithinDesignBox: boolean;
+    motionCollisionFree: boolean;
+    motionCollisionCount: number;
     motionMaxSizeM: { length: number; width: number; height: number };
   };
 }
@@ -164,6 +166,8 @@ for (const spec of specs) {
         dimensionsWithinTolerance: eq.quality.dimensionsWithinTolerance,
         articulationNodesValid: eq.quality.articulationNodesValid,
         motionWithinDesignBox: eq.quality.motion.withinDesignBox,
+        motionCollisionFree: eq.quality.motion.collisionFree,
+        motionCollisionCount: eq.quality.motion.collisions.length,
         motionMaxSizeM: eq.quality.motion.maxSize,
       },
     });
