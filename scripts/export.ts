@@ -71,6 +71,13 @@ interface ManifestItem {
   triangles?: number;
   glbBytes?: number;
   usdzBytes?: number;
+  quality?: {
+    valid: boolean;
+    dimensionsWithinTolerance: boolean;
+    articulationNodesValid: boolean;
+    motionWithinDesignBox: boolean;
+    motionMaxSizeM: { length: number; width: number; height: number };
+  };
 }
 
 const items: ManifestItem[] = [];
@@ -152,6 +159,13 @@ for (const spec of specs) {
       triangles: eq.stats.triangles,
       glbBytes: glb.byteLength,
       usdzBytes: usdz.byteLength,
+      quality: {
+        valid: eq.quality.valid,
+        dimensionsWithinTolerance: eq.quality.dimensionsWithinTolerance,
+        articulationNodesValid: eq.quality.articulationNodesValid,
+        motionWithinDesignBox: eq.quality.motion.withinDesignBox,
+        motionMaxSizeM: eq.quality.motion.maxSize,
+      },
     });
     eq.dispose();
   } catch (e) {

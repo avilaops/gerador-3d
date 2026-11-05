@@ -37,7 +37,18 @@
       "animated": true,
       "triangles": 4780,
       "glbBytes": 201640,
-      "usdzBytes": 635257
+      "usdzBytes": 635257,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1999999999999997,
+          "width": 1,
+          "height": 0.9000000000000001
+        }
+      }
     },
     {
       "id": "LD-WH002",
@@ -71,7 +82,18 @@
       "animated": true,
       "triangles": 6348,
       "glbBytes": 221084,
-      "usdzBytes": 694863
+      "usdzBytes": 694863,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 2.4,
+          "width": 1.25,
+          "height": 1.6499954462051392
+        }
+      }
     },
     {
       "id": "LD-WH003",
@@ -105,7 +127,18 @@
       "animated": true,
       "triangles": 4780,
       "glbBytes": 201268,
-      "usdzBytes": 634461
+      "usdzBytes": 634461,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.65,
+          "width": 1,
+          "height": 1.099995493888855
+        }
+      }
     },
     {
       "id": "LD-WH004",
@@ -139,7 +172,18 @@
       "animated": false,
       "triangles": 1818,
       "glbBytes": 102352,
-      "usdzBytes": 322340
+      "usdzBytes": 322340,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.3002324478001417,
+          "width": 0.9,
+          "height": 1
+        }
+      }
     },
     {
       "id": "LD-WH005",
@@ -173,7 +217,18 @@
       "animated": false,
       "triangles": 1882,
       "glbBytes": 103764,
-      "usdzBytes": 326260
+      "usdzBytes": 326260,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1002740491961651,
+          "width": 0.9,
+          "height": 1.15
+        }
+      }
     },
     {
       "id": "LD-WH006",
@@ -207,7 +262,18 @@
       "animated": false,
       "triangles": 1818,
       "glbBytes": 102360,
-      "usdzBytes": 322357
+      "usdzBytes": 322357,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1002740491961651,
+          "width": 0.6,
+          "height": 0.7
+        }
+      }
     },
     {
       "id": "LD-WH007",
@@ -241,7 +307,18 @@
       "animated": false,
       "triangles": 2716,
       "glbBytes": 160428,
-      "usdzBytes": 521617
+      "usdzBytes": 521617,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.6001893353796959,
+          "width": 1.1,
+          "height": 1.5
+        }
+      }
     },
     {
       "id": "LD-WH008",
@@ -277,7 +354,18 @@
       "animated": false,
       "triangles": 2584,
       "glbBytes": 166564,
-      "usdzBytes": 539506
+      "usdzBytes": 539506,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5,
+          "width": 1.1,
+          "height": 1.5000000000000002
+        }
+      }
     },
     {
       "id": "LD-WH009",
@@ -311,7 +399,18 @@
       "animated": false,
       "triangles": 1882,
       "glbBytes": 103792,
-      "usdzBytes": 326406
+      "usdzBytes": 326406,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5002018121757272,
+          "width": 1.1,
+          "height": 1.5
+        }
+      }
     },
     {
       "id": "LD-WH010",
@@ -345,7 +444,18 @@
       "animated": false,
       "triangles": 1882,
       "glbBytes": 103784,
-      "usdzBytes": 326406
+      "usdzBytes": 326406,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5002018121757272,
+          "width": 1.1,
+          "height": 1.5
+        }
+      }
     },
     {
       "id": "LD-WH011",
@@ -379,7 +489,18 @@
       "animated": false,
       "triangles": 1754,
       "glbBytes": 100920,
-      "usdzBytes": 318487
+      "usdzBytes": 318487,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5002018121757272,
+          "width": 0.5,
+          "height": 0.48
+        }
+      }
     },
     {
       "id": "LD-WH012",
@@ -413,7 +534,18 @@
       "animated": false,
       "triangles": 1754,
       "glbBytes": 100916,
-      "usdzBytes": 318465
+      "usdzBytes": 318465,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5002018121757272,
+          "width": 0.5,
+          "height": 0.48
+        }
+      }
     },
     {
       "id": "LD-WH013",
@@ -447,7 +579,18 @@
       "animated": false,
       "triangles": 5856,
       "glbBytes": 56304,
-      "usdzBytes": 170497
+      "usdzBytes": 170497,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.2,
+          "width": 2.01,
+          "height": 2.300000000298023
+        }
+      }
     },
     {
       "id": "LD-WH014",
@@ -481,7 +624,18 @@
       "animated": false,
       "triangles": 5856,
       "glbBytes": 56272,
-      "usdzBytes": 170523
+      "usdzBytes": 170523,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 0.5,
+          "width": 2.01,
+          "height": 2.3000000002980228
+        }
+      }
     },
     {
       "id": "LD-WH015",
@@ -517,7 +671,18 @@
       "animated": true,
       "triangles": 8496,
       "glbBytes": 244432,
-      "usdzBytes": 734545
+      "usdzBytes": 734545,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.3999999999999997,
+          "width": 1,
+          "height": 1.5000000000000002
+        }
+      }
     },
     {
       "id": "LD-WH016",
@@ -553,7 +718,18 @@
       "animated": true,
       "triangles": 8496,
       "glbBytes": 244436,
-      "usdzBytes": 734545
+      "usdzBytes": 734545,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.3999999999999997,
+          "width": 1,
+          "height": 1.5000000000000002
+        }
+      }
     },
     {
       "id": "LD-WH017",
@@ -587,7 +763,18 @@
       "animated": true,
       "triangles": 7616,
       "glbBytes": 337576,
-      "usdzBytes": 908965
+      "usdzBytes": 908965,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.4,
+          "width": 1.3604386726460143,
+          "height": 1.500000000004734
+        }
+      }
     },
     {
       "id": "LD-WH018",
@@ -621,7 +808,18 @@
       "animated": true,
       "triangles": 7616,
       "glbBytes": 337312,
-      "usdzBytes": 908849
+      "usdzBytes": 908849,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.4,
+          "width": 1.1932393417658185,
+          "height": 1.5000000035508148
+        }
+      }
     },
     {
       "id": "LD-WH019",
@@ -655,7 +853,18 @@
       "animated": true,
       "triangles": 7280,
       "glbBytes": 337008,
-      "usdzBytes": 906132
+      "usdzBytes": 906132,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.2092708238083665,
+          "width": 1.0043785872768936,
+          "height": 1.5000000000000062
+        }
+      }
     },
     {
       "id": "LD-WH020",
@@ -689,7 +898,18 @@
       "animated": true,
       "triangles": 7828,
       "glbBytes": 368516,
-      "usdzBytes": 1007709
+      "usdzBytes": 1007709,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.259277989839058,
+          "width": 1.5429391676969426,
+          "height": 1.0000000079840001
+        }
+      }
     },
     {
       "id": "LD-WH021",
@@ -723,7 +943,18 @@
       "animated": true,
       "triangles": 6696,
       "glbBytes": 297840,
-      "usdzBytes": 771314
+      "usdzBytes": 771314,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.3162078144004616,
+          "width": 0.9,
+          "height": 2.300001737619461
+        }
+      }
     },
     {
       "id": "LD-WH022",
@@ -757,7 +988,18 @@
       "animated": true,
       "triangles": 6696,
       "glbBytes": 297828,
-      "usdzBytes": 771317
+      "usdzBytes": 771317,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.3681489575809935,
+          "width": 0.9,
+          "height": 1.5000026631158456
+        }
+      }
     },
     {
       "id": "LD-WH023",
@@ -793,7 +1035,18 @@
       "animated": true,
       "triangles": 6792,
       "glbBytes": 297468,
-      "usdzBytes": 773491
+      "usdzBytes": 773491,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1999999999999997,
+          "width": 0.9,
+          "height": 1.4999999999999998
+        }
+      }
     },
     {
       "id": "LD-WH024",
@@ -827,7 +1080,18 @@
       "animated": true,
       "triangles": 5284,
       "glbBytes": 90024,
-      "usdzBytes": 246734
+      "usdzBytes": 246734,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.0000000002980232,
+          "width": 2,
+          "height": 2.3218070411682126
+        }
+      }
     },
     {
       "id": "LD-WH025",
@@ -861,7 +1125,18 @@
       "animated": true,
       "triangles": 5668,
       "glbBytes": 92376,
-      "usdzBytes": 249465
+      "usdzBytes": 249465,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 3,
+          "width": 0.8001378774642944,
+          "height": 2.299890029508738
+        }
+      }
     },
     {
       "id": "LD-WH026",
@@ -895,7 +1170,18 @@
       "animated": true,
       "triangles": 6648,
       "glbBytes": 173660,
-      "usdzBytes": 332720
+      "usdzBytes": 332720,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1000000002980233,
+          "width": 2.0000000001490115,
+          "height": 2.300000000298023
+        }
+      }
     },
     {
       "id": "LD-WH027",
@@ -929,7 +1215,18 @@
       "animated": true,
       "triangles": 8560,
       "glbBytes": 245860,
-      "usdzBytes": 736641
+      "usdzBytes": 736641,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.001183574879227,
+          "width": 1.55,
+          "height": 1.4001019830154429
+        }
+      }
     },
     {
       "id": "LD-WH028",
@@ -963,7 +1260,18 @@
       "animated": true,
       "triangles": 8496,
       "glbBytes": 244672,
-      "usdzBytes": 733032
+      "usdzBytes": 733032,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.001183574879227,
+          "width": 1.1,
+          "height": 1.5000952381070174
+        }
+      }
     },
     {
       "id": "LD-WH029",
@@ -997,7 +1305,18 @@
       "animated": true,
       "triangles": 7062,
       "glbBytes": 227656,
-      "usdzBytes": 706848
+      "usdzBytes": 706848,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.6107428545721725,
+          "width": 1.5,
+          "height": 1.3000000000145497
+        }
+      }
     },
     {
       "id": "LD-WH030",
@@ -1031,7 +1350,18 @@
       "animated": true,
       "triangles": 7062,
       "glbBytes": 227636,
-      "usdzBytes": 706837
+      "usdzBytes": 706837,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5639206642874435,
+          "width": 1.5,
+          "height": 1.2000000000184958
+        }
+      }
     },
     {
       "id": "LD-WH031",
@@ -1067,7 +1397,18 @@
       "animated": true,
       "triangles": 6792,
       "glbBytes": 297464,
-      "usdzBytes": 773482
+      "usdzBytes": 773482,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1999999999999997,
+          "width": 0.9,
+          "height": 1.4999999999999998
+        }
+      }
     },
     {
       "id": "LD-WH032",
@@ -1103,7 +1444,18 @@
       "animated": true,
       "triangles": 7128,
       "glbBytes": 299096,
-      "usdzBytes": 778945
+      "usdzBytes": 778945,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1,
+          "width": 1.5500000000000003,
+          "height": 1.7
+        }
+      }
     },
     {
       "id": "LD-WH033",
@@ -1137,7 +1489,18 @@
       "animated": true,
       "triangles": 11708,
       "glbBytes": 267276,
-      "usdzBytes": 781373
+      "usdzBytes": 781373,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.7149999999999999,
+          "width": 1.15,
+          "height": 2.3120000007450576
+        }
+      }
     },
     {
       "id": "LD-WH034",
@@ -1171,7 +1534,18 @@
       "animated": true,
       "triangles": 6938,
       "glbBytes": 221388,
-      "usdzBytes": 694144
+      "usdzBytes": 694144,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 2.05,
+          "width": 1.5,
+          "height": 1.9224252806533981
+        }
+      }
     },
     {
       "id": "LD-WH035",
@@ -1205,7 +1579,18 @@
       "animated": true,
       "triangles": 6938,
       "glbBytes": 221392,
-      "usdzBytes": 694144
+      "usdzBytes": 694144,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 2.05,
+          "width": 1.5,
+          "height": 1.9224252806533981
+        }
+      }
     },
     {
       "id": "LD-WH036",
@@ -1239,7 +1624,18 @@
       "animated": true,
       "triangles": 6938,
       "glbBytes": 221196,
-      "usdzBytes": 696053
+      "usdzBytes": 696053,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 1.6,
+          "width": 1.5,
+          "height": 2.0025451804685352
+        }
+      }
     },
     {
       "id": "LD-WH037",
@@ -1273,7 +1669,18 @@
       "animated": true,
       "triangles": 6348,
       "glbBytes": 221072,
-      "usdzBytes": 695098
+      "usdzBytes": 695098,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 2.05,
+          "width": 1.5,
+          "height": 1.5999964475631714
+        }
+      }
     },
     {
       "id": "LD-WH038",
@@ -1307,7 +1714,18 @@
       "animated": true,
       "triangles": 6348,
       "glbBytes": 220844,
-      "usdzBytes": 694340
+      "usdzBytes": 694340,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.8,
+          "width": 1.5,
+          "height": 1.6999964714050293
+        }
+      }
     },
     {
       "id": "LD-WH039",
@@ -1341,7 +1759,18 @@
       "animated": true,
       "triangles": 5956,
       "glbBytes": 198624,
-      "usdzBytes": 616268
+      "usdzBytes": 616268,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 2.100106382978723,
+          "width": 1,
+          "height": 1.4023313048169421
+        }
+      }
     },
     {
       "id": "LD-WH040",
@@ -1375,7 +1804,18 @@
       "animated": true,
       "triangles": 4268,
       "glbBytes": 207260,
-      "usdzBytes": 578854
+      "usdzBytes": 578854,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": false,
+        "motionMaxSizeM": {
+          "length": 2.1340207289289,
+          "width": 1.2,
+          "height": 1.8000000000000003
+        }
+      }
     },
     {
       "id": "LD-WH041",
@@ -1411,7 +1851,18 @@
       "animated": true,
       "triangles": 6678,
       "glbBytes": 227004,
-      "usdzBytes": 708239
+      "usdzBytes": 708239,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1,
+          "width": 0.8999999999999999,
+          "height": 1.5
+        }
+      }
     },
     {
       "id": "LD-WH042",
@@ -1445,7 +1896,18 @@
       "animated": true,
       "triangles": 6792,
       "glbBytes": 297416,
-      "usdzBytes": 771449
+      "usdzBytes": 771449,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5062987012987012,
+          "width": 0.9,
+          "height": 1.5000026631158456
+        }
+      }
     },
     {
       "id": "LD-WH043",
@@ -1479,7 +1941,18 @@
       "animated": true,
       "triangles": 6696,
       "glbBytes": 297836,
-      "usdzBytes": 771306
+      "usdzBytes": 771306,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5240182495793178,
+          "width": 0.9,
+          "height": 1.5000026631158456
+        }
+      }
     },
     {
       "id": "LD-WH044",
@@ -1513,7 +1986,18 @@
       "animated": true,
       "triangles": 6792,
       "glbBytes": 297420,
-      "usdzBytes": 771449
+      "usdzBytes": 771449,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5062987012987012,
+          "width": 0.9,
+          "height": 1.5000026631158456
+        }
+      }
     },
     {
       "id": "LD-WH045",
@@ -1547,7 +2031,18 @@
       "animated": true,
       "triangles": 4780,
       "glbBytes": 201108,
-      "usdzBytes": 635651
+      "usdzBytes": 635651,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.5,
+          "width": 1,
+          "height": 1.7999954223632812
+        }
+      }
     },
     {
       "id": "LD-WH046",
@@ -1581,7 +2076,18 @@
       "animated": false,
       "triangles": 1818,
       "glbBytes": 102340,
-      "usdzBytes": 321930
+      "usdzBytes": 321930,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.0003009827781155,
+          "width": 0.5,
+          "height": 0.6
+        }
+      }
     },
     {
       "id": "LD-WH047",
@@ -1617,7 +2123,18 @@
       "animated": true,
       "triangles": 6052,
       "glbBytes": 248788,
-      "usdzBytes": 800386
+      "usdzBytes": 800386,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.0035737599035364,
+          "width": 0.8,
+          "height": 1.5000000000000002
+        }
+      }
     },
     {
       "id": "LD-WH048",
@@ -1651,7 +2168,18 @@
       "animated": true,
       "triangles": 6450,
       "glbBytes": 265120,
-      "usdzBytes": 669630
+      "usdzBytes": 669630,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.4,
+          "width": 1.2058823529411764,
+          "height": 2.0000000000019975
+        }
+      }
     },
     {
       "id": "LD-WH049",
@@ -1687,7 +2215,18 @@
       "animated": true,
       "triangles": 8892,
       "glbBytes": 359076,
-      "usdzBytes": 981447
+      "usdzBytes": 981447,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.85,
+          "width": 1.2000000000000002,
+          "height": 1.1
+        }
+      }
     },
     {
       "id": "LD-WH050",
@@ -1721,7 +2260,18 @@
       "animated": true,
       "triangles": 8892,
       "glbBytes": 358192,
-      "usdzBytes": 977751
+      "usdzBytes": 977751,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.4003717498243144,
+          "width": 1.2000209546089171,
+          "height": 1.9999999999999996
+        }
+      }
     },
     {
       "id": "LD-WH051",
@@ -1755,7 +2305,18 @@
       "animated": false,
       "triangles": 1882,
       "glbBytes": 103660,
-      "usdzBytes": 326431
+      "usdzBytes": 326431,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.8174999993294478,
+          "width": 0.8,
+          "height": 1.500000001490116
+        }
+      }
     },
     {
       "id": "LD-WH052",
@@ -1789,7 +2350,18 @@
       "animated": true,
       "triangles": 5044,
       "glbBytes": 87920,
-      "usdzBytes": 240498
+      "usdzBytes": 240498,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 0.8000000002980232,
+          "width": 1.0081946849822998,
+          "height": 2.3089679054543373
+        }
+      }
     },
     {
       "id": "LD-WH053",
@@ -1823,7 +2395,18 @@
       "animated": true,
       "triangles": 4080,
       "glbBytes": 131820,
-      "usdzBytes": 234646
+      "usdzBytes": 234646,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.400000000298023,
+          "width": 1.1000000001490116,
+          "height": 2.2000000002980236
+        }
+      }
     },
     {
       "id": "LD-WH054",
@@ -1857,7 +2440,18 @@
       "animated": true,
       "triangles": 4464,
       "glbBytes": 132708,
-      "usdzBytes": 236279
+      "usdzBytes": 236279,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.7000000002980231,
+          "width": 0.9000000001490116,
+          "height": 2.300000000298023
+        }
+      }
     },
     {
       "id": "LD-WH055",
@@ -1891,7 +2485,18 @@
       "animated": true,
       "triangles": 4464,
       "glbBytes": 132688,
-      "usdzBytes": 236260
+      "usdzBytes": 236260,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.7000000002980231,
+          "width": 0.9000000001490116,
+          "height": 2.300000000298023
+        }
+      }
     },
     {
       "id": "LD-WH056",
@@ -1925,7 +2530,18 @@
       "animated": true,
       "triangles": 4080,
       "glbBytes": 131760,
-      "usdzBytes": 234529
+      "usdzBytes": 234529,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.3000000002980232,
+          "width": 0.9000000001490116,
+          "height": 2.300000000298023
+        }
+      }
     },
     {
       "id": "LD-WH057",
@@ -1961,7 +2577,18 @@
       "animated": true,
       "triangles": 7800,
       "glbBytes": 241896,
-      "usdzBytes": 743317
+      "usdzBytes": 743317,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.8000000000000003,
+          "width": 1,
+          "height": 1.1000000000000003
+        }
+      }
     },
     {
       "id": "LD-WH058",
@@ -1997,7 +2624,18 @@
       "animated": true,
       "triangles": 5716,
       "glbBytes": 192968,
-      "usdzBytes": 603770
+      "usdzBytes": 603770,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.3000000000000003,
+          "width": 1,
+          "height": 1.0000000000000002
+        }
+      }
     },
     {
       "id": "LD-WH059",
@@ -2031,7 +2669,18 @@
       "animated": true,
       "triangles": 7800,
       "glbBytes": 242000,
-      "usdzBytes": 741782
+      "usdzBytes": 741782,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.401285862721253,
+          "width": 1,
+          "height": 1.5000026631178285
+        }
+      }
     },
     {
       "id": "LD-WH060",
@@ -2065,7 +2714,18 @@
       "animated": false,
       "triangles": 2716,
       "glbBytes": 160204,
-      "usdzBytes": 522837
+      "usdzBytes": 522837,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 2.117499999329448,
+          "width": 1.5,
+          "height": 1.1
+        }
+      }
     },
     {
       "id": "LD-WH061",
@@ -2099,7 +2759,18 @@
       "animated": false,
       "triangles": 2584,
       "glbBytes": 166624,
-      "usdzBytes": 539145
+      "usdzBytes": 539145,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.800168500674907,
+          "width": 1.6000000000000003,
+          "height": 1.2512732001469584
+        }
+      }
     },
     {
       "id": "LD-WH062",
@@ -2133,7 +2804,18 @@
       "animated": false,
       "triangles": 1818,
       "glbBytes": 102476,
-      "usdzBytes": 322503
+      "usdzBytes": 322503,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.650183658156914,
+          "width": 1.6000000000000003,
+          "height": 1.1
+        }
+      }
     },
     {
       "id": "LD-WH063",
@@ -2167,7 +2849,18 @@
       "animated": false,
       "triangles": 1882,
       "glbBytes": 103772,
-      "usdzBytes": 326262
+      "usdzBytes": 326262,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.2002515400219296,
+          "width": 1,
+          "height": 1.8
+        }
+      }
     },
     {
       "id": "LD-WH064",
@@ -2201,7 +2894,18 @@
       "animated": false,
       "triangles": 5856,
       "glbBytes": 56296,
-      "usdzBytes": 170721
+      "usdzBytes": 170721,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.1,
+          "width": 1.11,
+          "height": 1.8000000002980234
+        }
+      }
     },
     {
       "id": "LD-WH065",
@@ -2235,7 +2939,18 @@
       "animated": true,
       "triangles": 6348,
       "glbBytes": 221100,
-      "usdzBytes": 694784
+      "usdzBytes": 694784,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 1.65,
+          "width": 1.2999999999999998,
+          "height": 1.6999953985214233
+        }
+      }
     },
     {
       "id": "LD-WH066",
@@ -2271,7 +2986,18 @@
       "animated": false,
       "triangles": 5856,
       "glbBytes": 57304,
-      "usdzBytes": 172757
+      "usdzBytes": 172757,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionMaxSizeM": {
+          "length": 2,
+          "width": 0.9,
+          "height": 0.3
+        }
+      }
     }
   ]
 }
