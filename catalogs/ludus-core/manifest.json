@@ -16,7 +16,8 @@
         "glb": "models/LD-WH001/model.glb",
         "usdz": "models/LD-WH001/model.usdz",
         "plan": "models/LD-WH001/plan.svg",
-        "spec": "models/LD-WH001/spec.json"
+        "spec": "models/LD-WH001/spec.json",
+        "thumb": "models/LD-WH001/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -49,7 +50,8 @@
         "glb": "models/LD-WH002/model.glb",
         "usdz": "models/LD-WH002/model.usdz",
         "plan": "models/LD-WH002/plan.svg",
-        "spec": "models/LD-WH002/spec.json"
+        "spec": "models/LD-WH002/spec.json",
+        "thumb": "models/LD-WH002/thumb.png"
       },
       "dimensionsMm": {
         "length": 2400,
@@ -82,7 +84,8 @@
         "glb": "models/LD-WH003/model.glb",
         "usdz": "models/LD-WH003/model.usdz",
         "plan": "models/LD-WH003/plan.svg",
-        "spec": "models/LD-WH003/spec.json"
+        "spec": "models/LD-WH003/spec.json",
+        "thumb": "models/LD-WH003/thumb.png"
       },
       "dimensionsMm": {
         "length": 1650,
@@ -115,7 +118,8 @@
         "glb": "models/LD-WH004/model.glb",
         "usdz": "models/LD-WH004/model.usdz",
         "plan": "models/LD-WH004/plan.svg",
-        "spec": "models/LD-WH004/spec.json"
+        "spec": "models/LD-WH004/spec.json",
+        "thumb": "models/LD-WH004/thumb.png"
       },
       "dimensionsMm": {
         "length": 1300,
@@ -148,7 +152,8 @@
         "glb": "models/LD-WH005/model.glb",
         "usdz": "models/LD-WH005/model.usdz",
         "plan": "models/LD-WH005/plan.svg",
-        "spec": "models/LD-WH005/spec.json"
+        "spec": "models/LD-WH005/spec.json",
+        "thumb": "models/LD-WH005/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -181,7 +186,8 @@
         "glb": "models/LD-WH006/model.glb",
         "usdz": "models/LD-WH006/model.usdz",
         "plan": "models/LD-WH006/plan.svg",
-        "spec": "models/LD-WH006/spec.json"
+        "spec": "models/LD-WH006/spec.json",
+        "thumb": "models/LD-WH006/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -214,7 +220,8 @@
         "glb": "models/LD-WH007/model.glb",
         "usdz": "models/LD-WH007/model.usdz",
         "plan": "models/LD-WH007/plan.svg",
-        "spec": "models/LD-WH007/spec.json"
+        "spec": "models/LD-WH007/spec.json",
+        "thumb": "models/LD-WH007/thumb.png"
       },
       "dimensionsMm": {
         "length": 1600,
@@ -249,7 +256,8 @@
         "glb": "models/LD-WH008/model.glb",
         "usdz": "models/LD-WH008/model.usdz",
         "plan": "models/LD-WH008/plan.svg",
-        "spec": "models/LD-WH008/spec.json"
+        "spec": "models/LD-WH008/spec.json",
+        "thumb": "models/LD-WH008/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -282,7 +290,8 @@
         "glb": "models/LD-WH009/model.glb",
         "usdz": "models/LD-WH009/model.usdz",
         "plan": "models/LD-WH009/plan.svg",
-        "spec": "models/LD-WH009/spec.json"
+        "spec": "models/LD-WH009/spec.json",
+        "thumb": "models/LD-WH009/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -315,7 +324,8 @@
         "glb": "models/LD-WH010/model.glb",
         "usdz": "models/LD-WH010/model.usdz",
         "plan": "models/LD-WH010/plan.svg",
-        "spec": "models/LD-WH010/spec.json"
+        "spec": "models/LD-WH010/spec.json",
+        "thumb": "models/LD-WH010/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -348,7 +358,8 @@
         "glb": "models/LD-WH011/model.glb",
         "usdz": "models/LD-WH011/model.usdz",
         "plan": "models/LD-WH011/plan.svg",
-        "spec": "models/LD-WH011/spec.json"
+        "spec": "models/LD-WH011/spec.json",
+        "thumb": "models/LD-WH011/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -381,7 +392,8 @@
         "glb": "models/LD-WH012/model.glb",
         "usdz": "models/LD-WH012/model.usdz",
         "plan": "models/LD-WH012/plan.svg",
-        "spec": "models/LD-WH012/spec.json"
+        "spec": "models/LD-WH012/spec.json",
+        "thumb": "models/LD-WH012/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -414,7 +426,8 @@
         "glb": "models/LD-WH013/model.glb",
         "usdz": "models/LD-WH013/model.usdz",
         "plan": "models/LD-WH013/plan.svg",
-        "spec": "models/LD-WH013/spec.json"
+        "spec": "models/LD-WH013/spec.json",
+        "thumb": "models/LD-WH013/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -447,7 +460,8 @@
         "glb": "models/LD-WH014/model.glb",
         "usdz": "models/LD-WH014/model.usdz",
         "plan": "models/LD-WH014/plan.svg",
-        "spec": "models/LD-WH014/spec.json"
+        "spec": "models/LD-WH014/spec.json",
+        "thumb": "models/LD-WH014/thumb.png"
       },
       "dimensionsMm": {
         "length": 500,
@@ -482,7 +496,8 @@
         "glb": "models/LD-WH015/model.glb",
         "usdz": "models/LD-WH015/model.usdz",
         "plan": "models/LD-WH015/plan.svg",
-        "spec": "models/LD-WH015/spec.json"
+        "spec": "models/LD-WH015/spec.json",
+        "thumb": "models/LD-WH015/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -517,7 +532,8 @@
         "glb": "models/LD-WH016/model.glb",
         "usdz": "models/LD-WH016/model.usdz",
         "plan": "models/LD-WH016/plan.svg",
-        "spec": "models/LD-WH016/spec.json"
+        "spec": "models/LD-WH016/spec.json",
+        "thumb": "models/LD-WH016/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -550,7 +566,8 @@
         "glb": "models/LD-WH017/model.glb",
         "usdz": "models/LD-WH017/model.usdz",
         "plan": "models/LD-WH017/plan.svg",
-        "spec": "models/LD-WH017/spec.json"
+        "spec": "models/LD-WH017/spec.json",
+        "thumb": "models/LD-WH017/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -583,7 +600,8 @@
         "glb": "models/LD-WH018/model.glb",
         "usdz": "models/LD-WH018/model.usdz",
         "plan": "models/LD-WH018/plan.svg",
-        "spec": "models/LD-WH018/spec.json"
+        "spec": "models/LD-WH018/spec.json",
+        "thumb": "models/LD-WH018/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -616,7 +634,8 @@
         "glb": "models/LD-WH019/model.glb",
         "usdz": "models/LD-WH019/model.usdz",
         "plan": "models/LD-WH019/plan.svg",
-        "spec": "models/LD-WH019/spec.json"
+        "spec": "models/LD-WH019/spec.json",
+        "thumb": "models/LD-WH019/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -649,7 +668,8 @@
         "glb": "models/LD-WH020/model.glb",
         "usdz": "models/LD-WH020/model.usdz",
         "plan": "models/LD-WH020/plan.svg",
-        "spec": "models/LD-WH020/spec.json"
+        "spec": "models/LD-WH020/spec.json",
+        "thumb": "models/LD-WH020/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -682,7 +702,8 @@
         "glb": "models/LD-WH021/model.glb",
         "usdz": "models/LD-WH021/model.usdz",
         "plan": "models/LD-WH021/plan.svg",
-        "spec": "models/LD-WH021/spec.json"
+        "spec": "models/LD-WH021/spec.json",
+        "thumb": "models/LD-WH021/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -715,7 +736,8 @@
         "glb": "models/LD-WH022/model.glb",
         "usdz": "models/LD-WH022/model.usdz",
         "plan": "models/LD-WH022/plan.svg",
-        "spec": "models/LD-WH022/spec.json"
+        "spec": "models/LD-WH022/spec.json",
+        "thumb": "models/LD-WH022/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -750,7 +772,8 @@
         "glb": "models/LD-WH023/model.glb",
         "usdz": "models/LD-WH023/model.usdz",
         "plan": "models/LD-WH023/plan.svg",
-        "spec": "models/LD-WH023/spec.json"
+        "spec": "models/LD-WH023/spec.json",
+        "thumb": "models/LD-WH023/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -783,7 +806,8 @@
         "glb": "models/LD-WH024/model.glb",
         "usdz": "models/LD-WH024/model.usdz",
         "plan": "models/LD-WH024/plan.svg",
-        "spec": "models/LD-WH024/spec.json"
+        "spec": "models/LD-WH024/spec.json",
+        "thumb": "models/LD-WH024/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -816,7 +840,8 @@
         "glb": "models/LD-WH025/model.glb",
         "usdz": "models/LD-WH025/model.usdz",
         "plan": "models/LD-WH025/plan.svg",
-        "spec": "models/LD-WH025/spec.json"
+        "spec": "models/LD-WH025/spec.json",
+        "thumb": "models/LD-WH025/thumb.png"
       },
       "dimensionsMm": {
         "length": 3000,
@@ -849,7 +874,8 @@
         "glb": "models/LD-WH026/model.glb",
         "usdz": "models/LD-WH026/model.usdz",
         "plan": "models/LD-WH026/plan.svg",
-        "spec": "models/LD-WH026/spec.json"
+        "spec": "models/LD-WH026/spec.json",
+        "thumb": "models/LD-WH026/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -882,7 +908,8 @@
         "glb": "models/LD-WH027/model.glb",
         "usdz": "models/LD-WH027/model.usdz",
         "plan": "models/LD-WH027/plan.svg",
-        "spec": "models/LD-WH027/spec.json"
+        "spec": "models/LD-WH027/spec.json",
+        "thumb": "models/LD-WH027/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -915,7 +942,8 @@
         "glb": "models/LD-WH028/model.glb",
         "usdz": "models/LD-WH028/model.usdz",
         "plan": "models/LD-WH028/plan.svg",
-        "spec": "models/LD-WH028/spec.json"
+        "spec": "models/LD-WH028/spec.json",
+        "thumb": "models/LD-WH028/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -948,7 +976,8 @@
         "glb": "models/LD-WH029/model.glb",
         "usdz": "models/LD-WH029/model.usdz",
         "plan": "models/LD-WH029/plan.svg",
-        "spec": "models/LD-WH029/spec.json"
+        "spec": "models/LD-WH029/spec.json",
+        "thumb": "models/LD-WH029/thumb.png"
       },
       "dimensionsMm": {
         "length": 1600,
@@ -981,7 +1010,8 @@
         "glb": "models/LD-WH030/model.glb",
         "usdz": "models/LD-WH030/model.usdz",
         "plan": "models/LD-WH030/plan.svg",
-        "spec": "models/LD-WH030/spec.json"
+        "spec": "models/LD-WH030/spec.json",
+        "thumb": "models/LD-WH030/thumb.png"
       },
       "dimensionsMm": {
         "length": 1550,
@@ -1016,7 +1046,8 @@
         "glb": "models/LD-WH031/model.glb",
         "usdz": "models/LD-WH031/model.usdz",
         "plan": "models/LD-WH031/plan.svg",
-        "spec": "models/LD-WH031/spec.json"
+        "spec": "models/LD-WH031/spec.json",
+        "thumb": "models/LD-WH031/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -1051,7 +1082,8 @@
         "glb": "models/LD-WH032/model.glb",
         "usdz": "models/LD-WH032/model.usdz",
         "plan": "models/LD-WH032/plan.svg",
-        "spec": "models/LD-WH032/spec.json"
+        "spec": "models/LD-WH032/spec.json",
+        "thumb": "models/LD-WH032/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -1084,7 +1116,8 @@
         "glb": "models/LD-WH033/model.glb",
         "usdz": "models/LD-WH033/model.usdz",
         "plan": "models/LD-WH033/plan.svg",
-        "spec": "models/LD-WH033/spec.json"
+        "spec": "models/LD-WH033/spec.json",
+        "thumb": "models/LD-WH033/thumb.png"
       },
       "dimensionsMm": {
         "length": 1700,
@@ -1117,7 +1150,8 @@
         "glb": "models/LD-WH034/model.glb",
         "usdz": "models/LD-WH034/model.usdz",
         "plan": "models/LD-WH034/plan.svg",
-        "spec": "models/LD-WH034/spec.json"
+        "spec": "models/LD-WH034/spec.json",
+        "thumb": "models/LD-WH034/thumb.png"
       },
       "dimensionsMm": {
         "length": 2050,
@@ -1150,7 +1184,8 @@
         "glb": "models/LD-WH035/model.glb",
         "usdz": "models/LD-WH035/model.usdz",
         "plan": "models/LD-WH035/plan.svg",
-        "spec": "models/LD-WH035/spec.json"
+        "spec": "models/LD-WH035/spec.json",
+        "thumb": "models/LD-WH035/thumb.png"
       },
       "dimensionsMm": {
         "length": 2050,
@@ -1183,7 +1218,8 @@
         "glb": "models/LD-WH036/model.glb",
         "usdz": "models/LD-WH036/model.usdz",
         "plan": "models/LD-WH036/plan.svg",
-        "spec": "models/LD-WH036/spec.json"
+        "spec": "models/LD-WH036/spec.json",
+        "thumb": "models/LD-WH036/thumb.png"
       },
       "dimensionsMm": {
         "length": 1600,
@@ -1216,7 +1252,8 @@
         "glb": "models/LD-WH037/model.glb",
         "usdz": "models/LD-WH037/model.usdz",
         "plan": "models/LD-WH037/plan.svg",
-        "spec": "models/LD-WH037/spec.json"
+        "spec": "models/LD-WH037/spec.json",
+        "thumb": "models/LD-WH037/thumb.png"
       },
       "dimensionsMm": {
         "length": 2050,
@@ -1249,7 +1286,8 @@
         "glb": "models/LD-WH038/model.glb",
         "usdz": "models/LD-WH038/model.usdz",
         "plan": "models/LD-WH038/plan.svg",
-        "spec": "models/LD-WH038/spec.json"
+        "spec": "models/LD-WH038/spec.json",
+        "thumb": "models/LD-WH038/thumb.png"
       },
       "dimensionsMm": {
         "length": 1800,
@@ -1282,7 +1320,8 @@
         "glb": "models/LD-WH039/model.glb",
         "usdz": "models/LD-WH039/model.usdz",
         "plan": "models/LD-WH039/plan.svg",
-        "spec": "models/LD-WH039/spec.json"
+        "spec": "models/LD-WH039/spec.json",
+        "thumb": "models/LD-WH039/thumb.png"
       },
       "dimensionsMm": {
         "length": 2100,
@@ -1315,7 +1354,8 @@
         "glb": "models/LD-WH040/model.glb",
         "usdz": "models/LD-WH040/model.usdz",
         "plan": "models/LD-WH040/plan.svg",
-        "spec": "models/LD-WH040/spec.json"
+        "spec": "models/LD-WH040/spec.json",
+        "thumb": "models/LD-WH040/thumb.png"
       },
       "dimensionsMm": {
         "length": 2000,
@@ -1350,7 +1390,8 @@
         "glb": "models/LD-WH041/model.glb",
         "usdz": "models/LD-WH041/model.usdz",
         "plan": "models/LD-WH041/plan.svg",
-        "spec": "models/LD-WH041/spec.json"
+        "spec": "models/LD-WH041/spec.json",
+        "thumb": "models/LD-WH041/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -1383,7 +1424,8 @@
         "glb": "models/LD-WH042/model.glb",
         "usdz": "models/LD-WH042/model.usdz",
         "plan": "models/LD-WH042/plan.svg",
-        "spec": "models/LD-WH042/spec.json"
+        "spec": "models/LD-WH042/spec.json",
+        "thumb": "models/LD-WH042/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -1416,7 +1458,8 @@
         "glb": "models/LD-WH043/model.glb",
         "usdz": "models/LD-WH043/model.usdz",
         "plan": "models/LD-WH043/plan.svg",
-        "spec": "models/LD-WH043/spec.json"
+        "spec": "models/LD-WH043/spec.json",
+        "thumb": "models/LD-WH043/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -1449,7 +1492,8 @@
         "glb": "models/LD-WH044/model.glb",
         "usdz": "models/LD-WH044/model.usdz",
         "plan": "models/LD-WH044/plan.svg",
-        "spec": "models/LD-WH044/spec.json"
+        "spec": "models/LD-WH044/spec.json",
+        "thumb": "models/LD-WH044/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -1482,7 +1526,8 @@
         "glb": "models/LD-WH045/model.glb",
         "usdz": "models/LD-WH045/model.usdz",
         "plan": "models/LD-WH045/plan.svg",
-        "spec": "models/LD-WH045/spec.json"
+        "spec": "models/LD-WH045/spec.json",
+        "thumb": "models/LD-WH045/thumb.png"
       },
       "dimensionsMm": {
         "length": 1500,
@@ -1515,7 +1560,8 @@
         "glb": "models/LD-WH046/model.glb",
         "usdz": "models/LD-WH046/model.usdz",
         "plan": "models/LD-WH046/plan.svg",
-        "spec": "models/LD-WH046/spec.json"
+        "spec": "models/LD-WH046/spec.json",
+        "thumb": "models/LD-WH046/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -1550,7 +1596,8 @@
         "glb": "models/LD-WH047/model.glb",
         "usdz": "models/LD-WH047/model.usdz",
         "plan": "models/LD-WH047/plan.svg",
-        "spec": "models/LD-WH047/spec.json"
+        "spec": "models/LD-WH047/spec.json",
+        "thumb": "models/LD-WH047/thumb.png"
       },
       "dimensionsMm": {
         "length": 1000,
@@ -1583,7 +1630,8 @@
         "glb": "models/LD-WH048/model.glb",
         "usdz": "models/LD-WH048/model.usdz",
         "plan": "models/LD-WH048/plan.svg",
-        "spec": "models/LD-WH048/spec.json"
+        "spec": "models/LD-WH048/spec.json",
+        "thumb": "models/LD-WH048/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -1618,7 +1666,8 @@
         "glb": "models/LD-WH049/model.glb",
         "usdz": "models/LD-WH049/model.usdz",
         "plan": "models/LD-WH049/plan.svg",
-        "spec": "models/LD-WH049/spec.json"
+        "spec": "models/LD-WH049/spec.json",
+        "thumb": "models/LD-WH049/thumb.png"
       },
       "dimensionsMm": {
         "length": 1850,
@@ -1651,7 +1700,8 @@
         "glb": "models/LD-WH050/model.glb",
         "usdz": "models/LD-WH050/model.usdz",
         "plan": "models/LD-WH050/plan.svg",
-        "spec": "models/LD-WH050/spec.json"
+        "spec": "models/LD-WH050/spec.json",
+        "thumb": "models/LD-WH050/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -1684,7 +1734,8 @@
         "glb": "models/LD-WH051/model.glb",
         "usdz": "models/LD-WH051/model.usdz",
         "plan": "models/LD-WH051/plan.svg",
-        "spec": "models/LD-WH051/spec.json"
+        "spec": "models/LD-WH051/spec.json",
+        "thumb": "models/LD-WH051/thumb.png"
       },
       "dimensionsMm": {
         "length": 1800,
@@ -1717,7 +1768,8 @@
         "glb": "models/LD-WH052/model.glb",
         "usdz": "models/LD-WH052/model.usdz",
         "plan": "models/LD-WH052/plan.svg",
-        "spec": "models/LD-WH052/spec.json"
+        "spec": "models/LD-WH052/spec.json",
+        "thumb": "models/LD-WH052/thumb.png"
       },
       "dimensionsMm": {
         "length": 800,
@@ -1750,7 +1802,8 @@
         "glb": "models/LD-WH053/model.glb",
         "usdz": "models/LD-WH053/model.usdz",
         "plan": "models/LD-WH053/plan.svg",
-        "spec": "models/LD-WH053/spec.json"
+        "spec": "models/LD-WH053/spec.json",
+        "thumb": "models/LD-WH053/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -1783,7 +1836,8 @@
         "glb": "models/LD-WH054/model.glb",
         "usdz": "models/LD-WH054/model.usdz",
         "plan": "models/LD-WH054/plan.svg",
-        "spec": "models/LD-WH054/spec.json"
+        "spec": "models/LD-WH054/spec.json",
+        "thumb": "models/LD-WH054/thumb.png"
       },
       "dimensionsMm": {
         "length": 1700,
@@ -1816,7 +1870,8 @@
         "glb": "models/LD-WH055/model.glb",
         "usdz": "models/LD-WH055/model.usdz",
         "plan": "models/LD-WH055/plan.svg",
-        "spec": "models/LD-WH055/spec.json"
+        "spec": "models/LD-WH055/spec.json",
+        "thumb": "models/LD-WH055/thumb.png"
       },
       "dimensionsMm": {
         "length": 1700,
@@ -1849,7 +1904,8 @@
         "glb": "models/LD-WH056/model.glb",
         "usdz": "models/LD-WH056/model.usdz",
         "plan": "models/LD-WH056/plan.svg",
-        "spec": "models/LD-WH056/spec.json"
+        "spec": "models/LD-WH056/spec.json",
+        "thumb": "models/LD-WH056/thumb.png"
       },
       "dimensionsMm": {
         "length": 1300,
@@ -1884,7 +1940,8 @@
         "glb": "models/LD-WH057/model.glb",
         "usdz": "models/LD-WH057/model.usdz",
         "plan": "models/LD-WH057/plan.svg",
-        "spec": "models/LD-WH057/spec.json"
+        "spec": "models/LD-WH057/spec.json",
+        "thumb": "models/LD-WH057/thumb.png"
       },
       "dimensionsMm": {
         "length": 1800,
@@ -1919,7 +1976,8 @@
         "glb": "models/LD-WH058/model.glb",
         "usdz": "models/LD-WH058/model.usdz",
         "plan": "models/LD-WH058/plan.svg",
-        "spec": "models/LD-WH058/spec.json"
+        "spec": "models/LD-WH058/spec.json",
+        "thumb": "models/LD-WH058/thumb.png"
       },
       "dimensionsMm": {
         "length": 1300,
@@ -1952,7 +2010,8 @@
         "glb": "models/LD-WH059/model.glb",
         "usdz": "models/LD-WH059/model.usdz",
         "plan": "models/LD-WH059/plan.svg",
-        "spec": "models/LD-WH059/spec.json"
+        "spec": "models/LD-WH059/spec.json",
+        "thumb": "models/LD-WH059/thumb.png"
       },
       "dimensionsMm": {
         "length": 1400,
@@ -1985,7 +2044,8 @@
         "glb": "models/LD-WH060/model.glb",
         "usdz": "models/LD-WH060/model.usdz",
         "plan": "models/LD-WH060/plan.svg",
-        "spec": "models/LD-WH060/spec.json"
+        "spec": "models/LD-WH060/spec.json",
+        "thumb": "models/LD-WH060/thumb.png"
       },
       "dimensionsMm": {
         "length": 2100,
@@ -2018,7 +2078,8 @@
         "glb": "models/LD-WH061/model.glb",
         "usdz": "models/LD-WH061/model.usdz",
         "plan": "models/LD-WH061/plan.svg",
-        "spec": "models/LD-WH061/spec.json"
+        "spec": "models/LD-WH061/spec.json",
+        "thumb": "models/LD-WH061/thumb.png"
       },
       "dimensionsMm": {
         "length": 1800,
@@ -2051,7 +2112,8 @@
         "glb": "models/LD-WH062/model.glb",
         "usdz": "models/LD-WH062/model.usdz",
         "plan": "models/LD-WH062/plan.svg",
-        "spec": "models/LD-WH062/spec.json"
+        "spec": "models/LD-WH062/spec.json",
+        "thumb": "models/LD-WH062/thumb.png"
       },
       "dimensionsMm": {
         "length": 1650,
@@ -2084,7 +2146,8 @@
         "glb": "models/LD-WH063/model.glb",
         "usdz": "models/LD-WH063/model.usdz",
         "plan": "models/LD-WH063/plan.svg",
-        "spec": "models/LD-WH063/spec.json"
+        "spec": "models/LD-WH063/spec.json",
+        "thumb": "models/LD-WH063/thumb.png"
       },
       "dimensionsMm": {
         "length": 1200,
@@ -2117,7 +2180,8 @@
         "glb": "models/LD-WH064/model.glb",
         "usdz": "models/LD-WH064/model.usdz",
         "plan": "models/LD-WH064/plan.svg",
-        "spec": "models/LD-WH064/spec.json"
+        "spec": "models/LD-WH064/spec.json",
+        "thumb": "models/LD-WH064/thumb.png"
       },
       "dimensionsMm": {
         "length": 1100,
@@ -2150,7 +2214,8 @@
         "glb": "models/LD-WH065/model.glb",
         "usdz": "models/LD-WH065/model.usdz",
         "plan": "models/LD-WH065/plan.svg",
-        "spec": "models/LD-WH065/spec.json"
+        "spec": "models/LD-WH065/spec.json",
+        "thumb": "models/LD-WH065/thumb.png"
       },
       "dimensionsMm": {
         "length": 1650,
@@ -2185,7 +2250,8 @@
         "glb": "models/LD-WH066/model.glb",
         "usdz": "models/LD-WH066/model.usdz",
         "plan": "models/LD-WH066/plan.svg",
-        "spec": "models/LD-WH066/spec.json"
+        "spec": "models/LD-WH066/spec.json",
+        "thumb": "models/LD-WH066/thumb.png"
       },
       "dimensionsMm": {
         "length": 2000,
