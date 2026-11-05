@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH011",
+  "name": "Banco Regulável de 0 a 90º",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 500,
+    "height": 480
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "30 kg",
+    "bateria": null,
+    "descricao": "Banco Regulável de 0 a 90º da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

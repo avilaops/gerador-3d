@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH049",
+  "name": "Peck Fly Articulado",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1850,
+    "width": 1200,
+    "height": 1100
+  },
+  "params": {
+    "mechanism": "pec-fly"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "60 kg",
+    "bateria": null,
+    "descricao": "Peck Fly Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

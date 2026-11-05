@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH046",
+  "name": "Panturrilha Sentada (Burrinho)",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 500,
+    "height": 600
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Panturrilha Sentada (Burrinho) da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1,
+      "width": 0.5,
+      "height": 0.6
+    },
+    "trainingArea": {
+      "minX": -0.85,
+      "maxX": 0.85,
+      "minZ": -1.1001504913890578,
+      "maxZ": 1.1001504913890576,
+      "widthM": 1.7,
+      "lengthM": 2.2003009827781153,
+      "areaM2": 3.7405116707227957
+    },
+    "stats": {
+      "triangles": 1818,
+      "meshes": 13,
+      "geometries": 6,
+      "materials": 3
+    }
+  }
+}

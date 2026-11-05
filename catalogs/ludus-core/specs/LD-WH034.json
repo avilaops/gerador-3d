@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH034",
+  "name": "Hack 45º Para Agachamento",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2050,
+    "width": 1500,
+    "height": 1600
+  },
+  "params": {
+    "variant": "hack"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "120 kg",
+    "bateria": null,
+    "descricao": "Hack 45º Para Agachamento da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

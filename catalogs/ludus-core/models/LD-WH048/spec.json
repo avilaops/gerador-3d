@@ -1,0 +1,140 @@
+{
+  "id": "LD-WH048",
+  "name": "Peitoral Dorsal - Bateria de Pesos",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1400,
+    "width": 1200,
+    "height": 2000
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Peitoral Dorsal - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.5270588235294117,
+      "baseRailX": 0.37647058823529406,
+      "towerZ": -0.575,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.15984000000015983,
+      "seatHeight": 0.48,
+      "seatZ": 0.16799999999999998,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.18,
+      "mechanism": "chest-press",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 1.8080000000019978,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.18,
+          0.0020000000000000018,
+          0.288
+        ],
+        "range": [
+          0,
+          0.15984000000015983
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.5579411764705882,
+          1.602,
+          -0.15200000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.10205882352941187,
+          1.602,
+          -0.15200000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.4,
+      "width": 1.206,
+      "height": 2
+    },
+    "trainingArea": {
+      "minX": -1.2029411764705882,
+      "maxX": 1.2029411764705882,
+      "minZ": -1.2999999999999998,
+      "maxZ": 1.2999999999999998,
+      "widthM": 2.4058823529411764,
+      "lengthM": 2.5999999999999996,
+      "areaM2": 6.255294117647058
+    },
+    "stats": {
+      "triangles": 6450,
+      "meshes": 79,
+      "geometries": 13,
+      "materials": 10
+    }
+  }
+}

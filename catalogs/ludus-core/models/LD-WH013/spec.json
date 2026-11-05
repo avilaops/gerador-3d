@@ -1,0 +1,59 @@
+{
+  "id": "LD-WH013",
+  "name": "Barra Guiada Tradicional",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 2000,
+    "height": 2300
+  },
+  "params": {
+    "variant": "bar-holder"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "100 kg",
+    "bateria": null,
+    "descricao": "Barra Guiada Tradicional da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "bar-holder",
+      "tube": 0.07,
+      "tiers": 5,
+      "showPlates": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.2,
+      "width": 2.01,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.605,
+      "maxX": 1.605,
+      "minZ": -1.2,
+      "maxZ": 1.2,
+      "widthM": 3.21,
+      "lengthM": 2.4,
+      "areaM2": 7.704
+    },
+    "stats": {
+      "triangles": 5856,
+      "meshes": 54,
+      "geometries": 5,
+      "materials": 3
+    }
+  }
+}

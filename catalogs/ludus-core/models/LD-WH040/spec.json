@@ -1,0 +1,105 @@
+{
+  "id": "LD-WH040",
+  "name": "Leg Press Horizontal - Bateria de Pesos",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2000,
+    "width": 1200,
+    "height": 1800
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "horizontal"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "160 kg",
+    "bateria": "100 kg",
+    "descricao": "Leg Press Horizontal - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "horizontal",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 10,
+      "stackTravel": 0.14400000000000002,
+      "showPlates": true,
+      "splitPlate": false
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0,
+          -0.8575
+        ],
+        "range": [
+          0,
+          0.14400000000000002
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "pivot": [
+          0,
+          0,
+          0.15749999999999986
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.015,
+      "width": 1.2,
+      "height": 1.8
+    },
+    "trainingArea": {
+      "minX": -1.2,
+      "maxX": 1.2,
+      "minZ": -1.6075,
+      "maxZ": 1.6075,
+      "widthM": 2.4,
+      "lengthM": 3.215,
+      "areaM2": 7.715999999999999
+    },
+    "stats": {
+      "triangles": 4268,
+      "meshes": 59,
+      "geometries": 9,
+      "materials": 10
+    }
+  }
+}

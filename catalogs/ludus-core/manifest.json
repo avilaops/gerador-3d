@@ -1,0 +1,2211 @@
+{
+  "catalog": "ludus-core",
+  "count": 66,
+  "failed": 0,
+  "items": [
+    {
+      "id": "LD-WH001",
+      "ok": true,
+      "name": "Agachamento Búlgaro",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 46%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH001/model.glb",
+        "usdz": "models/LD-WH001/model.usdz",
+        "plan": "models/LD-WH001/plan.svg",
+        "spec": "models/LD-WH001/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 1000,
+        "height": 900
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.4,
+        "areaM2": 5.28
+      },
+      "animated": true,
+      "triangles": 4780,
+      "glbBytes": 201640,
+      "usdzBytes": 635257
+    },
+    {
+      "id": "LD-WH002",
+      "ok": true,
+      "name": "Agachamento Pêndulo",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH002/model.glb",
+        "usdz": "models/LD-WH002/model.usdz",
+        "plan": "models/LD-WH002/plan.svg",
+        "spec": "models/LD-WH002/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2400,
+        "width": 1250,
+        "height": 1650
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.45,
+        "lengthM": 3.6,
+        "areaM2": 8.82
+      },
+      "animated": true,
+      "triangles": 6348,
+      "glbBytes": 221084,
+      "usdzBytes": 694863
+    },
+    {
+      "id": "LD-WH003",
+      "ok": true,
+      "name": "Agachamento Sumô",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH003/model.glb",
+        "usdz": "models/LD-WH003/model.usdz",
+        "plan": "models/LD-WH003/plan.svg",
+        "spec": "models/LD-WH003/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1650,
+        "width": 1000,
+        "height": 1100
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.85,
+        "areaM2": 6.27
+      },
+      "animated": true,
+      "triangles": 4780,
+      "glbBytes": 201268,
+      "usdzBytes": 634461
+    },
+    {
+      "id": "LD-WH004",
+      "ok": true,
+      "name": "Banco Extensor Lombar",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH004/model.glb",
+        "usdz": "models/LD-WH004/model.usdz",
+        "plan": "models/LD-WH004/plan.svg",
+        "spec": "models/LD-WH004/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1300,
+        "width": 900,
+        "height": 1000
+      },
+      "deviationPct": {
+        "length": 0.02,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.5,
+        "areaM2": 5.25
+      },
+      "animated": false,
+      "triangles": 1818,
+      "glbBytes": 102352,
+      "usdzBytes": 322340
+    },
+    {
+      "id": "LD-WH005",
+      "ok": true,
+      "name": "Banco Scott Com Regulagem",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH005/model.glb",
+        "usdz": "models/LD-WH005/model.usdz",
+        "plan": "models/LD-WH005/plan.svg",
+        "spec": "models/LD-WH005/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 900,
+        "height": 1150
+      },
+      "deviationPct": {
+        "length": 0.02,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.3,
+        "areaM2": 4.83
+      },
+      "animated": false,
+      "triangles": 1882,
+      "glbBytes": 103764,
+      "usdzBytes": 326260
+    },
+    {
+      "id": "LD-WH006",
+      "ok": true,
+      "name": "Banco Sissy Agachamento",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH006/model.glb",
+        "usdz": "models/LD-WH006/model.usdz",
+        "plan": "models/LD-WH006/plan.svg",
+        "spec": "models/LD-WH006/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 600,
+        "height": 700
+      },
+      "deviationPct": {
+        "length": 0.02,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.8,
+        "lengthM": 2.3,
+        "areaM2": 4.14
+      },
+      "animated": false,
+      "triangles": 1818,
+      "glbBytes": 102360,
+      "usdzBytes": 322357
+    },
+    {
+      "id": "LD-WH007",
+      "ok": true,
+      "name": "Banco Supino Declinado Para Barra",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH007/model.glb",
+        "usdz": "models/LD-WH007/model.usdz",
+        "plan": "models/LD-WH007/plan.svg",
+        "spec": "models/LD-WH007/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1600,
+        "width": 1100,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.8,
+        "areaM2": 6.44
+      },
+      "animated": false,
+      "triangles": 2716,
+      "glbBytes": 160428,
+      "usdzBytes": 521617
+    },
+    {
+      "id": "LD-WH008",
+      "ok": true,
+      "name": "Banco Supino Inclinado Para Barra",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 30%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH008/model.glb",
+        "usdz": "models/LD-WH008/model.usdz",
+        "plan": "models/LD-WH008/plan.svg",
+        "spec": "models/LD-WH008/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 1100,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.7,
+        "areaM2": 6.21
+      },
+      "animated": false,
+      "triangles": 2584,
+      "glbBytes": 166564,
+      "usdzBytes": 539506
+    },
+    {
+      "id": "LD-WH009",
+      "ok": true,
+      "name": "Banco Supino Reto Para Barra",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH009/model.glb",
+        "usdz": "models/LD-WH009/model.usdz",
+        "plan": "models/LD-WH009/plan.svg",
+        "spec": "models/LD-WH009/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 1100,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.7,
+        "areaM2": 6.21
+      },
+      "animated": false,
+      "triangles": 1882,
+      "glbBytes": 103792,
+      "usdzBytes": 326406
+    },
+    {
+      "id": "LD-WH010",
+      "ok": true,
+      "name": "Banco Supino 2 em 1",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH010/model.glb",
+        "usdz": "models/LD-WH010/model.usdz",
+        "plan": "models/LD-WH010/plan.svg",
+        "spec": "models/LD-WH010/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 1100,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.7,
+        "areaM2": 6.21
+      },
+      "animated": false,
+      "triangles": 1882,
+      "glbBytes": 103784,
+      "usdzBytes": 326406
+    },
+    {
+      "id": "LD-WH011",
+      "ok": true,
+      "name": "Banco Regulável de 0 a 90º",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH011/model.glb",
+        "usdz": "models/LD-WH011/model.usdz",
+        "plan": "models/LD-WH011/plan.svg",
+        "spec": "models/LD-WH011/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 500,
+        "height": 480
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.7,
+        "lengthM": 2.7,
+        "areaM2": 4.59
+      },
+      "animated": false,
+      "triangles": 1754,
+      "glbBytes": 100920,
+      "usdzBytes": 318487
+    },
+    {
+      "id": "LD-WH012",
+      "ok": true,
+      "name": "Banco Regulável 3 em 1",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH012/model.glb",
+        "usdz": "models/LD-WH012/model.usdz",
+        "plan": "models/LD-WH012/plan.svg",
+        "spec": "models/LD-WH012/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 500,
+        "height": 480
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.7,
+        "lengthM": 2.7,
+        "areaM2": 4.59
+      },
+      "animated": false,
+      "triangles": 1754,
+      "glbBytes": 100916,
+      "usdzBytes": 318465
+    },
+    {
+      "id": "LD-WH013",
+      "ok": true,
+      "name": "Barra Guiada Tradicional",
+      "family": "rack",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH013/model.glb",
+        "usdz": "models/LD-WH013/model.usdz",
+        "plan": "models/LD-WH013/plan.svg",
+        "spec": "models/LD-WH013/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 2000,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.5,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 3.21,
+        "lengthM": 2.4,
+        "areaM2": 7.7
+      },
+      "animated": false,
+      "triangles": 5856,
+      "glbBytes": 56304,
+      "usdzBytes": 170497
+    },
+    {
+      "id": "LD-WH014",
+      "ok": true,
+      "name": "Barra Guiada Parede",
+      "family": "rack",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH014/model.glb",
+        "usdz": "models/LD-WH014/model.usdz",
+        "plan": "models/LD-WH014/plan.svg",
+        "spec": "models/LD-WH014/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 500,
+        "width": 2000,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.5,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 3.21,
+        "lengthM": 1.7,
+        "areaM2": 5.46
+      },
+      "animated": false,
+      "triangles": 5856,
+      "glbBytes": 56272,
+      "usdzBytes": 170523
+    },
+    {
+      "id": "LD-WH015",
+      "ok": true,
+      "name": "Bíceps Máquina - Bateria de Pesos",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 5%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH015/model.glb",
+        "usdz": "models/LD-WH015/model.usdz",
+        "plan": "models/LD-WH015/plan.svg",
+        "spec": "models/LD-WH015/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1000,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.6,
+        "areaM2": 5.72
+      },
+      "animated": true,
+      "triangles": 8496,
+      "glbBytes": 244432,
+      "usdzBytes": 734545
+    },
+    {
+      "id": "LD-WH016",
+      "ok": true,
+      "name": "Bíceps e Tríceps - Bateria de Pesos",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 5%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH016/model.glb",
+        "usdz": "models/LD-WH016/model.usdz",
+        "plan": "models/LD-WH016/plan.svg",
+        "spec": "models/LD-WH016/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1000,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.6,
+        "areaM2": 5.72
+      },
+      "animated": true,
+      "triangles": 8496,
+      "glbBytes": 244436,
+      "usdzBytes": 734545
+    },
+    {
+      "id": "LD-WH017",
+      "ok": true,
+      "name": "Cadeira Abdutora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH017/model.glb",
+        "usdz": "models/LD-WH017/model.usdz",
+        "plan": "models/LD-WH017/plan.svg",
+        "spec": "models/LD-WH017/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1200,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.69,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.408,
+        "lengthM": 2.6,
+        "areaM2": 6.26
+      },
+      "animated": true,
+      "triangles": 7616,
+      "glbBytes": 337576,
+      "usdzBytes": 908965
+    },
+    {
+      "id": "LD-WH018",
+      "ok": true,
+      "name": "Cadeira Adutora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH018/model.glb",
+        "usdz": "models/LD-WH018/model.usdz",
+        "plan": "models/LD-WH018/plan.svg",
+        "spec": "models/LD-WH018/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1200,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": -0.56,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.393,
+        "lengthM": 2.6,
+        "areaM2": 6.22
+      },
+      "animated": true,
+      "triangles": 7616,
+      "glbBytes": 337312,
+      "usdzBytes": 908849
+    },
+    {
+      "id": "LD-WH019",
+      "ok": true,
+      "name": "Cadeira Adutora e Abdutora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH019/model.glb",
+        "usdz": "models/LD-WH019/model.usdz",
+        "plan": "models/LD-WH019/plan.svg",
+        "spec": "models/LD-WH019/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.77,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.409,
+        "areaM2": 5.06
+      },
+      "animated": true,
+      "triangles": 7280,
+      "glbBytes": 337008,
+      "usdzBytes": 906132
+    },
+    {
+      "id": "LD-WH020",
+      "ok": true,
+      "name": "Cadeira Extensora Articulada",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH020/model.glb",
+        "usdz": "models/LD-WH020/model.usdz",
+        "plan": "models/LD-WH020/plan.svg",
+        "spec": "models/LD-WH020/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 1550,
+        "height": 1000
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": -0.46,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.743,
+        "lengthM": 2.2,
+        "areaM2": 6.03
+      },
+      "animated": true,
+      "triangles": 7828,
+      "glbBytes": 368516,
+      "usdzBytes": 1007709
+    },
+    {
+      "id": "LD-WH021",
+      "ok": true,
+      "name": "Cadeira Extensora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH021/model.glb",
+        "usdz": "models/LD-WH021/model.usdz",
+        "plan": "models/LD-WH021/plan.svg",
+        "spec": "models/LD-WH021/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 900,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0.13,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.301,
+        "areaM2": 4.83
+      },
+      "animated": true,
+      "triangles": 6696,
+      "glbBytes": 297840,
+      "usdzBytes": 771314
+    },
+    {
+      "id": "LD-WH022",
+      "ok": true,
+      "name": "Cadeira Extensora e Flexora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH022/model.glb",
+        "usdz": "models/LD-WH022/model.usdz",
+        "plan": "models/LD-WH022/plan.svg",
+        "spec": "models/LD-WH022/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.11,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.401,
+        "areaM2": 5.04
+      },
+      "animated": true,
+      "triangles": 6696,
+      "glbBytes": 297828,
+      "usdzBytes": 771317
+    },
+    {
+      "id": "LD-WH023",
+      "ok": true,
+      "name": "Cadeira Flexora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH023/model.glb",
+        "usdz": "models/LD-WH023/model.usdz",
+        "plan": "models/LD-WH023/plan.svg",
+        "spec": "models/LD-WH023/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.4,
+        "areaM2": 5.04
+      },
+      "animated": true,
+      "triangles": 6792,
+      "glbBytes": 297468,
+      "usdzBytes": 773491
+    },
+    {
+      "id": "LD-WH024",
+      "ok": true,
+      "name": "Cross Over Angular Com Regulagem e Barra Fixa  - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH024/model.glb",
+        "usdz": "models/LD-WH024/model.usdz",
+        "plan": "models/LD-WH024/plan.svg",
+        "spec": "models/LD-WH024/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 2000,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0.95
+      },
+      "trainingArea": {
+        "widthM": 3.2,
+        "lengthM": 2.2,
+        "areaM2": 7.04
+      },
+      "animated": true,
+      "triangles": 5284,
+      "glbBytes": 90024,
+      "usdzBytes": 246734
+    },
+    {
+      "id": "LD-WH025",
+      "ok": true,
+      "name": "Cross Over Com Regulagem e Barra Fixa - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH025/model.glb",
+        "usdz": "models/LD-WH025/model.usdz",
+        "plan": "models/LD-WH025/plan.svg",
+        "spec": "models/LD-WH025/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 3000,
+        "width": 800,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.02,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 4.2,
+        "areaM2": 8.4
+      },
+      "animated": true,
+      "triangles": 5668,
+      "glbBytes": 92376,
+      "usdzBytes": 249465
+    },
+    {
+      "id": "LD-WH026",
+      "ok": true,
+      "name": "Cross Smith Com Regulagem e Barra Fixa - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH026/model.glb",
+        "usdz": "models/LD-WH026/model.usdz",
+        "plan": "models/LD-WH026/plan.svg",
+        "spec": "models/LD-WH026/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 2000,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 3.2,
+        "lengthM": 2.3,
+        "areaM2": 7.36
+      },
+      "animated": true,
+      "triangles": 6648,
+      "glbBytes": 173660,
+      "usdzBytes": 332720
+    },
+    {
+      "id": "LD-WH027",
+      "ok": true,
+      "name": "Desenvolvimento de Ombros Articulado",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH027/model.glb",
+        "usdz": "models/LD-WH027/model.usdz",
+        "plan": "models/LD-WH027/plan.svg",
+        "spec": "models/LD-WH027/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 1550,
+        "height": 1400
+      },
+      "deviationPct": {
+        "length": 0.12,
+        "width": 0,
+        "height": 0.01
+      },
+      "trainingArea": {
+        "widthM": 2.75,
+        "lengthM": 2.201,
+        "areaM2": 6.05
+      },
+      "animated": true,
+      "triangles": 8560,
+      "glbBytes": 245860,
+      "usdzBytes": 736641
+    },
+    {
+      "id": "LD-WH028",
+      "ok": true,
+      "name": "Desenvolvimento de Ombros Livre",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH028/model.glb",
+        "usdz": "models/LD-WH028/model.usdz",
+        "plan": "models/LD-WH028/plan.svg",
+        "spec": "models/LD-WH028/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 1100,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.12,
+        "width": 0,
+        "height": 0.01
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.201,
+        "areaM2": 5.06
+      },
+      "animated": true,
+      "triangles": 8496,
+      "glbBytes": 244672,
+      "usdzBytes": 733032
+    },
+    {
+      "id": "LD-WH029",
+      "ok": true,
+      "name": "Elevação Pélvica",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH029/model.glb",
+        "usdz": "models/LD-WH029/model.usdz",
+        "plan": "models/LD-WH029/plan.svg",
+        "spec": "models/LD-WH029/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1600,
+        "width": 1500,
+        "height": 1300
+      },
+      "deviationPct": {
+        "length": 0.67,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 2.811,
+        "areaM2": 7.59
+      },
+      "animated": true,
+      "triangles": 7062,
+      "glbBytes": 227656,
+      "usdzBytes": 706848
+    },
+    {
+      "id": "LD-WH030",
+      "ok": true,
+      "name": "Elevação Pélvica 2D",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH030/model.glb",
+        "usdz": "models/LD-WH030/model.usdz",
+        "plan": "models/LD-WH030/plan.svg",
+        "spec": "models/LD-WH030/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1550,
+        "width": 1500,
+        "height": 1200
+      },
+      "deviationPct": {
+        "length": 0.9,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 2.764,
+        "areaM2": 7.46
+      },
+      "animated": true,
+      "triangles": 7062,
+      "glbBytes": 227636,
+      "usdzBytes": 706837
+    },
+    {
+      "id": "LD-WH031",
+      "ok": true,
+      "name": "Flexora em Pé - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH031/model.glb",
+        "usdz": "models/LD-WH031/model.usdz",
+        "plan": "models/LD-WH031/plan.svg",
+        "spec": "models/LD-WH031/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.4,
+        "areaM2": 5.04
+      },
+      "animated": true,
+      "triangles": 6792,
+      "glbBytes": 297464,
+      "usdzBytes": 773482
+    },
+    {
+      "id": "LD-WH032",
+      "ok": true,
+      "name": "Flexora em Pé Articulada Unilateral",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 9%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH032/model.glb",
+        "usdz": "models/LD-WH032/model.usdz",
+        "plan": "models/LD-WH032/plan.svg",
+        "spec": "models/LD-WH032/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 1550,
+        "height": 1700
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.75,
+        "lengthM": 2.3,
+        "areaM2": 6.32
+      },
+      "animated": true,
+      "triangles": 7128,
+      "glbBytes": 299096,
+      "usdzBytes": 778945
+    },
+    {
+      "id": "LD-WH033",
+      "ok": true,
+      "name": "Gráviton - Bateria de Pesos",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH033/model.glb",
+        "usdz": "models/LD-WH033/model.usdz",
+        "plan": "models/LD-WH033/plan.svg",
+        "spec": "models/LD-WH033/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1700,
+        "width": 1150,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0.88,
+        "width": 0,
+        "height": 0.52
+      },
+      "trainingArea": {
+        "widthM": 2.35,
+        "lengthM": 2.915,
+        "areaM2": 6.85
+      },
+      "animated": true,
+      "triangles": 11708,
+      "glbBytes": 267276,
+      "usdzBytes": 781373
+    },
+    {
+      "id": "LD-WH034",
+      "ok": true,
+      "name": "Hack 45º Para Agachamento",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH034/model.glb",
+        "usdz": "models/LD-WH034/model.usdz",
+        "plan": "models/LD-WH034/plan.svg",
+        "spec": "models/LD-WH034/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2050,
+        "width": 1500,
+        "height": 1600
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0.39
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 3.25,
+        "areaM2": 8.78
+      },
+      "animated": true,
+      "triangles": 6938,
+      "glbBytes": 221388,
+      "usdzBytes": 694144
+    },
+    {
+      "id": "LD-WH035",
+      "ok": true,
+      "name": "Hack Agachamento Com Apoio Lombar",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH035/model.glb",
+        "usdz": "models/LD-WH035/model.usdz",
+        "plan": "models/LD-WH035/plan.svg",
+        "spec": "models/LD-WH035/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2050,
+        "width": 1500,
+        "height": 1600
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0.39
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 3.25,
+        "areaM2": 8.78
+      },
+      "animated": true,
+      "triangles": 6938,
+      "glbBytes": 221392,
+      "usdzBytes": 694144
+    },
+    {
+      "id": "LD-WH036",
+      "ok": true,
+      "name": "Hack Agachamento Squat",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH036/model.glb",
+        "usdz": "models/LD-WH036/model.usdz",
+        "plan": "models/LD-WH036/plan.svg",
+        "spec": "models/LD-WH036/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1600,
+        "width": 1500,
+        "height": 1700
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 2.8,
+        "areaM2": 7.56
+      },
+      "animated": true,
+      "triangles": 6938,
+      "glbBytes": 221196,
+      "usdzBytes": 696053
+    },
+    {
+      "id": "LD-WH037",
+      "ok": true,
+      "name": "Leg Press 45º Com Suporte Para Anilhas",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH037/model.glb",
+        "usdz": "models/LD-WH037/model.usdz",
+        "plan": "models/LD-WH037/plan.svg",
+        "spec": "models/LD-WH037/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2050,
+        "width": 1500,
+        "height": 1600
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 3.25,
+        "areaM2": 8.78
+      },
+      "animated": true,
+      "triangles": 6348,
+      "glbBytes": 221072,
+      "usdzBytes": 695098
+    },
+    {
+      "id": "LD-WH038",
+      "ok": true,
+      "name": "Leg Press 90º Com Suporte Para Anilhas",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH038/model.glb",
+        "usdz": "models/LD-WH038/model.usdz",
+        "plan": "models/LD-WH038/plan.svg",
+        "spec": "models/LD-WH038/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1800,
+        "width": 1500,
+        "height": 1700
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 3,
+        "areaM2": 8.1
+      },
+      "animated": true,
+      "triangles": 6348,
+      "glbBytes": 220844,
+      "usdzBytes": 694340
+    },
+    {
+      "id": "LD-WH039",
+      "ok": true,
+      "name": "Leg Press Articulado",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH039/model.glb",
+        "usdz": "models/LD-WH039/model.usdz",
+        "plan": "models/LD-WH039/plan.svg",
+        "spec": "models/LD-WH039/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2100,
+        "width": 1000,
+        "height": 1400
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0.17
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 3.3,
+        "areaM2": 7.26
+      },
+      "animated": true,
+      "triangles": 5956,
+      "glbBytes": 198624,
+      "usdzBytes": 616268
+    },
+    {
+      "id": "LD-WH040",
+      "ok": true,
+      "name": "Leg Press Horizontal - Bateria de Pesos",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH040/model.glb",
+        "usdz": "models/LD-WH040/model.usdz",
+        "plan": "models/LD-WH040/plan.svg",
+        "spec": "models/LD-WH040/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2000,
+        "width": 1200,
+        "height": 1800
+      },
+      "deviationPct": {
+        "length": 0.75,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.4,
+        "lengthM": 3.215,
+        "areaM2": 7.72
+      },
+      "animated": true,
+      "triangles": 4268,
+      "glbBytes": 207260,
+      "usdzBytes": 578854
+    },
+    {
+      "id": "LD-WH041",
+      "ok": true,
+      "name": "Máquina de Glúteo 4 Apoio - Bateria de Pesos",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 18%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH041/model.glb",
+        "usdz": "models/LD-WH041/model.usdz",
+        "plan": "models/LD-WH041/plan.svg",
+        "spec": "models/LD-WH041/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.3,
+        "areaM2": 4.83
+      },
+      "animated": true,
+      "triangles": 6678,
+      "glbBytes": 227004,
+      "usdzBytes": 708239
+    },
+    {
+      "id": "LD-WH042",
+      "ok": true,
+      "name": "Mesa Flexora - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH042/model.glb",
+        "usdz": "models/LD-WH042/model.usdz",
+        "plan": "models/LD-WH042/plan.svg",
+        "spec": "models/LD-WH042/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.42,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.706,
+        "areaM2": 5.68
+      },
+      "animated": true,
+      "triangles": 6792,
+      "glbBytes": 297416,
+      "usdzBytes": 771449
+    },
+    {
+      "id": "LD-WH043",
+      "ok": true,
+      "name": "Mesa Flexora e Extensora 2 em 1 - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH043/model.glb",
+        "usdz": "models/LD-WH043/model.usdz",
+        "plan": "models/LD-WH043/plan.svg",
+        "spec": "models/LD-WH043/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.07,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.701,
+        "areaM2": 5.67
+      },
+      "animated": true,
+      "triangles": 6696,
+      "glbBytes": 297836,
+      "usdzBytes": 771306
+    },
+    {
+      "id": "LD-WH044",
+      "ok": true,
+      "name": "Mesa Flexora 3 em 1 - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH044/model.glb",
+        "usdz": "models/LD-WH044/model.usdz",
+        "plan": "models/LD-WH044/plan.svg",
+        "spec": "models/LD-WH044/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 900,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.42,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.706,
+        "areaM2": 5.68
+      },
+      "animated": true,
+      "triangles": 6792,
+      "glbBytes": 297420,
+      "usdzBytes": 771449
+    },
+    {
+      "id": "LD-WH045",
+      "ok": true,
+      "name": "Panturrilha em Pé Com Agachamento - Bateria de Pesos",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH045/model.glb",
+        "usdz": "models/LD-WH045/model.usdz",
+        "plan": "models/LD-WH045/plan.svg",
+        "spec": "models/LD-WH045/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1500,
+        "width": 1000,
+        "height": 1800
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.7,
+        "areaM2": 5.94
+      },
+      "animated": true,
+      "triangles": 4780,
+      "glbBytes": 201108,
+      "usdzBytes": 635651
+    },
+    {
+      "id": "LD-WH046",
+      "ok": true,
+      "name": "Panturrilha Sentada (Burrinho)",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH046/model.glb",
+        "usdz": "models/LD-WH046/model.usdz",
+        "plan": "models/LD-WH046/plan.svg",
+        "spec": "models/LD-WH046/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 500,
+        "height": 600
+      },
+      "deviationPct": {
+        "length": 0.03,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.7,
+        "lengthM": 2.2,
+        "areaM2": 3.74
+      },
+      "animated": false,
+      "triangles": 1818,
+      "glbBytes": 102340,
+      "usdzBytes": 321930
+    },
+    {
+      "id": "LD-WH047",
+      "ok": true,
+      "name": "Paralela Para Abdominal",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 8%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH047/model.glb",
+        "usdz": "models/LD-WH047/model.usdz",
+        "plan": "models/LD-WH047/plan.svg",
+        "spec": "models/LD-WH047/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1000,
+        "width": 800,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 2.2,
+        "areaM2": 4.4
+      },
+      "animated": true,
+      "triangles": 6052,
+      "glbBytes": 248788,
+      "usdzBytes": 800386
+    },
+    {
+      "id": "LD-WH048",
+      "ok": true,
+      "name": "Peitoral Dorsal - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH048/model.glb",
+        "usdz": "models/LD-WH048/model.usdz",
+        "plan": "models/LD-WH048/plan.svg",
+        "spec": "models/LD-WH048/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1200,
+        "height": 2000
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.49,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.406,
+        "lengthM": 2.6,
+        "areaM2": 6.26
+      },
+      "animated": true,
+      "triangles": 6450,
+      "glbBytes": 265120,
+      "usdzBytes": 669630
+    },
+    {
+      "id": "LD-WH049",
+      "ok": true,
+      "name": "Peck Fly Articulado",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 40%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH049/model.glb",
+        "usdz": "models/LD-WH049/model.usdz",
+        "plan": "models/LD-WH049/plan.svg",
+        "spec": "models/LD-WH049/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1850,
+        "width": 1200,
+        "height": 1100
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.4,
+        "lengthM": 3.05,
+        "areaM2": 7.32
+      },
+      "animated": true,
+      "triangles": 8892,
+      "glbBytes": 359076,
+      "usdzBytes": 981447
+    },
+    {
+      "id": "LD-WH050",
+      "ok": true,
+      "name": "Peck Fly - Bateria de Pesos",
+      "family": "selectorized-tower",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH050/model.glb",
+        "usdz": "models/LD-WH050/model.usdz",
+        "plan": "models/LD-WH050/plan.svg",
+        "spec": "models/LD-WH050/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1200,
+        "height": 2000
+      },
+      "deviationPct": {
+        "length": 0.03,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.4,
+        "lengthM": 2.6,
+        "areaM2": 6.24
+      },
+      "animated": true,
+      "triangles": 8892,
+      "glbBytes": 358192,
+      "usdzBytes": 977751
+    },
+    {
+      "id": "LD-WH051",
+      "ok": true,
+      "name": "Prancha Para Abdominal",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH051/model.glb",
+        "usdz": "models/LD-WH051/model.usdz",
+        "plan": "models/LD-WH051/plan.svg",
+        "spec": "models/LD-WH051/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1800,
+        "width": 800,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.97,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 3.017,
+        "areaM2": 6.03
+      },
+      "animated": false,
+      "triangles": 1882,
+      "glbBytes": 103660,
+      "usdzBytes": 326431
+    },
+    {
+      "id": "LD-WH052",
+      "ok": true,
+      "name": "Polia Mono Cross - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH052/model.glb",
+        "usdz": "models/LD-WH052/model.usdz",
+        "plan": "models/LD-WH052/plan.svg",
+        "spec": "models/LD-WH052/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 800,
+        "width": 1000,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.82,
+        "height": 0.39
+      },
+      "trainingArea": {
+        "widthM": 2.208,
+        "lengthM": 2,
+        "areaM2": 4.42
+      },
+      "animated": true,
+      "triangles": 5044,
+      "glbBytes": 87920,
+      "usdzBytes": 240498
+    },
+    {
+      "id": "LD-WH053",
+      "ok": true,
+      "name": "Puxada Alta Articulada",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH053/model.glb",
+        "usdz": "models/LD-WH053/model.usdz",
+        "plan": "models/LD-WH053/plan.svg",
+        "spec": "models/LD-WH053/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1100,
+        "height": 2200
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.3,
+        "lengthM": 2.6,
+        "areaM2": 5.98
+      },
+      "animated": true,
+      "triangles": 4080,
+      "glbBytes": 131820,
+      "usdzBytes": 234646
+    },
+    {
+      "id": "LD-WH054",
+      "ok": true,
+      "name": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH054/model.glb",
+        "usdz": "models/LD-WH054/model.usdz",
+        "plan": "models/LD-WH054/plan.svg",
+        "spec": "models/LD-WH054/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1700,
+        "width": 900,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.9,
+        "areaM2": 6.09
+      },
+      "animated": true,
+      "triangles": 4464,
+      "glbBytes": 132708,
+      "usdzBytes": 236279
+    },
+    {
+      "id": "LD-WH055",
+      "ok": true,
+      "name": "Puxador Horizontal - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH055/model.glb",
+        "usdz": "models/LD-WH055/model.usdz",
+        "plan": "models/LD-WH055/plan.svg",
+        "spec": "models/LD-WH055/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1700,
+        "width": 900,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.9,
+        "areaM2": 6.09
+      },
+      "animated": true,
+      "triangles": 4464,
+      "glbBytes": 132688,
+      "usdzBytes": 236260
+    },
+    {
+      "id": "LD-WH056",
+      "ok": true,
+      "name": "Puxador Vertical - Bateria de Pesos",
+      "family": "cable-station",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH056/model.glb",
+        "usdz": "models/LD-WH056/model.usdz",
+        "plan": "models/LD-WH056/plan.svg",
+        "spec": "models/LD-WH056/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1300,
+        "width": 900,
+        "height": 2300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 2.5,
+        "areaM2": 5.25
+      },
+      "animated": true,
+      "triangles": 4080,
+      "glbBytes": 131760,
+      "usdzBytes": 234529
+    },
+    {
+      "id": "LD-WH057",
+      "ok": true,
+      "name": "Remada Cavalinho Com Apoio",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 1%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH057/model.glb",
+        "usdz": "models/LD-WH057/model.usdz",
+        "plan": "models/LD-WH057/plan.svg",
+        "spec": "models/LD-WH057/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1800,
+        "width": 1000,
+        "height": 1100
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 3,
+        "areaM2": 6.6
+      },
+      "animated": true,
+      "triangles": 7800,
+      "glbBytes": 241896,
+      "usdzBytes": 743317
+    },
+    {
+      "id": "LD-WH058",
+      "ok": true,
+      "name": "Remada Sentada Articulada",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 10%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH058/model.glb",
+        "usdz": "models/LD-WH058/model.usdz",
+        "plan": "models/LD-WH058/plan.svg",
+        "spec": "models/LD-WH058/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1300,
+        "width": 1000,
+        "height": 1000
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.5,
+        "areaM2": 5.5
+      },
+      "animated": true,
+      "triangles": 5716,
+      "glbBytes": 192968,
+      "usdzBytes": 603770
+    },
+    {
+      "id": "LD-WH059",
+      "ok": true,
+      "name": "Remada Sentada - Bateria de Pesos",
+      "family": "plate-loaded-lever",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH059/model.glb",
+        "usdz": "models/LD-WH059/model.usdz",
+        "plan": "models/LD-WH059/plan.svg",
+        "spec": "models/LD-WH059/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1400,
+        "width": 1000,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0.09,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.601,
+        "areaM2": 5.72
+      },
+      "animated": true,
+      "triangles": 7800,
+      "glbBytes": 242000,
+      "usdzBytes": 741782
+    },
+    {
+      "id": "LD-WH060",
+      "ok": true,
+      "name": "Supino Declinado Linha Articulado",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH060/model.glb",
+        "usdz": "models/LD-WH060/model.usdz",
+        "plan": "models/LD-WH060/plan.svg",
+        "spec": "models/LD-WH060/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2100,
+        "width": 1500,
+        "height": 1100
+      },
+      "deviationPct": {
+        "length": 0.83,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.7,
+        "lengthM": 3.317,
+        "areaM2": 8.96
+      },
+      "animated": false,
+      "triangles": 2716,
+      "glbBytes": 160204,
+      "usdzBytes": 522837
+    },
+    {
+      "id": "LD-WH061",
+      "ok": true,
+      "name": "Supino Inclinado Linha Articulado",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH061/model.glb",
+        "usdz": "models/LD-WH061/model.usdz",
+        "plan": "models/LD-WH061/plan.svg",
+        "spec": "models/LD-WH061/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1800,
+        "width": 1600,
+        "height": 1250
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0.1
+      },
+      "trainingArea": {
+        "widthM": 2.8,
+        "lengthM": 3,
+        "areaM2": 8.4
+      },
+      "animated": false,
+      "triangles": 2584,
+      "glbBytes": 166624,
+      "usdzBytes": 539145
+    },
+    {
+      "id": "LD-WH062",
+      "ok": true,
+      "name": "Supino Reto Linha Articulado",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH062/model.glb",
+        "usdz": "models/LD-WH062/model.usdz",
+        "plan": "models/LD-WH062/plan.svg",
+        "spec": "models/LD-WH062/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1650,
+        "width": 1600,
+        "height": 1100
+      },
+      "deviationPct": {
+        "length": 0.01,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.8,
+        "lengthM": 2.85,
+        "areaM2": 7.98
+      },
+      "animated": false,
+      "triangles": 1818,
+      "glbBytes": 102476,
+      "usdzBytes": 322503
+    },
+    {
+      "id": "LD-WH063",
+      "ok": true,
+      "name": "Supino Vertical Linha Articulado",
+      "family": "bench",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH063/model.glb",
+        "usdz": "models/LD-WH063/model.usdz",
+        "plan": "models/LD-WH063/plan.svg",
+        "spec": "models/LD-WH063/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 1000,
+        "height": 1800
+      },
+      "deviationPct": {
+        "length": 0.02,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 2.4,
+        "areaM2": 5.28
+      },
+      "animated": false,
+      "triangles": 1882,
+      "glbBytes": 103772,
+      "usdzBytes": 326262
+    },
+    {
+      "id": "LD-WH064",
+      "ok": true,
+      "name": "Suporte Agachamento",
+      "family": "rack",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH064/model.glb",
+        "usdz": "models/LD-WH064/model.usdz",
+        "plan": "models/LD-WH064/plan.svg",
+        "spec": "models/LD-WH064/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1100,
+        "width": 1100,
+        "height": 1800
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.91,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.31,
+        "lengthM": 2.3,
+        "areaM2": 5.31
+      },
+      "animated": false,
+      "triangles": 5856,
+      "glbBytes": 56296,
+      "usdzBytes": 170721
+    },
+    {
+      "id": "LD-WH065",
+      "ok": true,
+      "name": "Panturrilha em Pé Com Agachamento",
+      "family": "leg-press",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-WH065/model.glb",
+        "usdz": "models/LD-WH065/model.usdz",
+        "plan": "models/LD-WH065/plan.svg",
+        "spec": "models/LD-WH065/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1650,
+        "width": 1300,
+        "height": 1700
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.5,
+        "lengthM": 2.85,
+        "areaM2": 7.12
+      },
+      "animated": true,
+      "triangles": 6348,
+      "glbBytes": 221100,
+      "usdzBytes": 694784
+    },
+    {
+      "id": "LD-WH066",
+      "ok": true,
+      "name": "Suporte Remada Solo",
+      "family": "rack",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 9%)"
+      ],
+      "files": {
+        "glb": "models/LD-WH066/model.glb",
+        "usdz": "models/LD-WH066/model.usdz",
+        "plan": "models/LD-WH066/plan.svg",
+        "spec": "models/LD-WH066/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2000,
+        "width": 900,
+        "height": 300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 3.2,
+        "areaM2": 6.72
+      },
+      "animated": false,
+      "triangles": 5856,
+      "glbBytes": 57304,
+      "usdzBytes": 172757
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "LD-WH027",
+  "name": "Desenvolvimento de Ombros Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 1550,
+    "height": 1400
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Ombros",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Desenvolvimento de Ombros Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "shoulder-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.45,
+      "pivotHeight": 1.193767704752531,
+      "pivotZ": -0.053140096618357495,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.3364305946811154,
+        0.45410628019323673
+      ],
+      "leverRear": [
+        0.16213705388096983,
+        -0.22222222222222224
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.09661835748792272,
+      "backrestHeight": 0.6524079316670809,
+      "backrestTilt": 0.1,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.505,
+          0.982,
+          -0.42059178743961356
+        ],
+        "range": [
+          0,
+          0.42
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.505,
+          0.982,
+          -0.42059178743961356
+        ],
+        "range": [
+          0,
+          0.42
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.001,
+      "width": 1.55,
+      "height": 1.4
+    },
+    "trainingArea": {
+      "minX": -1.375,
+      "maxX": 1.375,
+      "minZ": -1.1005917874396136,
+      "maxZ": 1.1005917874396136,
+      "widthM": 2.75,
+      "lengthM": 2.2011835748792272,
+      "areaM2": 6.053254830917875
+    },
+    "stats": {
+      "triangles": 8560,
+      "meshes": 81,
+      "geometries": 17,
+      "materials": 7
+    }
+  }
+}

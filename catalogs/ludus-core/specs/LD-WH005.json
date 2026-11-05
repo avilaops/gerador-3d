@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH005",
+  "name": "Banco Scott Com Regulagem",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 900,
+    "height": 1150
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Braços",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Banco Scott Com Regulagem da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

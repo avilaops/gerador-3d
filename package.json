@@ -21,6 +21,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "specs": "vite-node scripts/build-specs.ts --",
+    "specs:core": "vite-node scripts/import-core.ts",
     "export": "vite-node scripts/export.ts --",
     "thumbs": "vite-node scripts/thumbnails.ts --",
     "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"

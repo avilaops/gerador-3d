@@ -1,0 +1,34 @@
+{
+  "id": "LD-WH033",
+  "name": "Gráviton - Bateria de Pesos",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1700,
+    "width": 1150,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Gráviton - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

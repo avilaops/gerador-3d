@@ -2,11 +2,29 @@
   "id": "LD-WH002",
   "name": "Agachamento Pêndulo",
   "family": "leg-press",
-  "dimensionsMm": { "length": 2400, "width": 1250, "height": 1650 },
-  "params": { "variant": "sled" },
-  "materials": { "frame": "#171717", "upholstery": "#0b0b0b", "accent": "#f2bd00" },
+  "dimensionsMm": {
+    "length": 2400,
+    "width": 1250,
+    "height": 1650
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
   "trainingClearanceM": 0.6,
-  "camera": { "azimuthDeg": 38, "elevationDeg": 20, "distanceM": 3.6, "target": [0, 0.7, 0] },
-  "review": { "status": "needs_review", "notes": "Primeiro seed Core; conferir foto, mecanismo e pontos de apoio." },
-  "meta": { "linha": "Ludus Core", "grupoMuscular": "Pernas e glúteos", "source": "core.json" }
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "100 kg",
+    "bateria": null,
+    "descricao": "Agachamento Pêndulo da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
 }

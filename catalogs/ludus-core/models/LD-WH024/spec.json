@@ -1,0 +1,104 @@
+{
+  "id": "LD-WH024",
+  "name": "Cross Over Angular Com Regulagem e Barra Fixa  - Bateria de Pesos",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 2000,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 200,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "crossover"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "300 kg",
+    "bateria": "200 kg",
+    "descricao": "Cross Over Angular Com Regulagem e Barra Fixa  - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "crossover",
+      "tube": 0.07,
+      "stackPlates": 20,
+      "stackTravel": 0.184,
+      "pulleyHeight": 1.656,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.02180704101920128,
+          -0.365
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.02180704101920128,
+          0.365
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1,
+      "width": 2,
+      "height": 2.322
+    },
+    "trainingArea": {
+      "minX": -1.6,
+      "maxX": 1.6,
+      "minZ": -1.1000000001490116,
+      "maxZ": 1.1000000001490116,
+      "widthM": 3.2,
+      "lengthM": 2.200000000298023,
+      "areaM2": 7.0400000009536745
+    },
+    "stats": {
+      "triangles": 5284,
+      "meshes": 95,
+      "geometries": 10,
+      "materials": 5
+    }
+  }
+}

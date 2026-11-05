@@ -1,0 +1,104 @@
+{
+  "id": "LD-WH052",
+  "name": "Polia Mono Cross - Bateria de Pesos",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 800,
+    "width": 1000,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "crossover"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "160 kg",
+    "bateria": "100 kg",
+    "descricao": "Polia Mono Cross - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "crossover",
+      "tube": 0.07,
+      "stackPlates": 10,
+      "stackTravel": 0.184,
+      "pulleyHeight": 1.656,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.008967905305325985,
+          -0.265
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.008967905305325985,
+          0.265
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 0.8,
+      "width": 1.008,
+      "height": 2.309
+    },
+    "trainingArea": {
+      "minX": -1.10409734249115,
+      "maxX": 1.10409734249115,
+      "minZ": -1.0000000001490115,
+      "maxZ": 1.0000000001490115,
+      "widthM": 2.2081946849823,
+      "lengthM": 2.000000000298023,
+      "areaM2": 4.416389370622692
+    },
+    "stats": {
+      "triangles": 5044,
+      "meshes": 75,
+      "geometries": 10,
+      "materials": 5
+    }
+  }
+}

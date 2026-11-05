@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH010",
+  "name": "Banco Supino 2 em 1",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1100,
+    "height": 1500
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "30 kg",
+    "bateria": null,
+    "descricao": "Banco Supino 2 em 1 da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

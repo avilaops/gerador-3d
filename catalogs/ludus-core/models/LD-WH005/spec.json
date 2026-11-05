@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH005",
+  "name": "Banco Scott Com Regulagem",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 900,
+    "height": 1150
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Braços",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Banco Scott Com Regulagem da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.1,
+      "width": 0.9,
+      "height": 1.15
+    },
+    "trainingArea": {
+      "minX": -1.05,
+      "maxX": 1.05,
+      "minZ": -1.1501370245980826,
+      "maxZ": 1.1501370245980826,
+      "widthM": 2.1,
+      "lengthM": 2.3002740491961653,
+      "areaM2": 4.830575503311947
+    },
+    "stats": {
+      "triangles": 1882,
+      "meshes": 13,
+      "geometries": 6,
+      "materials": 3
+    }
+  }
+}

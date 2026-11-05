@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH006",
+  "name": "Banco Sissy Agachamento",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 600,
+    "height": 700
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Banco Sissy Agachamento da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

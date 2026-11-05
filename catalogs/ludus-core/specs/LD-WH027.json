@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH027",
+  "name": "Desenvolvimento de Ombros Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 1550,
+    "height": 1400
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Ombros",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Desenvolvimento de Ombros Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH008",
+  "name": "Banco Supino Inclinado Para Barra",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1100,
+    "height": 1500
+  },
+  "params": {
+    "variant": "incline"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "30 kg",
+    "bateria": null,
+    "descricao": "Banco Supino Inclinado Para Barra da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "incline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.5,
+      "width": 1.1,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.15,
+      "maxX": 1.15,
+      "minZ": -1.35,
+      "maxZ": 1.35,
+      "widthM": 2.3,
+      "lengthM": 2.7,
+      "areaM2": 6.21
+    },
+    "stats": {
+      "triangles": 2584,
+      "meshes": 18,
+      "geometries": 8,
+      "materials": 3
+    }
+  }
+}

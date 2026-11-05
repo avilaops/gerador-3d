@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH063",
+  "name": "Supino Vertical Linha Articulado",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 1000,
+    "height": 1800
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Supino Vertical Linha Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.2,
+      "width": 1,
+      "height": 1.8
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.2001257700109647,
+      "maxZ": 1.2001257700109647,
+      "widthM": 2.2,
+      "lengthM": 2.4002515400219293,
+      "areaM2": 5.2805533880482445
+    },
+    "stats": {
+      "triangles": 1882,
+      "meshes": 13,
+      "geometries": 6,
+      "materials": 3
+    }
+  }
+}

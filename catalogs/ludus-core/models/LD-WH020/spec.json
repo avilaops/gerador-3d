@@ -1,0 +1,117 @@
+{
+  "id": "LD-WH020",
+  "name": "Cadeira Extensora Articulada",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 1550,
+    "height": 1000
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Cadeira Extensora Articulada da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.6257787086939298,
+      "baseRailX": 0.4469847919242356,
+      "towerZ": -0.375,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.07984000063872,
+      "seatHeight": 0.58,
+      "seatZ": 0.02,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.32,
+      "mechanism": "leg-extension",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 0.808000007984,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.20750000000000002,
+          0.0020000000000000018,
+          0.13999999999999999
+        ],
+        "range": [
+          0,
+          0.07984000063872
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.34146958384847126,
+          0.602,
+          0.28
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1,
+      "width": 1.543,
+      "height": 1
+    },
+    "trainingArea": {
+      "minX": -1.3714695838484712,
+      "maxX": 1.3714695838484712,
+      "minZ": -1.1,
+      "maxZ": 1.1,
+      "widthM": 2.7429391676969423,
+      "lengthM": 2.2,
+      "areaM2": 6.034466168933274
+    },
+    "stats": {
+      "triangles": 7828,
+      "meshes": 83,
+      "geometries": 17,
+      "materials": 10
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "LD-WH014",
+  "name": "Barra Guiada Parede",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 500,
+    "width": 2000,
+    "height": 2300
+  },
+  "params": {
+    "variant": "bar-holder"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Barra Guiada Parede da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "bar-holder",
+      "tube": 0.07,
+      "tiers": 5,
+      "showPlates": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.5,
+      "width": 2.01,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.605,
+      "maxX": 1.605,
+      "minZ": -0.85,
+      "maxZ": 0.85,
+      "widthM": 3.21,
+      "lengthM": 1.7,
+      "areaM2": 5.457
+    },
+    "stats": {
+      "triangles": 5856,
+      "meshes": 54,
+      "geometries": 5,
+      "materials": 3
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "LD-WH033",
+  "name": "Gráviton - Bateria de Pesos",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1700,
+    "width": 1150,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Gráviton - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "chest-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.9779999999999998,
+      "pivotZ": -0.0935,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.61,
+        0.7989999999999999
+      ],
+      "leverRear": [
+        0.2900980372217103,
+        -0.391
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0.204,
+      "backrestHeight": 1,
+      "backrestTilt": 0.18,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.30499999999999994,
+          1.602,
+          -0.11350000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.30499999999999994,
+          1.602,
+          -0.11350000000000002
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.715,
+      "width": 1.15,
+      "height": 2.312
+    },
+    "trainingArea": {
+      "minX": -1.1749999999999998,
+      "maxX": 1.1749999999999998,
+      "minZ": -1.4575,
+      "maxZ": 1.4575,
+      "widthM": 2.3499999999999996,
+      "lengthM": 2.915,
+      "areaM2": 6.850249999999999
+    },
+    "stats": {
+      "triangles": 11708,
+      "meshes": 112,
+      "geometries": 21,
+      "materials": 8
+    }
+  }
+}

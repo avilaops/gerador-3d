@@ -133,3 +133,9 @@ Os primeiros seeds nacionais ficam em `catalogs/ludus-core/specs`. O catálogo
 Core usa o mesmo núcleo paramétrico do Premium, mas mantém materiais próprios e
 status `needs_review` até a conferência contra foto/ficha. O repositório continua
 independente do site.
+
+Para reimportar os produtos nacionais da fonte do site e regenerar os 66 specs:
+
+```bash
+npm run specs:core
+```

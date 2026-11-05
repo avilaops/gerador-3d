@@ -1,0 +1,100 @@
+{
+  "id": "LD-WH053",
+  "name": "Puxada Alta Articulada",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 1400,
+    "width": 1100,
+    "height": 2200
+  },
+  "params": {
+    "variant": "dual-pulley"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Costas",
+    "peso": "60 kg",
+    "bateria": null,
+    "descricao": "Puxada Alta Articulada da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "dual-pulley",
+      "tube": 0.07,
+      "stackPlates": 10,
+      "stackTravel": 0.17600000000000002,
+      "pulleyHeight": 1.584,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.450579042611594e-11,
+          1.4901174738568557e-10,
+          -0.565
+        ],
+        "range": [
+          0,
+          0.17600000000000002
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.450579042611594e-11,
+          1.4901174738568557e-10,
+          0.565
+        ],
+        "range": [
+          0,
+          0.17600000000000002
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.4,
+      "width": 1.1,
+      "height": 2.2
+    },
+    "trainingArea": {
+      "minX": -1.1500000001490116,
+      "maxX": 1.15,
+      "minZ": -1.3000000001490115,
+      "maxZ": 1.3000000001490115,
+      "widthM": 2.3000000001490113,
+      "lengthM": 2.600000000298023,
+      "areaM2": 5.980000001072883
+    },
+    "stats": {
+      "triangles": 4080,
+      "meshes": 82,
+      "geometries": 9,
+      "materials": 10
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "LD-WH032",
+  "name": "Flexora em Pé Articulada Unilateral",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 1550,
+    "height": 1700
+  },
+  "params": {
+    "mechanism": "leg-curl"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Flexora em Pé Articulada Unilateral da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.6281880185717121,
+      "baseRailX": 0.44870572755122295,
+      "towerZ": -0.21790160807600428,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.1358400000000003,
+      "seatHeight": 0.58,
+      "seatZ": -0.013716064323040171,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.32,
+      "mechanism": "leg-curl",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 1.5080000000000036,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.2075237098911385,
+          0.0020000000000000018,
+          -0.04945385539876217
+        ],
+        "range": [
+          0,
+          0.1358400000000003
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3449508662496889,
+          0.6019999999999988,
+          0.0777030230191571
+        ],
+        "range": [
+          0,
+          1.2
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.1,
+      "width": 1.55,
+      "height": 1.7
+    },
+    "trainingArea": {
+      "minX": -1.375,
+      "maxX": 1.375,
+      "minZ": -1.15,
+      "maxZ": 1.15,
+      "widthM": 2.75,
+      "lengthM": 2.3,
+      "areaM2": 6.324999999999999
+    },
+    "stats": {
+      "triangles": 7128,
+      "meshes": 81,
+      "geometries": 15,
+      "materials": 10
+    }
+  }
+}

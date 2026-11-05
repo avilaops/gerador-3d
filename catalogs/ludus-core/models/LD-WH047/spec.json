@@ -1,0 +1,99 @@
+{
+  "id": "LD-WH047",
+  "name": "Paralela Para Abdominal",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 800,
+    "height": 1500
+  },
+  "params": {
+    "mechanism": "ab-crunch"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Abdômen e lombar",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Paralela Para Abdominal da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "ab-crunch",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.337825660916305,
+      "pivotZ": -0.054175000041139135,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.38668337008708314,
+        0.46295000035155254
+      ],
+      "leverRear": [
+        0.18703782174334188,
+        -0.2265500001720364
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0,
+      "backrestHeight": 0.731137279803097,
+      "backrestTilt": 0.2,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.7820095565584633,
+          -0.1974999998522731
+        ],
+        "range": [
+          0,
+          0.6
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1,
+      "width": 0.8,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1,
+      "maxX": 1,
+      "minZ": -1.0999999999999999,
+      "maxZ": 1.0999999999999999,
+      "widthM": 2,
+      "lengthM": 2.1999999999999997,
+      "areaM2": 4.3999999999999995
+    },
+    "stats": {
+      "triangles": 6052,
+      "meshes": 47,
+      "geometries": 10,
+      "materials": 6
+    }
+  }
+}

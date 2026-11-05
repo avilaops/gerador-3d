@@ -1,0 +1,103 @@
+{
+  "id": "LD-WH041",
+  "name": "Máquina de Glúteo 4 Apoio - Bateria de Pesos",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 900,
+    "height": 1500
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "hip-thrust"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Máquina de Glúteo 4 Apoio - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "hip-thrust",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.287954170103886,
+      "pivotZ": -0.03467141329487878,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.36928633840833225,
+        0.296282986338055
+      ],
+      "leverRear": [
+        0.1847464915544145,
+        -0.14498954650585671
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.3,
+      "pressSeatZ": 0.044127253284391176,
+      "backrestHeight": 0.7038819301730539,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.3023788712271798,
+          -0.46550834816335895
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.1,
+      "width": 0.9,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.0499999999999998,
+      "maxX": 1.0499999999999998,
+      "minZ": -1.15,
+      "maxZ": 1.15,
+      "widthM": 2.0999999999999996,
+      "lengthM": 2.3,
+      "areaM2": 4.829999999999999
+    },
+    "stats": {
+      "triangles": 6678,
+      "meshes": 60,
+      "geometries": 14,
+      "materials": 5
+    }
+  }
+}

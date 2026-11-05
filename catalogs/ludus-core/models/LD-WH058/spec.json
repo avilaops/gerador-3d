@@ -1,0 +1,118 @@
+{
+  "id": "LD-WH058",
+  "name": "Remada Sentada Articulada",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 1000,
+    "height": 1000
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Costas",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Remada Sentada Articulada da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "row",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 0.5624440314696013,
+      "pivotZ": -0.07067500001445458,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.1162014063266051,
+        0.603950000123521
+      ],
+      "leverRear": [
+        0.052244101333460205,
+        -0.29555000006044646
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.2827000000578183,
+      "backrestHeight": 0.30738220324501464,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.18165467733005475,
+          -0.4347999998542817
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.18165467733005475,
+          -0.4347999998542817
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.3,
+      "width": 1,
+      "height": 1
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.25,
+      "maxZ": 1.25,
+      "widthM": 2.2,
+      "lengthM": 2.5,
+      "areaM2": 5.5
+    },
+    "stats": {
+      "triangles": 5716,
+      "meshes": 51,
+      "geometries": 10,
+      "materials": 6
+    }
+  }
+}

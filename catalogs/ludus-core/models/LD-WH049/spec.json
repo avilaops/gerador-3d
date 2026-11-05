@@ -1,0 +1,136 @@
+{
+  "id": "LD-WH049",
+  "name": "Peck Fly Articulado",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1850,
+    "width": 1200,
+    "height": 1100
+  },
+  "params": {
+    "mechanism": "pec-fly"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "60 kg",
+    "bateria": null,
+    "descricao": "Peck Fly Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.4217500044608522,
+      "baseRailX": 0.301250003186323,
+      "towerZ": -0.7885000002713246,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.03064416253022813,
+      "seatHeight": 0.52,
+      "seatZ": 0.03,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "pec-fly",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 0.19305203162785162,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.31408300460965066,
+          0.013499999996040124
+        ],
+        "range": [
+          0,
+          0.03064416253022813
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.17999999499320998,
+          0.42915007945569517,
+          -0.12649999996289454
+        ],
+        "range": [
+          0,
+          1.2
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.17999999499320998,
+          0.42915007945569517,
+          -0.12649999996289454
+        ],
+        "range": [
+          0,
+          1.2
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.85,
+      "width": 1.2,
+      "height": 1.1
+    },
+    "trainingArea": {
+      "minX": -1.2000000000000002,
+      "maxX": 1.2000000000000002,
+      "minZ": -1.525,
+      "maxZ": 1.525,
+      "widthM": 2.4000000000000004,
+      "lengthM": 3.05,
+      "areaM2": 7.32
+    },
+    "stats": {
+      "triangles": 8892,
+      "meshes": 63,
+      "geometries": 17,
+      "materials": 10
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "LD-WH003",
+  "name": "Agachamento Sumô",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1650,
+    "width": 1000,
+    "height": 1100
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Agachamento Sumô da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "sled",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.08800000000000001,
+      "showPlates": true,
+      "splitPlate": false
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.7970921481540104,
+          -0.6038576879954624
+        ],
+        "pivot": [
+          0,
+          0.498,
+          -0.33499999999999996
+        ],
+        "range": [
+          0,
+          0.22960676324556473
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.65,
+      "width": 1,
+      "height": 1.1
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.4249999999999998,
+      "maxZ": 1.4249999999999998,
+      "widthM": 2.2,
+      "lengthM": 2.8499999999999996,
+      "areaM2": 6.27
+    },
+    "stats": {
+      "triangles": 4780,
+      "meshes": 38,
+      "geometries": 10,
+      "materials": 6
+    }
+  }
+}

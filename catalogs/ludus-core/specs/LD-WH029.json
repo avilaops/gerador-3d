@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH029",
+  "name": "Elevação Pélvica",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1600,
+    "width": 1500,
+    "height": 1300
+  },
+  "params": {
+    "mechanism": "hip-thrust"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Elevação Pélvica da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "LD-WH021",
+  "name": "Cadeira Extensora - Bateria de Pesos",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 900,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "leg-extension"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Cadeira Extensora - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.315,
+      "baseRailX": 0.225,
+      "towerZ": -0.4057017543859649,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.1838401390095569,
+      "seatHeight": 0.58,
+      "seatZ": 0.021228070175438596,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.32,
+      "mechanism": "leg-extension",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 2.1080017376194613,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.0020000000000000018,
+          -0.4007017543859649
+        ],
+        "range": [
+          0,
+          0.1838401390095569
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.602,
+          0.2862280701754386
+        ],
+        "range": [
+          0,
+          1.15
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.101,
+      "width": 0.9,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.05,
+      "maxX": 1.05,
+      "minZ": -1.150701754385965,
+      "maxZ": 1.150701754385965,
+      "widthM": 2.1,
+      "lengthM": 2.30140350877193,
+      "areaM2": 4.8329473684210535
+    },
+    "stats": {
+      "triangles": 6696,
+      "meshes": 77,
+      "geometries": 15,
+      "materials": 10
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "LD-WH059",
+  "name": "Remada Sentada - Bateria de Pesos",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1400,
+    "width": 1000,
+    "height": 1500
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "row"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Costas",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Remada Sentada - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "row",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.2882822896405826,
+      "pivotZ": -0.07469719933913105,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.3694007987118311,
+        0.6383215216253016
+      ],
+      "leverRear": [
+        0.17500886393983853,
+        -0.3123701063272753
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.2987887973565242,
+      "backrestHeight": 0.704061251315202,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.202,
+          -0.4046337198204043
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.202,
+          -0.4046337198204043
+        ],
+        "range": [
+          0,
+          0.34
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.401,
+      "width": 1,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.3006429313606265,
+      "maxZ": 1.3006429313606265,
+      "widthM": 2.2,
+      "lengthM": 2.601285862721253,
+      "areaM2": 5.722828897986757
+    },
+    "stats": {
+      "triangles": 7800,
+      "meshes": 71,
+      "geometries": 16,
+      "materials": 6
+    }
+  }
+}

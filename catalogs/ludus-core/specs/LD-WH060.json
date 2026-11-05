@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH060",
+  "name": "Supino Declinado Linha Articulado",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 2100,
+    "width": 1500,
+    "height": 1100
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Supino Declinado Linha Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

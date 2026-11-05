@@ -1,0 +1,140 @@
+{
+  "id": "LD-WH018",
+  "name": "Cadeira Adutora - Bateria de Pesos",
+  "family": "selectorized-tower",
+  "dimensionsMm": {
+    "length": 1400,
+    "width": 1200,
+    "height": 1500
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "hip-adduction"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Cadeira Adutora - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.48868817702553785,
+      "baseRailX": 0.3490629835896699,
+      "towerZ": -0.575,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.11984000028406518,
+      "seatHeight": 0.52,
+      "seatZ": -0.06999999999999999,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.35,
+      "mechanism": "hip-adduction",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 1.3080000035508148,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
+    },
+    "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.22849370370356942,
+          0.0020000000000000018,
+          0.05
+        ],
+        "range": [
+          0,
+          0.11984000028406518
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.24463226347577044,
+          0.542,
+          0.05
+        ],
+        "range": [
+          0,
+          0.62
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0.004632263475770448,
+          0.542,
+          0.05
+        ],
+        "range": [
+          0,
+          0.62
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.4,
+      "width": 1.193,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.1966196708829093,
+      "maxX": 1.1966196708829093,
+      "minZ": -1.2999999999999998,
+      "maxZ": 1.2999999999999998,
+      "widthM": 2.3932393417658187,
+      "lengthM": 2.5999999999999996,
+      "areaM2": 6.222422288591128
+    },
+    "stats": {
+      "triangles": 7616,
+      "meshes": 83,
+      "geometries": 15,
+      "materials": 10
+    }
+  }
+}

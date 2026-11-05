@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH028",
+  "name": "Desenvolvimento de Ombros Livre",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 1100,
+    "height": 1500
+  },
+  "params": {
+    "mechanism": "shoulder-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Ombros",
+    "peso": "60 kg",
+    "bateria": null,
+    "descricao": "Desenvolvimento de Ombros Livre da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

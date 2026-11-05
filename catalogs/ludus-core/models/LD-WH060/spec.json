@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH060",
+  "name": "Supino Declinado Linha Articulado",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 2100,
+    "width": 1500,
+    "height": 1100
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "80 kg",
+    "bateria": null,
+    "descricao": "Supino Declinado Linha Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "decline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 2.117,
+      "width": 1.5,
+      "height": 1.1
+    },
+    "trainingArea": {
+      "minX": -1.35,
+      "maxX": 1.35,
+      "minZ": -1.6587499996647241,
+      "maxZ": 1.6587499996647241,
+      "widthM": 2.7,
+      "lengthM": 3.3174999993294483,
+      "areaM2": 8.95724999818951
+    },
+    "stats": {
+      "triangles": 2716,
+      "meshes": 20,
+      "geometries": 7,
+      "materials": 3
+    }
+  }
+}

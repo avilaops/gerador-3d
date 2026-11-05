@@ -1,0 +1,82 @@
+{
+  "id": "LD-WH002",
+  "name": "Agachamento Pêndulo",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2400,
+    "width": 1250,
+    "height": 1650
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "100 kg",
+    "bateria": null,
+    "descricao": "Agachamento Pêndulo da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "sled",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.132,
+      "showPlates": true,
+      "splitPlate": false
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.8023809168082592,
+          -0.5968122521714325
+        ],
+        "pivot": [
+          0,
+          0.6629999999999998,
+          -0.4300000000000001
+        ],
+        "range": [
+          0,
+          0.35
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.4,
+      "width": 1.25,
+      "height": 1.65
+    },
+    "trainingArea": {
+      "minX": -1.225,
+      "maxX": 1.225,
+      "minZ": -1.7999999999999998,
+      "maxZ": 1.7999999999999998,
+      "widthM": 2.45,
+      "lengthM": 3.5999999999999996,
+      "areaM2": 8.82
+    },
+    "stats": {
+      "triangles": 6348,
+      "meshes": 40,
+      "geometries": 11,
+      "materials": 6
+    }
+  }
+}

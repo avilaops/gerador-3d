@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH004",
+  "name": "Banco Extensor Lombar",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1300,
+    "width": 900,
+    "height": 1000
+  },
+  "params": {
+    "variant": "flat"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Abdômen e lombar",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Banco Extensor Lombar da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "flat",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.3,
+      "width": 0.9,
+      "height": 1
+    },
+    "trainingArea": {
+      "minX": -1.05,
+      "maxX": 1.05,
+      "minZ": -1.2501162239000707,
+      "maxZ": 1.2501162239000707,
+      "widthM": 2.1,
+      "lengthM": 2.5002324478001414,
+      "areaM2": 5.250488140380297
+    },
+    "stats": {
+      "triangles": 1818,
+      "meshes": 13,
+      "geometries": 6,
+      "materials": 3
+    }
+  }
+}

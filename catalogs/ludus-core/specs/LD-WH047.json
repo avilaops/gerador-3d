@@ -1,0 +1,30 @@
+{
+  "id": "LD-WH047",
+  "name": "Paralela Para Abdominal",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1000,
+    "width": 800,
+    "height": 1500
+  },
+  "params": {
+    "mechanism": "ab-crunch"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Abdômen e lombar",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Paralela Para Abdominal da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  }
+}

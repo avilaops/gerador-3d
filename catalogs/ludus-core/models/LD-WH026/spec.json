@@ -1,0 +1,123 @@
+{
+  "id": "LD-WH026",
+  "name": "Cross Smith Com Regulagem e Barra Fixa - Bateria de Pesos",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 1100,
+    "width": 2000,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 200,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "cross-smith"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "350 kg",
+    "bateria": "200 kg",
+    "descricao": "Cross Smith Com Regulagem e Barra Fixa - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "cross-smith",
+      "tube": 0.07,
+      "stackPlates": 20,
+      "stackTravel": 0.184,
+      "pulleyHeight": 1.656,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.45057349149647e-11,
+          1.4901171269121605e-10,
+          -0.41500000000000004
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.45057349149647e-11,
+          1.4901171269121605e-10,
+          0.41500000000000004
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "bar",
+        "type": "prismatic",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0.3600000000745057,
+          1.3500000001490118,
+          0
+        ],
+        "range": [
+          0,
+          0.55
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.1,
+      "width": 2,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.6000000001490116,
+      "maxX": 1.6,
+      "minZ": -1.1500000001490116,
+      "maxZ": 1.1500000001490116,
+      "widthM": 3.2000000001490116,
+      "lengthM": 2.300000000298023,
+      "areaM2": 7.360000001296401
+    },
+    "stats": {
+      "triangles": 6648,
+      "meshes": 125,
+      "geometries": 11,
+      "materials": 10
+    }
+  }
+}

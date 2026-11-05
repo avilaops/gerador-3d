@@ -1,0 +1,104 @@
+{
+  "id": "LD-WH025",
+  "name": "Cross Over Com Regulagem e Barra Fixa - Bateria de Pesos",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 3000,
+    "width": 800,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 200,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "crossover"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Multifuncionais",
+    "peso": "300 kg",
+    "bateria": "200 kg",
+    "descricao": "Cross Over Com Regulagem e Barra Fixa - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "crossover",
+      "tube": 0.07,
+      "stackPlates": 20,
+      "stackTravel": 0.1835257638710831,
+      "pulleyHeight": 1.6517318748397478,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.005817980971187353,
+          -1.3649999998509883
+        ],
+        "range": [
+          0,
+          0.1835257638710831
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.005817980971187353,
+          1.3649999998509883
+        ],
+        "range": [
+          0,
+          0.1835257638710831
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 3,
+      "width": 0.8,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.0000689387321473,
+      "maxX": 1.0000689387321473,
+      "minZ": -2.1,
+      "maxZ": 2.1,
+      "widthM": 2.0001378774642946,
+      "lengthM": 4.2,
+      "areaM2": 8.400579085350039
+    },
+    "stats": {
+      "triangles": 5668,
+      "meshes": 99,
+      "geometries": 10,
+      "materials": 5
+    }
+  }
+}

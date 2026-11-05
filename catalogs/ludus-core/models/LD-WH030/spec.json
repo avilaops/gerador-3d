@@ -1,0 +1,99 @@
+{
+  "id": "LD-WH030",
+  "name": "Elevação Pélvica 2D",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1550,
+    "width": 1500,
+    "height": 1200
+  },
+  "params": {
+    "mechanism": "hip-thrust"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "120 kg",
+    "bateria": null,
+    "descricao": "Elevação Pélvica 2D da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "hip-thrust",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.425,
+      "pivotHeight": 1.0299541701197792,
+      "pivotZ": -0.07493290310288178,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.27928633841387646,
+        0.6403357174246261
+      ],
+      "leverRear": [
+        0.13092188076631012,
+        -0.3133557766120511
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.3,
+      "pressSeatZ": 0.09536914940366774,
+      "backrestHeight": 0.5628819301817398,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.3023788712271829,
+          -0.6948218164248142
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.564,
+      "width": 1.5,
+      "height": 1.2
+    },
+    "trainingArea": {
+      "minX": -1.35,
+      "maxX": 1.35,
+      "minZ": -1.3819603321437217,
+      "maxZ": 1.3819603321437217,
+      "widthM": 2.7,
+      "lengthM": 2.7639206642874434,
+      "areaM2": 7.462585793576098
+    },
+    "stats": {
+      "triangles": 7062,
+      "meshes": 64,
+      "geometries": 14,
+      "materials": 5
+    }
+  }
+}

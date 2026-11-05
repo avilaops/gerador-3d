@@ -1,0 +1,59 @@
+{
+  "id": "LD-WH066",
+  "name": "Suporte Remada Solo",
+  "family": "rack",
+  "dimensionsMm": {
+    "length": 2000,
+    "width": 900,
+    "height": 300
+  },
+  "params": {
+    "variant": "bar-holder"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Costas",
+    "peso": "50 kg",
+    "bateria": null,
+    "descricao": "Suporte Remada Solo da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "bar-holder",
+      "tube": 0.07,
+      "tiers": 5,
+      "showPlates": true
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 2,
+      "width": 0.9,
+      "height": 0.3
+    },
+    "trainingArea": {
+      "minX": -1.05,
+      "maxX": 1.05,
+      "minZ": -1.6,
+      "maxZ": 1.6,
+      "widthM": 2.1,
+      "lengthM": 3.2,
+      "areaM2": 6.720000000000001
+    },
+    "stats": {
+      "triangles": 5856,
+      "meshes": 54,
+      "geometries": 5,
+      "materials": 3
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "LD-WH045",
+  "name": "Panturrilha em Pé Com Agachamento - Bateria de Pesos",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 1500,
+    "width": 1000,
+    "height": 1800
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Panturrilha em Pé Com Agachamento - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "sled",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 10,
+      "stackTravel": 0.14400000000000002,
+      "showPlates": true,
+      "splitPlate": false
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.9385785533962561,
+          -0.3450656446309765
+        ],
+        "pivot": [
+          0,
+          0.708,
+          -0.26
+        ],
+        "range": [
+          0,
+          0.35
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.5,
+      "width": 1,
+      "height": 1.8
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.35,
+      "maxZ": 1.35,
+      "widthM": 2.2,
+      "lengthM": 2.7,
+      "areaM2": 5.940000000000001
+    },
+    "stats": {
+      "triangles": 4780,
+      "meshes": 38,
+      "geometries": 10,
+      "materials": 6
+    }
+  }
+}

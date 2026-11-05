@@ -1,0 +1,104 @@
+{
+  "id": "LD-WH054",
+  "name": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos",
+  "family": "cable-station",
+  "dimensionsMm": {
+    "length": 1700,
+    "width": 900,
+    "height": 2300
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "variant": "dual-pulley"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Costas",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "dual-pulley",
+      "tube": 0.07,
+      "stackPlates": 10,
+      "stackTravel": 0.184,
+      "pulleyHeight": 1.656,
+      "barTravel": 0.55
+    },
+    "articulations": [
+      {
+        "node": "stack_left",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.450581818169155e-11,
+          1.4901178208015509e-10,
+          -0.715
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "stack_right",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          7.450581818169155e-11,
+          1.4901178208015509e-10,
+          0.715
+        ],
+        "range": [
+          0,
+          0.184
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.7,
+      "width": 0.9,
+      "height": 2.3
+    },
+    "trainingArea": {
+      "minX": -1.0500000001490117,
+      "maxX": 1.05,
+      "minZ": -1.4500000001490116,
+      "maxZ": 1.4500000001490116,
+      "widthM": 2.100000000149012,
+      "lengthM": 2.9000000002980233,
+      "areaM2": 6.090000001057984
+    },
+    "stats": {
+      "triangles": 4464,
+      "meshes": 86,
+      "geometries": 9,
+      "materials": 10
+    }
+  }
+}

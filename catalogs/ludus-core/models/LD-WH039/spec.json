@@ -1,0 +1,118 @@
+{
+  "id": "LD-WH039",
+  "name": "Leg Press Articulado",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 2100,
+    "width": 1000,
+    "height": 1400
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "120 kg",
+    "bateria": null,
+    "descricao": "Leg Press Articulado da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "chest-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.2541442918876555,
+      "pivotZ": -0.11468085106382978,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.35749219484453093,
+        0.9799999999999998
+      ],
+      "leverRear": [
+        0.16651571399946696,
+        -0.47957446808510634
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0.25021276595744674,
+      "backrestHeight": 0.6854044385897652,
+      "backrestTilt": 0.18,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          0.202,
+          0.8027127659574467
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.202,
+          0.8027127659574467
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.1,
+      "width": 1,
+      "height": 1.402
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.6500531914893615,
+      "maxZ": 1.6500531914893615,
+      "widthM": 2.2,
+      "lengthM": 3.300106382978723,
+      "areaM2": 7.260234042553191
+    },
+    "stats": {
+      "triangles": 5956,
+      "meshes": 56,
+      "geometries": 11,
+      "materials": 6
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "LD-WH007",
+  "name": "Banco Supino Declinado Para Barra",
+  "family": "bench",
+  "dimensionsMm": {
+    "length": 1600,
+    "width": 1100,
+    "height": 1500
+  },
+  "params": {
+    "variant": "decline"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Peitoral",
+    "peso": "40 kg",
+    "bateria": null,
+    "descricao": "Banco Supino Declinado Para Barra da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "decline",
+      "tube": 0.06,
+      "padWidth": 0.3,
+      "backAngle": 0.6,
+      "seatHeight": 0.44,
+      "wheels": true,
+      "aLegs": false,
+      "adjustable": false
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.6,
+      "width": 1.1,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.15,
+      "maxX": 1.15,
+      "minZ": -1.400094667689848,
+      "maxZ": 1.400094667689848,
+      "widthM": 2.3,
+      "lengthM": 2.800189335379696,
+      "areaM2": 6.4404354713733
+    },
+    "stats": {
+      "triangles": 2716,
+      "meshes": 20,
+      "geometries": 7,
+      "materials": 3
+    }
+  }
+}

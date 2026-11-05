@@ -1,0 +1,122 @@
+{
+  "id": "LD-WH015",
+  "name": "Bíceps Máquina - Bateria de Pesos",
+  "family": "plate-loaded-lever",
+  "dimensionsMm": {
+    "length": 1400,
+    "width": 1000,
+    "height": 1500
+  },
+  "weightStackKg": {
+    "perStack": 100,
+    "stacks": 1
+  },
+  "params": {
+    "mechanism": "chest-press"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Braços",
+    "peso": "150 kg",
+    "bateria": "100 kg",
+    "descricao": "Bíceps Máquina - Bateria de Pesos da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "mechanism": "chest-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.3406134167403172,
+      "pivotZ": -0.07483819464134166,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.38765584304894785,
+        0.639526390571465
+      ],
+      "leverRear": [
+        0.18394135295645697,
+        -0.31295972304561054
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.48,
+      "pressSeatZ": 0.16328333376292722,
+      "backrestHeight": 0.7326608207766849,
+      "backrestTilt": 0.18,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
+    },
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.3,
+          1.3949615139166416,
+          -0.15694134191059375
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          1.3949615139166416,
+          -0.15694134191059375
+        ],
+        "range": [
+          0,
+          0.36
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 1.4,
+      "width": 1,
+      "height": 1.5
+    },
+    "trainingArea": {
+      "minX": -1.1,
+      "maxX": 1.1,
+      "minZ": -1.2999999999999998,
+      "maxZ": 1.2999999999999998,
+      "widthM": 2.2,
+      "lengthM": 2.5999999999999996,
+      "areaM2": 5.72
+    },
+    "stats": {
+      "triangles": 8496,
+      "meshes": 81,
+      "geometries": 17,
+      "materials": 7
+    }
+  }
+}

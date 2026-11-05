@@ -1,0 +1,82 @@
+{
+  "id": "LD-WH037",
+  "name": "Leg Press 45º Com Suporte Para Anilhas",
+  "family": "leg-press",
+  "dimensionsMm": {
+    "length": 2050,
+    "width": 1500,
+    "height": 1600
+  },
+  "params": {
+    "variant": "sled"
+  },
+  "materials": {
+    "frame": "#171717",
+    "upholstery": "#0b0b0b",
+    "accent": "#f2bd00"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+  },
+  "meta": {
+    "linha": "Ludus Core",
+    "grupoMuscular": "Pernas e glúteos",
+    "peso": "100 kg",
+    "bateria": null,
+    "descricao": "Leg Press 45º Com Suporte Para Anilhas da Linha Core. Confira a foto, as dimensões e a ficha técnica para planejar sua academia."
+  },
+  "resolved": {
+    "params": {
+      "variant": "sled",
+      "tube": 0.08,
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.128,
+      "showPlates": true,
+      "splitPlate": false
+    },
+    "articulations": [
+      {
+        "node": "carriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0.9035791676315138,
+          -0.4284211570666657
+        ],
+        "pivot": [
+          0,
+          0.6479999999999999,
+          -0.5
+        ],
+        "range": [
+          0,
+          0.35
+        ],
+        "driver": "phase"
+      }
+    ],
+    "bboxM": {
+      "length": 2.05,
+      "width": 1.5,
+      "height": 1.6
+    },
+    "trainingArea": {
+      "minX": -1.35,
+      "maxX": 1.35,
+      "minZ": -1.625,
+      "maxZ": 1.625,
+      "widthM": 2.7,
+      "lengthM": 3.25,
+      "areaM2": 8.775
+    },
+    "stats": {
+      "triangles": 6348,
+      "meshes": 40,
+      "geometries": 11,
+      "materials": 6
+    }
+  }
+}
