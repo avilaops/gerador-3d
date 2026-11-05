@@ -78,6 +78,7 @@ interface ManifestItem {
     motionWithinDesignBox: boolean;
     motionCollisionFree: boolean;
     motionCollisionCount: number;
+    motionCollisions: { node: string; phase: number; other: string }[];
     calibrationStatus: string;
     calibrationLandmarks: number;
     calibrationRmsePx: number;
@@ -171,6 +172,7 @@ for (const spec of specs) {
         motionWithinDesignBox: eq.quality.motion.withinDesignBox,
         motionCollisionFree: eq.quality.motion.collisionFree,
         motionCollisionCount: eq.quality.motion.collisions.length,
+        motionCollisions: eq.quality.motion.collisions,
         calibrationStatus: eq.quality.calibration.status,
         calibrationLandmarks: eq.quality.calibration.landmarks,
         calibrationRmsePx: eq.quality.calibration.rmsePx,

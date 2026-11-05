@@ -45,6 +45,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -95,6 +96,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -145,6 +147,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -195,6 +204,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -245,6 +255,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -295,6 +306,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -345,6 +357,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -397,6 +410,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -447,6 +461,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -497,6 +512,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -547,6 +563,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -597,6 +614,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -647,6 +665,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -697,6 +716,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -749,6 +769,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -801,6 +822,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -851,6 +873,83 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 15,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "arm_left_bar"
+          },
+          {
+            "node": "arm_right",
+            "phase": 0.5,
+            "other": "3599d341-51ac-46a9-8ac5-2c6dd41e41ae"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "tower_side"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "tower_front_left"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "stack_plate_09"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "stack_plate_10"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "stack_top_plate"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "9cd82963-add7-4459-9ed6-d155ae6c2e5b"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "42fdf4f1-68bb-43bf-b47e-a0742f116153"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_cable"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_plate_07"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_plate_08"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_selector_rod"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_selector_pin"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -901,6 +1000,23 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 3,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "stack_plate_09"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "stack_selector_pin"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -951,6 +1067,23 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 3,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "arm_right",
+            "phase": 0.5,
+            "other": "5927ecec-6d5b-46c5-9cc5-48c78e167145"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "fa3b0381-dc73-46f5-9090-5e3cef898b3e"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1001,6 +1134,13 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1051,6 +1191,13 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1101,6 +1248,13 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1153,6 +1307,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1203,6 +1364,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1253,6 +1426,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1303,6 +1488,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1353,6 +1550,48 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 8,
+        "motionCollisions": [
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "cage_top"
+          },
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "73fc3042-bfb9-4df1-9f90-99dc825d71ec"
+          },
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "top_crossbar"
+          },
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "b8e377e7-5f42-4f10-9a17-9b5a5ff29e65"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "cage_top"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "27a43537-5574-47a7-9df9-5e7e31bde940"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "top_crossbar"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "b8e377e7-5f42-4f10-9a17-9b5a5ff29e65"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1403,6 +1642,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1453,6 +1693,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1503,6 +1744,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1555,6 +1797,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1607,6 +1856,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1657,6 +1913,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1707,6 +1964,18 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_tie"
+          },
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1757,6 +2026,18 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_tie"
+          },
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1807,6 +2088,18 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_tie"
+          },
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1857,6 +2150,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1907,6 +2207,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_tie"
+          },
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -1957,6 +2269,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2007,6 +2320,23 @@
         "motionWithinDesignBox": false,
         "motionCollisionFree": false,
         "motionCollisionCount": 3,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "carriage",
+            "phase": 0.5,
+            "other": "4b470433-b2dd-46a6-b3be-1aaf90d26a41"
+          },
+          {
+            "node": "carriage",
+            "phase": 0.5,
+            "other": "c53f194d-5ab2-4946-a9e7-57de768c90a3"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2059,6 +2389,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "lever",
+            "phase": 0.5,
+            "other": "cc60d473-b0d4-4f65-9fef-dde695b2f3c8"
+          },
+          {
+            "node": "lever",
+            "phase": 0.5,
+            "other": "f6ba2863-a37d-497b-8c1a-0c5ecbdca543"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2109,6 +2451,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2159,6 +2508,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2209,6 +2565,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2259,6 +2622,13 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2309,6 +2679,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2361,6 +2732,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2411,6 +2783,23 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 3,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "tower_front_left"
+          },
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "tower_front_right"
+          },
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2463,6 +2852,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2513,6 +2903,23 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 3,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "tower_front_left"
+          },
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "tower_front_right"
+          },
+          {
+            "node": "stack",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2563,6 +2970,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2613,6 +3021,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2663,6 +3083,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2713,6 +3145,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2763,6 +3207,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2813,6 +3269,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "stack_left",
+            "phase": 0.5,
+            "other": "stack_cable"
+          },
+          {
+            "node": "stack_right",
+            "phase": 0.5,
+            "other": "stack_cable"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2865,6 +3333,28 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 4,
+        "motionCollisions": [
+          {
+            "node": "arm_right",
+            "phase": 0.5,
+            "other": "b8633408-932e-4f43-80bf-b4cb29c5791c"
+          },
+          {
+            "node": "arm_right",
+            "phase": 0.5,
+            "other": "5b5cb6f9-5ad6-41c8-a9e9-e7c4fa741971"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "43bb4b82-0abb-429c-bc39-40e08db787bb"
+          },
+          {
+            "node": "arm_left",
+            "phase": 0.5,
+            "other": "344717c1-4cfa-445c-b684-b086aac1aa0f"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2917,6 +3407,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -2967,6 +3458,28 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 4,
+        "motionCollisions": [
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "545a10b6-4a1c-45b7-a087-03b11cc04908"
+          },
+          {
+            "node": "arm_right",
+            "phase": 1,
+            "other": "f10c11c0-c37a-40a9-9f78-be598ab38f35"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "1d2365ac-0de1-4157-afbb-e90c2d0dffcc"
+          },
+          {
+            "node": "arm_left",
+            "phase": 1,
+            "other": "6677a773-dc6e-43d1-9928-ceceb6c33ac4"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3017,6 +3530,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3067,6 +3581,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3117,6 +3632,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3167,6 +3683,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3217,6 +3734,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3267,6 +3785,18 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": false,
         "motionCollisionCount": 2,
+        "motionCollisions": [
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_tie"
+          },
+          {
+            "node": "carriage",
+            "phase": 1,
+            "other": "rear_arch_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
@@ -3319,6 +3849,7 @@
         "motionWithinDesignBox": true,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
+        "motionCollisions": [],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
