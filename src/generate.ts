@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import { getFamily } from './families/registry';
 import type { DimsM } from './families/types';
 import { PartKit } from './parts/kit';
-import { buildPhaseClip } from './animation';
+import { applyPhase, buildPhaseClip, captureRestPose } from './animation';
 import { computeFootprint, type Footprint } from './footprint';
 import {
   EquipmentSpecError,
@@ -53,6 +53,10 @@ export interface QualityReport {
   dimensionsWithinTolerance: boolean;
   articulationNodesValid: boolean;
   triangleBudget: number;
+  motion: {
+    maxSize: { length: number; width: number; height: number };
+    withinDesignBox: boolean;
+  };
   issues: string[];
 }
 
@@ -200,12 +204,14 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
 
   const clip = buildPhaseClip(object, articulations);
   const footprint = computeFootprint(object, spec.trainingClearanceM);
+  const motion = sampleMotion(object, articulations, dims);
   const quality = validateGeneratedEquipment({
     bbox,
     deviation,
     object,
     articulations,
     stats: collectStats(object),
+    motion,
   });
   warnings.push(...quality.issues);
 
@@ -238,6 +244,7 @@ export function validateGeneratedEquipment(input: {
   stats: EquipmentStats;
   tolerance?: number;
   triangleBudget?: number;
+  motion: QualityReport['motion'];
 }): QualityReport {
   const tolerance = input.tolerance ?? FIT_TOLERANCE * 2;
   const triangleBudget = input.triangleBudget ?? 30_000;
@@ -258,7 +265,33 @@ export function validateGeneratedEquipment(input: {
     dimensionsWithinTolerance,
     articulationNodesValid,
     triangleBudget,
+    motion: input.motion,
     issues,
+  };
+}
+
+function sampleMotion(
+  object: THREE.Object3D,
+  articulations: Articulation[],
+  dims: DimsM
+): QualityReport['motion'] {
+  const rest = captureRestPose(object, articulations);
+  const max = new THREE.Vector3();
+  for (const phase of [0, 0.5, 1]) {
+    applyPhase(object, articulations, rest, phase);
+    object.updateMatrixWorld(true);
+    const size = new THREE.Box3().setFromObject(object, true).getSize(new THREE.Vector3());
+    max.max(size);
+  }
+  applyPhase(object, articulations, rest, 0);
+  object.updateMatrixWorld(true);
+  const withinDesignBox =
+    max.z <= dims.length * (1 + FIT_TOLERANCE * 2) &&
+    max.x <= dims.width * (1 + FIT_TOLERANCE * 2) &&
+    max.y <= dims.height * (1 + FIT_TOLERANCE * 2);
+  return {
+    maxSize: { length: max.z, width: max.x, height: max.y },
+    withinDesignBox,
   };
 }
 
