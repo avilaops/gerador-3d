@@ -14,6 +14,7 @@ import { generateEquipment, type GeneratedEquipment } from '../generate';
 import type { EquipmentSpec, EquipmentSpecInput } from '../spec/schema';
 import { applyPhase, captureRestPose, phaseAt, DEFAULT_CYCLE_SECONDS } from '../animation';
 import { Figure } from './figure';
+import { fitCameraDistance } from './camera';
 
 export type ViewerToggle = 'motion' | 'area' | 'human' | 'dims';
 
@@ -433,13 +434,7 @@ export class EquipmentViewer {
   }
 
   private framingDistance(eq: GeneratedEquipment): number {
-    const size = eq.bbox.getSize(new THREE.Vector3());
-    const center = eq.bbox.getCenter(new THREE.Vector3());
-    const target = new THREE.Vector3(...eq.camera.target);
-    const radius = size.length() / 2 + center.distanceTo(target);
-    const fov = THREE.MathUtils.degToRad(this.camera.fov);
-    const fit = (radius * 1.15) / Math.tan(fov / 2);
-    return Math.max(eq.camera.distanceM, fit);
+    return fitCameraDistance(eq.bbox, eq.camera.target, eq.camera.distanceM, this.camera.fov);
   }
 
   private buildOverlays(eq: GeneratedEquipment) {

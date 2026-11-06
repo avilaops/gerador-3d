@@ -8,6 +8,7 @@ import {
   HANDWRITTEN_SPECS,
   EquipmentSpecError,
   type EquipmentSpecInput,
+  fitCameraDistance,
 } from '../src';
 
 const TOL = 0.02;
@@ -133,6 +134,15 @@ it('preserva o enquadramento de câmera declarado no produto', () => {
   expect(eq.camera).toEqual(camera);
   expect(eq.object.userData.camera).toEqual(camera);
   eq.dispose();
+});
+
+it('calcula distância de câmera suficiente para caixas extremas', () => {
+  const bounds = new THREE.Box3(new THREE.Vector3(-2, 0, -0.4), new THREE.Vector3(2, 3, 0.4));
+  const centered = fitCameraDistance(bounds, [0, 1.5, 0], 1, 34);
+  const shifted = fitCameraDistance(bounds, [0, 8, 0], 1, 34);
+  expect(centered).toBeGreaterThan(5);
+  expect(shifted).toBeGreaterThan(centered);
+  expect(fitCameraDistance(bounds, [0, 1.5, 0], 20, 34)).toBe(20);
 });
 
 describe('spec mínimo (só dimensões e família)', () => {

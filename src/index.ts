@@ -25,6 +25,8 @@ export { buildLodVariants } from './lod';
 export type { LodVariant } from './lod';
 export { evaluateCalibration } from './calibration';
 export type { CalibrationReport } from './calibration';
+export { fitCameraDistance } from './viewer/camera';
+export type { CameraTarget } from './viewer/camera';
 export { exportGlb } from './export/glb';
 export { exportUsdz } from './export/usdz';
 export { planSvg } from './export/planSvg';
