@@ -206,7 +206,11 @@ export class EquipmentViewer {
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.08));
     const key = new THREE.DirectionalLight(0xffffff, 1.1);
     key.castShadow = true;
-    key.shadow.mapSize.set(2048, 2048);
+    const cores = typeof navigator === 'undefined' ? 8 : navigator.hardwareConcurrency || 8;
+    const narrowStage = this.stage.clientWidth > 0 && this.stage.clientWidth < 600;
+    const lowDpi = (globalThis.devicePixelRatio || 1) <= 1.5;
+    const shadowSize = cores <= 4 || (narrowStage && lowDpi) ? 1024 : 2048;
+    key.shadow.mapSize.set(shadowSize, shadowSize);
     key.shadow.radius = 4;
     key.shadow.bias = -0.0005;
     this.scene.add(key, key.target);
