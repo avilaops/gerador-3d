@@ -131,7 +131,8 @@ O `EquipmentViewer` usa a câmera do próprio produto para o enquadramento inici
 e calcula a distância pela caixa envolvente, campo de visão, proporção da tela e
 alvo configurado.
 `setView(azimuthDeg, elevationDeg, distanceFactor)` mantém essa escala e limita
-entradas inválidas ou fora do intervalo seguro. O plano `near/far` acompanha a
+entradas inválidas ou fora do intervalo seguro; `resetView()` restaura o
+enquadramento comercial do spec. O plano `near/far` acompanha a
 escala do equipamento, enquanto o renderizador trabalha sob demanda quando não
 há animação, auto-rotação ou interação. O mapa de sombras escolhe 1024 ou 2048
 pixels conforme a capacidade detectada do dispositivo. A aba oculta e viewers

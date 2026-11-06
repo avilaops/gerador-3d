@@ -364,6 +364,15 @@ export class EquipmentViewer {
     this.requestRender();
   }
 
+  /** Restaura o enquadramento comercial declarado no produto. */
+  resetView(): void {
+    if (!this.equipment || !this.controls) return;
+    this.controls.autoRotate = false;
+    this.hint.style.opacity = '0';
+    this.frame(this.equipment);
+    this.requestRender();
+  }
+
   dispose(): void {
     cancelAnimationFrame(this.raf);
     this.raf = 0;
