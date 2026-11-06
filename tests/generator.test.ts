@@ -143,6 +143,7 @@ it('calcula distância de câmera suficiente para caixas extremas', () => {
   expect(centered).toBeGreaterThan(5);
   expect(shifted).toBeGreaterThan(centered);
   expect(fitCameraDistance(bounds, [0, 1.5, 0], 20, 34)).toBe(20);
+  expect(fitCameraDistance(bounds, [0, 1.5, 0], 1, 34, 0.45)).toBeGreaterThan(centered);
 });
 
 describe('spec mínimo (só dimensões e família)', () => {

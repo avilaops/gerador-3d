@@ -128,7 +128,8 @@ determinísticas de caixa, piso, articulações e orçamento de triângulos. Iss
 gate de exportação, não uma aprovação visual automática.
 
 O `EquipmentViewer` usa a câmera do próprio produto para o enquadramento inicial
-e calcula a distância pela caixa envolvente, campo de visão e alvo configurado.
+e calcula a distância pela caixa envolvente, campo de visão, proporção da tela e
+alvo configurado.
 `setView(azimuthDeg, elevationDeg, distanceFactor)` mantém essa escala e limita
 entradas inválidas ou fora do intervalo seguro. O plano `near/far` acompanha a
 escala do equipamento, enquanto o renderizador trabalha sob demanda quando não

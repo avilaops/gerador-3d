@@ -434,7 +434,13 @@ export class EquipmentViewer {
   }
 
   private framingDistance(eq: GeneratedEquipment): number {
-    return fitCameraDistance(eq.bbox, eq.camera.target, eq.camera.distanceM, this.camera.fov);
+    return fitCameraDistance(
+      eq.bbox,
+      eq.camera.target,
+      eq.camera.distanceM,
+      this.camera.fov,
+      this.camera.aspect
+    );
   }
 
   private buildOverlays(eq: GeneratedEquipment) {
