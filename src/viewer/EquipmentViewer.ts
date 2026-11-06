@@ -393,13 +393,15 @@ export class EquipmentViewer {
 
   // ── interno ──────────────────────────────────────────────────────────
 
-  private showFallback() {
+  private showFallback(message = 'O 3D não carregou neste aparelho.') {
     this.canvas.hidden = true;
     this.hint.hidden = true;
     if (this.fallback) return;
     const f = this.element.ownerDocument.createElement('div');
     f.className = 'eqv-fallback';
-    f.textContent = 'O 3D não carregou neste aparelho.';
+    f.setAttribute('role', 'status');
+    f.setAttribute('aria-live', 'polite');
+    f.textContent = message;
     this.stage.append(f);
     this.fallback = f;
   }
@@ -408,7 +410,7 @@ export class EquipmentViewer {
     event.preventDefault();
     cancelAnimationFrame(this.raf);
     this.raf = 0;
-    this.showFallback();
+    this.showFallback('O 3D foi pausado temporariamente; tentando restaurar a visualização.');
   };
 
   private handleContextRestored = () => {
