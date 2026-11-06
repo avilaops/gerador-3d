@@ -197,7 +197,9 @@ export class EquipmentViewer {
     const r = this.renderer;
     this.canvas.addEventListener('webglcontextlost', this.handleContextLost);
     this.canvas.addEventListener('webglcontextrestored', this.handleContextRestored);
-    r.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, 2));
+    const cores = typeof navigator === 'undefined' ? 8 : navigator.hardwareConcurrency || 8;
+    const maxPixelRatio = cores <= 4 ? 1.5 : 2;
+    r.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, maxPixelRatio));
     r.shadowMap.enabled = true;
     r.shadowMap.type = THREE.PCFSoftShadowMap;
     r.outputEncoding = THREE.sRGBEncoding;
@@ -214,7 +216,6 @@ export class EquipmentViewer {
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.08));
     const key = new THREE.DirectionalLight(0xffffff, 1.1);
     key.castShadow = true;
-    const cores = typeof navigator === 'undefined' ? 8 : navigator.hardwareConcurrency || 8;
     const narrowStage = this.stage.clientWidth > 0 && this.stage.clientWidth < 600;
     const lowDpi = (globalThis.devicePixelRatio || 1) <= 1.5;
     const shadowSize = cores <= 4 || (narrowStage && lowDpi) ? 1024 : 2048;
