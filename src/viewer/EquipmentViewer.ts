@@ -323,9 +323,7 @@ export class EquipmentViewer {
     if (!this.equipment || !this.controls) return;
     this.controls.autoRotate = false;
     this.hint.style.opacity = '0';
-    const size = this.equipment.bbox.getSize(new THREE.Vector3());
-    const maxDim = Math.max(size.x, size.y, size.z);
-    const r = Math.max(this.equipment.camera.distanceM, maxDim * 1.15) * distanceFactor;
+    const r = this.framingDistance(this.equipment) * distanceFactor;
     const az = THREE.MathUtils.degToRad(azimuthDeg);
     const el = THREE.MathUtils.degToRad(elevationDeg);
     const t = this.controls.target;
@@ -394,7 +392,7 @@ export class EquipmentViewer {
     const target = new THREE.Vector3(...cameraSpec.target);
     const azimuth = THREE.MathUtils.degToRad(cameraSpec.azimuthDeg);
     const elevation = THREE.MathUtils.degToRad(cameraSpec.elevationDeg);
-    const distance = Math.max(cameraSpec.distanceM, maxDim * 1.15);
+    const distance = this.framingDistance(eq);
     if (this.controls) {
       this.controls.target.copy(target);
       this.controls.minDistance = Math.max(maxDim * 0.65, distance * 0.35);
@@ -422,6 +420,16 @@ export class EquipmentViewer {
       k.shadow.camera.updateProjectionMatrix();
     }
     this.controls?.update();
+  }
+
+  private framingDistance(eq: GeneratedEquipment): number {
+    const size = eq.bbox.getSize(new THREE.Vector3());
+    const center = eq.bbox.getCenter(new THREE.Vector3());
+    const target = new THREE.Vector3(...eq.camera.target);
+    const radius = size.length() / 2 + center.distanceTo(target);
+    const fov = THREE.MathUtils.degToRad(this.camera.fov);
+    const fit = (radius * 1.15) / Math.tan(fov / 2);
+    return Math.max(eq.camera.distanceM, fit);
   }
 
   private buildOverlays(eq: GeneratedEquipment) {
