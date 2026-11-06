@@ -102,6 +102,8 @@ export const EquipmentSpecSchema = z.object({
       frame: HexColorSchema.optional(),
       upholstery: HexColorSchema.optional(),
       accent: HexColorSchema.optional(),
+      /** Cor das anilhas, plataformas e suportes de carga. */
+      plate: HexColorSchema.optional(),
     })
     .optional(),
   articulations: z.array(ArticulationOverrideSchema).optional(),

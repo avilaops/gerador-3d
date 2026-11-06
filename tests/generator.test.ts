@@ -106,6 +106,22 @@ describe.each(HANDWRITTEN_SPECS.map((s) => [s.id, s] as const))(
   }
 );
 
+it('aplica a cor independente do anilheiro sem alterar a estrutura', () => {
+  const eq = generateEquipment({
+    ...HANDWRITTEN_SPECS[0],
+    materials: { frame: '#111111', plate: '#e5c92c' },
+  });
+  const colors = new Map<string, string>();
+  eq.object.traverse((node) => {
+    const mesh = node as THREE.Mesh;
+    const material = mesh.material as THREE.MeshStandardMaterial | undefined;
+    if (material?.name) colors.set(material.name, `#${material.color.getHexString()}`);
+  });
+  expect(colors.get('frame')).toBe('#111111');
+  expect(colors.get('plate')).toBe('#e5c92c');
+  eq.dispose();
+});
+
 describe('spec mínimo (só dimensões e família)', () => {
   const minimal = (
     family: EquipmentSpecInput['family'],

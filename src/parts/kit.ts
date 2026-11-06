@@ -18,12 +18,14 @@ export interface MaterialColors {
   frame?: string;
   upholstery?: string;
   accent?: string;
+  plate?: string;
 }
 
 export const DEFAULT_COLORS: Required<MaterialColors> = {
   frame: '#1d1d1d',
   upholstery: '#121212',
   accent: '#96764a',
+  plate: '#2b2c2e',
 };
 
 /** Segmentos radiais dos cilindros: suficiente para cromados de Ø ≤ 10 cm em tela de celular. */
@@ -45,7 +47,7 @@ export class PartKit {
       frame: std('frame', c.frame, 0.5, 0.4),
       upholstery: std('upholstery', c.upholstery, 0.78, 0.05),
       accent: std('accent', c.accent, 0.4, 0.45),
-      plate: std('plate', 0x2b2c2e, 0.35, 0.7),
+      plate: std('plate', c.plate, 0.35, 0.7),
       chrome: std('chrome', 0xd9d9d9, 0.2, 0.95),
       rubber: std('rubber', 0x101010, 0.9, 0),
       cable: std('cable', 0x3a3a3a, 0.5, 0.6),

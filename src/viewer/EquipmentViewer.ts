@@ -37,7 +37,7 @@ export interface EquipmentViewerOptions {
   palette?: Partial<Record<ColorRole, { label: string; options: readonly (readonly [string, string])[] }>>;
 }
 
-export type ColorRole = 'frame' | 'accent' | 'upholstery';
+export type ColorRole = 'frame' | 'accent' | 'plate' | 'upholstery';
 
 const LABELS: Record<ViewerToggle, string> = {
   motion: 'Movimento',
@@ -151,7 +151,7 @@ export class EquipmentViewer {
       });
       this.element.append(tools);
     }
-    for (const role of ['frame', 'accent', 'upholstery'] as ColorRole[]) {
+    for (const role of ['frame', 'accent', 'plate', 'upholstery'] as ColorRole[]) {
       const group = opts.palette?.[role];
       if (!group?.options.length) continue;
       const row = doc.createElement('div');
