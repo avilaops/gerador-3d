@@ -106,6 +106,8 @@ export class EquipmentViewer {
   private readonly overlayDisposables: Array<{ dispose(): void }> = [];
   private readonly colorRows: HTMLElement[] = [];
   private visibilityDocument: Document | null = null;
+  private intersectionObserver: IntersectionObserver | null = null;
+  private inViewport = true;
   /** Pessoa posada no equipamento (quando a família marca onde ela fica). */
   private figure: Figure | null = null;
   private readonly colors: Partial<Record<ColorRole, string>> = {};
@@ -249,6 +251,18 @@ export class EquipmentViewer {
     this.ro = new ResizeObserver(() => this.resize());
     this.ro.observe(this.stage);
     doc.addEventListener('visibilitychange', this.handleVisibilityChange);
+    if (typeof IntersectionObserver !== 'undefined') {
+      this.intersectionObserver = new IntersectionObserver(([entry]) => {
+        this.inViewport = entry?.isIntersecting ?? true;
+        if (!this.inViewport) {
+          cancelAnimationFrame(this.raf);
+          this.raf = 0;
+        } else {
+          this.requestRender();
+        }
+      });
+      this.intersectionObserver.observe(this.stage);
+    }
     this.resize();
     this.requestRender();
   }
@@ -355,6 +369,8 @@ export class EquipmentViewer {
     this.raf = 0;
     this.visibilityDocument?.removeEventListener('visibilitychange', this.handleVisibilityChange);
     this.visibilityDocument = null;
+    this.intersectionObserver?.disconnect();
+    this.intersectionObserver = null;
     this.canvas.removeEventListener('webglcontextlost', this.handleContextLost);
     this.canvas.removeEventListener('webglcontextrestored', this.handleContextRestored);
     this.ro?.disconnect();
@@ -645,7 +661,7 @@ export class EquipmentViewer {
   }
 
   private requestRender() {
-    if (!this.renderer || this.raf || this.visibilityDocument?.hidden) return;
+    if (!this.renderer || this.raf || !this.inViewport || this.visibilityDocument?.hidden) return;
     this.raf = requestAnimationFrame(this.loop);
   }
 
