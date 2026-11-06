@@ -376,14 +376,23 @@ export class EquipmentViewer {
   private frame(eq: GeneratedEquipment) {
     const size = eq.bbox.getSize(new THREE.Vector3());
     const maxDim = Math.max(size.x, size.y, size.z);
-    const target = new THREE.Vector3(0, size.y * 0.46, 0);
+    const cameraSpec = eq.camera;
+    const target = new THREE.Vector3(...cameraSpec.target);
+    const azimuth = THREE.MathUtils.degToRad(cameraSpec.azimuthDeg);
+    const elevation = THREE.MathUtils.degToRad(cameraSpec.elevationDeg);
+    const distance = Math.max(cameraSpec.distanceM, maxDim * 1.15);
     if (this.controls) {
       this.controls.target.copy(target);
-      this.controls.minDistance = maxDim * 0.9;
-      this.controls.maxDistance = maxDim * 3.8;
+      this.controls.minDistance = Math.max(maxDim * 0.65, distance * 0.35);
+      this.controls.maxDistance = Math.max(maxDim * 3.8, distance * 2.2);
     }
-    const dir = new THREE.Vector3(2.7, 0.9, 3.1).normalize();
-    this.camera.position.copy(target).addScaledVector(dir, maxDim * 2.05);
+    const horizontal = Math.cos(elevation);
+    const dir = new THREE.Vector3(
+      Math.sin(azimuth) * horizontal,
+      Math.sin(elevation),
+      Math.cos(azimuth) * horizontal,
+    );
+    this.camera.position.copy(target).addScaledVector(dir, distance);
     if (this.keyLight) {
       const k = this.keyLight;
       const ext = maxDim * 1.3;
