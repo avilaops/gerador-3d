@@ -127,6 +127,14 @@ Cada `EquipmentSpec` pode declarar `camera`, `calibration` (landmarks da foto) e
 determinísticas de caixa, piso, articulações e orçamento de triângulos. Isso é um
 gate de exportação, não uma aprovação visual automática.
 
+O `EquipmentViewer` usa a câmera do próprio produto para o enquadramento inicial
+e calcula a distância pela caixa envolvente, campo de visão e alvo configurado.
+`setView(azimuthDeg, elevationDeg, distanceFactor)` mantém essa escala e limita
+entradas inválidas ou fora do intervalo seguro. O plano `near/far` acompanha a
+escala do equipamento, enquanto o renderizador trabalha sob demanda quando não
+há animação, auto-rotação ou interação. O mapa de sombras escolhe 1024 ou 2048
+pixels conforme a capacidade detectada do dispositivo.
+
 ## Ludus Core
 
 Os primeiros seeds nacionais ficam em `catalogs/ludus-core/specs`. O catálogo
