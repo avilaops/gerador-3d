@@ -337,7 +337,7 @@ export class EquipmentViewer {
   renderNow(): void {
     if (this.state.human) this.figure?.update();
     this.controls?.update();
-    this.renderer?.render(this.scene, this.camera);
+    this.renderFrame();
   }
 
   /** Posiciona a câmera por ângulos (graus), mantendo o enquadramento automático. */
@@ -420,6 +420,17 @@ export class EquipmentViewer {
     this.hint.hidden = false;
     this.requestRender();
   };
+
+  private renderFrame() {
+    if (!this.renderer || this.fallback) return;
+    try {
+      this.renderer.render(this.scene, this.camera);
+    } catch {
+      cancelAnimationFrame(this.raf);
+      this.raf = 0;
+      this.showFallback('O 3D encontrou um erro temporário; tentando restaurar a visualização.');
+    }
+  }
 
   private clearEquipment() {
     if (!this.equipment) return;
@@ -705,7 +716,7 @@ export class EquipmentViewer {
       this.figure?.update();
     }
     if (this.controls) changed = this.controls.update() || changed;
-    this.renderer?.render(this.scene, this.camera);
+    this.renderFrame();
     if (changed || this.state.motion || this.controls?.autoRotate) this.requestRender();
   };
 }
