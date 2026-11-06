@@ -323,9 +323,16 @@ export class EquipmentViewer {
     if (!this.equipment || !this.controls) return;
     this.controls.autoRotate = false;
     this.hint.style.opacity = '0';
-    const r = this.framingDistance(this.equipment) * distanceFactor;
-    const az = THREE.MathUtils.degToRad(azimuthDeg);
-    const el = THREE.MathUtils.degToRad(elevationDeg);
+    const azimuth = Number.isFinite(azimuthDeg) ? azimuthDeg : this.equipment.camera.azimuthDeg;
+    const elevation = Number.isFinite(elevationDeg)
+      ? THREE.MathUtils.clamp(elevationDeg, -89, 89)
+      : this.equipment.camera.elevationDeg;
+    const factor = Number.isFinite(distanceFactor)
+      ? THREE.MathUtils.clamp(distanceFactor, 0.25, 4)
+      : 1;
+    const r = this.framingDistance(this.equipment) * factor;
+    const az = THREE.MathUtils.degToRad(azimuth);
+    const el = THREE.MathUtils.degToRad(elevation);
     const t = this.controls.target;
     this.camera.position.set(
       t.x + r * Math.cos(el) * Math.sin(az),
