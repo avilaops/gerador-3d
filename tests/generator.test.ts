@@ -122,6 +122,19 @@ it('aplica a cor independente do anilheiro sem alterar a estrutura', () => {
   eq.dispose();
 });
 
+it('preserva o enquadramento de câmera declarado no produto', () => {
+  const camera = {
+    azimuthDeg: 118,
+    elevationDeg: 24,
+    distanceM: 4.6,
+    target: [0.12, 0.92, -0.08] as [number, number, number],
+  };
+  const eq = generateEquipment({ ...HANDWRITTEN_SPECS[0], camera });
+  expect(eq.camera).toEqual(camera);
+  expect(eq.object.userData.camera).toEqual(camera);
+  eq.dispose();
+});
+
 describe('spec mínimo (só dimensões e família)', () => {
   const minimal = (
     family: EquipmentSpecInput['family'],

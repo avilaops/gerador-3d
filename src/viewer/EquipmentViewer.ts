@@ -314,7 +314,8 @@ export class EquipmentViewer {
     this.controls.autoRotate = false;
     this.hint.style.opacity = '0';
     const size = this.equipment.bbox.getSize(new THREE.Vector3());
-    const r = Math.max(size.x, size.y, size.z) * 2.05 * distanceFactor;
+    const maxDim = Math.max(size.x, size.y, size.z);
+    const r = Math.max(this.equipment.camera.distanceM, maxDim * 1.15) * distanceFactor;
     const az = THREE.MathUtils.degToRad(azimuthDeg);
     const el = THREE.MathUtils.degToRad(elevationDeg);
     const t = this.controls.target;
@@ -358,6 +359,7 @@ export class EquipmentViewer {
       }
       this.overlays = null;
     }
+    this.figure = null;
     if (this.ownsEquipment) this.equipment.dispose();
     this.equipment = null;
   }
