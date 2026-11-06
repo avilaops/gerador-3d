@@ -10,6 +10,9 @@
     ".": "./src/index.ts",
     "./viewer": "./src/viewer/EquipmentViewer.ts",
     "./viewer/react": "./src/viewer/EquipmentViewerView.tsx",
+    "./thermal-box": "./src/thermal-box/ThermalBoxViewer.ts",
+    "./thermal-box/react": "./src/thermal-box/ThermalBoxViewerView.tsx",
+    "./thermal-box/schema": "./src/thermal-box/schema.ts",
     "./catalogs/*": "./catalogs/*",
     "./package.json": "./package.json"
   },
