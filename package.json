@@ -32,6 +32,7 @@
     "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"
   },
   "dependencies": {
+    "@types/three": "0.149.0",
     "three": "0.149.0",
     "zod": "^4.4.3"
   },
