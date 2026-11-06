@@ -4,7 +4,21 @@ import { join, resolve } from 'node:path';
 const catalog = process.argv[2] ?? 'ludus-core';
 const root = resolve('catalogs', catalog);
 const specs = readdirSync(join(root, 'specs')).filter((file) => file.endsWith('.json'));
-const manifest = JSON.parse(readFileSync(join(root, 'manifest.json'), 'utf8')) as { count: number; failed: number; items: { id: string; ok: boolean }[] };
+const manifest = JSON.parse(readFileSync(join(root, 'manifest.json'), 'utf8')) as {
+  count: number;
+  failed: number;
+  items: {
+    id: string;
+    ok: boolean;
+    quality?: {
+      valid?: boolean;
+      dimensionsWithinTolerance?: boolean;
+      articulationNodesValid?: boolean;
+      motionWithinDesignBox?: boolean;
+      motionCollisionFree?: boolean;
+    };
+  }[];
+};
 const required = ['model.glb', 'model.usdz', 'plan.svg', 'footprint.json', 'spec.json', 'thumb.png'];
 const missing: string[] = [];
 for (const file of specs) {
@@ -16,6 +30,21 @@ for (const file of specs) {
 }
 if (manifest.count !== specs.length || manifest.failed !== 0 || manifest.items.filter((item) => item.ok).length !== specs.length) {
   missing.push(`manifest count=${manifest.count} failed=${manifest.failed} specs=${specs.length}`);
+}
+for (const item of manifest.items) {
+  const quality = item.quality;
+  if (!quality) {
+    missing.push(`${item.id}/quality ausente`);
+    continue;
+  }
+  const failedQuality = [
+    ['valid', quality.valid],
+    ['dimensionsWithinTolerance', quality.dimensionsWithinTolerance],
+    ['articulationNodesValid', quality.articulationNodesValid],
+    ['motionWithinDesignBox', quality.motionWithinDesignBox],
+    ['motionCollisionFree', quality.motionCollisionFree],
+  ].filter(([, value]) => value !== true).map(([name]) => name);
+  if (failedQuality.length) missing.push(`${item.id}/quality: ${failedQuality.join(', ')}`);
 }
 if (missing.length) {
   console.error(`Galeria inválida (${catalog}):\n${missing.join('\n')}`);

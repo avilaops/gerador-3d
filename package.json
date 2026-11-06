@@ -25,6 +25,7 @@
     "export": "vite-node scripts/export.ts --",
     "thumbs": "vite-node scripts/thumbnails.ts --",
     "validate:gallery": "vite-node scripts/validate-gallery.ts",
+    "validate:core": "npm run specs:core && npm run export -- --catalog ludus-core && npm run validate:gallery -- ludus-core",
     "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"
   },
   "dependencies": {
