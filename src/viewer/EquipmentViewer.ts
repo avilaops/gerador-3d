@@ -231,13 +231,15 @@ export class EquipmentViewer {
     c.addEventListener('start', () => {
       c.autoRotate = false;
       this.hint.style.opacity = '0';
+      this.requestRender();
     });
+    c.addEventListener('change', () => this.requestRender());
     this.controls = c;
 
     this.ro = new ResizeObserver(() => this.resize());
     this.ro.observe(this.stage);
     this.resize();
-    this.loop();
+    this.requestRender();
   }
 
   /** Mostra um equipamento. Aceita spec (gera aqui) ou modelo já gerado (o chamador continua dono dele). */
@@ -267,6 +269,7 @@ export class EquipmentViewer {
     this.buildOverlays(eq);
     this.frame(eq);
     this.applyState();
+    this.requestRender();
     return eq;
   }
 
@@ -277,6 +280,7 @@ export class EquipmentViewer {
       const mat = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
       if (mat && mat.name === role) mat.color.set(hex);
     });
+    this.requestRender();
   }
 
   get current(): GeneratedEquipment | null {
@@ -288,6 +292,7 @@ export class EquipmentViewer {
     const b = this.buttons.get(toggle);
     if (b) b.setAttribute('aria-pressed', String(value));
     this.applyState();
+    this.requestRender();
   }
 
   get(toggle: ViewerToggle): boolean {
@@ -299,6 +304,7 @@ export class EquipmentViewer {
     this.set('motion', false);
     if (this.equipment)
       applyPhase(this.equipment.object, this.equipment.articulations, this.rest, phase);
+    this.requestRender();
   }
 
   /** Renderiza um quadro agora (para prints/miniaturas). */
@@ -325,10 +331,12 @@ export class EquipmentViewer {
       t.z + r * Math.cos(el) * Math.cos(az)
     );
     this.controls.update();
+    this.requestRender();
   }
 
   dispose(): void {
     cancelAnimationFrame(this.raf);
+    this.raf = 0;
     this.ro?.disconnect();
     this.clearEquipment();
     this.controls?.dispose();
@@ -575,11 +583,18 @@ export class EquipmentViewer {
     this.renderer.setSize(w, h, false);
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
+    this.requestRender();
+  }
+
+  private requestRender() {
+    if (!this.renderer || this.raf) return;
+    this.raf = requestAnimationFrame(this.loop);
   }
 
   private loop = () => {
-    this.raf = requestAnimationFrame(this.loop);
+    this.raf = 0;
     const dt = Math.min(this.clock.getDelta(), 0.05);
+    let changed = false;
     if (this.equipment && this.state.motion) {
       this.time += dt;
       applyPhase(
@@ -588,10 +603,14 @@ export class EquipmentViewer {
         this.rest,
         phaseAt(this.time / DEFAULT_CYCLE_SECONDS)
       );
+      changed = true;
     }
-    if (this.state.human) this.figure?.update();
-    this.controls?.update();
+    if (this.state.human) {
+      this.figure?.update();
+    }
+    if (this.controls) changed = this.controls.update() || changed;
     this.renderer?.render(this.scene, this.camera);
+    if (changed || this.state.motion || this.controls?.autoRotate) this.requestRender();
   };
 }
 
