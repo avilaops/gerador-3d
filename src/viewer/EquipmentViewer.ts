@@ -86,6 +86,7 @@ export class EquipmentViewer {
   private readonly stage: HTMLElement;
   private readonly canvas: HTMLCanvasElement;
   private readonly hint: HTMLElement;
+  private fallback: HTMLElement | null = null;
   private renderer: THREE.WebGLRenderer | null = null;
   private readonly scene = new THREE.Scene();
   private readonly camera = new THREE.PerspectiveCamera(34, 1, 0.05, 60);
@@ -192,6 +193,8 @@ export class EquipmentViewer {
       return;
     }
     const r = this.renderer;
+    this.canvas.addEventListener('webglcontextlost', this.handleContextLost);
+    this.canvas.addEventListener('webglcontextrestored', this.handleContextRestored);
     r.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, 2));
     r.shadowMap.enabled = true;
     r.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -352,6 +355,8 @@ export class EquipmentViewer {
     this.raf = 0;
     this.visibilityDocument?.removeEventListener('visibilitychange', this.handleVisibilityChange);
     this.visibilityDocument = null;
+    this.canvas.removeEventListener('webglcontextlost', this.handleContextLost);
+    this.canvas.removeEventListener('webglcontextrestored', this.handleContextRestored);
     this.ro?.disconnect();
     this.clearEquipment();
     this.controls?.dispose();
@@ -365,11 +370,28 @@ export class EquipmentViewer {
   private showFallback() {
     this.canvas.hidden = true;
     this.hint.hidden = true;
+    if (this.fallback) return;
     const f = this.element.ownerDocument.createElement('div');
     f.className = 'eqv-fallback';
     f.textContent = 'O 3D não carregou neste aparelho.';
     this.stage.append(f);
+    this.fallback = f;
   }
+
+  private handleContextLost = (event: Event) => {
+    event.preventDefault();
+    cancelAnimationFrame(this.raf);
+    this.raf = 0;
+    this.showFallback();
+  };
+
+  private handleContextRestored = () => {
+    this.fallback?.remove();
+    this.fallback = null;
+    this.canvas.hidden = false;
+    this.hint.hidden = false;
+    this.requestRender();
+  };
 
   private clearEquipment() {
     if (!this.equipment) return;
