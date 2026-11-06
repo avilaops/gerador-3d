@@ -603,9 +603,17 @@ export class EquipmentViewer {
     const w = this.stage.clientWidth;
     const h = this.stage.clientHeight;
     if (!w || !h) return;
+    const previousAspect = this.camera.aspect;
     this.renderer.setSize(w, h, false);
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
+    if (
+      this.equipment &&
+      this.controls?.autoRotate &&
+      Math.abs(this.camera.aspect - previousAspect) > 0.08
+    ) {
+      this.frame(this.equipment);
+    }
     this.requestRender();
   }
 
