@@ -134,7 +134,9 @@ alvo configurado.
 entradas inválidas ou fora do intervalo seguro. O plano `near/far` acompanha a
 escala do equipamento, enquanto o renderizador trabalha sob demanda quando não
 há animação, auto-rotação ou interação. O mapa de sombras escolhe 1024 ou 2048
-pixels conforme a capacidade detectada do dispositivo.
+pixels conforme a capacidade detectada do dispositivo. A aba oculta e viewers
+fora da viewport também são pausados; se o contexto WebGL for perdido, o viewer
+mostra fallback e retoma automaticamente quando o navegador o restaura.
 
 ## Ludus Core
 
