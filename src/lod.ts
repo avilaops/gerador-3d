@@ -31,14 +31,23 @@ export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { med
       const relativeRatio = Math.min(1, ratio / previousRatio);
       object.traverse((node) => {
         const mesh = node as THREE.Mesh;
-        if (!mesh.isMesh || !mesh.geometry.getAttribute('position')) return;
+        // SimplifyModifier requires an indexed manifold mesh. Generated
+        // decals, cables and some thin primitives are intentionally
+        // non-indexed; leaving those pieces intact is safer than emitting a
+        // broken or noisy simplification result.
+        if (!mesh.isMesh || !mesh.geometry.index || !mesh.geometry.getAttribute('position')) return;
         // Object3D.clone compartilha geometrias; clonar antes de simplificar
         // impede que o LOD altere o modelo original ou outra variante.
         const sourceGeometry = mesh.geometry;
         const sourceVertices = sourceGeometry.getAttribute('position').count;
         const targetVertices = Math.max(12, Math.floor(sourceVertices * relativeRatio));
         if (targetVertices >= sourceVertices) return;
-        mesh.geometry = modifier.modify(sourceGeometry, targetVertices);
+        try {
+          mesh.geometry = modifier.modify(sourceGeometry, targetVertices);
+        } catch {
+          // A disconnected/degenerate primitive keeps its source geometry.
+          // The LOD remains valid and the visual silhouette is preserved.
+        }
       });
     }
     const triangles = countTriangles(object);
