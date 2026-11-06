@@ -400,6 +400,9 @@ export class EquipmentViewer {
     const azimuth = THREE.MathUtils.degToRad(cameraSpec.azimuthDeg);
     const elevation = THREE.MathUtils.degToRad(cameraSpec.elevationDeg);
     const distance = this.framingDistance(eq);
+    this.camera.near = Math.max(0.01, distance * 0.01);
+    this.camera.far = Math.max(60, distance * 6);
+    this.camera.updateProjectionMatrix();
     if (this.controls) {
       this.controls.target.copy(target);
       this.controls.minDistance = Math.max(maxDim * 0.65, distance * 0.35);
