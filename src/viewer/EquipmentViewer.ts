@@ -104,12 +104,14 @@ export class EquipmentViewer {
   private overlays: { area: THREE.Group; human: THREE.Group; dims: THREE.Group } | null = null;
   private readonly overlayDisposables: Array<{ dispose(): void }> = [];
   private readonly colorRows: HTMLElement[] = [];
+  private visibilityDocument: Document | null = null;
   /** Pessoa posada no equipamento (quando a família marca onde ela fica). */
   private figure: Figure | null = null;
   private readonly colors: Partial<Record<ColorRole, string>> = {};
 
   constructor(container: HTMLElement, opts: EquipmentViewerOptions = {}) {
     const doc = container.ownerDocument;
+    this.visibilityDocument = doc;
     ensureStyle(doc);
     const reduce =
       typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -243,6 +245,7 @@ export class EquipmentViewer {
 
     this.ro = new ResizeObserver(() => this.resize());
     this.ro.observe(this.stage);
+    doc.addEventListener('visibilitychange', this.handleVisibilityChange);
     this.resize();
     this.requestRender();
   }
@@ -347,6 +350,8 @@ export class EquipmentViewer {
   dispose(): void {
     cancelAnimationFrame(this.raf);
     this.raf = 0;
+    this.visibilityDocument?.removeEventListener('visibilitychange', this.handleVisibilityChange);
+    this.visibilityDocument = null;
     this.ro?.disconnect();
     this.clearEquipment();
     this.controls?.dispose();
@@ -618,9 +623,19 @@ export class EquipmentViewer {
   }
 
   private requestRender() {
-    if (!this.renderer || this.raf) return;
+    if (!this.renderer || this.raf || this.visibilityDocument?.hidden) return;
     this.raf = requestAnimationFrame(this.loop);
   }
+
+  private handleVisibilityChange = () => {
+    if (this.visibilityDocument?.hidden) {
+      cancelAnimationFrame(this.raf);
+      this.raf = 0;
+      return;
+    }
+    this.clock.getDelta();
+    this.requestRender();
+  };
 
   private loop = () => {
     this.raf = 0;
