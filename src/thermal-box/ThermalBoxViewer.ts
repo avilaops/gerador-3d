@@ -65,6 +65,17 @@ export class ThermalBoxViewer {
   private readonly disposables: THREE.Object3D[] = [];
   private resizeObserver: ResizeObserver | null = null;
   private fallback: HTMLDivElement | null = null;
+  private readonly contextLostHandler = (event: Event) => {
+    event.preventDefault();
+    this.showFallback('A visualização 3D foi pausada pelo dispositivo. A ficha e o formulário continuam funcionando.');
+  };
+  private readonly contextRestoredHandler = () => {
+    if (!this.fallback) return;
+    this.fallback.remove();
+    this.fallback = null;
+    this.canvas.hidden = false;
+    this.requestRender();
+  };
   private raf = 0;
   private model: THREE.Group | null = null;
 
@@ -98,6 +109,8 @@ export class ThermalBoxViewer {
       return;
     }
     this.renderer = renderer;
+    this.canvas.addEventListener('webglcontextlost', this.contextLostHandler);
+    this.canvas.addEventListener('webglcontextrestored', this.contextRestoredHandler);
     renderer.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, 2));
     renderer.outputEncoding = THREE.sRGBEncoding;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -193,6 +206,8 @@ export class ThermalBoxViewer {
     cancelAnimationFrame(this.raf);
     this.resizeObserver?.disconnect();
     this.controls.dispose();
+    this.canvas.removeEventListener('webglcontextlost', this.contextLostHandler);
+    this.canvas.removeEventListener('webglcontextrestored', this.contextRestoredHandler);
     if (this.model) disposeTree(this.model);
     this.disposables.forEach(disposeTree);
     this.renderer?.dispose();
@@ -200,6 +215,10 @@ export class ThermalBoxViewer {
   }
 
   private showFallback(message: string) {
+    if (this.fallback) {
+      this.fallback.textContent = message;
+      return;
+    }
     this.canvas.hidden = true;
     this.fallback = this.element.ownerDocument.createElement('div');
     this.fallback.className = 'tbv-fallback';
