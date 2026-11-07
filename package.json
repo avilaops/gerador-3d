@@ -10,6 +10,9 @@
     ".": "./src/index.ts",
     "./viewer": "./src/viewer/EquipmentViewer.ts",
     "./viewer/react": "./src/viewer/EquipmentViewerView.tsx",
+    "./thermal-box": "./src/thermal-box/ThermalBoxViewer.ts",
+    "./thermal-box/react": "./src/thermal-box/ThermalBoxViewerView.tsx",
+    "./thermal-box/schema": "./src/thermal-box/schema.ts",
     "./catalogs/*": "./catalogs/*",
     "./package.json": "./package.json"
   },
@@ -29,6 +32,7 @@
     "catalog": "npm run specs && npm run export -- --catalog ludus && npm run thumbs -- --catalog ludus"
   },
   "dependencies": {
+    "@types/three": "0.149.0",
     "three": "0.149.0",
     "zod": "^4.4.3"
   },
