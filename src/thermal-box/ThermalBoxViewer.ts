@@ -45,7 +45,10 @@ function disposeTree(root: THREE.Object3D) {
     const mesh = node as THREE.Mesh;
     if (mesh.geometry) mesh.geometry.dispose();
     const materials = Array.isArray(mesh.material) ? mesh.material : mesh.material ? [mesh.material] : [];
-    materials.forEach((material) => material.dispose());
+    materials.forEach((material) => {
+      if (material instanceof THREE.MeshBasicMaterial) material.map?.dispose();
+      material.dispose();
+    });
   });
 }
 
@@ -167,6 +170,20 @@ export class ThermalBoxViewer {
     }
     this.model = buildThermalBoxModel(config);
     this.scene.add(this.model);
+    const model = this.model;
+    const logo = model.getObjectByName('thermal_box_front_logo');
+    if (config.frontLogo && logo instanceof THREE.Mesh && this.renderer) {
+      const material = logo.material as THREE.MeshBasicMaterial;
+      material.map = new THREE.TextureLoader().load(config.frontLogo, (texture) => {
+        if (this.model !== model) return;
+        const ratio = texture.image.width / texture.image.height;
+        const fit = Math.min(logo.scale.x / ratio, logo.scale.y);
+        logo.scale.set(fit * ratio, fit, 1);
+        logo.visible = true;
+        this.requestRender();
+      });
+      material.map.encoding = THREE.sRGBEncoding;
+    }
     const bounds = new THREE.Box3().setFromObject(this.model);
     const size = bounds.getSize(new THREE.Vector3());
     const center = bounds.getCenter(new THREE.Vector3());
@@ -209,6 +226,7 @@ export class ThermalBoxViewer {
     this.canvas.removeEventListener('webglcontextlost', this.contextLostHandler);
     this.canvas.removeEventListener('webglcontextrestored', this.contextRestoredHandler);
     if (this.model) disposeTree(this.model);
+    this.model = null;
     this.disposables.forEach(disposeTree);
     this.renderer?.dispose();
     this.element.remove();
@@ -254,6 +272,7 @@ export function buildThermalBoxModel(config: ReturnType<typeof ThermalBoxVisualS
   const height = config.dimensionsCm.height / 100;
   const depth = config.dimensionsCm.depth / 100;
   const material = materialStyle(config.material, config.finish);
+  if (config.exteriorColor) material.color.set(config.exteriorColor);
   const inner = new THREE.MeshStandardMaterial({ color: 0x9aa7b2, roughness: 0.7, metalness: 0.15, side: THREE.DoubleSide });
   const dark = new THREE.MeshStandardMaterial({ color: 0x26323d, roughness: 0.72, metalness: 0.05 });
   const body = new THREE.Mesh(new RoundedBoxGeometry(width, height, depth, 5, Math.min(width, height, depth) * 0.04), material);
@@ -273,6 +292,18 @@ export function buildThermalBoxModel(config: ReturnType<typeof ThermalBoxVisualS
     door.position.set(0, height * 0.5, depth / 2 + lidThickness * 0.55);
     door.castShadow = true;
     group.add(door);
+  }
+
+  if (config.frontLogo) {
+    const logo = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshBasicMaterial({
+      transparent: true, depthWrite: false, toneMapped: false,
+    }));
+    logo.name = 'thermal_box_front_logo';
+    logo.scale.set(width * 0.58, height * 0.55, 1);
+    logo.position.set(0, config.lid === 'frontal' ? height / 2 : body.position.y,
+      depth / 2 + (config.lid === 'frontal' ? lidThickness * 1.05 : 0) + 0.001);
+    logo.visible = false;
+    group.add(logo);
   }
 
   for (let index = 0; index < config.dividers; index += 1) {

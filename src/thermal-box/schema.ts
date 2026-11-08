@@ -17,6 +17,8 @@ export const ThermalBoxVisualSchema = z.object({
   lid: z.enum(['superior', 'frontal', 'dupla']),
   mobility: z.enum(['pes', 'rodizios', 'sem_base']),
   dividers: z.number().int().min(0).max(10),
+  exteriorColor: z.string().regex(/^#[0-9a-f]{6}$/i).optional(),
+  frontLogo: z.string().regex(/^data:image\/(webp|png);base64,/).optional(),
 });
 
 export type ThermalBoxVisualInput = z.input<typeof ThermalBoxVisualSchema>;
