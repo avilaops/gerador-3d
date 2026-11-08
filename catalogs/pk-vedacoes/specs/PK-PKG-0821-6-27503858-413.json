@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0821-6-27503858-413",
+  "name": "Gaxeta PU - Tipo B 98 × 112 × 10,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 112.0,
+    "width": 112.0,
+    "height": 10.5
+  },
+  "params": {
+    "innerDiameter": 0.098,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 98.0,
+    "deMm": 112.0,
+    "heightMm": 10.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0821-6-27503858-413",
+    "sourceSlug": "pkg-0821-6-27503858-413",
+    "sourceStatus": "published_catalog_text"
+  }
+}

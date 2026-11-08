@@ -31,6 +31,8 @@ export interface EquipmentViewerOptions {
   initial?: Partial<Record<ViewerToggle, boolean>>;
   /** Necessário para prints/miniaturas (lê o canvas depois do render). */
   preserveDrawingBuffer?: boolean;
+  /** Perfil visual. `high` é usado para miniaturas e renderizações comerciais. */
+  renderQuality?: 'interactive' | 'high';
   /**
    * Opções de cor que o visitante pode trocar no modelo: uma linha de amostras por
    * papel do material (estrutura, braços, estofado). Cada opção é [nome, #rrggbb].
@@ -185,9 +187,15 @@ export class EquipmentViewer {
     container.append(this.element);
 
     try {
+      const highQuality = opts.renderQuality === 'high';
       this.renderer = new THREE.WebGLRenderer({
         canvas: this.canvas,
         antialias: true,
+        alpha: false,
+        depth: true,
+        stencil: false,
+        powerPreference: 'high-performance',
+        precision: highQuality ? 'highp' : 'mediump',
         preserveDrawingBuffer: opts.preserveDrawingBuffer ?? false,
       });
     } catch {
@@ -198,13 +206,13 @@ export class EquipmentViewer {
     this.canvas.addEventListener('webglcontextlost', this.handleContextLost);
     this.canvas.addEventListener('webglcontextrestored', this.handleContextRestored);
     const cores = typeof navigator === 'undefined' ? 8 : navigator.hardwareConcurrency || 8;
-    const maxPixelRatio = cores <= 4 ? 1.5 : 2;
+    const maxPixelRatio = opts.renderQuality === 'high' ? 2.5 : cores <= 4 ? 1.5 : 2;
     r.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, maxPixelRatio));
     r.shadowMap.enabled = true;
     r.shadowMap.type = THREE.PCFSoftShadowMap;
     r.outputEncoding = THREE.sRGBEncoding;
     r.toneMapping = THREE.ACESFilmicToneMapping;
-    r.toneMappingExposure = 0.72;
+    r.toneMappingExposure = opts.renderQuality === 'high' ? 1.05 : 0.92;
     // Ambiente de estúdio para os reflexos do cromado e do metal pintado.
     const pmrem = new THREE.PMREMGenerator(r);
     const env = pmrem.fromScene(new RoomEnvironment(), 0.04);
@@ -213,22 +221,26 @@ export class EquipmentViewer {
     this.overlayDisposables.push(env);
 
     this.scene.background = new THREE.Color(opts.background ?? 0xeeece7);
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.08));
-    const key = new THREE.DirectionalLight(0xffffff, 1.1);
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0x9d968b, opts.renderQuality === 'high' ? 0.36 : 0.24));
+    const key = new THREE.DirectionalLight(0xffffff, opts.renderQuality === 'high' ? 2.2 : 1.55);
     key.castShadow = true;
     const narrowStage = this.stage.clientWidth > 0 && this.stage.clientWidth < 600;
     const lowDpi = (globalThis.devicePixelRatio || 1) <= 1.5;
-    const shadowSize = cores <= 4 || (narrowStage && lowDpi) ? 1024 : 2048;
+    const shadowSize = opts.renderQuality === 'high' ? 2048 : cores <= 4 || (narrowStage && lowDpi) ? 1024 : 2048;
     key.shadow.mapSize.set(shadowSize, shadowSize);
-    key.shadow.radius = 4;
-    key.shadow.bias = -0.0005;
+    key.shadow.radius = opts.renderQuality === 'high' ? 3 : 4;
+    key.shadow.bias = -0.0002;
+    key.shadow.normalBias = 0.012;
     this.scene.add(key, key.target);
     this.keyLight = key;
-    const rim = new THREE.DirectionalLight(0xffffff, 0.2);
+    const fill = new THREE.DirectionalLight(0xfff8ed, opts.renderQuality === 'high' ? 0.72 : 0.42);
+    fill.position.set(-3, 2.5, 3);
+    this.scene.add(fill);
+    const rim = new THREE.DirectionalLight(0xdce9ff, opts.renderQuality === 'high' ? 1.0 : 0.48);
     rim.position.set(-3, 2.5, -2.5);
     this.scene.add(rim);
     const groundGeo = new THREE.PlaneGeometry(20, 20);
-    const groundMat = new THREE.ShadowMaterial({ opacity: 0.26 });
+    const groundMat = new THREE.ShadowMaterial({ opacity: opts.renderQuality === 'high' ? 0.22 : 0.18 });
     const ground = new THREE.Mesh(groundGeo, groundMat);
     ground.rotation.x = -Math.PI / 2;
     ground.receiveShadow = true;

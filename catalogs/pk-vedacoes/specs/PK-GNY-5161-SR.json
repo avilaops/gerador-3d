@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5161-SR",
+  "name": "Anel guia 58,6 × 62 × 8 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 62.0,
+    "width": 62.0,
+    "height": 8.0
+  },
+  "params": {
+    "innerDiameter": 0.0586,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 58.6,
+    "deMm": 62.0,
+    "heightMm": 8.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5161-sr",
+    "sourceSlug": "gny-5161-sr",
+    "sourceStatus": "published_catalog_text"
+  }
+}

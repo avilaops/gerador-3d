@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3143-BS-6-39403543-472",
+  "name": "Gaxeta PU - Tipo BS 90 × 110 × 12 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 110.0,
+    "width": 110.0,
+    "height": 12.0
+  },
+  "params": {
+    "innerDiameter": 0.09,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 90.0,
+    "deMm": 110.0,
+    "heightMm": 12.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3143-bs-6-39403543-472",
+    "sourceSlug": "pkg-3143-bs-6-39403543-472",
+    "sourceStatus": "published_catalog_text"
+  }
+}

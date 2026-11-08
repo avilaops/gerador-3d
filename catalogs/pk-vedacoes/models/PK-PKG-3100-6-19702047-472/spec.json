@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-3100-6-19702047-472",
+  "name": "Gaxeta PU - Tipo B 52 × 62 × 12 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 62,
+    "width": 62,
+    "height": 12
+  },
+  "params": {
+    "innerDiameter": 0.052,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 52,
+    "deMm": 62,
+    "heightMm": 12,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3100-6-19702047-472",
+    "sourceSlug": "pkg-3100-6-19702047-472",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.052,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.062,
+      "width": 0.062,
+      "height": 0.012
+    },
+    "trainingArea": {
+      "minX": -0.6309999994933605,
+      "maxX": 0.6309999994933605,
+      "minZ": -0.6309999994933605,
+      "maxZ": 0.6309999994933605,
+      "widthM": 1.261999998986721,
+      "lengthM": 1.261999998986721,
+      "areaM2": 1.5926439974424837
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-0585-D-1875",
+  "name": "Raspador PU - Tipo D 47,62 × 57,15 × 4,76 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 57.15,
+    "width": 57.15,
+    "height": 4.76
+  },
+  "params": {
+    "innerDiameter": 0.047619999999999996,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 47.62,
+    "deMm": 57.15,
+    "heightMm": 4.76,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-0585-d-1875",
+    "sourceSlug": "rpu-0585-d-1875",
+    "sourceStatus": "published_catalog_text"
+  }
+}

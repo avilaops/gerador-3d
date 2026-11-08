@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3187-BS-6-19701969-394",
+  "name": "Gaxeta PU - Tipo BS 50 × 60 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 60.0,
+    "width": 60.0,
+    "height": 10.0
+  },
+  "params": {
+    "innerDiameter": 0.05,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 50.0,
+    "deMm": 60.0,
+    "heightMm": 10.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3187-bs-6-19701969-394",
+    "sourceSlug": "pkg-3187-bs-6-19701969-394",
+    "sourceStatus": "published_catalog_text"
+  }
+}

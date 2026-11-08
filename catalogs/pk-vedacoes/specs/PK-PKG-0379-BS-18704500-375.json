@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0379-BS-18704500-375",
+  "name": "Gaxeta PU - Tipo BS 114,3 × 123,82 × 9,52 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 123.82,
+    "width": 123.82,
+    "height": 9.52
+  },
+  "params": {
+    "innerDiameter": 0.1143,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 114.3,
+    "deMm": 123.82,
+    "heightMm": 9.52,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0379-bs-18704500-375",
+    "sourceSlug": "pkg-0379-bs-18704500-375",
+    "sourceStatus": "published_catalog_text"
+  }
+}

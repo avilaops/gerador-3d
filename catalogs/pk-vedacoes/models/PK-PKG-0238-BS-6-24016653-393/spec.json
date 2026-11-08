@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-0238-BS-6-24016653-393",
+  "name": "Gaxeta PU - Tipo BS 169 × 181,2 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 181.2,
+    "width": 181.2,
+    "height": 10
+  },
+  "params": {
+    "innerDiameter": 0.169,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 169,
+    "deMm": 181.2,
+    "heightMm": 10,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0238-bs-6-24016653-393",
+    "sourceSlug": "pkg-0238-bs-6-24016653-393",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.169,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.181,
+      "width": 0.181,
+      "height": 0.01
+    },
+    "trainingArea": {
+      "minX": -0.6905999988317489,
+      "maxX": 0.6905999988317489,
+      "minZ": -0.6905999988317489,
+      "maxZ": 0.6905999988317489,
+      "widthM": 1.3811999976634979,
+      "lengthM": 1.3811999976634979,
+      "areaM2": 1.9077134335456465
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

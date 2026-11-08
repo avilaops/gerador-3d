@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-1330-6-19701102-236",
+  "name": "Gaxeta PU - Tipo B 28 × 38 × 6 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 38.0,
+    "width": 38.0,
+    "height": 6.0
+  },
+  "params": {
+    "innerDiameter": 0.028,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 28.0,
+    "deMm": 38.0,
+    "heightMm": 6.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1330-6-19701102-236",
+    "sourceSlug": "pkg-1330-6-19701102-236",
+    "sourceStatus": "published_catalog_text"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5116-6W11-6692-354",
+  "name": "Anel guia 162 × 170 × 9 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 170.0,
+    "width": 170.0,
+    "height": 9.0
+  },
+  "params": {
+    "innerDiameter": 0.162,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 162.0,
+    "deMm": 170.0,
+    "heightMm": 9.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5116-6w11-6692-354",
+    "sourceSlug": "gny-5116-6w11-6692-354",
+    "sourceStatus": "published_catalog_text"
+  }
+}

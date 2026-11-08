@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3310-BS-6-25006250-500",
+  "name": "Gaxeta PU - Tipo BS 158,75 × 171,45 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 171.45,
+    "width": 171.45,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.15875,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 158.75,
+    "deMm": 171.45,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3310-bs-6-25006250-500",
+    "sourceSlug": "pkg-3310-bs-6-25006250-500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

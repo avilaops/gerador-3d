@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "companyId": "pk-vedacoes",
+  "companyName": "PK Vedações",
+  "status": "draft_with_source_found",
+  "unit": "mm",
+  "requiredBeforeModeling": [
+    "sku_or_official_code",
+    "official_name",
+    "seal_family",
+    "internal_diameter_mm",
+    "external_diameter_mm",
+    "height_or_thickness_mm",
+    "material",
+    "approved_source_reference",
+    "primary_image_linked_to_same_sku"
+  ],
+  "rules": [
+    "The dimensional search fields are a contract target, not product data by themselves.",
+    "Do not infer compatibility, material or dimensions from the reference image.",
+    "Do not reuse images, SKUs or dimensions from VedaShow.",
+    "Only approved records may enter the 3D catalog and AVX-tools manifest."
+  ],
+  "approval": {
+    "owner": null,
+    "approvedAt": null,
+    "evidence": []
+  },
+  "sourceEvidence": [
+    "workspace:pkvedacoes/IVENTARIO (1).xlsx",
+    "workspace:pkvedacoes/Fotos",
+    "workspace:pkvedacoes/pk-catalogo-full.txt"
+  ],
+  "reviewGates": [
+    "Match every selected product to one official code and one primary image.",
+    "Confirm internal diameter, external diameter and height or thickness in millimetres.",
+    "Keep unmatched photos outside the 3D catalog until identity is proven."
+  ]
+}

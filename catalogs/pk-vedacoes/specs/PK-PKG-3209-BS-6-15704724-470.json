@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3209-BS-6-15704724-470",
+  "name": "Gaxeta PU - Tipo BS 120 × 128 × 11,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 128.0,
+    "width": 128.0,
+    "height": 11.7
+  },
+  "params": {
+    "innerDiameter": 0.12,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 120.0,
+    "deMm": 128.0,
+    "heightMm": 11.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3209-bs-6-15704724-470",
+    "sourceSlug": "pkg-3209-bs-6-15704724-470",
+    "sourceStatus": "published_catalog_text"
+  }
+}

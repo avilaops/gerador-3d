@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3154-BS-6-31502244-394",
+  "name": "Gaxeta PU - Tipo BS 57 × 73 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 73.0,
+    "width": 73.0,
+    "height": 10.0
+  },
+  "params": {
+    "innerDiameter": 0.057,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 57.0,
+    "deMm": 73.0,
+    "heightMm": 10.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3154-bs-6-31502244-394",
+    "sourceSlug": "pkg-3154-bs-6-31502244-394",
+    "sourceStatus": "published_catalog_text"
+  }
+}

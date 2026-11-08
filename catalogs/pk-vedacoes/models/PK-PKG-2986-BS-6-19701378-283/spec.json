@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-2986-BS-6-19701378-283",
+  "name": "Gaxeta PU - Tipo BS 35 × 45 × 7,2 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 45,
+    "width": 45,
+    "height": 7.2
+  },
+  "params": {
+    "innerDiameter": 0.035,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 35,
+    "deMm": 45,
+    "heightMm": 7.2,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2986-bs-6-19701378-283",
+    "sourceSlug": "pkg-2986-bs-6-19701378-283",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.035,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.045,
+      "width": 0.045,
+      "height": 0.007
+    },
+    "trainingArea": {
+      "minX": -0.6225000008940696,
+      "maxX": 0.6225000008940696,
+      "minZ": -0.6225000008940696,
+      "maxZ": 0.6225000008940696,
+      "widthM": 1.2450000017881393,
+      "lengthM": 1.2450000017881393,
+      "areaM2": 1.5500250044524668
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

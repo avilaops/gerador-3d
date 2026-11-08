@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-3358-BS-6-19705867-511",
+  "name": "Gaxeta PU - Tipo BS 149 × 159 × 13 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 159,
+    "width": 159,
+    "height": 13
+  },
+  "params": {
+    "innerDiameter": 0.149,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 149,
+    "deMm": 159,
+    "heightMm": 13,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3358-bs-6-19705867-511",
+    "sourceSlug": "pkg-3358-bs-6-19705867-511",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.149,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.159,
+      "width": 0.159,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.6794999971985817,
+      "maxX": 0.6794999971985817,
+      "minZ": -0.6794999971985817,
+      "maxZ": 0.6794999971985817,
+      "widthM": 1.3589999943971633,
+      "lengthM": 1.3589999943971633,
+      "areaM2": 1.84688098477149
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

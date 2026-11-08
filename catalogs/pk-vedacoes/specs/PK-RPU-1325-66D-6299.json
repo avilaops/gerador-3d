@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-1325-66D-6299",
+  "name": "Raspador PU - Tipo D 160 × 168 × 7,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 168.0,
+    "width": 168.0,
+    "height": 7.5
+  },
+  "params": {
+    "innerDiameter": 0.16,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 160.0,
+    "deMm": 168.0,
+    "heightMm": 7.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-1325-66d-6299",
+    "sourceSlug": "rpu-1325-66d-6299",
+    "sourceStatus": "published_catalog_text"
+  }
+}

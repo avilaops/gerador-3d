@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3239-BS-6-08900315-157",
+  "name": "Gaxeta PU - Tipo BS 8 × 12,5 × 4 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 12.5,
+    "width": 12.5,
+    "height": 4.0
+  },
+  "params": {
+    "innerDiameter": 0.008,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 8.0,
+    "deMm": 12.5,
+    "heightMm": 4.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3239-bs-6-08900315-157",
+    "sourceSlug": "pkg-3239-bs-6-08900315-157",
+    "sourceStatus": "published_catalog_text"
+  }
+}

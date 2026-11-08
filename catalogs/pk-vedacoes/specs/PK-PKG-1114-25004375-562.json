@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-1114-25004375-562",
+  "name": "Gaxeta PU - Tipo B 111,12 × 123,82 × 14,28 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 123.82,
+    "width": 123.82,
+    "height": 14.28
+  },
+  "params": {
+    "innerDiameter": 0.11112000000000001,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 111.12,
+    "deMm": 123.82,
+    "heightMm": 14.28,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1114-25004375-562",
+    "sourceSlug": "pkg-1114-25004375-562",
+    "sourceStatus": "published_catalog_text"
+  }
+}

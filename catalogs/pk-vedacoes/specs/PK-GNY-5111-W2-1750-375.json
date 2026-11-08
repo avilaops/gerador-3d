@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5111-W2-1750-375",
+  "name": "Anel guia 38,25 × 44,45 × 9,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 44.45,
+    "width": 44.45,
+    "height": 9.5
+  },
+  "params": {
+    "innerDiameter": 0.03825,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 38.25,
+    "deMm": 44.45,
+    "heightMm": 9.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5111-w2-1750-375",
+    "sourceSlug": "gny-5111-w2-1750-375",
+    "sourceStatus": "published_catalog_text"
+  }
+}

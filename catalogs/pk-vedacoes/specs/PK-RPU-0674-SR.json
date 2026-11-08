@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-0674-SR",
+  "name": "Raspador PU - Tipo D 50 × 62 × 8 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 62.0,
+    "width": 62.0,
+    "height": 8.0
+  },
+  "params": {
+    "innerDiameter": 0.05,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 50.0,
+    "deMm": 62.0,
+    "heightMm": 8.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-0674-sr",
+    "sourceSlug": "rpu-0674-sr",
+    "sourceStatus": "published_catalog_text"
+  }
+}

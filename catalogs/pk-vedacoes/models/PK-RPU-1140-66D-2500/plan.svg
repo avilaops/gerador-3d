@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.7062 -0.7802 1.5526 1.6451" role="img" aria-label="Planta do Raspador PU - Tipo D 63,5 × 84 × 11 mm (PK-RPU-1140-66D-2500): 84 × 84 mm, com 60 cm de área de treino em volta" data-equipment="PK-RPU-1140-66D-2500" data-unit="m">
+<title>Planta do Raspador PU - Tipo D 63,5 × 84 × 11 mm (PK-RPU-1140-66D-2500): 84 × 84 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-0.642" y="-0.642" width="1.284" height="1.284" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0077;stroke-dasharray:0.0462 0.0308"/>
+<text class="eq-zone-label" x="0" y="-0.6651" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0439px;fill:#96764a;text-anchor:middle">área de treino · 1,28 × 1,28 m · 1,65 m²</text>
+<g class="eq-parts">
+<polygon class="eq-part" points="-0.042,0 -0.0418,-0.0041 -0.0412,-0.0082 -0.0402,-0.0122 -0.0388,-0.0161 -0.037,-0.0198 -0.0349,-0.0233 -0.0325,-0.0266 -0.0297,-0.0297 -0.0266,-0.0325 -0.0233,-0.0349 -0.0198,-0.037 -0.0161,-0.0388 -0.0122,-0.0402 -0.0082,-0.0412 -0.0041,-0.0418 0,-0.042 0.0041,-0.0418 0.0082,-0.0412 0.0122,-0.0402 0.0161,-0.0388 0.0198,-0.037 0.0233,-0.0349 0.0266,-0.0325 0.0297,-0.0297 0.0325,-0.0266 0.0349,-0.0233 0.037,-0.0198 0.0388,-0.0161 0.0402,-0.0122 0.0412,-0.0082 0.0418,-0.0041 0.042,0 0.0418,0.0041 0.0412,0.0082 0.0402,0.0122 0.0388,0.0161 0.037,0.0198 0.0349,0.0233 0.0325,0.0266 0.0297,0.0297 0.0266,0.0325 0.0233,0.0349 0.0198,0.037 0.0161,0.0388 0.0122,0.0402 0.0082,0.0412 0.0041,0.0418 0,0.042 -0.0041,0.0418 -0.0082,0.0412 -0.0122,0.0402 -0.0161,0.0388 -0.0198,0.037 -0.0233,0.0349 -0.0266,0.0325 -0.0297,0.0297 -0.0325,0.0266 -0.0349,0.0233 -0.037,0.0198 -0.0388,0.0161 -0.0402,0.0122 -0.0412,0.0082 -0.0418,0.0041" style="fill:#141413;stroke:#141413;stroke-width:0.0031;stroke-linejoin:round"/>
+</g>
+<line class="eq-dim" x1="-0.042" y1="0.7447" x2="0.042" y2="0.7447" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<line class="eq-dim" x1="-0.042" y1="0.7126" x2="-0.042" y2="0.7768" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<line class="eq-dim" x1="0.042" y1="0.7126" x2="0.042" y2="0.7768" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<text class="eq-text" x="0" y="0.8094" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0462px;fill:#6d6a63;text-anchor:middle">L 84 mm</text>
+<line class="eq-dim" x1="0.7447" y1="-0.042" x2="0.7447" y2="0.042" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<line class="eq-dim" x1="0.7126" y1="-0.042" x2="0.7768" y2="-0.042" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<line class="eq-dim" x1="0.7126" y1="0.042" x2="0.7768" y2="0.042" style="stroke:#6d6a63;stroke-width:0.0062"/>
+<text class="eq-text" x="0.8048" y="0" transform="rotate(90 0.8048 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0462px;fill:#6d6a63;text-anchor:middle">C 84 mm</text>
+<text class="eq-text" x="0" y="0.8557" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0462px;fill:#6d6a63;text-anchor:middle;font-size:0.037px;letter-spacing:.1em">▼ FRENTE</text>
+</svg>

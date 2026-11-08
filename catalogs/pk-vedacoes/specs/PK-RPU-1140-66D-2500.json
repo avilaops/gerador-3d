@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-1140-66D-2500",
+  "name": "Raspador PU - Tipo D 63,5 × 84 × 11 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 84.0,
+    "width": 84.0,
+    "height": 11.0
+  },
+  "params": {
+    "innerDiameter": 0.0635,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 63.5,
+    "deMm": 84.0,
+    "heightMm": 11.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-1140-66d-2500",
+    "sourceSlug": "rpu-1140-66d-2500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

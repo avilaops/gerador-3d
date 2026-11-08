@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-3209-BS-6-15704724-470",
+  "name": "Gaxeta PU - Tipo BS 120 × 128 × 11,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 128,
+    "width": 128,
+    "height": 11.7
+  },
+  "params": {
+    "innerDiameter": 0.12,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 120,
+    "deMm": 128,
+    "heightMm": 11.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3209-bs-6-15704724-470",
+    "sourceSlug": "pkg-3209-bs-6-15704724-470",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.12,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.128,
+      "width": 0.128,
+      "height": 0.012
+    },
+    "trainingArea": {
+      "minX": -0.6640000030398369,
+      "maxX": 0.6640000030398369,
+      "minZ": -0.6640000030398369,
+      "maxZ": 0.6640000030398369,
+      "widthM": 1.3280000060796737,
+      "lengthM": 1.3280000060796737,
+      "areaM2": 1.7635840161476135
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

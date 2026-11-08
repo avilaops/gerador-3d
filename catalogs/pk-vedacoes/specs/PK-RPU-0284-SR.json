@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-0284-SR",
+  "name": "Raspador PU - Tipo D 45 × 52,4 × 4,4 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 52.4,
+    "width": 52.4,
+    "height": 4.4
+  },
+  "params": {
+    "innerDiameter": 0.045,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 45.0,
+    "deMm": 52.4,
+    "heightMm": 4.4,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-0284-sr",
+    "sourceSlug": "rpu-0284-sr",
+    "sourceStatus": "published_catalog_text"
+  }
+}

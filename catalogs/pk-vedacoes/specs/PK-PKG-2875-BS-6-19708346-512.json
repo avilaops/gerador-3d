@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2875-BS-6-19708346-512",
+  "name": "Gaxeta PU - Tipo BS 212 × 222 × 13 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 222.0,
+    "width": 222.0,
+    "height": 13.0
+  },
+  "params": {
+    "innerDiameter": 0.212,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 212.0,
+    "deMm": 222.0,
+    "heightMm": 13.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2875-bs-6-19708346-512",
+    "sourceSlug": "pkg-2875-bs-6-19708346-512",
+    "sourceStatus": "published_catalog_text"
+  }
+}

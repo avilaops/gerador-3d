@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3098-6-19701772-394",
+  "name": "Gaxeta PU - Tipo B 45 × 55 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 55.0,
+    "width": 55.0,
+    "height": 10.0
+  },
+  "params": {
+    "innerDiameter": 0.045,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 45.0,
+    "deMm": 55.0,
+    "heightMm": 10.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3098-6-19701772-394",
+    "sourceSlug": "pkg-3098-6-19701772-394",
+    "sourceStatus": "published_catalog_text"
+  }
+}

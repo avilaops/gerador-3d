@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5034-6W1-2035-500",
+  "name": "Anel guia 48 × 51,7 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 51.7,
+    "width": 51.7,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.048,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 48.0,
+    "deMm": 51.7,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5034-6w1-2035-500",
+    "sourceSlug": "gny-5034-6w1-2035-500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3309-BS-6-29504921-354",
+  "name": "Gaxeta PU - Tipo BS 125 × 140 × 9 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 140.0,
+    "width": 140.0,
+    "height": 9.0
+  },
+  "params": {
+    "innerDiameter": 0.125,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 125.0,
+    "deMm": 140.0,
+    "heightMm": 9.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3309-bs-6-29504921-354",
+    "sourceSlug": "pkg-3309-bs-6-29504921-354",
+    "sourceStatus": "published_catalog_text"
+  }
+}

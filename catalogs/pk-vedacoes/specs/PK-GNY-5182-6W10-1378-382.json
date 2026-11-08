@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5182-6W10-1378-382",
+  "name": "Anel guia 30 × 35 × 9,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 35.0,
+    "width": 35.0,
+    "height": 9.7
+  },
+  "params": {
+    "innerDiameter": 0.03,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 30.0,
+    "deMm": 35.0,
+    "heightMm": 9.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5182-6w10-1378-382",
+    "sourceSlug": "gny-5182-6w10-1378-382",
+    "sourceStatus": "published_catalog_text"
+  }
+}

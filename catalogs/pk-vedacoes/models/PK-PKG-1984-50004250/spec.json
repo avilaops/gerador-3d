@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-1984-50004250",
+  "name": "Gaxeta PU - Tipo STD 107,95 × 133,35 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 133.35,
+    "width": 133.35,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.10795,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 107.95,
+    "deMm": 133.35,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1984-50004250",
+    "sourceSlug": "pkg-1984-50004250",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.10795,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.133,
+      "width": 0.133,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.6666749998927116,
+      "maxX": 0.6666749998927116,
+      "minZ": -0.6666749998927116,
+      "maxZ": 0.6666749998927116,
+      "widthM": 1.3333499997854232,
+      "lengthM": 1.3333499997854232,
+      "areaM2": 1.7778222219277882
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

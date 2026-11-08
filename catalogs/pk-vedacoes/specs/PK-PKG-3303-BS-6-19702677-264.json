@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3303-BS-6-19702677-264",
+  "name": "Gaxeta PU - Tipo BS 68 × 78 × 6,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 78.0,
+    "width": 78.0,
+    "height": 6.7
+  },
+  "params": {
+    "innerDiameter": 0.068,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 68.0,
+    "deMm": 78.0,
+    "heightMm": 6.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3303-bs-6-19702677-264",
+    "sourceSlug": "pkg-3303-bs-6-19702677-264",
+    "sourceStatus": "published_catalog_text"
+  }
+}

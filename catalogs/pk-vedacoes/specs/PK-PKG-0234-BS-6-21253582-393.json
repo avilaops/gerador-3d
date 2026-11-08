@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0234-BS-6-21253582-393",
+  "name": "Gaxeta PU - Tipo BS 91 × 101,8 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 101.8,
+    "width": 101.8,
+    "height": 10.0
+  },
+  "params": {
+    "innerDiameter": 0.091,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 91.0,
+    "deMm": 101.8,
+    "heightMm": 10.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0234-bs-6-21253582-393",
+    "sourceSlug": "pkg-0234-bs-6-21253582-393",
+    "sourceStatus": "published_catalog_text"
+  }
+}

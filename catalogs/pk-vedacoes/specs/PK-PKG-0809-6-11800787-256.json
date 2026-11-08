@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0809-6-11800787-256",
+  "name": "Gaxeta PU - Tipo B 20 × 26 × 6,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 26.0,
+    "width": 26.0,
+    "height": 6.5
+  },
+  "params": {
+    "innerDiameter": 0.02,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 20.0,
+    "deMm": 26.0,
+    "heightMm": 6.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0809-6-11800787-256",
+    "sourceSlug": "pkg-0809-6-11800787-256",
+    "sourceStatus": "published_catalog_text"
+  }
+}

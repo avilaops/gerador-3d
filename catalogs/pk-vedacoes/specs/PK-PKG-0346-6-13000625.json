@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0346-6-13000625",
+  "name": "Gaxeta PU - Tipo STD 15,87 × 22,47 × 3,3 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 22.47,
+    "width": 22.47,
+    "height": 3.3
+  },
+  "params": {
+    "innerDiameter": 0.01587,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 15.87,
+    "deMm": 22.47,
+    "heightMm": 3.3,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0346-6-13000625",
+    "sourceSlug": "pkg-0346-6-13000625",
+    "sourceStatus": "published_catalog_text"
+  }
+}

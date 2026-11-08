@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2851-BS-6-15703937-439",
+  "name": "Gaxeta PU - Tipo BS 100 × 108 × 11,15 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 108.0,
+    "width": 108.0,
+    "height": 11.15
+  },
+  "params": {
+    "innerDiameter": 0.1,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 100.0,
+    "deMm": 108.0,
+    "heightMm": 11.15,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2851-bs-6-15703937-439",
+    "sourceSlug": "pkg-2851-bs-6-15703937-439",
+    "sourceStatus": "published_catalog_text"
+  }
+}

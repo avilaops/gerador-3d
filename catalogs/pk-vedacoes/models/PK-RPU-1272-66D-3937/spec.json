@@ -1,0 +1,60 @@
+{
+  "id": "PK-RPU-1272-66D-3937",
+  "name": "Raspador PU - Tipo D 100 × 108,33 × 5,05 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 108.33,
+    "width": 108.33,
+    "height": 5.05
+  },
+  "params": {
+    "innerDiameter": 0.1,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 100,
+    "deMm": 108.33,
+    "heightMm": 5.05,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-1272-66d-3937",
+    "sourceSlug": "rpu-1272-66d-3937",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "wiper",
+      "innerDiameter": 0.1,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.108,
+      "width": 0.108,
+      "height": 0.005
+    },
+    "trainingArea": {
+      "minX": -0.6541649982333183,
+      "maxX": 0.6541649982333183,
+      "minZ": -0.6541649982333183,
+      "maxZ": 0.6541649982333183,
+      "widthM": 1.3083299964666366,
+      "lengthM": 1.3083299964666366,
+      "areaM2": 1.7117273796543895
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

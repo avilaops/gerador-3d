@@ -27,6 +27,8 @@
       .note { font-size: 12px; color: var(--muted); margin-top: 10px; line-height: 1.45; }
       .lead { color: var(--muted); margin-top: 4px; }
       .bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; align-items: center; }
+      .catalog-bar { border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+      .catalog-bar .chip { font-weight: 600; }
       .bar input { font: inherit; padding: 8px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); min-width: 240px; }
       .chip { font: inherit; font-size: 14px; padding: 7px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--surface); cursor: pointer; }
       .chip[aria-pressed='true'] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
@@ -66,6 +68,7 @@
         <h1 id="title">Catálogo 3D</h1>
         <p class="lead" id="lead">Cada modelo nasce das medidas do catálogo. Clique para girar e ver o movimento.</p>
       </header>
+      <div class="bar catalog-bar" id="catalogs" aria-label="Segmentos"></div>
       <div class="bar" id="bar"></div>
       <div class="grid" id="grid"></div>
       <div id="embed"></div>

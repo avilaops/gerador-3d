@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5092-6W10-4528-382",
+  "name": "Anel guia 110 × 115 × 9,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 115.0,
+    "width": 115.0,
+    "height": 9.7
+  },
+  "params": {
+    "innerDiameter": 0.11,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 110.0,
+    "deMm": 115.0,
+    "heightMm": 9.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5092-6w10-4528-382",
+    "sourceSlug": "gny-5092-6w10-4528-382",
+    "sourceStatus": "published_catalog_text"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5196-W2-7500-500",
+  "name": "Anel guia 184,16 × 190,5 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 190.5,
+    "width": 190.5,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.18416,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 184.16,
+    "deMm": 190.5,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5196-w2-7500-500",
+    "sourceSlug": "gny-5196-w2-7500-500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

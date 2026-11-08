@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5162-6W10-3346-224",
+  "name": "Anel guia 80 × 85 × 5,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 85.0,
+    "width": 85.0,
+    "height": 5.7
+  },
+  "params": {
+    "innerDiameter": 0.08,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 80.0,
+    "deMm": 85.0,
+    "heightMm": 5.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5162-6w10-3346-224",
+    "sourceSlug": "gny-5162-6w10-3346-224",
+    "sourceStatus": "published_catalog_text"
+  }
+}

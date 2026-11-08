@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2941-6-18702000-266",
+  "name": "Gaxeta PU - Tipo B 50,8 × 60,3 × 6,75 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 60.3,
+    "width": 60.3,
+    "height": 6.75
+  },
+  "params": {
+    "innerDiameter": 0.0508,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 50.8,
+    "deMm": 60.3,
+    "heightMm": 6.75,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2941-6-18702000-266",
+    "sourceSlug": "pkg-2941-6-18702000-266",
+    "sourceStatus": "published_catalog_text"
+  }
+}

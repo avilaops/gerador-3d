@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5176-TIPO-L",
+  "name": "Anel guia 177,8 × 189 × 15,9 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 189.0,
+    "width": 189.0,
+    "height": 15.9
+  },
+  "params": {
+    "innerDiameter": 0.1778,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 177.8,
+    "deMm": 189.0,
+    "heightMm": 15.9,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5176-tipo-l",
+    "sourceSlug": "gny-5176-tipo-l",
+    "sourceStatus": "published_catalog_text"
+  }
+}

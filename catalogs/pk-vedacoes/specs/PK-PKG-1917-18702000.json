@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-1917-18702000",
+  "name": "Gaxeta PU - Tipo STD 50,8 × 60,32 × 4,76 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 60.32,
+    "width": 60.32,
+    "height": 4.76
+  },
+  "params": {
+    "innerDiameter": 0.0508,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 50.8,
+    "deMm": 60.32,
+    "heightMm": 4.76,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1917-18702000",
+    "sourceSlug": "pkg-1917-18702000",
+    "sourceStatus": "published_catalog_text"
+  }
+}

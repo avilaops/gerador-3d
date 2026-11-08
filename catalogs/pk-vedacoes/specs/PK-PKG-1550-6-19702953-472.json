@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-1550-6-19702953-472",
+  "name": "Gaxeta PU - Tipo B 75 × 85 × 12 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 85.0,
+    "width": 85.0,
+    "height": 12.0
+  },
+  "params": {
+    "innerDiameter": 0.075,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 75.0,
+    "deMm": 85.0,
+    "heightMm": 12.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1550-6-19702953-472",
+    "sourceSlug": "pkg-1550-6-19702953-472",
+    "sourceStatus": "published_catalog_text"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "PK-GNY-5172-TIPO-L",
+  "name": "Anel guia 98,48 × 108 × 15,9 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 108,
+    "width": 108,
+    "height": 15.9
+  },
+  "params": {
+    "innerDiameter": 0.09848,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 98.48,
+    "deMm": 108,
+    "heightMm": 15.9,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5172-tipo-l",
+    "sourceSlug": "gny-5172-tipo-l",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "guide",
+      "innerDiameter": 0.09848,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.108,
+      "width": 0.108,
+      "height": 0.016
+    },
+    "trainingArea": {
+      "minX": -0.6540000014007091,
+      "maxX": 0.6540000014007091,
+      "minZ": -0.6540000014007091,
+      "maxZ": 0.6540000014007091,
+      "widthM": 1.3080000028014183,
+      "lengthM": 1.3080000028014183,
+      "areaM2": 1.7108640073285102
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

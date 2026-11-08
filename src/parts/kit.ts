@@ -29,7 +29,7 @@ export const DEFAULT_COLORS: Required<MaterialColors> = {
 };
 
 /** Segmentos radiais dos cilindros: suficiente para cromados de Ø ≤ 10 cm em tela de celular. */
-const RADIAL_SEGMENTS = 24;
+const RADIAL_SEGMENTS = 32;
 
 export class PartKit {
   readonly materials: Record<MaterialRole, THREE.MeshStandardMaterial>;
@@ -100,7 +100,7 @@ export class PartKit {
   roundedBox(w: number, h: number, d: number, radius: number): THREE.BufferGeometry {
     const r = Math.min(radius, w / 2 - 1e-4, h / 2 - 1e-4, d / 2 - 1e-4);
     const key = `rbox:${w.toFixed(3)}:${h.toFixed(3)}:${d.toFixed(3)}:${r.toFixed(3)}`;
-    return this.cached(key, () => new RoundedBoxGeometry(w, h, d, 3, r));
+    return this.cached(key, () => new RoundedBoxGeometry(w, h, d, 5, r));
   }
 
   /** Anilha: disco torneado com cubo central, rebaixo e aro, eixo em Y. Cacheada por medida. */

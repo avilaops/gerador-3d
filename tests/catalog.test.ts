@@ -22,7 +22,7 @@ for (const catalog of existsSync(ROOT) ? readdirSync(ROOT) : []) {
 describe('catálogos', () => {
   it('todas as famílias do schema têm gerador', () => {
     expect(implementedFamilies().sort()).toEqual(
-      ['bench', 'cable-station', 'leg-press', 'plate-loaded-lever', 'rack', 'selectorized-tower']
+      ['bench', 'cable-station', 'leg-press', 'plate-loaded-lever', 'rack', 'seal', 'selectorized-tower']
     );
   });
 

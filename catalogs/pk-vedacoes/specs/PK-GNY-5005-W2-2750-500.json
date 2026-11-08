@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5005-W2-2750-500",
+  "name": "Anel guia 63,5 × 69,85 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 69.85,
+    "width": 69.85,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.0635,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 63.5,
+    "deMm": 69.85,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5005-w2-2750-500",
+    "sourceSlug": "gny-5005-w2-2750-500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

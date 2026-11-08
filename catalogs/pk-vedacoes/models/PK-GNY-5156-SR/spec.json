@@ -1,0 +1,60 @@
+{
+  "id": "PK-GNY-5156-SR",
+  "name": "Anel guia 159 × 164,4 × 9,8 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 164.4,
+    "width": 164.4,
+    "height": 9.8
+  },
+  "params": {
+    "innerDiameter": 0.159,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 159,
+    "deMm": 164.4,
+    "heightMm": 9.8,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5156-sr",
+    "sourceSlug": "gny-5156-sr",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "guide",
+      "innerDiameter": 0.159,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.164,
+      "width": 0.164,
+      "height": 0.01
+    },
+    "trainingArea": {
+      "minX": -0.6821999981999397,
+      "maxX": 0.6821999981999397,
+      "minZ": -0.6821999981999397,
+      "maxZ": 0.6821999981999397,
+      "widthM": 1.3643999963998794,
+      "lengthM": 1.3643999963998794,
+      "areaM2": 1.861587350175991
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

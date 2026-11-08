@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2651-BS-6-19705551-563",
+  "name": "Gaxeta PU - Tipo BS 141 × 151 × 14,3 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 151.0,
+    "width": 151.0,
+    "height": 14.3
+  },
+  "params": {
+    "innerDiameter": 0.141,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 141.0,
+    "deMm": 151.0,
+    "heightMm": 14.3,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2651-bs-6-19705551-563",
+    "sourceSlug": "pkg-2651-bs-6-19705551-563",
+    "sourceStatus": "published_catalog_text"
+  }
+}

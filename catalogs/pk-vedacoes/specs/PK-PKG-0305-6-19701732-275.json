@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0305-6-19701732-275",
+  "name": "Gaxeta PU - Tipo B 44 × 54 × 7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 54.0,
+    "width": 54.0,
+    "height": 7.0
+  },
+  "params": {
+    "innerDiameter": 0.044,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 44.0,
+    "deMm": 54.0,
+    "heightMm": 7.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0305-6-19701732-275",
+    "sourceSlug": "pkg-0305-6-19701732-275",
+    "sourceStatus": "published_catalog_text"
+  }
+}

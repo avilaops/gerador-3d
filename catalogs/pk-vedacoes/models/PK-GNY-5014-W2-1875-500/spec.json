@@ -1,0 +1,60 @@
+{
+  "id": "PK-GNY-5014-W2-1875-500",
+  "name": "Anel guia 41,27 × 47,62 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 47.62,
+    "width": 47.62,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.04127,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 41.27,
+    "deMm": 47.62,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5014-w2-1875-500",
+    "sourceSlug": "gny-5014-w2-1875-500",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "guide",
+      "innerDiameter": 0.04127,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.048,
+      "width": 0.048,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.6238099992275238,
+      "maxX": 0.6238099992275238,
+      "minZ": -0.6238099992275238,
+      "maxZ": 0.6238099992275238,
+      "widthM": 1.2476199984550476,
+      "lengthM": 1.2476199984550476,
+      "areaM2": 1.5565556605449729
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

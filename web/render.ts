@@ -23,6 +23,7 @@ const viewer = new EquipmentViewer(host, {
   toolbar: false,
   autoRotate: false,
   preserveDrawingBuffer: true,
+  renderQuality: 'high',
   background: '#f4f3ef',
   initial: { motion: false },
 });

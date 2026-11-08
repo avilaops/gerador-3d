@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5158-W2-5000-1000",
+  "name": "Anel guia 120,66 × 127 × 25,4 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 127.0,
+    "width": 127.0,
+    "height": 25.4
+  },
+  "params": {
+    "innerDiameter": 0.12066,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 120.66,
+    "deMm": 127.0,
+    "heightMm": 25.4,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5158-w2-5000-1000",
+    "sourceSlug": "gny-5158-w2-5000-1000",
+    "sourceStatus": "published_catalog_text"
+  }
+}

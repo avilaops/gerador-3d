@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5240-W2-8750-500",
+  "name": "Anel guia 215,91 × 222,25 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 222.25,
+    "width": 222.25,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.21591,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 215.91,
+    "deMm": 222.25,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5240-w2-8750-500",
+    "sourceSlug": "gny-5240-w2-8750-500",
+    "sourceStatus": "published_catalog_text"
+  }
+}

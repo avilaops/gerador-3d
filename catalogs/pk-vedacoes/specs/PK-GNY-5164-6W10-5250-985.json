@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5164-6W10-5250-985",
+  "name": "Anel guia 128,35 × 133,35 × 25 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 133.35,
+    "width": 133.35,
+    "height": 25.0
+  },
+  "params": {
+    "innerDiameter": 0.12835,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 128.35,
+    "deMm": 133.35,
+    "heightMm": 25.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5164-6w10-5250-985",
+    "sourceSlug": "gny-5164-6w10-5250-985",
+    "sourceStatus": "published_catalog_text"
+  }
+}

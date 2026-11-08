@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0195-BS-6-19702047-472",
+  "name": "Gaxeta PU - Tipo BS 52 × 62 × 12 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 62.0,
+    "width": 62.0,
+    "height": 12.0
+  },
+  "params": {
+    "innerDiameter": 0.052,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 52.0,
+    "deMm": 62.0,
+    "heightMm": 12.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0195-bs-6-19702047-472",
+    "sourceSlug": "pkg-0195-bs-6-19702047-472",
+    "sourceStatus": "published_catalog_text"
+  }
+}

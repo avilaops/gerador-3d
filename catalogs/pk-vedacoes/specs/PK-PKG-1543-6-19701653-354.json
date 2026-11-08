@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-1543-6-19701653-354",
+  "name": "Gaxeta PU - Tipo B 42 × 52 × 9 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 52.0,
+    "width": 52.0,
+    "height": 9.0
+  },
+  "params": {
+    "innerDiameter": 0.042,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 42.0,
+    "deMm": 52.0,
+    "heightMm": 9.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1543-6-19701653-354",
+    "sourceSlug": "pkg-1543-6-19701653-354",
+    "sourceStatus": "published_catalog_text"
+  }
+}

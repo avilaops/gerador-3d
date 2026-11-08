@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-3400-BS-6-19707480-511",
+  "name": "Gaxeta PU - Tipo BS 190 × 200 × 13 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 200,
+    "width": 200,
+    "height": 13
+  },
+  "params": {
+    "innerDiameter": 0.19,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 190,
+    "deMm": 200,
+    "heightMm": 13,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3400-bs-6-19707480-511",
+    "sourceSlug": "pkg-3400-bs-6-19707480-511",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.19,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.2,
+      "width": 0.2,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.7000000014901161,
+      "maxX": 0.7000000014901161,
+      "minZ": -0.7000000014901161,
+      "maxZ": 0.7000000014901161,
+      "widthM": 1.4000000029802322,
+      "lengthM": 1.4000000029802322,
+      "areaM2": 1.96000000834465
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

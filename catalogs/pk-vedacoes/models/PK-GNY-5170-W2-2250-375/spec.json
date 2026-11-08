@@ -1,0 +1,60 @@
+{
+  "id": "PK-GNY-5170-W2-2250-375",
+  "name": "Anel guia 50,81 × 57,15 × 9,52 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 57.15,
+    "width": 57.15,
+    "height": 9.52
+  },
+  "params": {
+    "innerDiameter": 0.05081,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 50.81,
+    "deMm": 57.15,
+    "heightMm": 9.52,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5170-w2-2250-375",
+    "sourceSlug": "gny-5170-w2-2250-375",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "guide",
+      "innerDiameter": 0.05081,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.057,
+      "width": 0.057,
+      "height": 0.01
+    },
+    "trainingArea": {
+      "minX": -0.6285749994218349,
+      "maxX": 0.6285749994218349,
+      "minZ": -0.6285749994218349,
+      "maxZ": 0.6285749994218349,
+      "widthM": 1.2571499988436698,
+      "lengthM": 1.2571499988436698,
+      "areaM2": 1.580426119592639
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

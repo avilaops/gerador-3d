@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5088-TIPO-L",
+  "name": "Anel guia 130,2 × 139,8 × 18 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 139.8,
+    "width": 139.8,
+    "height": 18.0
+  },
+  "params": {
+    "innerDiameter": 0.13019999999999998,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 130.2,
+    "deMm": 139.8,
+    "heightMm": 18.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5088-tipo-l",
+    "sourceSlug": "gny-5088-tipo-l",
+    "sourceStatus": "published_catalog_text"
+  }
+}

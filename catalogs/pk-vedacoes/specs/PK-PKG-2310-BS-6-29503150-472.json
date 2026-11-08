@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2310-BS-6-29503150-472",
+  "name": "Gaxeta PU - Tipo BS 80 × 95 × 12 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 95.0,
+    "width": 95.0,
+    "height": 12.0
+  },
+  "params": {
+    "innerDiameter": 0.08,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 80.0,
+    "deMm": 95.0,
+    "heightMm": 12.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2310-bs-6-29503150-472",
+    "sourceSlug": "pkg-2310-bs-6-29503150-472",
+    "sourceStatus": "published_catalog_text"
+  }
+}

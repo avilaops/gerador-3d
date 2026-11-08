@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-0131-66D-1141",
+  "name": "Raspador PU - Tipo D 29 × 36 × 4,2 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 36.0,
+    "width": 36.0,
+    "height": 4.2
+  },
+  "params": {
+    "innerDiameter": 0.029,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 29.0,
+    "deMm": 36.0,
+    "heightMm": 4.2,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-0131-66d-1141",
+    "sourceSlug": "rpu-0131-66d-1141",
+    "sourceStatus": "published_catalog_text"
+  }
+}

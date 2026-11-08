@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0521-BS-6-29501968-433",
+  "name": "Gaxeta PU - Tipo BS 50 × 65 × 11 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 65.0,
+    "width": 65.0,
+    "height": 11.0
+  },
+  "params": {
+    "innerDiameter": 0.05,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 50.0,
+    "deMm": 65.0,
+    "heightMm": 11.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0521-bs-6-29501968-433",
+    "sourceSlug": "pkg-0521-bs-6-29501968-433",
+    "sourceStatus": "published_catalog_text"
+  }
+}

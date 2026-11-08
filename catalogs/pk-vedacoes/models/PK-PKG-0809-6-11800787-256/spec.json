@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-0809-6-11800787-256",
+  "name": "Gaxeta PU - Tipo B 20 × 26 × 6,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 26,
+    "width": 26,
+    "height": 6.5
+  },
+  "params": {
+    "innerDiameter": 0.02,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 20,
+    "deMm": 26,
+    "heightMm": 6.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0809-6-11800787-256",
+    "sourceSlug": "pkg-0809-6-11800787-256",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.02,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.026,
+      "width": 0.026,
+      "height": 0.007
+    },
+    "trainingArea": {
+      "minX": -0.6130000002682209,
+      "maxX": 0.6130000002682209,
+      "minZ": -0.6130000002682209,
+      "maxZ": 0.6130000002682209,
+      "widthM": 1.2260000005364418,
+      "lengthM": 1.2260000005364418,
+      "areaM2": 1.5030760013153552
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

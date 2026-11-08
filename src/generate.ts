@@ -147,11 +147,13 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   const object = new THREE.Group();
   object.name = spec.id;
   object.add(root);
+  const catalogSize = Math.max(dims.length, dims.width, dims.height);
+  const isCompactSeal = spec.family === 'seal';
   const camera = spec.camera ?? {
-    azimuthDeg: 35,
-    elevationDeg: 18,
-    distanceM: 3,
-    target: [0, 0.5, 0] as [number, number, number],
+    azimuthDeg: isCompactSeal ? 38 : 35,
+    elevationDeg: isCompactSeal ? 24 : 18,
+    distanceM: isCompactSeal ? Math.max(catalogSize * 2.35, 0.22) : 3,
+    target: [0, isCompactSeal ? dims.height * 0.5 : 0.5, 0] as [number, number, number],
   };
   object.userData = {
     equipmentId: spec.id,

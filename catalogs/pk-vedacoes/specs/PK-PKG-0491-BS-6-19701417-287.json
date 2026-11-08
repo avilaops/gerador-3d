@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-0491-BS-6-19701417-287",
+  "name": "Gaxeta PU - Tipo BS 36 × 46 × 7,3 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 46.0,
+    "width": 46.0,
+    "height": 7.3
+  },
+  "params": {
+    "innerDiameter": 0.036,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 36.0,
+    "deMm": 46.0,
+    "heightMm": 7.3,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-0491-bs-6-19701417-287",
+    "sourceSlug": "pkg-0491-bs-6-19701417-287",
+    "sourceStatus": "published_catalog_text"
+  }
+}

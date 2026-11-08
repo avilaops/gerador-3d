@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5115-6W11-5511-314",
+  "name": "Anel guia 132 × 140 × 8 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 140.0,
+    "width": 140.0,
+    "height": 8.0
+  },
+  "params": {
+    "innerDiameter": 0.132,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 132.0,
+    "deMm": 140.0,
+    "heightMm": 8.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5115-6w11-5511-314",
+    "sourceSlug": "gny-5115-6w11-5511-314",
+    "sourceStatus": "published_catalog_text"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3467-BS-6-19709370-512",
+  "name": "Gaxeta PU - Tipo BS 238 × 248 × 13 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 248.0,
+    "width": 248.0,
+    "height": 13.0
+  },
+  "params": {
+    "innerDiameter": 0.238,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 238.0,
+    "deMm": 248.0,
+    "heightMm": 13.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3467-bs-6-19709370-512",
+    "sourceSlug": "pkg-3467-bs-6-19709370-512",
+    "sourceStatus": "published_catalog_text"
+  }
+}

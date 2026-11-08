@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-1530-6-49204920",
+  "name": "Gaxeta PU - Tipo STD 125 × 150 × 12,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 150,
+    "width": 150,
+    "height": 12.5
+  },
+  "params": {
+    "innerDiameter": 0.125,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 125,
+    "deMm": 150,
+    "heightMm": 12.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1530-6-49204920",
+    "sourceSlug": "pkg-1530-6-49204920",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.125,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.15,
+      "width": 0.15,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.6750000029802322,
+      "maxX": 0.6750000029802322,
+      "minZ": -0.6750000029802322,
+      "maxZ": 0.6750000029802322,
+      "widthM": 1.3500000059604644,
+      "lengthM": 1.3500000059604644,
+      "areaM2": 1.822500016093254
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

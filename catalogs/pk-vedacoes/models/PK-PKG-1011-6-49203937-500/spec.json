@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-1011-6-49203937-500",
+  "name": "Gaxeta PU - Tipo B 100 × 125 × 12,7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 125,
+    "width": 125,
+    "height": 12.7
+  },
+  "params": {
+    "innerDiameter": 0.1,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 100,
+    "deMm": 125,
+    "heightMm": 12.7,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1011-6-49203937-500",
+    "sourceSlug": "pkg-1011-6-49203937-500",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.1,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.125,
+      "width": 0.125,
+      "height": 0.013
+    },
+    "trainingArea": {
+      "minX": -0.6625,
+      "maxX": 0.6625,
+      "minZ": -0.6625,
+      "maxZ": 0.6625,
+      "widthM": 1.325,
+      "lengthM": 1.325,
+      "areaM2": 1.755625
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

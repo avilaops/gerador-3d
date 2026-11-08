@@ -22,31 +22,62 @@ const thumbModules = import.meta.glob<string>('../catalogs/*/models/*/thumb.png'
 });
 
 const thumbs = new Map<string, string>();
-for (const [path, url] of Object.entries(thumbModules)) thumbs.set(path.split('/').at(-2)!, url);
-const specs = Object.values(specModules).sort((a, b) => a.id.localeCompare(b.id));
-const byId = new Map(specs.map((s) => [s.id, s]));
+for (const [path, url] of Object.entries(thumbModules)) {
+  const parts = path.split('/');
+  thumbs.set(`${parts.at(-4)!}/${parts.at(-2)!}`, url);
+}
+
+interface CatalogSpec {
+  catalog: string;
+  spec: EquipmentSpecInput;
+}
+const catalogSpecs: CatalogSpec[] = Object.entries(specModules)
+  .map(([path, spec]) => ({ catalog: path.split('/').at(-3)!, spec }))
+  .sort((a, b) => a.spec.id.localeCompare(b.spec.id));
 
 interface SiteInfo {
+  id: string;
   brand: string;
   brandSub?: string;
   title: string;
   lead: string;
   note?: string;
 }
-const site = Object.values(
+const sites = Object.entries(
   import.meta.glob<SiteInfo>('../catalogs/*/site.json', { eager: true, import: 'default' })
-)[0];
+).map(([path, site]) => ({ id: path.split('/').at(-2)!, site }));
+const siteById = new Map(sites.map(({ id, site }) => [site.id || id, { id, site }]));
 
 const params = new URLSearchParams(location.search);
+const catalogId = params.get('catalog') ?? sites[0]?.id ?? 'ludus';
+const selectedSite = siteById.get(catalogId) ?? sites[0];
+if (!selectedSite) throw new Error('Nenhum catálogo foi configurado.');
+const site = selectedSite.site;
+const specs = catalogSpecs.filter(({ catalog }) => catalog === selectedSite.id).map(({ spec }) => spec);
+const byId = new Map(specs.map((s) => [s.id, s]));
 /** `?dev=1` mostra os dados técnicos (família, desvio, triângulos) e os downloads. */
 const dev = params.has('dev');
-if (site) {
-  document.title = `${site.brand} ${site.brandSub ?? ''} · ${site.title}`;
-  document.getElementById('brand')!.innerHTML =
-    `<b>${site.brand}</b>${site.brandSub ? ` <span>${site.brandSub}</span>` : ''}`;
-  document.getElementById('title')!.textContent = site.title;
-  document.getElementById('lead')!.textContent = site.lead;
-}
+const catalogBar = document.getElementById('catalogs')!;
+sites.forEach(({ id, site }) => {
+  const b = Object.assign(document.createElement('button'), {
+    className: 'chip',
+    textContent: site.brandSub ? `${site.brand} · ${site.brandSub}` : site.brand,
+  });
+  b.type = 'button';
+  b.setAttribute('aria-pressed', String(id === selectedSite?.id));
+  b.onclick = () => {
+    const next = new URL(location.href);
+    next.searchParams.set('catalog', id);
+    next.searchParams.delete('id');
+    location.assign(next);
+  };
+  catalogBar.append(b);
+});
+document.title = `${site.brand} ${site.brandSub ?? ''} · ${site.title}`;
+document.getElementById('brand')!.innerHTML =
+  `<b>${site.brand}</b>${site.brandSub ? ` <span>${site.brandSub}</span>` : ''}`;
+document.getElementById('title')!.textContent = site.title;
+document.getElementById('lead')!.textContent = site.lead;
 const grid = document.getElementById('grid')!;
 const bar = document.getElementById('bar')!;
 const dialog = document.getElementById('dialog') as HTMLDialogElement;
@@ -116,13 +147,13 @@ function openDetail(spec: EquipmentSpecInput) {
     btn('Baixar USDZ', async () => download(await exportUsdz(eq), `${eq.spec.id}.usdz`, 'model/vnd.usdz+zip'));
   }
   btn('Baixar planta', () => download(svg, `${eq.spec.id}-planta.svg`, 'image/svg+xml'));
-  history.replaceState(null, '', `?id=${eq.spec.id}${dev ? '&dev=1' : ''}`);
+  history.replaceState(null, '', `?catalog=${selectedSite.id}&id=${eq.spec.id}${dev ? '&dev=1' : ''}`);
 }
 
 dialog.addEventListener('close', () => {
   viewer?.dispose();
   viewer = null;
-  history.replaceState(null, '', location.pathname + (dev ? '?dev=1' : ''));
+  history.replaceState(null, '', `${location.pathname}?catalog=${selectedSite.id}${dev ? '&dev=1' : ''}`);
 });
 
 if (params.has('embed') && byId.has(params.get('id') ?? '')) {
@@ -161,13 +192,21 @@ if (params.has('embed') && byId.has(params.get('id') ?? '')) {
         (!query || `${s.id} ${s.name}`.toLowerCase().includes(query))
     );
     count.textContent = `${list.length} de ${specs.length}`;
+    if (!list.length) {
+      const empty = document.createElement('p');
+      empty.className = 'lead';
+      empty.textContent = 'Nenhum modelo 3D cadastrado neste segmento ainda.';
+      grid.replaceChildren(empty);
+      return;
+    }
     grid.replaceChildren(
       ...list.map((s) => {
         const b = document.createElement('button');
         b.className = 'item';
         b.type = 'button';
         const approved = s.review?.status === 'approved';
-        b.innerHTML = `${thumbs.has(s.id) ? `<img loading="lazy" alt="" src="${thumbs.get(s.id)}" />` : '<img alt="" />'}
+        const thumb = `${selectedSite.id}/${s.id}`;
+        b.innerHTML = `${thumbs.has(thumb) ? `<img loading="lazy" alt="" src="${thumbs.get(thumb)}" />` : '<img alt="" />'}
           <div class="txt"><div class="code">${s.id}</div><div class="name">${s.name}</div>
           ${dev ? `<span class="tag ${approved ? 'ok' : ''}">${approved ? 'aprovado' : 'precisa revisão'}</span>` : `<span class="tag">${lineOf(s)}</span>`}</div>`;
         b.onclick = () => openDetail(s);

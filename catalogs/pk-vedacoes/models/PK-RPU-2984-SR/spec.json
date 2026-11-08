@@ -1,0 +1,60 @@
+{
+  "id": "PK-RPU-2984-SR",
+  "name": "Raspador PU - Tipo D 38 × 55 × 10 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 55,
+    "width": 55,
+    "height": 10
+  },
+  "params": {
+    "innerDiameter": 0.038,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 38,
+    "deMm": 55,
+    "heightMm": 10,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-2984-sr",
+    "sourceSlug": "rpu-2984-sr",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "wiper",
+      "innerDiameter": 0.038,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.055,
+      "width": 0.055,
+      "height": 0.01
+    },
+    "trainingArea": {
+      "minX": -0.6274999998509884,
+      "maxX": 0.6274999998509884,
+      "minZ": -0.6274999998509884,
+      "maxZ": 0.6274999998509884,
+      "widthM": 1.2549999997019767,
+      "lengthM": 1.2549999997019767,
+      "areaM2": 1.5750249992519616
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

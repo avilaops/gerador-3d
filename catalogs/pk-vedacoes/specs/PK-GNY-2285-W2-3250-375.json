@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-2285-W2-3250-375",
+  "name": "Anel guia 76,2 × 82,55 × 9,52 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 82.55,
+    "width": 82.55,
+    "height": 9.52
+  },
+  "params": {
+    "innerDiameter": 0.0762,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 76.2,
+    "deMm": 82.55,
+    "heightMm": 9.52,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-2285-w2-3250-375",
+    "sourceSlug": "gny-2285-w2-3250-375",
+    "sourceStatus": "published_catalog_text"
+  }
+}

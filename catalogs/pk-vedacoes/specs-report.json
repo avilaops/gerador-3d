@@ -1,0 +1,10 @@
+{
+  "source": "workspace:pkvedacoes/pk-catalogo-full.txt",
+  "totalProductLines": 803,
+  "generated": 803,
+  "skippedWithoutDimensions": [],
+  "reviewStatus": "needs_review",
+  "families": {
+    "seal": 803
+  }
+}

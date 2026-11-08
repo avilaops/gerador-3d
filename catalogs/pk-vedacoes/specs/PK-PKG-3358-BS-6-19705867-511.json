@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3358-BS-6-19705867-511",
+  "name": "Gaxeta PU - Tipo BS 149 × 159 × 13 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 159.0,
+    "width": 159.0,
+    "height": 13.0
+  },
+  "params": {
+    "innerDiameter": 0.149,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 149.0,
+    "deMm": 159.0,
+    "heightMm": 13.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3358-bs-6-19705867-511",
+    "sourceSlug": "pkg-3358-bs-6-19705867-511",
+    "sourceStatus": "published_catalog_text"
+  }
+}

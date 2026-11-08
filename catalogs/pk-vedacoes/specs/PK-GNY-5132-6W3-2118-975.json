@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5132-6W3-2118-975",
+  "name": "Anel guia 50,9 × 53,8 × 24,77 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 53.8,
+    "width": 53.8,
+    "height": 24.77
+  },
+  "params": {
+    "innerDiameter": 0.0509,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 50.9,
+    "deMm": 53.8,
+    "heightMm": 24.77,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5132-6w3-2118-975",
+    "sourceSlug": "gny-5132-6w3-2118-975",
+    "sourceStatus": "published_catalog_text"
+  }
+}

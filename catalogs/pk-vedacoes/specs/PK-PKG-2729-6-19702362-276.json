@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-2729-6-19702362-276",
+  "name": "Gaxeta PU - Tipo B 60 × 70 × 7 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 70.0,
+    "width": 70.0,
+    "height": 7.0
+  },
+  "params": {
+    "innerDiameter": 0.06,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 60.0,
+    "deMm": 70.0,
+    "heightMm": 7.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-2729-6-19702362-276",
+    "sourceSlug": "pkg-2729-6-19702362-276",
+    "sourceStatus": "published_catalog_text"
+  }
+}

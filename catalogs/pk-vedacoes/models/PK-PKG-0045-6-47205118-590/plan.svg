@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.7447 -0.8227 1.6373 1.7347" role="img" aria-label="Planta do Gaxeta PU - Tipo B 130 × 154 × 14,98 mm (PK-PKG-0045-6-47205118-590): 154 × 154 mm, com 60 cm de área de treino em volta" data-equipment="PK-PKG-0045-6-47205118-590" data-unit="m">
+<title>Planta do Gaxeta PU - Tipo B 130 × 154 × 14,98 mm (PK-PKG-0045-6-47205118-590): 154 × 154 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-0.677" y="-0.677" width="1.354" height="1.354" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.0081;stroke-dasharray:0.0487 0.0325"/>
+<text class="eq-zone-label" x="0" y="-0.7014" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0463px;fill:#96764a;text-anchor:middle">área de treino · 1,35 × 1,35 m · 1,83 m²</text>
+<g class="eq-parts">
+<polygon class="eq-part" points="-0.077,0 -0.0766,-0.0075 -0.0755,-0.015 -0.0737,-0.0224 -0.0711,-0.0295 -0.0679,-0.0363 -0.064,-0.0428 -0.0595,-0.0488 -0.0544,-0.0544 -0.0488,-0.0595 -0.0428,-0.064 -0.0363,-0.0679 -0.0295,-0.0711 -0.0224,-0.0737 -0.015,-0.0755 -0.0075,-0.0766 0,-0.077 0.0075,-0.0766 0.015,-0.0755 0.0224,-0.0737 0.0295,-0.0711 0.0363,-0.0679 0.0428,-0.064 0.0488,-0.0595 0.0544,-0.0544 0.0595,-0.0488 0.064,-0.0428 0.0679,-0.0363 0.0711,-0.0295 0.0737,-0.0224 0.0755,-0.015 0.0766,-0.0075 0.077,0 0.0766,0.0075 0.0755,0.015 0.0737,0.0224 0.0711,0.0295 0.0679,0.0363 0.064,0.0428 0.0595,0.0488 0.0544,0.0544 0.0488,0.0595 0.0428,0.064 0.0363,0.0679 0.0295,0.0711 0.0224,0.0737 0.015,0.0755 0.0075,0.0766 0,0.077 -0.0075,0.0766 -0.015,0.0755 -0.0224,0.0737 -0.0295,0.0711 -0.0363,0.0679 -0.0428,0.064 -0.0488,0.0595 -0.0544,0.0544 -0.0595,0.0488 -0.064,0.0428 -0.0679,0.0363 -0.0711,0.0295 -0.0737,0.0224 -0.0755,0.015 -0.0766,0.0075" style="fill:#141413;stroke:#141413;stroke-width:0.0032;stroke-linejoin:round"/>
+</g>
+<line class="eq-dim" x1="-0.077" y1="0.7853" x2="0.077" y2="0.7853" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<line class="eq-dim" x1="-0.077" y1="0.7515" x2="-0.077" y2="0.8192" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<line class="eq-dim" x1="0.077" y1="0.7515" x2="0.077" y2="0.8192" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<text class="eq-text" x="0" y="0.8536" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0487px;fill:#6d6a63;text-anchor:middle">L 154 mm</text>
+<line class="eq-dim" x1="0.7853" y1="-0.077" x2="0.7853" y2="0.077" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<line class="eq-dim" x1="0.7515" y1="-0.077" x2="0.8192" y2="-0.077" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<line class="eq-dim" x1="0.7515" y1="0.077" x2="0.8192" y2="0.077" style="stroke:#6d6a63;stroke-width:0.0065"/>
+<text class="eq-text" x="0.8487" y="0" transform="rotate(90 0.8487 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0487px;fill:#6d6a63;text-anchor:middle">C 154 mm</text>
+<text class="eq-text" x="0" y="0.9023" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0487px;fill:#6d6a63;text-anchor:middle;font-size:0.039px;letter-spacing:.1em">▼ FRENTE</text>
+</svg>

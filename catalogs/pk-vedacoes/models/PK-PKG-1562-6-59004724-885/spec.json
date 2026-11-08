@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-1562-6-59004724-885",
+  "name": "Gaxeta PU - Tipo B 120 × 150 × 22,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 150,
+    "width": 150,
+    "height": 22.5
+  },
+  "params": {
+    "innerDiameter": 0.12,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 120,
+    "deMm": 150,
+    "heightMm": 22.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1562-6-59004724-885",
+    "sourceSlug": "pkg-1562-6-59004724-885",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.12,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.15,
+      "width": 0.15,
+      "height": 0.023
+    },
+    "trainingArea": {
+      "minX": -0.6750000029802322,
+      "maxX": 0.6750000029802322,
+      "minZ": -0.6750000029802322,
+      "maxZ": 0.6750000029802322,
+      "widthM": 1.3500000059604644,
+      "lengthM": 1.3500000059604644,
+      "areaM2": 1.822500016093254
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3121-BS-6-15700630-228",
+  "name": "Gaxeta PU - Tipo BS 16 × 24 × 5,8 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 24.0,
+    "width": 24.0,
+    "height": 5.8
+  },
+  "params": {
+    "innerDiameter": 0.016,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 16.0,
+    "deMm": 24.0,
+    "heightMm": 5.8,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3121-bs-6-15700630-228",
+    "sourceSlug": "pkg-3121-bs-6-15700630-228",
+    "sourceStatus": "published_catalog_text"
+  }
+}

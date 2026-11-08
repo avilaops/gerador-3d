@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.7287 -0.8051 1.6022 1.6976" role="img" aria-label="Planta do Anel guia 120 × 125 × 9,7 mm (PK-GNY-5093-6W10-4921-382): 125 × 125 mm, com 60 cm de área de treino em volta" data-equipment="PK-GNY-5093-6W10-4921-382" data-unit="m">
+<title>Planta do Anel guia 120 × 125 × 9,7 mm (PK-GNY-5093-6W10-4921-382): 125 × 125 mm, com 60 cm de área de treino em volta</title>
+<rect class="eq-zone" x="-0.6625" y="-0.6625" width="1.325" height="1.325" style="fill:#96764a;fill-opacity:.12;stroke:#96764a;stroke-width:0.008;stroke-dasharray:0.0477 0.0318"/>
+<text class="eq-zone-label" x="0" y="-0.6863" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0453px;fill:#96764a;text-anchor:middle">área de treino · 1,33 × 1,33 m · 1,76 m²</text>
+<g class="eq-parts">
+<polygon class="eq-part" points="-0.0625,0 -0.0622,-0.0061 -0.0613,-0.0122 -0.0598,-0.0181 -0.0577,-0.0239 -0.0551,-0.0295 -0.052,-0.0347 -0.0483,-0.0396 -0.0442,-0.0442 -0.0396,-0.0483 -0.0347,-0.052 -0.0295,-0.0551 -0.0239,-0.0577 -0.0181,-0.0598 -0.0122,-0.0613 -0.0061,-0.0622 0,-0.0625 0.0061,-0.0622 0.0122,-0.0613 0.0181,-0.0598 0.0239,-0.0577 0.0295,-0.0551 0.0347,-0.052 0.0396,-0.0483 0.0442,-0.0442 0.0483,-0.0396 0.052,-0.0347 0.0551,-0.0295 0.0577,-0.0239 0.0598,-0.0181 0.0613,-0.0122 0.0622,-0.0061 0.0625,0 0.0622,0.0061 0.0613,0.0122 0.0598,0.0181 0.0577,0.0239 0.0551,0.0295 0.052,0.0347 0.0483,0.0396 0.0442,0.0442 0.0396,0.0483 0.0347,0.052 0.0295,0.0551 0.0239,0.0577 0.0181,0.0598 0.0122,0.0613 0.0061,0.0622 0,0.0625 -0.0061,0.0622 -0.0122,0.0613 -0.0181,0.0598 -0.0239,0.0577 -0.0295,0.0551 -0.0347,0.052 -0.0396,0.0483 -0.0442,0.0442 -0.0483,0.0396 -0.052,0.0347 -0.0551,0.0295 -0.0577,0.0239 -0.0598,0.0181 -0.0613,0.0122 -0.0622,0.0061" style="fill:#141413;stroke:#141413;stroke-width:0.0032;stroke-linejoin:round"/>
+</g>
+<line class="eq-dim" x1="-0.0625" y1="0.7685" x2="0.0625" y2="0.7685" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<line class="eq-dim" x1="-0.0625" y1="0.7354" x2="-0.0625" y2="0.8016" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<line class="eq-dim" x1="0.0625" y1="0.7354" x2="0.0625" y2="0.8016" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<text class="eq-text" x="0" y="0.8353" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0477px;fill:#6d6a63;text-anchor:middle">L 125 mm</text>
+<line class="eq-dim" x1="0.7685" y1="-0.0625" x2="0.7685" y2="0.0625" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<line class="eq-dim" x1="0.7354" y1="-0.0625" x2="0.8016" y2="-0.0625" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<line class="eq-dim" x1="0.7354" y1="0.0625" x2="0.8016" y2="0.0625" style="stroke:#6d6a63;stroke-width:0.0064"/>
+<text class="eq-text" x="0.8305" y="0" transform="rotate(90 0.8305 0)" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0477px;fill:#6d6a63;text-anchor:middle">C 125 mm</text>
+<text class="eq-text" x="0" y="0.883" style="font-family:Barlow,Inter,Arial,sans-serif;font-size:0.0477px;fill:#6d6a63;text-anchor:middle;font-size:0.0382px;letter-spacing:.1em">▼ FRENTE</text>
+</svg>

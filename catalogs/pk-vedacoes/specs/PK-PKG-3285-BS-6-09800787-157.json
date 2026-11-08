@@ -1,0 +1,31 @@
+{
+  "id": "PK-PKG-3285-BS-6-09800787-157",
+  "name": "Gaxeta PU - Tipo BS 20 × 25 × 4 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 25.0,
+    "width": 25.0,
+    "height": 4.0
+  },
+  "params": {
+    "innerDiameter": 0.02,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 20.0,
+    "deMm": 25.0,
+    "heightMm": 4.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-3285-bs-6-09800787-157",
+    "sourceSlug": "pkg-3285-bs-6-09800787-157",
+    "sourceStatus": "published_catalog_text"
+  }
+}

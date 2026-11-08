@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5090-TIPO-L",
+  "name": "Anel guia 168,2 × 179,8 × 18 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 179.8,
+    "width": 179.8,
+    "height": 18.0
+  },
+  "params": {
+    "innerDiameter": 0.1682,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 168.2,
+    "deMm": 179.8,
+    "heightMm": 18.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5090-tipo-l",
+    "sourceSlug": "gny-5090-tipo-l",
+    "sourceStatus": "published_catalog_text"
+  }
+}

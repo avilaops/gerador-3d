@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-1081-66D-2362",
+  "name": "Raspador PU - Tipo D 60 × 70,3 × 5,3 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 70.3,
+    "width": 70.3,
+    "height": 5.3
+  },
+  "params": {
+    "innerDiameter": 0.06,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 60.0,
+    "deMm": 70.3,
+    "heightMm": 5.3,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-1081-66d-2362",
+    "sourceSlug": "rpu-1081-66d-2362",
+    "sourceStatus": "published_catalog_text"
+  }
+}

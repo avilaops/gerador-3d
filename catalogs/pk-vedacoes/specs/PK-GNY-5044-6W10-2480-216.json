@@ -1,0 +1,31 @@
+{
+  "id": "PK-GNY-5044-6W10-2480-216",
+  "name": "Anel guia 58 × 63 × 5,5 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 63.0,
+    "width": 63.0,
+    "height": 5.5
+  },
+  "params": {
+    "innerDiameter": 0.058,
+    "kind": "guide"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "guide",
+    "diMm": 58.0,
+    "deMm": 63.0,
+    "heightMm": 5.5,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/gny-5044-6w10-2480-216",
+    "sourceSlug": "gny-5044-6w10-2480-216",
+    "sourceStatus": "published_catalog_text"
+  }
+}

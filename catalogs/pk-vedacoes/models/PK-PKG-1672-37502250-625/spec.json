@@ -1,0 +1,60 @@
+{
+  "id": "PK-PKG-1672-37502250-625",
+  "name": "Gaxeta PU - Tipo B 57,15 × 76,19 × 15,87 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 76.19,
+    "width": 76.19,
+    "height": 15.87
+  },
+  "params": {
+    "innerDiameter": 0.05715,
+    "kind": "gasket"
+  },
+  "materials": {
+    "accent": "#1f8fbd"
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "gasket",
+    "diMm": 57.15,
+    "deMm": 76.19,
+    "heightMm": 15.87,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/pkg-1672-37502250-625",
+    "sourceSlug": "pkg-1672-37502250-625",
+    "sourceStatus": "published_catalog_text"
+  },
+  "resolved": {
+    "params": {
+      "kind": "gasket",
+      "innerDiameter": 0.05715,
+      "bevel": 0.12
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 0.076,
+      "width": 0.076,
+      "height": 0.016
+    },
+    "trainingArea": {
+      "minX": -0.6380950011312961,
+      "maxX": 0.6380950011312961,
+      "minZ": -0.6380950011312961,
+      "maxZ": 0.6380950011312961,
+      "widthM": 1.2761900022625923,
+      "lengthM": 1.2761900022625923,
+      "areaM2": 1.6286609218749952
+    },
+    "stats": {
+      "triangles": 1024,
+      "meshes": 1,
+      "geometries": 1,
+      "materials": 1
+    }
+  }
+}

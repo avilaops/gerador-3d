@@ -1,0 +1,31 @@
+{
+  "id": "PK-RPU-0011-SR",
+  "name": "Raspador PU - Tipo D 20,3 × 25,8 × 4 mm",
+  "family": "seal",
+  "dimensionsMm": {
+    "length": 25.8,
+    "width": 25.8,
+    "height": 4.0
+  },
+  "params": {
+    "innerDiameter": 0.020300000000000002,
+    "kind": "wiper"
+  },
+  "materials": {
+    "accent": "#e1c400"
+  },
+  "review": {
+    "status": "needs_review",
+    "notes": "Geometria anular paramétrica derivada das medidas publicadas. Conferir perfil, material, acabamento e foto antes da publicação."
+  },
+  "meta": {
+    "empresa": "PK Vedações",
+    "kind": "wiper",
+    "diMm": 20.3,
+    "deMm": 25.8,
+    "heightMm": 4.0,
+    "sourceUrl": "https://pkvedacoes.com.br/produtos/rpu-0011-sr",
+    "sourceSlug": "rpu-0011-sr",
+    "sourceStatus": "published_catalog_text"
+  }
+}
