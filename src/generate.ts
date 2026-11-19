@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import { getFamily } from './families/registry';
 import type { DimsM } from './families/types';
 import { PartKit } from './parts/kit';
+import { buildCustomParts } from './parts/custom/build';
 import { applyPhase, buildPhaseClip, captureRestPose } from './animation';
 import { computeFootprint, type Footprint } from './footprint';
 import { evaluateCalibration, type CalibrationReport } from './calibration';
@@ -64,6 +65,24 @@ export interface QualityReport {
   issues: string[];
 }
 
+/**
+ * No modo `extend`, as peças declaradas não podem, sozinhas, passar da caixa do catálogo. Se
+ * passassem, o ajuste à caixa encolheria as dimensões de projeto da família até os parâmetros
+ * dela ficarem inválidos, e o erro apareceria como "Parâmetros inválidos", longe da causa.
+ */
+function assertPartsFitBox(id: string, parts: THREE.Object3D, dims: DimsM): void {
+  parts.updateMatrixWorld(true);
+  const size = new THREE.Box3().setFromObject(parts, true).getSize(new THREE.Vector3());
+  const limit = 1 + FIT_TOLERANCE;
+  if (size.x > dims.width * limit || size.y > dims.height * limit || size.z > dims.length * limit) {
+    const f = (v: number) => v.toFixed(3);
+    throw new EquipmentSpecError(`Peças de parts maiores que a caixa do catálogo (${id})`, [
+      `parts.items: as peças ocupam ${f(size.z)} × ${f(size.x)} × ${f(size.y)} m (C × L × A) e a caixa é ` +
+        `${f(dims.length)} × ${f(dims.width)} × ${f(dims.height)} m. Reduza as peças ou use mode: "replace".`,
+    ]);
+  }
+}
+
 /** Desvio máximo aceito antes de remontar com dimensões de projeto corrigidas. */
 const FIT_TOLERANCE = 0.01;
 const FIT_ITERATIONS = 4;
@@ -91,7 +110,7 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   const unknown = new Set<string>();
 
   // Uma montagem: parâmetros (padrões derivados das dimensões + o que o spec refinar) → grupo.
-  const buildWith = (design: DimsM) => {
+  const buildFamily = (design: DimsM) => {
     const defaults = family.defaults(design, spec) as Record<string, unknown>;
     const merged: Record<string, unknown> = { ...defaults };
     for (const [k, v] of Object.entries(spec.params)) {
@@ -107,9 +126,32 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
     }
     const params = parsed.data as Record<string, unknown>;
     const built = family.build({ spec, dims: design, params, kit });
+    return { ...built, params };
+  };
+  // Peças declaradas no spec (`parts`): no modo `extend` entram junto com o que a família montou;
+  // no `replace` a família não monta nada e as peças (e suas articulações) são o modelo inteiro.
+  // Passam pelo mesmo ajuste à caixa e pelas mesmas auditorias que qualquer família.
+  const replace = spec.parts?.mode === 'replace';
+  const customWarnings = new Set<string>();
+  const buildWith = (design: DimsM) => {
+    let built: { root: THREE.Group; articulations: Articulation[]; params: Record<string, unknown> };
+    if (replace) {
+      const root = new THREE.Group();
+      root.name = 'equipment';
+      built = { root, articulations: [], params: {} };
+    } else {
+      built = buildFamily(design);
+    }
+    if (spec.parts) {
+      const custom = buildCustomParts(kit, spec.parts);
+      custom.warnings.forEach((w) => customWarnings.add(w));
+      if (!replace) assertPartsFitBox(spec.id, custom.group, dims);
+      built.root.add(custom.group);
+      if (replace) built.articulations = custom.articulations;
+    }
     built.root.updateMatrixWorld(true);
     const size = new THREE.Box3().setFromObject(built.root, true).getSize(new THREE.Vector3());
-    return { ...built, params, size };
+    return { ...built, size };
   };
   const worst = (size: THREE.Vector3) =>
     Math.max(
@@ -123,7 +165,9 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   // continuam com a seção certa, em vez de o modelo ser esticado.
   let design: DimsM = { ...dims };
   let built = buildWith(design);
-  for (let i = 0; i < FIT_ITERATIONS && worst(built.size) > FIT_TOLERANCE; i++) {
+  // No modo `replace` as peças têm coordenadas fixas: remontar com outras dimensões de projeto
+  // não as muda, então o laço seria inútil. O que sobrar vira escala, com aviso, como sempre.
+  for (let i = 0; i < FIT_ITERATIONS && !replace && worst(built.size) > FIT_TOLERANCE; i++) {
     design = {
       length: (design.length * dims.length) / built.size.z,
       width: (design.width * dims.width) / built.size.x,
@@ -135,6 +179,7 @@ export function generateEquipment(input: EquipmentSpecInput | EquipmentSpec): Ge
   unknown.forEach((k) =>
     warnings.push(`Parâmetro desconhecido para ${spec.family}: "${k}" (ignorado)`)
   );
+  customWarnings.forEach((w) => warnings.push(w));
   // Último recurso: o que a remontagem não resolveu é corrigido por escala.
   const scale = new THREE.Vector3(1, 1, 1);
   if (worst(built.size) > FIT_TOLERANCE) {

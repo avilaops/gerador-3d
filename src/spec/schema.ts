@@ -81,6 +81,81 @@ export const ArticulationOverrideSchema = ArticulationSchema.partial().extend({
 });
 export type ArticulationOverride = z.infer<typeof ArticulationOverrideSchema>;
 
+/** Papéis de material do `PartKit`. Um teste confere que esta lista acompanha o kit. */
+export const MATERIAL_ROLES = ['frame', 'upholstery', 'accent', 'plate', 'chrome', 'rubber', 'cable', 'label', 'wood'] as const;
+const MaterialRoleSchema = z.enum(MATERIAL_ROLES);
+
+const Positive = z.number().positive('precisa ser maior que zero');
+const PositiveVec3Schema = z.tuple([Positive, Positive, Positive]);
+const SectionSchema = z.union([Positive, z.tuple([Positive, Positive])]);
+
+/** O que toda peça declarativa tem em comum. */
+const partBase = {
+  /** Nome estável do nó. Vira o nome do objeto no GLB e pode ser alvo de articulação. */
+  name: z.string().min(1, 'a peça precisa de um nome'),
+  material: MaterialRoleSchema.optional(),
+  /**
+   * Agrupa peças num nó comum (nome estável). O nó fica no pivô da articulação de mesmo nome;
+   * sem articulação, no zero do equipamento. Serve para peças que se movem juntas.
+   */
+  group: z.string().min(1).optional(),
+};
+
+/**
+ * Peça declarada no spec. Coordenadas no referencial do equipamento (metros, Y para cima,
+ * frente em +Z, origem no centro da projeção no piso), como o resto do gerador.
+ */
+export const CustomPartSchema = z.discriminatedUnion('kind', [
+  /** Tubo por caminho: com 2 pontos é reto; com mais, dobra em arco de raio `radius`. */
+  z.object({
+    kind: z.literal('tube'),
+    ...partBase,
+    points: z.array(Vec3Schema).min(2, 'o tubo precisa de pelo menos 2 pontos'),
+    size: SectionSchema,
+    round: z.boolean().optional(),
+    radius: Positive.optional(),
+  }),
+  z.object({ kind: z.literal('box'), ...partBase, size: PositiveVec3Schema, center: Vec3Schema }),
+  /** Cilindro entre dois pontos. */
+  z.object({ kind: z.literal('cylinder'), ...partBase, from: Vec3Schema, to: Vec3Schema, diameter: Positive }),
+  /** Anilha (disco com eixo em X). */
+  z.object({ kind: z.literal('plate'), ...partBase, center: Vec3Schema, diameter: Positive, thickness: Positive }),
+  /** Estofado: [largura X, espessura Y, profundidade Z], com inclinação opcional em X (rad). */
+  z.object({ kind: z.literal('pad'), ...partBase, size: PositiveVec3Schema, center: Vec3Schema, tiltX: z.number().optional() }),
+  /** Rolo estofado entre dois pontos. */
+  z.object({ kind: z.literal('roller'), ...partBase, from: Vec3Schema, to: Vec3Schema, diameter: Positive }),
+  z.object({
+    kind: z.literal('pulley'),
+    ...partBase,
+    center: Vec3Schema,
+    diameter: Positive.optional(),
+    axis: z.enum(['x', 'z']).optional(),
+  }),
+]);
+export type CustomPart = z.infer<typeof CustomPartSchema>;
+
+/**
+ * Peças que estendem (`extend`) ou substituem (`replace`) o que a família gera. No modo `replace`
+ * a família não monta nada e as articulações vêm daqui, com o `node` apontando para uma peça ou
+ * para um `group`. No modo `extend` as peças são estáticas.
+ */
+export const CustomPartsSchema = z
+  .object({
+    mode: z.enum(['extend', 'replace']),
+    items: z.array(CustomPartSchema).min(1, 'declare pelo menos uma peça'),
+    articulations: z.array(ArticulationSchema).optional(),
+  })
+  .superRefine((p, ctx) => {
+    if (p.mode === 'extend' && p.articulations?.length) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['articulations'],
+        message: 'articulações próprias só valem no modo replace; no modo extend as peças são estáticas',
+      });
+    }
+  });
+export type CustomParts = z.infer<typeof CustomPartsSchema>;
+
 export const EquipmentSpecSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
@@ -107,6 +182,8 @@ export const EquipmentSpecSchema = z.object({
     })
     .optional(),
   articulations: z.array(ArticulationOverrideSchema).optional(),
+  /** Peças declaradas à mão, para refinar um item pela foto sem escrever uma família nova. */
+  parts: CustomPartsSchema.optional(),
   camera: CameraSchema.optional(),
   calibration: CalibrationSchema.optional(),
   lod: LodSchema.optional(),
