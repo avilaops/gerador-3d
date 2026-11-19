@@ -47,6 +47,8 @@ export const SelectorizedTowerParamsSchema = z.object({
   swingScale: z.number().positive(),
   /** Torre preta e braços na cor de destaque (linha de quadro prata). */
   darkTower: z.boolean(),
+  /** `solid`: coluna carenada em chapa (Premium). `open`: quadro aberto com a pilha à vista (Core). */
+  towerStyle: z.enum(['solid', 'open']),
   armPivotHeight: z.number().positive(),
   armPivotX: z.number().nonnegative(),
   armPivotZ: z.number(),
@@ -88,6 +90,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
       stacks: spec.weightStackKg?.stacks === 2 ? 2 : 1,
       swingScale: 1,
       darkTower: false,
+      towerStyle: 'solid',
       armPivotHeight: d.height - 0.19,
       armPivotX: 0.18,
       armPivotZ: -0.14,
@@ -111,6 +114,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
         stackTravel: p.stackTravel,
         swingScale: p.swingScale,
         darkTower: p.darkTower,
+        towerStyle: p.towerStyle,
         stackKg: spec.weightStackKg?.perStack,
       });
     }
@@ -140,6 +144,7 @@ export const selectorizedTower: FamilyDefinition<SelectorizedTowerParams> = {
     // Torre carenada com a bateria.
     root.add(
       stackTower(kit, {
+        style: p.towerStyle,
         x: 0,
         z: tz,
         height: dims.height,
