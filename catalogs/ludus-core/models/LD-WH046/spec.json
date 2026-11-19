@@ -1,24 +1,25 @@
 {
   "id": "LD-WH046",
   "name": "Panturrilha Sentada (Burrinho)",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1000,
     "width": 500,
     "height": 600
   },
   "params": {
-    "variant": "flat"
+    "mechanism": "seated-calf",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,16 +30,52 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
-      "tube": 0.06,
-      "padWidth": 0.3,
-      "backAngle": 0.6,
-      "seatHeight": 0.44,
-      "wheels": true,
-      "aLegs": false,
-      "adjustable": false
+      "mechanism": "seated-calf",
+      "swingScale": 0.1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 0.2578453201681524,
+      "pivotZ": -0.04593061722736227,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.009946041919122947,
+        0.39249800176109567
+      ],
+      "leverRear": [
+        0.001983145647450918,
+        -0.19207349022351494
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": -0.16702042628131733,
+      "backrestHeight": 0.1409154656732926,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.25263267269913964,
+          0.2950209348002497
+        ],
+        "range": [
+          0,
+          0.020000000000000004
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
       "length": 1,
       "width": 0.5,
@@ -47,17 +84,17 @@
     "trainingArea": {
       "minX": -0.85,
       "maxX": 0.85,
-      "minZ": -1.1001504913890578,
-      "maxZ": 1.1001504913890576,
+      "minZ": -1.1,
+      "maxZ": 1.1,
       "widthM": 1.7,
-      "lengthM": 2.2003009827781153,
-      "areaM2": 3.7405116707227957
+      "lengthM": 2.2,
+      "areaM2": 3.74
     },
     "stats": {
-      "triangles": 1818,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 4380,
+      "meshes": 44,
+      "geometries": 7,
+      "materials": 6
     }
   }
 }

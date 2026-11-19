@@ -1,24 +1,25 @@
 {
   "id": "LD-WH053",
   "name": "Puxada Alta Articulada",
-  "family": "cable-station",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1400,
     "width": 1100,
     "height": 2200
   },
   "params": {
-    "variant": "dual-pulley"
+    "mechanism": "pulldown",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,72 +30,90 @@
   },
   "resolved": {
     "params": {
-      "variant": "dual-pulley",
-      "tube": 0.07,
-      "stackPlates": 10,
-      "stackTravel": 0.17600000000000002,
-      "pulleyHeight": 1.584,
-      "barTravel": 0.55
+      "mechanism": "pulldown",
+      "swingScale": 0.1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 1.8817359848996373,
+      "pivotZ": -0.07564912280701755,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.5764195296161526,
+        0.6464561403508772
+      ],
+      "leverRear": [
+        0.27638610691804016,
+        -0.3163508771929825
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.46,
+      "pressSeatZ": 0.27508771929824566,
+      "backrestHeight": 1,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
-        "node": "stack_left",
-        "type": "prismatic",
+        "node": "arm_right",
+        "type": "revolute",
         "axis": [
+          -1,
           0,
-          1,
           0
         ],
         "pivot": [
-          7.450579042611594e-11,
-          1.4901174738568557e-10,
-          -0.565
+          -0.3,
+          2.0900650987205083,
+          -0.33241228070175444
         ],
         "range": [
           0,
-          0.17600000000000002
+          0.05
         ],
         "driver": "phase"
       },
       {
-        "node": "stack_right",
-        "type": "prismatic",
+        "node": "arm_left",
+        "type": "revolute",
         "axis": [
+          -1,
           0,
-          1,
           0
         ],
         "pivot": [
-          7.450579042611594e-11,
-          1.4901174738568557e-10,
-          0.565
+          0.3,
+          2.0900650987205083,
+          -0.33241228070175444
         ],
         "range": [
           0,
-          0.17600000000000002
+          0.05
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.4,
+      "length": 1.41,
       "width": 1.1,
       "height": 2.2
     },
     "trainingArea": {
-      "minX": -1.1500000001490116,
+      "minX": -1.15,
       "maxX": 1.15,
-      "minZ": -1.3000000001490115,
-      "maxZ": 1.3000000001490115,
-      "widthM": 2.3000000001490113,
-      "lengthM": 2.600000000298023,
-      "areaM2": 5.980000001072883
+      "minZ": -1.3052192982456141,
+      "maxZ": 1.3052192982456141,
+      "widthM": 2.3,
+      "lengthM": 2.6104385964912282,
+      "areaM2": 6.004008771929825
     },
     "stats": {
-      "triangles": 4080,
-      "meshes": 82,
-      "geometries": 9,
-      "materials": 10
+      "triangles": 7732,
+      "meshes": 79,
+      "geometries": 15,
+      "materials": 7
     }
   }
 }

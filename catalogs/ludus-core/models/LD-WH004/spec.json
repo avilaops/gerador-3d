@@ -8,12 +8,12 @@
     "height": 1000
   },
   "params": {
-    "variant": "flat"
+    "variant": "hyper"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,7 +29,7 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
+      "variant": "hyper",
       "tube": 0.06,
       "padWidth": 0.3,
       "backAngle": 0.6,
@@ -40,24 +40,24 @@
     },
     "articulations": [],
     "bboxM": {
-      "length": 1.3,
+      "length": 1.305,
       "width": 0.9,
       "height": 1
     },
     "trainingArea": {
       "minX": -1.05,
       "maxX": 1.05,
-      "minZ": -1.2501162239000707,
-      "maxZ": 1.2501162239000707,
+      "minZ": -1.2525646365543626,
+      "maxZ": 1.2525646365543626,
       "widthM": 2.1,
-      "lengthM": 2.5002324478001414,
-      "areaM2": 5.250488140380297
+      "lengthM": 2.505129273108725,
+      "areaM2": 5.260771473528323
     },
     "stats": {
-      "triangles": 1818,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 4110,
+      "meshes": 25,
+      "geometries": 9,
+      "materials": 4
     }
   }
 }

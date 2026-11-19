@@ -1,19 +1,19 @@
 {
   "id": "LD-WH061",
   "name": "Supino Inclinado Linha Articulado",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1800,
     "width": 1600,
     "height": 1250
   },
   "params": {
-    "variant": "incline"
+    "mechanism": "incline-press"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,35 +29,90 @@
   },
   "resolved": {
     "params": {
-      "variant": "incline",
-      "tube": 0.06,
-      "padWidth": 0.3,
-      "backAngle": 0.6,
-      "seatHeight": 0.44,
-      "wheels": true,
-      "aLegs": false,
-      "adjustable": false
+      "mechanism": "incline-press",
+      "swingScale": 1,
+      "tube": 0.08,
+      "frameX": 0.47500000000000014,
+      "pivotHeight": 1.117861904999178,
+      "pivotZ": -0.09748358862144421,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.3099518273252947,
+        0.8330415754923414
+      ],
+      "leverRear": [
+        0.14441704360399302,
+        -0.4076586433260394
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.42,
+      "pressSeatZ": 0.2835886214442013,
+      "backrestHeight": 0.6109245294762949,
+      "backrestTilt": 0.55,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.52,
+          0.202,
+          0.8249015317286653
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.52,
+          0.202,
+          0.8249015317286653
+        ],
+        "range": [
+          0,
+          0.3
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
-      "length": 1.8,
+      "length": 1.81,
       "width": 1.6,
-      "height": 1.251
+      "height": 1.252
     },
     "trainingArea": {
       "minX": -1.4000000000000001,
       "maxX": 1.4000000000000001,
-      "minZ": -1.5000842503374534,
-      "maxZ": 1.5000842503374536,
+      "minZ": -1.5049015317286654,
+      "maxZ": 1.5049015317286651,
       "widthM": 2.8000000000000003,
-      "lengthM": 3.0001685006749073,
-      "areaM2": 8.400471801889742
+      "lengthM": 3.0098030634573307,
+      "areaM2": 8.427448577680527
     },
     "stats": {
-      "triangles": 2584,
-      "meshes": 18,
-      "geometries": 8,
-      "materials": 3
+      "triangles": 5956,
+      "meshes": 56,
+      "geometries": 11,
+      "materials": 6
     }
   }
 }

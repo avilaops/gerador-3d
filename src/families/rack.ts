@@ -6,7 +6,9 @@ import { z } from 'zod';
 import type { FamilyDefinition } from './types';
 import { Rig } from '../parts/rig';
 
-export const RACK_VARIANTS = ['bar-holder', 'plate-tree', 'stand'] as const;
+import type { Articulation } from '../spec/schema';
+
+export const RACK_VARIANTS = ['bar-holder', 'plate-tree', 'stand', 'smith'] as const;
 
 export const RackParamsSchema = z.object({
   variant: z.enum(RACK_VARIANTS),
@@ -28,7 +30,7 @@ export const rack: FamilyDefinition<RackParams> = {
     return {
       variant: 'plate-tree',
       tube: 0.07,
-      tiers: variant === 'bar-holder' ? 5 : 3,
+      tiers: variant === 'bar-holder' ? 5 : variant === 'smith' ? 7 : 3,
       showPlates: true,
     };
   },
@@ -42,8 +44,49 @@ export const rack: FamilyDefinition<RackParams> = {
     const y0 = t / 2;
     const base = rig.group('base');
     const frame = rig.group('frame');
+    const articulations: Articulation[] = [];
 
-    if (p.variant === 'bar-holder') {
+    if (p.variant === 'smith') {
+      // Barra guiada: dois montantes com hastes-guia cromadas, travessa no alto e escoras
+      // atrás; a barra corre na vertical e as luvas das pontas ficam dentro da caixa.
+      const sleeve = Math.min(0.3, W / 4);
+      const ux = W / 2 - sleeve;
+      const zp = -L / 2 + 0.3 * L;
+      for (const s of [-1, 1] as const) {
+        rig.tube(base, [s * ux, y0, -L / 2], [s * ux, y0, L / 2], t);
+        rig.foot(base, s * ux, -L / 2 + 0.05, [0.08, 0.08]);
+        rig.foot(base, s * ux, L / 2 - 0.05, [0.08, 0.08]);
+        rig.tube(frame, [s * ux, 0, zp], [s * ux, H - t / 2, zp], t, 'frame', `upright_${s < 0 ? 'left' : 'right'}`);
+        rig.tube(frame, [s * ux, 0.75 * H, zp], [s * ux, y0, -L / 2 + 0.1], 0.05);
+        rig.rod(frame, [s * (ux - 0.02), 0.12, zp + t / 2 + 0.03], [s * (ux - 0.02), H - 0.12, zp + t / 2 + 0.03], 0.03, 'chrome', 'guide_rod');
+        for (let i = 0; i < p.tiers; i++) {
+          const y = 0.4 + (i * (0.8 * H - 0.4)) / Math.max(1, p.tiers - 1);
+          rig.tube(frame, [s * ux, y, zp + t / 2], [s * (ux + 0.05), y, zp + t / 2 + 0.07], 0.025, 'chrome', 'catch');
+        }
+        for (const y of [0.35, 0.65] as const)
+          rig.horn(frame, [s * (ux + t / 2), y, zp - 0.12], [s, 0, 0], Math.max(0.1, sleeve - 0.06), 'storage_horn');
+        if (p.showPlates) rig.plate(frame, [s * (ux + t / 2 + 0.05), 0.35, zp - 0.12], 0.4, 0.04);
+      }
+      rig.tube(base, [-ux, y0, -L / 2 + t / 2], [ux, y0, -L / 2 + t / 2], t);
+      rig.tube(base, [-ux, y0, L / 2 - t / 2], [ux, y0, L / 2 - t / 2], t);
+      rig.tube(frame, [-ux, H - t / 2, zp], [ux, H - t / 2, zp], t, 'frame', 'top_crossbar');
+      const barY = Math.min(1.3, H - 0.5);
+      const bar = rig.group('bar');
+      bar.position.set(0, barY, zp + t / 2 + 0.08);
+      rig.rod(bar, [-(ux + sleeve), 0, 0], [ux + sleeve, 0, 0], 0.03, 'chrome', 'bar_shaft');
+      for (const s of [-1, 1] as const) {
+        rig.rod(bar, [s * (ux + 0.06), 0, 0], [s * (ux + sleeve), 0, 0], 0.05, 'chrome', 'bar_sleeve');
+        rig.box(bar, [0.09, 0.1, 0.08], [s * (ux - 0.02), 0, -0.04], 'frame', 'bar_slider');
+      }
+      articulations.push({
+        node: 'bar',
+        type: 'prismatic',
+        axis: [0, -1, 0],
+        pivot: [0, barY, zp + t / 2 + 0.08],
+        range: [0, Math.max(0.1, Math.min(0.45, barY - 0.5))],
+        driver: 'phase',
+      });
+    } else if (p.variant === 'bar-holder') {
       // Duas colunas laterais com ganchos nas duas faces: as barras ficam deitadas, atravessadas em X.
       const ux = W / 2 - t / 2;
       for (const s of [-1, 1] as const) {
@@ -132,6 +175,6 @@ export const rack: FamilyDefinition<RackParams> = {
       }
     }
 
-    return { root, articulations: [] };
+    return { root, articulations };
   },
 };

@@ -1,7 +1,7 @@
 {
   "id": "LD-WH033",
   "name": "Gráviton - Bateria de Pesos",
-  "family": "plate-loaded-lever",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1700,
     "width": 1150,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "chest-press"
+    "mechanism": "assisted-chin"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

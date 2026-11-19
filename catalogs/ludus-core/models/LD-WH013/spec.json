@@ -8,12 +8,12 @@
     "height": 2300
   },
   "params": {
-    "variant": "bar-holder"
+    "variant": "smith"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,31 +29,51 @@
   },
   "resolved": {
     "params": {
-      "variant": "bar-holder",
+      "variant": "smith",
       "tube": 0.07,
-      "tiers": 5,
+      "tiers": 7,
       "showPlates": true
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "bar",
+        "type": "prismatic",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "pivot": [
+          0,
+          1.3000000001490117,
+          -0.12499999999999999
+        ],
+        "range": [
+          0,
+          0.45
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
       "length": 1.2,
-      "width": 2.01,
+      "width": 2,
       "height": 2.3
     },
     "trainingArea": {
-      "minX": -1.605,
-      "maxX": 1.605,
-      "minZ": -1.2,
-      "maxZ": 1.2,
-      "widthM": 3.21,
-      "lengthM": 2.4,
-      "areaM2": 7.704
+      "minX": -1.6,
+      "maxX": 1.6,
+      "minZ": -1.2000000001490116,
+      "maxZ": 1.2000000001490116,
+      "widthM": 3.2,
+      "lengthM": 2.4000000002980233,
+      "areaM2": 7.680000000953675
     },
     "stats": {
-      "triangles": 5856,
-      "meshes": 54,
-      "geometries": 5,
-      "materials": 3
+      "triangles": 5496,
+      "meshes": 44,
+      "geometries": 6,
+      "materials": 4
     }
   }
 }

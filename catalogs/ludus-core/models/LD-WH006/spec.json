@@ -1,24 +1,25 @@
 {
   "id": "LD-WH006",
   "name": "Banco Sissy Agachamento",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1100,
     "width": 600,
     "height": 700
   },
   "params": {
-    "variant": "flat"
+    "mechanism": "nordic",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,35 +30,71 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
-      "tube": 0.06,
-      "padWidth": 0.3,
-      "backAngle": 0.6,
-      "seatHeight": 0.44,
-      "wheels": true,
-      "aLegs": false,
-      "adjustable": false
+      "mechanism": "nordic",
+      "swingScale": 0.1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 0.6346797007856684,
+      "pivotZ": -0.025892291146276104,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.14139989562290756,
+        0.2212613970681776
+      ],
+      "leverRear": [
+        0.0696351567622518,
+        -0.10827685388442734
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.3,
+      "pressSeatZ": -0.0847384073878127,
+      "backrestHeight": 0.34685983647588847,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          0.3420001699856351,
+          0.1365043663021536
+        ],
+        "range": [
+          0,
+          0.09000000000000001
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
       "length": 1.1,
       "width": 0.6,
       "height": 0.7
     },
     "trainingArea": {
-      "minX": -0.8999999999999999,
-      "maxX": 0.8999999999999999,
-      "minZ": -1.1501370245980826,
-      "maxZ": 1.1501370245980826,
-      "widthM": 1.7999999999999998,
-      "lengthM": 2.3002740491961653,
-      "areaM2": 4.140493288553097
+      "minX": -0.9,
+      "maxX": 0.9,
+      "minZ": -1.1500000000000001,
+      "maxZ": 1.15,
+      "widthM": 1.8,
+      "lengthM": 2.3,
+      "areaM2": 4.14
     },
     "stats": {
-      "triangles": 1818,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 4068,
+      "meshes": 44,
+      "geometries": 5,
+      "materials": 5
     }
   }
 }

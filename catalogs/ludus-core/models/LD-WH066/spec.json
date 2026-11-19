@@ -1,24 +1,25 @@
 {
   "id": "LD-WH066",
   "name": "Suporte Remada Solo",
-  "family": "rack",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 2000,
     "width": 900,
     "height": 300
   },
   "params": {
-    "variant": "bar-holder"
+    "mechanism": "ground-lever",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,12 +30,71 @@
   },
   "resolved": {
     "params": {
-      "variant": "bar-holder",
-      "tube": 0.07,
-      "tiers": 5,
-      "showPlates": true
+      "mechanism": "ground-lever",
+      "swingScale": 0.1,
+      "tube": 0.08,
+      "frameX": 0.25,
+      "pivotHeight": 0.03373900148662724,
+      "pivotZ": -0.10917500000259077,
+      "leverTube": 0.08,
+      "leverFront": [
+        0.06823058087675794,
+        0.9329500000221392
+      ],
+      "leverRear": [
+        -0.03439894058432139,
+        -0.4565500000108341
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.1985000000047105,
+      "backrestHeight": 0.018438756626412565,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.15000000000000002,
+          0.13148637441321323,
+          -0.6900000000073012
+        ],
+        "range": [
+          0,
+          0.03
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.15000000000000002,
+          0.13148637441321323,
+          -0.6900000000073012
+        ],
+        "range": [
+          0,
+          0.03
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
       "length": 2,
       "width": 0.9,
@@ -43,17 +103,17 @@
     "trainingArea": {
       "minX": -1.05,
       "maxX": 1.05,
-      "minZ": -1.6,
+      "minZ": -1.5999999999999996,
       "maxZ": 1.6,
       "widthM": 2.1,
-      "lengthM": 3.2,
-      "areaM2": 6.720000000000001
+      "lengthM": 3.1999999999999997,
+      "areaM2": 6.72
     },
     "stats": {
-      "triangles": 5856,
-      "meshes": 54,
-      "geometries": 5,
-      "materials": 3
+      "triangles": 3992,
+      "meshes": 48,
+      "geometries": 4,
+      "materials": 4
     }
   }
 }

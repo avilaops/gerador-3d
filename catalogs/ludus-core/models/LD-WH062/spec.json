@@ -1,24 +1,25 @@
 {
   "id": "LD-WH062",
   "name": "Supino Reto Linha Articulado",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1650,
     "width": 1600,
     "height": 1100
   },
   "params": {
-    "variant": "flat"
+    "mechanism": "lying-press",
+    "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,16 +30,71 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
-      "tube": 0.06,
-      "padWidth": 0.3,
-      "backAngle": 0.6,
+      "mechanism": "lying-press",
+      "swingScale": 0.5,
+      "tube": 0.08,
+      "frameX": 0.47500000000000014,
+      "pivotHeight": 0.94428312095867,
+      "pivotZ": -0.08902992374604549,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.24940108870651273,
+        0.7608011665571159
+      ],
+      "leverRear": [
+        0.11564755084565034,
+        -0.37230695384709933
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
       "seatHeight": 0.44,
-      "wheels": true,
-      "aLegs": false,
-      "adjustable": false
+      "pressSeatZ": 0.2913706595325125,
+      "backrestHeight": 0.5160617056402033,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
-    "articulations": [],
+    "articulations": [
+      {
+        "node": "arm_right",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.52,
+          0.342,
+          -0.6979877504263677
+        ],
+        "range": [
+          0,
+          0.15
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.52,
+          0.342,
+          -0.6979877504263677
+        ],
+        "range": [
+          0,
+          0.15
+        ],
+        "driver": "phase"
+      }
+    ],
     "bboxM": {
       "length": 1.65,
       "width": 1.6,
@@ -47,17 +103,17 @@
     "trainingArea": {
       "minX": -1.4000000000000001,
       "maxX": 1.4000000000000001,
-      "minZ": -1.4250918290784569,
-      "maxZ": 1.425091829078457,
+      "minZ": -1.4250045331869878,
+      "maxZ": 1.4250045331869878,
       "widthM": 2.8000000000000003,
-      "lengthM": 2.850183658156914,
-      "areaM2": 7.9805142428393605
+      "lengthM": 2.8500090663739757,
+      "areaM2": 7.980025385847132
     },
     "stats": {
-      "triangles": 1818,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 6796,
+      "meshes": 65,
+      "geometries": 15,
+      "materials": 5
     }
   }
 }

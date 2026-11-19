@@ -1,7 +1,7 @@
 {
   "id": "LD-WH056",
   "name": "Puxador Vertical - Bateria de Pesos",
-  "family": "cable-station",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1300,
     "width": 900,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "variant": "dual-pulley"
+    "mechanism": "cable-pulldown"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

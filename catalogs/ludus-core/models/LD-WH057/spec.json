@@ -8,12 +8,12 @@
     "height": 1100
   },
   "params": {
-    "mechanism": "row"
+    "mechanism": "t-bar"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,26 +29,26 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "row",
+      "mechanism": "t-bar",
       "swingScale": 1,
       "tube": 0.08,
       "frameX": 0.25,
-      "pivotHeight": 0.905821737122108,
-      "pivotZ": -0.09817500000394543,
+      "pivotHeight": 0.94428312095867,
+      "pivotZ": -0.09727720096578014,
       "leverTube": 0.08,
       "leverFront": [
-        -0.23598432690306093,
-        0.8389500000337154
+        -0.24940108870651273,
+        0.8312778991621212
       ],
       "leverRear": [
-        0.10890119771590492,
-        -0.41055000001649905
+        0.11535103354495968,
+        -0.4067955676750806
       ],
       "hornLength": 0.175,
       "hornOffset": 0.3,
-      "seatHeight": 0.46,
-      "pressSeatZ": 0.3927000000157817,
-      "backrestHeight": 0.4950421121481288,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.08843381905980013,
+      "backrestHeight": 0.5160617056402033,
       "backrestTilt": 0.38,
       "rowStation": true,
       "storageHorns": 4,
@@ -56,7 +56,7 @@
     },
     "articulations": [
       {
-        "node": "arm_right",
+        "node": "lever",
         "type": "revolute",
         "axis": [
           -1,
@@ -64,32 +64,13 @@
           0
         ],
         "pivot": [
-          -0.3,
-          0.19982014506306026,
-          -0.3247999999712741
+          0,
+          0.162,
+          -0.7536965920390695
         ],
         "range": [
           0,
-          0.34
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_left",
-        "type": "revolute",
-        "axis": [
-          -1,
-          0,
-          0
-        ],
-        "pivot": [
-          0.3,
-          0.19982014506306026,
-          -0.3247999999712741
-        ],
-        "range": [
-          0,
-          0.34
+          0.25
         ],
         "driver": "phase"
       }
@@ -102,17 +83,17 @@
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.5,
-      "maxZ": 1.5,
+      "minZ": -1.4999797891569333,
+      "maxZ": 1.4999797891569333,
       "widthM": 2.2,
-      "lengthM": 3,
-      "areaM2": 6.6000000000000005
+      "lengthM": 2.9999595783138666,
+      "areaM2": 6.599911072290507
     },
     "stats": {
-      "triangles": 7800,
-      "meshes": 71,
-      "geometries": 16,
-      "materials": 6
+      "triangles": 4864,
+      "meshes": 53,
+      "geometries": 10,
+      "materials": 5
     }
   }
 }

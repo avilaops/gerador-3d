@@ -1,19 +1,19 @@
 {
   "id": "LD-WH063",
   "name": "Supino Vertical Linha Articulado",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1200,
     "width": 1000,
     "height": 1800
   },
   "params": {
-    "variant": "flat"
+    "mechanism": "chest-press"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

@@ -8,17 +8,18 @@
     "height": 900
   },
   "params": {
-    "variant": "sled"
+    "variant": "lever-squat",
+    "travel": 0
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -29,31 +30,31 @@
   },
   "resolved": {
     "params": {
-      "variant": "sled",
+      "variant": "lever-squat",
       "tube": 0.08,
-      "travel": 0.35,
+      "travel": 0,
       "stackPlates": 0,
-      "stackTravel": 0.02603536101525424,
+      "stackTravel": 0.051121097808905454,
       "showPlates": true,
       "splitPlate": false
     },
     "articulations": [
       {
-        "node": "carriage",
-        "type": "prismatic",
+        "node": "lever",
+        "type": "revolute",
         "axis": [
+          1,
           0,
-          -0.223329209839649,
-          -0.974743075908928
+          0
         ],
         "pivot": [
           0,
-          0.5634436787487798,
-          -0.24710704524431443
+          0.7458059437566532,
+          -0.23239174526981493
         ],
         "range": [
           0,
-          0.00906897791875283
+          0
         ],
         "driver": "phase"
       }
@@ -66,14 +67,14 @@
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.2,
+      "minZ": -1.1999999999999997,
       "maxZ": 1.1999999999999997,
       "widthM": 2.2,
       "lengthM": 2.3999999999999995,
       "areaM2": 5.279999999999999
     },
     "stats": {
-      "triangles": 4780,
+      "triangles": 6858,
       "meshes": 38,
       "geometries": 10,
       "materials": 6

@@ -1,19 +1,19 @@
 {
   "id": "LD-WH065",
   "name": "Panturrilha em Pé Com Agachamento",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1650,
     "width": 1300,
     "height": 1700
   },
   "params": {
-    "variant": "sled"
+    "mechanism": "standing-calf"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

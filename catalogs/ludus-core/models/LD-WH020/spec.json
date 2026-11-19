@@ -1,7 +1,7 @@
 {
   "id": "LD-WH020",
   "name": "Cadeira Extensora Articulada",
-  "family": "selectorized-tower",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1000,
     "width": 1550,
@@ -14,7 +14,7 @@
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -30,52 +30,34 @@
   },
   "resolved": {
     "params": {
-      "tube": 0.07,
-      "baseRearHalfWidth": 0.6257787086939298,
-      "baseRailX": 0.4469847919242356,
-      "towerZ": -0.375,
-      "towerPostSpacing": 0.34,
-      "stackPlates": 10,
-      "stackTravel": 0.07984000063872,
-      "seatHeight": 0.58,
-      "seatZ": 0.02,
-      "seatWidth": 0.42,
-      "seatDepth": 0.38,
-      "backrestHeight": 0.74,
-      "backrestTilt": 0.32,
       "mechanism": "leg-extension",
-      "stacks": 1,
       "swingScale": 0.1,
-      "darkTower": false,
-      "armPivotHeight": 0.808000007984,
-      "armPivotX": 0.18,
-      "armPivotZ": -0.14,
-      "armDrop": 0.68,
-      "armSwing": 1.2,
-      "footAssist": true
+      "tube": 0.08,
+      "frameX": 0.45,
+      "pivotHeight": 0.8582959929872579,
+      "pivotZ": -0.0541871921182266,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.21940557894904344,
+        0.46305418719211816
+      ],
+      "leverRear": [
+        0.10349670839548186,
+        -0.22660098522167488
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.58,
+      "pressSeatZ": 0.019704433497536946,
+      "backrestHeight": 0.46906874035350143,
+      "backrestTilt": 0.32,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
-        "node": "stack",
-        "type": "prismatic",
-        "axis": [
-          0,
-          1,
-          0
-        ],
-        "pivot": [
-          -0.20750000000000002,
-          0.0020000000000000018,
-          0.13999999999999999
-        ],
-        "range": [
-          0,
-          0.07984000063872
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "lever",
+        "node": "arm_right",
         "type": "revolute",
         "axis": [
           -1,
@@ -83,9 +65,28 @@
           0
         ],
         "pivot": [
-          0.34146958384847126,
+          0.3,
           0.602,
-          0.28
+          0.28220443349753693
+        ],
+        "range": [
+          0,
+          0.11499999999999999
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          -0.3,
+          0.602,
+          0.28220443349753693
         ],
         "range": [
           0,
@@ -96,23 +97,23 @@
     ],
     "bboxM": {
       "length": 1,
-      "width": 1.543,
+      "width": 1.55,
       "height": 1
     },
     "trainingArea": {
-      "minX": -1.3714695838484712,
-      "maxX": 1.3714695838484712,
-      "minZ": -1.1,
-      "maxZ": 1.1,
-      "widthM": 2.7429391676969423,
-      "lengthM": 2.2,
-      "areaM2": 6.034466168933274
+      "minX": -1.375,
+      "maxX": 1.375,
+      "minZ": -1.1001108374384236,
+      "maxZ": 1.1001108374384234,
+      "widthM": 2.75,
+      "lengthM": 2.200221674876847,
+      "areaM2": 6.050609605911329
     },
     "stats": {
-      "triangles": 7828,
-      "meshes": 83,
-      "geometries": 17,
-      "materials": 10
+      "triangles": 6258,
+      "meshes": 54,
+      "geometries": 13,
+      "materials": 6
     }
   }
 }

@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "variant": "crossover"
+    "variant": "dual-pulley"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,7 +33,7 @@
   },
   "resolved": {
     "params": {
-      "variant": "crossover",
+      "variant": "dual-pulley",
       "tube": 0.07,
       "stackPlates": 10,
       "stackTravel": 0.184,
@@ -50,8 +50,8 @@
           0
         ],
         "pivot": [
-          0,
-          0.008967905305325985,
+          7.450579042611594e-11,
+          1.4901168493564043e-10,
           -0.265
         ],
         "range": [
@@ -69,8 +69,8 @@
           0
         ],
         "pivot": [
-          0,
-          0.008967905305325985,
+          7.450579042611594e-11,
+          1.4901168493564043e-10,
           0.265
         ],
         "range": [
@@ -82,23 +82,23 @@
     ],
     "bboxM": {
       "length": 0.8,
-      "width": 1.008,
-      "height": 2.309
+      "width": 1,
+      "height": 2.3
     },
     "trainingArea": {
-      "minX": -1.10409734249115,
-      "maxX": 1.10409734249115,
+      "minX": -1.1000000001490116,
+      "maxX": 1.1,
       "minZ": -1.0000000001490115,
       "maxZ": 1.0000000001490115,
-      "widthM": 2.2081946849823,
+      "widthM": 2.2000000001490116,
       "lengthM": 2.000000000298023,
-      "areaM2": 4.416389370622692
+      "areaM2": 4.400000000953674
     },
     "stats": {
-      "triangles": 5044,
-      "meshes": 75,
-      "geometries": 10,
-      "materials": 5
+      "triangles": 4080,
+      "meshes": 82,
+      "geometries": 9,
+      "materials": 10
     }
   }
 }
