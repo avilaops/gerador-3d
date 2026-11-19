@@ -1,0 +1,118 @@
+{
+  "catalogo": "ludus",
+  "resumo": {
+    "total": 7,
+    "medidos": 7,
+    "media": 0.4042072757090138,
+    "mediana": 0.3846366399557889,
+    "abaixoDe06": 7,
+    "fotoDuvidosa": 0
+  },
+  "itens": [
+    {
+      "id": "LD-A042",
+      "nome": "Banco Reto",
+      "nota": 0.24784082742154814,
+      "iou": 0.24786745406824148,
+      "proporcao": 0.999892577075948,
+      "regioes": [
+        0.29876977152899825,
+        0.22963459604425077,
+        0.17443249701314217
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-A007",
+      "nome": "Supino Horizontal",
+      "nota": 0.3630188105120581,
+      "iou": 0.3820538057742782,
+      "proporcao": 0.9501771871539314,
+      "regioes": [
+        0.31901840490797545,
+        0.4524937308442463,
+        0.24963396778916544
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-B035",
+      "nome": "Estação Multifuncional Dupla",
+      "nota": 0.38392140714007705,
+      "iou": 0.5345832676855207,
+      "proporcao": 0.7181695169814528,
+      "regioes": [
+        0.40632703368940015,
+        0.6270527225583405,
+        0.5959974984365228
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-A002",
+      "nome": "Supino e Remada",
+      "nota": 0.3846366399557889,
+      "iou": 0.44072948328267475,
+      "proporcao": 0.8727272727272728,
+      "regioes": [
+        0.4375812743823147,
+        0.3482417207237965,
+        0.5211431904345291
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-A031",
+      "nome": "Flexora em Pé de Peso Livre",
+      "nota": 0.46104671135398245,
+      "iou": 0.4889659520807062,
+      "proporcao": 0.9429014625498596,
+      "regioes": [
+        0.21627188465499486,
+        0.4869633921516987,
+        0.6311887741593858
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-B012",
+      "nome": "Puxada Alta",
+      "nota": 0.49289154337172997,
+      "iou": 0.526739233317558,
+      "proporcao": 0.9357410881801126,
+      "regioes": [
+        0.6181657848324515,
+        0.6887709991158267,
+        0.38041815400305967
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-B004",
+      "nome": "Peck Deck",
+      "nota": 0.4960949902079125,
+      "iou": 0.5326008645533141,
+      "proporcao": 0.9314573505696078,
+      "regioes": [
+        0.4688393367638651,
+        0.5985603543743079,
+        0.528793189784677
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    }
+  ]
+}

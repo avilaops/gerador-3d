@@ -34,6 +34,23 @@ As fotos ficam fora do repositório: o cache vai para `<pasta temporária>/gerad
 - A coluna **confiança da foto** avisa quando a segmentação provavelmente falhou. Nota baixa com confiança baixa pode ser a máscara, não o modelo.
 - **Limitação conhecida:** equipamento branco ou prata muito claro pode perder partes na segmentação, porque se confunde com o fundo e a sombra.
 
+## Calibração: o que é uma nota boa
+
+Medido com 5 azimutes (`--azimutes -60,-30,0,30,60`):
+
+| Conjunto | Itens | Média | Faixa |
+| --- | --- | --- | --- |
+| Core de `main` (com o PR #3) | 66 | 0,34 | 0,08 a 0,55 |
+| Premium ajustado à mão contra a foto | 7 | 0,40 | 0,25 a 0,50 |
+
+- **Nenhum item chega a 0,60**, nem os ajustados à mão: quadro vazado de tubo fino perde IoU por qualquer desalinho de poucos pixels. Trate **0,5 como um bom resultado** nesta régua.
+- **O ruído por item é de uns 0,05 a 0,1.** O LD-A042, ajustado contra a foto, tem 0,25 e o LD-B004 tem 0,50. Compare **médias de grupo** e **mudanças grandes**, não diferenças pequenas de um item.
+- Linhas de base para comparar antes e depois de uma frente, geradas com o comando acima: `docs/frentes/evidencias/a-medicao/baseline-core-main.json` (Core atual), `baseline-core-antes-pr3.json` (Core com o mapeamento antigo, commit `99a5e1c`) e `baseline-premium-ajustados.json`.
+
+### Limitação: massa sólida ganha de quadro vazado
+
+A silhueta é preenchida, então um bloco maciço pode pontuar mais do que um modelo correto de tubos. Caso real: o Agachamento Búlgaro (LD-WH001) pontuava 0,47 quando o modelo era uma placa maciça e caiu para 0,33 com o mecanismo de alavanca certo, porque a placa cobria a mancha densa da foto. Em contrapartida a nota pegou uma regressão verdadeira do PR #3: o banco regulável LD-WH011 caiu de 0,43 para 0,23 (o banco reto antigo casava melhor com a foto do que o inclinado a 60°). **Olhe a sobreposição antes de aceitar ou descartar uma mudança só pelo número.**
+
 ## Regressão visual
 
 ```bash
