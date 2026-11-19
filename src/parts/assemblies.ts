@@ -6,6 +6,7 @@ import type { PartKit } from './kit';
 import { beam, box, cable, mesh } from './primitives';
 import type { Articulation, Vec3 } from '../spec/schema';
 import { decalPlane, incrementDecal, placardDecal, scaleDecal } from './decals';
+import { openTowerFrame } from './tower';
 
 export interface TowerOptions {
   /** Centro da torre no piso (x, z). */
@@ -182,7 +183,57 @@ export function pivotArm(
   return g;
 }
 
+/**
+ * Estilo da torre: `solid` é a coluna carenada em chapa (fotos do Premium); `open` é o quadro
+ * aberto com a pilha de placas à vista (fotos do Core).
+ */
+export type TowerStyle = 'solid' | 'open';
+
+/**
+ * Torre de quadro aberto: montantes, cabeçote e travessas, com a bateria de pesos à vista.
+ * Mesmos nós e mesma articulação do estilo carenado (`tower<sufixo>` e `stack<sufixo>`),
+ * então quem anima ou audita a torre não precisa saber qual estilo foi usado.
+ */
+function openStackTower(kit: PartKit, o: StackTowerOptions): { group: THREE.Group; articulation: Articulation } {
+  const suffix = o.suffix ?? '';
+  const unit = new THREE.Group();
+  unit.name = `tower${suffix}`;
+  unit.position.set(o.x, 0, o.z);
+  const { frame, headerBottomY } = openTowerFrame(kit, { height: o.height });
+  unit.add(frame);
+  const baseY = 0.11;
+  const guideHeight = headerBottomY - 0.03;
+  // 0,26 m: a haste seletora sobe 0,25 m acima da placa do topo e não pode entrar no cabeçote.
+  const available = guideHeight - baseY - o.travel - 0.26;
+  const pitch = Math.min(0.037, Math.max(0.016, available / (o.plates + 1)));
+  const st = weightStack(kit, {
+    x: 0,
+    z: 0,
+    plates: o.plates,
+    plateSize: [0.24, pitch - 0.005, 0.13],
+    gap: 0.005,
+    baseY,
+    guideHeight,
+    cableTopY: headerBottomY - 0.01,
+  });
+  st.stack.name = `stack${suffix}`;
+  unit.add(st.guides, st.stack);
+  return {
+    group: unit,
+    articulation: {
+      node: `stack${suffix}`,
+      type: 'prismatic',
+      axis: [0, 1, 0],
+      pivot: [o.x, 0, o.z],
+      range: [0, o.travel],
+      driver: 'phase',
+    },
+  };
+}
+
 export interface StackTowerOptions {
+  /** Estilo da torre. Padrão: `solid`, o comportamento de sempre. */
+  style?: TowerStyle;
   /** Coluna preta mesmo quando a estrutura tem outra cor (baterias das iso-laterais). */
   dark?: boolean;
   /** Sufixo dos nós: "" (torre única), "_left", "_right"... */
@@ -208,6 +259,7 @@ export interface StackTowerOptions {
  * bateria (`stack<sufixo>`).
  */
 export function stackTower(kit: PartKit, o: StackTowerOptions): { group: THREE.Group; articulation: Articulation } {
+  if (o.style === 'open') return openStackTower(kit, o);
   const suffix = o.suffix ?? '';
   const unit = new THREE.Group();
   unit.name = `tower${suffix}`;
