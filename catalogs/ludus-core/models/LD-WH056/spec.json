@@ -1,7 +1,7 @@
 {
   "id": "LD-WH056",
   "name": "Puxador Vertical - Bateria de Pesos",
-  "family": "cable-station",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1300,
     "width": 900,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "variant": "dual-pulley"
+    "mechanism": "cable-pulldown"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,16 +33,33 @@
   },
   "resolved": {
     "params": {
-      "variant": "dual-pulley",
       "tube": 0.07,
+      "baseRearHalfWidth": 0.09357327299343199,
+      "baseRailX": 0.06683805213816571,
+      "towerZ": -0.5050000173749577,
+      "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.184,
-      "pulleyHeight": 1.656,
-      "barTravel": 0.55
+      "stackTravel": 0.1838400000000001,
+      "seatHeight": 0.46,
+      "seatZ": 0.20160000555998647,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "cable-pulldown",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 2.108000000000001,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
       {
-        "node": "stack_left",
+        "node": "stack",
         "type": "prismatic",
         "axis": [
           0,
@@ -50,32 +67,32 @@
           0
         ],
         "pivot": [
-          7.450581818169155e-11,
-          1.4901174044679166e-10,
-          -0.515
+          0,
+          0.0020000000000000018,
+          -0.5000000040096055
         ],
         "range": [
           0,
-          0.184
+          0.1838400000000001
         ],
         "driver": "phase"
       },
       {
-        "node": "stack_right",
+        "node": "bar",
         "type": "prismatic",
         "axis": [
           0,
-          1,
+          -1,
           0
         ],
         "pivot": [
-          7.450581818169155e-11,
-          1.4901174044679166e-10,
-          0.515
+          0,
+          1.5700000000000003,
+          0.08499999772789026
         ],
         "range": [
           0,
-          0.184
+          0.55
         ],
         "driver": "phase"
       }
@@ -86,18 +103,18 @@
       "height": 2.3
     },
     "trainingArea": {
-      "minX": -1.0500000001490117,
+      "minX": -1.05,
       "maxX": 1.05,
-      "minZ": -1.2500000001490115,
-      "maxZ": 1.2500000001490115,
-      "widthM": 2.100000000149012,
-      "lengthM": 2.500000000298023,
-      "areaM2": 5.250000000998378
+      "minZ": -1.25,
+      "maxZ": 1.25,
+      "widthM": 2.1,
+      "lengthM": 2.5,
+      "areaM2": 5.25
     },
     "stats": {
-      "triangles": 4080,
-      "meshes": 82,
-      "geometries": 9,
+      "triangles": 4578,
+      "meshes": 65,
+      "geometries": 10,
       "materials": 10
     }
   }

@@ -1,7 +1,7 @@
 {
   "id": "LD-WH016",
   "name": "Bíceps e Tríceps - Bateria de Pesos",
-  "family": "plate-loaded-lever",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1400,
     "width": 1000,
@@ -12,17 +12,18 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "chest-press"
+    "mechanism": "biceps-curl",
+    "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",
@@ -33,32 +34,50 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "chest-press",
-      "swingScale": 1,
-      "tube": 0.08,
-      "frameX": 0.25,
-      "pivotHeight": 1.3406134167403172,
-      "pivotZ": -0.07483819464134166,
-      "leverTube": 0.08,
-      "leverFront": [
-        -0.38765584304894785,
-        0.639526390571465
-      ],
-      "leverRear": [
-        0.18394135295645697,
-        -0.31295972304561054
-      ],
-      "hornLength": 0.175,
-      "hornOffset": 0.3,
-      "seatHeight": 0.48,
-      "pressSeatZ": 0.16328333376292722,
-      "backrestHeight": 0.7326608207766849,
-      "backrestTilt": 0.18,
-      "rowStation": true,
-      "storageHorns": 4,
-      "swing": 0.45
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.4516129032258064,
+      "baseRailX": 0.3225806451612903,
+      "towerZ": -0.575,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.11984000028406518,
+      "seatHeight": 0.46,
+      "seatZ": 0.27999999999999997,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "biceps-curl",
+      "stacks": 1,
+      "swingScale": 0.5,
+      "darkTower": false,
+      "armPivotHeight": 1.3080000035508148,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          -0.18000000000000005,
+          0.0020000000000000018,
+          0.15999999999999998
+        ],
+        "range": [
+          0,
+          0.11984000028406518
+        ],
+        "driver": "phase"
+      },
       {
         "node": "arm_right",
         "type": "revolute",
@@ -68,13 +87,13 @@
           0
         ],
         "pivot": [
-          0.3,
-          1.3949615139166416,
-          -0.15694134191059375
+          -0.2098387096774194,
+          0.762,
+          -0.14
         ],
         "range": [
           0,
-          0.36
+          0.725
         ],
         "driver": "phase"
       },
@@ -87,36 +106,36 @@
           0
         ],
         "pivot": [
-          -0.3,
-          1.3949615139166416,
-          -0.15694134191059375
+          0.45016129032258057,
+          0.762,
+          -0.14
         ],
         "range": [
           0,
-          0.36
+          0.725
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
       "length": 1.4,
-      "width": 1,
+      "width": 0.99,
       "height": 1.5
     },
     "trainingArea": {
-      "minX": -1.1,
-      "maxX": 1.1,
+      "minX": -1.0951612903225807,
+      "maxX": 1.0951612903225807,
       "minZ": -1.2999999999999998,
       "maxZ": 1.2999999999999998,
-      "widthM": 2.2,
+      "widthM": 2.1903225806451614,
       "lengthM": 2.5999999999999996,
-      "areaM2": 5.72
+      "areaM2": 5.694838709677419
     },
     "stats": {
-      "triangles": 8496,
-      "meshes": 81,
-      "geometries": 17,
-      "materials": 7
+      "triangles": 5518,
+      "meshes": 76,
+      "geometries": 9,
+      "materials": 10
     }
   }
 }

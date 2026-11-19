@@ -10,7 +10,7 @@
       "family": "leg-press",
       "review": "needs_review",
       "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 46%)"
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 18%)"
       ],
       "files": {
         "glb": "models/LD-WH001/model.glb",
@@ -35,9 +35,9 @@
         "areaM2": 5.28
       },
       "animated": true,
-      "triangles": 4780,
-      "glbBytes": 201640,
-      "usdzBytes": 635257,
+      "triangles": 6858,
+      "glbBytes": 211480,
+      "usdzBytes": 661745,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -78,7 +78,7 @@
       "deviationPct": {
         "length": 0,
         "width": 0,
-        "height": 0
+        "height": -0.28
       },
       "trainingArea": {
         "widthM": 2.45,
@@ -86,9 +86,9 @@
         "areaM2": 8.82
       },
       "animated": true,
-      "triangles": 6348,
-      "glbBytes": 221084,
-      "usdzBytes": 694863,
+      "triangles": 6730,
+      "glbBytes": 208748,
+      "usdzBytes": 652360,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -103,7 +103,7 @@
         "motionMaxSizeM": {
           "length": 2.4,
           "width": 1.25,
-          "height": 1.6499954462051392
+          "height": 1.6453007580712438
         }
       }
     },
@@ -137,9 +137,9 @@
         "areaM2": 6.27
       },
       "animated": true,
-      "triangles": 4780,
-      "glbBytes": 201268,
-      "usdzBytes": 634461,
+      "triangles": 4768,
+      "glbBytes": 81008,
+      "usdzBytes": 237797,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -154,7 +154,7 @@
         "motionMaxSizeM": {
           "length": 1.65,
           "width": 1,
-          "height": 1.099995493888855
+          "height": 1.1
         }
       }
     },
@@ -178,19 +178,19 @@
         "height": 1000
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0.39,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.5,
-        "areaM2": 5.25
+        "lengthM": 2.505,
+        "areaM2": 5.26
       },
       "animated": false,
-      "triangles": 1818,
-      "glbBytes": 102352,
-      "usdzBytes": 322340,
+      "triangles": 4110,
+      "glbBytes": 177232,
+      "usdzBytes": 572866,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -203,9 +203,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3002324478001417,
+          "length": 1.3051292731087252,
           "width": 0.9,
-          "height": 1
+          "height": 0.9999999919840001
         }
       }
     },
@@ -231,7 +231,7 @@
       "deviationPct": {
         "length": 0.02,
         "width": 0,
-        "height": 0
+        "height": -0.01
       },
       "trainingArea": {
         "widthM": 2.1,
@@ -239,9 +239,9 @@
         "areaM2": 4.83
       },
       "animated": false,
-      "triangles": 1882,
-      "glbBytes": 103764,
-      "usdzBytes": 326260,
+      "triangles": 3900,
+      "glbBytes": 221900,
+      "usdzBytes": 694678,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -256,7 +256,7 @@
         "motionMaxSizeM": {
           "length": 1.1002740491961651,
           "width": 0.9,
-          "height": 1.15
+          "height": 1.1499122257823384
         }
       }
     },
@@ -264,9 +264,11 @@
       "id": "LD-WH006",
       "ok": true,
       "name": "Banco Sissy Agachamento",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 40%)"
+      ],
       "files": {
         "glb": "models/LD-WH006/model.glb",
         "usdz": "models/LD-WH006/model.usdz",
@@ -280,7 +282,7 @@
         "height": 700
       },
       "deviationPct": {
-        "length": 0.02,
+        "length": 0,
         "width": 0,
         "height": 0
       },
@@ -289,10 +291,10 @@
         "lengthM": 2.3,
         "areaM2": 4.14
       },
-      "animated": false,
-      "triangles": 1818,
-      "glbBytes": 102360,
-      "usdzBytes": 322357,
+      "animated": true,
+      "triangles": 4068,
+      "glbBytes": 96436,
+      "usdzBytes": 303985,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -305,9 +307,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.1002740491961651,
-          "width": 0.6,
-          "height": 0.7
+          "length": 1.1189898464483121,
+          "width": 0.6000000000000001,
+          "height": 0.7000000000000001
         }
       }
     },
@@ -331,8 +333,8 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.01,
-        "width": 0,
+        "length": 0,
+        "width": 0.03,
         "height": 0
       },
       "trainingArea": {
@@ -341,9 +343,9 @@
         "areaM2": 6.44
       },
       "animated": false,
-      "triangles": 2716,
-      "glbBytes": 160428,
-      "usdzBytes": 521617,
+      "triangles": 3488,
+      "glbBytes": 117780,
+      "usdzBytes": 374464,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -356,8 +358,8 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.6001893353796959,
-          "width": 1.1,
+          "length": 1.6000000000000003,
+          "width": 1.100357142857143,
           "height": 1.5
         }
       }
@@ -368,9 +370,7 @@
       "name": "Banco Supino Inclinado Para Barra",
       "family": "bench",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 30%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH008/model.glb",
         "usdz": "models/LD-WH008/model.usdz",
@@ -385,7 +385,7 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0,
+        "width": 0.03,
         "height": 0
       },
       "trainingArea": {
@@ -394,9 +394,9 @@
         "areaM2": 6.21
       },
       "animated": false,
-      "triangles": 2584,
-      "glbBytes": 166564,
-      "usdzBytes": 539506,
+      "triangles": 3886,
+      "glbBytes": 168920,
+      "usdzBytes": 553012,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -409,9 +409,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5,
-          "width": 1.1,
-          "height": 1.5000000000000002
+          "length": 1.500061367433661,
+          "width": 1.100357142857143,
+          "height": 1.5
         }
       }
     },
@@ -435,8 +435,8 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.01,
-        "width": 0,
+        "length": 0,
+        "width": 0.03,
         "height": 0
       },
       "trainingArea": {
@@ -445,9 +445,9 @@
         "areaM2": 6.21
       },
       "animated": false,
-      "triangles": 1882,
-      "glbBytes": 103792,
-      "usdzBytes": 326406,
+      "triangles": 3184,
+      "glbBytes": 111176,
+      "usdzBytes": 358100,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -460,8 +460,8 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5002018121757272,
-          "width": 1.1,
+          "length": 1.5,
+          "width": 1.100357142857143,
           "height": 1.5
         }
       }
@@ -486,8 +486,8 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.01,
-        "width": 0,
+        "length": 0,
+        "width": 0.03,
         "height": 0
       },
       "trainingArea": {
@@ -496,9 +496,9 @@
         "areaM2": 6.21
       },
       "animated": false,
-      "triangles": 1882,
-      "glbBytes": 103784,
-      "usdzBytes": 326406,
+      "triangles": 3886,
+      "glbBytes": 168888,
+      "usdzBytes": 553092,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -511,8 +511,8 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5002018121757272,
-          "width": 1.1,
+          "length": 1.5,
+          "width": 1.100357142857143,
           "height": 1.5
         }
       }
@@ -539,7 +539,7 @@
       "deviationPct": {
         "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.07
       },
       "trainingArea": {
         "widthM": 1.7,
@@ -547,9 +547,9 @@
         "areaM2": 4.59
       },
       "animated": false,
-      "triangles": 1754,
-      "glbBytes": 100920,
-      "usdzBytes": 318487,
+      "triangles": 2584,
+      "glbBytes": 166508,
+      "usdzBytes": 536862,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -564,7 +564,7 @@
         "motionMaxSizeM": {
           "length": 1.5002018121757272,
           "width": 0.5,
-          "height": 0.48
+          "height": 0.48033471469090894
         }
       }
     },
@@ -590,7 +590,7 @@
       "deviationPct": {
         "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.6
       },
       "trainingArea": {
         "widthM": 1.7,
@@ -598,9 +598,9 @@
         "areaM2": 4.59
       },
       "animated": false,
-      "triangles": 1754,
-      "glbBytes": 100916,
-      "usdzBytes": 318465,
+      "triangles": 2584,
+      "glbBytes": 166500,
+      "usdzBytes": 538224,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -615,7 +615,7 @@
         "motionMaxSizeM": {
           "length": 1.5002018121757272,
           "width": 0.5,
-          "height": 0.48
+          "height": 0.4828813659383778
         }
       }
     },
@@ -640,18 +640,18 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0.5,
+        "width": 0,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 3.21,
+        "widthM": 3.2,
         "lengthM": 2.4,
-        "areaM2": 7.7
+        "areaM2": 7.68
       },
-      "animated": false,
-      "triangles": 5856,
-      "glbBytes": 56304,
-      "usdzBytes": 170497,
+      "animated": true,
+      "triangles": 5496,
+      "glbBytes": 70956,
+      "usdzBytes": 206101,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -664,8 +664,8 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.2,
-          "width": 2.01,
+          "length": 1.2000000002980231,
+          "width": 2,
           "height": 2.300000000298023
         }
       }
@@ -676,7 +676,9 @@
       "name": "Barra Guiada Parede",
       "family": "rack",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 3%)"
+      ],
       "files": {
         "glb": "models/LD-WH014/model.glb",
         "usdz": "models/LD-WH014/model.usdz",
@@ -691,18 +693,18 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0.5,
+        "width": 0,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 3.21,
+        "widthM": 3.2,
         "lengthM": 1.7,
-        "areaM2": 5.46
+        "areaM2": 5.44
       },
-      "animated": false,
-      "triangles": 5856,
-      "glbBytes": 56272,
-      "usdzBytes": 170523,
+      "animated": true,
+      "triangles": 5496,
+      "glbBytes": 71528,
+      "usdzBytes": 207531,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -716,8 +718,8 @@
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 0.5,
-          "width": 2.01,
-          "height": 2.3000000002980228
+          "width": 2,
+          "height": 2.3
         }
       }
     },
@@ -725,11 +727,9 @@
       "id": "LD-WH015",
       "ok": true,
       "name": "Bíceps Máquina - Bateria de Pesos",
-      "family": "plate-loaded-lever",
+      "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 5%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH015/model.glb",
         "usdz": "models/LD-WH015/model.usdz",
@@ -744,33 +744,39 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0,
+        "width": -0.97,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 2.2,
+        "widthM": 2.19,
         "lengthM": 2.6,
-        "areaM2": 5.72
+        "areaM2": 5.69
       },
       "animated": true,
-      "triangles": 8496,
-      "glbBytes": 244432,
-      "usdzBytes": 734545,
+      "triangles": 5518,
+      "glbBytes": 231460,
+      "usdzBytes": 591195,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": true,
-        "motionCollisionCount": 0,
-        "motionCollisions": [],
+        "motionCollisionFree": false,
+        "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 1,
+            "other": "arm_pad_cushion"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3999999999999997,
-          "width": 1,
-          "height": 1.5000000000000002
+          "length": 1.4,
+          "width": 0.9903225806451614,
+          "height": 1.5000000035508148
         }
       }
     },
@@ -778,11 +784,9 @@
       "id": "LD-WH016",
       "ok": true,
       "name": "Bíceps e Tríceps - Bateria de Pesos",
-      "family": "plate-loaded-lever",
+      "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 5%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH016/model.glb",
         "usdz": "models/LD-WH016/model.usdz",
@@ -797,33 +801,39 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0,
+        "width": -0.97,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 2.2,
+        "widthM": 2.19,
         "lengthM": 2.6,
-        "areaM2": 5.72
+        "areaM2": 5.69
       },
       "animated": true,
-      "triangles": 8496,
-      "glbBytes": 244436,
-      "usdzBytes": 734545,
+      "triangles": 5518,
+      "glbBytes": 231460,
+      "usdzBytes": 591195,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": true,
-        "motionCollisionCount": 0,
-        "motionCollisions": [],
+        "motionCollisionFree": false,
+        "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "stack",
+            "phase": 1,
+            "other": "arm_pad_cushion"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3999999999999997,
-          "width": 1,
-          "height": 1.5000000000000002
+          "length": 1.4,
+          "width": 0.9903225806451614,
+          "height": 1.5000000035508148
         }
       }
     },
@@ -984,7 +994,7 @@
       "id": "LD-WH020",
       "ok": true,
       "name": "Cadeira Extensora Articulada",
-      "family": "selectorized-tower",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -1000,19 +1010,19 @@
         "height": 1000
       },
       "deviationPct": {
-        "length": 0,
-        "width": -0.46,
+        "length": 0.02,
+        "width": 0,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 2.743,
+        "widthM": 2.75,
         "lengthM": 2.2,
-        "areaM2": 6.03
+        "areaM2": 6.05
       },
       "animated": true,
-      "triangles": 7828,
-      "glbBytes": 368588,
-      "usdzBytes": 1007709,
+      "triangles": 6258,
+      "glbBytes": 225668,
+      "usdzBytes": 692438,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1025,9 +1035,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1,
-          "width": 1.5429391676969426,
-          "height": 1.0000000079840001
+          "length": 1.000221674876847,
+          "width": 1.55,
+          "height": 1.0000039596557617
         }
       }
     },
@@ -1370,8 +1380,8 @@
       },
       "animated": true,
       "triangles": 8560,
-      "glbBytes": 245860,
-      "usdzBytes": 736641,
+      "glbBytes": 245880,
+      "usdzBytes": 736621,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1421,8 +1431,8 @@
       },
       "animated": true,
       "triangles": 8496,
-      "glbBytes": 244672,
-      "usdzBytes": 733032,
+      "glbBytes": 244692,
+      "usdzBytes": 733012,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1472,8 +1482,8 @@
       },
       "animated": true,
       "triangles": 7062,
-      "glbBytes": 227656,
-      "usdzBytes": 706848,
+      "glbBytes": 227676,
+      "usdzBytes": 706828,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1523,8 +1533,8 @@
       },
       "animated": true,
       "triangles": 7062,
-      "glbBytes": 227636,
-      "usdzBytes": 706837,
+      "glbBytes": 227656,
+      "usdzBytes": 706945,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1549,9 +1559,7 @@
       "name": "Flexora em Pé - Bateria de Pesos",
       "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH031/model.glb",
         "usdz": "models/LD-WH031/model.usdz",
@@ -1565,19 +1573,19 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.11,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.4,
+        "lengthM": 2.401,
         "areaM2": 5.04
       },
       "animated": true,
-      "triangles": 6792,
-      "glbBytes": 297536,
-      "usdzBytes": 773482,
+      "triangles": 4740,
+      "glbBytes": 140352,
+      "usdzBytes": 358465,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1590,9 +1598,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.1999999999999997,
+          "length": 1.201290322580645,
           "width": 0.9,
-          "height": 1.4999999999999998
+          "height": 1.5000026631158456
         }
       }
     },
@@ -1600,11 +1608,9 @@
       "id": "LD-WH032",
       "ok": true,
       "name": "Flexora em Pé Articulada Unilateral",
-      "family": "selectorized-tower",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 9%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH032/model.glb",
         "usdz": "models/LD-WH032/model.usdz",
@@ -1618,34 +1624,40 @@
         "height": 1700
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.02,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.75,
         "lengthM": 2.3,
-        "areaM2": 6.32
+        "areaM2": 6.33
       },
       "animated": true,
-      "triangles": 7128,
-      "glbBytes": 299164,
-      "usdzBytes": 778945,
+      "triangles": 6328,
+      "glbBytes": 147004,
+      "usdzBytes": 442332,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
         "motionWithinDesignBox": true,
-        "motionCollisionFree": true,
-        "motionCollisionCount": 0,
-        "motionCollisions": [],
+        "motionCollisionFree": false,
+        "motionCollisionCount": 1,
+        "motionCollisions": [
+          {
+            "node": "lever",
+            "phase": 0.5,
+            "other": "side_leg_tube"
+          }
+        ],
         "calibrationStatus": "not_provided",
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.1,
-          "width": 1.5500000000000003,
-          "height": 1.7
+          "length": 1.1002017937219732,
+          "width": 1.55,
+          "height": 1.700002350178013
         }
       }
     },
@@ -1653,7 +1665,7 @@
       "id": "LD-WH033",
       "ok": true,
       "name": "Gráviton - Bateria de Pesos",
-      "family": "plate-loaded-lever",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -1669,19 +1681,19 @@
         "height": 2300
       },
       "deviationPct": {
-        "length": 0.88,
+        "length": 0.05,
         "width": 0,
-        "height": 0.52
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.35,
-        "lengthM": 2.915,
-        "areaM2": 6.85
+        "lengthM": 2.901,
+        "areaM2": 6.82
       },
       "animated": true,
-      "triangles": 11708,
-      "glbBytes": 267276,
-      "usdzBytes": 781373,
+      "triangles": 6020,
+      "glbBytes": 219792,
+      "usdzBytes": 516653,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1694,9 +1706,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.7149999999999999,
+          "length": 1.700919540229885,
           "width": 1.15,
-          "height": 2.3120000007450576
+          "height": 2.3000017662048338
         }
       }
     },
@@ -1731,8 +1743,8 @@
       },
       "animated": true,
       "triangles": 6938,
-      "glbBytes": 221388,
-      "usdzBytes": 694144,
+      "glbBytes": 221408,
+      "usdzBytes": 694124,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1782,8 +1794,8 @@
       },
       "animated": true,
       "triangles": 6938,
-      "glbBytes": 221392,
-      "usdzBytes": 694144,
+      "glbBytes": 221412,
+      "usdzBytes": 694124,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1833,8 +1845,8 @@
       },
       "animated": true,
       "triangles": 6938,
-      "glbBytes": 221196,
-      "usdzBytes": 696053,
+      "glbBytes": 221216,
+      "usdzBytes": 696033,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1884,8 +1896,8 @@
       },
       "animated": true,
       "triangles": 6348,
-      "glbBytes": 221072,
-      "usdzBytes": 695098,
+      "glbBytes": 221092,
+      "usdzBytes": 695078,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1935,8 +1947,8 @@
       },
       "animated": true,
       "triangles": 6348,
-      "glbBytes": 220844,
-      "usdzBytes": 694340,
+      "glbBytes": 220864,
+      "usdzBytes": 694448,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -1959,7 +1971,7 @@
       "id": "LD-WH039",
       "ok": true,
       "name": "Leg Press Articulado",
-      "family": "plate-loaded-lever",
+      "family": "leg-press",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -1975,9 +1987,9 @@
         "height": 1400
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0,
         "width": 0,
-        "height": 0.17
+        "height": 0
       },
       "trainingArea": {
         "widthM": 2.2,
@@ -1985,9 +1997,9 @@
         "areaM2": 7.26
       },
       "animated": true,
-      "triangles": 5956,
-      "glbBytes": 198624,
-      "usdzBytes": 616268,
+      "triangles": 4780,
+      "glbBytes": 201268,
+      "usdzBytes": 635248,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2000,9 +2012,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 2.100106382978723,
+          "length": 2.1,
           "width": 1,
-          "height": 1.4023313048169421
+          "height": 1.3999954462051392
         }
       }
     },
@@ -2061,10 +2073,10 @@
       "id": "LD-WH041",
       "ok": true,
       "name": "Máquina de Glúteo 4 Apoio - Bateria de Pesos",
-      "family": "plate-loaded-lever",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 18%)"
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 1%)"
       ],
       "files": {
         "glb": "models/LD-WH041/model.glb",
@@ -2089,9 +2101,9 @@
         "areaM2": 4.83
       },
       "animated": true,
-      "triangles": 6678,
-      "glbBytes": 227004,
-      "usdzBytes": 708239,
+      "triangles": 5510,
+      "glbBytes": 197764,
+      "usdzBytes": 461439,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2105,8 +2117,8 @@
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 1.1,
-          "width": 0.8999999999999999,
-          "height": 1.5
+          "width": 0.9,
+          "height": 1.4999999999999998
         }
       }
     },
@@ -2116,7 +2128,9 @@
       "name": "Mesa Flexora - Bateria de Pesos",
       "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
       "files": {
         "glb": "models/LD-WH042/model.glb",
         "usdz": "models/LD-WH042/model.usdz",
@@ -2130,19 +2144,19 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.42,
+        "length": 0,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.706,
-        "areaM2": 5.68
+        "lengthM": 2.7,
+        "areaM2": 5.67
       },
       "animated": true,
-      "triangles": 6792,
-      "glbBytes": 297484,
-      "usdzBytes": 771449,
+      "triangles": 6510,
+      "glbBytes": 292228,
+      "usdzBytes": 762503,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2155,9 +2169,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5062987012987012,
+          "length": 1.4999999999999998,
           "width": 0.9,
-          "height": 1.5000026631158456
+          "height": 1.4999999999999998
         }
       }
     },
@@ -2167,7 +2181,9 @@
       "name": "Mesa Flexora e Extensora 2 em 1 - Bateria de Pesos",
       "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
       "files": {
         "glb": "models/LD-WH043/model.glb",
         "usdz": "models/LD-WH043/model.usdz",
@@ -2181,19 +2197,19 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.07,
+        "length": 0,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.701,
+        "lengthM": 2.7,
         "areaM2": 5.67
       },
       "animated": true,
-      "triangles": 6696,
-      "glbBytes": 297904,
-      "usdzBytes": 771306,
+      "triangles": 6510,
+      "glbBytes": 292244,
+      "usdzBytes": 762503,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2206,9 +2222,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5240182495793178,
+          "length": 1.4999999999999998,
           "width": 0.9,
-          "height": 1.5000026631158456
+          "height": 1.4999999999999998
         }
       }
     },
@@ -2218,7 +2234,9 @@
       "name": "Mesa Flexora 3 em 1 - Bateria de Pesos",
       "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
       "files": {
         "glb": "models/LD-WH044/model.glb",
         "usdz": "models/LD-WH044/model.usdz",
@@ -2232,19 +2250,19 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.42,
+        "length": 0,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.706,
-        "areaM2": 5.68
+        "lengthM": 2.7,
+        "areaM2": 5.67
       },
       "animated": true,
-      "triangles": 6792,
-      "glbBytes": 297492,
-      "usdzBytes": 771449,
+      "triangles": 6510,
+      "glbBytes": 292232,
+      "usdzBytes": 762503,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2257,9 +2275,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5062987012987012,
+          "length": 1.4999999999999998,
           "width": 0.9,
-          "height": 1.5000026631158456
+          "height": 1.4999999999999998
         }
       }
     },
@@ -2267,7 +2285,7 @@
       "id": "LD-WH045",
       "ok": true,
       "name": "Panturrilha em Pé Com Agachamento - Bateria de Pesos",
-      "family": "leg-press",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -2283,19 +2301,19 @@
         "height": 1800
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.4,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.2,
-        "lengthM": 2.7,
-        "areaM2": 5.94
+        "lengthM": 2.706,
+        "areaM2": 5.95
       },
       "animated": true,
-      "triangles": 4780,
-      "glbBytes": 201108,
-      "usdzBytes": 635651,
+      "triangles": 4590,
+      "glbBytes": 171780,
+      "usdzBytes": 392475,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2308,9 +2326,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.5,
+          "length": 1.5060389610389608,
           "width": 1,
-          "height": 1.7999954223632812
+          "height": 1.8000022197558265
         }
       }
     },
@@ -2318,9 +2336,11 @@
       "id": "LD-WH046",
       "ok": true,
       "name": "Panturrilha Sentada (Burrinho)",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 30%)"
+      ],
       "files": {
         "glb": "models/LD-WH046/model.glb",
         "usdz": "models/LD-WH046/model.usdz",
@@ -2334,7 +2354,7 @@
         "height": 600
       },
       "deviationPct": {
-        "length": 0.03,
+        "length": 0,
         "width": 0,
         "height": 0
       },
@@ -2343,10 +2363,10 @@
         "lengthM": 2.2,
         "areaM2": 3.74
       },
-      "animated": false,
-      "triangles": 1818,
-      "glbBytes": 102340,
-      "usdzBytes": 321930,
+      "animated": true,
+      "triangles": 4380,
+      "glbBytes": 121700,
+      "usdzBytes": 374208,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2359,9 +2379,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.0003009827781155,
+          "length": 1,
           "width": 0.5,
-          "height": 0.6
+          "height": 0.6115086678483642
         }
       }
     },
@@ -2398,8 +2418,8 @@
       },
       "animated": true,
       "triangles": 6052,
-      "glbBytes": 248788,
-      "usdzBytes": 800386,
+      "glbBytes": 248808,
+      "usdzBytes": 800494,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2438,19 +2458,19 @@
         "height": 2000
       },
       "deviationPct": {
-        "length": 0,
-        "width": 0.49,
+        "length": 0.03,
+        "width": 0,
         "height": 0
       },
       "trainingArea": {
-        "widthM": 2.406,
+        "widthM": 2.4,
         "lengthM": 2.6,
-        "areaM2": 6.26
+        "areaM2": 6.24
       },
       "animated": true,
-      "triangles": 6450,
-      "glbBytes": 265188,
-      "usdzBytes": 669630,
+      "triangles": 8892,
+      "glbBytes": 358304,
+      "usdzBytes": 977430,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2463,9 +2483,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.4,
-          "width": 1.2058823529411764,
-          "height": 2.0000000000019975
+          "length": 1.4003717498243144,
+          "width": 1.2000209546089171,
+          "height": 1.9999999999999996
         }
       }
     },
@@ -2473,11 +2493,9 @@
       "id": "LD-WH049",
       "ok": true,
       "name": "Peck Fly Articulado",
-      "family": "selectorized-tower",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 40%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH049/model.glb",
         "usdz": "models/LD-WH049/model.usdz",
@@ -2491,9 +2509,9 @@
         "height": 1100
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.08
       },
       "trainingArea": {
         "widthM": 2.4,
@@ -2501,9 +2519,9 @@
         "areaM2": 7.32
       },
       "animated": true,
-      "triangles": 8892,
-      "glbBytes": 359160,
-      "usdzBytes": 981447,
+      "triangles": 5536,
+      "glbBytes": 186384,
+      "usdzBytes": 576797,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2516,9 +2534,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.85,
-          "width": 1.2000000000000002,
-          "height": 1.1
+          "length": 1.8501206434316355,
+          "width": 1.2,
+          "height": 1.100901839160675
         }
       }
     },
@@ -2554,7 +2572,7 @@
       "animated": true,
       "triangles": 8892,
       "glbBytes": 358296,
-      "usdzBytes": 977751,
+      "usdzBytes": 977430,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2603,9 +2621,9 @@
         "areaM2": 6.03
       },
       "animated": false,
-      "triangles": 1882,
-      "glbBytes": 103660,
-      "usdzBytes": 326431,
+      "triangles": 2716,
+      "glbBytes": 160260,
+      "usdzBytes": 522586,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2620,7 +2638,7 @@
         "motionMaxSizeM": {
           "length": 1.8174999993294478,
           "width": 0.8,
-          "height": 1.500000001490116
+          "height": 1.5
         }
       }
     },
@@ -2645,18 +2663,18 @@
       },
       "deviationPct": {
         "length": 0,
-        "width": 0.82,
-        "height": 0.39
+        "width": 0,
+        "height": 0
       },
       "trainingArea": {
-        "widthM": 2.208,
+        "widthM": 2.2,
         "lengthM": 2,
-        "areaM2": 4.42
+        "areaM2": 4.4
       },
       "animated": true,
-      "triangles": 5044,
-      "glbBytes": 88124,
-      "usdzBytes": 240498,
+      "triangles": 4080,
+      "glbBytes": 131916,
+      "usdzBytes": 234340,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2670,8 +2688,8 @@
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
           "length": 0.8000000002980232,
-          "width": 1.0081946849822998,
-          "height": 2.3089679054543373
+          "width": 1.0000000001490115,
+          "height": 2.3000000002980228
         }
       }
     },
@@ -2679,7 +2697,7 @@
       "id": "LD-WH053",
       "ok": true,
       "name": "Puxada Alta Articulada",
-      "family": "cable-station",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -2695,19 +2713,19 @@
         "height": 2200
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.75,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.3,
-        "lengthM": 2.6,
-        "areaM2": 5.98
+        "lengthM": 2.61,
+        "areaM2": 6
       },
       "animated": true,
-      "triangles": 4080,
-      "glbBytes": 132024,
-      "usdzBytes": 234646,
+      "triangles": 7732,
+      "glbBytes": 180848,
+      "usdzBytes": 527542,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2720,9 +2738,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.400000000298023,
-          "width": 1.1000000001490116,
-          "height": 2.2000000002980236
+          "length": 1.410438596491228,
+          "width": 1.1,
+          "height": 2.200065099465567
         }
       }
     },
@@ -2730,7 +2748,7 @@
       "id": "LD-WH054",
       "ok": true,
       "name": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos",
-      "family": "cable-station",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -2746,19 +2764,19 @@
         "height": 2300
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.9,
+        "lengthM": 2.901,
         "areaM2": 6.09
       },
       "animated": true,
-      "triangles": 4464,
-      "glbBytes": 132912,
-      "usdzBytes": 236279,
+      "triangles": 5238,
+      "glbBytes": 202548,
+      "usdzBytes": 461156,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2771,9 +2789,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.7000000002980231,
-          "width": 0.9000000001490116,
-          "height": 2.300000000298023
+          "length": 1.700919540229885,
+          "width": 0.9,
+          "height": 2.300001737619461
         }
       }
     },
@@ -2781,7 +2799,7 @@
       "id": "LD-WH055",
       "ok": true,
       "name": "Puxador Horizontal - Bateria de Pesos",
-      "family": "cable-station",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -2797,19 +2815,19 @@
         "height": 2300
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.05,
         "width": 0,
         "height": 0
       },
       "trainingArea": {
         "widthM": 2.1,
-        "lengthM": 2.9,
+        "lengthM": 2.901,
         "areaM2": 6.09
       },
       "animated": true,
-      "triangles": 4464,
-      "glbBytes": 132892,
-      "usdzBytes": 236260,
+      "triangles": 6150,
+      "glbBytes": 271604,
+      "usdzBytes": 693477,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2822,9 +2840,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.7000000002980231,
-          "width": 0.9000000001490116,
-          "height": 2.300000000298023
+          "length": 1.700919540229885,
+          "width": 0.9,
+          "height": 2.300001737619461
         }
       }
     },
@@ -2832,9 +2850,11 @@
       "id": "LD-WH056",
       "ok": true,
       "name": "Puxador Vertical - Bateria de Pesos",
-      "family": "cable-station",
+      "family": "selectorized-tower",
       "review": "needs_review",
-      "warnings": [],
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 26%)"
+      ],
       "files": {
         "glb": "models/LD-WH056/model.glb",
         "usdz": "models/LD-WH056/model.usdz",
@@ -2858,9 +2878,9 @@
         "areaM2": 5.25
       },
       "animated": true,
-      "triangles": 4080,
-      "glbBytes": 131964,
-      "usdzBytes": 234529,
+      "triangles": 4578,
+      "glbBytes": 188416,
+      "usdzBytes": 424498,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2873,9 +2893,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.3000000002980232,
-          "width": 0.9000000001490116,
-          "height": 2.300000000298023
+          "length": 1.3,
+          "width": 0.9,
+          "height": 2.3000000000000003
         }
       }
     },
@@ -2885,9 +2905,7 @@
       "name": "Remada Cavalinho Com Apoio",
       "family": "plate-loaded-lever",
       "review": "needs_review",
-      "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 1%)"
-      ],
+      "warnings": [],
       "files": {
         "glb": "models/LD-WH057/model.glb",
         "usdz": "models/LD-WH057/model.usdz",
@@ -2911,9 +2929,9 @@
         "areaM2": 6.6
       },
       "animated": true,
-      "triangles": 7800,
-      "glbBytes": 241896,
-      "usdzBytes": 743317,
+      "triangles": 4864,
+      "glbBytes": 82720,
+      "usdzBytes": 222963,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2926,9 +2944,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.8000000000000003,
+          "length": 1.7999595783138664,
           "width": 1,
-          "height": 1.1000000000000003
+          "height": 1.1000036297667672
         }
       }
     },
@@ -2965,8 +2983,8 @@
       },
       "animated": true,
       "triangles": 5716,
-      "glbBytes": 192968,
-      "usdzBytes": 603770,
+      "glbBytes": 192988,
+      "usdzBytes": 603750,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -2989,7 +3007,7 @@
       "id": "LD-WH059",
       "ok": true,
       "name": "Remada Sentada - Bateria de Pesos",
-      "family": "plate-loaded-lever",
+      "family": "selectorized-tower",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3005,7 +3023,7 @@
         "height": 1500
       },
       "deviationPct": {
-        "length": 0.09,
+        "length": 0.08,
         "width": 0,
         "height": 0
       },
@@ -3015,9 +3033,9 @@
         "areaM2": 5.72
       },
       "animated": true,
-      "triangles": 7800,
-      "glbBytes": 242000,
-      "usdzBytes": 741782,
+      "triangles": 6150,
+      "glbBytes": 270416,
+      "usdzBytes": 693082,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3030,9 +3048,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.401285862721253,
+          "length": 1.401111111111111,
           "width": 1,
-          "height": 1.5000026631178285
+          "height": 1.5000026631158456
         }
       }
     },
@@ -3040,7 +3058,7 @@
       "id": "LD-WH060",
       "ok": true,
       "name": "Supino Declinado Linha Articulado",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3056,19 +3074,19 @@
         "height": 1100
       },
       "deviationPct": {
-        "length": 0.83,
+        "length": 0.01,
         "width": 0,
-        "height": 0
+        "height": 0.29
       },
       "trainingArea": {
         "widthM": 2.7,
-        "lengthM": 3.317,
-        "areaM2": 8.96
+        "lengthM": 3.3,
+        "areaM2": 8.91
       },
-      "animated": false,
-      "triangles": 2716,
-      "glbBytes": 160204,
-      "usdzBytes": 522837,
+      "animated": true,
+      "triangles": 5860,
+      "glbBytes": 196648,
+      "usdzBytes": 611357,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3081,9 +3099,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 2.117499999329448,
+          "length": 2.100106382978723,
           "width": 1.5,
-          "height": 1.1
+          "height": 1.1031588354098345
         }
       }
     },
@@ -3091,7 +3109,7 @@
       "id": "LD-WH061",
       "ok": true,
       "name": "Supino Inclinado Linha Articulado",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3107,19 +3125,19 @@
         "height": 1250
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0.54,
         "width": 0,
-        "height": 0.1
+        "height": 0.15
       },
       "trainingArea": {
         "widthM": 2.8,
-        "lengthM": 3,
-        "areaM2": 8.4
+        "lengthM": 3.01,
+        "areaM2": 8.43
       },
-      "animated": false,
-      "triangles": 2584,
-      "glbBytes": 166624,
-      "usdzBytes": 539145,
+      "animated": true,
+      "triangles": 5956,
+      "glbBytes": 198684,
+      "usdzBytes": 618253,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3132,9 +3150,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.800168500674907,
+          "length": 1.8098030634573306,
           "width": 1.6000000000000003,
-          "height": 1.2512732001469584
+          "height": 1.2519109657162466
         }
       }
     },
@@ -3142,7 +3160,7 @@
       "id": "LD-WH062",
       "ok": true,
       "name": "Supino Reto Linha Articulado",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3158,7 +3176,7 @@
         "height": 1100
       },
       "deviationPct": {
-        "length": 0.01,
+        "length": 0,
         "width": 0,
         "height": 0
       },
@@ -3167,10 +3185,10 @@
         "lengthM": 2.85,
         "areaM2": 7.98
       },
-      "animated": false,
-      "triangles": 1818,
-      "glbBytes": 102476,
-      "usdzBytes": 322503,
+      "animated": true,
+      "triangles": 6796,
+      "glbBytes": 183096,
+      "usdzBytes": 542305,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3183,9 +3201,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.650183658156914,
+          "length": 1.6500090663739757,
           "width": 1.6000000000000003,
-          "height": 1.1
+          "height": 1.1000036297667672
         }
       }
     },
@@ -3193,7 +3211,7 @@
       "id": "LD-WH063",
       "ok": true,
       "name": "Supino Vertical Linha Articulado",
-      "family": "bench",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3218,10 +3236,10 @@
         "lengthM": 2.4,
         "areaM2": 5.28
       },
-      "animated": false,
-      "triangles": 1882,
-      "glbBytes": 103772,
-      "usdzBytes": 326262,
+      "animated": true,
+      "triangles": 8496,
+      "glbBytes": 244328,
+      "usdzBytes": 732552,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3234,9 +3252,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.2002515400219296,
+          "length": 1.2001851851851852,
           "width": 1,
-          "height": 1.8
+          "height": 1.8000794702085112
         }
       }
     },
@@ -3295,7 +3313,7 @@
       "id": "LD-WH065",
       "ok": true,
       "name": "Panturrilha em Pé Com Agachamento",
-      "family": "leg-press",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [],
       "files": {
@@ -3311,19 +3329,19 @@
         "height": 1700
       },
       "deviationPct": {
-        "length": 0,
+        "length": 0.91,
         "width": 0,
-        "height": 0
+        "height": 0.71
       },
       "trainingArea": {
         "widthM": 2.5,
-        "lengthM": 2.85,
-        "areaM2": 7.12
+        "lengthM": 2.865,
+        "areaM2": 7.16
       },
       "animated": true,
-      "triangles": 6348,
-      "glbBytes": 221100,
-      "usdzBytes": 694784,
+      "triangles": 7256,
+      "glbBytes": 153996,
+      "usdzBytes": 458495,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
@@ -3336,9 +3354,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 1.65,
-          "width": 1.2999999999999998,
-          "height": 1.6999953985214233
+          "length": 1.665,
+          "width": 1.3,
+          "height": 1.712000000745058
         }
       }
     },
@@ -3346,10 +3364,10 @@
       "id": "LD-WH066",
       "ok": true,
       "name": "Suporte Remada Solo",
-      "family": "rack",
+      "family": "plate-loaded-lever",
       "review": "needs_review",
       "warnings": [
-        "Modelo ajustado por escala para caber na caixa do catálogo (até 9%)"
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 38%)"
       ],
       "files": {
         "glb": "models/LD-WH066/model.glb",
@@ -3373,15 +3391,15 @@
         "lengthM": 3.2,
         "areaM2": 6.72
       },
-      "animated": false,
-      "triangles": 5856,
-      "glbBytes": 57304,
-      "usdzBytes": 172757,
+      "animated": true,
+      "triangles": 3992,
+      "glbBytes": 41380,
+      "usdzBytes": 112760,
       "quality": {
         "valid": true,
         "dimensionsWithinTolerance": true,
         "articulationNodesValid": true,
-        "motionWithinDesignBox": true,
+        "motionWithinDesignBox": false,
         "motionCollisionFree": true,
         "motionCollisionCount": 0,
         "motionCollisions": [],
@@ -3389,9 +3407,9 @@
         "calibrationLandmarks": 0,
         "calibrationRmsePx": 0,
         "motionMaxSizeM": {
-          "length": 2,
+          "length": 1.9999999999999998,
           "width": 0.9,
-          "height": 0.3
+          "height": 0.30679038167989287
         }
       }
     }

@@ -1,19 +1,19 @@
 {
   "id": "LD-WH039",
   "name": "Leg Press Articulado",
-  "family": "plate-loaded-lever",
+  "family": "leg-press",
   "dimensionsMm": {
     "length": 2100,
     "width": 1000,
     "height": 1400
   },
   "params": {
-    "mechanism": "chest-press"
+    "variant": "sled"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

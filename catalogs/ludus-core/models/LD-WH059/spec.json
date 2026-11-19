@@ -1,7 +1,7 @@
 {
   "id": "LD-WH059",
   "name": "Remada Sentada - Bateria de Pesos",
-  "family": "plate-loaded-lever",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1400,
     "width": 1000,
@@ -17,7 +17,7 @@
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,32 +33,50 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "row",
-      "swingScale": 1,
-      "tube": 0.08,
-      "frameX": 0.25,
-      "pivotHeight": 1.2882822896405826,
-      "pivotZ": -0.07469719933913105,
-      "leverTube": 0.08,
-      "leverFront": [
-        -0.3694007987118311,
-        0.6383215216253016
-      ],
-      "leverRear": [
-        0.17500886393983853,
-        -0.3123701063272753
-      ],
-      "hornLength": 0.175,
-      "hornOffset": 0.3,
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.35,
+      "baseRailX": 0.25,
+      "towerZ": -0.5555555555555555,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.11984021304926765,
       "seatHeight": 0.46,
-      "pressSeatZ": 0.2987887973565242,
-      "backrestHeight": 0.704061251315202,
-      "backrestTilt": 0.38,
-      "rowStation": true,
-      "storageHorns": 4,
-      "swing": 0.45
+      "seatZ": 0.2994444444444444,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "row",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 1.3080026631158457,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
+      {
+        "node": "stack",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "pivot": [
+          0,
+          0.0020000000000000018,
+          -0.5505555555555555
+        ],
+        "range": [
+          0,
+          0.11984021304926765
+        ],
+        "driver": "phase"
+      },
       {
         "node": "arm_right",
         "type": "revolute",
@@ -68,9 +86,9 @@
           0
         ],
         "pivot": [
-          -0.3,
+          -0.37,
           0.202,
-          -0.4046337198204043
+          -0.41555555555555557
         ],
         "range": [
           0,
@@ -87,9 +105,9 @@
           0
         ],
         "pivot": [
-          0.3,
+          0.37,
           0.202,
-          -0.4046337198204043
+          -0.41555555555555557
         ],
         "range": [
           0,
@@ -106,17 +124,17 @@
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.3006429313606265,
-      "maxZ": 1.3006429313606265,
+      "minZ": -1.3005555555555555,
+      "maxZ": 1.3005555555555555,
       "widthM": 2.2,
-      "lengthM": 2.601285862721253,
-      "areaM2": 5.722828897986757
+      "lengthM": 2.601111111111111,
+      "areaM2": 5.722444444444444
     },
     "stats": {
-      "triangles": 7800,
-      "meshes": 71,
-      "geometries": 16,
-      "materials": 6
+      "triangles": 6150,
+      "meshes": 77,
+      "geometries": 13,
+      "materials": 10
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "LD-WH033",
   "name": "Gráviton - Bateria de Pesos",
-  "family": "plate-loaded-lever",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1700,
     "width": 1150,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "chest-press"
+    "mechanism": "assisted-chin"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,90 +33,89 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "chest-press",
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.40249999999999997,
+      "baseRailX": 0.2875,
+      "towerZ": -0.7054597701149424,
+      "towerPostSpacing": 0.34,
+      "stackPlates": 10,
+      "stackTravel": 0.1838401389976567,
+      "seatHeight": 0.5,
+      "seatZ": 0.29896551724137926,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "assisted-chin",
+      "stacks": 1,
       "swingScale": 1,
-      "tube": 0.08,
-      "frameX": 0.25,
-      "pivotHeight": 1.9779999999999998,
-      "pivotZ": -0.0935,
-      "leverTube": 0.08,
-      "leverFront": [
-        -0.61,
-        0.7989999999999999
-      ],
-      "leverRear": [
-        0.2900980372217103,
-        -0.391
-      ],
-      "hornLength": 0.175,
-      "hornOffset": 0.3,
-      "seatHeight": 0.48,
-      "pressSeatZ": 0.204,
-      "backrestHeight": 1,
-      "backrestTilt": 0.18,
-      "rowStation": true,
-      "storageHorns": 4,
-      "swing": 0.45
+      "darkTower": false,
+      "armPivotHeight": 2.1080017374707087,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
       {
-        "node": "arm_right",
-        "type": "revolute",
+        "node": "stack",
+        "type": "prismatic",
         "axis": [
-          -1,
           0,
+          1,
           0
         ],
         "pivot": [
-          0.30499999999999994,
-          1.602,
-          -0.11350000000000002
+          0,
+          0.0020000000000000018,
+          -0.7004597701149424
         ],
         "range": [
           0,
-          0.36
+          0.1838401389976567
         ],
         "driver": "phase"
       },
       {
-        "node": "arm_left",
+        "node": "knee_pad",
         "type": "revolute",
         "axis": [
-          -1,
+          1,
           0,
           0
         ],
         "pivot": [
-          -0.30499999999999994,
-          1.602,
-          -0.11350000000000002
+          0,
+          0.622,
+          -0.19603448275862073
         ],
         "range": [
           0,
-          0.36
+          0.55
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.715,
+      "length": 1.701,
       "width": 1.15,
-      "height": 2.312
+      "height": 2.3
     },
     "trainingArea": {
       "minX": -1.1749999999999998,
       "maxX": 1.1749999999999998,
-      "minZ": -1.4575,
-      "maxZ": 1.4575,
+      "minZ": -1.4504597701149424,
+      "maxZ": 1.4504597701149424,
       "widthM": 2.3499999999999996,
-      "lengthM": 2.915,
-      "areaM2": 6.850249999999999
+      "lengthM": 2.900919540229885,
+      "areaM2": 6.817160919540228
     },
     "stats": {
-      "triangles": 11708,
-      "meshes": 112,
-      "geometries": 21,
-      "materials": 8
+      "triangles": 6020,
+      "meshes": 82,
+      "geometries": 12,
+      "materials": 10
     }
   }
 }

@@ -1,20 +1,20 @@
 {
   "id": "LD-WH049",
   "name": "Peck Fly Articulado",
-  "family": "selectorized-tower",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1850,
     "width": 1200,
     "height": 1100
   },
   "params": {
-    "mechanism": "pec-fly",
-    "stackTravel": 0
+    "mechanism": "incline-fly",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

@@ -12,13 +12,13 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "leg-curl",
+    "mechanism": "standing-leg-curl",
     "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -37,21 +37,21 @@
       "tube": 0.07,
       "baseRearHalfWidth": 0.315,
       "baseRailX": 0.225,
-      "towerZ": -0.3144221587469402,
+      "towerZ": -0.4556451612903225,
       "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.1198400000000005,
-      "seatHeight": 0.58,
-      "seatZ": -0.01757688634987761,
+      "stackTravel": 0.11984021304926765,
+      "seatHeight": 0.1,
+      "seatZ": 0.17419354838709675,
       "seatWidth": 0.42,
       "seatDepth": 0.38,
       "backrestHeight": 0.74,
-      "backrestTilt": 0.32,
-      "mechanism": "leg-curl",
+      "backrestTilt": 0.12,
+      "mechanism": "standing-leg-curl",
       "stacks": 1,
       "swingScale": 0.5,
       "darkTower": false,
-      "armPivotHeight": 1.3080000000000063,
+      "armPivotHeight": 1.3080026631158457,
       "armPivotX": 0.18,
       "armPivotZ": -0.14,
       "armDrop": 0.68,
@@ -69,12 +69,12 @@
         ],
         "pivot": [
           0,
-          0.001999999999999995,
-          -0.45328223203867557
+          0.0020000000000000018,
+          -0.4506451612903225
         ],
         "range": [
           0,
-          0.1198400000000005
+          0.11984021304926765
         ],
         "driver": "phase"
       },
@@ -88,34 +88,34 @@
         ],
         "pivot": [
           0,
-          0.6019999999999974,
-          0.09137840440074224
+          0.562,
+          0.15919354838709676
         ],
         "range": [
           0,
-          0.6
+          0.65
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.2,
+      "length": 1.201,
       "width": 0.9,
       "height": 1.5
     },
     "trainingArea": {
       "minX": -1.05,
       "maxX": 1.05,
-      "minZ": -1.1999999999999997,
-      "maxZ": 1.1999999999999997,
+      "minZ": -1.2006451612903226,
+      "maxZ": 1.2006451612903226,
       "widthM": 2.1,
-      "lengthM": 2.3999999999999995,
-      "areaM2": 5.039999999999999
+      "lengthM": 2.4012903225806452,
+      "areaM2": 5.042709677419356
     },
     "stats": {
-      "triangles": 6792,
-      "meshes": 78,
-      "geometries": 15,
+      "triangles": 4740,
+      "meshes": 75,
+      "geometries": 7,
       "materials": 10
     }
   }

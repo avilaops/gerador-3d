@@ -1,19 +1,19 @@
 {
   "id": "LD-WH065",
   "name": "Panturrilha em Pé Com Agachamento",
-  "family": "leg-press",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1650,
     "width": 1300,
     "height": 1700
   },
   "params": {
-    "variant": "sled"
+    "mechanism": "standing-calf"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,54 +29,71 @@
   },
   "resolved": {
     "params": {
-      "variant": "sled",
+      "mechanism": "standing-calf",
+      "swingScale": 1,
       "tube": 0.08,
-      "travel": 0.35,
-      "stackPlates": 0,
-      "stackTravel": 0.136,
-      "showPlates": true,
-      "splitPlate": false
+      "frameX": 0.325,
+      "pivotHeight": 1.462,
+      "pivotZ": -0.09075,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.43,
+        0.7755
+      ],
+      "leverRear": [
+        0.20292154421874448,
+        -0.3795
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.24749999999999997,
+      "backrestHeight": 0.7989999999999999,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
-        "node": "carriage",
-        "type": "prismatic",
+        "node": "lever",
+        "type": "revolute",
         "axis": [
+          -1,
           0,
-          0.9294907111696337,
-          -0.3688455203054101
+          0
         ],
         "pivot": [
           0,
-          0.6779999999999999,
-          -0.33499999999999985
+          1.402,
+          -0.35000000000000003
         ],
         "range": [
           0,
-          0.35
+          0.14
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.65,
+      "length": 1.665,
       "width": 1.3,
-      "height": 1.7
+      "height": 1.712
     },
     "trainingArea": {
       "minX": -1.25,
       "maxX": 1.25,
-      "minZ": -1.4249999999999998,
-      "maxZ": 1.4249999999999998,
+      "minZ": -1.4325,
+      "maxZ": 1.4325,
       "widthM": 2.5,
-      "lengthM": 2.8499999999999996,
-      "areaM2": 7.124999999999999
+      "lengthM": 2.865,
+      "areaM2": 7.1625000000000005
     },
     "stats": {
-      "triangles": 6348,
-      "meshes": 40,
-      "geometries": 11,
-      "materials": 6
+      "triangles": 7256,
+      "meshes": 71,
+      "geometries": 12,
+      "materials": 7
     }
   }
 }

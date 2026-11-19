@@ -8,12 +8,12 @@
     "height": 1150
   },
   "params": {
-    "variant": "flat"
+    "variant": "preacher"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,7 +29,7 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
+      "variant": "preacher",
       "tube": 0.06,
       "padWidth": 0.3,
       "backAngle": 0.6,
@@ -54,10 +54,10 @@
       "areaM2": 4.830575503311947
     },
     "stats": {
-      "triangles": 1882,
-      "meshes": 13,
-      "geometries": 6,
-      "materials": 3
+      "triangles": 3900,
+      "meshes": 32,
+      "geometries": 14,
+      "materials": 5
     }
   }
 }

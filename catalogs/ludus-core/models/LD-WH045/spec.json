@@ -1,7 +1,7 @@
 {
   "id": "LD-WH045",
   "name": "Panturrilha em Pé Com Agachamento - Bateria de Pesos",
-  "family": "leg-press",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1500,
     "width": 1000,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "variant": "sled"
+    "mechanism": "standing-calf"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,54 +33,89 @@
   },
   "resolved": {
     "params": {
-      "variant": "sled",
-      "tube": 0.08,
-      "travel": 0.35,
+      "tube": 0.07,
+      "baseRearHalfWidth": 0.35,
+      "baseRailX": 0.25,
+      "towerZ": -0.6055194805194805,
+      "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.14400000000000002,
-      "showPlates": true,
-      "splitPlate": false
+      "stackTravel": 0.14384017758046613,
+      "seatHeight": 0.1,
+      "seatZ": 0.21915584415584413,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "standing-calf",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 1.6080022197558268,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
       {
-        "node": "carriage",
+        "node": "stack",
         "type": "prismatic",
         "axis": [
           0,
-          0.9385785533962561,
-          -0.3450656446309765
+          1,
+          0
         ],
         "pivot": [
           0,
-          0.708,
-          -0.26
+          0.0020000000000000018,
+          -0.5980194805194805
         ],
         "range": [
           0,
-          0.35
+          0.14384017758046613
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "lever",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0,
+          1.402,
+          -0.3733441558441559
+        ],
+        "range": [
+          0,
+          0.14
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.5,
+      "length": 1.506,
       "width": 1,
       "height": 1.8
     },
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.35,
-      "maxZ": 1.35,
+      "minZ": -1.3530194805194804,
+      "maxZ": 1.3530194805194804,
       "widthM": 2.2,
-      "lengthM": 2.7,
-      "areaM2": 5.940000000000001
+      "lengthM": 2.706038961038961,
+      "areaM2": 5.953285714285714
     },
     "stats": {
-      "triangles": 4780,
-      "meshes": 38,
-      "geometries": 10,
-      "materials": 6
+      "triangles": 4590,
+      "meshes": 67,
+      "geometries": 8,
+      "materials": 10
     }
   }
 }

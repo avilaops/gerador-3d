@@ -1,19 +1,19 @@
 {
   "id": "LD-WH039",
   "name": "Leg Press Articulado",
-  "family": "plate-loaded-lever",
+  "family": "leg-press",
   "dimensionsMm": {
     "length": 2100,
     "width": 1000,
     "height": 1400
   },
   "params": {
-    "mechanism": "chest-press"
+    "variant": "sled"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,67 +29,31 @@
   },
   "resolved": {
     "params": {
-      "mechanism": "chest-press",
-      "swingScale": 1,
+      "variant": "sled",
       "tube": 0.08,
-      "frameX": 0.25,
-      "pivotHeight": 1.2541442918876555,
-      "pivotZ": -0.11468085106382978,
-      "leverTube": 0.08,
-      "leverFront": [
-        -0.35749219484453093,
-        0.9799999999999998
-      ],
-      "leverRear": [
-        0.16651571399946696,
-        -0.47957446808510634
-      ],
-      "hornLength": 0.175,
-      "hornOffset": 0.3,
-      "seatHeight": 0.48,
-      "pressSeatZ": 0.25021276595744674,
-      "backrestHeight": 0.6854044385897652,
-      "backrestTilt": 0.18,
-      "rowStation": true,
-      "storageHorns": 4,
-      "swing": 0.45
+      "travel": 0.35,
+      "stackPlates": 0,
+      "stackTravel": 0.11199999999999999,
+      "showPlates": true,
+      "splitPlate": false
     },
     "articulations": [
       {
-        "node": "arm_right",
-        "type": "revolute",
+        "node": "carriage",
+        "type": "prismatic",
         "axis": [
-          1,
           0,
-          0
+          0.8479983040050879,
+          -0.52999894000318
         ],
         "pivot": [
-          0.3,
-          0.202,
-          0.8027127659574467
+          0,
+          0.588,
+          -0.4900000000000001
         ],
         "range": [
           0,
-          0.3
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_left",
-        "type": "revolute",
-        "axis": [
-          1,
-          0,
-          0
-        ],
-        "pivot": [
-          -0.3,
-          0.202,
-          0.8027127659574467
-        ],
-        "range": [
-          0,
-          0.3
+          0.35
         ],
         "driver": "phase"
       }
@@ -97,21 +61,21 @@
     "bboxM": {
       "length": 2.1,
       "width": 1,
-      "height": 1.402
+      "height": 1.4
     },
     "trainingArea": {
       "minX": -1.1,
       "maxX": 1.1,
-      "minZ": -1.6500531914893615,
-      "maxZ": 1.6500531914893615,
+      "minZ": -1.65,
+      "maxZ": 1.65,
       "widthM": 2.2,
-      "lengthM": 3.300106382978723,
-      "areaM2": 7.260234042553191
+      "lengthM": 3.3,
+      "areaM2": 7.26
     },
     "stats": {
-      "triangles": 5956,
-      "meshes": 56,
-      "geometries": 11,
+      "triangles": 4780,
+      "meshes": 38,
+      "geometries": 10,
       "materials": 6
     }
   }

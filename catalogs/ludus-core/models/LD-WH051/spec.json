@@ -8,12 +8,12 @@
     "height": 1500
   },
   "params": {
-    "variant": "flat"
+    "variant": "decline"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,7 +29,7 @@
   },
   "resolved": {
     "params": {
-      "variant": "flat",
+      "variant": "decline",
       "tube": 0.06,
       "padWidth": 0.3,
       "backAngle": 0.6,
@@ -54,9 +54,9 @@
       "areaM2": 6.034999998658895
     },
     "stats": {
-      "triangles": 1882,
-      "meshes": 13,
-      "geometries": 6,
+      "triangles": 2716,
+      "meshes": 20,
+      "geometries": 7,
       "materials": 3
     }
   }

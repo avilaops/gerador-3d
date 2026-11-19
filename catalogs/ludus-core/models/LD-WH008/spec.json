@@ -8,12 +8,13 @@
     "height": 1500
   },
   "params": {
-    "variant": "incline"
+    "variant": "olympic-incline",
+    "backAngle": 0.611
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -29,10 +30,10 @@
   },
   "resolved": {
     "params": {
-      "variant": "incline",
+      "variant": "olympic-incline",
       "tube": 0.06,
       "padWidth": 0.3,
-      "backAngle": 0.6,
+      "backAngle": 0.611,
       "seatHeight": 0.44,
       "wheels": true,
       "aLegs": false,
@@ -45,19 +46,19 @@
       "height": 1.5
     },
     "trainingArea": {
-      "minX": -1.15,
-      "maxX": 1.15,
-      "minZ": -1.35,
-      "maxZ": 1.35,
-      "widthM": 2.3,
-      "lengthM": 2.7,
-      "areaM2": 6.21
+      "minX": -1.1501785714285715,
+      "maxX": 1.1501785714285715,
+      "minZ": -1.3500306837168305,
+      "maxZ": 1.3500306837168305,
+      "widthM": 2.300357142857143,
+      "lengthM": 2.700061367433661,
+      "areaM2": 6.211105452728647
     },
     "stats": {
-      "triangles": 2584,
-      "meshes": 18,
-      "geometries": 8,
-      "materials": 3
+      "triangles": 3886,
+      "meshes": 32,
+      "geometries": 7,
+      "materials": 5
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "id": "LD-WH060",
   "name": "Supino Declinado Linha Articulado",
-  "family": "bench",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 2100,
     "width": 1500,
     "height": 1100
   },
   "params": {
-    "variant": "decline"
+    "mechanism": "decline-press"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {

@@ -1,7 +1,7 @@
 {
   "id": "LD-WH054",
   "name": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos",
-  "family": "cable-station",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1700,
     "width": 900,
@@ -12,12 +12,12 @@
     "stacks": 1
   },
   "params": {
-    "variant": "dual-pulley"
+    "mechanism": "pulldown"
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -33,16 +33,33 @@
   },
   "resolved": {
     "params": {
-      "variant": "dual-pulley",
       "tube": 0.07,
+      "baseRearHalfWidth": 0.315,
+      "baseRailX": 0.225,
+      "towerZ": -0.7054597701149424,
+      "towerPostSpacing": 0.34,
       "stackPlates": 10,
-      "stackTravel": 0.184,
-      "pulleyHeight": 1.656,
-      "barTravel": 0.55
+      "stackTravel": 0.1838401390095569,
+      "seatHeight": 0.46,
+      "seatZ": 0.33218390804597697,
+      "seatWidth": 0.42,
+      "seatDepth": 0.38,
+      "backrestHeight": 0.74,
+      "backrestTilt": 0.12,
+      "mechanism": "pulldown",
+      "stacks": 1,
+      "swingScale": 1,
+      "darkTower": false,
+      "armPivotHeight": 2.1080017376194613,
+      "armPivotX": 0.18,
+      "armPivotZ": -0.14,
+      "armDrop": 0.68,
+      "armSwing": 1.2,
+      "footAssist": true
     },
     "articulations": [
       {
-        "node": "stack_left",
+        "node": "stack",
         "type": "prismatic",
         "axis": [
           0,
@@ -50,54 +67,73 @@
           0
         ],
         "pivot": [
-          7.450581818169155e-11,
-          1.4901178208015509e-10,
-          -0.715
+          0,
+          0.0020000000000000018,
+          -0.7004597701149424
         ],
         "range": [
           0,
-          0.184
+          0.1838401390095569
         ],
         "driver": "phase"
       },
       {
-        "node": "stack_right",
-        "type": "prismatic",
+        "node": "arm_right",
+        "type": "revolute",
         "axis": [
+          -1,
           0,
-          1,
           0
         ],
         "pivot": [
-          7.450581818169155e-11,
-          1.4901178208015509e-10,
-          0.715
+          -0.32,
+          2.200001737619461,
+          -0.282816091954023
         ],
         "range": [
           0,
-          0.184
+          0.5
+        ],
+        "driver": "phase"
+      },
+      {
+        "node": "arm_left",
+        "type": "revolute",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "pivot": [
+          0.32,
+          2.200001737619461,
+          -0.282816091954023
+        ],
+        "range": [
+          0,
+          0.5
         ],
         "driver": "phase"
       }
     ],
     "bboxM": {
-      "length": 1.7,
+      "length": 1.701,
       "width": 0.9,
       "height": 2.3
     },
     "trainingArea": {
-      "minX": -1.0500000001490117,
+      "minX": -1.05,
       "maxX": 1.05,
-      "minZ": -1.4500000001490116,
-      "maxZ": 1.4500000001490116,
-      "widthM": 2.100000000149012,
-      "lengthM": 2.9000000002980233,
-      "areaM2": 6.090000001057984
+      "minZ": -1.4504597701149424,
+      "maxZ": 1.4504597701149424,
+      "widthM": 2.1,
+      "lengthM": 2.900919540229885,
+      "areaM2": 6.091931034482759
     },
     "stats": {
-      "triangles": 4464,
-      "meshes": 86,
-      "geometries": 9,
+      "triangles": 5238,
+      "meshes": 73,
+      "geometries": 11,
       "materials": 10
     }
   }

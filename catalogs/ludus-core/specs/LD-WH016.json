@@ -1,7 +1,7 @@
 {
   "id": "LD-WH016",
   "name": "Bíceps e Tríceps - Bateria de Pesos",
-  "family": "plate-loaded-lever",
+  "family": "selectorized-tower",
   "dimensionsMm": {
     "length": 1400,
     "width": 1000,
@@ -12,17 +12,18 @@
     "stacks": 1
   },
   "params": {
-    "mechanism": "chest-press"
+    "mechanism": "biceps-curl",
+    "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
     "status": "needs_review",
-    "notes": "Gerado pela classificação Core; conferir família, mecanismo e foto."
+    "notes": "Curso paramétrico reduzido para respeitar a caixa comercial; conferir movimento na foto."
   },
   "meta": {
     "linha": "Ludus Core",

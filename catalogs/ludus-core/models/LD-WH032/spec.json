@@ -1,20 +1,20 @@
 {
   "id": "LD-WH032",
   "name": "Flexora em Pé Articulada Unilateral",
-  "family": "selectorized-tower",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1100,
     "width": 1550,
     "height": 1700
   },
   "params": {
-    "mechanism": "leg-curl",
+    "mechanism": "standing-leg-curl",
     "swingScale": 0.5
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -30,50 +30,32 @@
   },
   "resolved": {
     "params": {
-      "tube": 0.07,
-      "baseRearHalfWidth": 0.6281880185717121,
-      "baseRailX": 0.44870572755122295,
-      "towerZ": -0.21790160807600428,
-      "towerPostSpacing": 0.34,
-      "stackPlates": 10,
-      "stackTravel": 0.1358400000000003,
-      "seatHeight": 0.58,
-      "seatZ": -0.013716064323040171,
-      "seatWidth": 0.42,
-      "seatDepth": 0.38,
-      "backrestHeight": 0.74,
-      "backrestTilt": 0.32,
-      "mechanism": "leg-curl",
-      "stacks": 1,
+      "mechanism": "standing-leg-curl",
       "swingScale": 0.5,
-      "darkTower": false,
-      "armPivotHeight": 1.5080000000000036,
-      "armPivotX": 0.18,
-      "armPivotZ": -0.14,
-      "armDrop": 0.68,
-      "armSwing": 1.2,
-      "footAssist": true
+      "tube": 0.08,
+      "frameX": 0.45,
+      "pivotHeight": 1.4602820205123412,
+      "pivotZ": -0.05968609865470852,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.4294007048298865,
+        0.5100448430493273
+      ],
+      "leverRear": [
+        0.20705959131855212,
+        -0.24959641255605383
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.1,
+      "pressSeatZ": 0.16278026905829596,
+      "backrestHeight": 0.7980611042334889,
+      "backrestTilt": 0.38,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
-      {
-        "node": "stack",
-        "type": "prismatic",
-        "axis": [
-          0,
-          1,
-          0
-        ],
-        "pivot": [
-          -0.2075237098911385,
-          0.0020000000000000018,
-          -0.04945385539876217
-        ],
-        "range": [
-          0,
-          0.1358400000000003
-        ],
-        "driver": "phase"
-      },
       {
         "node": "lever",
         "type": "revolute",
@@ -83,13 +65,13 @@
           0
         ],
         "pivot": [
-          0.3449508662496889,
-          0.6019999999999988,
-          0.0777030230191571
+          0,
+          0.562,
+          0.14528026905829597
         ],
         "range": [
           0,
-          0.6
+          0.65
         ],
         "driver": "phase"
       }
@@ -102,17 +84,17 @@
     "trainingArea": {
       "minX": -1.375,
       "maxX": 1.375,
-      "minZ": -1.15,
-      "maxZ": 1.15,
+      "minZ": -1.1501008968609865,
+      "maxZ": 1.1501008968609865,
       "widthM": 2.75,
-      "lengthM": 2.3,
-      "areaM2": 6.324999999999999
+      "lengthM": 2.300201793721973,
+      "areaM2": 6.325554932735425
     },
     "stats": {
-      "triangles": 7128,
-      "meshes": 81,
-      "geometries": 15,
-      "materials": 10
+      "triangles": 6328,
+      "meshes": 65,
+      "geometries": 11,
+      "materials": 6
     }
   }
 }

@@ -1,20 +1,20 @@
 {
   "id": "LD-WH049",
   "name": "Peck Fly Articulado",
-  "family": "selectorized-tower",
+  "family": "plate-loaded-lever",
   "dimensionsMm": {
     "length": 1850,
     "width": 1200,
     "height": 1100
   },
   "params": {
-    "mechanism": "pec-fly",
-    "stackTravel": 0
+    "mechanism": "incline-fly",
+    "swingScale": 0.1
   },
   "materials": {
     "frame": "#171717",
     "upholstery": "#0b0b0b",
-    "accent": "#f2bd00"
+    "accent": "#2a2a2a"
   },
   "trainingClearanceM": 0.6,
   "review": {
@@ -30,47 +30,48 @@
   },
   "resolved": {
     "params": {
-      "tube": 0.07,
-      "baseRearHalfWidth": 0.4217500044608522,
-      "baseRailX": 0.301250003186323,
-      "towerZ": -0.7885000002713246,
-      "towerPostSpacing": 0.34,
-      "stackPlates": 10,
-      "stackTravel": 0,
-      "seatHeight": 0.52,
-      "seatZ": 0.03,
-      "seatWidth": 0.42,
-      "seatDepth": 0.38,
-      "backrestHeight": 0.74,
-      "backrestTilt": 0.12,
-      "mechanism": "pec-fly",
-      "stacks": 1,
-      "swingScale": 1,
-      "darkTower": false,
-      "armPivotHeight": 0.19305203162785162,
-      "armPivotX": 0.18,
-      "armPivotZ": -0.14,
-      "armDrop": 0.68,
-      "armSwing": 1.2,
-      "footAssist": true
+      "mechanism": "incline-fly",
+      "swingScale": 0.1,
+      "tube": 0.08,
+      "frameX": 0.27499999999999997,
+      "pivotHeight": 0.8859772119808869,
+      "pivotZ": -0.10093163538873995,
+      "leverTube": 0.08,
+      "leverFront": [
+        -0.22906181813286752,
+        0.8625067024128685
+      ],
+      "leverRear": [
+        0.10552028256166465,
+        -0.42207774798927616
+      ],
+      "hornLength": 0.175,
+      "hornOffset": 0.3,
+      "seatHeight": 0.36,
+      "pressSeatZ": 0.18351206434316356,
+      "backrestHeight": 0.4841968484081591,
+      "backrestTilt": 0.78,
+      "rowStation": true,
+      "storageHorns": 4,
+      "swing": 0.45
     },
     "articulations": [
       {
-        "node": "stack",
-        "type": "prismatic",
+        "node": "arm_right",
+        "type": "revolute",
         "axis": [
           0,
-          1,
-          0
+          0,
+          -1
         ],
         "pivot": [
-          0,
-          0.31408300460965066,
-          0.013499999996040124
+          0.09999999999999998,
+          0.342,
+          -0.3139879356568364
         ],
         "range": [
           0,
-          0
+          0.06999999999999999
         ],
         "driver": "phase"
       },
@@ -79,36 +80,17 @@
         "type": "revolute",
         "axis": [
           0,
-          1,
-          0
+          0,
+          1
         ],
         "pivot": [
-          -0.17999999499320998,
-          0.42915007945569517,
-          -0.12649999996289454
+          -0.09999999999999998,
+          0.342,
+          -0.3139879356568364
         ],
         "range": [
           0,
-          1.2
-        ],
-        "driver": "phase"
-      },
-      {
-        "node": "arm_right",
-        "type": "revolute",
-        "axis": [
-          0,
-          -1,
-          0
-        ],
-        "pivot": [
-          0.17999999499320998,
-          0.42915007945569517,
-          -0.12649999996289454
-        ],
-        "range": [
-          0,
-          1.2
+          0.06999999999999999
         ],
         "driver": "phase"
       }
@@ -116,22 +98,22 @@
     "bboxM": {
       "length": 1.85,
       "width": 1.2,
-      "height": 1.1
+      "height": 1.101
     },
     "trainingArea": {
-      "minX": -1.2000000000000002,
-      "maxX": 1.2000000000000002,
-      "minZ": -1.525,
-      "maxZ": 1.525,
-      "widthM": 2.4000000000000004,
-      "lengthM": 3.05,
-      "areaM2": 7.32
+      "minX": -1.2,
+      "maxX": 1.2,
+      "minZ": -1.5250603217158178,
+      "maxZ": 1.5250603217158178,
+      "widthM": 2.4,
+      "lengthM": 3.0501206434316357,
+      "areaM2": 7.3202895442359255
     },
     "stats": {
-      "triangles": 8892,
-      "meshes": 63,
-      "geometries": 17,
-      "materials": 10
+      "triangles": 5536,
+      "meshes": 52,
+      "geometries": 10,
+      "materials": 6
     }
   }
 }
