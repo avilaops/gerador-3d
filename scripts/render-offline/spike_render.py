@@ -54,7 +54,7 @@ world = bpy.data.worlds.new("estudio")
 world.use_nodes = True
 bg = world.node_tree.nodes["Background"]
 bg.inputs["Color"].default_value = (0.9, 0.9, 0.88, 1)
-bg.inputs["Strength"].default_value = 0.35
+bg.inputs["Strength"].default_value = 0.08
 scene.world = world
 
 def area(name, loc, energy, size_m):
@@ -68,9 +68,9 @@ def area(name, loc, energy, size_m):
     obj.rotation_euler = direction.to_track_quat("-Z", "Y").to_euler()
 
 r = max(diag, 1.0)
-area("principal", (center.x + 1.6 * r, center.y - 1.6 * r, center.z + 1.8 * r), 900 * r, 2.2 * r)
-area("preenchimento", (center.x - 2.0 * r, center.y - 1.0 * r, center.z + 0.8 * r), 250 * r, 2.5 * r)
-area("contraluz", (center.x - 0.4 * r, center.y + 2.0 * r, center.z + 1.6 * r), 500 * r, 1.5 * r)
+area("principal", (center.x + 1.6 * r, center.y - 1.6 * r, center.z + 1.8 * r), 170 * r * r, 2.2 * r)
+area("preenchimento", (center.x - 2.0 * r, center.y - 1.0 * r, center.z + 0.8 * r), 40 * r * r, 2.5 * r)
+area("contraluz", (center.x - 0.4 * r, center.y + 2.0 * r, center.z + 1.6 * r), 90 * r * r, 1.5 * r)
 
 # Câmera: azimute 0 = de frente (frente do modelo em -Y no Blender).
 cam_data = bpy.data.cameras.new("camera")
