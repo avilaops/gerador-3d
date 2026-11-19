@@ -10,6 +10,7 @@
  */
 import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { LEATHER_TILE_M, SURFACES, applyMetricBoxUV, leatherNormalMap, type SurfaceRole } from './materials';
 
 export type MaterialRole =
   'frame' | 'upholstery' | 'accent' | 'plate' | 'chrome' | 'rubber' | 'cable' | 'label' | 'wood';
@@ -38,22 +39,30 @@ export class PartKit {
 
   constructor(colors: MaterialColors = {}) {
     const c = { ...DEFAULT_COLORS, ...stripUndefined(colors) };
-    const std = (name: string, color: string | number, roughness: number, metalness: number) => {
-      const m = new THREE.MeshStandardMaterial({ color, roughness, metalness });
-      m.name = name;
+    const std = (role: SurfaceRole, color: string | number) => {
+      const m = new THREE.MeshStandardMaterial({ color, ...SURFACES[role] });
+      m.name = role;
       return m;
     };
     this.materials = {
-      frame: std('frame', c.frame, 0.5, 0.4),
-      upholstery: std('upholstery', c.upholstery, 0.78, 0.05),
-      accent: std('accent', c.accent, 0.4, 0.45),
-      plate: std('plate', c.plate, 0.35, 0.7),
-      chrome: std('chrome', 0xd9d9d9, 0.2, 0.95),
-      rubber: std('rubber', 0x101010, 0.9, 0),
-      cable: std('cable', 0x3a3a3a, 0.5, 0.6),
-      label: std('label', 0x96764a, 0.5, 0.2),
-      wood: std('wood', 0x7d4c22, 0.6, 0),
+      frame: std('frame', c.frame),
+      upholstery: std('upholstery', c.upholstery),
+      accent: std('accent', c.accent),
+      plate: std('plate', c.plate),
+      chrome: std('chrome', 0xd9d9d9),
+      rubber: std('rubber', 0x101010),
+      cable: std('cable', 0x3a3a3a),
+      label: std('label', 0x96764a),
+      wood: std('wood', 0x7d4c22),
     };
+    // Grão de couro no estofado. Sem canvas (ambiente sem DOM) o estofado fica liso.
+    const leather = leatherNormalMap();
+    if (leather) {
+      this.materials.upholstery.normalMap = leather;
+      // Baixo de propósito: os rolos de espuma usam cilindros esticados e o grão fica mais grosso neles.
+      this.materials.upholstery.normalScale.set(0.45, 0.45);
+      this.extras.push(leather);
+    }
   }
 
   /** Caixa unitária centrada na origem. */
@@ -100,7 +109,7 @@ export class PartKit {
   roundedBox(w: number, h: number, d: number, radius: number): THREE.BufferGeometry {
     const r = Math.min(radius, w / 2 - 1e-4, h / 2 - 1e-4, d / 2 - 1e-4);
     const key = `rbox:${w.toFixed(3)}:${h.toFixed(3)}:${d.toFixed(3)}:${r.toFixed(3)}`;
-    return this.cached(key, () => new RoundedBoxGeometry(w, h, d, 3, r));
+    return this.cached(key, () => applyMetricBoxUV(new RoundedBoxGeometry(w, h, d, 3, r), LEATHER_TILE_M));
   }
 
   /** Anilha: disco torneado com cubo central, rebaixo e aro, eixo em Y. Cacheada por medida. */
