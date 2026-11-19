@@ -25,4 +25,4 @@ jobs:
         env:
           HEAD_REF: ${{ github.head_ref }}
           BASE_REF: ${{ github.base_ref }}
-        run: npx vite-node scripts/escopo-frentes.ts -- --branch "$HEAD_REF" --base "origin/$BASE_REF"
+        run: npx vite-node scripts/escopo-frentes-cli.ts -- --branch "$HEAD_REF" --base "origin/$BASE_REF"
