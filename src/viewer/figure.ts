@@ -23,13 +23,60 @@ const _a = new THREE.Vector3();
 const _b = new THREE.Vector3();
 const _m = new THREE.Matrix4();
 
+/**
+ * Membro afilado de comprimento 1 ao longo de Y (de -0,5, proximal, a +0,5, distal) e raio 1 no
+ * começo. `taper` é o raio no fim (relativo ao começo) e `bulge` o volume do músculo no meio:
+ * a barriga da perna, o bíceps. A escala não uniforme de `segment()` leva comprimento e raio
+ * para as medidas reais. As pontas ficam escondidas dentro das esferas de junta.
+ */
+export function limbGeometry(taper: number, bulge = 0, bulgeAt = 0.45, rings = 6, sides = 18): THREE.BufferGeometry {
+  const pts: THREE.Vector2[] = [new THREE.Vector2(0, -0.5)];
+  for (let i = 0; i <= rings; i++) {
+    const t = i / rings;
+    const muscle = 1 + bulge * Math.exp(-(((t - bulgeAt) / 0.28) ** 2));
+    pts.push(new THREE.Vector2((1 + (taper - 1) * t) * muscle, -0.5 + t));
+  }
+  pts.push(new THREE.Vector2(0, 0.5));
+  const g = new THREE.LatheGeometry(pts, sides);
+  // O LatheGeometry do r149 deixa a normal do último ponto sem normalizar (o validador de glTF recusa).
+  const n = g.getAttribute('normal') as THREE.BufferAttribute;
+  const v = new THREE.Vector3();
+  for (let i = 0; i < n.count; i++) {
+    v.fromBufferAttribute(n, i);
+    if (v.lengthSq() > 0) n.setXYZ(i, ...v.normalize().toArray());
+  }
+  return g;
+}
+
+/** Cores da figura: pele neutra, camisa e bermuda escuras, tênis claro. */
+const TONES = { skin: 0xc9a98b, shirt: 0x2f3745, shorts: 0x20242c, shoe: 0xe9e7e1 } as const;
+type Tone = keyof typeof TONES;
+
+/** Material de cada peça do corpo. */
+const LIMB_TONE: Record<string, Tone> = {
+  torso: 'shirt', neck: 'skin',
+  armL1: 'skin', armL2: 'skin', armR1: 'skin', armR2: 'skin',
+  legL1: 'shorts', legL2: 'skin', legR1: 'shorts', legR2: 'skin',
+};
+const JOINT_TONE: Record<string, Tone> = {
+  head: 'skin', pelvis: 'shorts', shL: 'shirt', shR: 'shirt', elL: 'skin', elR: 'skin',
+  haL: 'skin', haR: 'skin', knL: 'skin', knR: 'skin', ftL: 'shoe', ftR: 'shoe',
+};
+/** Forma de cada membro: [afilamento, volume do músculo, posição do volume de 0 a 1]. */
+const LIMB_SHAPE: Record<string, [number, number, number]> = {
+  torso: [1.18, 0.04, 0.6], neck: [0.92, 0, 0.5],
+  armL1: [0.84, 0.1, 0.4], armR1: [0.84, 0.1, 0.4], armL2: [0.7, 0.08, 0.3], armR2: [0.7, 0.08, 0.3],
+  legL1: [0.74, 0.07, 0.35], legR1: [0.74, 0.07, 0.35], legL2: [0.62, 0.14, 0.28], legR2: [0.62, 0.14, 0.28],
+};
+
 export class Figure {
   readonly group = new THREE.Group();
   private readonly anchor: THREE.Object3D;
   private readonly pose: PoseData;
-  private readonly material: THREE.MeshStandardMaterial;
-  private readonly cyl = new THREE.CylinderGeometry(1, 1, 1, 14);
-  private readonly ball = new THREE.SphereGeometry(1, 18, 12);
+  private readonly materials: Record<Tone, THREE.MeshStandardMaterial>;
+  private readonly ball = new THREE.SphereGeometry(1, 16, 10);
+  private readonly head = new THREE.SphereGeometry(1, 24, 16);
+  private readonly geometries: THREE.BufferGeometry[] = [];
   private readonly limbs: Record<string, THREE.Mesh> = {};
   private readonly joints: Record<string, THREE.Mesh> = {};
   private readonly grips: THREE.Mesh[] = [];
@@ -43,8 +90,14 @@ export class Figure {
     this.anchor = anchor;
     this.pose = anchor.userData.pose as PoseData;
     this.group.name = 'figure';
-    this.material = new THREE.MeshStandardMaterial({ color: 0xb7b1a6, roughness: 0.9 });
-    this.material.envMapIntensity = 0.2;
+    this.materials = Object.fromEntries(
+      (Object.keys(TONES) as Tone[]).map((t) => {
+        const m = new THREE.MeshStandardMaterial({ color: TONES[t], roughness: t === 'shoe' ? 0.7 : 0.85, metalness: 0 });
+        m.name = `figure_${t}`;
+        m.envMapIntensity = 0.2;
+        return [t, m];
+      })
+    ) as Record<Tone, THREE.MeshStandardMaterial>;
 
     // Pegadas e rolos que se movem com as alavancas: é neles que a pessoa segura e apoia.
     const moving = new Set(movingNodes);
@@ -63,18 +116,27 @@ export class Figure {
       else if (/roller/.test(name)) this.rollers.push(mesh);
     });
 
-    for (const k of ['torso', 'neck', 'armL1', 'armL2', 'armR1', 'armR2', 'legL1', 'legL2', 'legR1', 'legR2'])
-      this.limbs[k] = this.mesh(this.cyl);
-    for (const k of ['head', 'pelvis', 'shL', 'shR', 'elL', 'elR', 'haL', 'haR', 'knL', 'knR', 'ftL', 'ftR'])
-      this.joints[k] = this.mesh(this.ball);
+    for (const k of Object.keys(LIMB_TONE)) {
+      const [taper, bulge, at] = LIMB_SHAPE[k];
+      const geometry = limbGeometry(taper, bulge, at);
+      this.geometries.push(geometry);
+      this.limbs[k] = this.mesh(geometry, LIMB_TONE[k], `figure_${k}`);
+    }
+    for (const k of Object.keys(JOINT_TONE)) this.joints[k] = this.mesh(k === 'head' ? this.head : this.ball, JOINT_TONE[k], `figure_${k}`);
     this.update();
   }
 
-  private mesh(geometry: THREE.BufferGeometry): THREE.Mesh {
-    const m = new THREE.Mesh(geometry, this.material);
+  private mesh(geometry: THREE.BufferGeometry, tone: Tone, name: string): THREE.Mesh {
+    const m = new THREE.Mesh(geometry, this.materials[tone]);
+    m.name = name;
     m.castShadow = true;
     this.group.add(m);
     return m;
+  }
+
+  /** Mostra ou esconde a pessoa (as imagens de catálogo podem preferir o equipamento sozinho). */
+  setVisible(visible: boolean): void {
+    this.group.visible = visible;
   }
 
   /** Centro de uma malha no mundo (as pegadas de tubo curvado têm a origem em outro lugar). */
@@ -141,7 +203,8 @@ export class Figure {
     torso.position.copy(hip).add(chest).multiplyScalar(0.5);
     _m.makeBasis(right, spine, new THREE.Vector3().crossVectors(right, spine));
     torso.quaternion.setFromRotationMatrix(_m);
-    torso.scale.set(0.165, TORSO, 0.105);
+    // A geometria do tronco afila: a escala é a da cintura (extremo do quadril); o peito sai 18% maior.
+    torso.scale.set(0.15, TORSO, 0.1);
     this.segment(this.limbs.neck, chest, head, 0.048);
     this.joint(this.joints.head, head.clone().addScaledVector(spine, 0.06), 0.105);
     this.joints.pelvis.position.copy(hip);
@@ -195,8 +258,9 @@ export class Figure {
   }
 
   dispose(): void {
-    this.cyl.dispose();
+    this.geometries.forEach((g) => g.dispose());
     this.ball.dispose();
-    this.material.dispose();
+    this.head.dispose();
+    Object.values(this.materials).forEach((m) => m.dispose());
   }
 }
