@@ -51,14 +51,17 @@ refeitos. Falha de uma imagem não derruba o lote; o código de saída é 1 se a
 - **Cinco luzes de área** em tamanho proporcional ao modelo (energia com o quadrado do raio): principal
   alta, preenchimento, contraluz e duas tiras laterais que desenham a borda.
 - **Dois cartões pretos** fora do quadro, só para refletir nas partes metálicas e dar definição ao preto.
-- **Lente** de 85 mm para peça pequena e 50 mm para máquina; a câmera enquadra a esfera que envolve a
-  caixa, com 20% de folga, nos dois formatos de imagem.
+- **Lente** de 85 mm para peça pequena e 50 mm para máquina; a câmera enquadra projetando os 8 cantos da
+  caixa, com 8% de folga, nos dois formatos de imagem.
 - Cor: AgX. Mundo fraco (0,08), a luz vem das luzes de área.
 
-## Determinismo
+## Tempo e determinismo
 
-Mesma semente, mesmo GLB e mesma versão do Blender dão a mesma imagem (`use_animated_seed` desligado).
-Mudar o Blender ou a GPU/CPU pode mudar o ruído; o registro anota o motor (`cycles-cpu`).
+Medido em CPU, 1024 × 768, 64 amostras, num servidor de 2 vCPU e 4 GB: **190 a 207 s por imagem**.
+
+Mesma semente, mesmo GLB e mesma versão do Blender dão a **mesma imagem em pixels** (testado: 0 pixels
+diferentes). O arquivo PNG tem hash diferente porque o Blender grava metadados; compare pixels.
+Mudar o Blender ou a CPU pode mudar o ruído; o registro anota o motor (`cycles-cpu`).
 
 ## Testes
 

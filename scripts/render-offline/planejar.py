@@ -44,24 +44,56 @@ class Caixa:
         return math.sqrt(sum(v * v for v in self.tamanho))
 
 
-def fov_efetivo(lente_mm: float, largura: int, altura: int) -> float:
-    """Menor campo de visão (rad) entre horizontal e vertical: é ele que limita o enquadramento.
+def meia_tangente(lente_mm: float, largura: int, altura: int) -> tuple[float, float]:
+    """Tangente do meio campo de visão, na horizontal e na vertical.
 
     O sensor de 36 mm vale para o lado maior da imagem (ajuste automático do Blender).
     """
     if lente_mm <= 0 or largura <= 0 or altura <= 0:
         raise ValueError("lente e dimensões precisam ser positivas")
-    lado_maior = 2 * math.atan(SENSOR_MM / (2 * lente_mm))
-    razao = min(largura, altura) / max(largura, altura)
-    return 2 * math.atan(math.tan(lado_maior / 2) * razao)
+    maior = SENSOR_MM / (2 * lente_mm)
+    menor = maior * min(largura, altura) / max(largura, altura)
+    return (maior, menor) if largura >= altura else (menor, maior)
 
 
-def distancia_camera(caixa: Caixa, lente_mm: float, largura: int, altura: int, folga: float = 1.2) -> float:
-    """Distância do centro até a câmera para a esfera que envolve a caixa caber com `folga`."""
+def _direcao_camera(azimute: float, elevacao: float) -> tuple[float, float, float]:
+    return posicao_camera((0.0, 0.0, 0.0), 1.0, azimute, elevacao)
+
+
+def projetar_cantos(caixa: Caixa, azimute: float, elevacao: float) -> list[tuple[float, float, float]]:
+    """Cantos da caixa como (x, y, w): x à direita e y para cima no quadro, w em direção à câmera."""
+    para_camera = _direcao_camera(azimute, elevacao)
+    olhar = tuple(-v for v in para_camera)
+    # direita = olhar x Z (Z é o "cima" do mundo do Blender); cima = direita x olhar
+    dx, dy = olhar[1], -olhar[0]  # (olhar x Z) = (olhar_y, -olhar_x, 0)
+    n = math.hypot(dx, dy)
+    direita = (dx / n, dy / n, 0.0)
+    cima = (
+        direita[1] * olhar[2] - direita[2] * olhar[1],
+        direita[2] * olhar[0] - direita[0] * olhar[2],
+        direita[0] * olhar[1] - direita[1] * olhar[0],
+    )
+    cx, cy, cz = caixa.centro
+    saida = []
+    for x in (caixa.lo[0], caixa.hi[0]):
+        for y in (caixa.lo[1], caixa.hi[1]):
+            for z in (caixa.lo[2], caixa.hi[2]):
+                r = (x - cx, y - cy, z - cz)
+                dot = lambda a, b: a[0] * b[0] + a[1] * b[1] + a[2] * b[2]
+                saida.append((dot(r, direita), dot(r, cima), dot(r, para_camera)))
+    return saida
+
+
+def distancia_camera(caixa: Caixa, lente_mm: float, largura: int, altura: int, azimute: float, elevacao: float, folga: float = 1.08) -> float:
+    """Menor distância do centro à câmera para os 8 cantos da caixa caberem no quadro, com `folga`.
+
+    Projeta a caixa de verdade, em vez de usar a esfera que a envolve (que deixava o modelo com
+    metade do quadro vazio). Um canto mais perto da câmera (w > 0) precisa de mais distância.
+    """
     if folga < 1:
         raise ValueError("folga menor que 1 cortaria o modelo")
-    raio = max(caixa.diagonal, 0.1) / 2
-    return raio / math.sin(fov_efetivo(lente_mm, largura, altura) / 2) * folga
+    th, tv = meia_tangente(lente_mm, largura, altura)
+    return max(w + max(abs(x) * folga / th, abs(y) * folga / tv) for x, y, w in projetar_cantos(caixa, azimute, elevacao))
 
 
 def posicao_camera(centro: Sequence[float], distancia: float, azimute: float, elevacao: float) -> tuple[float, float, float]:
@@ -107,7 +139,7 @@ def layout_luzes(caixa: Caixa, azimute: float) -> list[Luz]:
         return Luz(nome, (x, y, cz + dz * r), energia * r * r, (w * r, h * r))
 
     return [
-        luz("principal", 1.2, -1.6, 1.8, 170, 2.2, 2.2),
+        luz("principal", 1.2, -1.6, 1.8, 170, 1.3, 1.3),
         luz("preenchimento", -2.0, -1.0, 0.8, 40, 2.5, 2.5),
         luz("contraluz", -0.4, 2.0, 1.6, 90, 1.5, 1.5),
         luz("tira_direita", 1.9, 0.2, 0.5, 60, 0.35, 2.2),

@@ -131,7 +131,7 @@ cam_dados = bpy.data.cameras.new("camera")
 cam_dados.lens = lente
 cam = bpy.data.objects.new("camera", cam_dados)
 scene.collection.objects.link(cam)
-dist = planejar.distancia_camera(caixa, lente, args.width, args.height)
+dist = planejar.distancia_camera(caixa, lente, args.width, args.height, args.az, args.el)
 cam.location = planejar.posicao_camera(caixa.centro, dist, args.az, args.el)
 alvo = bpy.data.objects.new("alvo", None)
 alvo.location = centro

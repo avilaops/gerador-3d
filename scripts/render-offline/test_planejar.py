@@ -19,26 +19,38 @@ def caixa(tx=1.0, ty=1.0, tz=1.0, centro=(0.0, 0.0, 0.5)):
 
 
 class Enquadramento(unittest.TestCase):
-    def test_esfera_da_caixa_cabe_no_quadro(self):
+    def extremos(self, c, largura, altura, az, el, d):
+        """Maior |x|/tan e |y|/tan dos cantos, vistos da câmera a distância d: 1.0 = encosta na borda."""
+        th, tv = p.meia_tangente(50, largura, altura)
+        pior_x = max(abs(x) / ((d - w) * th) for x, y, w in p.projetar_cantos(c, az, el))
+        pior_y = max(abs(y) / ((d - w) * tv) for x, y, w in p.projetar_cantos(c, az, el))
+        return pior_x, pior_y
+
+    def test_todos_os_cantos_cabem_e_o_maior_encosta_na_folga(self):
         c = caixa(1.2, 0.9, 1.5)
         for largura, altura in ((1024, 768), (768, 1024), (1000, 1000)):
-            d = p.distancia_camera(c, 50, largura, altura, folga=1.0)
-            meio_fov = p.fov_efetivo(50, largura, altura) / 2
-            # Ângulo que a esfera ocupa vista da câmera: não pode passar do campo de visão.
-            self.assertAlmostEqual(math.asin((c.diagonal / 2) / d), meio_fov, places=6)
+            for az, el in p.VISTAS.values():
+                d = p.distancia_camera(c, 50, largura, altura, az, el, folga=1.1)
+                pior = max(self.extremos(c, largura, altura, az, el, d))
+                self.assertAlmostEqual(pior, 1 / 1.1, places=6)
 
-    def test_retrato_fica_mais_longe_que_paisagem_quadrada(self):
-        c = caixa()
-        self.assertEqual(p.distancia_camera(c, 50, 768, 1024), p.distancia_camera(c, 50, 1024, 768))
-        self.assertLess(p.distancia_camera(c, 50, 1000, 1000), p.distancia_camera(c, 50, 1024, 768) * 1.0001 + 1e-9)
+    def test_e_mais_justo_que_a_esfera(self):
+        c = caixa(1.5, 1.0, 2.3)
+        _, tv = p.meia_tangente(50, 1024, 768)  # lado limitante em paisagem
+        esfera = (c.diagonal / 2) / math.sin(math.atan(tv))  # esfera que envolve a caixa, sem folga
+        self.assertLess(p.distancia_camera(c, 50, 1024, 768, 35, 18, folga=1.0), esfera)
+
+    def test_retrato_e_paisagem_nao_dao_o_mesmo(self):
+        c = caixa(1.5, 0.6, 1.0)
+        self.assertNotAlmostEqual(p.distancia_camera(c, 50, 1024, 768, 0, 8), p.distancia_camera(c, 50, 768, 1024, 0, 8))
 
     def test_folga_menor_que_um_e_recusada(self):
         with self.assertRaises(ValueError):
-            p.distancia_camera(caixa(), 50, 1024, 768, folga=0.9)
+            p.distancia_camera(caixa(), 50, 1024, 768, 0, 0, folga=0.9)
 
     def test_dimensao_invalida(self):
         with self.assertRaises(ValueError):
-            p.fov_efetivo(50, 0, 768)
+            p.meia_tangente(50, 0, 768)
 
     def test_lente_85_para_peca_pequena_e_50_para_maquina(self):
         self.assertEqual(p.lente_para(caixa(0.5, 0.5, 0.5)), 85.0)
