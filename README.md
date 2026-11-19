@@ -92,6 +92,10 @@ A torre das máquinas de bateria leva a placa com o nome do exercício e três p
 
 Nas máquinas em que a foto mostra a torre ao lado do assento (`tower: 'side'` em `exercises.ts`), ela fica à direita de quem usa, com a frente virada para o assento. Máquinas estreitas demais para isso (largura abaixo de 1,02 m) mantêm a torre atrás.
 
+## Fotos de referência
+
+Onde estão as fotos dos equipamentos (ERP/R2, catálogo publicado e zip dos catálogos DHZ) e o que falta (cardio): [catalogs/ludus/FOTOS.md](catalogs/ludus/FOTOS.md).
+
 ## Nota de silhueta foto × modelo
 
 `python catalogs/ludus/silhueta.py --fotos <pasta das fotos>` compara o contorno de cada foto com o da miniatura sem sombra (`npm run thumbs -- --mask --name mask`) e grava `catalogs/ludus/silhueta.json`, de 0 a 1. É uma medida grosseira: ordena os itens do mais divergente ao menos, e ajudou a escolher o ângulo de câmera de cada miniatura (`AZIMUTE_POR_CODIGO` em `classify.ts`). Não distingue um modelo espelhado, então o lado da foto continua conferido a olho.
