@@ -1,0 +1,28 @@
+name: Escopo das frentes
+
+# Reprova PR de branch `frente/*` que altere arquivo fora do escopo da frente.
+# O mapa está em docs/frentes/escopo.json.
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  escopo:
+    if: startsWith(github.head_ref, 'frente/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Conferir escopo
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REF: ${{ github.base_ref }}
+        run: npx vite-node scripts/escopo-frentes.ts -- --branch "$HEAD_REF" --base "origin/$BASE_REF"

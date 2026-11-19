@@ -1,0 +1,46 @@
+{
+  "descricao": "Caminhos que cada frente do blueprint pode alterar. Branches 'frente/<slug>' que tocarem outro arquivo reprovam em scripts/escopo-frentes.ts. A frente K é livre porque a migração do Three.js atravessa tudo e roda por último.",
+  "frentes": {
+    "a-medicao": {
+      "permitir": ["scripts/medicao/**", "tests/visual/**"]
+    },
+    "b-pecas-por-produto": {
+      "permitir": ["src/spec/schema.ts", "src/generate.ts", "src/parts/custom/**", "tests/custom-parts.test.ts"]
+    },
+    "c-biblioteca-detalhes": {
+      "permitir": ["src/parts/details/**", "tests/details.test.ts"]
+    },
+    "d-materiais-pbr": {
+      "permitir": ["src/parts/kit.ts", "src/parts/decals.ts", "src/parts/primitives.ts", "src/parts/materials/**", "tests/materials.test.ts"]
+    },
+    "e-luz-viewer": {
+      "permitir": ["src/viewer/EquipmentViewer.ts", "src/viewer/camera.ts", "src/viewer/lighting/**", "web/render.ts", "tests/viewer-lighting.test.ts"]
+    },
+    "f-render-offline": {
+      "permitir": ["scripts/render-offline/**"]
+    },
+    "g-export-lod": {
+      "permitir": ["src/export/**", "src/lod.ts", "scripts/export.ts", "package.json", "package-lock.json", "tests/export-lod.test.ts"]
+    },
+    "h-torre-bateria": {
+      "permitir": [
+        "src/families/selectorizedTower.ts",
+        "src/families/cableStation.ts",
+        "src/families/machine/machine.ts",
+        "src/parts/assemblies.ts",
+        "src/parts/tower/**",
+        "tests/tower.test.ts"
+      ]
+    },
+    "i-alavancas": {
+      "permitir": ["src/families/plateLoadedLever.ts", "src/families/legPress.ts", "src/families/machine/**", "tests/levers.test.ts"],
+      "excluir": ["src/families/machine/machine.ts"]
+    },
+    "j-pessoa": {
+      "permitir": ["src/viewer/figure.ts", "src/parts/pose.ts", "tests/figure.test.ts"]
+    },
+    "k-upgrade-three": {
+      "permitir": ["**"]
+    }
+  }
+}
