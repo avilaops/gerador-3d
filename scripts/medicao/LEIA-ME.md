@@ -19,6 +19,12 @@ Saída: `relatorio.json` e `relatorio.html` (folha de contato, pior primeiro). O
 
 As fotos ficam fora do repositório: o cache vai para `<pasta temporária>/gerador-medicao/fotos`. A origem padrão é a vitrine publicada (`https://ludusequipamentos.com/midias/produtos/<codigo>`); `--origem <pasta>` usa fotos locais.
 
+## Cuidados ao rodar
+
+- **Não rode duas medições ao mesmo tempo na mesma máquina**: a renderização é por software e a disputa de CPU faz o navegador sem tela falhar de forma silenciosa. Rode um comando de cada vez.
+- O renderizador desliga o observador de arquivos do Vite (`watch: null`). Antes disso, editar qualquer arquivo durante uma medição recarregava a página e derrubava itens com "Execution context was destroyed" ou "window.shoot is not a function", e ainda misturava versões do código na mesma medição.
+- Uma medição de 21 itens com 5 azimutes leva uns 5 minutos; de 66 itens, uns 12.
+
 ## Como a nota é calculada
 
 1. A foto vira uma silhueta (`fotoParaMascara`): fundo liso estimado pela borda, sombra clara do piso ligada à borda descartada, buracos do quadro vistos através contados como fundo.

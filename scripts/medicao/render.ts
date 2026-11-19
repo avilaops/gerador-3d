@@ -42,7 +42,10 @@ export function acharNavegador(): string {
 
 export async function abrirRenderizador(): Promise<Renderizador> {
   const executablePath = acharNavegador();
-  const servidor = await createServer({ server: { port: 0, host: '127.0.0.1' }, logLevel: 'error' });
+  // `watch: null` desliga o observador de arquivos: sem isso, editar qualquer arquivo do projeto
+  // durante uma medição recarrega a página e derruba a renderização em curso ("Execution context
+  // was destroyed" ou "window.shoot is not a function"), além de misturar versões do código.
+  const servidor = await createServer({ server: { port: 0, host: '127.0.0.1', watch: null }, logLevel: 'error' });
   await servidor.listen();
   const endereco = servidor.httpServer!.address();
   const porta = typeof endereco === 'object' && endereco ? endereco.port : 5173;
