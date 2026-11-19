@@ -7,6 +7,11 @@
  *   npm run export -- --catalog ludus           # catalogs/ludus/specs → catalogs/ludus/models
  *   npm run export -- --specs lote.json --out ../saida
  *   npm run export -- --catalog ludus --only LD-B004,LD-A002
+ *   npm run export -- --catalog ludus --lods        # também model.lod1.glb (médio) e model.lod2.glb (baixo)
+ *   npm run export -- --catalog ludus --compress    # GLB com malha comprimida (meshopt)
+ *
+ * `--compress` gera arquivos que só abrem com o decodificador meshopt registrado no leitor;
+ * o site atual não o registra, por isso o padrão é sem compressão.
  *
  * Itens que falham (família sem gerador, spec inválido) vão para o manifesto
  * sem interromper o lote. Código de saída 1 se algum item falhou.
@@ -15,6 +20,7 @@ import * as gltfValidator from 'gltf-validator';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { installNodeShims } from '../src/export/nodeShims';
+import { exportGlbLevels, levelsOverBudget, lodManifestEntries, type LodManifestEntry } from '../src/export/lods';
 import {
   EquipmentSpecError,
   HANDWRITTEN_SPECS,
@@ -26,6 +32,10 @@ import {
 } from '../src';
 
 installNodeShims();
+
+const withLods = process.argv.includes('--lods');
+// A compressão carrega um codificador WASM: só é importada quando pedida.
+const compress = process.argv.includes('--compress') ? (await import('../src/export/compress')).compressMeshopt : undefined;
 
 function arg(name: string): string | undefined {
   const i = process.argv.indexOf(`--${name}`);
@@ -69,6 +79,8 @@ interface ManifestItem {
   trainingArea?: { widthM: number; lengthM: number; areaM2: number };
   animated?: boolean;
   triangles?: number;
+  /** Só com `--lods`: um arquivo por nível de detalhe. */
+  lods?: LodManifestEntry[];
   glbBytes?: number;
   usdzBytes?: number;
   quality?: {
@@ -104,11 +116,25 @@ for (const spec of specs) {
     const eq = generateEquipment(spec);
     const dir = join(out, eq.spec.id);
     mkdirSync(dir, { recursive: true });
-    const glb = await exportGlb(eq);
+    const glbRaw = await exportGlb(eq);
+    const glb = compress ? await compress(glbRaw) : glbRaw;
     const erros = (await validateGlb(new Uint8Array(glb))).issues.messages.filter((m) => m.severity === 0);
     if (erros.length) throw new Error(`GLB inválido: ${erros[0].code} ${erros[0].message}`);
     const usdz = await exportUsdz(eq);
     writeFileSync(join(dir, 'model.glb'), Buffer.from(glb));
+    let lods: LodManifestEntry[] | undefined;
+    if (withLods) {
+      const levels = await exportGlbLevels(eq, { compress });
+      for (const f of levels) {
+        const e = (await validateGlb(new Uint8Array(f.glb))).issues.messages.filter((m) => m.severity === 0);
+        if (e.length) throw new Error(`GLB ${f.level} inválido: ${e[0].code} ${e[0].message}`);
+        if (f.level !== 'original') writeFileSync(join(dir, f.file), Buffer.from(f.glb));
+      }
+      for (const f of levelsOverBudget(levels, { original: glbRaw.byteLength })) {
+        console.warn(`aviso ${eq.spec.id}: nível ${f.level} acima do orçamento (${f.triangles} triângulos, ${f.bytes} bytes)`);
+      }
+      lods = lodManifestEntries(levels);
+    }
     writeFileSync(join(dir, 'model.usdz'), Buffer.from(usdz));
     writeFileSync(join(dir, 'plan.svg'), planSvg(eq));
     const mm = (pts: [number, number][]) => pts.map(([x, z]) => [round(x), round(z)]);
@@ -163,6 +189,7 @@ for (const spec of specs) {
       trainingArea: { widthM: round(widthM), lengthM: round(lengthM), areaM2: round(areaM2, 2) },
       animated: !!eq.clip,
       triangles: eq.stats.triangles,
+      ...(lods ? { lods } : {}),
       glbBytes: glb.byteLength,
       usdzBytes: usdz.byteLength,
       quality: {

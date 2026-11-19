@@ -43,7 +43,12 @@ export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { med
         const targetVertices = Math.max(12, Math.floor(sourceVertices * relativeRatio));
         if (targetVertices >= sourceVertices) return;
         try {
-          mesh.geometry = modifier.modify(sourceGeometry, targetVertices);
+          const simplified = modifier.modify(sourceGeometry, targetVertices);
+          // O simplificador colapsa peças finas e compridas (hastes, montantes) e as encurta.
+          // Se a malha perder mais que `MAX_SHRINK` de qualquer eixo, vale a original: a
+          // silhueta e as medidas do modelo não podem mudar de um nível para outro.
+          if (shrinks(sourceGeometry, simplified)) simplified.dispose();
+          else mesh.geometry = simplified;
         } catch {
           // A disconnected/degenerate primitive keeps its source geometry.
           // The LOD remains valid and the visual silhouette is preserved.
@@ -71,6 +76,21 @@ export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { med
     previousRatio = ratio;
   }
   return variants;
+}
+
+/** Quanto uma malha pode encurtar num eixo ao ser simplificada, em fração do próprio tamanho. */
+export const MAX_SHRINK = 0.02;
+
+function extents(geometry: THREE.BufferGeometry): THREE.Vector3 {
+  const box = new THREE.Box3().setFromBufferAttribute(geometry.getAttribute('position') as THREE.BufferAttribute);
+  return box.getSize(new THREE.Vector3());
+}
+
+/** A malha simplificada ficou menor que a original, em algum eixo, além do tolerado. */
+export function shrinks(source: THREE.BufferGeometry, simplified: THREE.BufferGeometry, tolerance = MAX_SHRINK): boolean {
+  const a = extents(source);
+  const b = extents(simplified);
+  return (['x', 'y', 'z'] as const).some((k) => a[k] > 1e-4 && b[k] < a[k] * (1 - tolerance));
 }
 
 function countTriangles(root: THREE.Object3D): number {
