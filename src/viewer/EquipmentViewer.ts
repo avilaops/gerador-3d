@@ -15,6 +15,15 @@ import type { EquipmentSpec, EquipmentSpecInput } from '../spec/schema';
 import { applyPhase, captureRestPose, phaseAt, DEFAULT_CYCLE_SECONDS } from '../animation';
 import { Figure } from './figure';
 import { fitCameraDistance } from './camera';
+import {
+  computeLightRig,
+  createContactShadow,
+  createStudioEnvironment,
+  shadowMapSize,
+  type ContactShadow,
+  type SceneStyle,
+  type ViewerQuality,
+} from './lighting';
 
 export type ViewerToggle = 'motion' | 'area' | 'human' | 'dims';
 
@@ -31,6 +40,13 @@ export interface EquipmentViewerOptions {
   initial?: Partial<Record<ViewerToggle, boolean>>;
   /** Necessário para prints/miniaturas (lê o canvas depois do render). */
   preserveDrawingBuffer?: boolean;
+  /**
+   * Estilo de cena. `default` é o visual de sempre. `studio` usa ambiente de estúdio escuro
+   * com softbox, três pontos de luz e sombra de contato; `dark` é o mesmo sobre fundo escuro.
+   */
+  scene?: SceneStyle;
+  /** Qualidade da sombra. Sem valor, vale a regra de capacidade do aparelho. */
+  quality?: ViewerQuality;
   /**
    * Opções de cor que o visitante pode trocar no modelo: uma linha de amostras por
    * papel do material (estrutura, braços, estofado). Cada opção é [nome, #rrggbb].
@@ -92,6 +108,10 @@ export class EquipmentViewer {
   private readonly camera = new THREE.PerspectiveCamera(34, 1, 0.05, 60);
   private controls: OrbitControls | null = null;
   private keyLight: THREE.DirectionalLight | null = null;
+  private fillLight: THREE.DirectionalLight | null = null;
+  private rimLight: THREE.DirectionalLight | null = null;
+  private sceneStyle: SceneStyle = 'default';
+  private contactShadow: ContactShadow | null = null;
   private readonly clock = new THREE.Clock();
   private readonly buttons = new Map<ViewerToggle, HTMLButtonElement>();
   private readonly state: Record<ViewerToggle, boolean>;
@@ -204,31 +224,47 @@ export class EquipmentViewer {
     r.shadowMap.type = THREE.PCFSoftShadowMap;
     r.outputEncoding = THREE.sRGBEncoding;
     r.toneMapping = THREE.ACESFilmicToneMapping;
-    r.toneMappingExposure = 0.72;
-    // Ambiente de estúdio para os reflexos do cromado e do metal pintado.
-    const pmrem = new THREE.PMREMGenerator(r);
-    const env = pmrem.fromScene(new RoomEnvironment(), 0.04);
-    this.scene.environment = env.texture;
-    pmrem.dispose();
-    this.overlayDisposables.push(env);
+    this.sceneStyle = opts.scene ?? 'default';
+    const rig = computeLightRig(this.sceneStyle, 1);
+    r.toneMappingExposure = rig.exposure;
+    // Ambiente para os reflexos do cromado e do metal pintado. O estilo padrão mantém a sala
+    // clara de sempre; os de estúdio usam sala escura com softbox, que deixa o preto ser preto.
+    if (this.sceneStyle === 'default') {
+      const pmrem = new THREE.PMREMGenerator(r);
+      const env = pmrem.fromScene(new RoomEnvironment(), 0.04);
+      this.scene.environment = env.texture;
+      pmrem.dispose();
+      this.overlayDisposables.push(env);
+    } else {
+      const env = createStudioEnvironment(r);
+      this.scene.environment = env.texture;
+      this.overlayDisposables.push(env);
+    }
 
-    this.scene.background = new THREE.Color(opts.background ?? 0xeeece7);
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, 0.08));
-    const key = new THREE.DirectionalLight(0xffffff, 1.1);
+    this.scene.background = new THREE.Color(opts.background ?? rig.background);
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, rig.hemisphere));
+    const key = new THREE.DirectionalLight(0xffffff, rig.key.intensity);
     key.castShadow = true;
     const narrowStage = this.stage.clientWidth > 0 && this.stage.clientWidth < 600;
     const lowDpi = (globalThis.devicePixelRatio || 1) <= 1.5;
-    const shadowSize = cores <= 4 || (narrowStage && lowDpi) ? 1024 : 2048;
+    const shadowSize = shadowMapSize(opts.quality, cores, narrowStage && lowDpi);
     key.shadow.mapSize.set(shadowSize, shadowSize);
-    key.shadow.radius = 4;
-    key.shadow.bias = -0.0005;
+    key.shadow.radius = rig.shadow.radius;
+    key.shadow.bias = rig.shadow.bias;
     this.scene.add(key, key.target);
     this.keyLight = key;
-    const rim = new THREE.DirectionalLight(0xffffff, 0.2);
-    rim.position.set(-3, 2.5, -2.5);
+    const rim = new THREE.DirectionalLight(0xffffff, rig.rim.intensity);
+    rim.position.set(...rig.rim.position);
     this.scene.add(rim);
+    this.rimLight = rim;
+    if (rig.fill) {
+      const fill = new THREE.DirectionalLight(0xffffff, rig.fill.intensity);
+      fill.position.set(...rig.fill.position);
+      this.scene.add(fill);
+      this.fillLight = fill;
+    }
     const groundGeo = new THREE.PlaneGeometry(20, 20);
-    const groundMat = new THREE.ShadowMaterial({ opacity: 0.26 });
+    const groundMat = new THREE.ShadowMaterial({ opacity: rig.groundShadowOpacity });
     const ground = new THREE.Mesh(groundGeo, groundMat);
     ground.rotation.x = -Math.PI / 2;
     ground.receiveShadow = true;
@@ -292,6 +328,10 @@ export class EquipmentViewer {
     });
     this.colorRows.forEach((row) => (row.hidden = !used.has(row.dataset.role!)));
     this.scene.add(eq.object);
+    if (computeLightRig(this.sceneStyle, 1).contactShadow) {
+      this.contactShadow = createContactShadow(eq.footprint);
+      this.scene.add(this.contactShadow.mesh);
+    }
     this.buildOverlays(eq);
     this.frame(eq);
     this.applyState();
@@ -435,6 +475,11 @@ export class EquipmentViewer {
   private clearEquipment() {
     if (!this.equipment) return;
     this.scene.remove(this.equipment.object);
+    if (this.contactShadow) {
+      this.scene.remove(this.contactShadow.mesh);
+      this.contactShadow.dispose();
+      this.contactShadow = null;
+    }
     if (this.overlays) {
       const { area, human, dims } = this.overlays;
       for (const g of [area, human, dims]) {
@@ -484,17 +529,19 @@ export class EquipmentViewer {
     this.camera.position.copy(target).addScaledVector(dir, distance);
     if (this.keyLight) {
       const k = this.keyLight;
-      const ext = maxDim * 1.3;
-      k.position.set(ext * 1.2, ext * 2.2, ext * 1.5);
+      const rig = computeLightRig(this.sceneStyle, maxDim);
+      k.position.set(...rig.key.position);
       Object.assign(k.shadow.camera, {
-        left: -ext,
-        right: ext,
-        top: ext,
-        bottom: -ext,
-        near: 0.5,
-        far: ext * 8,
+        left: -rig.shadow.extent,
+        right: rig.shadow.extent,
+        top: rig.shadow.extent,
+        bottom: -rig.shadow.extent,
+        near: rig.shadow.near,
+        far: rig.shadow.far,
       });
       k.shadow.camera.updateProjectionMatrix();
+      this.rimLight?.position.set(...rig.rim.position);
+      if (rig.fill) this.fillLight?.position.set(...rig.fill.position);
     }
     this.controls?.update();
   }
