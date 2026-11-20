@@ -1,0 +1,50 @@
+{
+  "LD-WH008/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 192.2,
+    "semente": 7
+  },
+  "LD-WH013/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 195.2,
+    "semente": 7
+  },
+  "LD-WH021/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 206.5,
+    "semente": 7
+  },
+  "LD-WH024/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 199.6,
+    "semente": 7
+  },
+  "LD-WH027/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 203.2,
+    "semente": 7
+  },
+  "LD-WH034/tres-quartos/opaco": {
+    "altura": 768,
+    "amostras": 64,
+    "largura": 1024,
+    "motor": "cycles-cpu",
+    "segundos": 199.0,
+    "semente": 7
+  }
+}
