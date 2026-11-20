@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { ThermalBoxVisualSchema, type ThermalBoxVisualInput } from './schema';
+import { legacyIntensity } from '../viewer/lightUnits';
 
 const STYLE_ID = 'thermal-box-viewer-style';
 const CSS = `
@@ -127,7 +128,7 @@ export class ThermalBoxViewer {
     this.scene.environment = environment.texture;
     pmrem.dispose();
 
-    const key = new THREE.DirectionalLight(0xffffff, 2.1);
+    const key = new THREE.DirectionalLight(0xffffff, legacyIntensity(2.1));
     key.position.set(3, 5, 4);
     key.castShadow = true;
     key.shadow.mapSize.set(1536, 1536);
@@ -138,11 +139,11 @@ export class ThermalBoxViewer {
     key.shadow.camera.bottom = -4;
     key.shadow.camera.far = 20;
     this.scene.add(key, key.target);
-    const fill = new THREE.DirectionalLight(0xfff4e6, 0.8);
+    const fill = new THREE.DirectionalLight(0xfff4e6, legacyIntensity(0.8));
     fill.position.set(-4, 3, 3);
-    const rim = new THREE.DirectionalLight(0xdbeafe, 1.1);
+    const rim = new THREE.DirectionalLight(0xdbeafe, legacyIntensity(1.1));
     rim.position.set(-3, 4, -4);
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 0x64748b, 0.32), key, fill, rim);
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0x64748b, legacyIntensity(0.32)), key, fill, rim);
 
     const ground = new THREE.Mesh(new THREE.PlaneGeometry(12, 12), new THREE.ShadowMaterial({ opacity: 0.2 }));
     ground.rotation.x = -Math.PI / 2;

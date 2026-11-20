@@ -24,6 +24,7 @@ import {
   type SceneStyle,
   type ViewerQuality,
 } from './lighting';
+import { legacyIntensity } from './lightUnits';
 
 export type ViewerToggle = 'motion' | 'area' | 'human' | 'dims';
 
@@ -242,8 +243,8 @@ export class EquipmentViewer {
     }
 
     this.scene.background = new THREE.Color(opts.background ?? rig.background);
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, rig.hemisphere));
-    const key = new THREE.DirectionalLight(0xffffff, rig.key.intensity);
+    this.scene.add(new THREE.HemisphereLight(0xffffff, 0xb9b3a6, legacyIntensity(rig.hemisphere)));
+    const key = new THREE.DirectionalLight(0xffffff, legacyIntensity(rig.key.intensity));
     key.castShadow = true;
     const narrowStage = this.stage.clientWidth > 0 && this.stage.clientWidth < 600;
     const lowDpi = (globalThis.devicePixelRatio || 1) <= 1.5;
@@ -253,12 +254,12 @@ export class EquipmentViewer {
     key.shadow.bias = rig.shadow.bias;
     this.scene.add(key, key.target);
     this.keyLight = key;
-    const rim = new THREE.DirectionalLight(0xffffff, rig.rim.intensity);
+    const rim = new THREE.DirectionalLight(0xffffff, legacyIntensity(rig.rim.intensity));
     rim.position.set(...rig.rim.position);
     this.scene.add(rim);
     this.rimLight = rim;
     if (rig.fill) {
-      const fill = new THREE.DirectionalLight(0xffffff, rig.fill.intensity);
+      const fill = new THREE.DirectionalLight(0xffffff, legacyIntensity(rig.fill.intensity));
       fill.position.set(...rig.fill.position);
       this.scene.add(fill);
       this.fillLight = fill;
