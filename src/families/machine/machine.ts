@@ -11,7 +11,7 @@ import * as THREE from 'three';
 import type { FamilyBuildResult, DimsM } from '../types';
 import type { PartKit } from '../../parts/kit';
 import { Rig, lerp } from '../../parts/rig';
-import { stackTower } from '../../parts/assemblies';
+import { stackTower, type TowerStyle } from '../../parts/assemblies';
 import { bentTube, cable, pulley } from '../../parts/primitives';
 import type { Articulation, Vec3 } from '../../spec/schema';
 import { buildStation } from './stations';
@@ -35,6 +35,8 @@ export interface MachineOptions {
   stackKg?: number;
   /** Torre preta e braços na cor de destaque, mesmo com uma bateria só. */
   darkTower?: boolean;
+  /** Estilo da torre de bateria. Padrão: `solid`, a coluna carenada. */
+  towerStyle?: TowerStyle;
 }
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(Math.max(v, lo), Math.max(lo, hi));
@@ -140,6 +142,7 @@ export function buildMachine(dims: DimsM, kit: PartKit, o: MachineOptions): Fami
     const sides = stacks === 2 ? ([-1, 1] as const) : ([0] as const);
     for (const s of sides) {
       const unit = stackTower(kit, {
+        style: o.towerStyle,
         suffix: s === 0 ? '' : s < 0 ? '_left' : '_right',
         x: s * towerX,
         dark: stacks === 2 || !!o.darkTower,
