@@ -1,7 +1,7 @@
 import { createRequire } from 'node:module';
 
 /**
- * O GLTFExporter (r149) usa FileReader para montar o GLB, e o Node não tem
+ * O GLTFExporter usa FileReader para montar o GLB, e o Node não tem
  * FileReader. Este shim mínimo cobre só o que o exportador chama. Não importar
  * no bundle do navegador.
  *
@@ -13,19 +13,28 @@ export function installNodeShims(): void {
   const g = globalThis as unknown as Record<string, unknown>;
   installCanvas(g);
   if (typeof g.FileReader !== 'undefined') return;
+  // As leituras terminam na ordem em que começaram. Sem isso, o tempo de cada `arrayBuffer()`
+  // decide a ordem das `bufferViews` das imagens no GLB (Three r186) e o arquivo muda entre
+  // exports do mesmo modelo.
+  let fila: Promise<unknown> = Promise.resolve();
+  const emFila = <T>(trabalho: () => Promise<T>): Promise<T> => {
+    const proxima = fila.then(trabalho, trabalho);
+    fila = proxima.catch(() => undefined);
+    return proxima;
+  };
   class NodeFileReader {
     result: ArrayBuffer | string | null = null;
     onload: ((ev: { target: NodeFileReader }) => void) | null = null;
     onloadend: ((ev: { target: NodeFileReader }) => void) | null = null;
     onerror: ((err: unknown) => void) | null = null;
     readAsArrayBuffer(blob: Blob): void {
-      blob.arrayBuffer().then(
+      emFila(() => blob.arrayBuffer()).then(
         (buf) => this.finish(buf),
         (e) => this.onerror?.(e)
       );
     }
     readAsDataURL(blob: Blob): void {
-      blob.arrayBuffer().then(
+      emFila(() => blob.arrayBuffer()).then(
         (buf) =>
           this.finish(
             `data:${blob.type || 'application/octet-stream'};base64,${toBase64(new Uint8Array(buf))}`
@@ -64,6 +73,12 @@ function installCanvas(g: Record<string, unknown>): void {
   Object.defineProperty(proto, 'data', { value: undefined, configurable: true });
   proto.toBlob = function (this: NodeCanvas, done: (b: Blob) => void, type = 'image/png') {
     done(new Blob([this.toBuffer(type) as BlobPart], { type }));
+  };
+  // O GLTFExporter r186 usa `convertToBlob` quando o canvas é um OffscreenCanvas. Codificar na hora
+  // e devolver uma Promise já resolvida mantém a ordem das imagens igual à de chamada.
+  proto.convertToBlob = function (this: NodeCanvas, opts: { type?: string } = {}) {
+    const type = opts.type ?? 'image/png';
+    return Promise.resolve(new Blob([this.toBuffer(type) as BlobPart], { type }));
   };
   // Mesma classe do canvas do pacote, para `instanceof OffscreenCanvas` valer nos exportadores.
   const Offscreen = function (w: number, h: number) {

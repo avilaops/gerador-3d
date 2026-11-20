@@ -222,7 +222,7 @@ export class EquipmentViewer {
     r.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, maxPixelRatio));
     r.shadowMap.enabled = true;
     r.shadowMap.type = THREE.PCFSoftShadowMap;
-    r.outputEncoding = THREE.sRGBEncoding;
+    r.outputColorSpace = THREE.SRGBColorSpace;
     r.toneMapping = THREE.ACESFilmicToneMapping;
     this.sceneStyle = opts.scene ?? 'default';
     const rig = computeLightRig(this.sceneStyle, 1);
@@ -704,7 +704,7 @@ export class EquipmentViewer {
       x.fillText(text, 160, 41);
     }
     const t = new THREE.CanvasTexture(c);
-    t.encoding = THREE.sRGBEncoding;
+    t.colorSpace = THREE.SRGBColorSpace;
     const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, depthTest: false }));
     s.scale.set(width, width / 4, 1);
     s.renderOrder = 10;

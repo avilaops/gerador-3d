@@ -30,7 +30,7 @@ export interface ExportLevelsOptions {
 
 /** Exporta os três níveis, com a mesma animação do modelo em todos. */
 export async function exportGlbLevels(eq: GeneratedEquipment, opts: ExportLevelsOptions = {}): Promise<LodFile[]> {
-  const variants = buildLodVariants(eq.object, eq.spec.lod);
+  const variants = await buildLodVariants(eq.object, eq.spec.lod);
   try {
     const out: LodFile[] = [];
     for (const v of variants) {

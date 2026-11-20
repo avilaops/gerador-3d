@@ -80,7 +80,7 @@ function pictogram(ctx: CanvasRenderingContext2D, x: number, y: number, w: numbe
 
 function finish(kit: PartKit, c: HTMLCanvasElement): THREE.MeshStandardMaterial {
   const map = new THREE.CanvasTexture(c);
-  map.encoding = THREE.sRGBEncoding;
+  map.colorSpace = THREE.SRGBColorSpace;
   map.anisotropy = 4;
   const m = new THREE.MeshStandardMaterial({ map, roughness: 0.55, metalness: 0.1 });
   m.name = 'decal';

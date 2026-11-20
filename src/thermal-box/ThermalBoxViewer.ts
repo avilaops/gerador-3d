@@ -115,7 +115,7 @@ export class ThermalBoxViewer {
     this.canvas.addEventListener('webglcontextlost', this.contextLostHandler);
     this.canvas.addEventListener('webglcontextrestored', this.contextRestoredHandler);
     renderer.setPixelRatio(Math.min(globalThis.devicePixelRatio || 1, 2));
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1;
     renderer.shadowMap.enabled = true;
@@ -182,7 +182,7 @@ export class ThermalBoxViewer {
         logo.visible = true;
         this.requestRender();
       });
-      material.map.encoding = THREE.sRGBEncoding;
+      material.map.colorSpace = THREE.SRGBColorSpace;
     }
     const bounds = new THREE.Box3().setFromObject(this.model);
     const size = bounds.getSize(new THREE.Vector3());

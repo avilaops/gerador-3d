@@ -148,9 +148,9 @@ describe('compressão meshopt', () => {
 });
 
 describe('o que some em cada nível', () => {
-  it('lista as peças que perderam mais triângulos, da pior para a menos pior', () => {
+  it('lista as peças que perderam mais triângulos, da pior para a menos pior', async () => {
     const { eq } = itens[1];
-    const [orig, , baixo] = buildLodVariants(eq.object, eq.spec.lod);
+    const [orig, , baixo] = await buildLodVariants(eq.object, eq.spec.lod);
     const perdas = describeLodLoss(orig.object, baixo.object, 0.5);
     expect(perdas.length).toBeGreaterThan(0);
     for (let i = 1; i < perdas.length; i++) expect(perdas[i - 1].lost).toBeGreaterThanOrEqual(perdas[i].lost);
@@ -162,9 +162,9 @@ describe('o que some em cada nível', () => {
     baixo.dispose();
   });
 
-  it('o limiar filtra e o nível original não perde nada', () => {
+  it('o limiar filtra e o nível original não perde nada', async () => {
     const { eq } = itens[1];
-    const [orig, medio] = buildLodVariants(eq.object, eq.spec.lod);
+    const [orig, medio] = await buildLodVariants(eq.object, eq.spec.lod);
     expect(describeLodLoss(orig.object, orig.object, 0.01)).toEqual([]);
     expect(describeLodLoss(orig.object, medio.object, 0.9).length).toBeLessThanOrEqual(describeLodLoss(orig.object, medio.object, 0.3).length);
     medio.dispose();

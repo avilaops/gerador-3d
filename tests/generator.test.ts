@@ -211,9 +211,9 @@ describe('validação', () => {
     expect(eq.articulations.find((a) => a.node === 'arm_left')!.range).toEqual([0, 0.5]);
   });
 
-  it('gera variantes LOD sem alterar o modelo original', () => {
+  it('gera variantes LOD sem alterar o modelo original', async () => {
     const eq = generateEquipment(base);
-    const variants = buildLodVariants(eq.object, { mediumRatio: 0.6, lowRatio: 0.3 });
+    const variants = await buildLodVariants(eq.object, { mediumRatio: 0.6, lowRatio: 0.3 });
     expect(variants.map((v) => v.level)).toEqual(['original', 'medium', 'low']);
     expect(variants[1].triangles).toBeLessThan(variants[0].triangles);
     expect(variants[2].triangles).toBeLessThan(variants[1].triangles);

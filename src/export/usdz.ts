@@ -7,6 +7,6 @@ import type { GeneratedEquipment } from '../generate';
 
 export async function exportUsdz(eq: GeneratedEquipment): Promise<ArrayBuffer> {
   eq.object.updateMatrixWorld(true);
-  const u8 = await new USDZExporter().parse(eq.object);
+  const u8 = await new USDZExporter().parseAsync(eq.object);
   return u8.buffer.slice(u8.byteOffset, u8.byteOffset + u8.byteLength) as ArrayBuffer;
 }

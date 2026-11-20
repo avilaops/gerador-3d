@@ -14,8 +14,10 @@ export interface LodVariant {
  * Cria variantes independentes do modelo original para catálogo, web e AR.
  * A simplificação preserva materiais e nomes de nós, mas não substitui a
  * validação visual de peças móveis muito finas.
+ *
+ * É assíncrona desde o Three r186: o `SimplifyModifier` passou a usar o meshoptimizer (WebAssembly).
  */
-export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { mediumRatio: 0.55, lowRatio: 0.25 }): LodVariant[] {
+export async function buildLodVariants(root: THREE.Group, config: EquipmentLod = { mediumRatio: 0.55, lowRatio: 0.25 }): Promise<LodVariant[]> {
   const modifier = new SimplifyModifier();
   const levels: Array<{ level: LodVariant['level']; ratio: number }> = [
     { level: 'original', ratio: 1 },
@@ -29,21 +31,24 @@ export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { med
     const object = level === 'original' ? root : previousObject.clone(true) as THREE.Group;
     if (level !== 'original') {
       const relativeRatio = Math.min(1, ratio / previousRatio);
+      const meshes: THREE.Mesh[] = [];
       object.traverse((node) => {
-        const mesh = node as THREE.Mesh;
+        if ((node as THREE.Mesh).isMesh) meshes.push(node as THREE.Mesh);
+      });
+      for (const mesh of meshes) {
         // SimplifyModifier requires an indexed manifold mesh. Generated
         // decals, cables and some thin primitives are intentionally
         // non-indexed; leaving those pieces intact is safer than emitting a
         // broken or noisy simplification result.
-        if (!mesh.isMesh || !mesh.geometry.index || !mesh.geometry.getAttribute('position')) return;
+        if (!mesh.geometry.index || !mesh.geometry.getAttribute('position')) continue;
         // Object3D.clone compartilha geometrias; clonar antes de simplificar
         // impede que o LOD altere o modelo original ou outra variante.
         const sourceGeometry = mesh.geometry;
         const sourceVertices = sourceGeometry.getAttribute('position').count;
         const targetVertices = Math.max(12, Math.floor(sourceVertices * relativeRatio));
-        if (targetVertices >= sourceVertices) return;
+        if (targetVertices >= sourceVertices) continue;
         try {
-          const simplified = modifier.modify(sourceGeometry, targetVertices);
+          const simplified = await modifier.modify(sourceGeometry, targetVertices);
           // O simplificador colapsa peças finas e compridas (hastes, montantes) e as encurta.
           // Se a malha perder mais que `MAX_SHRINK` de qualquer eixo, vale a original: a
           // silhueta e as medidas do modelo não podem mudar de um nível para outro.
@@ -53,7 +58,7 @@ export function buildLodVariants(root: THREE.Group, config: EquipmentLod = { med
           // A disconnected/degenerate primitive keeps its source geometry.
           // The LOD remains valid and the visual silhouette is preserved.
         }
-      });
+      }
     }
     const triangles = countTriangles(object);
     const variant: LodVariant = {
