@@ -1,0 +1,1003 @@
+{
+  "catalogo": "ludus-core-antigo",
+  "resumo": {
+    "total": 66,
+    "medidos": 66,
+    "media": 0.32012406377912545,
+    "mediana": 0.33868318922240226,
+    "abaixoDe06": 66,
+    "fotoDuvidosa": 0
+  },
+  "itens": [
+    {
+      "id": "LD-WH024",
+      "nome": "Cross Over Angular Com Regulagem e Barra Fixa  - Bateria de Pesos",
+      "nota": 0.07974190013297855,
+      "iou": 0.09653544996245844,
+      "proporcao": 0.8260374832663989,
+      "regioes": [
+        0.05624568668046929,
+        0.026533996683250415,
+        0.19266862170087976
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH014",
+      "nome": "Barra Guiada Parede",
+      "nota": 0.08863951083984638,
+      "iou": 0.11663770634231103,
+      "proporcao": 0.7599558806455358,
+      "regioes": [
+        0.09767441860465116,
+        0.12015257469802924,
+        0.13729977116704806
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH006",
+      "nome": "Banco Sissy Agachamento",
+      "nota": 0.09646106103010461,
+      "iou": 0.14846015743681812,
+      "proporcao": 0.6497437608548721,
+      "regioes": [
+        0.09094809094809095,
+        0.2616737416616131,
+        0
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH009",
+      "nome": "Banco Supino Reto Para Barra",
+      "nota": 0.10695726539916543,
+      "iou": 0.11371513451064533,
+      "proporcao": 0.9405719463766957,
+      "regioes": [
+        0.05053763440860215,
+        0.02806122448979592,
+        0.241179097811523
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH026",
+      "nome": "Cross Smith Com Regulagem e Barra Fixa - Bateria de Pesos",
+      "nota": 0.11566464200807532,
+      "iou": 0.15915087550971457,
+      "proporcao": 0.7267609533257965,
+      "regioes": [
+        0.15752146323254945,
+        0.14240947075208912,
+        0.1779691424470757
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH010",
+      "nome": "Banco Supino 2 em 1",
+      "nota": 0.11948360594651887,
+      "iou": 0.12192737430167598,
+      "proporcao": 0.9799571805006587,
+      "regioes": [
+        0.0401548137397194,
+        0.046605062274005626,
+        0.2588325652841782
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH060",
+      "nome": "Supino Declinado Linha Articulado",
+      "nota": 0.14368463932263537,
+      "iou": 0.19036649214659687,
+      "proporcao": 0.7547790459467368,
+      "regioes": [
+        0.15304798962386512,
+        0.24595771144278608,
+        0
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH008",
+      "nome": "Banco Supino Inclinado Para Barra",
+      "nota": 0.1559380668605963,
+      "iou": 0.18951817413355876,
+      "proporcao": 0.8228132609102828,
+      "regioes": [
+        0.089058524173028,
+        0.11633875106929,
+        0.3102585487906589
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH007",
+      "nome": "Banco Supino Declinado Para Barra",
+      "nota": 0.17753962581254554,
+      "iou": 0.22497420020639836,
+      "proporcao": 0.7891554927172322,
+      "regioes": [
+        0,
+        0.30620884289746003,
+        0.23576799140708915
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH062",
+      "nome": "Supino Reto Linha Articulado",
+      "nota": 0.1929236138712479,
+      "iou": 0.22283856159143076,
+      "proporcao": 0.8657550672265099,
+      "regioes": [
+        0.2852897473997028,
+        0.18621307072515667,
+        0.22148058252427186
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH063",
+      "nome": "Supino Vertical Linha Articulado",
+      "nota": 0.19587957490228855,
+      "iou": 0.20997321244590975,
+      "proporcao": 0.932878878312862,
+      "regioes": [
+        0.26790450928381965,
+        0.11854460093896714,
+        0.25167580743449114
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH004",
+      "nome": "Banco Extensor Lombar",
+      "nota": 0.201294344918012,
+      "iou": 0.20316496163682865,
+      "proporcao": 0.990792621406045,
+      "regioes": [
+        0.20472813238770685,
+        0.11311053984575835,
+        0.37376586741889983
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH005",
+      "nome": "Banco Scott Com Regulagem",
+      "nota": 0.20958110478265848,
+      "iou": 0.21879994188580562,
+      "proporcao": 0.9578663640232657,
+      "regioes": [
+        0.31595505617977526,
+        0.08278783211397767,
+        0.2852983988355167
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH064",
+      "nome": "Suporte Agachamento",
+      "nota": 0.2118053544234432,
+      "iou": 0.26132836747361887,
+      "proporcao": 0.8104950735775938,
+      "regioes": [
+        0.0606281957633309,
+        0.2544757033248082,
+        0.41157894736842104
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH055",
+      "nome": "Puxador Horizontal - Bateria de Pesos",
+      "nota": 0.21464893025660267,
+      "iou": 0.26575969827586204,
+      "proporcao": 0.8076805160795836,
+      "regioes": [
+        0.17771763644564728,
+        0.21941489361702127,
+        0.36733310742121317
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH013",
+      "nome": "Barra Guiada Tradicional",
+      "nota": 0.2171075344830421,
+      "iou": 0.2276127377644796,
+      "proporcao": 0.9538461538461539,
+      "regioes": [
+        0.28933092224231466,
+        0.2430908065425832,
+        0.17444444444444446
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH061",
+      "nome": "Supino Inclinado Linha Articulado",
+      "nota": 0.2235138176367561,
+      "iou": 0.270895391624321,
+      "proporcao": 0.8250927278479735,
+      "regioes": [
+        0.19853917662682602,
+        0.41927471435668157,
+        0.18418647166361973
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH066",
+      "nome": "Suporte Remada Solo",
+      "nota": 0.23611617763810694,
+      "iou": 0.25124979841960976,
+      "proporcao": 0.9397666351308736,
+      "regioes": [
+        0.40508221225710017,
+        0.2008776206728425,
+        0.25229960578186594
+      ],
+      "azimute": 0,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH049",
+      "nome": "Peck Fly Articulado",
+      "nota": 0.25236684390177194,
+      "iou": 0.2943528235882059,
+      "proporcao": 0.8573617226611979,
+      "regioes": [
+        0.45170454545454547,
+        0.3361024575977847,
+        0.06307490144546649
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH002",
+      "nome": "Agachamento Pêndulo",
+      "nota": 0.25269796477676515,
+      "iou": 0.3078992418684275,
+      "proporcao": 0.820716424124061,
+      "regioes": [
+        0.04707631318136769,
+        0.4031030444964871,
+        0.3811953352769679
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH012",
+      "nome": "Banco Regulável 3 em 1",
+      "nota": 0.2561665539397888,
+      "iou": 0.32655176882208115,
+      "proporcao": 0.7844592447433929,
+      "regioes": [
+        0.4658309745248686,
+        0.3201739712278354,
+        0.18226164079822615
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH054",
+      "nome": "Puxador 2 em 1 ( horizontal e vertical ) - Bateria de Pesos",
+      "nota": 0.26111843327541173,
+      "iou": 0.2977279433461198,
+      "proporcao": 0.8770370370370371,
+      "regioes": [
+        0.2608695652173913,
+        0.24966740576496674,
+        0.3730126375866286
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH046",
+      "nome": "Panturrilha Sentada (Burrinho)",
+      "nota": 0.2866872785571973,
+      "iou": 0.3175813008130081,
+      "proporcao": 0.9027209027209028,
+      "regioes": [
+        0.3084004602991945,
+        0.285764253235397,
+        0.3653366583541147
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH053",
+      "nome": "Puxada Alta Articulada",
+      "nota": 0.2874059706148879,
+      "iou": 0.3201519599378346,
+      "proporcao": 0.8977173548170526,
+      "regioes": [
+        0.2789046653144016,
+        0.2681086519114688,
+        0.4210813762971054
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH039",
+      "nome": "Leg Press Articulado",
+      "nota": 0.29503324526000985,
+      "iou": 0.33060657508874824,
+      "proporcao": 0.8923998114097124,
+      "regioes": [
+        0.23959938366718028,
+        0.22382067581130813,
+        0.5301094890510949
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH043",
+      "nome": "Mesa Flexora e Extensora 2 em 1 - Bateria de Pesos",
+      "nota": 0.2955563528321143,
+      "iou": 0.34949636917310845,
+      "proporcao": 0.8456635859519409,
+      "regioes": [
+        0.06310679611650485,
+        0.48042168674698793,
+        0.3986700443318556
+      ],
+      "azimute": -60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH021",
+      "nome": "Cadeira Extensora - Bateria de Pesos",
+      "nota": 0.29950989169343634,
+      "iou": 0.3892840926290298,
+      "proporcao": 0.7693864130709697,
+      "regioes": [
+        0.20893470790378008,
+        0.30347915949018256,
+        0.6167185415740329
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH056",
+      "nome": "Puxador Vertical - Bateria de Pesos",
+      "nota": 0.29961799064158123,
+      "iou": 0.35135135135135137,
+      "proporcao": 0.8527588964414234,
+      "regioes": [
+        0.3206266318537859,
+        0.28123468887800096,
+        0.4522738630684658
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH058",
+      "nome": "Remada Sentada Articulada",
+      "nota": 0.30350553315313167,
+      "iou": 0.36269821293732696,
+      "proporcao": 0.8367990862022152,
+      "regioes": [
+        0.4156279961649089,
+        0.39206907579149347,
+        0.28869374313940727
+      ],
+      "azimute": 0,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH051",
+      "nome": "Prancha Para Abdominal",
+      "nota": 0.31344036887091714,
+      "iou": 0.3420211458077207,
+      "proporcao": 0.9164356435643565,
+      "regioes": [
+        0.39700078926598265,
+        0.17936925098554535,
+        0.4812206572769953
+      ],
+      "azimute": 0,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH040",
+      "nome": "Leg Press Horizontal - Bateria de Pesos",
+      "nota": 0.31694209943212875,
+      "iou": 0.3339916356877323,
+      "proporcao": 0.9489522058823529,
+      "regioes": [
+        0.15214564369310793,
+        0.30272017236735793,
+        0.45189156985403633
+      ],
+      "azimute": -60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH033",
+      "nome": "Gráviton - Bateria de Pesos",
+      "nota": 0.3177224121241647,
+      "iou": 0.38813969571230983,
+      "proporcao": 0.8185774751564225,
+      "regioes": [
+        0.19753810082063306,
+        0.4127533366287692,
+        0.5221411192214112
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH038",
+      "nome": "Leg Press 90º Com Suporte Para Anilhas",
+      "nota": 0.3236593682924606,
+      "iou": 0.3470986588766432,
+      "proporcao": 0.9324708120162666,
+      "regioes": [
+        0.1651812240047534,
+        0.3177744585511576,
+        0.46845425867507884
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH025",
+      "nome": "Cross Over Com Regulagem e Barra Fixa - Bateria de Pesos",
+      "nota": 0.33868318922240226,
+      "iou": 0.37399930386355723,
+      "proporcao": 0.9055717102242548,
+      "regioes": [
+        0.20596727622714148,
+        0.41746641074856045,
+        0.5372474747474747
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH047",
+      "nome": "Paralela Para Abdominal",
+      "nota": 0.34038673781278367,
+      "iou": 0.3776847469967237,
+      "proporcao": 0.9012456566474377,
+      "regioes": [
+        0.5398737808376363,
+        0.21671309192200558,
+        0.38087934560327197
+      ],
+      "azimute": -30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH037",
+      "nome": "Leg Press 45º Com Suporte Para Anilhas",
+      "nota": 0.3437454860609563,
+      "iou": 0.3437815975733064,
+      "proporcao": 0.9998949579831934,
+      "regioes": [
+        0.20276497695852536,
+        0.3345622119815668,
+        0.437863745292708
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH035",
+      "nome": "Hack Agachamento Com Apoio Lombar",
+      "nota": 0.3447113355608614,
+      "iou": 0.35798319327731093,
+      "proporcao": 0.9629260312615613,
+      "regioes": [
+        0.362303664921466,
+        0.32074852265265924,
+        0.395825836631882
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH029",
+      "nome": "Elevação Pélvica",
+      "nota": 0.3482460600615375,
+      "iou": 0.3569290826284971,
+      "proporcao": 0.9756729754184891,
+      "regioes": [
+        0.26645962732919254,
+        0.36363636363636365,
+        0.4089926502377864
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH041",
+      "nome": "Máquina de Glúteo 4 Apoio - Bateria de Pesos",
+      "nota": 0.35389507333688675,
+      "iou": 0.40426046961994677,
+      "proporcao": 0.8754135017692689,
+      "regioes": [
+        0.3253408556652562,
+        0.39714805825242716,
+        0.47164494540331103
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH034",
+      "nome": "Hack 45º Para Agachamento",
+      "nota": 0.35409376555870964,
+      "iou": 0.44900715925975954,
+      "proporcao": 0.7886149658336725,
+      "regioes": [
+        0.6362116991643454,
+        0.38286086673183445,
+        0.3966128397006696
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH059",
+      "nome": "Remada Sentada - Bateria de Pesos",
+      "nota": 0.3550090192677766,
+      "iou": 0.4138796940988472,
+      "proporcao": 0.8577589679550444,
+      "regioes": [
+        0.41169305724725946,
+        0.3717587373167982,
+        0.45673480817698126
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH036",
+      "nome": "Hack Agachamento Squat",
+      "nota": 0.36536310691896623,
+      "iou": 0.37657142857142856,
+      "proporcao": 0.970235868145965,
+      "regioes": [
+        0.368366285119667,
+        0.3930222782681799,
+        0.3679140422378659
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH003",
+      "nome": "Agachamento Sumô",
+      "nota": 0.37692642161242695,
+      "iou": 0.42872228088701164,
+      "proporcao": 0.8791855203619909,
+      "regioes": [
+        0.19278996865203762,
+        0.4668587896253602,
+        0.530423701815865
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH027",
+      "nome": "Desenvolvimento de Ombros Articulado",
+      "nota": 0.3769502463707937,
+      "iou": 0.381307063911581,
+      "proporcao": 0.9885739920574943,
+      "regioes": [
+        0.42391304347826086,
+        0.3322356384924991,
+        0.3882996920971605
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH042",
+      "nome": "Mesa Flexora - Bateria de Pesos",
+      "nota": 0.3794015440591291,
+      "iou": 0.43144654088050316,
+      "proporcao": 0.8793709257347162,
+      "regioes": [
+        0.25097384529771843,
+        0.5814404432132964,
+        0.3663870581186339
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH044",
+      "nome": "Mesa Flexora 3 em 1 - Bateria de Pesos",
+      "nota": 0.38126511180069045,
+      "iou": 0.4131299022241324,
+      "proporcao": 0.9228698037786803,
+      "regioes": [
+        0.09057639524245197,
+        0.5672246220302376,
+        0.4524436640327773
+      ],
+      "azimute": -60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH057",
+      "nome": "Remada Cavalinho Com Apoio",
+      "nota": 0.3840025104782121,
+      "iou": 0.41255920014032627,
+      "proporcao": 0.9307815953385574,
+      "regioes": [
+        0.41253791708796766,
+        0.3514344262295082,
+        0.5128923766816144
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH028",
+      "nome": "Desenvolvimento de Ombros Livre",
+      "nota": 0.39356266736528356,
+      "iou": 0.4102102102102102,
+      "proporcao": 0.9594170441628069,
+      "regioes": [
+        0.2544188537761114,
+        0.5184021543985637,
+        0.42962962962962964
+      ],
+      "azimute": 0,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH065",
+      "nome": "Panturrilha em Pé Com Agachamento",
+      "nota": 0.39546118682930514,
+      "iou": 0.41949670168580505,
+      "proporcao": 0.9427039241073651,
+      "regioes": [
+        0.18926553672316385,
+        0.4140746500777605,
+        0.5636103151862464
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH052",
+      "nome": "Polia Mono Cross - Bateria de Pesos",
+      "nota": 0.4010704692082112,
+      "iou": 0.4098924731182796,
+      "proporcao": 0.9784772727272728,
+      "regioes": [
+        0.30385487528344673,
+        0.4020552344251766,
+        0.496045197740113
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH045",
+      "nome": "Panturrilha em Pé Com Agachamento - Bateria de Pesos",
+      "nota": 0.4119551018511492,
+      "iou": 0.4448352462051092,
+      "proporcao": 0.9260846692467366,
+      "regioes": [
+        0.2943078913324709,
+        0.45042321644498184,
+        0.5463215258855586
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH030",
+      "nome": "Elevação Pélvica 2D",
+      "nota": 0.420200637227031,
+      "iou": 0.4349689791314157,
+      "proporcao": 0.9660473674838251,
+      "regioes": [
+        0.24356103023516237,
+        0.5118306351183064,
+        0.445822454308094
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH015",
+      "nome": "Bíceps Máquina - Bateria de Pesos",
+      "nota": 0.428024377445836,
+      "iou": 0.45454545454545453,
+      "proporcao": 0.9416536303808393,
+      "regioes": [
+        0.32866817155756206,
+        0.6056691783279512,
+        0.3973483326637204
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH048",
+      "nome": "Peitoral Dorsal - Bateria de Pesos",
+      "nota": 0.43242442215096943,
+      "iou": 0.4583333333333333,
+      "proporcao": 0.9434714665112061,
+      "regioes": [
+        0.43141153081510936,
+        0.5255658005029338,
+        0.41304347826086957
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH011",
+      "nome": "Banco Regulável de 0 a 90º",
+      "nota": 0.43413758364974003,
+      "iou": 0.5183124710245711,
+      "proporcao": 0.8375981824083089,
+      "regioes": [
+        0.6465473145780051,
+        0.4681191925664851,
+        0.45089605734767024
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH019",
+      "nome": "Cadeira Adutora e Abdutora - Bateria de Pesos",
+      "nota": 0.4386876753630312,
+      "iou": 0.5169902912621359,
+      "proporcao": 0.8485414190120604,
+      "regioes": [
+        0.2515687393040502,
+        0.6371077762619373,
+        0.5529748647788737
+      ],
+      "azimute": 60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH023",
+      "nome": "Cadeira Flexora - Bateria de Pesos",
+      "nota": 0.4433017434514579,
+      "iou": 0.45914161008729387,
+      "proporcao": 0.9655011301789345,
+      "regioes": [
+        0.13970588235294118,
+        0.6000631313131313,
+        0.5100755667506297
+      ],
+      "azimute": -60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH016",
+      "nome": "Bíceps e Tríceps - Bateria de Pesos",
+      "nota": 0.46847002372030483,
+      "iou": 0.4849709522606719,
+      "proporcao": 0.9659754291191077,
+      "regioes": [
+        0.4470588235294118,
+        0.5347133757961784,
+        0.45646437994722955
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH001",
+      "nome": "Agachamento Búlgaro",
+      "nota": 0.47233594408190827,
+      "iou": 0.5018373346398824,
+      "proporcao": 0.9412132407822063,
+      "regioes": [
+        0.3218884120171674,
+        0.5764284208306979,
+        0.4681564245810056
+      ],
+      "azimute": -30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH020",
+      "nome": "Cadeira Extensora Articulada",
+      "nota": 0.48446821938238227,
+      "iou": 0.5130370002483238,
+      "proporcao": 0.9443143850207423,
+      "regioes": [
+        0.3882840850181441,
+        0.6093998937865109,
+        0.4612123781263247
+      ],
+      "azimute": 30,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH018",
+      "nome": "Cadeira Adutora - Bateria de Pesos",
+      "nota": 0.48993741217498504,
+      "iou": 0.4960824143934997,
+      "proporcao": 0.9876129408335762,
+      "regioes": [
+        0.22802611752887997,
+        0.7168377042949449,
+        0.4753303964757709
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH050",
+      "nome": "Peck Fly - Bateria de Pesos",
+      "nota": 0.5084904167285438,
+      "iou": 0.5245735517649046,
+      "proporcao": 0.969340552945817,
+      "regioes": [
+        0.5607123583378305,
+        0.5570798628123469,
+        0.45880611741489885
+      ],
+      "azimute": -60,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH032",
+      "nome": "Flexora em Pé Articulada Unilateral",
+      "nota": 0.5138436814545477,
+      "iou": 0.5180187331322432,
+      "proporcao": 0.9919403461483898,
+      "regioes": [
+        0.41317365269461076,
+        0.5666104553119731,
+        0.5354785478547854
+      ],
+      "azimute": 60,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH017",
+      "nome": "Cadeira Abdutora - Bateria de Pesos",
+      "nota": 0.523308384281281,
+      "iou": 0.5364341085271318,
+      "proporcao": 0.9755315256110585,
+      "regioes": [
+        0.3669108669108669,
+        0.6805184902783072,
+        0.5010585744530699
+      ],
+      "azimute": 0,
+      "espelhado": false,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH031",
+      "nome": "Flexora em Pé - Bateria de Pesos",
+      "nota": 0.5244721859369812,
+      "iou": 0.5453354297693921,
+      "proporcao": 0.9617423649858338,
+      "regioes": [
+        0.41403699673558214,
+        0.6473533619456366,
+        0.5306871247498333
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    },
+    {
+      "id": "LD-WH022",
+      "nome": "Cadeira Extensora e Flexora - Bateria de Pesos",
+      "nota": 0.5529453913668004,
+      "iou": 0.5664079040225829,
+      "proporcao": 0.9762317712020387,
+      "regioes": [
+        0.4001260239445495,
+        0.5940959409594095,
+        0.6384584823202225
+      ],
+      "azimute": 30,
+      "espelhado": true,
+      "confiancaFoto": 1
+    }
+  ]
+}
