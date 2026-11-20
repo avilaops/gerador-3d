@@ -5,6 +5,7 @@
 import * as THREE from 'three';
 import type { PartKit, MaterialRole } from './kit';
 import type { Vec3 } from '../spec/schema';
+import { TILE_M } from './materials';
 
 const UP = new THREE.Vector3(0, 1, 0);
 
@@ -166,7 +167,18 @@ export function bentTube(
 
   const pos: number[] = [];
   const nor: number[] = [];
+  const uvs: number[] = [];
   const idx: number[] = [];
+  // UV em metros (u ao longo do eixo, v ao redor da seção), em ladrilhos de TILE_M. O anel
+  // repete o primeiro vértice no fim para o v chegar ao perímetro sem varrer a textura na emenda.
+  const perimeter: number[] = [0];
+  for (let k = 1; k <= n; k++) {
+    const [ax, az] = profile[k - 1];
+    const [bx, bz] = profile[k % n];
+    perimeter.push(perimeter[k - 1] + Math.hypot(bx - ax, bz - az));
+  }
+  const ring = n + 1;
+  let arc = 0;
   const T = new THREE.Vector3();
   const X = new THREE.Vector3();
   const Z = new THREE.Vector3();
@@ -182,20 +194,23 @@ export function bentTube(
     }
     X.crossVectors(T, Z).normalize();
     frames.push({ p: axis[i], t: T.clone(), x: X.clone(), z: Z.clone() });
-    for (const [px, pz, nx, nz] of profile) {
+    if (i > 0) arc += axis[i].distanceTo(axis[i - 1]);
+    for (let k = 0; k <= n; k++) {
+      const [px, pz, nx, nz] = profile[k % n];
       pos.push(
         axis[i].x + px * X.x + pz * Z.x,
         axis[i].y + px * X.y + pz * Z.y,
         axis[i].z + px * X.z + pz * Z.z
       );
       nor.push(nx * X.x + nz * Z.x, nx * X.y + nz * Z.y, nx * X.z + nz * Z.z);
+      uvs.push(arc / TILE_M, perimeter[k] / TILE_M);
     }
   }
   for (let i = 0; i < axis.length - 1; i++) {
     for (let k = 0; k < n; k++) {
-      const a = i * n + k;
-      const b = i * n + ((k + 1) % n);
-      idx.push(a, a + n, b, b, a + n, b + n);
+      const a = i * ring + k;
+      const b = a + 1;
+      idx.push(a, a + ring, b, b, a + ring, b + ring);
     }
   }
   // Tampas.
@@ -207,6 +222,7 @@ export function bentTube(
     for (const [px, pz] of profile) {
       pos.push(f.p.x + px * f.x.x + pz * f.z.x, f.p.y + px * f.x.y + pz * f.z.y, f.p.z + px * f.x.z + pz * f.z.z);
       nor.push(sign * f.t.x, sign * f.t.y, sign * f.t.z);
+      uvs.push(px / TILE_M, pz / TILE_M);
     }
     for (let k = 1; k < n - 1; k++) {
       if (sign > 0) idx.push(start, start + k + 1, start + k);
@@ -217,7 +233,7 @@ export function bentTube(
   const geometry = kit.own(new THREE.BufferGeometry());
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
   geometry.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
-  geometry.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array((pos.length / 3) * 2), 2));
+  geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
   geometry.setIndex(idx);
   g.add(mesh(kit, geometry, opts.material ?? 'frame', opts.name ? `${opts.name}_tube` : undefined));
   return g;
