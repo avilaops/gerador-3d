@@ -1,0 +1,42 @@
+{
+  "id": "LD-C022",
+  "name": "Elíptico PRO M5300S",
+  "family": "elliptical",
+  "dimensionsMm": {
+    "length": 2120,
+    "width": 800,
+    "height": 1800
+  },
+  "params": {
+    "variant": "rear-drive",
+    "screen": "tablet"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.76,
+    "target": [
+      0,
+      0.81,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "135 kg",
+    "bateria": null,
+    "descricao": "Elíptico PRO M5300S da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "M5300S"
+  }
+}

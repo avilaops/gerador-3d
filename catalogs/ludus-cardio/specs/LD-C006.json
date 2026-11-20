@@ -1,0 +1,42 @@
+{
+  "id": "LD-C006",
+  "name": "Esteira Ergométrica PRO X8900P",
+  "family": "treadmill",
+  "dimensionsMm": {
+    "length": 2600,
+    "width": 1000,
+    "height": 1850
+  },
+  "params": {
+    "variant": "arch",
+    "screen": "touch"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 4.35,
+    "target": [
+      0,
+      0.83,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "384 kg",
+    "bateria": null,
+    "descricao": "Esteira Ergométrica PRO X8900P da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "X8900P"
+  }
+}

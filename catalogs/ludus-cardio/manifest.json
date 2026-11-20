@@ -1,0 +1,1413 @@
+{
+  "catalog": "ludus-cardio",
+  "count": 28,
+  "failed": 0,
+  "items": [
+    {
+      "id": "LD-C001",
+      "ok": true,
+      "name": "Simulador de Escada PRO A4001P",
+      "family": "stair-climber",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C001/model.glb",
+        "usdz": "models/LD-C001/model.usdz",
+        "plan": "models/LD-C001/plan.svg",
+        "spec": "models/LD-C001/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1510,
+        "width": 840,
+        "height": 2250
+      },
+      "deviationPct": {
+        "length": 0.07,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.04,
+        "lengthM": 2.711,
+        "areaM2": 5.53
+      },
+      "animated": false,
+      "triangles": 4032,
+      "glbBytes": 276872,
+      "usdzBytes": 901356,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.5110884254883181,
+          "width": 0.8399999999999999,
+          "height": 2.2500222711986093
+        }
+      }
+    },
+    {
+      "id": "LD-C002",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X8600PS",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C002/model.glb",
+        "usdz": "models/LD-C002/model.usdz",
+        "plan": "models/LD-C002/plan.svg",
+        "spec": "models/LD-C002/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2180,
+        "width": 910,
+        "height": 1780
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.48
+      },
+      "trainingArea": {
+        "widthM": 2.11,
+        "lengthM": 3.38,
+        "areaM2": 7.13
+      },
+      "animated": false,
+      "triangles": 4540,
+      "glbBytes": 309904,
+      "usdzBytes": 1031142,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.1800000031471254,
+          "width": 0.9100000025033952,
+          "height": 1.7714093702898979
+        }
+      }
+    },
+    {
+      "id": "LD-C003",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X8600",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C003/model.glb",
+        "usdz": "models/LD-C003/model.usdz",
+        "plan": "models/LD-C003/plan.svg",
+        "spec": "models/LD-C003/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2180,
+        "width": 920,
+        "height": 1460
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.59
+      },
+      "trainingArea": {
+        "widthM": 2.12,
+        "lengthM": 3.38,
+        "areaM2": 7.17
+      },
+      "animated": false,
+      "triangles": 4540,
+      "glbBytes": 309776,
+      "usdzBytes": 1034112,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.1800000031471254,
+          "width": 0.9199999977350235,
+          "height": 1.451409370378026
+        }
+      }
+    },
+    {
+      "id": "LD-C004",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X8500S",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C004/model.glb",
+        "usdz": "models/LD-C004/model.usdz",
+        "plan": "models/LD-C004/plan.svg",
+        "spec": "models/LD-C004/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2130,
+        "width": 890,
+        "height": 1580
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.54
+      },
+      "trainingArea": {
+        "widthM": 2.09,
+        "lengthM": 3.33,
+        "areaM2": 6.96
+      },
+      "animated": false,
+      "triangles": 4540,
+      "glbBytes": 309848,
+      "usdzBytes": 1032364,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.13000002412796,
+          "width": 0.8900000069379806,
+          "height": 1.571409370289898
+        }
+      }
+    },
+    {
+      "id": "LD-C005",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X8500",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C005/model.glb",
+        "usdz": "models/LD-C005/model.usdz",
+        "plan": "models/LD-C005/plan.svg",
+        "spec": "models/LD-C005/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2130,
+        "width": 890,
+        "height": 1580
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.54
+      },
+      "trainingArea": {
+        "widthM": 2.09,
+        "lengthM": 3.33,
+        "areaM2": 6.96
+      },
+      "animated": false,
+      "triangles": 4540,
+      "glbBytes": 309820,
+      "usdzBytes": 1035536,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.13000002412796,
+          "width": 0.8900000069379806,
+          "height": 1.571409370378026
+        }
+      }
+    },
+    {
+      "id": "LD-C006",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X8900P",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C006/model.glb",
+        "usdz": "models/LD-C006/model.usdz",
+        "plan": "models/LD-C006/plan.svg",
+        "spec": "models/LD-C006/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2600,
+        "width": 1000,
+        "height": 1850
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.46
+      },
+      "trainingArea": {
+        "widthM": 2.2,
+        "lengthM": 3.8,
+        "areaM2": 8.36
+      },
+      "animated": false,
+      "triangles": 6460,
+      "glbBytes": 398464,
+      "usdzBytes": 1312229,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.6,
+          "width": 1.0000000042915345,
+          "height": 1.8414093710068327
+        }
+      }
+    },
+    {
+      "id": "LD-C007",
+      "ok": true,
+      "name": "Esteira Ergométrica PRO X7300",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C007/model.glb",
+        "usdz": "models/LD-C007/model.usdz",
+        "plan": "models/LD-C007/plan.svg",
+        "spec": "models/LD-C007/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2140,
+        "width": 910,
+        "height": 1445
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": -0.59
+      },
+      "trainingArea": {
+        "widthM": 2.11,
+        "lengthM": 3.34,
+        "areaM2": 7.05
+      },
+      "animated": false,
+      "triangles": 4540,
+      "glbBytes": 309732,
+      "usdzBytes": 1034766,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.1400000229120257,
+          "width": 0.9100000025033952,
+          "height": 1.436409370378026
+        }
+      }
+    },
+    {
+      "id": "LD-C008",
+      "ok": true,
+      "name": "Esteira Curva PRO A7000",
+      "family": "treadmill",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C008/model.glb",
+        "usdz": "models/LD-C008/model.usdz",
+        "plan": "models/LD-C008/plan.svg",
+        "spec": "models/LD-C008/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1840,
+        "width": 900,
+        "height": 1651
+      },
+      "deviationPct": {
+        "length": 0.09,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 3.042,
+        "areaM2": 6.39
+      },
+      "animated": false,
+      "triangles": 21384,
+      "glbBytes": 844556,
+      "usdzBytes": 2862994,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.8416407074964787,
+          "width": 0.9,
+          "height": 1.651044933326997
+        }
+      }
+    },
+    {
+      "id": "LD-C009",
+      "ok": true,
+      "name": "Bicicleta Vertical PRO M5200S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 2%)"
+      ],
+      "files": {
+        "glb": "models/LD-C009/model.glb",
+        "usdz": "models/LD-C009/model.usdz",
+        "plan": "models/LD-C009/plan.svg",
+        "spec": "models/LD-C009/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1180,
+        "width": 630,
+        "height": 1630
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.83,
+        "lengthM": 2.38,
+        "areaM2": 4.36
+      },
+      "animated": false,
+      "triangles": 4464,
+      "glbBytes": 290660,
+      "usdzBytes": 943346,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.1799999999999997,
+          "width": 0.63,
+          "height": 1.6299999999999997
+        }
+      }
+    },
+    {
+      "id": "LD-C010",
+      "ok": true,
+      "name": "Bicicleta Horizontal PRO M5100S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C010/model.glb",
+        "usdz": "models/LD-C010/model.usdz",
+        "plan": "models/LD-C010/plan.svg",
+        "spec": "models/LD-C010/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1600,
+        "width": 615,
+        "height": 1600
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.1,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.816,
+        "lengthM": 2.8,
+        "areaM2": 5.08
+      },
+      "animated": false,
+      "triangles": 5812,
+      "glbBytes": 377428,
+      "usdzBytes": 1214295,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.6000621118012426,
+          "width": 0.6156299212598425,
+          "height": 1.600024426806477
+        }
+      }
+    },
+    {
+      "id": "LD-C011",
+      "ok": true,
+      "name": "Bicicleta Vertical PRO A5200S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C011/model.glb",
+        "usdz": "models/LD-C011/model.usdz",
+        "plan": "models/LD-C011/plan.svg",
+        "spec": "models/LD-C011/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1210,
+        "width": 630,
+        "height": 1740
+      },
+      "deviationPct": {
+        "length": 0.03,
+        "width": 0.1,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.831,
+        "lengthM": 2.41,
+        "areaM2": 4.41
+      },
+      "animated": false,
+      "triangles": 4464,
+      "glbBytes": 290524,
+      "usdzBytes": 941526,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.2103252032520324,
+          "width": 0.6306153846153847,
+          "height": 1.7400224543582825
+        }
+      }
+    },
+    {
+      "id": "LD-C012",
+      "ok": true,
+      "name": "Bicicleta Vertical PRO A5200",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C012/model.glb",
+        "usdz": "models/LD-C012/model.usdz",
+        "plan": "models/LD-C012/plan.svg",
+        "spec": "models/LD-C012/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1210,
+        "width": 630,
+        "height": 1540
+      },
+      "deviationPct": {
+        "length": 0.03,
+        "width": 0.1,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.831,
+        "lengthM": 2.41,
+        "areaM2": 4.41
+      },
+      "animated": false,
+      "triangles": 4464,
+      "glbBytes": 290644,
+      "usdzBytes": 944632,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.2103252032520324,
+          "width": 0.6306153846153847,
+          "height": 1.5400401013557645
+        }
+      }
+    },
+    {
+      "id": "LD-C013",
+      "ok": true,
+      "name": "Bicicleta Horizontal PRO A5100S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C013/model.glb",
+        "usdz": "models/LD-C013/model.usdz",
+        "plan": "models/LD-C013/plan.svg",
+        "spec": "models/LD-C013/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1755,
+        "width": 650,
+        "height": 1600
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.09,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.851,
+        "lengthM": 2.955,
+        "areaM2": 5.47
+      },
+      "animated": false,
+      "triangles": 5780,
+      "glbBytes": 376708,
+      "usdzBytes": 1212533,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.7550566572237962,
+          "width": 0.6505970149253731,
+          "height": 1.600024426806477
+        }
+      }
+    },
+    {
+      "id": "LD-C014",
+      "ok": true,
+      "name": "Bicicleta Horizontal PRO A5100",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C014/model.glb",
+        "usdz": "models/LD-C014/model.usdz",
+        "plan": "models/LD-C014/plan.svg",
+        "spec": "models/LD-C014/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1755,
+        "width": 650,
+        "height": 1400
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.09,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.851,
+        "lengthM": 2.955,
+        "areaM2": 5.47
+      },
+      "animated": false,
+      "triangles": 5780,
+      "glbBytes": 376788,
+      "usdzBytes": 1213520,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.7550566572237962,
+          "width": 0.6505970149253731,
+          "height": 1.4000441340701606
+        }
+      }
+    },
+    {
+      "id": "LD-C015",
+      "ok": true,
+      "name": "Bicicleta Vertical PRO X9107S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 1%)"
+      ],
+      "files": {
+        "glb": "models/LD-C015/model.glb",
+        "usdz": "models/LD-C015/model.usdz",
+        "plan": "models/LD-C015/plan.svg",
+        "spec": "models/LD-C015/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1190,
+        "width": 600,
+        "height": 1570
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.8,
+        "lengthM": 2.39,
+        "areaM2": 4.3
+      },
+      "animated": false,
+      "triangles": 4464,
+      "glbBytes": 290684,
+      "usdzBytes": 943672,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.19,
+          "width": 0.6,
+          "height": 1.57
+        }
+      }
+    },
+    {
+      "id": "LD-C016",
+      "ok": true,
+      "name": "Bicicleta Vertical PRO X9107",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [
+        "Modelo ajustado por escala para caber na caixa do catálogo (até 1%)"
+      ],
+      "files": {
+        "glb": "models/LD-C016/model.glb",
+        "usdz": "models/LD-C016/model.usdz",
+        "plan": "models/LD-C016/plan.svg",
+        "spec": "models/LD-C016/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1190,
+        "width": 600,
+        "height": 1370
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.8,
+        "lengthM": 2.39,
+        "areaM2": 4.3
+      },
+      "animated": false,
+      "triangles": 4496,
+      "glbBytes": 291456,
+      "usdzBytes": 948207,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.19,
+          "width": 0.6,
+          "height": 1.37
+        }
+      }
+    },
+    {
+      "id": "LD-C017",
+      "ok": true,
+      "name": "Bicicleta Horizontal PRO X9109S",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C017/model.glb",
+        "usdz": "models/LD-C017/model.usdz",
+        "plan": "models/LD-C017/plan.svg",
+        "spec": "models/LD-C017/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1630,
+        "width": 610,
+        "height": 1500
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.1,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.811,
+        "lengthM": 2.83,
+        "areaM2": 5.12
+      },
+      "animated": false,
+      "triangles": 5812,
+      "glbBytes": 377428,
+      "usdzBytes": 1214245,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.6300609756097564,
+          "width": 0.6106349206349206,
+          "height": 1.5000260620622843
+        }
+      }
+    },
+    {
+      "id": "LD-C018",
+      "ok": true,
+      "name": "Bicicleta Horizontal PRO X9109",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C018/model.glb",
+        "usdz": "models/LD-C018/model.usdz",
+        "plan": "models/LD-C018/plan.svg",
+        "spec": "models/LD-C018/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1630,
+        "width": 610,
+        "height": 1300
+      },
+      "deviationPct": {
+        "length": 0,
+        "width": 0.1,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.811,
+        "lengthM": 2.83,
+        "areaM2": 5.12
+      },
+      "animated": false,
+      "triangles": 5812,
+      "glbBytes": 377504,
+      "usdzBytes": 1217218,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.6300609756097564,
+          "width": 0.6106349206349206,
+          "height": 1.3000475495928683
+        }
+      }
+    },
+    {
+      "id": "LD-C019",
+      "ok": true,
+      "name": "Bicicleta Spinning PRO S300",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C019/model.glb",
+        "usdz": "models/LD-C019/model.usdz",
+        "plan": "models/LD-C019/plan.svg",
+        "spec": "models/LD-C019/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1260,
+        "width": 500,
+        "height": 1000
+      },
+      "deviationPct": {
+        "length": 0.13,
+        "width": 0.04,
+        "height": 0.06
+      },
+      "trainingArea": {
+        "widthM": 1.7,
+        "lengthM": 2.462,
+        "areaM2": 4.19
+      },
+      "animated": false,
+      "triangles": 3408,
+      "glbBytes": 169208,
+      "usdzBytes": 532339,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.2616666666666667,
+          "width": 0.5001960784313725,
+          "height": 1.0005901639344261
+        }
+      }
+    },
+    {
+      "id": "LD-C020",
+      "ok": true,
+      "name": "Bicicleta Spinning PRO S210",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C020/model.glb",
+        "usdz": "models/LD-C020/model.usdz",
+        "plan": "models/LD-C020/plan.svg",
+        "spec": "models/LD-C020/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1200,
+        "width": 500,
+        "height": 1030
+      },
+      "deviationPct": {
+        "length": 0.15,
+        "width": 0.04,
+        "height": 0.06
+      },
+      "trainingArea": {
+        "widthM": 1.7,
+        "lengthM": 2.402,
+        "areaM2": 4.08
+      },
+      "animated": false,
+      "triangles": 3408,
+      "glbBytes": 169208,
+      "usdzBytes": 532223,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.2017532467532468,
+          "width": 0.5001960784313725,
+          "height": 1.030572564612326
+        }
+      }
+    },
+    {
+      "id": "LD-C021",
+      "ok": true,
+      "name": "Bicicleta Spinning PRO X962A",
+      "family": "bike",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C021/model.glb",
+        "usdz": "models/LD-C021/model.usdz",
+        "plan": "models/LD-C021/plan.svg",
+        "spec": "models/LD-C021/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1160,
+        "width": 630,
+        "height": 1130
+      },
+      "deviationPct": {
+        "length": 0.16,
+        "width": 0.02,
+        "height": 0.05
+      },
+      "trainingArea": {
+        "widthM": 1.83,
+        "lengthM": 2.362,
+        "areaM2": 4.32
+      },
+      "animated": false,
+      "triangles": 3408,
+      "glbBytes": 169136,
+      "usdzBytes": 532024,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.161816143497758,
+          "width": 0.6301562500000001,
+          "height": 1.130520795660036
+        }
+      }
+    },
+    {
+      "id": "LD-C022",
+      "ok": true,
+      "name": "Elíptico PRO M5300S",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C022/model.glb",
+        "usdz": "models/LD-C022/model.usdz",
+        "plan": "models/LD-C022/plan.svg",
+        "spec": "models/LD-C022/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2120,
+        "width": 800,
+        "height": 1800
+      },
+      "deviationPct": {
+        "length": 0.34,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 3.327,
+        "areaM2": 6.65
+      },
+      "animated": false,
+      "triangles": 5072,
+      "glbBytes": 338860,
+      "usdzBytes": 1088147,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.1272,
+          "width": 0.8000000000000002,
+          "height": 1.8000276303165643
+        }
+      }
+    },
+    {
+      "id": "LD-C023",
+      "ok": true,
+      "name": "Elíptico PRO X9300S",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C023/model.glb",
+        "usdz": "models/LD-C023/model.usdz",
+        "plan": "models/LD-C023/plan.svg",
+        "spec": "models/LD-C023/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2180,
+        "width": 746,
+        "height": 1780
+      },
+      "deviationPct": {
+        "length": 0.32,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.946,
+        "lengthM": 3.387,
+        "areaM2": 6.59
+      },
+      "animated": false,
+      "triangles": 5072,
+      "glbBytes": 338928,
+      "usdzBytes": 1088368,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.186990291262136,
+          "width": 0.746,
+          "height": 1.7800279420020253
+        }
+      }
+    },
+    {
+      "id": "LD-C024",
+      "ok": true,
+      "name": "Elíptico PRO X9300",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C024/model.glb",
+        "usdz": "models/LD-C024/model.usdz",
+        "plan": "models/LD-C024/plan.svg",
+        "spec": "models/LD-C024/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2180,
+        "width": 746,
+        "height": 1780
+      },
+      "deviationPct": {
+        "length": 0.32,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 1.946,
+        "lengthM": 3.387,
+        "areaM2": 6.59
+      },
+      "animated": false,
+      "triangles": 5072,
+      "glbBytes": 338944,
+      "usdzBytes": 1087989,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.186990291262136,
+          "width": 0.746,
+          "height": 1.7800281672948433
+        }
+      }
+    },
+    {
+      "id": "LD-C025",
+      "ok": true,
+      "name": "Elíptico PRO X9201",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C025/model.glb",
+        "usdz": "models/LD-C025/model.usdz",
+        "plan": "models/LD-C025/plan.svg",
+        "spec": "models/LD-C025/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2270,
+        "width": 800,
+        "height": 1830
+      },
+      "deviationPct": {
+        "length": 0.3,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 3.477,
+        "areaM2": 6.95
+      },
+      "animated": false,
+      "triangles": 5072,
+      "glbBytes": 339076,
+      "usdzBytes": 1088204,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.2766976744186045,
+          "width": 0.8000000000000002,
+          "height": 1.8300273947132197
+        }
+      }
+    },
+    {
+      "id": "LD-C026",
+      "ok": true,
+      "name": "Elíptico PRO X9200",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C026/model.glb",
+        "usdz": "models/LD-C026/model.usdz",
+        "plan": "models/LD-C026/plan.svg",
+        "spec": "models/LD-C026/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 2270,
+        "width": 800,
+        "height": 1830
+      },
+      "deviationPct": {
+        "length": 0.3,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2,
+        "lengthM": 3.477,
+        "areaM2": 6.95
+      },
+      "animated": false,
+      "triangles": 5774,
+      "glbBytes": 408520,
+      "usdzBytes": 1318597,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 2.2766976744186045,
+          "width": 0.8000000000000002,
+          "height": 1.8300273947132197
+        }
+      }
+    },
+    {
+      "id": "LD-C027",
+      "ok": true,
+      "name": "PMT – Elíptico PRO de Movimento Adaptativo X9101",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C027/model.glb",
+        "usdz": "models/LD-C027/model.usdz",
+        "plan": "models/LD-C027/plan.svg",
+        "spec": "models/LD-C027/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1980,
+        "width": 900,
+        "height": 1860
+      },
+      "deviationPct": {
+        "length": 0.39,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 3.188,
+        "areaM2": 6.69
+      },
+      "animated": false,
+      "triangles": 5204,
+      "glbBytes": 301736,
+      "usdzBytes": 945544,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.9877419354838708,
+          "width": 0.9,
+          "height": 1.8600267356304259
+        }
+      }
+    },
+    {
+      "id": "LD-C028",
+      "ok": true,
+      "name": "PMT – Elíptico PRO de Movimento Adaptativo X9100",
+      "family": "elliptical",
+      "review": "needs_review",
+      "warnings": [],
+      "files": {
+        "glb": "models/LD-C028/model.glb",
+        "usdz": "models/LD-C028/model.usdz",
+        "plan": "models/LD-C028/plan.svg",
+        "spec": "models/LD-C028/spec.json"
+      },
+      "dimensionsMm": {
+        "length": 1980,
+        "width": 900,
+        "height": 1860
+      },
+      "deviationPct": {
+        "length": 0.39,
+        "width": 0,
+        "height": 0
+      },
+      "trainingArea": {
+        "widthM": 2.1,
+        "lengthM": 3.188,
+        "areaM2": 6.69
+      },
+      "animated": false,
+      "triangles": 5204,
+      "glbBytes": 301840,
+      "usdzBytes": 945353,
+      "quality": {
+        "valid": true,
+        "dimensionsWithinTolerance": true,
+        "articulationNodesValid": true,
+        "motionWithinDesignBox": true,
+        "motionCollisionFree": true,
+        "motionCollisionCount": 0,
+        "motionCollisions": [],
+        "calibrationStatus": "not_provided",
+        "calibrationLandmarks": 0,
+        "calibrationRmsePx": 0,
+        "motionMaxSizeM": {
+          "length": 1.9877419354838708,
+          "width": 0.9,
+          "height": 1.860026951177874
+        }
+      }
+    }
+  ]
+}

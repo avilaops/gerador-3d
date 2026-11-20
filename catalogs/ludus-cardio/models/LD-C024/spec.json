@@ -1,0 +1,71 @@
+{
+  "id": "LD-C024",
+  "name": "Elíptico PRO X9300",
+  "family": "elliptical",
+  "dimensionsMm": {
+    "length": 2180,
+    "width": 746,
+    "height": 1780
+  },
+  "params": {
+    "variant": "rear-drive",
+    "screen": "led"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.79,
+    "target": [
+      0,
+      0.8,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "135 kg",
+    "bateria": null,
+    "descricao": "Elíptico PRO X9300 da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "X9300"
+  },
+  "resolved": {
+    "params": {
+      "variant": "rear-drive",
+      "screen": "led",
+      "inclineRamp": false,
+      "pedalHeight": 0.3
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 2.187,
+      "width": 0.746,
+      "height": 1.78
+    },
+    "trainingArea": {
+      "minX": -0.973,
+      "maxX": 0.973,
+      "minZ": -1.693495145631068,
+      "maxZ": 1.693495145631068,
+      "widthM": 1.946,
+      "lengthM": 3.386990291262136,
+      "areaM2": 6.591083106796117
+    },
+    "stats": {
+      "triangles": 5072,
+      "meshes": 33,
+      "geometries": 16,
+      "materials": 3
+    }
+  }
+}

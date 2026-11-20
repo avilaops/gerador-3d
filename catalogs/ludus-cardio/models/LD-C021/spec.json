@@ -1,0 +1,72 @@
+{
+  "id": "LD-C021",
+  "name": "Bicicleta Spinning PRO X962A",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1160,
+    "width": 630,
+    "height": 1130
+  },
+  "params": {
+    "variant": "spin",
+    "screen": "led",
+    "seatHeight": 0.972
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 2.26,
+    "target": [
+      0,
+      0.51,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "75 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Spinning PRO X962A da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "X962A"
+  },
+  "resolved": {
+    "params": {
+      "variant": "spin",
+      "screen": "led",
+      "seatHeight": 0.972,
+      "crank": 0.17
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.162,
+      "width": 0.63,
+      "height": 1.131
+    },
+    "trainingArea": {
+      "minX": -0.915078125,
+      "maxX": 0.915078125,
+      "minZ": -1.180908071748879,
+      "maxZ": 1.180908071748879,
+      "widthM": 1.83015625,
+      "lengthM": 2.361816143497758,
+      "areaM2": 4.322492576373318
+    },
+    "stats": {
+      "triangles": 3408,
+      "meshes": 25,
+      "geometries": 9,
+      "materials": 5
+    }
+  }
+}

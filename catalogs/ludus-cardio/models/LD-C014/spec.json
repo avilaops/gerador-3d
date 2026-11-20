@@ -1,0 +1,71 @@
+{
+  "id": "LD-C014",
+  "name": "Bicicleta Horizontal PRO A5100",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1755,
+    "width": 650,
+    "height": 1400
+  },
+  "params": {
+    "variant": "recumbent",
+    "screen": "led"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.04,
+    "target": [
+      0,
+      0.63,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "108 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Horizontal PRO A5100 da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "A5100"
+  },
+  "resolved": {
+    "params": {
+      "variant": "recumbent",
+      "screen": "led",
+      "seatHeight": 0.8447295678882613,
+      "crank": 0.17
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.755,
+      "width": 0.651,
+      "height": 1.4
+    },
+    "trainingArea": {
+      "minX": -0.9252985074626865,
+      "maxX": 0.9252985074626865,
+      "minZ": -1.477528328611898,
+      "maxZ": 1.477528328611898,
+      "widthM": 1.850597014925373,
+      "lengthM": 2.955056657223796,
+      "areaM2": 5.468619028793708
+    },
+    "stats": {
+      "triangles": 5780,
+      "meshes": 34,
+      "geometries": 18,
+      "materials": 6
+    }
+  }
+}
