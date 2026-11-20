@@ -1,0 +1,43 @@
+{
+  "id": "LD-C020",
+  "name": "Bicicleta Spinning PRO S210",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1200,
+    "width": 500,
+    "height": 1030
+  },
+  "params": {
+    "variant": "spin",
+    "screen": "led",
+    "seatHeight": 0.886
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 2.16,
+    "target": [
+      0,
+      0.46,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "55 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Spinning PRO S210 da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "S210"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "LD-C012",
+  "name": "Bicicleta Vertical PRO A5200",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1210,
+    "width": 630,
+    "height": 1540
+  },
+  "params": {
+    "variant": "upright",
+    "screen": "led"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 2.67,
+    "target": [
+      0,
+      0.69,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "75 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Vertical PRO A5200 da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "A5200"
+  }
+}

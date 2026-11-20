@@ -21,6 +21,10 @@ export const FAMILY_IDS = [
   'rack',
   'cable-station',
   'leg-press',
+  'treadmill',
+  'bike',
+  'elliptical',
+  'stair-climber',
 ] as const;
 
 export const FamilyIdSchema = z.enum(FAMILY_IDS);

@@ -1,0 +1,42 @@
+{
+  "id": "LD-C010",
+  "name": "Bicicleta Horizontal PRO M5100S",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1600,
+    "width": 615,
+    "height": 1600
+  },
+  "params": {
+    "variant": "recumbent",
+    "screen": "tablet"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.05,
+    "target": [
+      0,
+      0.72,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "100 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Horizontal PRO M5100S da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "M5100S"
+  }
+}

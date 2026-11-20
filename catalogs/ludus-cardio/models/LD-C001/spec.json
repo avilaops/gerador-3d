@@ -1,0 +1,69 @@
+{
+  "id": "LD-C001",
+  "name": "Simulador de Escada PRO A4001P",
+  "family": "stair-climber",
+  "dimensionsMm": {
+    "length": 1510,
+    "width": 840,
+    "height": 2250
+  },
+  "params": {
+    "steps": 9,
+    "screen": "led"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.69,
+    "target": [
+      0,
+      1.01,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "240 kg",
+    "bateria": null,
+    "descricao": "Simulador de Escada PRO A4001P da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "A4001P"
+  },
+  "resolved": {
+    "params": {
+      "steps": 9,
+      "screen": "led"
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 1.511,
+      "width": 0.84,
+      "height": 2.25
+    },
+    "trainingArea": {
+      "minX": -1.02,
+      "maxX": 1.02,
+      "minZ": -1.355544212744159,
+      "maxZ": 1.355544212744159,
+      "widthM": 2.04,
+      "lengthM": 2.711088425488318,
+      "areaM2": 5.530620387996169
+    },
+    "stats": {
+      "triangles": 4032,
+      "meshes": 52,
+      "geometries": 9,
+      "materials": 5
+    }
+  }
+}

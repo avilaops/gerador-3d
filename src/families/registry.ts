@@ -6,6 +6,7 @@ import { bench } from './bench';
 import { rack } from './rack';
 import { cableStation } from './cableStation';
 import { legPress } from './legPress';
+import { bike, elliptical, stairClimber, treadmill } from './cardio';
 
 const FAMILIES: Partial<Record<FamilyId, AnyFamilyDefinition>> = {
   'selectorized-tower': selectorizedTower,
@@ -14,6 +15,10 @@ const FAMILIES: Partial<Record<FamilyId, AnyFamilyDefinition>> = {
   rack,
   'cable-station': cableStation,
   'leg-press': legPress,
+  treadmill,
+  bike,
+  elliptical,
+  'stair-climber': stairClimber,
 };
 
 export function getFamily(id: FamilyId): AnyFamilyDefinition | undefined {

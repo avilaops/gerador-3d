@@ -1,0 +1,72 @@
+{
+  "id": "LD-C002",
+  "name": "Esteira Ergométrica PRO X8600PS",
+  "family": "treadmill",
+  "dimensionsMm": {
+    "length": 2180,
+    "width": 910,
+    "height": 1780
+  },
+  "params": {
+    "variant": "standard",
+    "screen": "lcd"
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 3.85,
+    "target": [
+      0,
+      0.8,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "210 kg",
+    "bateria": null,
+    "descricao": "Esteira Ergométrica PRO X8600PS da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "X8600PS"
+  },
+  "resolved": {
+    "params": {
+      "variant": "standard",
+      "deckHeight": 0.21,
+      "beltWidth": 0.56,
+      "consoleTilt": 0.45,
+      "screen": "lcd"
+    },
+    "articulations": [],
+    "bboxM": {
+      "length": 2.18,
+      "width": 0.91,
+      "height": 1.771
+    },
+    "trainingArea": {
+      "minX": -1.0550000012516976,
+      "maxX": 1.0550000012516976,
+      "minZ": -1.6900000083923339,
+      "maxZ": 1.6899999947547912,
+      "widthM": 2.110000002503395,
+      "lengthM": 3.380000003147125,
+      "areaM2": 7.131800015101909
+    },
+    "stats": {
+      "triangles": 4540,
+      "meshes": 19,
+      "geometries": 9,
+      "materials": 4
+    }
+  }
+}

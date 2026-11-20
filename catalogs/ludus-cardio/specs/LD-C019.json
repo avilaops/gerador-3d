@@ -1,0 +1,43 @@
+{
+  "id": "LD-C019",
+  "name": "Bicicleta Spinning PRO S300",
+  "family": "bike",
+  "dimensionsMm": {
+    "length": 1260,
+    "width": 500,
+    "height": 1000
+  },
+  "params": {
+    "variant": "spin",
+    "screen": "led",
+    "seatHeight": 0.86
+  },
+  "materials": {
+    "frame": "#1c1c1f",
+    "upholstery": "#0e0e0f",
+    "accent": "#8d9399"
+  },
+  "camera": {
+    "azimuthDeg": 35,
+    "elevationDeg": 16,
+    "distanceM": 2.19,
+    "target": [
+      0,
+      0.45,
+      0
+    ]
+  },
+  "trainingClearanceM": 0.6,
+  "review": {
+    "status": "needs_review",
+    "notes": "Gerado pela classificação Cardio; conferir família, variante e foto do fabricante."
+  },
+  "meta": {
+    "linha": "Ludus Cardio",
+    "grupoMuscular": "Cardio",
+    "peso": "42 kg",
+    "bateria": null,
+    "descricao": "Bicicleta Spinning PRO S300 da Linha Cardio. Confira a foto, as dimensões e a ficha técnica para planejar sua academia.",
+    "modelo": "S300"
+  }
+}

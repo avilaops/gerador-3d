@@ -1,0 +1,11 @@
+{
+  "total": 28,
+  "generated": 28,
+  "byFamily": {
+    "stair-climber": 1,
+    "treadmill": 7,
+    "bike": 13,
+    "elliptical": 7
+  },
+  "unmatched": []
+}
